@@ -1,0 +1,112 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Description: AWS CloudFormation to set up Terraform resource support with Lambda.
+
+Parameters:
+
+    S3Bucket:
+        Description: The name of the bucket that contains the Lambda source (leave blank to use latest)
+        Type: String
+        Default: ''
+    
+    S3Key:
+        Description: The key of the ZIP package within the bucket (leave blank to use latest)
+        Type: String
+        Default: ''
+
+Conditions:
+
+    S3Defined: !Not [ !Equals [ '', !Ref S3Bucket ] ]
+
+Metadata:
+
+    AWS::CloudFormation::Interface:
+        ParameterGroups:
+          - Label:
+                default: "Deployment Configuration"
+            Parameters:
+              - S3Bucket
+              - S3Key
+        ParameterLabels:
+            S3Bucket:
+                default: "S3 Bucket (leave blank to use latest)"
+            S3Key:
+                default: "S3 Key (leave blank to use latest)"
+
+Resources:
+
+    TransformFunction:
+        Type: AWS::Lambda::Function
+        Properties:
+            Code:
+                S3Bucket: !If
+                    - S3Defined
+                    - !Ref S3Bucket
+                    - !Sub 'ianmckay-${AWS::Region}'
+                S3Key: !If
+                    - S3Defined
+                    - !Ref S3Key
+                    - 'terraform/app.zip'
+            Handler: index.handler
+            Role: !GetAtt 'LambdaExecutionRole.Arn'
+            Runtime: python3.6
+            Timeout: 900
+    
+    LambdaExecutionRole:
+        Type: AWS::IAM::Role
+        Properties:
+            AssumeRolePolicyDocument:
+                Version: '2012-10-17'
+                Statement:
+                  - Effect: Allow
+                    Principal:
+                        Service:
+                          - lambda.amazonaws.com
+                    Action:
+                      - sts:AssumeRole
+            Path: /
+            Policies:
+              - PolicyName: root
+                PolicyDocument:
+                    Version: '2012-10-17'
+                    Statement:
+                      - Effect: Allow
+                        Action:
+                          - logs:CreateLogGroup
+                          - logs:CreateLogStream
+                          - logs:PutLogEvents
+                        Resource: arn:aws:logs:*:*:*
+                      - Effect: Allow
+                        Action:
+                          - secretsmanager:GetSecretValue
+                        Resource: !Sub 'arn:aws:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:terraform/*'
+
+    TransformFunctionPermissions:
+        Type: AWS::Lambda::Permission
+        Properties:
+            Action: 'lambda:InvokeFunction'
+            FunctionName: !GetAtt TransformFunction.Arn
+            Principal: 'cloudformation.amazonaws.com'
+    
+    TerraformTransform:
+        Type: AWS::CloudFormation::Transform
+        Properties:
+            Name: !Sub '${AWS::AccountId}::Terraform'
+            Description: Adds support for Terraform resources
+            RoutingTable:
+                '*': 1
+            Versions:
+              - VersionName: 1
+                Description: Version 1
+                FunctionName: !GetAtt TransformFunction.Arn
+            ExecutionPolicy:
+                Version: '2012-10-17'
+                Id: AllowThisAccount
+                Statement:
+                  - Sid: AllowExecution
+                    Effect: Allow
+                    Principal:
+                        AWS: !Sub '${AWS::AccountId}'
+                    Action:
+                      - 'cloudformation:*'
+                    Resource: !Sub 'arn:*:cloudformation:${AWS::Region}:${AWS::AccountId}:transform/Terraform'

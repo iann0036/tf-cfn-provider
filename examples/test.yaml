@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Description: Example stack that deploys some Terraform resources.
+
+Transform:
+- Terraform
+
+Resources:
+
+    myResource:
+        Type: Terraform::GitHub::Repository
+        Properties:
+            Name: myrepo
+            Description: Repo Description
+            Private: false
