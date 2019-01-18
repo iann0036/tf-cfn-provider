@@ -29,11 +29,14 @@ Metadata:
               - S3Key
         ParameterLabels:
             S3Bucket:
-                default: "S3 Bucket (leave blank to use latest)"
+                default: "S3 Bucket for Lambda artifact (leave blank to use latest)"
             S3Key:
-                default: "S3 Key (leave blank to use latest)"
+                default: "S3 Key for Lambda artifact (leave blank to use latest)"
 
 Resources:
+
+    StateBucket:
+        Type: AWS::S3::Bucket
 
     TransformFunction:
         Type: AWS::Lambda::Function
@@ -49,6 +52,9 @@ Resources:
                     - 'terraform/app.zip'
             Handler: index.handler
             Role: !GetAtt 'LambdaExecutionRole.Arn'
+            Environment:
+                Variables:
+                    STATE_BUCKET: !Ref StateBucket
             Runtime: python3.6
             Timeout: 900
     
@@ -80,6 +86,12 @@ Resources:
                         Action:
                           - secretsmanager:GetSecretValue
                         Resource: !Sub 'arn:aws:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:terraform/*'
+                      - Effect: Allow
+                        Action:
+                          - s3:*
+                        Resource:
+                          - !Sub arn:aws:s3:::${StateBucket},
+                          - !Sub arn:aws:s3:::${StateBucket}/*
 
     TransformFunctionPermissions:
         Type: AWS::Lambda::Permission

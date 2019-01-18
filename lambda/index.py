@@ -8,6 +8,8 @@ import traceback
 import sys
 import subprocess
 import re
+import pprint
+import uuid
 
 LOGGER = logging.getLogger()
 LOGGER.setLevel(logging.INFO)
@@ -30,6 +32,10 @@ def check_call(args):
 
 def cfn_to_tf_str(obj):
     return re.sub('([A-Z]{1})', r'_\1', obj).lower()[1:]
+
+
+def tf_to_cfn_str(obj):
+    return re.sub(r'(?:^|_)(\w)', lambda x: x.group(1).upper(), obj)
 
 
 def tf_format_value(obj, indent_level):
@@ -65,12 +71,17 @@ def process_tf_params(resource_properties):
     return params
 
 
-def tf_resource_processor(logical_id, resource_type, resource_properties):
+def tf_resource_processor(request_type, logical_id, resource_type, resource_properties, physical_resource_id, stack_id):
+    return_data = {}
     terraform_file_contents = ""
-
     provider_name = resource_type.split("_")[0]
-
     provider_credentials = get_secret("terraform/" + provider_name)
+
+    s3 = boto3.resource('s3')
+    s3file = s3.Object(os.environ['STATE_BUCKET'], '{}/{}.tfstate'.format(stack_id, physical_resource_id))
+
+    print("State File: {}/{}.tfstate".format(stack_id, physical_resource_id))
+
     if provider_credentials:
         terraform_file_contents += """
 provider "{provider_name}" {{
@@ -102,39 +113,65 @@ resource "{resource_type}" "{logical_id}" {{
     # write file
     with open("/tmp/res.tf", "w") as f:
         f.write(terraform_file_contents)
+
+    if request_type == "Update" or request_type == "Delete":
+        # download state file
+        s3file.download_file('/tmp/res.tfstate')
     
     # execute terraform apply
-    print(check_call([os.environ['LAMBDA_TASK_ROOT'] + '/terraform', 'init', '-no-color']))
-    print(check_call([os.environ['LAMBDA_TASK_ROOT'] + '/terraform', 'apply', '-auto-approve', '-no-color', '-state=/tmp/res.tfstate']))
-    with open("/tmp/res.tfstate", "r") as f:
-        print(f.read())
+    if request_type == "Create":
+        print(check_call([os.environ['LAMBDA_TASK_ROOT'] + '/terraform', 'init', '-no-color']))
+    if request_type == "Create" or request_type == "Update":
+        print(check_call([os.environ['LAMBDA_TASK_ROOT'] + '/terraform', 'apply', '-auto-approve', '-no-color', '-state=/tmp/res.tfstate']))
 
-    return {}
+        with open("/tmp/res.tfstate", "r") as f:
+            tfstate_str = f.read()
+            s3file.put(Body=tfstate_str)
+
+            tfstate = json.loads(tfstate_str)
+            for attr_key, attr_val in tfstate['modules'][0]['resources'][next(iter(tfstate['modules'][0]['resources'].keys()))]['primary']['attributes'].items():
+                attr_key = tf_to_cfn_str(attr_key)
+                return_data[attr_key] = attr_val
+            pprint.pprint(tfstate)
+        os.remove("/tmp/res.tfstate")
+    elif request_type == "Delete":
+        print(check_call([os.environ['LAMBDA_TASK_ROOT'] + '/terraform', 'destroy', '-auto-approve', '-no-color', '-state=/tmp/res.tfstate']))
+        s3file.delete()
+
+    return return_data
 
 
 def handler(event, context):
-    # Setup alarm for remaining runtime minus a second
-    signal.alarm(int(context.get_remaining_time_in_millis() / 1000) - 1)
-
     if 'RequestType' in event:
         # Custom::Terraform_ handler
         try:
             LOGGER.info('REQUEST RECEIVED:\n %s', event)
             LOGGER.info('REQUEST RECEIVED:\n %s', context)
 
-            if event['ResourceType'].startswith("Custom::Terraform_"):
-                response_data = tf_resource_processor(event['LogicalResourceId'], event['ResourceType'][18:].lower(), event['ResourceProperties'])
+            physical_resource_id = str(uuid.uuid4())
+            if 'PhysicalResourceId' in event:
+                physical_resource_id = event['PhysicalResourceId']
 
-            if event['RequestType'] in ['Create', 'Update', 'Delete']:
-                send_response(event, context, "SUCCESS", response_data)
+            if event['ResourceType'].startswith("Custom::Terraform_") and event['RequestType'] in ['Create', 'Update', 'Delete']:
+                response_data = tf_resource_processor(
+                    event['RequestType'],
+                    event['LogicalResourceId'],
+                    event['ResourceType'][18:].lower(),
+                    event['ResourceProperties'],
+                    physical_resource_id,
+                    event['StackId'].split("/")[-1]
+                )
+                send_response(event, context, "SUCCESS", response_data, physical_resource_id)
             else:
                 LOGGER.warning('FAILED!')
                 send_response(event, context, "FAILED",
-                    {"Message": "Unexpected RequestType received from CloudFormation"})
+                    {"Message": "Unexpected RequestType received from CloudFormation"},
+                    physical_resource_id)
         except: #pylint: disable=W0702
             LOGGER.warning('FAILED! %s %s', traceback.format_exc(), sys.exc_info()[0])
             send_response(event, context, "FAILED",
-                {"Message": "Exception during processing"})
+                {"Message": "Exception during processing"},
+                context.log_stream_name + event['LogicalResourceId'])
     elif 'fragment' in event:
         # Transform handler
         return handle_transform(event, context)
@@ -152,10 +189,10 @@ def get_secret(secret_id):
     return credential
 
 
-def send_response(event, context, response_status, response_data):
+def send_response(event, context, response_status, response_data, physical_resource_id):
     response_object = {
         "Status": response_status,
-        "PhysicalResourceId": context.log_stream_name + event['LogicalResourceId'],
+        "PhysicalResourceId": physical_resource_id,
         "StackId": event['StackId'],
         "RequestId": event['RequestId'],
         "LogicalResourceId": event['LogicalResourceId'],
@@ -172,10 +209,6 @@ def send_response(event, context, response_status, response_data):
 
     requests.put(event['ResponseURL'], data=response_body)
     LOGGER.info('Response Sent')
-
-
-def timeout_handler(_signal, _frame):
-    raise Exception('Time exceeded')
 
 
 def handle_transform(event, context):
@@ -207,6 +240,3 @@ def handle_transform(event, context):
     LOGGER.info('MacroResponse: %s', json.dumps(macro_response))
 
     return macro_response
-
-
-signal.signal(signal.SIGALRM, timeout_handler)
