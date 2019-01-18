@@ -2,7 +2,7 @@
 
 > Deploy over 2,000 new resource types with CloudFormation.
 
-![Screenshot](assets/screen1.png)
+<img src="https://github.com/iann0036/tf-cfn-provider/raw/master/assets/screen1.png" width="558" height="491">
 
 :exclamation: **CAUTION:** This project is currently in beta stages. Some resources may not work as expected and fields may not be validated.
 
