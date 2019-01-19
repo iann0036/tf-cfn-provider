@@ -1,0 +1,29 @@
+# Terraform::AWS::LightsailKeyPair
+
+Provides a Lightsail Key Pair, for use with Lightsail Instances. These key pairs
+are separate from EC2 Key Pairs, and must be created or imported for use with
+Lightsail.
+
+~> **Note:** Lightsail is currently only supported in a limited number of AWS Regions, please see ["Regions and Availability Zones in Amazon Lightsail"](https://lightsail.aws.amazon.com/ls/docs/overview/article/understanding-regions-and-availability-zones-in-amazon-lightsail) for more details
+
+## Return Values
+
+### Fn::GetAtt
+
+Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+
+`Id` - The name used for this key pair.
+
+`Arn` - The ARN of the Lightsail key pair.
+
+`Fingerprint` - The MD5 public key fingerprint as specified in section 4 of RFC 4716.
+
+`PublicKey` - the public key, base64 encoded.
+
+`PrivateKey` - the private key, base64 encoded. This is only populated.
+
+`EncryptedFingerprint` - The MD5 public key fingerprint for the encrypted.
+
+## See Also
+
+* [aws_lightsail_key_pair](https://www.terraform.io/docs/providers/aws/r/lightsail_key_pair.html) in the _Terraform Provider Documentation_

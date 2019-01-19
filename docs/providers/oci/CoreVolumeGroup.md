@@ -1,0 +1,53 @@
+# Terraform::OCI::CoreVolumeGroup
+
+This resource provides the Volume Group resource in Oracle Cloud Infrastructure Core service.
+
+Creates a new volume group in the specified compartment.
+A volume group is a collection of volumes and may be created from a list of volumes, cloning an existing
+volume group, or by restoring a volume group backup. A volume group can contain up to 64 volumes.
+You may optionally specify a *display name* for the volume group, which is simply a friendly name or
+description. It does not have to be unique, and you can change it. Avoid entering confidential information.
+
+For more information, see [Volume Groups](https://docs.cloud.oracle.com/iaas/Content/Block/Concepts/volumegroups.htm).
+
+## Return Values
+
+### Fn::GetAtt
+
+Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+
+`AvailabilityDomain` - The availability domain of the volume group.
+
+`CompartmentId` - The OCID of the compartment that contains the volume group.
+
+`DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
+
+`DisplayName` - A user-friendly name for the volume group. Does not have to be unique, and it's changeable. Avoid entering confidential information.
+
+`FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
+
+`Id` - The OCID for the volume group.
+
+`IsHydrated` - Specifies whether the newly created cloned volume group's data has finished copying from the source volume group or backup.
+
+`SizeInGbs` - The aggregate size of the volume group in GBs.
+
+`SizeInMbs` - The aggregate size of the volume group in MBs.
+
+`SourceDetails` - The volume group source. The source is either another a list of volume IDs in the same availability domain, another volume group, or a volume group backup.
+
+`Type` - The type can be one of these values: `volumeGroupBackupId`, `volumeGroupId`, `volumeIds`.
+
+`VolumeGroupBackupId` - The OCID of the volume group backup to restore from.
+
+`VolumeGroupId` - The OCID of the volume group to clone from.
+
+`VolumeIds` - OCIDs for the volumes in this volume group.
+
+`State` - The current state of a volume group.
+
+`TimeCreated` - The date and time the volume group was created. Format defined by RFC3339.
+
+## See Also
+
+* [oci_core_volume_group](https://www.terraform.io/docs/providers/oci/r/core_volume_group.html) in the _Terraform Provider Documentation_
