@@ -18,9 +18,9 @@ If you prefer, you can also manually upsert the [custom_resource.yaml](custom_re
 
 ## Usage
 
-Once the handler stack is created, you may use the below resources by adding the `Terraform` transform to your stack. This will transform your input template to convert the Terraform resources into Custom Resources that will handle the lifecycle within that provider.
+Once the handler stack is created, you may use the below resources by adding the `Terraform` transform to your stack. This will transform your input template to convert the Terraform:: resources into Custom Resources that will handle the lifecycle within that provider.
 
-Most providers will require you to store credentials and/or other provider-specific settings within AWS Secrets Manager in order to access their services, generally in the secret name format *terraform/_lowercase-provider-name_*.
+Most providers will require you to store credentials and/or other provider-specific settings within AWS Secrets Manager in order to access their services, generally in the secret name format *terraform/lowercase-provider-name*.
 
 ## Providers
 
