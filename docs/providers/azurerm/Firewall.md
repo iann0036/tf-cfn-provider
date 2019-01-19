@@ -4,8 +4,6 @@ Manages an Azure Firewall.
 
 ## Properties
 
-`Name` - (Required) Specifies the name of the IP Configuration.
-
 `ResourceGroupName` - (Required) The name of the resource group in which to create the resource. Changing this forces a new resource to be created.
 
 `Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
@@ -13,6 +11,10 @@ Manages an Azure Firewall.
 `IpConfiguration` - (Required) A `IpConfiguration` block as documented below.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
+
+### IpConfiguration Properties
+
+`Name` - (Required) Specifies the name of the IP Configuration.
 
 `SubnetId` - (Required) Reference to the subnet associated with the IP Configuration.
 

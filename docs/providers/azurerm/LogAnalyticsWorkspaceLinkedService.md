@@ -14,6 +14,8 @@ Links a Log Analytics (formally Operational Insights) Workspace to another resou
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### LinkedServiceProperties Properties
+
 `ResourceId` - (Required) The resource id of the resource that will be linked to the workspace.
 
 

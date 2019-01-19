@@ -4,8 +4,6 @@ Manages an Application Rule Collection within an Azure Firewall.
 
 ## Properties
 
-`Name` - (Required) Specifies the name of the rule.
-
 `AzureFirewallName` - (Required) Specifies the name of the Firewall in which the Application Rule Collection should be created. Changing this forces a new resource to be created.
 
 `ResourceGroupName` - (Required) Specifies the name of the Resource Group in which the Firewall exists. Changing this forces a new resource to be created.
@@ -16,6 +14,10 @@ Manages an Application Rule Collection within an Azure Firewall.
 
 `Rule` - (Required) One or more `Rule` blocks as defined below.
 
+### Rule Properties
+
+`Name` - (Required) Specifies the name of the rule.
+
 `Description` - (Optional) Specifies a description for the rule.
 
 `SourceAddresses` - (Required) A list of source IP addresses and/or IP ranges.
@@ -25,6 +27,8 @@ Manages an Application Rule Collection within an Azure Firewall.
 `TargetFqdns` - (Optional) A list of FQDNs.
 
 `Protocol` - (Optional) One or more `Protocol` blocks as defined below.
+
+### Protocol Properties
 
 `Port` - (Optional) Specify a port for the connection.
 

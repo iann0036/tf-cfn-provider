@@ -12,15 +12,27 @@ Manages a Traffic Manager Profile to which multiple endpoints can be attached.
 
 `TrafficRoutingMethod` - (Required) Specifies the algorithm used to route traffic, possible values are: - `Geographic` - Traffic is routed based on Geographic regions specified in the Endpoint. - `Performance` - Traffic is routed via the User's closest Endpoint - `Weighted` - Traffic is spread across Endpoints proportional to their `weight` value. - `Priority` - Traffic is routed to the Endpoint with the lowest `priority` value.
 
+`Geographic` - Traffic is routed based on Geographic regions specified in the Endpoint. - `Performance` - Traffic is routed via the User's closest Endpoint - `Weighted` - Traffic is spread across Endpoints proportional to their `weight` value. - `Priority` - Traffic is routed to the Endpoint with the lowest `priority` value.
+
+`Performance` - Traffic is routed via the User's closest Endpoint - `Weighted` - Traffic is spread across Endpoints proportional to their `weight` value. - `Priority` - Traffic is routed to the Endpoint with the lowest `priority` value.
+
+`Weighted` - Traffic is spread across Endpoints proportional to their `weight` value. - `Priority` - Traffic is routed to the Endpoint with the lowest `priority` value.
+
+`Priority` - Traffic is routed to the Endpoint with the lowest `priority` value.
+
 `DnsConfig` - (Required) This block specifies the DNS configuration of the Profile, it supports the fields documented below.
 
 `MonitorConfig` - (Required) This block specifies the Endpoint monitoring configuration for the Profile, it supports the fields documented below.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### DnsConfig Properties
+
 `RelativeName` - (Required) The relative domain name, this is combined with the domain name used by Traffic Manager to form the FQDN which is exported as documented below. Changing this forces a new resource to be created.
 
 `Ttl` - (Required) The TTL value of the Profile used by Local DNS resolvers and clients.
+
+### MonitorConfig Properties
 
 `Protocol` - (Required) The protocol used by the monitoring checks, supported values are `HTTP`, `HTTPS` and `TCP`.
 

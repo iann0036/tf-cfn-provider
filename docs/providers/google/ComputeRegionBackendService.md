@@ -15,8 +15,6 @@ and [API](https://cloud.google.com/compute/docs/reference/latest/regionBackendSe
 
 `Backend` - (Optional) The list of backends that serve this BackendService. Structure is documented below.
 
-`Description` - (Optional) Textual description for the backend.
-
 `Project` - (Optional) The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
 
 `Protocol` - (Optional) The protocol for incoming requests. Defaults to `TCP`.
@@ -28,6 +26,10 @@ and [API](https://cloud.google.com/compute/docs/reference/latest/regionBackendSe
 `TimeoutSec` - (Optional) The number of secs to wait for a backend to respond to a request before considering the request failed. Defaults to `30`.
 
 `ConnectionDrainingTimeoutSec` - (Optional) Time for which instance will be drained (not accept new connections, but still work to finish started ones). Defaults to `0`.
+
+### Backend Properties
+
+`Description` - (Optional) Textual description for the backend.
 
 `Group` - (Required) The name or URI of a Compute Engine instance group (`Terraform::Google::ComputeRegionInstanceGroupManager.xyz.instanceGroup`) that can receive traffic. Instance groups must contain at least one instance.
 

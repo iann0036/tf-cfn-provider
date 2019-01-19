@@ -34,11 +34,15 @@ Provides a Load Balancer resource.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### AccessLogs Properties
+
 `Bucket` - (Required) The S3 bucket name to store the logs in.
 
 `Prefix` - (Optional) The S3 bucket prefix. Logs are stored in the root if not configured.
 
 `Enabled` - (Optional) Boolean to enable / disable `AccessLogs`. Defaults to `false`, even when `Bucket` is specified.
+
+### SubnetMapping Properties
 
 `SubnetId` - (Required) The id of the subnet of which to attach to the load balancer. You can specify only one subnet per Availability Zone.
 

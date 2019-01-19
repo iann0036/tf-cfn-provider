@@ -40,6 +40,8 @@ the Profile Setting is set to `None`.
 
 `Rule` - The security rule definition (see below).  The security rule ordering will match how they appear in the terraform plan file.
 
+### Rule Properties
+
 `Name` - (Required) The security rule name.
 
 `Type` - (Optional) Rule type.  This can be `universal` (default), `interzone`, or `intrazone`.
@@ -105,6 +107,8 @@ the Profile Setting is set to `None`.
 `Target` - (Optional) A target definition (see below).  If there are no target sections, then the rule will apply to every vsys of every device in the device group.
 
 `NegateTarget` - (Optional, bool) Instead of applying the rule for the given serial numbers, apply it to everything except them.
+
+### Target Properties
 
 `Serial` - (Required) The serial number of the firewall.
 

@@ -12,6 +12,8 @@ The user resource allows a user to be created on an InfluxDB server.
 
 `Grant` - (Optional) A list of grants for non-admin users.
 
+### Grant Properties
+
 `Database` - (Required) The name of the database the privilege is associated with.
 
 `Privilege` - (Required) The privilege to grant (READ|WRITE|ALL).

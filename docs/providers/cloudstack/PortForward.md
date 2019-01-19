@@ -12,6 +12,8 @@ Creates port forwards.
 
 `Forward` - (Required) Can be specified multiple times. Each forward block supports fields documented below.
 
+### Forward Properties
+
 `Protocol` - (Required) The name of the protocol to allow. Valid options are: `tcp` and `udp`.
 
 `PrivatePort` - (Required) The private port to forward to.

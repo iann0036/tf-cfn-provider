@@ -10,6 +10,8 @@ The ``Terraform::RabbitMQ::Queue`` resource creates and manages a queue.
 
 `Settings` - (Required) The settings of the queue. The structure is described below.
 
+### Settings Properties
+
 `Durable` - (Optional) Whether the queue survives server restarts. Defaults to `false`.
 
 `AutoDelete` - (Optional) Whether the queue will self-delete when all consumers have unsubscribed.

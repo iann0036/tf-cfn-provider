@@ -22,6 +22,8 @@ Manages an ExpressRoute Circuit Peering.
 
 `MicrosoftPeeringConfig` - (Optional) A `MicrosoftPeeringConfig` block as defined below. Required when `PeeringType` is set to `MicrosoftPeering`.
 
+### MicrosoftPeeringConfig Properties
+
 `AdvertisedPublicPrefixes` - (Required) A list of Advertised Public Prefixes.
 
 

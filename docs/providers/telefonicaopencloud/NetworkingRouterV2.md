@@ -24,6 +24,8 @@ Manages a V2 router resource within TelefonicaOpenCloud.
 
 `ValueSpecs` - (Optional) Map of additional driver-specific options.
 
+### ExternalFixedIp Properties
+
 `SubnetId` - (Optional) Subnet in which the fixed IP belongs to.
 
 `IpAddress` - (Optional) The IP address to set on the router.

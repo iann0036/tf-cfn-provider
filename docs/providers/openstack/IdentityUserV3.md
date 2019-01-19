@@ -33,6 +33,8 @@ this resource.
 
 `Region` - (Optional) The region in which to obtain the V3 Keystone client. If omitted, the `Region` argument of the provider is used. Changing this creates a new User.
 
+### MultiFactorAuthRule Properties
+
 `Rule` - (Required) A list of authentication plugins that the user must authenticate with.
 
 

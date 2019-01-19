@@ -10,6 +10,8 @@ Provides a Resource Group.
 
 `ResourceQuery` - (Required) A `ResourceQuery` block. Resource queries are documented below.
 
+### ResourceQuery Properties
+
 `Query` - (Required) The resource query as a JSON string.
 
 `Type` - (Required) The type of the resource query. Defaults to `TAG_FILTERS_1_0`.

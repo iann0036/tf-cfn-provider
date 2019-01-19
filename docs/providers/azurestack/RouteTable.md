@@ -4,8 +4,6 @@ Manages a Route Table
 
 ## Properties
 
-`Name` - (Required) The name of the route.
-
 `ResourceGroupName` - (Required) The name of the resource group in which to create the route table. Changing this forces a new resource to be created.
 
 `Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
@@ -13,6 +11,10 @@ Manages a Route Table
 `Route` - (Optional) Can be specified multiple times to define multiple routes. Each `Route` block supports fields documented below.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
+
+### Route Properties
+
+`Name` - (Required) The name of the route.
 
 `AddressPrefix` - (Required) The destination CIDR to which the route applies, such as 10.1.0.0/16.
 

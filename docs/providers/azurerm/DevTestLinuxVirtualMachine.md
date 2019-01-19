@@ -38,6 +38,8 @@ Manages a Linux Virtual Machine within a Dev Test Lab.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### GalleryImageReference Properties
+
 `Offer` - (Required) The Offer of the Gallery Image. Changing this forces a new resource to be created.
 
 `Publisher` - (Required) The Publisher of the Gallery Image. Changing this forces a new resource to be created.
@@ -45,6 +47,8 @@ Manages a Linux Virtual Machine within a Dev Test Lab.
 `Sku` - (Required) The SKU of the Gallery Image. Changing this forces a new resource to be created.
 
 `Version` - (Required) The Version of the Gallery Image. Changing this forces a new resource to be created.
+
+### InboundNatRule Properties
 
 `Protocol` - (Required) The Protocol used for this NAT Rule. Possible values are `Tcp` and `Udp`. Changing this forces a new resource to be created.
 

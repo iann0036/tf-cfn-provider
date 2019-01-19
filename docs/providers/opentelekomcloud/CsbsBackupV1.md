@@ -14,6 +14,8 @@ Provides an OpenTelekomCloud Backup of Resources.
 
 `Tags` - (Optional) block supports the following arguments:.
 
+### Tags Properties
+
 `Key` - (Required) Tag key. It cannot be an empty string.Changing key creates a new backup.
 
 `Value` - (Required) Tag value. It can be an empty string.Changing value creates a new backup.

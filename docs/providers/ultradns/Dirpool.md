@@ -6,7 +6,9 @@ Provides an UltraDNS Directional Controller pool resource.
 
 `Zone` - (Required) The domain to add the record to.
 
-`Name` - (Required) The name of the record - `type` - (Required) The Record Type of the record.
+`Name` - (Optional) String. - `IsAccountLevel` - (Optional) Boolean. Default: `false`. - `Ips` - (Optional) Set of IP blocks. IP Info documented below.
+
+`Type` - (Required) The Record Type of the record.
 
 `Description` - (Required) Description of the Traffic Controller pool. Valid values are strings less than 256 characters.
 
@@ -18,7 +20,27 @@ Provides an UltraDNS Directional Controller pool resource.
 
 `NoResponse` - (Optional) a single Record Data block, without any `Host` attribute. Record Data documented below.
 
-`Host` - (Required in `Rdata`, absent in `NoResponse`) IPv4 address or CNAME for the pool member. - `all_non_configured` - (Optional) Boolean. Default: `false`. - `geo_info` - (Optional) a single Geo Info block. Geo Info documented below. - `ip_info` - (Optional) a single IP Info block. IP Info documented below.
+`Host` - (Required in `Rdata`, absent in `NoResponse`) IPv4 address or CNAME for the pool member. - `AllNonConfigured` - (Optional) Boolean. Default: `false`. - `GeoInfo` - (Optional) a single Geo Info block. Geo Info documented below. - `IpInfo` - (Optional) a single IP Info block. IP Info documented below.
+
+`AllNonConfigured` - (Optional) Boolean. Default: `false`. - `GeoInfo` - (Optional) a single Geo Info block. Geo Info documented below. - `IpInfo` - (Optional) a single IP Info block. IP Info documented below.
+
+`GeoInfo` - (Optional) a single Geo Info block. Geo Info documented below. - `IpInfo` - (Optional) a single IP Info block. IP Info documented below.
+
+`IpInfo` - (Optional) a single IP Info block. IP Info documented below.
+
+`IsAccountLevel` - (Optional) Boolean. Default: `false`. - `Ips` - (Optional) Set of IP blocks. IP Info documented below.
+
+`Codes` - (Optional) Set of geo code strings. Shorthand codes are expanded.
+
+`Ips` - (Optional) Set of IP blocks. IP Info documented below.
+
+`Start` - (Optional) String. IP Address. Must be paired with `End`. Conflicts with `Cidr` or `Address`. - `End` - (Optional) String. IP Address. Must be paired with `Start`. - `Cidr` - (Optional) String. - `Address` - (Optional) String. IP Address.
+
+`End` - (Optional) String. IP Address. Must be paired with `Start`. - `Cidr` - (Optional) String. - `Address` - (Optional) String. IP Address.
+
+`Cidr` - (Optional) String. - `Address` - (Optional) String. IP Address.
+
+`Address` - (Optional) String. IP Address.
 
 
 ## Return Values

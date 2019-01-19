@@ -4,8 +4,6 @@ Manages a DevSpace Controller.
 
 ## Properties
 
-`Name` - (Required) The name of the SKU for DevSpace Controller. Currently the only supported value is `S1`. Changing this forces a new resource to be created.
-
 `ResourceGroupName` - (Required) The name of the resource group under which the DevSpace Controller resource has to be created. Changing this forces a new resource to be created.
 
 `Location` - (Required) Specifies the supported location where the DevSpace Controller should exist. Changing this forces a new resource to be created.
@@ -19,6 +17,10 @@ Manages a DevSpace Controller.
 `TargetContainerHostCredentialsBase64` - (Required) Base64 encoding of `kube_config_raw` of Azure Kubernetes Service cluster. Changing this forces a new resource to be created.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
+
+### Sku Properties
+
+`Name` - (Required) The name of the SKU for DevSpace Controller. Currently the only supported value is `S1`. Changing this forces a new resource to be created.
 
 `Tier` - (Required) The tier of the SKU for DevSpace Controller. Currently the only supported value is `Standard`. Changing this forces a new resource to be created.
 

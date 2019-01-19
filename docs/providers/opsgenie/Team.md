@@ -10,6 +10,8 @@ Manages a Team within OpsGenie.
 
 `Member` - (Optional) A Member block as documented below.
 
+### Member Properties
+
 `Username` - (Required) The username for the member to add to this Team.
 
 `Role` - (Required) The role for the user within the Team - can be either 'Admin' or 'User'.

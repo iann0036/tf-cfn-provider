@@ -12,6 +12,8 @@ Manages a Automation Module.
 
 `ModuleLink` - (Required) The published Module link.
 
+### ModuleLink Properties
+
 `Uri` - (Required) The uri of the module content (zip or nupkg).
 
 

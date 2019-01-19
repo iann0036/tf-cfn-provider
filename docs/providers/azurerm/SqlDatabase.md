@@ -38,19 +38,7 @@ Allows you to manage an Azure SQL Database
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
-`StorageUri` - (Required) Specifies the blob URI of the .bacpac file.
-
-`StorageKey` - (Required) Specifies the access key for the storage account.
-
-`StorageKeyType` - (Required) Specifies the type of access key for the storage account. Valid values are `StorageAccessKey` or `SharedAccessKey`.
-
-`AdministratorLogin` - (Required) Specifies the name of the SQL administrator.
-
-`AdministratorLoginPassword` - (Required) Specifies the password of the SQL administrator.
-
-`AuthenticationType` - (Required) Specifies the type of authentication used to access the server. Valid values are `SQL` or `ADPassword`.
-
-`OperationMode` - (Optional) Specifies the type of import operation being performed. The only allowable value is `Import`.
+### ThreatDetectionPolicy Properties
 
 `State` - (Required) The State of the Policy. Possible values are `Enabled`, `Disabled` or `New`.
 
@@ -67,6 +55,22 @@ Allows you to manage an Azure SQL Database
 `StorageEndpoint` - (Optional) Specifies the blob storage endpoint (e.g. https://MyAccount.blob.core.windows.net). This blob storage will hold all Threat Detection audit logs. Required if `State` is `Enabled`.
 
 `UseServerDefault` - (Optional) Should the default server policy be used? Defaults to `Disabled`.
+
+### Import Properties
+
+`StorageUri` - (Required) Specifies the blob URI of the .bacpac file.
+
+`StorageKey` - (Required) Specifies the access key for the storage account.
+
+`StorageKeyType` - (Required) Specifies the type of access key for the storage account. Valid values are `StorageAccessKey` or `SharedAccessKey`.
+
+`AdministratorLogin` - (Required) Specifies the name of the SQL administrator.
+
+`AdministratorLoginPassword` - (Required) Specifies the password of the SQL administrator.
+
+`AuthenticationType` - (Required) Specifies the type of authentication used to access the server. Valid values are `SQL` or `ADPassword`.
+
+`OperationMode` - (Optional) Specifies the type of import operation being performed. The only allowable value is `Import`.
 
 
 ## Return Values

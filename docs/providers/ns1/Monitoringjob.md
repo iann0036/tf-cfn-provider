@@ -34,6 +34,8 @@ Provides a NS1 Monitoring Job resource. This can be used to create, modify, and 
 
 `Rules` - (Optional) A list of rules for determining failure conditions. Job Rules are documented below.
 
+### Rules Properties
+
 `Key` - (Required) The output key.
 
 `Comparison` - (Required) The comparison to perform on the the output.

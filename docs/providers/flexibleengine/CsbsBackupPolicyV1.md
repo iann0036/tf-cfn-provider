@@ -4,13 +4,13 @@ Provides an FlexibleEngine Backup Policy of Resources.
 
 ## Properties
 
-`Name` - (Required) Specifies backup object name.
-
-`Description` - (Optional) Specifies Scheduling period description.The value consists of 0 to 255 characters and must not contain a greater-than sign (>) or less-than sign (<).
-
 `ProviderId` - (Required) Specifies backup provider ID. Default value is **fc4d5750-22e7-4798-8a46-f48f62c4c1da**.
 
 `Common` - (Optional) General backup policy parameters, which are blank by default.
+
+### ScheduledOperation Properties
+
+`Description` - (Optional) Specifies Scheduling period description.The value consists of 0 to 255 characters and must not contain a greater-than sign (>) or less-than sign (<).
 
 `Enabled` - (Optional) Specifies whether the scheduling period is enabled. Default value is **true**.
 
@@ -23,6 +23,10 @@ Provides an FlexibleEngine Backup Policy of Resources.
 `TriggerPattern` - (Required) Specifies Scheduling policy of the scheduler.
 
 `OperationType` - (Required) Specifies Operation type, which can be backup.
+
+### Resource Properties
+
+`Name` - (Required) Specifies backup object name.
 
 `Id` - (Required) Specifies the ID of the object to be backed up.
 

@@ -73,7 +73,9 @@ Manages a V2 Image resource within OpenStack Glance.
 
 `Tags` - See Properties above.
 
-`UpdateAt` - The date the image was last updated.
+`UpdatedAt` - The date the image was last updated.
+
+`UpdateAt` - (**Deprecated** - use `updated_at` instead).
 
 `Visibility` - See Properties above.
 

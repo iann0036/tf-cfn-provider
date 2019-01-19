@@ -28,6 +28,8 @@ Manages a Automation Schedule.
 
 `MonthlyOccurrence` - (Optional) List of occurrences of days within a month. Only valid when frequency is `Month`. The `MonthlyOccurrence` block supports fields documented below.
 
+### MonthlyOccurrence Properties
+
 `Day` - (Required) Day of the occurrence. Must be one of `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, `Saturday`, `Sunday`.
 
 `Occurrence` - (Required) Occurrence of the week within the month. Must be between `1` and `5`. `-1` for last week within the month.

@@ -14,6 +14,8 @@ An [escalation policy](https://v2.developer.pagerduty.com/v2/page/api-reference#
 
 `Rule` - (Required) An Escalation rule block. Escalation rules documented below.
 
+### Rule Properties
+
 `EscalationDelayInMinutes` - (Required) The number of minutes before an unacknowledged incident escalates away from this rule. * `Targets` - (Required) A target block. Target blocks documented below.
 
 `Targets` - (Required) A target block. Target blocks documented below.

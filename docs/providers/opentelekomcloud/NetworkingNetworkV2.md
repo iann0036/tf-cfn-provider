@@ -18,6 +18,8 @@ Manages a V2 Neutron network resource within OpenTelekomCloud.
 
 `ValueSpecs` - (Optional) Map of additional options.
 
+### Segments Properties
+
 `PhysicalNetwork` - The phisical network where this network is implemented.
 
 `SegmentationId` - An isolated segment on the physical network.

@@ -30,6 +30,8 @@ Manages a V1 load balancer vip resource within OpenStack.
 
 `AdminStateUp` - (Optional) The administrative state of the vip. Acceptable values are "true" and "false". Changing this value updates the state of the existing vip.
 
+### Persistence Properties
+
 `Type` - (Required) The type of persistence mode. Valid values are "SOURCE_IP", "HTTP_COOKIE", or "APP_COOKIE".
 
 `CookieName` - (Optional) The name of the cookie if persistence mode is set appropriately.

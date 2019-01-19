@@ -4,8 +4,6 @@ Manages a virtual machine.
 
 ## Properties
 
-`Name` - (Required) Specifies the name of the data disk.
-
 `ResourceGroupName` - (Required) The name of the resource group in which to create the virtual machine.
 
 `Location` - (Required) Specifies the supported Azure Stack Region where the resource exists. Changing this forces a new resource to be created.
@@ -44,41 +42,9 @@ Manages a virtual machine.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
-`Publisher` - (Required, when not using image resource) Specifies the publisher of the image used to create the virtual machine. Changing this forces a new resource to be created.
-
 `Product` - (Required) Specifies the product of the image from the marketplace.
 
-`Id` - (Optional) Specifies the ID of the (custom) image to use to create the virtual machine, for example:.
-
-`Offer` - (Required, when not using image resource) Specifies the offer of the image used to create the virtual machine. Changing this forces a new resource to be created.
-
-`Sku` - (Required, when not using image resource) Specifies the SKU of the image used to create the virtual machine. Changing this forces a new resource to be created.
-
-`Version` - (Optional) Specifies the version of the image used to create the virtual machine. Changing this forces a new resource to be created.
-
-`VhdUri` - (Optional) Specifies the uri of the location in storage where the vhd for the virtual machine should be placed.
-
-`CreateOption` - (Required) Specifies how the data disk should be created. Possible values are `Attach`, `FromImage` and `Empty`.
-
-`Caching` - (Optional) Specifies the caching requirements.
-
-`ImageUri` - (Optional) Specifies the image_uri in the form publisherName:offer:skus:version. `ImageUri` can also specify the [VHD uri](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-cli-deploy-templates/#create-a-custom-vm-image) of a custom VM image to clone. When cloning a custom disk image the `OsType` documented below becomes required.
-
-`OsType` - (Optional) Specifies the operating system Type, valid values are windows, linux.
-
-`DiskSizeGb` - (Required) Specifies the size of the data disk in gigabytes.
-
-`Lun` - (Required) Specifies the logical unit number of the data disk.
-
-`ComputerName` - (Required) Specifies the name of the virtual machine.
-
-`AdminUsername` - (Required) Specifies the name of the administrator account.
-
-`AdminPassword` - (Required for Windows, Optional for Linux) Specifies the password of the administrator account.
-
-`CustomData` - (Optional) Specifies custom data to supply to the machine. On linux-based systems, this can be used as a cloud-init script. On other systems, this will be copied as a file on disk. Internally, Terraform will base64 encode this value before sending it to the API. The maximum length of the binary array is 65535 bytes.
-
-`Type` - (Required) Specifies the identity type of the virtual machine. The only allowable value is `SystemAssigned`. To enable Managed Service Identity the virtual machine extension "ManagedIdentityExtensionForWindows" or "ManagedIdentityExtensionForLinux" must also be added to the virtual machine. The Principal ID can be retrieved after the virtual machine has been created, e.g.
+### OsProfileWindowsConfig Properties
 
 `ProvisionVmAgent` - (Optional) This value defaults to false.
 
@@ -88,9 +54,63 @@ Manages a virtual machine.
 
 `AdditionalUnattendConfig` - (Optional) An Additional Unattended Config block as documented below.
 
-`Protocol` - (Required) Specifies the protocol of listener.
+### StorageDataDisk Properties
+
+`Name` - (Required) Specifies the name of the data disk.
+
+`VhdUri` - (Optional) Specifies the uri of the location in storage where the vhd for the virtual machine should be placed.
+
+`CreateOption` - (Required) Specifies how the data disk should be created. Possible values are `Attach`, `FromImage` and `Empty`.
+
+`Caching` - (Optional) Specifies the caching requirements.
+
+`DiskSizeGb` - (Required) Specifies the size of the data disk in gigabytes.
+
+`Lun` - (Required) Specifies the logical unit number of the data disk.
+
+### OsProfile Properties
+
+`ComputerName` - (Required) Specifies the name of the virtual machine.
+
+`AdminUsername` - (Required) Specifies the name of the administrator account.
+
+`AdminPassword` - (Required for Windows, Optional for Linux) Specifies the password of the administrator account.
+
+`CustomData` - (Optional) Specifies custom data to supply to the machine. On linux-based systems, this can be used as a cloud-init script. On other systems, this will be copied as a file on disk. Internally, Terraform will base64 encode this value before sending it to the API. The maximum length of the binary array is 65535 bytes.
+
+### VaultCertificates Properties
 
 `CertificateUrl` - (Required) Specifies the URI of the key vault secrets in the format of `https://<vaultEndpoint>/secrets/<secretName>/<secretVersion>`. Stored secret is the Base64 encoding of a JSON Object that which is encoded in UTF-8 of which the contents need to be.
+
+`CertificateStore` - (Required, on windows machines) Specifies the certificate store on the Virtual Machine where the certificate should be added to.
+
+### Winrm Properties
+
+`Protocol` - (Required) Specifies the protocol of listener.
+
+### OsProfileLinuxConfig Properties
+
+`DisablePasswordAuthentication` - (Required) Specifies whether password authentication should be disabled. If set to `false`, an `AdminPassword` must be specified.
+
+`SshKeys` - (Optional) Specifies a collection of `path` and `key_data` to be placed on the virtual machine.
+
+### StorageOsDisk Properties
+
+`ImageUri` - (Optional) Specifies the image_uri in the form publisherName:offer:skus:version. `ImageUri` can also specify the [VHD uri](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-cli-deploy-templates/#create-a-custom-vm-image) of a custom VM image to clone. When cloning a custom disk image the `OsType` documented below becomes required.
+
+`OsType` - (Optional) Specifies the operating system Type, valid values are windows, linux.
+
+### OsProfileSecrets Properties
+
+`SourceVaultId` - (Required) Specifies the key vault to use.
+
+`VaultCertificates` - (Required) A collection of Vault Certificates as documented below.
+
+### Identity Properties
+
+`Type` - (Required) Specifies the identity type of the virtual machine. The only allowable value is `SystemAssigned`. To enable Managed Service Identity the virtual machine extension "ManagedIdentityExtensionForWindows" or "ManagedIdentityExtensionForLinux" must also be added to the virtual machine. The Principal ID can be retrieved after the virtual machine has been created, e.g.
+
+### AdditionalUnattendConfig Properties
 
 `Pass` - (Required) Specifies the name of the pass that the content applies to. The only allowable value is `oobeSystem`.
 
@@ -100,15 +120,17 @@ Manages a virtual machine.
 
 `Content` - (Optional) Specifies the base-64 encoded XML formatted content that is added to the unattend.xml file for the specified path and component.
 
-`DisablePasswordAuthentication` - (Required) Specifies whether password authentication should be disabled. If set to `false`, an `AdminPassword` must be specified.
+### StorageImageReference Properties
 
-`SshKeys` - (Optional) Specifies a collection of `path` and `key_data` to be placed on the virtual machine.
+`Publisher` - (Required, when not using image resource) Specifies the publisher of the image used to create the virtual machine. Changing this forces a new resource to be created.
 
-`SourceVaultId` - (Required) Specifies the key vault to use.
+`Id` - (Optional) Specifies the ID of the (custom) image to use to create the virtual machine, for example:.
 
-`VaultCertificates` - (Required) A collection of Vault Certificates as documented below.
+`Offer` - (Required, when not using image resource) Specifies the offer of the image used to create the virtual machine. Changing this forces a new resource to be created.
 
-`CertificateStore` - (Required, on windows machines) Specifies the certificate store on the Virtual Machine where the certificate should be added to.
+`Sku` - (Required, when not using image resource) Specifies the SKU of the image used to create the virtual machine. Changing this forces a new resource to be created.
+
+`Version` - (Optional) Specifies the version of the image used to create the virtual machine. Changing this forces a new resource to be created.
 
 
 ## Return Values

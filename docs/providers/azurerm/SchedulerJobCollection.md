@@ -20,6 +20,8 @@ Manages a Scheduler Job Collection.
 
 `Quota` - (Optional) Configures the Job collection quotas as documented in the `Quota` block below.
 
+### Quota Properties
+
 `MaxJobCount` - (Optional) Sets the maximum number of jobs in the collection.
 
 `MaxRecurrenceFrequency` - (Required) The maximum frequency of recurrence. Possible values include: `Minute`, `Hour`, `Day`, `Week`, `Month`.

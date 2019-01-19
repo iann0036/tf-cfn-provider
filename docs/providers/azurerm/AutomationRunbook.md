@@ -26,6 +26,8 @@ Manages a Automation Runbook.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### PublishContentLink Properties
+
 `Uri` - (Required) The uri of the runbook content.
 
 

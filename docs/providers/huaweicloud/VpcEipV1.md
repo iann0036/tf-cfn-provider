@@ -10,11 +10,15 @@ Manages a V1 EIP resource within Huawei Cloud VPC.
 
 `Bandwidth` - (Required) The bandwidth object.
 
+### Publicip Properties
+
 `Type` - (Required) The value must be a type supported by the system. Only `5_bgp` supported now. Changing this creates a new eip.
 
 `IpAddress` - (Optional) The value must be a valid IP address in the available IP address segment. Changing this creates a new eip.
 
 `PortId` - (Optional) The port id which this eip will associate with. If the value is "" or this not specified, the eip will be in unbind state.
+
+### Bandwidth Properties
 
 `Name` - (Required) The bandwidth name, which is a string of 1 to 64 characters that contain letters, digits, underscores (_), and hyphens (-).
 

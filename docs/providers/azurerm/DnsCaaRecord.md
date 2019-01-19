@@ -16,6 +16,8 @@ Enables you to manage DNS CAA Records within Azure DNS.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### Record Properties
+
 `Flags` - (Required) Extensible CAA flags, currently only 1 is implemented to set the issuer critical flag.
 
 `Tag` - (Required) A property tag, options are issue, issuewild and iodef.

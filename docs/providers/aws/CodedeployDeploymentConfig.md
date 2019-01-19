@@ -12,17 +12,23 @@ Provides a CodeDeploy deployment config for an application
 
 `TrafficRoutingConfig` - (Optional) A traffic_routing_config block. Traffic Routing Config is documented below.
 
-`Type` - (Optional) Type of traffic routing config. One of `TimeBasedCanary`, `TimeBasedLinear`, `AllAtOnce`.
+### TrafficRoutingConfig Properties
 
-`Value` - (Required) The value when the type is `FLEET_PERCENT` represents the minimum number of healthy instances as a percentage of the total number of instances in the deployment. If you specify FLEET_PERCENT, at the start of the deployment, AWS CodeDeploy converts the percentage to the equivalent number of instance and rounds up fractional instances. When the type is `HOST_COUNT`, the value represents the minimum number of healthy instances as an absolute value.
+`Type` - (Optional) Type of traffic routing config. One of `TimeBasedCanary`, `TimeBasedLinear`, `AllAtOnce`.
 
 `TimeBasedCanary` - (Optional) The time based canary configuration information. If `Type` is `TimeBasedLinear`, use `TimeBasedLinear` instead.
 
 `TimeBasedLinear` - (Optional) The time based linear configuration information. If `Type` is `TimeBasedCanary`, use `TimeBasedCanary` instead.
 
+### TimeBasedLinear Properties
+
 `Interval` - (Optional) The number of minutes between each incremental traffic shift of a `TimeBasedLinear` deployment.
 
 `Percentage` - (Optional) The percentage of traffic that is shifted at the start of each increment of a `TimeBasedLinear` deployment.
+
+### MinimumHealthyHosts Properties
+
+`Value` - (Required) The value when the type is `FLEET_PERCENT` represents the minimum number of healthy instances as a percentage of the total number of instances in the deployment. If you specify FLEET_PERCENT, at the start of the deployment, AWS CodeDeploy converts the percentage to the equivalent number of instance and rounds up fractional instances. When the type is `HOST_COUNT`, the value represents the minimum number of healthy instances as an absolute value.
 
 
 ## Return Values

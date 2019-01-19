@@ -18,6 +18,8 @@ Use this resource to create, update or destroy RightScale [server arrays](http:/
 
 `DatacenterPolicy` - (Required) This is an array of datacenter policies. Each one must contain:.
 
+### DatacenterPolicy Properties
+
 `DatacenterHref` - (Required) The href of the server_array's datacenter / zone.
 
 `Max` - (Required) Maximum numbers of servers that can be allocated in this datacenter (0 for unlimited).

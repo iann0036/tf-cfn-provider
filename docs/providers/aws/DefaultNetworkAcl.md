@@ -37,6 +37,8 @@ For more information about Network ACLs, see the AWS Documentation on
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### Egress Properties
+
 `FromPort` - (Required) The from port to match.
 
 `ToPort` - (Required) The to port to match.

@@ -23,6 +23,8 @@ a conflict of rule settings and will overwrite rules.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### Egress Properties
+
 `FromPort` - (Required) The from port to match.
 
 `ToPort` - (Required) The to port to match.

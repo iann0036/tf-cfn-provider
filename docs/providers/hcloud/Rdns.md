@@ -4,6 +4,14 @@ Provides a Hetzner Cloud Reverse DNS Entry to create, modify and reset reverse d
 
 ## Properties
 
+`DnsPtr` - (Required, string) The DNS address the `IpAddress` should resolve to. - `IpAddress` - (Required, string) The IP address that should point to `DnsPtr`. - `ServerId` - (Required, int) The server the `IpAddress` belongs to. - `FloatingIpId` - (Required, int) The Floating IP the `IpAddress` belongs to.
+
+`IpAddress` - (Required, string) The IP address that should point to `DnsPtr`. - `ServerId` - (Required, int) The server the `IpAddress` belongs to. - `FloatingIpId` - (Required, int) The Floating IP the `IpAddress` belongs to.
+
+`ServerId` - (Required, int) The server the `IpAddress` belongs to. - `FloatingIpId` - (Required, int) The Floating IP the `IpAddress` belongs to.
+
+`FloatingIpId` - (Required, int) The Floating IP the `IpAddress` belongs to.
+
 
 ## See Also
 

@@ -70,33 +70,15 @@ and
 
 `Subnetwork` - (Optional) The name or self_link of the Google Compute Engine subnetwork in which the cluster's instances are launched.
 
-`HorizontalPodAutoscaling` - (Optional) The status of the Horizontal Pod Autoscaling addon, which increases or decreases the number of replica pods a replication controller has based on the resource usage of the existing pods. It ensures that a Heapster pod is running in the cluster, which is also used by the Cloud Monitoring service. It is enabled by default; set `disabled = true` to disable.
+### MasterAuth Properties
 
-`HttpLoadBalancing` - (Optional) The status of the HTTP (L7) load balancing controller addon, which makes it easy to set up HTTP load balancers for services in a cluster. It is enabled by default; set `disabled = true` to disable.
+`Password` - (Optional) The password to use for HTTP basic authentication when accessing the Kubernetes master endpoint.
 
-`KubernetesDashboard` - (Optional) The status of the Kubernetes Dashboard add-on, which controls whether the Kubernetes Dashboard is enabled for this cluster. It is enabled by default; set `disabled = true` to disable.
+`Username` - (Optional) The username to use for HTTP basic authentication when accessing the Kubernetes master endpoint. If not present basic auth will be disabled.
 
-`NetworkPolicyConfig` - (Optional) Whether we should enable the network policy addon for the master.  This must be enabled in order to enable network policy for the nodes. It can only be disabled if the nodes already do not have network policies enabled. Set `disabled = true` to disable.
+`ClientCertificateConfig` - (Optional) Whether client certificate authorization is enabled for this cluster.  For example:.
 
-`IstioConfig` - (Optional, [Beta](https://terraform.io/docs/providers/google/provider_versions.html)). Structure is documented below.
-
-`CloudrunConfig` - (Optional, [Beta](https://terraform.io/docs/providers/google/provider_versions.html)). The status of the CloudRun addon. It requires `IstioConfig` enabled. It is disabled by default. Set `disabled = false` to enable. This addon can only be enabled at cluster creation time.
-
-`Disabled` - (Optional) The status of the Istio addon, which makes it easy to set up Istio for services in a cluster. It is disabled by default. Set `disabled = false` to enable.
-
-`Auth` - (Optional) The authentication type between services in Istio. Available options include `AUTH_MUTUAL_TLS`.
-
-`Enabled` - (Optional) Whether network policy is enabled on the cluster. Defaults to false.
-
-`ResourceLimits` - (Optional) A list of limits on the autoprovisioning. See [the docs](https://cloud.google.com/kubernetes-engine/docs/how-to/node-auto-provisioning) for an explanation of what options are available.  If enabling autoprovisioning, make sure to set at least `cpu` and `memory`.  Structure is documented below.
-
-`ResourceType` - (Required) See [the docs](https://cloud.google.com/kubernetes-engine/docs/how-to/node-auto-provisioning) for a list of permitted types - `cpu`, `memory`, and others.
-
-`Minimum` - (Optional) The minimum value for the resource type specified.
-
-`Maximum` - (Optional) The maximum value for the resource type specified.
-
-`DailyMaintenanceWindow` - (Required) Time window specified for daily maintenance operations. Specify `start_time` in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) format "HH:MM”, where HH : \[00-23\] and MM : \[00-59\] GMT. For example:.
+### IpAllocationPolicy Properties
 
 `ClusterSecondaryRangeName` - (Optional) The name of the secondary range to be used as for the cluster CIDR block. The secondary range will be used for pod IP addresses. This must be an existing secondary range associated with the cluster subnetwork.
 
@@ -110,19 +92,17 @@ and
 
 `SubnetworkName` - (Optional) A custom subnetwork name to be used if create_subnetwork is true. If this field is empty, then an automatic name will be chosen for the new subnetwork.
 
-`Password` - (Optional) The password to use for HTTP basic authentication when accessing the Kubernetes master endpoint.
+### NetworkPolicy Properties
 
-`Username` - (Optional) The username to use for HTTP basic authentication when accessing the Kubernetes master endpoint. If not present basic auth will be disabled.
-
-`ClientCertificateConfig` - (Optional) Whether client certificate authorization is enabled for this cluster.  For example:.
-
-`CidrBlocks` - (Optional) Defines up to 20 external networks that can access Kubernetes master through HTTPS.
-
-`CidrBlock` - (Optional) External network that can access Kubernetes master through HTTPS. Must be specified in CIDR notation.
-
-`DisplayName` - (Optional) Field for users to identify CIDR blocks.
+`Enabled` - (Optional) Whether network policy is enabled on the cluster. Defaults to false.
 
 `Provider` - (Optional) The selected network policy provider. Defaults to PROVIDER_UNSPECIFIED.
+
+### MaintenancePolicy Properties
+
+`DailyMaintenanceWindow` - (Required) Time window specified for daily maintenance operations. Specify `start_time` in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) format "HH:MM”, where HH : \[00-23\] and MM : \[00-59\] GMT. For example:.
+
+### NodeConfig Properties
 
 `DiskSizeGb` - (Optional) Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB. Defaults to 100GB.
 
@@ -154,9 +134,45 @@ and
 
 `WorkloadMetadataConfig` - (Optional, [Beta](https://terraform.io/docs/providers/google/provider_versions.html)) Metadata configuration to expose to workloads on the node pool. Structure is documented below.
 
+### AddonsConfig Properties
+
+`HorizontalPodAutoscaling` - (Optional) The status of the Horizontal Pod Autoscaling addon, which increases or decreases the number of replica pods a replication controller has based on the resource usage of the existing pods. It ensures that a Heapster pod is running in the cluster, which is also used by the Cloud Monitoring service. It is enabled by default; set `disabled = true` to disable.
+
+`HttpLoadBalancing` - (Optional) The status of the HTTP (L7) load balancing controller addon, which makes it easy to set up HTTP load balancers for services in a cluster. It is enabled by default; set `disabled = true` to disable.
+
+`KubernetesDashboard` - (Optional) The status of the Kubernetes Dashboard add-on, which controls whether the Kubernetes Dashboard is enabled for this cluster. It is enabled by default; set `disabled = true` to disable.
+
+`NetworkPolicyConfig` - (Optional) Whether we should enable the network policy addon for the master.  This must be enabled in order to enable network policy for the nodes. It can only be disabled if the nodes already do not have network policies enabled. Set `disabled = true` to disable.
+
+`IstioConfig` - (Optional, [Beta](https://terraform.io/docs/providers/google/provider_versions.html)). Structure is documented below.
+
+`CloudrunConfig` - (Optional, [Beta](https://terraform.io/docs/providers/google/provider_versions.html)). The status of the CloudRun addon. It requires `IstioConfig` enabled. It is disabled by default. Set `disabled = false` to enable. This addon can only be enabled at cluster creation time.
+
+`Disabled` - (Optional) The status of the Istio addon, which makes it easy to set up Istio for services in a cluster. It is disabled by default. Set `disabled = false` to enable.
+
+`Auth` - (Optional) The authentication type between services in Istio. Available options include `AUTH_MUTUAL_TLS`.
+
+`ResourceLimits` - (Optional) A list of limits on the autoprovisioning. See [the docs](https://cloud.google.com/kubernetes-engine/docs/how-to/node-auto-provisioning) for an explanation of what options are available.  If enabling autoprovisioning, make sure to set at least `cpu` and `memory`.  Structure is documented below.
+
+`ResourceType` - (Required) See [the docs](https://cloud.google.com/kubernetes-engine/docs/how-to/node-auto-provisioning) for a list of permitted types - `cpu`, `memory`, and others.
+
+`Minimum` - (Optional) The minimum value for the resource type specified.
+
+`Maximum` - (Optional) The maximum value for the resource type specified.
+
+### PrivateClusterConfig Properties
+
 `PrivateEndpoint` - The internal IP address of this cluster's master endpoint.
 
 `PublicEndpoint` - The external IP address of this cluster's master endpoint.
+
+### MasterAuthorizedNetworksConfig Properties
+
+`CidrBlocks` - (Optional) Defines up to 20 external networks that can access Kubernetes master through HTTPS.
+
+`CidrBlock` - (Optional) External network that can access Kubernetes master through HTTPS. Must be specified in CIDR notation.
+
+`DisplayName` - (Optional) Field for users to identify CIDR blocks.
 
 
 ## Return Values

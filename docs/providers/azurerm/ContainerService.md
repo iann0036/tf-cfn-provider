@@ -9,8 +9,6 @@ Manages an Azure Container Service Instance
 
 ## Properties
 
-`Name` - (Required) Unique name of the agent pool profile in the context of the subscription and resource group.
-
 `Location` - (Required) The location where the Container Service instance should be created. Changing this forces a new resource to be created.
 
 `ResourceGroupName` - (Required) Specifies the resource group where the resource exists. Changing this forces a new resource to be created.
@@ -29,23 +27,35 @@ Manages an Azure Container Service Instance
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### DiagnosticsProfile Properties
+
+`Enabled` - (Required) Should VM Diagnostics be enabled for the Container Service VM's.
+
+### SshKey Properties
+
+`KeyData` - (Required) The Public SSH Key used to access the cluster.
+
+### AgentPoolProfile Properties
+
+`Name` - (Required) Unique name of the agent pool profile in the context of the subscription and resource group.
+
 `Count` - (Required) Number of agents (VMs) to host docker containers. Allowed values must be in the range of 1 to 100 (inclusive). The default value is 1.
 
 `DnsPrefix` - (Required) The DNS Prefix given to Agents in this Agent Pool.
 
-`AdminUsername` - (Required) The Admin Username for the Cluster.
-
-`SshKey` - (Required) An SSH Key block as documented below.
-
-`KeyData` - (Required) The Public SSH Key used to access the cluster.
-
 `VmSize` - (Required) The VM Size of each of the Agent Pool VM's (e.g. Standard_F1 / Standard_D2v2).
+
+### ServicePrincipal Properties
 
 `ClientId` - (Required) The ID for the Service Principal.
 
 `ClientSecret` - (Required) The secret password associated with the service principal.
 
-`Enabled` - (Required) Should VM Diagnostics be enabled for the Container Service VM's.
+### LinuxProfile Properties
+
+`AdminUsername` - (Required) The Admin Username for the Cluster.
+
+`SshKey` - (Required) An SSH Key block as documented below.
 
 
 ## Return Values

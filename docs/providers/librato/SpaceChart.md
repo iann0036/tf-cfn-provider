@@ -7,19 +7,21 @@ create and manage charts in Librato Spaces.
 
 `SpaceId` - (Required) The ID of the space this chart should be in.
 
-`Name` - (Optional) A display name to use for the stream when generating the tooltip.
-
 `Type` - (Optional) Indicates the type of chart. Must be one of line or stacked (default to line).
-
-`Min` - (Optional) Theoretical minimum Y-axis value.
-
-`Max` - (Optional) Theoretical maximum Y-axis value.
 
 `Label` - (Optional) The Y-axis label.
 
 `RelatedSpace` - (Optional) The ID of another space to which this chart is related.
 
 `Stream` - (Optional) Nested block describing a metric to use for data in the chart. The structure of this block is described below.
+
+### Stream Properties
+
+`Name` - (Optional) A display name to use for the stream when generating the tooltip.
+
+`Min` - (Optional) Theoretical minimum Y-axis value.
+
+`Max` - (Optional) Theoretical maximum Y-axis value.
 
 `Metric` - (Required) The name of the metric. May not be specified if `Composite` is specified.
 

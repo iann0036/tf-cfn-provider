@@ -20,6 +20,8 @@ whole cluster!
 
 `ClusterConfig` - (Optional) Allows you to configure various aspects of the cluster. Structure defined below.
 
+### ClusterConfig Properties
+
 `StagingBucket` - (Optional) The Cloud Storage staging bucket used to stage files, such as Hadoop jars, between client machines and the cluster. Note: If you don't explicitly specify a `StagingBucket` then GCP will auto create / assign one for you. However, you are not guaranteed an auto generated bucket which is solely dedicated to your cluster; it may be shared with other clusters in the same region/zone also choosing to use the auto generation option.
 
 `Zone` - (Optional, Computed) The GCP zone where your data is stored and used (i.e. where the master and the worker nodes will be created in). If `Region` is set to 'global' (default) then `Zone` is mandatory, otherwise GCP is able to make use of [Auto Zone Placement](https://cloud.google.com/dataproc/docs/concepts/auto-zone) to determine this automatically for you. Note: This setting additionally determines and restricts which computing resources are available for use with other configs such as `cluster_config.master_config.machine_type` and `cluster_config.worker_config.machine_type`.
@@ -56,11 +58,15 @@ whole cluster!
 
 `OverrideProperties` - (Optional) A list of override and additional properties (key/value pairs) used to modify various aspects of the common configuration files used when creating a cluster. For a list of valid properties please see [Cluster properties](https://cloud.google.com/dataproc/docs/concepts/cluster-properties).
 
+### EncryptionConfig Properties
+
+`KmsKeyName` - (Required) The Cloud KMS key name to use for PD disk encryption for all instances in the cluster.
+
+### InitializationAction Properties
+
 `Script` - (Required) The script to be executed during initialization of the cluster. The script must be a GCS file with a gs:// prefix.
 
 `TimeoutSec` - (Optional, Computed) The maximum duration (in seconds) which `Script` is allowed to take to execute its action. GCP will default to a predetermined computed value if not set (currently 300).
-
-`KmsKeyName` - (Required) The Cloud KMS key name to use for PD disk encryption for all instances in the cluster.
 
 
 ## Return Values

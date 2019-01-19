@@ -20,6 +20,8 @@ Associates an SSM Document to an instance or EC2 tag.
 
 `Targets` - (Optional) A block containing the targets of the SSM association. Targets are documented below. AWS currently supports a maximum of 5 targets.
 
+### OutputLocation Properties
+
 `S3BucketName` - (Required) The S3 bucket name.
 
 `S3KeyPrefix` - (Optional) The S3 bucket prefix. Results stored in the root if not configured.

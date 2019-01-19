@@ -29,15 +29,13 @@ it's better to use `Terraform::AWS::AmiLaunchPermission` instead.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
-`ImageLocation` - (Required) Path to an S3 object containing an image manifest, e.g. created by the `ec2-upload-bundle` command in the EC2 command line tools.
-
-`KernelId` - (Required) The id of the kernel image (AKI) that will be used as the paravirtual kernel in created instances.
-
-`RamdiskId` - (Optional) The id of an initrd image (ARI) that will be used when booting the created instances.
-
-`SriovNetSupport` - (Optional) When set to "simple" (the default), enables enhanced networking for created instances. No other value is supported at this time.
+### EphemeralBlockDevice Properties
 
 `DeviceName` - (Required) The path at which the device is exposed to created instances.
+
+`VirtualName` - (Required) A name for the ephemeral device, of the form "ephemeralN" where *N* is a volume number starting from zero.
+
+### EbsBlockDevice Properties
 
 `DeleteOnTermination` - (Optional) Boolean controlling whether the EBS volumes created to support each created instance will be deleted once that instance is terminated.
 
@@ -53,7 +51,15 @@ it's better to use `Terraform::AWS::AmiLaunchPermission` instead.
 
 `KmsKeyId` - (Optional) The full ARN of the AWS Key Management Service (AWS KMS) CMK to use when encrypting the snapshots of an image during a copy operation. This parameter is only required if you want to use a non-default CMK; if this parameter is not specified, the default CMK for EBS is used.
 
-`VirtualName` - (Required) A name for the ephemeral device, of the form "ephemeralN" where *N* is a volume number starting from zero.
+### VirtualizationType Properties
+
+`ImageLocation` - (Required) Path to an S3 object containing an image manifest, e.g. created by the `ec2-upload-bundle` command in the EC2 command line tools.
+
+`KernelId` - (Required) The id of the kernel image (AKI) that will be used as the paravirtual kernel in created instances.
+
+`RamdiskId` - (Optional) The id of an initrd image (ARI) that will be used when booting the created instances.
+
+`SriovNetSupport` - (Optional) When set to "simple" (the default), enables enhanced networking for created instances. No other value is supported at this time.
 
 
 ## Return Values

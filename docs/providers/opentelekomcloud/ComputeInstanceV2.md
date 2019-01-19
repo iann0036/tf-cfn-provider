@@ -6,8 +6,6 @@ Manages a V2 VM instance resource within OpenTelekomCloud.
 
 `Region` - (Optional) The region in which to create the server instance. If omitted, the `Region` argument of the provider is used. Changing this creates a new server.
 
-`Name` - (Required unless `Uuid` or `Port` is provided) The human-readable name of the network. Changing this creates a new server.
-
 `ImageId` - (Optional; Required if `ImageName` is empty and not booting from a volume. Do not specify if booting from a volume.) The image ID of the desired image for the server. Changing this creates a new server.
 
 `ImageName` - (Optional; Required if `ImageId` is empty and not booting from a volume. Do not specify if booting from a volume.) The name of the desired image for the server. Changing this creates a new server.
@@ -48,27 +46,13 @@ Manages a V2 VM instance resource within OpenTelekomCloud.
 
 `AutoRecovery` - (Optional) Configures or deletes automatic recovery of an instance.
 
-`Uuid` - (Required unless `SourceType` is set to `"blank"` ) The UUID of the image, volume, or snapshot. Changing this creates a new server.
+### Personality Properties
 
-`Port` - (Required unless `Uuid` or `Name` is provided) The port UUID of a network to attach to the server. Changing this creates a new server.
+`File` - (Required) The absolute path of the destination file.
 
-`FixedIpV4` - (Optional) Specifies a fixed IPv4 address to be used on this network. Changing this creates a new server.
+`Contents` - (Required) The contents of the file. Limited to 255 bytes.
 
-`FixedIpV6` - (Optional) Specifies a fixed IPv6 address to be used on this network. Changing this creates a new server.
-
-`AccessNetwork` - (Optional) Specifies if this network should be used for provisioning access. Accepts true or false. Defaults to false.
-
-`SourceType` - (Required) The source type of the device. Must be one of "blank", "image", "volume", or "snapshot". Changing this creates a new server.
-
-`VolumeSize` - The size of the volume to create (in gigabytes). Required in the following combinations: source=image and destination=volume, and source=blank and destination=volume. Changing this creates a new server.
-
-`VolumeType` - (Optional) Currently, the value can be `SSD` (ultra-I/O disk type), `SAS` (high I/O disk type), or `SATA` (common I/O disk type) [OTC-API](https://docs.otc.t-systems.com/en-us/api/ecs/en-us_topic_0065817708.html).
-
-`BootIndex` - (Optional) The boot index of the volume. It defaults to 0. Changing this creates a new server.
-
-`DestinationType` - (Optional) The type that gets created. Currently only support "volume". Changing this creates a new server.
-
-`DeleteOnTermination` - (Optional) Delete the volume / block device upon termination of the instance. Defaults to false. Changing this creates a new server.
+### SchedulerHints Properties
 
 `Group` - (Optional) A UUID of a Server Group. The instance will be placed into that group.
 
@@ -86,9 +70,33 @@ Manages a V2 VM instance resource within OpenTelekomCloud.
 
 `DehId` - (Optional) The ID of DeH. This parameter takes effect only when the value of tenancy is dedicated.
 
-`File` - (Required) The absolute path of the destination file.
+### Network Properties
 
-`Contents` - (Required) The contents of the file. Limited to 255 bytes.
+`Name` - (Required unless `Uuid` or `Port` is provided) The human-readable name of the network. Changing this creates a new server.
+
+`Port` - (Required unless `Uuid` or `Name` is provided) The port UUID of a network to attach to the server. Changing this creates a new server.
+
+`FixedIpV4` - (Optional) Specifies a fixed IPv4 address to be used on this network. Changing this creates a new server.
+
+`FixedIpV6` - (Optional) Specifies a fixed IPv6 address to be used on this network. Changing this creates a new server.
+
+`AccessNetwork` - (Optional) Specifies if this network should be used for provisioning access. Accepts true or false. Defaults to false.
+
+### BlockDevice Properties
+
+`Uuid` - (Required unless `SourceType` is set to `"blank"` ) The UUID of the image, volume, or snapshot. Changing this creates a new server.
+
+`SourceType` - (Required) The source type of the device. Must be one of "blank", "image", "volume", or "snapshot". Changing this creates a new server.
+
+`VolumeSize` - The size of the volume to create (in gigabytes). Required in the following combinations: source=image and destination=volume, and source=blank and destination=volume. Changing this creates a new server.
+
+`VolumeType` - (Optional) Currently, the value can be `SSD` (ultra-I/O disk type), `SAS` (high I/O disk type), or `SATA` (common I/O disk type) [OTC-API](https://docs.otc.t-systems.com/en-us/api/ecs/en-us_topic_0065817708.html).
+
+`BootIndex` - (Optional) The boot index of the volume. It defaults to 0. Changing this creates a new server.
+
+`DestinationType` - (Optional) The type that gets created. Currently only support "volume". Changing this creates a new server.
+
+`DeleteOnTermination` - (Optional) Delete the volume / block device upon termination of the instance. Defaults to false. Changing this creates a new server.
 
 
 ## Return Values

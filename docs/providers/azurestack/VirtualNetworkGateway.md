@@ -4,8 +4,6 @@ Manages a Virtual Network Gateway to establish secure, cross-premises connectivi
 
 ## Properties
 
-`Name` - (Optional) A user-defined name of the IP configuration. Defaults to vnetGatewayConfig.
-
 `ResourceGroupName` - (Required) The name of the resource group in which to create the connection Changing the name forces a new resource to be created.
 
 `Location` - (Required) The location/region where the connection is located. Changing this forces a new resource to be created.
@@ -21,6 +19,10 @@ Manages a Virtual Network Gateway to establish secure, cross-premises connectivi
 `IpConfiguration` - (Required) One or two ip_configuration blocks documented below. An active-standby gateway requires exactly one ip_configuration block whereas an active-active gateway requires exactly two ip_configuration blocks.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
+
+### IpConfiguration Properties
+
+`Name` - (Optional) A user-defined name of the IP configuration. Defaults to vnetGatewayConfig.
 
 `PrivateIpAddressAllocation` - (Optional) Defines how the private IP address of the gateways virtual interface is assigned. Valid options are Static or Dynamic. Defaults to Dynamic.
 

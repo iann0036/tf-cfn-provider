@@ -4,6 +4,10 @@ Provides a Hetzner Cloud Floating IP Assignment to assign a Floating IP to a Het
 
 ## Properties
 
+`FloatingIpId` - (Required, int) ID of the Floating IP. - `ServerId` - (Required, int) Server to assign the Floating IP to.
+
+`ServerId` - (Required, int) Server to assign the Floating IP to.
+
 
 ## See Also
 

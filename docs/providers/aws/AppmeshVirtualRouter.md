@@ -10,6 +10,8 @@ Provides an AWS App Mesh virtual router resource.
 
 `Spec` - (Required) The virtual router specification to apply.
 
+### Spec Properties
+
 `ServiceNames` - (Required) The service mesh service names to associate with the virtual router.
 
 

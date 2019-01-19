@@ -10,10 +10,6 @@ Provides a Target Group resource for use with Load Balancer resources.
 
 `NamePrefix` - (Optional, Forces new resource) Creates a unique name beginning with the specified prefix. Conflicts with `Name`. Cannot be longer than 6 characters.
 
-`Port` - (Optional) The port to use to connect with the target. Valid values are either ports 1-65536, or `traffic-port`. Defaults to `traffic-port`.
-
-`Protocol` - (Optional) The protocol to use to connect with the target. Defaults to `HTTP`. Not applicable when `TargetType` is `lambda`.
-
 `VpcId` - (Optional) The identifier of the VPC in which to create the target group. Required when `TargetType` is `instance` or `ip`. Does not apply when `TargetType` is `lambda`.
 
 `DeregistrationDelay` - (Optional) The amount time for Elastic Load Balancing to wait before changing the state of a deregistering target from draining to unused. The range is 0-3600 seconds. The default value is 300 seconds.
@@ -30,11 +26,19 @@ Provides a Target Group resource for use with Load Balancer resources.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### Stickiness Properties
+
 `Type` - (Required) The type of sticky sessions. The only current possible value is `lb_cookie`.
 
 `CookieDuration` - (Optional) The time period, in seconds, during which requests from a client should be routed to the same target. After this time period expires, the load balancer-generated cookie is considered stale. The range is 1 second to 1 week (604800 seconds). The default value is 1 day (86400 seconds).
 
 `Enabled` - (Optional) Boolean to enable / disable `Stickiness`. Default is `true`.
+
+### HealthCheck Properties
+
+`Port` - (Optional) The port to use to connect with the target. Valid values are either ports 1-65536, or `traffic-port`. Defaults to `traffic-port`.
+
+`Protocol` - (Optional) The protocol to use to connect with the target. Defaults to `HTTP`. Not applicable when `TargetType` is `lambda`.
 
 `Interval` - (Optional) The approximate amount of time, in seconds, between health checks of an individual target. Minimum value 5 seconds, Maximum value 300 seconds. Default 30 seconds.
 

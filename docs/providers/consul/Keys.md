@@ -18,6 +18,8 @@ remove errant keys not present in the configuration, consider using the
 
 `Key` - (Required) Specifies a key in Consul to be written. Supported values documented below.
 
+### Key Properties
+
 `Path` - (Required) This is the path in Consul that should be written to.
 
 `Value` - (Required) The value to write to the given path.

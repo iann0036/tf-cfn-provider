@@ -16,6 +16,8 @@ Manages a Notification Hub within a Notification Hub Namespace.
 
 `GcmCredential` - (Optional) A `GcmCredential` block as defined below.
 
+### ApnsCredential Properties
+
 `ApplicationMode` - (Required) The Application Mode which defines which server the APNS Messages should be sent to. Possible values are `Production` and `Sandbox`.
 
 `BundleId` - (Required) The Bundle ID of the iOS/macOS application to send push notifications for, such as `com.hashicorp.example`.
@@ -25,6 +27,8 @@ Manages a Notification Hub within a Notification Hub Namespace.
 `TeamId` - (Required) The ID of the team the Token.
 
 `Token` - (Required) The Push Token associated with the Apple Developer Account. This is the contents of the `key` downloaded from [the Apple Developer Portal](https://developer.apple.com/account/ios/authkey/) between the `-----BEGIN PRIVATE KEY-----` and `-----END PRIVATE KEY-----` blocks.
+
+### GcmCredential Properties
 
 `ApiKey` - (Required) The API Key associated with the Google Cloud Messaging service.
 

@@ -12,6 +12,8 @@ Creates an MX type DNS record set.
 
 `Ttl` - (Optional) The TTL of the record set. Defaults to `3600`.
 
+### Mx Properties
+
 `Preference` - (Required) The preference for the record.
 
 `Exchange` - (Required) The FQDN of the mail exchange, include the trailing dot.

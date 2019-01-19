@@ -16,6 +16,8 @@ Provides an API Gateway API Key.
 
 `StageKey` - (Optional) A list of stage keys associated with the API key - see below.
 
+### StageKey Properties
+
 `RestApiId` - (Required) The ID of the associated REST API.
 
 `StageName` - (Required) The name of the API Gateway stage.

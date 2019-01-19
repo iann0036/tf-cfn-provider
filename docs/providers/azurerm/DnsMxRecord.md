@@ -16,6 +16,8 @@ Enables you to manage DNS MX Records within Azure DNS.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### Record Properties
+
 `Preference` - (Required) String representing the "preference” value of the MX records. Records with lower preference value take priority.
 
 `Exchange` - (Required) The mail server responsible for the domain covered by the MX record.

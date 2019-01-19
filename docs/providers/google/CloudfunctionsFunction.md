@@ -33,11 +33,15 @@ and
 
 `SourceRepository` - (Optional) Represents parameters related to source repository where a function is hosted. Cannot be set alongside `SourceArchiveBucket` or `SourceArchiveObject`. Structure is documented below.
 
+### EventTrigger Properties
+
 `EventType` - (Required) The type of event to observe. For example: `"google.storage.object.finalize"`. See the documentation on [calling Cloud Functions](https://cloud.google.com/functions/docs/calling/) for a full reference. Cloud Storage, Cloud Pub/Sub and Cloud Firestore triggers are supported at this time. Legacy triggers are supported, such as `"providers/cloud.storage/eventTypes/object.change"`, `"providers/cloud.pubsub/eventTypes/topic.publish"` and `"providers/cloud.firestore/eventTypes/document.create"`.
 
 `Resource` - (Required) Required. The name of the resource from which to observe events, for example, `"myBucket"`.
 
 `FailurePolicy` - (Optional) Specifies policy for failed executions. Structure is documented below.
+
+### FailurePolicy Properties
 
 `Retry` - (Required) Whether the function should be retried on failure. Defaults to `false`.
 

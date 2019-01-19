@@ -7,13 +7,9 @@ Manages a virtual machine scale set.
 
 ## Properties
 
-`Name` - (Required) Specifies the name of the image from the marketplace.
-
 `ResourceGroupName` - (Required) The name of the resource group in which to create the virtual machine scale set. Changing this forces a new resource to be created.
 
 `Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-
-`Sku` - (Optional) Specifies the SKU of the image used to create the virtual machines.
 
 `UpgradePolicyMode` - (Required) Specifies the mode of an upgrade to virtual machines in the scale set. Possible values, `Manual` or `Automatic`.
 
@@ -43,11 +39,19 @@ Manages a virtual machine scale set.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
-`Tier` - (Optional) Specifies the tier of virtual machines in a scale set. Possible values, `standard` or `basic`.
-
-`Capacity` - (Required) Specifies the number of virtual machines in the scale set.
+### Extension Properties
 
 `Type` - (Required) The type of extension, available types for a publisher can be found using the Azure CLI.
+
+`TypeHandlerVersion` - (Required) Specifies the version of the extension to use, available versions can be found using the Azure CLI.
+
+`AutoUpgradeMinorVersion` - (Optional) Specifies whether or not to use the latest minor version available.
+
+`Settings` - (Required) The settings passed to the extension, these are specified as a JSON object in a string.
+
+`ProtectedSettings` - (Optional) The protected_settings passed to the extension, like settings, these are specified as a JSON object in a string.
+
+### OsProfile Properties
 
 `ComputerNamePrefix` - (Required) Specifies the computer name prefix for all of the virtual machines in the scale set. Computer name prefixes must be 1 to 9 characters long for windows images and 1 - 58 for linux. Changing this forces a new resource to be created.
 
@@ -57,35 +61,29 @@ Manages a virtual machine scale set.
 
 `CustomData` - (Optional) Specifies custom data to supply to the machine. On linux-based systems, this can be used as a cloud-init script. On other systems, this will be copied as a file on disk. Internally, Terraform will base64 encode this value before sending it to the API. The maximum length of the binary array is 65535 bytes.
 
-`SourceVaultId` - (Required) Specifies the key vault to use.
-
-`VaultCertificates` - (Required, on windows machines) A collection of Vault Certificates as documented below.
+### Winrm Properties
 
 `CertificateUrl` - (Optional) Specifies URL of the certificate with which new Virtual Machines is provisioned.
 
-`CertificateStore` - (Required, on windows machines) Specifies the certificate store on the Virtual Machine where the certificate should be added to.
-
-`ProvisionVmAgent` - (Optional) Indicates whether virtual machine agent should be provisioned on the virtual machines in the scale set.
-
-`EnableAutomaticUpgrades` - (Optional) Indicates whether virtual machines in the scale set are enabled for automatic updates.
-
-`Winrm` - (Optional) A collection of WinRM configuration blocks as documented below.
-
-`AdditionalUnattendConfig` - (Optional) An Additional Unattended Config block as documented below.
-
 `Protocol` - (Required) Specifies the protocol of listener.
 
-`Pass` - (Required) Specifies the name of the pass that the content applies to. The only allowable value is `oobeSystem`.
+### VaultCertificates Properties
 
-`Component` - (Required) Specifies the name of the component to configure with the added content. The only allowable value is `Microsoft-Windows-Shell-Setup`.
+`CertificateStore` - (Required, on windows machines) Specifies the certificate store on the Virtual Machine where the certificate should be added to.
 
-`SettingName` - (Required) Specifies the name of the setting to which the content applies. Possible values are: `FirstLogonCommands` and `AutoLogon`.
-
-`Content` - (Optional) Specifies the base-64 encoded XML formatted content that is added to the unattend.xml file for the specified path and component.
+### OsProfileLinuxConfig Properties
 
 `DisablePasswordAuthentication` - (Required) Specifies whether password authentication should be disabled. Changing this forces a new resource to be created.
 
 `SshKeys` - (Optional) Specifies a collection of `path` and `key_data` to be placed on the virtual machine.
+
+### Sku Properties
+
+`Tier` - (Optional) Specifies the tier of virtual machines in a scale set. Possible values, `standard` or `basic`.
+
+`Capacity` - (Required) Specifies the number of virtual machines in the scale set.
+
+### NetworkProfile Properties
 
 `Primary` - (Required) Indicates whether network interfaces created from the network interface configuration will be the primary NIC of the VM.
 
@@ -94,6 +92,8 @@ Manages a virtual machine scale set.
 `IdleTimeout` - (Required) The idle timeout in minutes. This value must be between 4 and 32.
 
 `DomainNameLabel` - (Required) The domain name label for the dns settings.
+
+### StorageProfileOsDisk Properties
 
 `VhdContainers` - (Optional) Specifies the vhd uri. Cannot be used when `Image` or `ManagedDiskType` is specified.
 
@@ -111,23 +111,49 @@ Manages a virtual machine scale set.
 
 `DiskSizeGb` - (Optional) Specifies the size of the disk in GB. This element is required when creating an empty disk.
 
-`Id` - (Optional) Specifies the ID of the (custom) image to use to create the virtual machine scale set, as in the [example below](#example-of-storage_profile_image_reference-with-id).
+### OsProfileSecrets Properties
+
+`SourceVaultId` - (Required) Specifies the key vault to use.
+
+`VaultCertificates` - (Required, on windows machines) A collection of Vault Certificates as documented below.
+
+### AdditionalUnattendConfig Properties
+
+`Pass` - (Required) Specifies the name of the pass that the content applies to. The only allowable value is `oobeSystem`.
+
+`Component` - (Required) Specifies the name of the component to configure with the added content. The only allowable value is `Microsoft-Windows-Shell-Setup`.
+
+`SettingName` - (Required) Specifies the name of the setting to which the content applies. Possible values are: `FirstLogonCommands` and `AutoLogon`.
+
+`Content` - (Optional) Specifies the base-64 encoded XML formatted content that is added to the unattend.xml file for the specified path and component.
+
+### OsProfileWindowsConfig Properties
+
+`ProvisionVmAgent` - (Optional) Indicates whether virtual machine agent should be provisioned on the virtual machines in the scale set.
+
+`EnableAutomaticUpgrades` - (Optional) Indicates whether virtual machines in the scale set are enabled for automatic updates.
+
+`Winrm` - (Optional) A collection of WinRM configuration blocks as documented below.
+
+`AdditionalUnattendConfig` - (Optional) An Additional Unattended Config block as documented below.
+
+### Plan Properties
+
+`Name` - (Required) Specifies the name of the image from the marketplace.
 
 `Publisher` - (Required) Specifies the publisher of the image.
+
+`Product` - (Required) Specifies the product of the image from the marketplace.
+
+### StorageProfileImageReference Properties
+
+`Sku` - (Optional) Specifies the SKU of the image used to create the virtual machines.
+
+`Id` - (Optional) Specifies the ID of the (custom) image to use to create the virtual machine scale set, as in the [example below](#example-of-storage_profile_image_reference-with-id).
 
 `Offer` - (Optional) Specifies the offer of the image used to create the virtual machines.
 
 `Version` - (Optional) Specifies the version of the image used to create the virtual machines.
-
-`TypeHandlerVersion` - (Required) Specifies the version of the extension to use, available versions can be found using the Azure CLI.
-
-`AutoUpgradeMinorVersion` - (Optional) Specifies whether or not to use the latest minor version available.
-
-`Settings` - (Required) The settings passed to the extension, these are specified as a JSON object in a string.
-
-`ProtectedSettings` - (Optional) The protected_settings passed to the extension, like settings, these are specified as a JSON object in a string.
-
-`Product` - (Required) Specifies the product of the image from the marketplace.
 
 
 ## Return Values

@@ -49,25 +49,35 @@ and
 
 `Tags` - (Optional) A list of tags to attach to the instance.
 
+### BootDisk Properties
+
 `AutoDelete` - (Optional) Whether the disk will be auto-deleted when the instance is deleted. Defaults to true.
+
+`InitializeParams` - (Optional) Parameters for a new disk that will be created alongside the new instance. Either `InitializeParams` or `Source` must be set. Structure is documented below.
+
+### ServiceAccount Properties
+
+`Email` - (Optional) The service account e-mail address. If not given, the default Google Compute Engine service account is used. **Note**: [`AllowStoppingForUpdate`](#allow_stopping_for_update) must be set to true in order to update this field.
+
+`Scopes` - (Required) A list of service scopes. Both OAuth2 URLs and gcloud short names are supported. To allow full access to all Cloud APIs, use the `cloud-platform` scope. See a complete list of scopes [here](https://cloud.google.com/sdk/gcloud/reference/alpha/compute/instances/set-scopes#--scopes). **Note**: [`AllowStoppingForUpdate`](#allow_stopping_for_update) must be set to true in order to update this field.
+
+### AttachedDisk Properties
 
 `DeviceName` - (Optional) Name with which the attached disk will be accessible under `/dev/disk/by-id/`.
 
 `DiskEncryptionKeyRaw` - (Optional) A 256-bit [customer-supplied encryption key] (https://cloud.google.com/compute/docs/disks/customer-supplied-encryption), encoded in [RFC 4648 base64](https://tools.ietf.org/html/rfc4648#section-4) to encrypt this disk.
 
-`InitializeParams` - (Optional) Parameters for a new disk that will be created alongside the new instance. Either `InitializeParams` or `Source` must be set. Structure is documented below.
-
 `Source` - (Required) The name or self_link of the disk to attach to this instance.
 
-`Size` - (Optional) The size of the image in gigabytes. If not specified, it will inherit the size of its base image.
-
-`Type` - (Optional) The GCE disk type. May be set to pd-standard or pd-ssd.
-
-`Image` - (Optional) The image from which to initialize this disk. This can be one of: the image's `self_link`, `projects/{project}/global/images/{image}`, `projects/{project}/global/images/family/{family}`, `global/images/{image}`, `global/images/family/{family}`, `family/{family}`, `{project}/{family}`, `{project}/{image}`, `{family}`, or `{image}`. If referred by family, the images names must include the family name. If they don't, use the [google_compute_image data source](/docs/providers/google/d/datasource_compute_image.html). For instance, the image `centos-6-v20180104` includes its family name `centos-6`. These images can be referred by family name here.
-
-`Interface` - (Optional) The disk interface to use for attaching this disk; either SCSI or NVME. Defaults to SCSI.
-
 `Mode` - (Optional) Either "READ_ONLY" or "READ_WRITE", defaults to "READ_WRITE" If you have a persistent disk with data that you want to share between multiple instances, detach it from any read-write instances and attach it to one or more instances in read-only mode.
+
+### AliasIpRange Properties
+
+`IpCidrRange` - The IP CIDR range represented by this alias IP range. This IP CIDR range must belong to the specified subnetwork and cannot contain IP addresses reserved by system or used by other network interfaces. This range may be a single IP address (e.g. 10.2.3.4), a netmask (e.g. /24) or a CIDR format string (e.g. 10.1.2.0/24).
+
+`SubnetworkRangeName` - (Optional) The subnetwork secondary range name specifying the secondary range from which to allocate the IP CIDR range for this alias IP range. If left unspecified, the primary range of the subnetwork will be used.
+
+### NetworkInterface Properties
 
 `Network` - (Optional) The name or self_link of the network to attach this interface to. Either `Network` or `Subnetwork` must be provided.
 
@@ -81,25 +91,33 @@ and
 
 `AliasIpRange` - (Optional) An array of alias IP ranges for this network interface. Can only be specified for network interfaces on subnet-mode networks. Structure documented below.
 
-`NatIp` - (Optional) The IP address that will be 1:1 mapped to the instance's network ip. If not given, one will be generated.
+### ScratchDisk Properties
 
-`PublicPtrDomainName` - (Optional) The DNS domain name for the public PTR record. To set this field on an instance, you must be verified as the owner of the domain. See [the docs](https://cloud.google.com/compute/docs/instances/create-ptr-record) for how to become verified as a domain owner.
+`Interface` - (Optional) The disk interface to use for attaching this disk; either SCSI or NVME. Defaults to SCSI.
 
-`NetworkTier` - (Optional) The [networking tier][network-tier] used for configuring this instance. This field can take the following values: PREMIUM or STANDARD. If this field is not specified, it is assumed to be PREMIUM.
-
-`IpCidrRange` - The IP CIDR range represented by this alias IP range. This IP CIDR range must belong to the specified subnetwork and cannot contain IP addresses reserved by system or used by other network interfaces. This range may be a single IP address (e.g. 10.2.3.4), a netmask (e.g. /24) or a CIDR format string (e.g. 10.1.2.0/24).
-
-`SubnetworkRangeName` - (Optional) The subnetwork secondary range name specifying the secondary range from which to allocate the IP CIDR range for this alias IP range. If left unspecified, the primary range of the subnetwork will be used.
-
-`Email` - (Optional) The service account e-mail address. If not given, the default Google Compute Engine service account is used. **Note**: [`AllowStoppingForUpdate`](#allow_stopping_for_update) must be set to true in order to update this field.
-
-`Scopes` - (Required) A list of service scopes. Both OAuth2 URLs and gcloud short names are supported. To allow full access to all Cloud APIs, use the `cloud-platform` scope. See a complete list of scopes [here](https://cloud.google.com/sdk/gcloud/reference/alpha/compute/instances/set-scopes#--scopes). **Note**: [`AllowStoppingForUpdate`](#allow_stopping_for_update) must be set to true in order to update this field.
+### Scheduling Properties
 
 `Preemptible` - (Optional) Is the instance preemptible.
 
 `OnHostMaintenance` - (Optional) Describes maintenance behavior for the instance. Can be MIGRATE or TERMINATE, for more info, read [here](https://cloud.google.com/compute/docs/instances/setting-instance-scheduling-options).
 
 `AutomaticRestart` - (Optional) Specifies if the instance should be restarted if it was terminated by Compute Engine (not a user).
+
+### AccessConfig Properties
+
+`NatIp` - (Optional) The IP address that will be 1:1 mapped to the instance's network ip. If not given, one will be generated.
+
+`PublicPtrDomainName` - (Optional) The DNS domain name for the public PTR record. To set this field on an instance, you must be verified as the owner of the domain. See [the docs](https://cloud.google.com/compute/docs/instances/create-ptr-record) for how to become verified as a domain owner.
+
+`NetworkTier` - (Optional) The [networking tier][network-tier] used for configuring this instance. This field can take the following values: PREMIUM or STANDARD. If this field is not specified, it is assumed to be PREMIUM.
+
+### InitializeParams Properties
+
+`Size` - (Optional) The size of the image in gigabytes. If not specified, it will inherit the size of its base image.
+
+`Type` - (Optional) The GCE disk type. May be set to pd-standard or pd-ssd.
+
+`Image` - (Optional) The image from which to initialize this disk. This can be one of: the image's `self_link`, `projects/{project}/global/images/{image}`, `projects/{project}/global/images/family/{family}`, `global/images/{image}`, `global/images/family/{family}`, `family/{family}`, `{project}/{family}`, `{project}/{image}`, `{family}`, or `{image}`. If referred by family, the images names must include the family name. If they don't, use the [google_compute_image data source](/docs/providers/google/d/datasource_compute_image.html). For instance, the image `centos-6-v20180104` includes its family name `centos-6`. These images can be referred by family name here.
 
 
 ## Return Values

@@ -10,6 +10,8 @@ Authorizes and revokes both ingress and egress rulea for a given security group.
 
 `Project` - (Optional) The name or ID of the project in which the security group is created. Changing this forces a new resource to be created.
 
+### Rule Properties
+
 `CidrList` - (Optional) A CIDR list to allow access to the given ports.
 
 `Protocol` - (Required) The name of the protocol to allow. Valid options are: `tcp`, `udp`, `icmp`, `all` or a valid protocol number.

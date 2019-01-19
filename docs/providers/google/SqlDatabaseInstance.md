@@ -16,13 +16,15 @@ a restricted host and strong password.
 
 `DatabaseVersion` - (Optional, Default: `MYSQL_5_6`) The MySQL version to use. Can be `MYSQL_5_6`, `MYSQL_5_7` or `POSTGRES_9_6` for second-generation instances, or `MYSQL_5_5` or `MYSQL_5_6` for first-generation instances. See [Second Generation Capabilities](https://cloud.google.com/sql/docs/1st-2nd-gen-differences) for more information. `POSTGRES_9_6` support is in beta.
 
-`Name` - (Optional) A name for this whitelist entry.
-
 `MasterInstanceName` - (Optional) The name of the instance that will act as the master in the replication setup. Note, this requires the master to have `BinaryLogEnabled` set, as well as existing backups.
 
 `Project` - (Optional) The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
 
 `ReplicaConfiguration` - (Optional) The configuration for replication. The configuration is detailed below.
+
+### Settings Properties
+
+`Name` - (Optional) A name for this whitelist entry.
 
 `Tier` - (Required) The machine tier (First Generation) or type (Second Generation) to use. See [tiers](https://cloud.google.com/sql/docs/admin-api/v1beta4/tiers) for more details and supported versions. Postgres supports only shared-core machine types such as `db-f1-micro`, and custom machine types such as `db-custom-2-13312`. See the [Custom Machine Type Documentation](https://cloud.google.com/compute/docs/instances/creating-instance-with-custom-machine-type#create) to learn about specifying custom machine types.
 

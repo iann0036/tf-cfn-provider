@@ -16,6 +16,8 @@ Creates a Google Cloud Bigtable table inside an instance. For more information s
 
 `Project` - (Optional) The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
 
+### ColumnFamily Properties
+
 `Family` - (Optional) The name of the column family.
 
 

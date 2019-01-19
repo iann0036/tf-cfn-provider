@@ -18,25 +18,29 @@ For more details, see the [Amazon Kinesis Firehose Documentation][1].
 
 `RedshiftConfiguration` - (Optional) Configuration options if redshift is the destination. Using `RedshiftConfiguration` requires the user to also specify a `S3Configuration` block. More details are given below.
 
+### Parameters Properties
+
+`ParameterName` - (Required) Parameter name. Valid Values: `LambdaArn`, `NumberOfRetries`, `RoleArn`, `BufferSizeInMBs`, `BufferIntervalInSeconds`.
+
+`ParameterValue` - (Required) Parameter value. Must be between 1 and 512 length (inclusive). When providing a Lambda ARN, you should specify the resource version as well.
+
+### Processors Properties
+
+`Type` - (Required) The type of processor. Valid Values: `Lambda`.
+
+`Parameters` - (Optional) Array of processor parameters. More details are given below.
+
+### ProcessingConfiguration Properties
+
+`Enabled` - (Optional) Enables or disables data processing.
+
+`Processors` - (Optional) Array of data processors. More details are given below.
+
+### RedshiftConfiguration Properties
+
 `RoleArn` - (Required) The ARN of the IAM role to be assumed by Firehose for calling the Amazon ES Configuration API and for indexing documents.  The pattern needs to be `arn:.*`.
 
-`BucketArn` - (Required) The ARN of the S3 bucket.
-
-`Prefix` - (Optional) The "YYYY/MM/DD/HH" time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.
-
-`BufferSize` - (Optional) Buffer incoming data to the specified size, in MBs, before delivering it to the destination. The default value is 5. We recommend setting SizeInMBs to a value greater than the amount of data you typically ingest into the delivery stream in 10 seconds. For example, if you typically ingest data at 1 MB/sec set SizeInMBs to be 10 MB or higher.
-
-`BufferInterval` - (Optional) Buffer incoming data for the specified period of time, in seconds, before delivering it to the destination. The default value is 300.
-
-`CompressionFormat` - (Optional) The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP & Snappy. If the destination is redshift you cannot use ZIP or Snappy.
-
-`KmsKeyArn` - (Optional) Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.
-
 `CloudwatchLoggingOptions` - (Optional) The CloudWatch Logging Options for the delivery stream. More details are given below.
-
-`DataFormatConversionConfiguration` - (Optional) Nested argument for the serializer, deserializer, and schema for converting data from the JSON format to the Parquet or ORC format before writing it to Amazon S3. More details given below.
-
-`ErrorOutputPrefix` - (Optional) Prefix added to failed records before writing them to S3. This prefix appears immediately following the bucket name.
 
 `ProcessingConfiguration` - (Optional) The data processing configuration.  More details are given below.
 
@@ -78,21 +82,31 @@ For more details, see the [Amazon Kinesis Firehose Documentation][1].
 
 `HecToken` - The GUID that you obtain from your Splunk cluster when you create a new HEC endpoint.
 
-`Enabled` - (Optional) Enables or disables data processing.
+### S3Configuration Properties
+
+`BucketArn` - (Required) The ARN of the S3 bucket.
+
+`Prefix` - (Optional) The "YYYY/MM/DD/HH" time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket.
+
+`BufferSize` - (Optional) Buffer incoming data to the specified size, in MBs, before delivering it to the destination. The default value is 5. We recommend setting SizeInMBs to a value greater than the amount of data you typically ingest into the delivery stream in 10 seconds. For example, if you typically ingest data at 1 MB/sec set SizeInMBs to be 10 MB or higher.
+
+`BufferInterval` - (Optional) Buffer incoming data for the specified period of time, in seconds, before delivering it to the destination. The default value is 300.
+
+`CompressionFormat` - (Optional) The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP & Snappy. If the destination is redshift you cannot use ZIP or Snappy.
+
+`KmsKeyArn` - (Optional) Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will be used.
+
+### CloudwatchLoggingOptions Properties
 
 `LogGroupName` - (Optional) The CloudWatch group name for logging. This value is required if `Enabled` is true.
 
 `LogStreamName` - (Optional) The CloudWatch log stream name for logging. This value is required if `Enabled` is true.
 
-`Processors` - (Optional) Array of data processors. More details are given below.
+### ExtendedS3Configuration Properties
 
-`Type` - (Required) The type of processor. Valid Values: `Lambda`.
+`DataFormatConversionConfiguration` - (Optional) Nested argument for the serializer, deserializer, and schema for converting data from the JSON format to the Parquet or ORC format before writing it to Amazon S3. More details given below.
 
-`Parameters` - (Optional) Array of processor parameters. More details are given below.
-
-`ParameterName` - (Required) Parameter name. Valid Values: `LambdaArn`, `NumberOfRetries`, `RoleArn`, `BufferSizeInMBs`, `BufferIntervalInSeconds`.
-
-`ParameterValue` - (Required) Parameter value. Must be between 1 and 512 length (inclusive). When providing a Lambda ARN, you should specify the resource version as well.
+`ErrorOutputPrefix` - (Optional) Prefix added to failed records before writing them to S3. This prefix appears immediately following the bucket name.
 
 
 ## Return Values

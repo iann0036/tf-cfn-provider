@@ -32,6 +32,8 @@ Manages a Redis Cache.
 
 `Zones` - (Optional) A list of a single item of the Availability Zone which the Redis Cache should be allocated in.
 
+### RedisConfiguration Properties
+
 `MaxmemoryReserved` - (Optional) Value in megabytes reserved for non-cache usage e.g. failover. Defaults are shown below.
 
 `MaxmemoryDelta` - (Optional) The max-memory delta for this Redis instance. Defaults are shown below.

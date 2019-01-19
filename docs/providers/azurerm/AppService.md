@@ -6,8 +6,6 @@ Manages an App Service (within an App Service Plan).
 
 ## Properties
 
-`Name` - (Required) The name of the Connection String.
-
 `ResourceGroupName` - (Required) The name of the resource group in which to create the App Service.
 
 `Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
@@ -30,9 +28,17 @@ Manages an App Service (within an App Service Plan).
 
 `Identity` - (Optional) A Managed Service Identity block as defined below.
 
+### Identity Properties
+
 `Type` - (Required) Specifies the identity type of the App Service. At this time the only allowed value is `SystemAssigned`.
 
+### ConnectionString Properties
+
+`Name` - (Required) The name of the Connection String.
+
 `Value` - (Required) The value for the Connection String.
+
+### SiteConfig Properties
 
 `AlwaysOn` - (Optional) Should the app be loaded at all times? Defaults to `false`.
 
@@ -77,6 +83,8 @@ Manages an App Service (within an App Service Plan).
 `VirtualNetworkName` - (Optional) The name of the Virtual Network which this App Service should be attached to.
 
 `WebsocketsEnabled` - (Optional) Should WebSockets be enabled?.
+
+### IpRestriction Properties
 
 `IpAddress` - (Required) The IP Address used for this IP Restriction.
 

@@ -4,13 +4,15 @@ Provides a CloudWatch Log Metric Filter resource.
 
 ## Properties
 
-`Name` - (Required) The name of the CloudWatch metric to which the monitored log information should be published (e.g. `ErrorCount`).
-
 `Pattern` - (Required) A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html) for extracting metric data out of ingested log events.
 
 `LogGroupName` - (Required) The name of the log group to associate the metric filter with.
 
 `MetricTransformation` - (Required) A block defining collection of information needed to define how metric data gets emitted. See below.
+
+### MetricTransformation Properties
+
+`Name` - (Required) The name of the CloudWatch metric to which the monitored log information should be published (e.g. `ErrorCount`).
 
 `Namespace` - (Required) The destination namespace of the CloudWatch metric.
 

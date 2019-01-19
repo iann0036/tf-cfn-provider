@@ -6,8 +6,6 @@ Manages a Virtual Machine.
 
 ## Properties
 
-`Name` - (Required) Specifies the name of the OS Disk.
-
 `ResourceGroupName` - (Required) Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.
 
 `Location` - (Required) Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.
@@ -58,29 +56,7 @@ Manages a Virtual Machine.
 
 `Content` - (Optional) Specifies the base-64 encoded XML formatted content that is added to the unattend.xml file for the specified path and component.
 
-`Enabled` - (Required) Should Boot Diagnostics be enabled for this Virtual Machine?.
-
-`StorageUri` - (Required) The Storage Account's Blob Endpoint which should hold the virtual machine's diagnostic files.
-
-`Type` - (Required) The Managed Service Identity Type of this Virtual Machine. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` (where you can specify the Service Principal ID's) to be used by this Virtual Machine using the `IdentityIds` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.
-
-`IdentityIds` - (Optional) Specifies a list of user managed identity ids to be assigned to the VM. Required if `Type` is `UserAssigned`.
-
-`ComputerName` - (Required) Specifies the name of the Virtual Machine.
-
-`AdminUsername` - (Required) Specifies the name of the local administrator account.
-
-`AdminPassword` - (Required for Windows, Optional for Linux) The password associated with the local administrator account.
-
-`CustomData` - (Optional) Specifies custom data to supply to the machine. On Linux-based systems, this can be used as a cloud-init script. On other systems, this will be copied as a file on disk. Internally, Terraform will base64 encode this value before sending it to the API. The maximum length of the binary array is 65535 bytes.
-
-`DisablePasswordAuthentication` - (Required) Specifies whether password authentication should be disabled. If set to `false`, an `AdminPassword` must be specified.
-
-`SshKeys` - (Optional) One or more `SshKeys` blocks. This field is required if `DisablePasswordAuthentication` is set to `true`.
-
-`SourceVaultId` - (Required) Specifies the ID of the Key Vault to use.
-
-`VaultCertificates` - (Required) One or more `VaultCertificates` blocks.
+### OsProfileWindowsConfig Properties
 
 `ProvisionVmAgent` - (Optional) Should the Azure Virtual Machine Guest Agent be installed on this Virtual Machine? Defaults to `false`.
 
@@ -92,29 +68,45 @@ Manages a Virtual Machine.
 
 `AdditionalUnattendConfig` - (Optional) A `AdditionalUnattendConfig` block.
 
-`Publisher` - (Required) Specifies the publisher of the image used to create the virtual machine. Changing this forces a new resource to be created.
+### StorageDataDisk Properties
 
-`Product` - (Required) Specifies the product of the image from the marketplace.
+`Lun` - (Required) Specifies the logical unit number of the data disk. This needs to be unique within all the Data Disks on the Virtual Machine.
 
-`KeyData` - (Required) The Public SSH Key which should be written to the `Path` defined above.
+### OsProfile Properties
 
-`Path` - (Required) The path of the destination file on the virtual machine.
+`ComputerName` - (Required) Specifies the name of the Virtual Machine.
 
-`Offer` - (Required) Specifies the offer of the image used to create the virtual machine. Changing this forces a new resource to be created.
+`AdminUsername` - (Required) Specifies the name of the local administrator account.
 
-`Sku` - (Required) Specifies the SKU of the image used to create the virtual machine. Changing this forces a new resource to be created.
+`AdminPassword` - (Required for Windows, Optional for Linux) The password associated with the local administrator account.
 
-`Version` - (Optional) Specifies the version of the image used to create the virtual machine. Changing this forces a new resource to be created.
+`CustomData` - (Optional) Specifies custom data to supply to the machine. On Linux-based systems, this can be used as a cloud-init script. On other systems, this will be copied as a file on disk. Internally, Terraform will base64 encode this value before sending it to the API. The maximum length of the binary array is 65535 bytes.
 
-`Id` - (Required) Specifies the ID of the Custom Image which the Virtual Machine should be created from. Changing this forces a new resource to be created.
+### Winrm Properties
+
+`CertificateUrl` - (Optional) The ID of the Key Vault Secret which contains the encrypted Certificate which should be installed on the Virtual Machine. This certificate must also be specified in the `VaultCertificates` block within the `OsProfileSecrets` block.
+
+`Protocol` - (Required) Specifies the protocol of listener. Possible values are `HTTP` or `HTTPS`.
+
+### CertificateUrl Properties
+
+`CertificateStore` - (Required, on windows machines) Specifies the certificate store on the Virtual Machine where the certificate should be added to, such as `My`.
+
+### OsProfileLinuxConfig Properties
+
+`DisablePasswordAuthentication` - (Required) Specifies whether password authentication should be disabled. If set to `false`, an `AdminPassword` must be specified.
+
+`SshKeys` - (Optional) One or more `SshKeys` blocks. This field is required if `DisablePasswordAuthentication` is set to `true`.
+
+### StorageOsDisk Properties
+
+`Name` - (Required) Specifies the name of the OS Disk.
 
 `Caching` - (Optional) Specifies the caching requirements for the OS Disk. Possible values include `None`, `ReadOnly` and `ReadWrite`.
 
 `CreateOption` - (Required) Specifies how the OS Disk should be created. Possible values are `Attach` (managed disks only) and `FromImage`.
 
 `DiskSizeGb` - (Optional) Specifies the size of the OS Disk in gigabytes.
-
-`Lun` - (Required) Specifies the logical unit number of the data disk. This needs to be unique within all the Data Disks on the Virtual Machine.
 
 `WriteAcceleratorEnabled` - (Optional) Specifies if Write Accelerator is enabled on the disk. This can only be enabled on `Premium_LRS` managed disks with no caching and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator). Defaults to `false`.
 
@@ -128,11 +120,45 @@ Manages a Virtual Machine.
 
 `OsType` - (Optional) Specifies the Operating System on the OS Disk. Possible values are `Linux` and `Windows`.
 
-`CertificateUrl` - (Optional) The ID of the Key Vault Secret which contains the encrypted Certificate which should be installed on the Virtual Machine. This certificate must also be specified in the `VaultCertificates` block within the `OsProfileSecrets` block.
+### OsProfileSecrets Properties
 
-`CertificateStore` - (Required, on windows machines) Specifies the certificate store on the Virtual Machine where the certificate should be added to, such as `My`.
+`SourceVaultId` - (Required) Specifies the ID of the Key Vault to use.
 
-`Protocol` - (Required) Specifies the protocol of listener. Possible values are `HTTP` or `HTTPS`.
+`VaultCertificates` - (Required) One or more `VaultCertificates` blocks.
+
+### SshKeys Properties
+
+`KeyData` - (Required) The Public SSH Key which should be written to the `Path` defined above.
+
+`Path` - (Required) The path of the destination file on the virtual machine.
+
+### StorageImageReference Properties
+
+`Publisher` - (Required) Specifies the publisher of the image used to create the virtual machine. Changing this forces a new resource to be created.
+
+`Offer` - (Required) Specifies the offer of the image used to create the virtual machine. Changing this forces a new resource to be created.
+
+`Sku` - (Required) Specifies the SKU of the image used to create the virtual machine. Changing this forces a new resource to be created.
+
+`Version` - (Optional) Specifies the version of the image used to create the virtual machine. Changing this forces a new resource to be created.
+
+`Id` - (Required) Specifies the ID of the Custom Image which the Virtual Machine should be created from. Changing this forces a new resource to be created.
+
+### Identity Properties
+
+`Type` - (Required) The Managed Service Identity Type of this Virtual Machine. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` (where you can specify the Service Principal ID's) to be used by this Virtual Machine using the `IdentityIds` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.
+
+`IdentityIds` - (Optional) Specifies a list of user managed identity ids to be assigned to the VM. Required if `Type` is `UserAssigned`.
+
+### BootDiagnostics Properties
+
+`Enabled` - (Required) Should Boot Diagnostics be enabled for this Virtual Machine?.
+
+`StorageUri` - (Required) The Storage Account's Blob Endpoint which should hold the virtual machine's diagnostic files.
+
+### Plan Properties
+
+`Product` - (Required) Specifies the product of the image from the marketplace.
 
 
 ## Return Values

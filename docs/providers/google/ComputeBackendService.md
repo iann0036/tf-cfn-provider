@@ -22,8 +22,6 @@ For internal load balancing, use a [google_compute_region_backend_service](/docs
 
 `CustomRequestHeaders` - (Optional, [Beta](https://terraform.io/docs/providers/google/provider_versions.html)) Headers that the HTTP/S load balancer should add to proxied requests. See [guide](https://cloud.google.com/compute/docs/load-balancing/http/backend-service#user-defined-request-headers) for details.
 
-`Description` - (Optional) Textual description for the backend.
-
 `EnableCdn` - (Optional) Whether or not to enable the Cloud CDN on the backend service.
 
 `PortName` - (Optional) The name of a service that has been added to an instance group in this backend. See [related docs](https://cloud.google.com/compute/docs/instance-groups/#specifying_service_endpoints) for details. Defaults to http.
@@ -39,6 +37,10 @@ For internal load balancing, use a [google_compute_region_backend_service](/docs
 `AffinityCookieTtlSec` - (Optional) Lifetime of cookies in seconds if session_affinity is `GENERATED_COOKIE`. If set to 0, the cookie is non-persistent and lasts only until the end of the browser session (or equivalent). The maximum allowed value for TTL is one day.
 
 `TimeoutSec` - (Optional) The number of secs to wait for a backend to respond to a request before considering the request failed. Defaults to `30`.
+
+### Backend Properties
+
+`Description` - (Optional) Textual description for the backend.
 
 `Group` - (Required) The name or URI of a Compute Engine instance group (`Terraform::Google::ComputeInstanceGroupManager.xyz.instanceGroup`) that can receive traffic.
 
@@ -56,7 +58,17 @@ For internal load balancing, use a [google_compute_region_backend_service](/docs
 
 `MaxUtilization` - (Optional) The target CPU utilization for the group as a float in the range [0.0, 1.0]. This flag can only be provided when the balancing mode is `UTILIZATION`. Defaults to `0.8`.
 
+### Iap Properties
+
+`Oauth2ClientId` - (Required) The client ID for use with OAuth 2.0.
+
+`Oauth2ClientSecret` - (Required) The client secret for use with OAuth 2.0.
+
+### CdnPolicy Properties
+
 `CacheKeyPolicy` - (Optional) The CacheKeyPolicy for this CdnPolicy. Structure is documented below.
+
+### CacheKeyPolicy Properties
 
 `IncludeHost` - (Optional) If true, requests to different hosts will be cached separately.
 
@@ -67,10 +79,6 @@ For internal load balancing, use a [google_compute_region_backend_service](/docs
 `QueryStringBlacklist` - (Optional) Names of query string parameters to exclude in cache keys. All other parameters will be included. Either specify `QueryStringWhitelist` or `QueryStringBlacklist`, not both. '&' and '=' will be percent encoded and not treated as delimiters.
 
 `QueryStringWhitelist` - (Optional) Names of query string parameters to include in cache keys. All other parameters will be excluded. Either specify `QueryStringWhitelist` or `QueryStringBlacklist`, not both. '&' and '=' will be percent encoded and not treated as delimiters.
-
-`Oauth2ClientId` - (Required) The client ID for use with OAuth 2.0.
-
-`Oauth2ClientSecret` - (Required) The client secret for use with OAuth 2.0.
 
 
 ## Return Values

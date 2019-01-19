@@ -4,8 +4,6 @@ Manages a Network Rule Collection within an Azure Firewall.
 
 ## Properties
 
-`Name` - (Required) Specifies the name of the rule.
-
 `AzureFirewallName` - (Required) Specifies the name of the Firewall in which the Network Rule Collection should be created. Changing this forces a new resource to be created.
 
 `ResourceGroupName` - (Required) Specifies the name of the Resource Group in which the Firewall exists. Changing this forces a new resource to be created.
@@ -15,6 +13,10 @@ Manages a Network Rule Collection within an Azure Firewall.
 `Action` - (Required) Specifies the action the rule will apply to matching traffic. Possible values are `Allow` and `Deny`.
 
 `Rule` - (Required) One or more `Rule` blocks as defined below.
+
+### Rule Properties
+
+`Name` - (Required) Specifies the name of the rule.
 
 `Description` - (Optional) Specifies a description for the rule.
 

@@ -10,21 +10,31 @@ Provides an AWS App Mesh virtual node resource.
 
 `Spec` - (Required) The virtual node specification to apply.
 
+### Listener Properties
+
+`PortMapping` - (Required) The port mapping information for the listener.
+
+### Dns Properties
+
+`ServiceName` - (Required) The DNS service name for your virtual node.
+
+### Spec Properties
+
 `Backends` - (Optional) The backends to which the virtual node is expected to send outbound traffic.
 
 `Listener` - (Optional) The listeners from which the virtual node is expected to receive inbound traffic.
 
 `ServiceDiscovery` - (Optional) The service discovery information for the virtual node.
 
-`PortMapping` - (Required) The port mapping information for the listener.
-
-`Dns` - (Required) Specifies the DNS service name for the virtual node.
-
-`ServiceName` - (Required) The DNS service name for your virtual node.
+### PortMapping Properties
 
 `Port` - (Required) The port used for the port mapping.
 
 `Protocol` - (Required) The protocol used for the port mapping. Valid values are `http` and `tcp`.
+
+### ServiceDiscovery Properties
+
+`Dns` - (Required) Specifies the DNS service name for the virtual node.
 
 
 ## Return Values

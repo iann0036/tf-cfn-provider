@@ -4,8 +4,6 @@ Manages an Application Gateway.
 
 ## Properties
 
-`Name` - (Required) The Name of the URL Path Map.
-
 `ResourceGroupName` - (Required) The name of the resource group in which to the Application Gateway should exist. Changing this forces a new resource to be created.
 
 `Location` - (Required) The Azure region where the Application Gateway should exist. Changing this forces a new resource to be created.
@@ -26,8 +24,6 @@ Manages an Application Gateway.
 
 `Sku` - (Required) A `Sku` block as defined below.
 
-`AuthenticationCertificate` - (Optional) One or more `AuthenticationCertificate` blocks.
-
 `DisabledSslProtocols` - (Optional) A list of SSL Protocols which should be disabled on this Application Gateway. Possible values are `TLSv1_0`, `TLSv1_1` and `TLSv1_2`.
 
 `Probe` - (Optional) One or more `Probe` blocks as defined below.
@@ -38,31 +34,7 @@ Manages an Application Gateway.
 
 `WafConfiguration` - (Optional) A `WafConfiguration` block as defined below.
 
-`Data` - (Required) The contents of the Authentication Certificate which should be used.
-
-`FqdnList` - (Optional) A list of FQDN's which should be part of the Backend Address Pool.
-
-`IpAddressList` - (Optional) A list of IP Addresses which should be part of the Backend Address Pool.
-
-`CookieBasedAffinity` - (Required) Is Cookie-Based Affinity enabled? Possible values are `Enabled` and `Disabled`.
-
-`Port` - (Required) The port used for this Frontend Port.
-
-`ProbeName` - (Required) The name of an associated HTTP Probe.
-
-`Protocol` - (Required) The Protocol used for this Probe. Possible values are `Http` and `Https`.
-
-`RequestTimeout` - (Required) The request timeout in seconds, which must be between 1 and 86400 seconds.
-
-`PickHostNameFromBackendAddress` - (Optional) Whether host header should be picked from the host name of the backend server. Defaults to `false`.
-
-`SubnetId` - (Required) The ID of a Subnet.
-
-`PrivateIpAddress` - (Optional) The Private IP Address to use for the Application Gateway.
-
-`PublicIpAddressId` - (Optional) The ID of a Public IP Address which the Application Gateway should use.
-
-`PrivateIpAddressAllocation` - (Optional) The Allocation Method for the Private IP Address. Possible values are `Dynamic` and `Static`.
+### HttpListener Properties
 
 `FrontendIpConfigurationName` - (Required) The Name of the Frontend IP Configuration used for this HTTP Listener.
 
@@ -80,9 +52,25 @@ Manages an Application Gateway.
 
 `Paths` - (Required) A list of Paths used in this Path Rule.
 
-`BackendAddressPoolName` - (Optional) The Name of the Backend Address Pool which should be used for this Routing Rule.
+### AuthenticationCertificate Properties
 
-`BackendHttpSettingsName` - (Optional) The Name of the Backend HTTP Settings Collection which should be used for this Routing Rule.
+`Data` - (Required) The contents of the Authentication Certificate which should be used.
+
+### BackendHttpSettings Properties
+
+`AuthenticationCertificate` - (Optional) One or more `AuthenticationCertificate` blocks.
+
+`CookieBasedAffinity` - (Required) Is Cookie-Based Affinity enabled? Possible values are `Enabled` and `Disabled`.
+
+`ProbeName` - (Required) The name of an associated HTTP Probe.
+
+`RequestTimeout` - (Required) The request timeout in seconds, which must be between 1 and 86400 seconds.
+
+`PickHostNameFromBackendAddress` - (Optional) Whether host header should be picked from the host name of the backend server. Defaults to `false`.
+
+### Probe Properties
+
+`Protocol` - (Required) The Protocol used for this Probe. Possible values are `Http` and `Https`.
 
 `Host` - (Optional) The Hostname used for this Probe. If the Application Gateway is configured for a single site, by default the Host name should be specified as ‘127.0.0.1’, unless otherwise configured in custom probe. Cannot be set if `PickHostNameFromBackendHttpSettings` is set to `true`.
 
@@ -100,21 +88,11 @@ Manages an Application Gateway.
 
 `MinimumServers` - (Optional) The minimum number of servers that are always marked as healthy. Defaults to `0`.
 
-`RuleType` - (Required) The Type of Routing that should be used for this Rule. Possible values are `Basic` and `PathBasedRouting`.
+### GatewayIpConfiguration Properties
 
-`HttpListenerName` - (Required) The Name of the HTTP Listener which should be used for this Routing Rule.
+`SubnetId` - (Required) The ID of a Subnet.
 
-`UrlPathMapName` - (Optional) The Name of the URL Path Map which should be associated with this Routing Rule.
-
-`Tier` - (Required) The Tier of the SKU to use for this Application Gateway. Possible values are `Standard`, `Standard_v2`, `WAF` and `WAF_v2`.
-
-`Capacity` - (Required) The Capacity of the SKU to use for this Application Gateway - which must be between 1 and 10.
-
-`DefaultBackendAddressPoolName` - (Required) The Name of the Default Backend Address Pool which should be used for this URL Path Map.
-
-`DefaultBackendHttpSettingsName` - (Required) The Name of the Default Backend HTTP Settings Collection which should be used for this URL Path Map.
-
-`PathRule` - (Required) One or more `PathRule` blocks as defined above.
+### WafConfiguration Properties
 
 `Enabled` - (Required) Is the Web Application Firewall be enabled?.
 
@@ -125,6 +103,52 @@ Manages an Application Gateway.
 `RuleSetVersion` - (Required) The Version of the Rule Set used for this Web Application Firewall.
 
 `FileUploadLimitMb` - (Optional) The File Upload Limit in MB. Accepted values are in the range `1`MB to `500`MB. Defaults to `100`MB.
+
+### RequestRoutingRule Properties
+
+`BackendAddressPoolName` - (Optional) The Name of the Backend Address Pool which should be used for this Routing Rule.
+
+`BackendHttpSettingsName` - (Optional) The Name of the Backend HTTP Settings Collection which should be used for this Routing Rule.
+
+`RuleType` - (Required) The Type of Routing that should be used for this Rule. Possible values are `Basic` and `PathBasedRouting`.
+
+`HttpListenerName` - (Required) The Name of the HTTP Listener which should be used for this Routing Rule.
+
+`UrlPathMapName` - (Optional) The Name of the URL Path Map which should be associated with this Routing Rule.
+
+### FrontendIpConfiguration Properties
+
+`PrivateIpAddress` - (Optional) The Private IP Address to use for the Application Gateway.
+
+`PublicIpAddressId` - (Optional) The ID of a Public IP Address which the Application Gateway should use.
+
+`PrivateIpAddressAllocation` - (Optional) The Allocation Method for the Private IP Address. Possible values are `Dynamic` and `Static`.
+
+### FrontendPort Properties
+
+`Port` - (Required) The port used for this Frontend Port.
+
+### Sku Properties
+
+`Tier` - (Required) The Tier of the SKU to use for this Application Gateway. Possible values are `Standard`, `Standard_v2`, `WAF` and `WAF_v2`.
+
+`Capacity` - (Required) The Capacity of the SKU to use for this Application Gateway - which must be between 1 and 10.
+
+### UrlPathMap Properties
+
+`Name` - (Required) The Name of the URL Path Map.
+
+`DefaultBackendAddressPoolName` - (Required) The Name of the Default Backend Address Pool which should be used for this URL Path Map.
+
+`DefaultBackendHttpSettingsName` - (Required) The Name of the Default Backend HTTP Settings Collection which should be used for this URL Path Map.
+
+`PathRule` - (Required) One or more `PathRule` blocks as defined above.
+
+### BackendAddressPool Properties
+
+`FqdnList` - (Optional) A list of FQDN's which should be part of the Backend Address Pool.
+
+`IpAddressList` - (Optional) A list of IP Addresses which should be part of the Backend Address Pool.
 
 
 ## Return Values

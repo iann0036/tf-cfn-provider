@@ -8,8 +8,6 @@ Provides a CodeBuild Project resource. See also the [`Terraform::AWS::CodebuildW
 
 `Environment` - (Required) Information about the project's build environment. Environment blocks are documented below.
 
-`Name` - (Optional) The name of the project. If `Type` is set to `S3`, this is the name of the output artifact object.
-
 `Source` - (Required) Information about the project's input source code. Source blocks are documented below.
 
 `BadgeEnabled` - (Optional) Generates a publicly-accessible URL for the projects build badge. Available as `badge_url` attribute when enabled.
@@ -32,17 +30,33 @@ Provides a CodeBuild Project resource. See also the [`Terraform::AWS::CodebuildW
 
 `SecondarySources` - (Optional) A set of secondary sources to be used inside the build. Secondary sources blocks are documented below.
 
-`Type` - (Required) The type of repository that contains the source code to be built. Valid values for this parameter are: `CODECOMMIT`, `CODEPIPELINE`, `GITHUB`, `GITHUB_ENTERPRISE`, `BITBUCKET` or `S3`.
+### SecondaryArtifacts Properties
+
+`Name` - (Optional) The name of the project. If `Type` is set to `S3`, this is the name of the output artifact object.
 
 `EncryptionDisabled` - (Optional) If set to true, output artifacts will not be encrypted. If `Type` is set to `NO_ARTIFACTS` then this value will be ignored. Defaults to `false`.
-
-`Location` - (Optional) The location of the source code from git or s3.
 
 `NamespaceType` - (Optional) The namespace to use in storing build artifacts. If `Type` is set to `S3`, then valid values for this parameter are: `BUILD_ID` or `NONE`.
 
 `Packaging` - (Optional) The type of build output artifact to create. If `Type` is set to `S3`, valid values for this parameter are: `NONE` or `ZIP`.
 
 `Path` - (Optional) If `Type` is set to `S3`, this is the path to the output artifact.
+
+`ArtifactIdentifier` - (Required) The artifact identifier. Must be the same specified inside AWS CodeBuild buildspec.
+
+### VpcConfig Properties
+
+`SecurityGroupIds` - (Required) The security group IDs to assign to running builds.
+
+`Subnets` - (Required) The subnet IDs within which to run builds.
+
+`VpcId` - (Required) The ID of the VPC within which to run builds.
+
+### EnvironmentVariable Properties
+
+`Value` - (Required) The environment variable's value.
+
+### Environment Properties
 
 `ComputeType` - (Required) Information about the compute resources the build project will use. Available values for this parameter are: `BUILD_GENERAL1_SMALL`, `BUILD_GENERAL1_MEDIUM` or `BUILD_GENERAL1_LARGE`. `BUILD_GENERAL1_SMALL` is only valid if `Type` is set to `LINUX_CONTAINER`.
 
@@ -54,7 +68,15 @@ Provides a CodeBuild Project resource. See also the [`Terraform::AWS::CodebuildW
 
 `Certificate` - (Optional) The ARN of the S3 bucket, path prefix and object key that contains the PEM-encoded certificate.
 
-`Value` - (Required) The environment variable's value.
+### Auth Properties
+
+`Resource` - (Optional) The resource value that applies to the specified authorization type.
+
+### SecondarySources Properties
+
+`Type` - (Required) The type of repository that contains the source code to be built. Valid values for this parameter are: `CODECOMMIT`, `CODEPIPELINE`, `GITHUB`, `GITHUB_ENTERPRISE`, `BITBUCKET` or `S3`.
+
+`Location` - (Optional) The location of the source code from git or s3.
 
 `Auth` - (Optional) Information about the authorization settings for AWS CodeBuild to access the source code to be built. Auth blocks are documented below.
 
@@ -65,16 +87,6 @@ Provides a CodeBuild Project resource. See also the [`Terraform::AWS::CodebuildW
 `InsecureSsl` - (Optional) Ignore SSL warnings when connecting to source control.
 
 `ReportBuildStatus` - (Optional) Set to `true` to report the status of a build's start and finish to your source provider. This option is only valid when your source provider is `GITHUB`, `BITBUCKET`, or `GITHUB_ENTERPRISE`.
-
-`Resource` - (Optional) The resource value that applies to the specified authorization type.
-
-`SecurityGroupIds` - (Required) The security group IDs to assign to running builds.
-
-`Subnets` - (Required) The subnet IDs within which to run builds.
-
-`VpcId` - (Required) The ID of the VPC within which to run builds.
-
-`ArtifactIdentifier` - (Required) The artifact identifier. Must be the same specified inside AWS CodeBuild buildspec.
 
 `SourceIdentifier` - (Required) The source identifier. Source data will be put inside a folder named as this parameter inside AWS CodeBuild source directory.
 

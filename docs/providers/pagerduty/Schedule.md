@@ -4,8 +4,6 @@ A [schedule](https://v2.developer.pagerduty.com/v2/page/api-reference#!/Schedule
 
 ## Properties
 
-`Name` - (Optional) The name of the schedule layer.
-
 `TimeZone` - (Required) The time zone of the schedule (e.g Europe/Berlin).
 
 `Description` - (Optional) The description of the schedule.
@@ -13,6 +11,10 @@ A [schedule](https://v2.developer.pagerduty.com/v2/page/api-reference#!/Schedule
 `Layer` - (Required) A schedule layer block. Schedule layers documented below.
 
 `Overflow` - (Optional) Any on-call schedule entries that pass the date range bounds will be truncated at the bounds, unless the parameter `Overflow` is passed. For instance, if your schedule is a rotation that changes daily at midnight UTC, and your date range is from `2011-06-01T10:00:00Z` to `2011-06-01T14:00:00Z`: If you don't pass the overflow=true parameter, you will get one schedule entry returned with a start of `2011-06-01T10:00:00Z` and end of `2011-06-01T14:00:00Z`. If you do pass the `Overflow` parameter, you will get one schedule entry returned with a start of `2011-06-01T00:00:00Z` and end of `2011-06-02T00:00:00Z`.
+
+### Layer Properties
+
+`Name` - (Optional) The name of the schedule layer.
 
 `Start` - (Required) The start time of the schedule layer. This value will not be read back from the PagerDuty API because the API will always return a new `Start` time, which represents the last updated time of the schedule layer.
 
@@ -25,6 +27,8 @@ A [schedule](https://v2.developer.pagerduty.com/v2/page/api-reference#!/Schedule
 `Users` - (Required) The ordered list of users on this layer. The position of the user on the list determines their order in the layer.
 
 `Restriction` - (Optional) A schedule layer restriction block. Restriction blocks documented below.
+
+### Restriction Properties
 
 `Type` - (Required) Can be `daily_restriction` or `weekly_restriction`.
 

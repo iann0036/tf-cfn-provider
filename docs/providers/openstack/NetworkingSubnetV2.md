@@ -40,9 +40,13 @@ Manages a V2 Neutron subnet resource within OpenStack.
 
 `Tags` - (Optional) A set of string tags for the subnet.
 
+### AllocationPools Properties
+
 `Start` - (Required) The starting address.
 
 `End` - (Required) The ending address.
+
+### HostRoutes Properties
 
 `DestinationCidr` - (Required) The destination CIDR.
 

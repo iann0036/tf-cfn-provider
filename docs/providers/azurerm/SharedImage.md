@@ -28,6 +28,8 @@ Manages a Shared Image within a Shared Image Gallery.
 
 `Tags` - (Optional) A mapping of tags to assign to the Shared Image.
 
+### Identity Properties
+
 `Offer` - (Required) The Offer Name for this Shared Image.
 
 `Publisher` - (Required) The Publisher Name for this Gallery Image.

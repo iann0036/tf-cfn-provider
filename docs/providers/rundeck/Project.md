@@ -24,6 +24,8 @@ can be run on.
 
 `ExtraConfig` - (Optional) Behind the scenes a Rundeck project is really an arbitrary set of key/value pairs. This map argument allows setting any configuration properties that aren't explicitly supported by the other arguments described above, but due to limitations of Terraform the key names must be written with slashes in place of dots. Do not use this argument to set properties that the above arguments set, or undefined behavior will result.
 
+### ResourceModelSource Properties
+
 `Type` - (Required) The name of the resource model plugin to use.
 
 `Config` - (Required) Map of arbitrary configuration properties for the selected resource model plugin.

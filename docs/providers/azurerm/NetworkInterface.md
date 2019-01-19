@@ -4,8 +4,6 @@ Manages a Network Interface located in a Virtual Network, usually attached to a 
 
 ## Properties
 
-`Name` - (Required) User-defined name of the IP.
-
 `ResourceGroupName` - (Required) The name of the resource group in which to create the network interface. Changing this forces a new resource to be created.
 
 `Location` - (Required) The location/region where the network interface is created. Changing this forces a new resource to be created.
@@ -23,6 +21,10 @@ Manages a Network Interface located in a Virtual Network, usually attached to a 
 `IpConfiguration` - (Required) One or more `IpConfiguration` associated with this NIC as documented below.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
+
+### IpConfiguration Properties
+
+`Name` - (Required) User-defined name of the IP.
 
 `SubnetId` - (Optional) Reference to a subnet in which this NIC has been created. Required when `PrivateIpAddressVersion` is IPv4.
 

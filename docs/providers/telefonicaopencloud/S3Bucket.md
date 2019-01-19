@@ -4,8 +4,6 @@ Provides a S3 bucket resource.
 
 ## Properties
 
-`Bucket` - (Required) The ARN of the S3 bucket where you want Amazon S3 to store replicas of the object identified by the rule.
-
 `BucketPrefix` - (Optional, Forces new resource) Creates a unique bucket name beginning with the specified prefix. Conflicts with `Bucket`.
 
 `Acl` - (Optional) The [canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl) to apply. Defaults to "private".
@@ -26,21 +24,9 @@ Provides a S3 bucket resource.
 
 `Region` - (Optional) If specified, the AWS region this bucket should reside in. Otherwise, the region used by the callee.
 
-`IndexDocument` - (Required, unless using `RedirectAllRequestsTo`) Amazon S3 returns this index document when requests are made to the root domain or any of the subfolders.
-
-`ErrorDocument` - (Optional) An absolute path to the document to return in case of a 4XX error.
-
-`RedirectAllRequestsTo` - (Optional) A hostname to redirect all website requests for this bucket to. Hostname can optionally be prefixed with a protocol (`http://` or `https://`) to use when redirecting requests. The default is the protocol that is used in the original request.
-
-`RoutingRules` - (Optional) A json array containing [routing rules](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules.html) describing redirect behavior and when redirects are applied.
+### LifecycleRule Properties
 
 `Enabled` - (Required) Specifies lifecycle rule status.
-
-`MfaDelete` - (Optional) Enable MFA delete for either `Change the versioning state of your bucket` or `Permanently delete an object version`. Default is `false`.
-
-`TargetBucket` - (Required) The name of the bucket that will receive the log objects.
-
-`TargetPrefix` - (Optional) To specify a key prefix for log objects.
 
 `Id` - (Optional) Unique identifier for the rule.
 
@@ -54,7 +40,31 @@ Provides a S3 bucket resource.
 
 `Status` - (Required) The status of the rule. Either `Enabled` or `Disabled`. The rule is ignored if status is not Enabled.
 
+### Versioning Properties
+
+`MfaDelete` - (Optional) Enable MFA delete for either `Change the versioning state of your bucket` or `Permanently delete an object version`. Default is `false`.
+
+### Website Properties
+
+`IndexDocument` - (Required, unless using `RedirectAllRequestsTo`) Amazon S3 returns this index document when requests are made to the root domain or any of the subfolders.
+
+`ErrorDocument` - (Optional) An absolute path to the document to return in case of a 4XX error.
+
+`RedirectAllRequestsTo` - (Optional) A hostname to redirect all website requests for this bucket to. Hostname can optionally be prefixed with a protocol (`http://` or `https://`) to use when redirecting requests. The default is the protocol that is used in the original request.
+
+`RoutingRules` - (Optional) A json array containing [routing rules](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules.html) describing redirect behavior and when redirects are applied.
+
+### Destination Properties
+
+`Bucket` - (Required) The ARN of the S3 bucket where you want Amazon S3 to store replicas of the object identified by the rule.
+
 `StorageClass` - (Optional) The class of storage used to store the object.
+
+### Logging Properties
+
+`TargetBucket` - (Required) The name of the bucket that will receive the log objects.
+
+`TargetPrefix` - (Optional) To specify a key prefix for log objects.
 
 
 ## Return Values

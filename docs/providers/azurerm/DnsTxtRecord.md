@@ -16,6 +16,8 @@ Enables you to manage DNS TXT Records within Azure DNS.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### Record Properties
+
 `Value` - (Required) The value of the record.
 
 

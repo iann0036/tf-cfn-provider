@@ -10,8 +10,6 @@ Provides an OpsWorks application resource.
 
 `StackId` - (Required) The id of the stack the application will belong to.
 
-`Type` - (Required) The type of source to use. For example, "archive".
-
 `Description` - (Optional) A description of the app.
 
 `Environment` - (Optional) Object to define environment variables.  Object is described below.
@@ -38,6 +36,18 @@ Provides an OpsWorks application resource.
 
 `AwsFlowRubySettings` - (Optional) Specify activity and workflow workers for your app using the aws-flow gem.
 
+### Environment Properties
+
+`Key` - (Required) Variable name.
+
+`Value` - (Required) Variable value.
+
+`Secure` - (Optional) Set visibility of the variable value to `true` or `false`.
+
+### AppSource Properties
+
+`Type` - (Required) The type of source to use. For example, "archive".
+
 `Url` - (Required) The URL where the app resource can be found.
 
 `Username` - (Optional) Username to use when authenticating to the source.
@@ -48,11 +58,7 @@ Provides an OpsWorks application resource.
 
 `Revision` - (Optional) For sources that are version-aware, the revision to use.
 
-`Key` - (Required) Variable name.
-
-`Value` - (Required) Variable value.
-
-`Secure` - (Optional) Set visibility of the variable value to `true` or `false`.
+### SslConfiguration Properties
 
 `PrivateKey` - (Required) The private key; the contents of the certificate's domain.key file.
 

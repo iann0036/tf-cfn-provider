@@ -8,29 +8,19 @@ Provides a Load Balancer Listener resource.
 
 `LoadBalancerArn` - (Required, Forces New Resource) The ARN of the load balancer.
 
-`Port` - (Optional) The port. Specify a value from `1` to `65535` or `#{port}`. Defaults to `#{port}`.
-
-`Protocol` - (Optional) The protocol. Valid values are `HTTP`, `HTTPS`, or `#{protocol}`. Defaults to `#{protocol}`.
-
 `SslPolicy` - (Optional) The name of the SSL Policy for the listener. Required if `Protocol` is `HTTPS`.
 
 `CertificateArn` - (Optional) The ARN of the default SSL server certificate. Exactly one certificate is required if the protocol is HTTPS. For adding additional SSL certificates, see the [`Terraform::AWS::LbListenerCertificate` resource](/docs/providers/aws/r/lb_listener_certificate.html).
 
 `DefaultAction` - (Required) An Action block. Action blocks are documented below.
 
-`Type` - (Required) The type of routing action. Valid values are `forward`, `Redirect`, `fixed-response`, `authenticate-cognito` and `authenticate-oidc`.
+### AuthenticationRequestExtraParams Properties
 
-`TargetGroupArn` - (Optional) The ARN of the Target Group to which to route traffic. Required if `Type` is `forward`.
+`Key` - (Required) The key of query parameter.
 
-`Redirect` - (Optional) Information for creating a redirect action. Required if `Type` is `Redirect`.
+`Value` - (Required) The value of query parameter.
 
-`FixedResponse` - (Optional) Information for creating an action that returns a custom HTTP response. Required if `Type` is `fixed-response`.
-
-`Host` - (Optional) The hostname. This component is not percent-encoded. The hostname can contain `#{host}`. Defaults to `#{host}`.
-
-`Path` - (Optional) The absolute path, starting with the leading "/". This component is not percent-encoded. The path can contain #{host}, #{path}, and #{port}. Defaults to `/#{path}`.
-
-`Query` - (Optional) The query parameters, URL-encoded when necessary, but not percent-encoded. Do not include the leading "?". Defaults to `#{query}`.
+### FixedResponse Properties
 
 `StatusCode` - (Optional) The HTTP response code. Valid values are `2XX`, `4XX`, or `5XX`.
 
@@ -66,9 +56,27 @@ Provides a Load Balancer Listener resource.
 
 `UserInfoEndpoint` - (Required) The user info endpoint of the IdP.
 
-`Key` - (Required) The key of query parameter.
+### Redirect Properties
 
-`Value` - (Required) The value of query parameter.
+`Port` - (Optional) The port. Specify a value from `1` to `65535` or `#{port}`. Defaults to `#{port}`.
+
+`Protocol` - (Optional) The protocol. Valid values are `HTTP`, `HTTPS`, or `#{protocol}`. Defaults to `#{protocol}`.
+
+`Host` - (Optional) The hostname. This component is not percent-encoded. The hostname can contain `#{host}`. Defaults to `#{host}`.
+
+`Path` - (Optional) The absolute path, starting with the leading "/". This component is not percent-encoded. The path can contain #{host}, #{path}, and #{port}. Defaults to `/#{path}`.
+
+`Query` - (Optional) The query parameters, URL-encoded when necessary, but not percent-encoded. Do not include the leading "?". Defaults to `#{query}`.
+
+### DefaultAction Properties
+
+`Type` - (Required) The type of routing action. Valid values are `forward`, `Redirect`, `fixed-response`, `authenticate-cognito` and `authenticate-oidc`.
+
+`TargetGroupArn` - (Optional) The ARN of the Target Group to which to route traffic. Required if `Type` is `forward`.
+
+`Redirect` - (Optional) Information for creating a redirect action. Required if `Type` is `Redirect`.
+
+`FixedResponse` - (Optional) Information for creating an action that returns a custom HTTP response. Required if `Type` is `fixed-response`.
 
 
 ## Return Values

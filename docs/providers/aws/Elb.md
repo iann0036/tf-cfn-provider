@@ -43,13 +43,15 @@ conflict and will overwrite attachments.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### AccessLogs Properties
+
 `Bucket` - (Required) The S3 bucket name to store the logs in.
 
 `BucketPrefix` - (Optional) The S3 bucket prefix. Logs are stored in the root if not configured.
 
-`Interval` - (Required) The interval between checks.
-
 `Enabled` - (Optional) Boolean to enable / disable `AccessLogs`. Default is `true`.
+
+### Listener Properties
 
 `InstancePort` - (Required) The port on the instance to route to.
 
@@ -60,6 +62,10 @@ conflict and will overwrite attachments.
 `LbProtocol` - (Required) The protocol to listen on. Valid values are `HTTP`, `HTTPS`, `TCP`, or `SSL`.
 
 `SslCertificateId` - (Optional) The ARN of an SSL certificate you have uploaded to AWS IAM. **Note ECDSA-specific restrictions below.  Only valid when `LbProtocol` is either HTTPS or SSL**.
+
+### HealthCheck Properties
+
+`Interval` - (Required) The interval between checks.
 
 `HealthyThreshold` - (Required) The number of checks before the instance is declared healthy.
 

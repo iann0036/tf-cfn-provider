@@ -11,6 +11,8 @@ permissions.
 
 `Permissions` - (Required) The settings of the permissions. The structure is described below.
 
+### Permissions Properties
+
 `Configure` - (Required) The "configure" ACL.
 
 `Write` - (Required) The "write" ACL.

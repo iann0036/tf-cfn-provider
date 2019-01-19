@@ -8,8 +8,6 @@ At this time you cannot use a Network Security Group with in-line Network Securi
 
 ## Properties
 
-`Name` - (Required) The name of the security rule.
-
 `ResourceGroupName` - (Required) The name of the resource group in which to create the network security group. Changing this forces a new resource to be created.
 
 `Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
@@ -17,6 +15,10 @@ At this time you cannot use a Network Security Group with in-line Network Securi
 `SecurityRule` - (Optional) One or more `SecurityRule` blocks as defined below.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
+
+### SecurityRule Properties
+
+`Name` - (Required) The name of the security rule.
 
 `Description` - (Optional) A description for this rule. Restricted to 140 characters.
 

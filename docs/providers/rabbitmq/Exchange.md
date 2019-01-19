@@ -10,6 +10,8 @@ The ``Terraform::RabbitMQ::Exchange`` resource creates and manages an exchange.
 
 `Settings` - (Required) The settings of the exchange. The structure is described below.
 
+### Settings Properties
+
 `Type` - (Required) The type of exchange.
 
 `Durable` - (Optional) Whether the exchange survives server restarts. Defaults to `false`.

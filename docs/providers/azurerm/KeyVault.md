@@ -6,15 +6,11 @@ Manages a Key Vault.
 
 ## Properties
 
-`Name` - (Required) The Name of the SKU used for this Key Vault. Possible values are `Standard` and `Premium`.
-
 `Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
 
 `ResourceGroupName` - (Required) The name of the resource group in which to create the Key Vault. Changing this forces a new resource to be created.
 
 `Sku` - (Required) An SKU block as described below.
-
-`TenantId` - (Required) The Azure Active Directory tenant ID that should be used for authenticating requests to the key vault. Must match the `TenantId` used above.
 
 `AccessPolicy` - (Optional) An access policy block as described below. A maximum of 16 may be declared.
 
@@ -28,6 +24,20 @@ Manages a Key Vault.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### NetworkAcls Properties
+
+`Bypass` - (Required) Specifies which traffic can bypass the network rules. Possible values are `AzureServices` and `None`.
+
+`DefaultAction` - (Required) The Default Action to use when no rules match from `IpRules` / `VirtualNetworkSubnetIds`. Possible values are `Allow` and `Deny`.
+
+`IpRules` - (Optional) One or more IP Addresses, or CIDR Blocks which should be able to access thie Key Vault.
+
+`VirtualNetworkSubnetIds` - (Optional) One or more Subnet ID's which should be able to access this Key Vault.
+
+### AccessPolicy Properties
+
+`TenantId` - (Required) The Azure Active Directory tenant ID that should be used for authenticating requests to the key vault. Must match the `TenantId` used above.
+
 `ObjectId` - (Required) The object ID of a user, service principal or security group in the Azure Active Directory tenant for the vault. The object ID must be unique for the list of access policies.
 
 `ApplicationId` - (Optional) The object ID of an Application in Azure Active Directory.
@@ -38,13 +48,9 @@ Manages a Key Vault.
 
 `SecretPermissions` - (Required) List of secret permissions, must be one or more from the following: `backup`, `delete`, `get`, `list`, `purge`, `recover`, `restore` and `set`.
 
-`Bypass` - (Required) Specifies which traffic can bypass the network rules. Possible values are `AzureServices` and `None`.
+### Sku Properties
 
-`DefaultAction` - (Required) The Default Action to use when no rules match from `IpRules` / `VirtualNetworkSubnetIds`. Possible values are `Allow` and `Deny`.
-
-`IpRules` - (Optional) One or more IP Addresses, or CIDR Blocks which should be able to access thie Key Vault.
-
-`VirtualNetworkSubnetIds` - (Optional) One or more Subnet ID's which should be able to access this Key Vault.
+`Name` - (Required) The Name of the SKU used for this Key Vault. Possible values are `Standard` and `Premium`.
 
 
 ## Return Values

@@ -4,8 +4,6 @@ Manages a Notification Hub Namespace.
 
 ## Properties
 
-`Name` - (Required) The name of the SKU to use for this Notification Hub Namespace. Possible values are `Free`, `Basic` or `Standard`. Changing this forces a new resource to be created.
-
 `ResourceGroupName` - (Required) The name of the Resource Group in which the Notification Hub Namespace should exist. Changing this forces a new resource to be created.
 
 `Location` - (Required) The Azure Region in which this Notification Hub Namespace should be created.
@@ -15,6 +13,10 @@ Manages a Notification Hub Namespace.
 `Sku` - (Required) A `Sku` block as defined below.
 
 `Enabled` - (Optional) Is this Notification Hub Namespace enabled? Defaults to `true`.
+
+### Sku Properties
+
+`Name` - (Required) The name of the SKU to use for this Notification Hub Namespace. Possible values are `Free`, `Basic` or `Standard`. Changing this forces a new resource to be created.
 
 
 ## Return Values

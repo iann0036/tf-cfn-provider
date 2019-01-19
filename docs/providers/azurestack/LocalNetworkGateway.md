@@ -18,6 +18,8 @@ Manages a local network gateway connection over which specific connections can b
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### BgpSettings Properties
+
 `Asn` - (Required) The BGP speaker's ASN.
 
 `BgpPeeringAddress` - (Required) The BGP peering address and BGP identifier of this BGP speaker.

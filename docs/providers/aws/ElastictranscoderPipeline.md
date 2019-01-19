@@ -24,15 +24,21 @@ Provides an Elastic Transcoder pipeline resource.
 
 `ThumbnailConfigPermissions` - (Optional) The permissions for the `ThumbnailConfig` object. (documented below).
 
+### ThumbnailConfig Properties
+
 `Bucket` - The Amazon S3 bucket in which you want Elastic Transcoder to save thumbnail files.
 
 `StorageClass` - The Amazon S3 storage class, Standard or ReducedRedundancy, that you want Elastic Transcoder to assign to the thumbnails that it stores in your Amazon S3 bucket.
+
+### ThumbnailConfigPermissions Properties
 
 `Access` - The permission that you want to give to the AWS user that you specified in `thumbnail_config_permissions.grantee`.
 
 `Grantee` - The AWS user or group that you want to have access to thumbnail files.
 
 `GranteeType` - Specify the type of value that appears in the `thumbnail_config_permissions.grantee` object.
+
+### Notifications Properties
 
 `Completed` - The topic ARN for the Amazon SNS topic that you want to notify when Elastic Transcoder has finished processing a job in this pipeline.
 

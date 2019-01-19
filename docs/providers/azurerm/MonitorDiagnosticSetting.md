@@ -20,13 +20,17 @@ Manages a Diagnostic Setting for an existing Resource.
 
 `StorageAccountId` - (Optional) With this parameter you can specify a storage account which should be used to send the logs to. Parameter must be a valid Azure Resource ID. Changing this forces a new resource to be created.
 
-`Category` - (Required) The name of a Diagnostic Metric Category for this Resource.
-
-`RetentionPolicy` - (Required) A `RetentionPolicy` block as defined below.
+### RetentionPolicy Properties
 
 `Enabled` - (Required) Is this Retention Policy enabled?.
 
 `Days` - (Optional) The number of days for which this Retention Policy should apply.
+
+### Metric Properties
+
+`Category` - (Required) The name of a Diagnostic Metric Category for this Resource.
+
+`RetentionPolicy` - (Required) A `RetentionPolicy` block as defined below.
 
 
 ## Return Values

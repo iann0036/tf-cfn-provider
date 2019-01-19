@@ -4,10 +4,6 @@ Manages an API Management Service.
 
 ## Properties
 
-`Name` - (Required) Specifies the Pricing Tier for the API Management Service. Possible values include: `Developer`, `Basic`, `Standard` and `Premium`.
-
-`Location` - (Required) The name of the Azure Region in which the API Management Service should be expanded to.
-
 `ResourceGroupName` - (Required) The name of the Resource Group in which the API Management Service should be exist. Changing this forces a new resource to be created.
 
 `PublisherName` - (Required) The name of publisher/company.
@@ -17,8 +13,6 @@ Manages an API Management Service.
 `Sku` - (Required) A `Sku` block as documented below.
 
 `AdditionalLocation` - (Optional) One or more `AdditionalLocation` blocks as defined below.
-
-`Certificate` - (Optional) The Base64 Encoded Certificate.
 
 `Identity` - (Optional) An `Identity` block is documented below.
 
@@ -30,13 +24,11 @@ Manages an API Management Service.
 
 `Tags` - (Optional) A mapping of tags assigned to the resource.
 
-`EncodedCertificate` - (Required) The Base64 Encoded PFX Certificate.
+### AdditionalLocation Properties
 
-`CertificatePassword` - (Optional) The password associated with the certificate provided above.
+`Location` - (Required) The name of the Azure Region in which the API Management Service should be expanded to.
 
-`StoreName` - (Required) The name of the Certificate Store where this certificate should be stored. Possible values are `CertificateAuthority` and `Root`.
-
-`Type` - (Required) Specifies the type of Managed Service Identity that should be configured on this API Management Service. At this time the only supported value is`SystemAssigned`.
+### Security Properties
 
 `DisableBackendSsl30` - (Optional) Should SSL 3.0 be disabled on the backend of the gateway? Defaults to `false`.
 
@@ -52,7 +44,27 @@ Manages an API Management Service.
 
 `DisableTripleDesChipers` - (Optional) Should the `TLS_RSA_WITH_3DES_EDE_CBC_SHA` cipher be disabled for alL TLS versions (1.0, 1.1 and 1.2)? Defaults to `false`.
 
-`Capacity` - (Required) Specifies the Pricing Capacity for the API Management Service.
+### Proxy Properties
+
+`Certificate` - (Optional) The Base64 Encoded Certificate.
+
+`CertificatePassword` - (Optional) The password associated with the certificate provided above.
+
+`HostName` - (Required) The Hostname to use for the Management API.
+
+`KeyVaultId` - (Optional) The ID of the Key Vault Secret containing the SSL Certificate, which must be should be of the type `application/x-pkcs12`.
+
+`NegotiateClientCertificate` - (Optional) Should Client Certificate Negotiation be enabled for this Hostname? Defaults to `false`.
+
+`DefaultSslBinding` - (Optional) Is the certificate associated with this Hostname the Default SSL Certificate? This is used when an SNI header isn't specified by a client. Defaults to `false`.
+
+### Certificate Properties
+
+`EncodedCertificate` - (Required) The Base64 Encoded PFX Certificate.
+
+`StoreName` - (Required) The name of the Certificate Store where this certificate should be stored. Possible values are `CertificateAuthority` and `Root`.
+
+### HostnameConfiguration Properties
 
 `Management` - (Optional) One or more `Management` blocks as documented below.
 
@@ -62,13 +74,15 @@ Manages an API Management Service.
 
 `Scm` - (Optional) One or more `Scm` blocks as documented below.
 
-`HostName` - (Required) The Hostname to use for the Management API.
+### Sku Properties
 
-`KeyVaultId` - (Optional) The ID of the Key Vault Secret containing the SSL Certificate, which must be should be of the type `application/x-pkcs12`.
+`Name` - (Required) Specifies the Pricing Tier for the API Management Service. Possible values include: `Developer`, `Basic`, `Standard` and `Premium`.
 
-`NegotiateClientCertificate` - (Optional) Should Client Certificate Negotiation be enabled for this Hostname? Defaults to `false`.
+`Capacity` - (Required) Specifies the Pricing Capacity for the API Management Service.
 
-`DefaultSslBinding` - (Optional) Is the certificate associated with this Hostname the Default SSL Certificate? This is used when an SNI header isn't specified by a client. Defaults to `false`.
+### Identity Properties
+
+`Type` - (Required) Specifies the type of Managed Service Identity that should be configured on this API Management Service. At this time the only supported value is`SystemAssigned`.
 
 
 ## Return Values

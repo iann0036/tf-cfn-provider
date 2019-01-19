@@ -8,13 +8,19 @@ Manages a networking V2 trunk resource within OpenStack.
 
 `Name` - (Optional) A unique name for the port. Changing this updates the `Name` of an existing port.
 
-`PortId` - (Required) The ID of the port to be made a subport of the trunk.
+`Description` - (Optional) Human-readable description of the port. Changing this updates the name of the existing port.
 
 `AdminStateUp` - (Optional) Administrative up/down status for the trunk (must be "true" or "false" if provided). Changing this updates the `AdminStateUp` of an existing trunk.
 
 `TenantId` - (Optional) The owner of the Trunk. Required if admin wants to create a trunk on behalf of another tenant. Changing this creates a new trunk.
 
 `SubPort` - (Optional) The set of ports that will be made subports of the trunk. The structure of each subport is described below.
+
+`Tags` - (Optional) A set of string tags for the port.
+
+### SubPort Properties
+
+`PortId` - (Required) The ID of the port to be made a subport of the trunk.
 
 `SegmentationType` - (Required) The segmenation tecnology to use, e.g., "vlan".
 
@@ -29,6 +35,8 @@ Manages a networking V2 trunk resource within OpenStack.
 
 `Name` - See Properties above.
 
+`Description` - See Properties above.
+
 `PortId` - See Properties above.
 
 `AdminStateUp` - See Properties above.
@@ -36,6 +44,8 @@ Manages a networking V2 trunk resource within OpenStack.
 `TenantId` - See Properties above.
 
 `SubPort` - See Properties above.
+
+`Tags` - See Properties above.
 
 ## See Also
 

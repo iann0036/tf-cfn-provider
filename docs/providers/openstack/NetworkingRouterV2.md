@@ -14,7 +14,7 @@ Manages a V2 router resource within OpenStack.
 
 `Distributed` - (Optional) Indicates whether or not to create a distributed router. The default policy setting in Neutron restricts usage of this property to administrative users only.
 
-`ExternalGateway` - (Deprecated - use `ExternalNetworkId` instead) The network UUID of an external gateway for the router. A router with an external gateway is required if any compute instances or load balancers will be using floating IPs. Changing this updates the external gateway of an existing router.
+`ExternalGateway` - (**Deprecated** - use `ExternalNetworkId` instead) The network UUID of an external gateway for the router. A router with an external gateway is required if any compute instances or load balancers will be using floating IPs. Changing this updates the external gateway of an existing router.
 
 `ExternalNetworkId` - (Optional) The network UUID of an external gateway for the router. A router with an external gateway is required if any compute instances or load balancers will be using floating IPs. Changing this updates the external gateway of the router.
 
@@ -32,9 +32,13 @@ Manages a V2 router resource within OpenStack.
 
 `AvailabilityZoneHints` -  (Optional) An availability zone is used to make network resources highly available. Used for resources with high availability so that they are scheduled on different availability zones. Changing this creates a new router.
 
+### ExternalFixedIp Properties
+
 `SubnetId` - (Optional) Subnet in which the fixed IP belongs to.
 
 `IpAddress` - (Optional) The IP address to set on the router.
+
+### VendorOptions Properties
 
 `SetRouterGatewayAfterCreate` - (Optional) Boolean to control whether the Router gateway is assigned during creation or updated after creation.
 

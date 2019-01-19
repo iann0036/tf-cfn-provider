@@ -44,6 +44,8 @@ Use this resource to create, update or destroy RightScale [instances](http://ref
 
 `CloudSpecificAttributes` - (Optional) Attributes specific to the cloud the instance belongs to that have no specific rightscale abstraction.  This block supports:.
 
+### CloudSpecificAttributes Properties
+
 `AdminUsername` - The user that will be granted administrative privileges. Supported by AzureRM cloud only.
 
 `AutomaticInstanceStoreMapping` - A flag indicating whether instance store mapping should be enabled.  Only available on clouds supporting automatic instance store mapping.

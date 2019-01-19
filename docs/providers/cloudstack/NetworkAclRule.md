@@ -12,6 +12,8 @@ Creates network ACL rules for a given network ACL.
 
 `Project` - (Optional) The name or ID of the project to deploy this instance to. Changing this forces a new resource to be created.
 
+### Rule Properties
+
 `Action` - (Optional) The action for the rule. Valid options are: `allow` and `deny` (defaults allow).
 
 `CidrList` - (Required) A CIDR list to allow access to the given ports.

@@ -24,6 +24,8 @@ Manages a V1 container resource within OpenStack.
 
 `ForceDestroy` -  (Optional, Default:false ) A boolean that indicates all objects should be deleted from the container so that the container can be destroyed without error. These objects are not recoverable.
 
+### Versioning Properties
+
 `Type` - (Required) Versioning type which can be `versions` or `history` according to [Openstack documentation](https://docs.openstack.org/swift/latest/overview_object_versioning.html). * `Location` - (Required) Container in which versions will be stored.
 
 `Location` - (Required) Container in which versions will be stored.

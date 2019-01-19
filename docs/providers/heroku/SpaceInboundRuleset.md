@@ -8,6 +8,8 @@ Provides a resource for managing [inbound rulesets](https://devcenter.heroku.com
 
 `Rule` - (Required) At least one `Rule` block. Rules are documented below.
 
+### Rule Properties
+
 `Action` - (Required) The action to apply this rule to. Must be one of `allow` or `deny`.
 
 `Source` - (Required) A CIDR block source for the rule.

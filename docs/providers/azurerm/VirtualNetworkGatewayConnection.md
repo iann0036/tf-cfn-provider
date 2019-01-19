@@ -32,6 +32,8 @@ Manages a connection in an existing Virtual Network Gateway.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### IpsecPolicy Properties
+
 `DhGroup` - (Required) The DH group used in IKE phase 1 for initial SA. Valid options are `DHGroup1`, `DHGroup14`, `DHGroup2`, `DHGroup2048`, `DHGroup24`, `ECP256`, `ECP384`, or `None`.
 
 `IkeEncryption` - (Required) The IKE encryption algorithm. Valid options are `AES128`, `AES192`, `AES256`, `DES`, or `DES3`.

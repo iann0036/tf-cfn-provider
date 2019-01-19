@@ -31,13 +31,17 @@ and
 
 `Version` - (Optional) The Kubernetes version for the nodes in this pool. Note that if this field and `AutoUpgrade` are both specified, they will fight each other for what the node version should be, so setting both is highly discouraged.
 
-`MinNodeCount` - (Required) Minimum number of nodes in the NodePool. Must be >=1 and <= `MaxNodeCount`.
-
-`MaxNodeCount` - (Required) Maximum number of nodes in the NodePool. Must be >= min_node_count.
+### Management Properties
 
 `AutoRepair` - (Optional) Whether the nodes will be automatically repaired.
 
 `AutoUpgrade` - (Optional) Whether the nodes will be automatically upgraded.
+
+### Autoscaling Properties
+
+`MinNodeCount` - (Required) Minimum number of nodes in the NodePool. Must be >=1 and <= `MaxNodeCount`.
+
+`MaxNodeCount` - (Required) Maximum number of nodes in the NodePool. Must be >= min_node_count.
 
 
 ## See Also

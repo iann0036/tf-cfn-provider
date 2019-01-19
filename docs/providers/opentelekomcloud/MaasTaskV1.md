@@ -16,6 +16,16 @@ Manages resource task within OpenTelekomCloud MAAS.
 
 `SmnInfo` - (Optional) Specifies the field used for sending messages using the Simple Message Notification (SMN) service.
 
+### SmnInfo Properties
+
+`TopicUrn` - (Required) Specifies the SMN message topic URN bound to a migration task.
+
+`Language` - (Optional) Specifies the management console language used by the current users. Users can select en-us.
+
+`TriggerConditions` - (Required) Specifies the trigger conditions of sending messages using SMN. The value depending on the state of a migration task. The migration task status can be SUCCESS or FAIL.
+
+### DstNode Properties
+
 `Region` - (Required) Specifies the region where the destination bucket locates.
 
 `Ak` - (Required) Specifies the destination bucket Access Key.
@@ -26,13 +36,9 @@ Manages resource task within OpenTelekomCloud MAAS.
 
 `Bucket` - (Required) Specifies the name of the destination bucket.
 
+### SrcNode Properties
+
 `CloudType` - (Optional) Specifies the source cloud vendor. The default value is AWS and only AWS is supported now.
-
-`TopicUrn` - (Required) Specifies the SMN message topic URN bound to a migration task.
-
-`Language` - (Optional) Specifies the management console language used by the current users. Users can select en-us.
-
-`TriggerConditions` - (Required) Specifies the trigger conditions of sending messages using SMN. The value depending on the state of a migration task. The migration task status can be SUCCESS or FAIL.
 
 
 ## Return Values

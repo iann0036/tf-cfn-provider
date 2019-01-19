@@ -16,11 +16,13 @@ Manages a V1 load balancer pool resource within OpenStack.
 
 `LbProvider` - (Optional) The backend load balancing provider. For example: `haproxy`, `F5`, etc.
 
-`TenantId` - (Optional) The owner of the member. Required if admin wants to create a pool member for another tenant. Changing this creates a new member.
-
 `MonitorIds` - (Optional) A list of IDs of monitors to associate with the pool.
 
 `Member` - (Optional) An existing node to add to the pool. Changing this updates the members of the pool. The member object structure is documented below. Please note that the `Member` block is deprecated in favor of the `Terraform::OpenStack::LbMemberV1` resource.
+
+### Member Properties
+
+`TenantId` - (Optional) The owner of the member. Required if admin wants to create a pool member for another tenant. Changing this creates a new member.
 
 `Address` - (Required) The IP address of the member. Changing this creates a new member.
 

@@ -24,6 +24,8 @@ Manages a V2 pool resource within OpenTelekomCloud.
 
 `AdminStateUp` - (Optional) The administrative state of the pool. A valid value is true (UP) or false (DOWN).
 
+### Persistence Properties
+
 `Type` - (Required) The type of persistence mode. The current specification supports SOURCE_IP, HTTP_COOKIE, and APP_COOKIE.
 
 `CookieName` - (Optional) The name of the cookie if persistence mode is set appropriately. Required if `type = APP_COOKIE`.

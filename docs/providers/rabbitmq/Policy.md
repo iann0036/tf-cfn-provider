@@ -11,6 +11,8 @@ and queues.
 
 `Policy` - (Required) The settings of the policy. The structure is described below.
 
+### Policy Properties
+
 `Pattern` - (Required) A pattern to match an exchange or queue name.
 
 `Priority` - (Required) The policy with the greater priority is applied first.

@@ -14,6 +14,8 @@ Manages an agency resource within huawei cloud.
 
 `DomainRoles` - (optional) An array of role names which stand for the permissionis to be granted to agency on domain.
 
+### ProjectRole Properties
+
 `Project` - (Required) The name of project.
 
 `Roles` - (Required) An array of role names.

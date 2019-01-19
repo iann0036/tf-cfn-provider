@@ -40,6 +40,8 @@ Manages a V1 Autoscaling Group resource within OpenTelekomCloud.
 
 `DeleteInstances` - (Optional) Whether to delete the instances in the AS group when deleting the AS group. The options are `yes` and `no`.
 
+### SecurityGroups Properties
+
 `Id` - (Required) The UUID of the security group.
 
 

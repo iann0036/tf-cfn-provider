@@ -17,6 +17,8 @@ Allows creation and management of an App Engine application.
 
 `FeatureSettings` - (Optional) A block of optional settings to configure specific App Engine features:.
 
+### FeatureSettings Properties
+
 `SplitHealthChecks` - (Optional) Set to false to use the legacy health check instead of the readiness and liveness checks.
 
 

@@ -20,6 +20,8 @@ Manages a V2 Neutron network resource within HuaweiCloud.
 
 `AvailabilityZoneHints` -  (Optional) An availability zone is used to make network resources highly available. Used for resources with high availability so that they are scheduled on different availability zones. Changing this creates a new network.
 
+### Segments Properties
+
 `PhysicalNetwork` - The phisical network where this network is implemented.
 
 `SegmentationId` - An isolated segment on the physical network.

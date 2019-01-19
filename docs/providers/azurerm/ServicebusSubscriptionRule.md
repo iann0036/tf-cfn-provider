@@ -22,6 +22,8 @@ Manage a ServiceBus Subscription Rule.
 
 `Action` - (Optional) Represents set of actions written in SQL language-based syntax that is performed against a BrokeredMessage.
 
+### CorrelationFilter Properties
+
 `ContentType` - (Optional) Content type of the message.
 
 `CorrelationId` - (Optional) Identifier of the correlation.

@@ -16,6 +16,8 @@ Enables you to manage DNS SRV Records within Azure DNS.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### Record Properties
+
 `Priority` - (Required) Priority of the SRV record.
 
 `Weight` - (Required) Weight of the SRV record.

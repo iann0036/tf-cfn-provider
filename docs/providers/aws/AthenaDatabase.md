@@ -12,6 +12,8 @@ Provides an Athena database.
 
 `ForceDestroy` - (Optional, Default: false) A boolean that indicates all tables should be deleted from the database so that the database can be destroyed without error. The tables are *not* recoverable.
 
+### EncryptionConfiguration Properties
+
 `EncryptionOption` - (Required) The type of key; one of `SSE_S3`, `SSE_KMS`, `CSE_KMS`.
 
 `KmsKey` - (Optional) The KMS key ARN or ID; required for key types `SSE_KMS` and `CSE_KMS`.

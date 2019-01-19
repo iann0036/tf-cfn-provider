@@ -6,8 +6,6 @@ Manages a Virtual Network Gateway to establish secure, cross-premises connectivi
 
 ## Properties
 
-`Name` - (Required) A user-defined name of the revoked certificate.
-
 `ResourceGroupName` - (Required) The name of the resource group in which to create the Virtual Network Gateway. Changing the resource group name forces a new resource to be created.
 
 `Location` - (Required) The location/region where the Virtual Network Gateway is located. Changing the location/region forces a new resource to be created.
@@ -26,11 +24,7 @@ Manages a Virtual Network Gateway to establish secure, cross-premises connectivi
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
-`PrivateIpAddressAllocation` - (Optional) Defines how the private IP address of the gateways virtual interface is assigned. Valid options are `Static` or `Dynamic`. Defaults to `Dynamic`.
-
-`SubnetId` - (Required) The ID of the gateway subnet of a virtual network in which the virtual network gateway will be created. It is mandatory that the associated subnet is named `GatewaySubnet`. Therefore, each virtual network can contain at most a single Virtual Network Gateway.
-
-`PublicIpAddressId` - (Optional) The ID of the public ip address to associate with the Virtual Network Gateway.
+### VpnClientConfiguration Properties
 
 `AddressSpace` - (Required) The address space out of which ip addresses for vpn clients will be taken. You can provide more than one address space, e.g. in CIDR notation.
 
@@ -50,7 +44,19 @@ Manages a Virtual Network Gateway to establish secure, cross-premises connectivi
 
 `PeerWeight` - (Optional) The weight added to routes which have been learned through BGP peering. Valid values can be between `0` and `100`.
 
+### RootCertificate Properties
+
+`Name` - (Required) A user-defined name of the revoked certificate.
+
 `PublicCertData` - (Required) The SHA1 thumbprint of the certificate to be revoked.
+
+### IpConfiguration Properties
+
+`PrivateIpAddressAllocation` - (Optional) Defines how the private IP address of the gateways virtual interface is assigned. Valid options are `Static` or `Dynamic`. Defaults to `Dynamic`.
+
+`SubnetId` - (Required) The ID of the gateway subnet of a virtual network in which the virtual network gateway will be created. It is mandatory that the associated subnet is named `GatewaySubnet`. Therefore, each virtual network can contain at most a single Virtual Network Gateway.
+
+`PublicIpAddressId` - (Optional) The ID of the public ip address to associate with the Virtual Network Gateway.
 
 
 ## Return Values

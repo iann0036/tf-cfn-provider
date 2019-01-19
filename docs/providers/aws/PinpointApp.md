@@ -14,11 +14,21 @@ Provides a Pinpoint App resource.
 
 `QuietTime` - (Optional) The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own.
 
+### QuietTime Properties
+
+`End` - (Optional) The default end time for quiet time in ISO 8601 format. Required if `Start` is set.
+
+`Start` - (Optional) The default start time for quiet time in ISO 8601 format. Required if `End` is set.
+
+### CampaignHook Properties
+
 `LambdaFunctionName` - (Optional) Lambda function name or ARN to be called for delivery. Conflicts with `WebUrl`.
 
 `Mode` - (Required if `LambdaFunctionName` or `WebUrl` are provided) What mode Lambda should be invoked in. Valid values for this parameter are `DELIVERY`, `FILTER`.
 
 `WebUrl` - (Optional) Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request. Conflicts with `LambdaFunctionName`.
+
+### Limits Properties
 
 `Daily` - (Optional) The maximum number of messages that the campaign can send daily.
 
@@ -27,10 +37,6 @@ Provides a Pinpoint App resource.
 `MessagesPerSecond` - (Optional) The number of messages that the campaign can send per second. The minimum value is 50, and the maximum is 20000.
 
 `Total` - (Optional) The maximum total number of messages that the campaign can send.
-
-`End` - (Optional) The default end time for quiet time in ISO 8601 format. Required if `Start` is set.
-
-`Start` - (Optional) The default start time for quiet time in ISO 8601 format. Required if `End` is set.
 
 
 ## Return Values

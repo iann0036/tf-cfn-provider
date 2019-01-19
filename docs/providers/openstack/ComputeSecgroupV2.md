@@ -18,6 +18,8 @@ resources instead, which uses the OpenStack Networking API.
 
 `Rule` - (Optional) A rule describing how the security group operates. The rule object structure is documented below. Changing this updates the security group rules. As shown in the example above, multiple rule blocks may be used.
 
+### Rule Properties
+
 `FromPort` - (Required) An integer representing the lower bound of the port range to open. Changing this creates a new security group rule.
 
 `ToPort` - (Required) An integer representing the upper bound of the port range to open. Changing this creates a new security group rule.

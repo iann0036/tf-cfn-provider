@@ -22,6 +22,8 @@ Manage an App Service Plan component.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### Sku Properties
+
 `Tier` - (Required) Specifies the plan's pricing tier.
 
 `Size` - (Required) Specifies the plan's instance size.

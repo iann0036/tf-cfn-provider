@@ -16,6 +16,8 @@ Manages a Log Analytics (formally Operational Insights) Solution.
 
 `Plan` - (Required) A `Plan` block as documented below.
 
+### Plan Properties
+
 `Publisher` - (Required) The publisher of the solution. For example `Microsoft`. Changing this forces a new resource to be created.
 
 `Product` - (Required) The product name of the solution. For example `OMSGallery/Containers`. Changing this forces a new resource to be created.

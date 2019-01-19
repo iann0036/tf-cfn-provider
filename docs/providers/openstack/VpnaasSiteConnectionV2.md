@@ -36,7 +36,13 @@ Manages a V2 Neutron IPSec site connection resource within OpenStack.
 
 `PeerCidrs` - (Optional) Unique list of valid peer private CIDRs in the form < net_address > / < prefix > .
 
-`Dpd` - (Optional) A dictionary with dead peer detection (DPD) protocol controls. - `action` - (Optional) The dead peer detection (DPD) action. A valid value is clear, hold, restart, disabled, or restart-by-peer. Default value is hold.
+`Dpd` - (Optional) A dictionary with dead peer detection (DPD) protocol controls. - `Action` - (Optional) The dead peer detection (DPD) action. A valid value is clear, hold, restart, disabled, or restart-by-peer. Default value is hold.
+
+`Action` - (Optional) The dead peer detection (DPD) action. A valid value is clear, hold, restart, disabled, or restart-by-peer. Default value is hold.
+
+`Timeout` - (Optional) The dead peer detection (DPD) timeout in seconds. A valid value is a positive integer that is greater than the DPD interval value. Default is 120.
+
+`Interval` - (Optional) The dead peer detection (DPD) interval, in seconds. A valid value is a positive integer. Default is 30.
 
 `Mtu` -  (Optional) The maximum transmission unit (MTU) value to address fragmentation. Minimum value is 68 for IPv4, and 1280 for IPv6.
 

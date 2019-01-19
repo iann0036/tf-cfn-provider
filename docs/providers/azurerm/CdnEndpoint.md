@@ -4,8 +4,6 @@ A CDN Endpoint is the entity within a CDN Profile containing configuration infor
 
 ## Properties
 
-`Name` - (Required) The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
-
 `ResourceGroupName` - (Required) The name of the resource group in which to create the CDN Endpoint.
 
 `ProfileName` - (Required) The CDN Profile to which to attach the CDN Endpoint.
@@ -36,11 +34,17 @@ A CDN Endpoint is the entity within a CDN Profile containing configuration infor
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### Origin Properties
+
+`Name` - (Required) The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
+
 `HostName` - (Required) A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
 
 `HttpPort` - (Optional) The HTTP port of the origin. Defaults to `80`. Changing this forces a new resource to be created.
 
 `HttpsPort` - (Optional) The HTTPS port of the origin. Defaults to `443`. Changing this forces a new resource to be created.
+
+### GeoFilter Properties
 
 `RelativePath` - (Required) The relative path applicable to geo filter.
 

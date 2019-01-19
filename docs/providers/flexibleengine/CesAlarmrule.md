@@ -22,13 +22,11 @@ Manages a V2 topic resource within FlexibleEngine.
 
 `AlarmActionEnabled` - (Optional) Specifies whether to enable the action to be triggered by an alarm. The default value is true. Note: If alarm_action_enabled is set to true, at least one of the following parameters alarm_actions, insufficientdata_actions, and ok_actions cannot be empty. If alarm_actions, insufficientdata_actions, and ok_actions coexist, their corresponding notification_list must be of the same value.
 
-`Namespace` - (Required) Specifies the namespace in service.item format. service.item can be a string of 3 to 32 characters that must start with a letter and can consists of uppercase letters, lowercase letters, numbers, or underscores (_).
-
-`MetricName` - (Required) Specifies the metric name. The value can be a string of 1 to 64 characters that must start with a letter and can consists of uppercase letters, lowercase letters, numbers, or underscores (_).
-
-`Dimensions` - (Required) Specifies the list of metric dimensions. Currently, the maximum length of the dimesion list that are supported is 3. The structure is described below.
+### Dimensions Properties
 
 `Name` - (Required) Specifies the dimension name. The value can be a string of 1 to 32 characters that must start with a letter and can consists of uppercase letters, lowercase letters, numbers, underscores (_), or hyphens (-).
+
+### Condition Properties
 
 `Value` - (Required) Specifies the alarm threshold. The value ranges from 0 to Number of 1.7976931348623157e+308.
 
@@ -42,9 +40,19 @@ Manages a V2 topic resource within FlexibleEngine.
 
 `Count` - (Required) Specifies the number of consecutive occurrence times. The value ranges from 1 to 5.
 
+### OkActions Properties
+
 `Type` - (Optional) specifies the type of action triggered by an alarm. the value is notification. notification: indicates that a notification will be sent to the user.
 
 `NotificationList` - (Optional) indicates the list of objects to be notified if the alarm status changes. the maximum length is 5.
+
+### Metric Properties
+
+`Namespace` - (Required) Specifies the namespace in service.item format. service.item can be a string of 3 to 32 characters that must start with a letter and can consists of uppercase letters, lowercase letters, numbers, or underscores (_).
+
+`MetricName` - (Required) Specifies the metric name. The value can be a string of 1 to 64 characters that must start with a letter and can consists of uppercase letters, lowercase letters, numbers, or underscores (_).
+
+`Dimensions` - (Required) Specifies the list of metric dimensions. Currently, the maximum length of the dimesion list that are supported is 3. The structure is described below.
 
 
 ## Return Values

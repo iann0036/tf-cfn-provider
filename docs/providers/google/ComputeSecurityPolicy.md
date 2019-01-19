@@ -8,11 +8,13 @@ and the [API](https://cloud.google.com/compute/docs/reference/rest/beta/security
 
 `Name` - (Required) The name of the security policy.
 
-`Description` - (Optional) An optional description of this rule. Max size is 64.
-
 `Project` - (Optional) The project in which the resource belongs. If it is not provided, the provider project is used.
 
 `Rule` - (Optional) The set of rules that belong to this policy. There must always be a default rule (rule with priority 2147483647 and match "\*"). If no rules are provided when creating a security policy, a default rule with action "allow" will be added. Structure is documented below.
+
+### Rule Properties
+
+`Description` - (Optional) An optional description of this rule. Max size is 64.
 
 `Action` - (Required) Action to take when `Match` matches the request. Valid values: * "allow" : allow access to target * "deny(status)" : deny access to target, returns the  HTTP response code specified (valid values are 403, 404 and 502).
 
@@ -22,9 +24,13 @@ and the [API](https://cloud.google.com/compute/docs/reference/rest/beta/security
 
 `Preview` - (Optional) When set to true, the `Action` specified above is not enforced. Stackdriver logs for requests that trigger a preview action are annotated as such.
 
+### Match Properties
+
 `Config` - (Required) The configuration options available when specifying `VersionedExpr`. Structure is documented below.
 
 `VersionedExpr` - (Required) Predefined rule expression. Available options: * SRC_IPS_V1: Must specify the corresponding `SrcIpRanges` field in `Config`.
+
+### Config Properties
 
 `SrcIpRanges` - (Required) Set of IP addresses or ranges (IPV4 or IPV6) in CIDR notation to match against inbound traffic. There is a limit of 5 IP ranges per rule. A value of '\*' matches all IPs (can be used to override the default behavior).
 

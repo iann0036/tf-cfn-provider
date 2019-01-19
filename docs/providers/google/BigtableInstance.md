@@ -16,6 +16,8 @@ Creates a Google Bigtable instance. For more information see
 
 `DisplayName` - (Optional) The human-readable display name of the Bigtable instance. Defaults to the instance `Name`.
 
+### Cluster Properties
+
 `ClusterId` - (Required) The ID of the Cloud Bigtable cluster.
 
 `Zone` - (Required) The zone to create the Cloud Bigtable cluster in. Each cluster must have a different zone in the same region. Zones that support Bigtable instances are noted on the [Cloud Bigtable locations page](https://cloud.google.com/bigtable/docs/locations).

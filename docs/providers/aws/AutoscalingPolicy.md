@@ -34,6 +34,8 @@ or [dynamic](https://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/as-sc
 
 `TargetTrackingConfiguration` - (Optional) A target tracking policy. These have the following structure:.
 
+### TargetTrackingConfiguration Properties
+
 `PredefinedMetricSpecification` - (Optional) A predefined metric. Conflicts with `CustomizedMetricSpecification`.
 
 `CustomizedMetricSpecification` - (Optional) A customized metric. Conflicts with `PredefinedMetricSpecification`.

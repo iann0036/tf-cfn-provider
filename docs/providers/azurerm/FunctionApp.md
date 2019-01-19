@@ -4,8 +4,6 @@ Manages a Function App.
 
 ## Properties
 
-`Name` - (Required) The name of the Connection String.
-
 `ResourceGroupName` - (Required) The name of the resource group in which to create the Function App.
 
 `Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
@@ -34,9 +32,17 @@ Manages a Function App.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### Identity Properties
+
 `Type` - (Required) Specifies the identity type of the App Service. At this time the only allowed value is `SystemAssigned`.
 
+### ConnectionString Properties
+
+`Name` - (Required) The name of the Connection String.
+
 `Value` - (Required) The value for the Connection String.
+
+### SiteConfig Properties
 
 `AlwaysOn` - (Optional) Should the Function App be loaded at all times? Defaults to `false`.
 

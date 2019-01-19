@@ -7,8 +7,6 @@ and
 
 ## Properties
 
-`Name` - (Required) The `self_link` of the subnetwork to NAT.
-
 `Router` - (Required) The name of the router in which this NAT will be configured. Changing this forces a new NAT to be created.
 
 `NatIpAllocateOption` - (Required) How external IPs should be allocated for this NAT. Valid values are `AUTO_ONLY` or `MANUAL_ONLY`. Changing this forces a new NAT to be created.
@@ -32,6 +30,10 @@ and
 `Project` - (Optional) The ID of the project in which this NAT's router belongs. If it is not provided, the provider project is used. Changing this forces a new NAT to be created.
 
 `Region` - (Optional) The region this NAT's router sits in. If not specified, the project region will be used. Changing this forces a new NAT to be created.
+
+### Subnetwork Properties
+
+`Name` - (Required) The `self_link` of the subnetwork to NAT.
 
 `SourceIpRangesToNat` - (Required) List of options for which source IPs in the subnetwork should have NAT enabled. Supported values include: `ALL_IP_RANGES`, `LIST_OF_SECONDARY_IP_RANGES`, `PRIMARY_IP_RANGE`.
 

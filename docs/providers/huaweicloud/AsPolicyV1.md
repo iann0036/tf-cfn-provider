@@ -20,6 +20,8 @@ Manages a V1 AS Policy resource within HuaweiCloud.
 
 `CoolDownTime` - (Optional) The cooling duration (in seconds), and is 900 by default.
 
+### ScheduledPolicy Properties
+
 `LaunchTime` - (Required) The time when the scaling action is triggered. If `ScalingPolicyType` is set to `SCHEDULED`, the time format is YYYY-MM-DDThh:mmZ. If `ScalingPolicyType` is set to `RECURRENCE`, the time format is hh:mm.
 
 `RecurrenceType` - (Optional) The periodic triggering type. This argument is mandatory when `ScalingPolicyType` is set to `RECURRENCE`. The options include `Daily`, `Weekly`, and `Monthly`.
@@ -29,6 +31,8 @@ Manages a V1 AS Policy resource within HuaweiCloud.
 `StartTime` - (Optional) The start time of the scaling action triggered periodically. The time format complies with UTC. The current time is used by default. The time format is YYYY-MM-DDThh:mmZ.
 
 `EndTime` - (Optional) The end time of the scaling action triggered periodically. The time format complies with UTC. This argument is mandatory when `ScalingPolicyType` is set to `RECURRENCE`. The time format is YYYY-MM-DDThh:mmZ.
+
+### ScalingPolicyAction Properties
 
 `Operation` - (Optional) The operation to be performed. The options include `ADD` (default), `REMOVE`, and `SET`.
 

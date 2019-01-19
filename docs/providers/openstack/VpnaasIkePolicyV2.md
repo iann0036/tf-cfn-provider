@@ -22,7 +22,11 @@ Manages a V2 Neutron IKE policy resource within OpenStack.
 
 `IkeVersion` - (Optional) The IKE mode. A valid value is v1 or v2. Default is v1. Changing this updates the existing policy.
 
-`Lifetime` - (Optional) The lifetime of the security association. Consists of Unit and Value. - `unit` - (Optional) The units for the lifetime of the security association. Can be either seconds or kilobytes. Default is seconds. - `value` - (Optional) The value for the lifetime of the security association. Must be a positive integer. Default is 3600.
+`Lifetime` - (Optional) The lifetime of the security association. Consists of Unit and Value. - `Unit` - (Optional) The units for the lifetime of the security association. Can be either seconds or kilobytes. Default is seconds. - `Value` - (Optional) The value for the lifetime of the security association. Must be a positive integer. Default is 3600.
+
+`Unit` - (Optional) The units for the lifetime of the security association. Can be either seconds or kilobytes. Default is seconds. - `Value` - (Optional) The value for the lifetime of the security association. Must be a positive integer. Default is 3600.
+
+`Value` - (Optional) The value for the lifetime of the security association. Must be a positive integer. Default is 3600.
 
 `ValueSpecs` - (Optional) Map of additional options.
 

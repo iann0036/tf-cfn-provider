@@ -54,6 +54,8 @@ the Profile Setting is set to `None`.
 
 `Rule` - The security rule definition (see below).  The security rule ordering will match how they appear in the terraform plan file.
 
+### Rule Properties
+
 `Name` - (Required) The security rule name.
 
 `Type` - (Optional) Rule type.  This can be `universal` (default), `interzone`, or `intrazone`.

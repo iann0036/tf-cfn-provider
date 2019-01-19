@@ -30,9 +30,13 @@ Manages a V2 Neutron subnet resource within TelefonicaOpenCloud.
 
 `ValueSpecs` - (Optional) Map of additional options.
 
+### AllocationPools Properties
+
 `Start` - (Required) The starting address.
 
 `End` - (Required) The ending address.
+
+### HostRoutes Properties
 
 `DestinationCidr` - (Required) The destination CIDR.
 

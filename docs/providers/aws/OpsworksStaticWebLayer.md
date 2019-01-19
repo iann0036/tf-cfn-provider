@@ -32,6 +32,8 @@ Provides an OpsWorks static web server layer resource.
 
 `EbsVolume` - (Optional) `EbsVolume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
 
+### EbsVolume Properties
+
 `MountPoint` - (Required) The path to mount the EBS volume on the layer's instances.
 
 `Size` - (Required) The size of the volume in gigabytes.

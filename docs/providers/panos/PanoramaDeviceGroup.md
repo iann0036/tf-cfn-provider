@@ -18,6 +18,8 @@ the device group.
 
 `Device` - The device definition (see below).
 
+### Device Properties
+
 `Serial` - (Required) The serial number of the firewall.
 
 `VsysList` - (Optional) A subset of all available vsys on the firewall that should be in this device group.  If the firewall is a virtual firewall, then this parameter should just be omitted.

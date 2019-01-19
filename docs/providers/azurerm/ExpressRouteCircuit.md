@@ -22,6 +22,8 @@ Manages an ExpressRoute circuit.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### Sku Properties
+
 `Tier` - (Required) The service tier. Possible values are `Standard` or `Premium`.
 
 `Family` - (Required) The billing mode for bandwidth. Possible values are `MeteredData` or `UnlimitedData`.

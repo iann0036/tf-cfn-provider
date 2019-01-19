@@ -42,27 +42,23 @@ Manages a Scheduler Job.
 
 `AuthenticationActiveDirectory` - (Optional) An `AuthenticationActiveDirectory` block which defines the OAUTH Active Directory information to use.
 
-`Username` - (Required) Specifies the username to use.
+### AuthenticationCertificate Properties
 
 `Password` - (Required) Specifies the certificate password.
 
 `Pfx` - (Required) Specifies the pfx certificate in base-64 format.
 
-`ClientId` - (Required) Specifies the client ID to use.
+### MonthlyOccurrences Properties
 
-`TenantId` - (Required) Specifies the tenant ID to use.
+`Day` - (Optional) Specifies the day of the week that the job should execute on. Must be one of  one of `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, `Saturday`, `Sunday`.
 
-`ClientSecret` - (Required) Specifies the secret to use.
+`Occurrence` - (Optional) Specifies the week the job should run on. For example  `1` for the first week, `-1` for the last week of the month. Must be between `-5` and `5`.
 
-`Audience` - (Optional) Specifies the audience.
+### AuthenticationBasic Properties
 
-`StorageAccountName` - (Required) Specifies the the storage account name.
+`Username` - (Required) Specifies the username to use.
 
-`StorageQueueName` - (Required) Specifies the the storage account queue.
-
-`SasToken` - (Required) Specifies a SAS token/key to authenticate with.
-
-`Message` - (Required) The message to send into the queue.
+### Recurrence Properties
 
 `Interval` - (Optional) Specifies the interval between executions. Defaults to `1`.
 
@@ -82,9 +78,25 @@ Manages a Scheduler Job.
 
 `MonthlyOccurrences` - (Optional) Specifies specific monthly occurrences like "last sunday of the month" with `MonthlyOccurrences` blocks. Only applies when `Month` is used for frequency.
 
-`Day` - (Optional) Specifies the day of the week that the job should execute on. Must be one of  one of `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, `Saturday`, `Sunday`.
+### AuthenticationActiveDirectory Properties
 
-`Occurrence` - (Optional) Specifies the week the job should run on. For example  `1` for the first week, `-1` for the last week of the month. Must be between `-5` and `5`.
+`ClientId` - (Required) Specifies the client ID to use.
+
+`TenantId` - (Required) Specifies the tenant ID to use.
+
+`ClientSecret` - (Required) Specifies the secret to use.
+
+`Audience` - (Optional) Specifies the audience.
+
+### ErrorActionStorageQueue Properties
+
+`StorageAccountName` - (Required) Specifies the the storage account name.
+
+`StorageQueueName` - (Required) Specifies the the storage account queue.
+
+`SasToken` - (Required) Specifies a SAS token/key to authenticate with.
+
+`Message` - (Required) The message to send into the queue.
 
 
 ## Return Values

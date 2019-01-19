@@ -9,6 +9,8 @@ instances in an Oracle Cloud Infrastructure Compute Classic identity domain.
 
 `DesiredState` - (Required) The desired state of the orchestration. Permitted values are:.
 
+### DesiredState Properties
+
 `Instance` - (Required) The information pertaining to creating an instance through the orchestration API.
 
 `Description` - (Optional) The description of the orchestration.

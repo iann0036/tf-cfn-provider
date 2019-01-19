@@ -269,8 +269,9 @@ def process_file(provider_name, file_contents, provider_readme_items):
     
     # process arguments
     argument_names = []
+    argument_block = None
     for line_number, line in enumerate(argument_lines):
-        if line.strip().startswith("* "):
+        if line.strip().startswith("* ") or line.strip().startswith("- "):
             startpos = line.strip().find("`")
             endpos = line.strip().find("`", startpos+1)
             if startpos != -1 and endpos != -1:
@@ -287,7 +288,15 @@ def process_file(provider_name, file_contents, provider_readme_items):
 
                     if argument_description[-1] != ".":
                         argument_description += "."
-                    arguments[argument_name] = argument_description
+                    
+                    arguments[argument_name] = {
+                        'description': argument_description,
+                        'property_of': argument_block
+                    }
+        if line.strip().endswith(":") and argument_lines[line_number+1].strip() == "":
+            for argument_name in argument_names:
+                if "`{}`".format(argument_name) in line:
+                    argument_block = argument_name
 
     if resource_type != "":
         split_provider_name = resource_type.split("_")
@@ -314,11 +323,23 @@ def process_file(provider_name, file_contents, provider_readme_items):
 
         # properties
         properties = ""
+        property_of_list = []
         for arg in arguments:
-            properties += "`{ret}` - {desc}\n\n".format(
-                ret=tf_to_cfn_str(arg),
-                desc=arguments[arg]
-            )
+            if not arguments[arg]['property_of']:
+                properties += "`{ret}` - {desc}\n\n".format(
+                    ret=tf_to_cfn_str(arg),
+                    desc=arguments[arg]['description']
+                )
+            else:
+                property_of_list.append(arguments[arg]['property_of'])
+        for property_of in list(set(property_of_list)):
+            properties += "### {} Properties\n\n".format(tf_to_cfn_str(property_of))
+            for arg in arguments:
+                if arguments[arg]['property_of'] == property_of:
+                    properties += "`{ret}` - {desc}\n\n".format(
+                        ret=tf_to_cfn_str(arg),
+                        desc=arguments[arg]['description']
+                    )
 
         # return values
         return_values = ""

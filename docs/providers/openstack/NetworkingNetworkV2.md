@@ -28,6 +28,8 @@ Manages a V2 Neutron network resource within OpenStack.
 
 `TransparentVlan` - (Optional) Specifies whether the network resource has the VLAN transparent attribute set. Valid values are true and false. Defaults to false. Changing this updates the `TransparentVlan` attribute of the existing network.
 
+### Segments Properties
+
 `PhysicalNetwork` - The physical network where this network is implemented.
 
 `SegmentationId` - An isolated segment on the physical network.

@@ -4,8 +4,6 @@ Manages an Azure Storage Account.
 
 ## Properties
 
-`Name` - (Optional) The Custom Domain Name to use for the Storage Account, which will be validated by Azure.
-
 `ResourceGroupName` - (Required) The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
 
 `Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
@@ -23,6 +21,10 @@ Manages an Azure Storage Account.
 `CustomDomain` - (Optional) A `CustomDomain` block as documented below.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
+
+### CustomDomain Properties
+
+`Name` - (Optional) The Custom Domain Name to use for the Storage Account, which will be validated by Azure.
 
 `UseSubdomain` - (Optional) Should the Custom Domain Name be validated by using indirect CNAME validation?.
 

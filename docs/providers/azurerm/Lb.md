@@ -4,8 +4,6 @@ Manage a Load Balancer Resource.
 
 ## Properties
 
-`Name` - (Required) Specifies the name of the frontend ip configuration.
-
 `ResourceGroupName` - (Required) The name of the Resource Group in which to create the Load Balancer.
 
 `Location` - (Required) Specifies the supported Azure Region where the Load Balancer should be created.
@@ -15,6 +13,10 @@ Manage a Load Balancer Resource.
 `Sku` - (Optional) The SKU of the Azure Load Balancer. Accepted values are `Basic` and `Standard`. Defaults to `Basic`.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
+
+### FrontendIpConfiguration Properties
+
+`Name` - (Required) Specifies the name of the frontend ip configuration.
 
 `SubnetId` - The ID of the Subnet which should be associated with the IP Configuration.
 

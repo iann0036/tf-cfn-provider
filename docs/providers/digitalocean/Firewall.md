@@ -11,9 +11,7 @@ modify, and delete Firewalls.
 
 `OutboundRule` - (Optional) The outbound access rule block for the Firewall. The `OutboundRule` block is documented below.
 
-`Protocol` - (Required) The type of traffic to be allowed. This may be one of "tcp", "udp", or "icmp".
-
-`PortRange` - (Optional) The ports on which traffic will be allowed specified as a string containing a single port, a range (e.g. "8000-9000"), or "1-65535" to open all ports for a protocol. Required for when protocol is `tcp` or `udp`.
+### InboundRule Properties
 
 `SourceAddresses` - (Optional) An array of strings containing the IPv4 addresses, IPv6 addresses, IPv4 CIDRs, and/or IPv6 CIDRs from which the inbound traffic will be accepted.
 
@@ -22,6 +20,12 @@ modify, and delete Firewalls.
 `SourceTags` - (Optional) An array containing the names of Tags corresponding to groups of Droplets from which the inbound traffic will be accepted.
 
 `SourceLoadBalancerUids` - (Optional) An array containing the IDs of the Load Balancers from which the inbound traffic will be accepted.
+
+### OutboundRule Properties
+
+`Protocol` - (Required) The type of traffic to be allowed. This may be one of "tcp", "udp", or "icmp".
+
+`PortRange` - (Optional) The ports on which traffic will be allowed specified as a string containing a single port, a range (e.g. "8000-9000"), or "1-65535" to open all ports for a protocol. Required for when protocol is `tcp` or `udp`.
 
 `DestinationAddresses` - (Optional) An array of strings containing the IPv4 addresses, IPv6 addresses, IPv4 CIDRs, and/or IPv6 CIDRs to which the outbound traffic will be allowed.
 

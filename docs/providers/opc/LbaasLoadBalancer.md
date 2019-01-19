@@ -8,7 +8,11 @@ The `Terraform::OPC::LbaasLoadBalancer` resource creates and manages a Load Bala
 
 `Region` - (Required) The region in which to create the Load Balancer, e.g. `uscom-central-1`.
 
-`Scheme` - (Required) Set to either `INTERNET_FACING` or `INTERNAL`.
+`Scheme` - (Required) Set to either `INTERNETFACING` or `INTERNAL`.
+
+`INTERNETFACING` - Create an internet-facing load balancer in a given IP network.
+
+`INTERNAL` - Create an internal load balancer in a given IP network for sole consumption of other clients inside the same network.
 
 `Description` - (Optional) A short description for the load balancer. The description must not exceed 1000 characters.
 

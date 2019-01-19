@@ -4,9 +4,11 @@ The database resource allows a database to be created on an InfluxDB server.
 
 ## Properties
 
-`Name` - (Required) The name of the retention policy.
-
 `RetentionPolicies` - (Optional) A list of retention policies for specified database.
+
+### RetentionPolicies Properties
+
+`Name` - (Required) The name of the retention policy.
 
 `Duration` - (Required) The duration for retention policy, format of duration can be found at InfluxDB Documentation.
 

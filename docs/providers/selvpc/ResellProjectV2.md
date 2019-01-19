@@ -14,13 +14,19 @@ Manages a V2 project resource within Resell Selectel VPC.
 
 `Quotas` - (Optional) An array of desired quotas for this project. The structure is described below.
 
+### Theme Properties
+
 `Color` - (Optional) A background color in hex format.
 
 `Logo` - (Optional) An url of the project header logo.
 
+### Quotas Properties
+
 `ResourceName` - (Required) A name of the billing resource to set quotas for.
 
 `ResourceQuotas` - (Required) An array of desired billing quotas for this particular resource. The structure is described below.
+
+### ResourceQuotas Properties
 
 `Region` - (Optional) A Selectel VPC region for the resource quota.
 

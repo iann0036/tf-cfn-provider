@@ -16,6 +16,8 @@ Provides a NS1 User resource. Creating a user sends an invitation email to the u
 
 `Permissions` - (Optional) The allowed permissions of the user. Permissions documented below.
 
+### Permissions Properties
+
 `DnsViewZones` - (Optional) Whether the user can view the accounts zones.
 
 `DnsManageZones` - (Optional) Whether the user can modify the accounts zones.

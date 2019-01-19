@@ -20,6 +20,8 @@ Provides a workspace resource.
 
 `VcsRepo` - (Optional) Settings for the workspace's VCS repository.
 
+### VcsRepo Properties
+
 `Identifier` - (Required) A reference to your VCS repository in the format `:org/:repo` where `:org` and `:repo` refer to the organization and repository in your VCS provider.
 
 `Branch` - (Optional) The repository branch that Terraform will execute from. Default to `master`.

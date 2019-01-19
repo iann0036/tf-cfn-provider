@@ -16,6 +16,8 @@ Manages a Virtual Network within a Dev Test Lab.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### Subnet Properties
+
 `UsePublicIpAddress` - (Required) Can Virtual Machines in this Subnet use Public IP Addresses? Possible values are `Allow`, `Default` and `Deny`.
 
 `UseInVirtualMachineCreation` - (Required) Can this subnet be used for creating Virtual Machines? Possible values are `Allow`, `Default` and `Deny`.

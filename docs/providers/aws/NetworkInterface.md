@@ -20,6 +20,8 @@ Provides an Elastic network interface (ENI) resource.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### Attachment Properties
+
 `Instance` - (Required) ID of the instance to attach to.
 
 `DeviceIndex` - (Required) Integer to define the devices index.

@@ -6,19 +6,11 @@ Provides a CodePipeline.
 
 ## Properties
 
+### Action Properties
+
 `Name` - (Required) The action declaration's name.
 
 `RoleArn` - (Optional) The ARN of the IAM service role that will perform the declared action. This is assumed through the roleArn for the pipeline.
-
-`Location` - (Required) The location where AWS CodePipeline stores artifacts for a pipeline, such as an S3 bucket.
-
-`Type` - (Required) The type of key; currently only `KMS` is supported.
-
-`EncryptionKey` - (Optional) The encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If you don't specify a key, AWS CodePipeline uses the default key for Amazon Simple Storage Service (Amazon S3). An `EncryptionKey` block is documented below.
-
-`Id` - (Required) The KMS key ARN or ID.
-
-`Action` - (Required) The action(s) to include in the stage. Defined as an `Action` block below.
 
 `Category` - (Required) A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are `Approval`, `Build`, `Deploy`, `Invoke`, `Source` and `Test`.
 
@@ -35,6 +27,22 @@ Provides a CodePipeline.
 `OutputArtifacts` - (Optional) A list of artifact names to output. Output artifact names must be unique within a pipeline.
 
 `RunOrder` - (Optional) The order in which actions are run.
+
+### EncryptionKey Properties
+
+`Type` - (Required) The type of key; currently only `KMS` is supported.
+
+`Id` - (Required) The KMS key ARN or ID.
+
+### ArtifactStore Properties
+
+`Location` - (Required) The location where AWS CodePipeline stores artifacts for a pipeline, such as an S3 bucket.
+
+`EncryptionKey` - (Optional) The encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If you don't specify a key, AWS CodePipeline uses the default key for Amazon Simple Storage Service (Amazon S3). An `EncryptionKey` block is documented below.
+
+### Stage Properties
+
+`Action` - (Required) The action(s) to include in the stage. Defined as an `Action` block below.
 
 
 ## Return Values

@@ -8,6 +8,8 @@ Provides a NS1 Team resource. This can be used to create, modify, and delete tea
 
 `Permissions` - (Optional) The allowed permissions of the team. Permissions documented below.
 
+### Permissions Properties
+
 `DnsViewZones` - (Optional) Whether the team can view the accounts zones.
 
 `DnsManageZones` - (Optional) Whether the team can modify the accounts zones.

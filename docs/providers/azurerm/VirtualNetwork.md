@@ -9,8 +9,6 @@ At this time you cannot use a Virtual Network with in-line Subnets in conjunctio
 
 ## Properties
 
-`Name` - (Required) The name of the subnet.
-
 `ResourceGroupName` - (Required) The name of the resource group in which to create the virtual network.
 
 `AddressSpace` - (Required) The address space that is used the virtual network. You can supply more than one address space. Changing this forces a new resource to be created.
@@ -25,9 +23,15 @@ At this time you cannot use a Virtual Network with in-line Subnets in conjunctio
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### DdosProtectionPlan Properties
+
 `Id` - (Required) The Resource ID of DDoS Protection Plan.
 
 `Enable` - (Required) Enable/disable DDoS Protection Plan on Virtual Network. Defaults to `false`.
+
+### Subnet Properties
+
+`Name` - (Required) The name of the subnet.
 
 `AddressPrefix` - (Required) The address prefix to use for the subnet.
 

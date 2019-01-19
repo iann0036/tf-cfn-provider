@@ -6,8 +6,6 @@ Manages a Version of a Shared Image within a Shared Image Gallery.
 
 ## Properties
 
-`Name` - (Required) The Azure Region in which this Image Version should exist.
-
 `GalleryName` - (Required) The name of the Shared Image Gallery in which the Shared Image exists. Changing this forces a new resource to be created.
 
 `ImageName` - (Required) The name of the Shared Image within the Shared Image Gallery in which this Version should be created. Changing this forces a new resource to be created.
@@ -23,6 +21,10 @@ Manages a Version of a Shared Image within a Shared Image Gallery.
 `ExcludeFromLatest` - (Optional) Should this Image Version be excluded from the `latest` filter? If set to `true` this Image Version won't be returned for the `latest` version. Defaults to `false`.
 
 `Tags` - (Optional) A collection of tags which should be applied to this resource.
+
+### TargetRegion Properties
+
+`Name` - (Required) The Azure Region in which this Image Version should exist.
 
 `RegionalReplicaCount` - (Required) The number of replicas of the Image Version to be created per region.
 

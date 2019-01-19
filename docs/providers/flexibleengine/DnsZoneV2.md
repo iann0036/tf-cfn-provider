@@ -20,6 +20,8 @@ Manages a DNS zone in the FlexibleEngine DNS Service.
 
 `ValueSpecs` - (Optional) Map of additional options. Changing this creates a new DNS zone.
 
+### Router Properties
+
 `RouterId` - (Required) The router UUID. Changing this creates a new DNS zone.
 
 `RouterRegion` - (Required) The region of the router. Changing this creates a new DNS zone.

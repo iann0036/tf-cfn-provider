@@ -17,8 +17,6 @@ a conflict of rule settings and will overwrite rules.
 
 `NamePrefix` - (Optional, Forces new resource) Creates a unique name beginning with the specified prefix. Conflicts with `Name`.
 
-`Description` - (Optional) Description of this egress rule.
-
 `Ingress` - (Optional) Can be specified multiple times for each ingress rule. Each ingress block supports fields documented below.
 
 `Egress` - (Optional, VPC only) Can be specified multiple times for each egress rule. Each egress block supports fields documented below.
@@ -28,6 +26,10 @@ a conflict of rule settings and will overwrite rules.
 `VpcId` - (Optional, Forces new resource) The VPC ID.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
+
+### Egress Properties
+
+`Description` - (Optional) Description of this egress rule.
 
 `CidrBlocks` - (Optional) List of CIDR blocks.
 

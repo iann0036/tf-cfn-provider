@@ -20,9 +20,13 @@ Manages an Activity Log Alert within Azure Monitor.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### Action Properties
+
 `ActionGroupId` - (Required) The ID of the Action Group can be sourced from [the `Terraform::AzureRM::MonitorActionGroup` resource](./monitor_action_group.html).
 
 `WebhookProperties` - (Optional) The map of custom string properties to include with the post operation. These data are appended to the webhook payload.
+
+### Criteria Properties
 
 `Category` - (Required) The category of the operation. Possible values are `Administrative`, `Autoscale`, `Policy`, `Recommendation`, `Security` and `Service Health`.
 

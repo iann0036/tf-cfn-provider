@@ -14,6 +14,8 @@ a PostgreSQL database.
 
 `Policy` - (Optional) Can be specified multiple times for each policy.  Each policy block supports fields documented below.
 
+### Policy Properties
+
 `Create` - (Optional) Should the specified ROLE have CREATE privileges to the specified SCHEMA.
 
 `CreateWithGrant` - (Optional) Should the specified ROLE have CREATE privileges to the specified SCHEMA and the ability to GRANT the CREATE privilege to other ROLEs.

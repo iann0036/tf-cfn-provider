@@ -8,6 +8,8 @@ Provides a NS1 Notify List resource. This can be used to create, modify, and del
 
 `Notifications` - (Optional) A list of notifiers. All notifiers in a notification list will receive notifications whenever an event is send to the list (e.g., when a monitoring job fails). Notifiers are documented below.
 
+### Notifications Properties
+
 `Type` - (Required) The type of notifier. Available notifiers are indicated in /notifytypes endpoint.
 
 `Config` - (Required) Configuration details for the given notifier type.

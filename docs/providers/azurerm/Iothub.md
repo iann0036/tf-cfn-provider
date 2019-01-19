@@ -4,8 +4,6 @@ Manages an IotHub
 
 ## Properties
 
-`Name` - (Required) The name of the route. The name can only include alphanumeric characters, periods, underscores, hyphens, has a maximum length of 64 characters, and must be unique.
-
 `ResourceGroupName` - (Required) The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.
 
 `Location` - (Required) Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.
@@ -18,9 +16,7 @@ Manages an IotHub
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
-`Tier` - (Required) The billing tier for the IoT Hub. Possible values are `Basic`, `Free` or `Standard`.
-
-`Capacity` - (Required) The number of provisioned IoT Hub units.
+### Endpoint Properties
 
 `Type` - (Required) The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
 
@@ -36,6 +32,10 @@ Manages an IotHub
 
 `FileNameFormat` - (Optional) File name format for the blob. Default format is ``{iothub}/{partition}/{YYYY}/{MM}/{DD}/{HH}/{mm}``. All parameters are mandatory but can be reordered. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
 
+### Route Properties
+
+`Name` - (Required) The name of the route. The name can only include alphanumeric characters, periods, underscores, hyphens, has a maximum length of 64 characters, and must be unique.
+
 `Source` - (Required) The source that the routing rule is to be applied to, such as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`, `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`, `RoutingSourceDeviceJobLifecycleEvents`.
 
 `Condition` - (Optional) The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to true by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.
@@ -43,6 +43,12 @@ Manages an IotHub
 `EndpointNames` - (Required) The list of endpoints to which messages that satisfy the condition are routed.
 
 `Enabled` - (Required) Used to specify whether a route is enabled.
+
+### Sku Properties
+
+`Tier` - (Required) The billing tier for the IoT Hub. Possible values are `Basic`, `Free` or `Standard`.
+
+`Capacity` - (Required) The number of provisioned IoT Hub units.
 
 
 ## Return Values

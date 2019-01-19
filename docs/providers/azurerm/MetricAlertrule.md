@@ -32,9 +32,13 @@ Manages a [metric-based alert rule](https://docs.microsoft.com/en-us/azure/monit
 
 `Tags` - (Optional) A mapping of tags to assign to the resource. Changing this forces a new resource to be created.
 
+### EmailAction Properties
+
 `SendToServiceOwners` - (Optional) If `true`, the administrators (service and co-administrators) of the subscription are notified when the alert is triggered. Defaults to `false`.
 
 `CustomEmails` - (Optional) A list of email addresses to be notified when the alert is triggered.
+
+### WebhookAction Properties
 
 `ServiceUri` - (Required) The service uri of the webhook to POST the notification when the alert is triggered.
 

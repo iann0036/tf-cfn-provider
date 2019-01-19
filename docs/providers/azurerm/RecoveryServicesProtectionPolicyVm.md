@@ -24,9 +24,7 @@ Manages an Recovery Services VM Protection Policy.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
-`Frequency` - (Required) Sets the backup frequency. Must be either `Daily` or`Weekly`.
-
-`Times` - (Required) The time of day to preform the backup in 24hour format.
+### RetentionYearly Properties
 
 `Weekdays` - (Required) The weekday backups to retain . Must be one of `Sunday`, `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday` or `Saturday`.
 
@@ -35,6 +33,12 @@ Manages an Recovery Services VM Protection Policy.
 `Weeks` - (Required) The weeks of the month to retain backups of. Must be one of `First`, `Second`, `Third`, `Fourth`, `Last`.
 
 `Months` - (Required) The months of the year to retain backups of. Must be one of `January`, `Febuary`, `March`, `April`, `May`, `June`, `July`, `Augest`, `September`, `October`, `November` and `December`.
+
+### Backup Properties
+
+`Frequency` - (Required) Sets the backup frequency. Must be either `Daily` or`Weekly`.
+
+`Times` - (Required) The time of day to preform the backup in 24hour format.
 
 
 ## Return Values

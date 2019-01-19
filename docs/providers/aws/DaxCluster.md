@@ -12,6 +12,8 @@ Provides a DAX Cluster resource.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### ServerSideEncryption Properties
+
 `Enabled` - (Optional) Whether to enable encryption at rest. Defaults to `false`.
 
 

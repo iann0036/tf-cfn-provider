@@ -10,6 +10,8 @@ Creates firewall rules for a given IP address.
 
 `Rule` - (Optional) Can be specified multiple times. Each rule block supports fields documented below. If `managed = false` at least one rule is required!.
 
+### Rule Properties
+
 `CidrList` - (Required) A CIDR list to allow access to the given ports.
 
 `Protocol` - (Required) The name of the protocol to allow. Valid options are: `tcp`, `udp` and `icmp`.

@@ -6,15 +6,11 @@ Manages a V2 port resource within OpenStack.
 
 `Region` - (Optional) The region in which to obtain the V2 networking client. A networking client is needed to create a port. If omitted, the `Region` argument of the provider is used. Changing this creates a new port.
 
-`Name` - (Required) Name of the DHCP option.
-
 `Description` - (Optional) Human-readable description of the floating IP. Changing this updates the `Description` of an existing port.
 
 `NetworkId` - (Required) The ID of the network to attach the port to. Changing this creates a new port.
 
 `AdminStateUp` - (Optional) Administrative up/down status for the port (must be "true" or "false" if provided). Changing this updates the `AdminStateUp` of an existing port.
-
-`MacAddress` - (Optional) The additional MAC address.
 
 `TenantId` - (Optional) The owner of the Port. Required if admin wants to create a port for another tenant. Changing this creates a new port.
 
@@ -36,11 +32,21 @@ Manages a V2 port resource within OpenStack.
 
 `ValueSpecs` - (Optional) Map of additional options.
 
-`SubnetId` - (Required) Subnet in which to allocate IP address for this port.
+### AllowedAddressPairs Properties
+
+`MacAddress` - (Optional) The additional MAC address.
 
 `IpAddress` - (Required) The additional IP address.
 
 `Tags` - (Optional) A set of string tags for the port.
+
+### FixedIp Properties
+
+`SubnetId` - (Required) Subnet in which to allocate IP address for this port.
+
+### ExtraDhcpOption Properties
+
+`Name` - (Required) Name of the DHCP option.
 
 `Value` - (Required) Value of the DHCP option.
 

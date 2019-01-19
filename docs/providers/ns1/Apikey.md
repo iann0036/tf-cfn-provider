@@ -12,6 +12,8 @@ Provides a NS1 Api Key resource. This can be used to create, modify, and delete 
 
 `Permissions` - (Optional) The allowed permissions of the apikey. Permissions documented below.
 
+### Permissions Properties
+
 `DnsViewZones` - (Optional) Whether the apikey can view the accounts zones.
 
 `DnsManageZones` - (Optional) Whether the apikey can modify the accounts zones.

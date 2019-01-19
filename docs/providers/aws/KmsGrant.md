@@ -18,6 +18,8 @@ Provides a resource-based access control mechanism for a KMS customer master key
 
 `GrantCreationTokens` - (Optional, Forces new resources) A list of grant tokens to be used when creating the grant. See [Grant Tokens](http://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#grant_token) for more information about grant tokens.
 
+### Constraints Properties
+
 `EncryptionContextEquals` - (Optional) A list of key-value pairs that must be present in the encryption context of certain subsequent operations that the grant allows. Conflicts with `EncryptionContextSubset`.
 
 `EncryptionContextSubset` - (Optional) A list of key-value pairs, all of which must be present in the encryption context of certain subsequent operations that the grant allows. Conflicts with `EncryptionContextEquals`.

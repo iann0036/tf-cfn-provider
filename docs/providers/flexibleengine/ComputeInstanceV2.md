@@ -6,8 +6,6 @@ Manages a V2 VM instance resource within FlexibleEngine.
 
 `Region` - (Optional) The region in which to create the server instance. If omitted, the `Region` argument of the provider is used. Changing this creates a new server.
 
-`Name` - (Required unless `Uuid` or `Port` is provided) The human-readable name of the network. Changing this creates a new server.
-
 `ImageId` - (Optional; Required if `ImageName` is empty and not booting from a volume. Do not specify if booting from a volume.) The image ID of the desired image for the server. Changing this creates a new server.
 
 `ImageName` - (Optional; Required if `ImageId` is empty and not booting from a volume. Do not specify if booting from a volume.) The name of the desired image for the server. Changing this creates a new server.
@@ -42,27 +40,13 @@ Manages a V2 VM instance resource within FlexibleEngine.
 
 `ForceDelete` - (Optional) Whether to force the FlexibleEngine instance to be forcefully deleted. This is useful for environments that have reclaim / soft deletion enabled.
 
-`Uuid` - (Required unless `SourceType` is set to `"blank"` ) The UUID of the image, volume, or snapshot. Changing this creates a new server.
+### Personality Properties
 
-`Port` - (Required unless `Uuid` or `Name` is provided) The port UUID of a network to attach to the server. Changing this creates a new server.
+`File` - (Required) The absolute path of the destination file.
 
-`FixedIpV4` - (Optional) Specifies a fixed IPv4 address to be used on this network. Changing this creates a new server.
+`Contents` - (Required) The contents of the file. Limited to 255 bytes.
 
-`FixedIpV6` - (Optional) Specifies a fixed IPv6 address to be used on this network. Changing this creates a new server.
-
-`AccessNetwork` - (Optional) Specifies if this network should be used for provisioning access. Accepts true or false. Defaults to false.
-
-`SourceType` - (Required) The source type of the device. Must be one of "blank", "image", "volume", or "snapshot". Changing this creates a new server.
-
-`VolumeSize` - The size of the volume to create (in gigabytes). Required in the following combinations: source=image and destination=volume, source=blank and destination=local, and source=blank and destination=volume. Changing this creates a new server.
-
-`VolumeType` - (Optional) Currently, the value can be `SSD` (ultra-I/O disk type), `SAS` (high I/O disk type), or `SATA` (common I/O disk type).
-
-`BootIndex` - (Optional) The boot index of the volume. It defaults to 0. Changing this creates a new server.
-
-`DestinationType` - (Optional) The type that gets created. Possible values are "volume" and "local". Changing this creates a new server.
-
-`DeleteOnTermination` - (Optional) Delete the volume / block device upon termination of the instance. Defaults to false. Changing this creates a new server.
+### SchedulerHints Properties
 
 `Group` - (Optional) A UUID of a Server Group. The instance will be placed into that group.
 
@@ -76,9 +60,33 @@ Manages a V2 VM instance resource within FlexibleEngine.
 
 `BuildNearHostIp` - (Optional) An IP Address in CIDR form. The instance will be placed on a compute node that is in the same subnet.
 
-`File` - (Required) The absolute path of the destination file.
+### Network Properties
 
-`Contents` - (Required) The contents of the file. Limited to 255 bytes.
+`Name` - (Required unless `Uuid` or `Port` is provided) The human-readable name of the network. Changing this creates a new server.
+
+`Port` - (Required unless `Uuid` or `Name` is provided) The port UUID of a network to attach to the server. Changing this creates a new server.
+
+`FixedIpV4` - (Optional) Specifies a fixed IPv4 address to be used on this network. Changing this creates a new server.
+
+`FixedIpV6` - (Optional) Specifies a fixed IPv6 address to be used on this network. Changing this creates a new server.
+
+`AccessNetwork` - (Optional) Specifies if this network should be used for provisioning access. Accepts true or false. Defaults to false.
+
+### BlockDevice Properties
+
+`Uuid` - (Required unless `SourceType` is set to `"blank"` ) The UUID of the image, volume, or snapshot. Changing this creates a new server.
+
+`SourceType` - (Required) The source type of the device. Must be one of "blank", "image", "volume", or "snapshot". Changing this creates a new server.
+
+`VolumeSize` - The size of the volume to create (in gigabytes). Required in the following combinations: source=image and destination=volume, source=blank and destination=local, and source=blank and destination=volume. Changing this creates a new server.
+
+`VolumeType` - (Optional) Currently, the value can be `SSD` (ultra-I/O disk type), `SAS` (high I/O disk type), or `SATA` (common I/O disk type).
+
+`BootIndex` - (Optional) The boot index of the volume. It defaults to 0. Changing this creates a new server.
+
+`DestinationType` - (Optional) The type that gets created. Possible values are "volume" and "local". Changing this creates a new server.
+
+`DeleteOnTermination` - (Optional) Delete the volume / block device upon termination of the instance. Defaults to false. Changing this creates a new server.
 
 
 ## Return Values

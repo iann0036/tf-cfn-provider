@@ -20,15 +20,19 @@ Provides a NS1 Record resource. This can be used to create, modify, and delete r
 
 `Filters` - (Optional) One or more NS1 filters for the record(order matters). Filters are documented below.
 
-`Answer` - (Required) Space delimited string of RDATA fields dependent on the record type.
-
-`Region` - (Optional) The region(or group) name that this answer belongs to.
+### Filters Properties
 
 `Filter` - (Required) The type of filter.
 
 `Disabled` - (Optional) Determines whether the filter is applied in the filter chain.
 
 `Config` - (Optional) The filters' configuration. Simple key/value pairs determined by the filter type.
+
+### Answers Properties
+
+`Answer` - (Required) Space delimited string of RDATA fields dependent on the record type.
+
+`Region` - (Optional) The region(or group) name that this answer belongs to.
 
 
 ## See Also

@@ -48,6 +48,8 @@ Provides an OpsWorks stack resource.
 
 `VpcId` - (Optional) The id of the VPC that this stack belongs to.
 
+### CustomCookbooksSource Properties
+
 `Type` - (Required) The type of source to use. For example, "archive".
 
 `Url` - (Required) The URL where the cookbooks resource can be found.

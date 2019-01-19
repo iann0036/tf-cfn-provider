@@ -18,9 +18,7 @@ Manage a custom virtual machine image that can be used to create virtual machine
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
-`OsType` - (Required) Specifies the type of operating system contained in the the virtual machine image. Possible values are: Windows or Linux.
-
-`OsState` - (Required) Specifies the state of the operating system contained in the blob. Currently, the only value is Generalized.
+### DataDisk Properties
 
 `ManagedDiskId` - (Optional) Specifies the ID of the managed disk resource that you want to use to create the image.
 
@@ -31,6 +29,12 @@ Manage a custom virtual machine image that can be used to create virtual machine
 `SizeGb` - (Optional) Specifies the size of the image to be created. The target size can't be smaller than the source size.
 
 `Lun` - (Required) Specifies the logical unit number of the data disk.
+
+### OsDisk Properties
+
+`OsType` - (Required) Specifies the type of operating system contained in the the virtual machine image. Possible values are: Windows or Linux.
+
+`OsState` - (Required) Specifies the state of the operating system contained in the blob. Currently, the only value is Generalized.
 
 
 ## Return Values

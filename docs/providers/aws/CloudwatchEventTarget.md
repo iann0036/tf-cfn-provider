@@ -28,9 +28,41 @@ Provides a CloudWatch Event Target resource.
 
 `InputTransformer` - (Optional) Parameters used when you are providing a custom input to a target based on certain event data.
 
+### NetworkConfiguration Properties
+
+`Subnets` - (Required) The subnets associated with the task or service.
+
+`SecurityGroups` - (Optional) The security groups associated with the task or service. If you do not specify a security group, the default security group for the VPC is used.
+
+`AssignPublicIp` - (Optional) Assign a public IP address to the ENI (Fargate launch type only). Valid values are `true` or `false`. Default `false`.
+
+### BatchTarget Properties
+
+`JobDefinition` - (Required) The ARN or name of the job definition to use if the event target is an AWS Batch job. This job definition must already exist.
+
+`JobName` - (Required) The name to use for this execution of the job, if the target is an AWS Batch job.
+
+`ArraySize` - (Optional) The size of the array, if this is an array batch job. Valid values are integers between 2 and 10,000.
+
+`JobAttempts` - (Optional) The number of times to attempt to retry, if the job fails. Valid values are 1 to 10.
+
+### RunCommandTargets Properties
+
 `Key` - (Required) Can be either `tag:tag-key` or `InstanceIds`.
 
 `Values` - (Required) If Key is `tag:tag-key`, Values is a list of tag values. If Key is `InstanceIds`, Values is a list of Amazon EC2 instance IDs.
+
+### KinesisTarget Properties
+
+`PartitionKeyPath` - (Optional) The JSON path to be extracted from the event and used as the partition key.
+
+### InputTransformer Properties
+
+`InputPaths` - (Optional) Key value pairs specified in the form of JSONPath (for example, time = $.time).
+
+`InputTemplate` - (Required) Structure containing the template body.
+
+### EcsTarget Properties
 
 `Group` - (Optional) Specifies an ECS task group for the task. The maximum length is 255 characters.
 
@@ -44,27 +76,9 @@ Provides a CloudWatch Event Target resource.
 
 `TaskDefinitionArn` - (Required) The ARN of the task definition to use if the event target is an Amazon ECS cluster.
 
-`Subnets` - (Required) The subnets associated with the task or service.
-
-`SecurityGroups` - (Optional) The security groups associated with the task or service. If you do not specify a security group, the default security group for the VPC is used.
-
-`AssignPublicIp` - (Optional) Assign a public IP address to the ENI (Fargate launch type only). Valid values are `true` or `false`. Default `false`.
-
-`JobDefinition` - (Required) The ARN or name of the job definition to use if the event target is an AWS Batch job. This job definition must already exist.
-
-`JobName` - (Required) The name to use for this execution of the job, if the target is an AWS Batch job.
-
-`ArraySize` - (Optional) The size of the array, if this is an array batch job. Valid values are integers between 2 and 10,000.
-
-`JobAttempts` - (Optional) The number of times to attempt to retry, if the job fails. Valid values are 1 to 10.
-
-`PartitionKeyPath` - (Optional) The JSON path to be extracted from the event and used as the partition key.
+### SqsTarget Properties
 
 `MessageGroupId` - (Optional) The FIFO message group ID to use as the target.
-
-`InputPaths` - (Optional) Key value pairs specified in the form of JSONPath (for example, time = $.time).
-
-`InputTemplate` - (Required) Structure containing the template body.
 
 
 ## See Also

@@ -26,6 +26,8 @@ accidental destruction.
 
 `VersionTemplate` - (Optional) A template describing settings for new crypto key versions. Structure is documented below.
 
+### VersionTemplate Properties
+
 `Algorithm` - (Required)  The algorithm to use when creating a version based on this template. See the [algorithm reference](https://cloud.google.com/kms/docs/reference/rest/v1/CryptoKeyVersionAlgorithm) for possible inputs.
 
 `ProtectionLevel` - (Optional) The protection level to use when creating a version based on this template. One of `SOFTWARE`, or `HSM`.

@@ -12,8 +12,6 @@ Manages a System within Cobbler.
 
 `FetchableFiles` - (Optional) Templates for tftp or wget.
 
-`Gateway` - (Optional) Per-interface gateway.
-
 `Hostname` - (Optional) Hostname of the system.
 
 `Image` - (Optional) Parent image (if no profile is used).
@@ -43,8 +41,6 @@ Manages a System within Cobbler.
 `NameServersSearch` - (Optional) Name servers search path.
 
 `NameServers` - (Optional) Name servers.
-
-`Name` - (Required) The device name of the interface. ex: eth0.
 
 `NetbootEnabled` - (Optional) (re)Install this machine at next boot.
 
@@ -89,6 +85,12 @@ Manages a System within Cobbler.
 `VirtRam` - (Optional) The amount of RAM for the VM.
 
 `VirtType` - (Optional) Virtualization technology to use: xenpv, xenfv, qemu, kvm, vmware, openvz.
+
+### Interface Properties
+
+`Gateway` - (Optional) Per-interface gateway.
+
+`Name` - (Required) The device name of the interface. ex: eth0.
 
 `Cnames` - (Optional) Canonical name records.
 

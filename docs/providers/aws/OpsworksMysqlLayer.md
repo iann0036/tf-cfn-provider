@@ -41,6 +41,8 @@ Provides an OpsWorks MySQL layer resource.
 
 `CustomJson` - (Optional) Custom JSON attributes to apply to the layer.
 
+### EbsVolume Properties
+
 `MountPoint` - (Required) The path to mount the EBS volume on the layer's instances.
 
 `Size` - (Required) The size of the volume in gigabytes.

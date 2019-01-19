@@ -12,8 +12,6 @@ Manages a V2 port resource within TelefonicaOpenCloud.
 
 `AdminStateUp` - (Optional) Administrative up/down status for the port (must be "true" or "false" if provided). Changing this updates the `AdminStateUp` of an existing port.
 
-`MacAddress` - (Optional) The additional MAC address.
-
 `TenantId` - (Optional) The owner of the Port. Required if admin wants to create a port for another tenant. Changing this creates a new port.
 
 `DeviceOwner` - (Optional) The device owner of the Port. Changing this creates a new port.
@@ -30,9 +28,15 @@ Manages a V2 port resource within TelefonicaOpenCloud.
 
 `ValueSpecs` - (Optional) Map of additional options.
 
-`SubnetId` - (Required) Subnet in which to allocate IP address for this port.
+### AllowedAddressPairs Properties
+
+`MacAddress` - (Optional) The additional MAC address.
 
 `IpAddress` - (Required) The additional IP address.
+
+### FixedIp Properties
+
+`SubnetId` - (Required) Subnet in which to allocate IP address for this port.
 
 
 ## Return Values

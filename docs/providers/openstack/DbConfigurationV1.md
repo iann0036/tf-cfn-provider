@@ -6,19 +6,23 @@ Manages a V1 DB configuration resource within OpenStack.
 
 `Region` - (Required) The region in which to create the db instance. Changing this creates a new instance.
 
-`Name` - (Optional) Configuration parameter name. Changing this creates a new resource.
-
 `Description` - (Optional) Description of the resource.
 
 `Datastore` - (Required) An array of database engine type and version. The datastore object structure is documented below. Changing this creates resource.
 
 `Configuration` - (Optional) An array of configuration parameter name and value. Can be specified multiple times. The configuration object structure is documented below.
 
+### Configuration Properties
+
+`Name` - (Optional) Configuration parameter name. Changing this creates a new resource.
+
+`Value` - (Optional) Configuration parameter value. Changing this creates a new resource.
+
+### Datastore Properties
+
 `Type` - (Required) Database engine type to be used with this configuration. Changing this creates a new resource.
 
 `Version` - (Required) Version of database engine type to be used with this configuration. Changing this creates a new resource.
-
-`Value` - (Optional) Configuration parameter value. Changing this creates a new resource.
 
 
 ## Return Values

@@ -44,6 +44,8 @@ Manages resource cluster within HuaweiCloud MRS.
 
 `AddJobs` - (Optional) You can submit a job when you create a cluster to save time and use MRS easily. Only one job can be added.
 
+### ComponentList Properties
+
 `ComponentName` - (Required) Component name Currently, Hadoop, Spark, HBase, Hive, Hue, Loader, Flume, Kafka and Storm are supported.
 
 `JobType` - (Required) Job type 1: MapReduce 2: Spark 3: Hive Script 4: HiveQL (not supported currently) 5: DistCp, importing and exporting data (not supported in this API currently). 6: Spark Script 7: Spark SQL, submitting Spark SQL statements (not supported in this API currently). NOTE: Spark and Hive jobs can be added to only clusters including Spark and Hive components.

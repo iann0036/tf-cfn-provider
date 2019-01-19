@@ -4,8 +4,6 @@ Manage an Azure Storage Account.
 
 ## Properties
 
-`Name` - (Optional) The Custom Domain Name to use for the Storage Account, which will be validated by Azure.
-
 `ResourceGroupName` - (Required) The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
 
 `Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
@@ -34,7 +32,11 @@ Manage an Azure Storage Account.
 
 `Identity` - (Optional) A Managed Service Identity block as defined below.
 
-`UseSubdomain` - (Optional) Should the Custom Domain Name be validated by using indirect CNAME validation?.
+### Identity Properties
+
+`Type` - (Required) Specifies the identity type of the Storage Account. At this time the only allowed value is `SystemAssigned`.
+
+### NetworkRules Properties
 
 `Bypass` - (Optional)  Specifies whether traffic is bypassed for Logging/Metrics/AzureServices. Valid options are any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
 
@@ -42,7 +44,11 @@ Manage an Azure Storage Account.
 
 `VirtualNetworkSubnetIds` - (Optional) A list of resource ids for subnets.
 
-`Type` - (Required) Specifies the identity type of the Storage Account. At this time the only allowed value is `SystemAssigned`.
+### CustomDomain Properties
+
+`Name` - (Optional) The Custom Domain Name to use for the Storage Account, which will be validated by Azure.
+
+`UseSubdomain` - (Optional) Should the Custom Domain Name be validated by using indirect CNAME validation?.
 
 
 ## Return Values

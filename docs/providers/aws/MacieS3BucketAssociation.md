@@ -14,6 +14,8 @@ Associates an S3 resource with Amazon Macie for monitoring and data classificati
 
 `Prefix` - (Optional) Object key prefix identifying one or more S3 objects to which the association applies.
 
+### ClassificationType Properties
+
 `Continuous` - (Optional) A string value indicating that Macie perform a one-time classification of all of the existing objects in the bucket. The only valid value is the default value, `FULL`.
 
 `OneTime` - (Optional) A string value indicating whether or not Macie performs a one-time classification of all of the existing objects in the bucket. Valid values are `NONE` and `FULL`. Defaults to `NONE` indicating that Macie only classifies objects that are added after the association was created.

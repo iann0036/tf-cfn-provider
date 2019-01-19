@@ -4,8 +4,6 @@ Manages a Metric Alert within Azure Monitor.
 
 ## Properties
 
-`Name` - (Required) One of the dimension names.
-
 `ResourceGroupName` - (Required) The name of the resource group in which to create the Metric Alert instance.
 
 `Scopes` - (Required) The resource ID at which the metric criteria should be applied.
@@ -28,9 +26,21 @@ Manages a Metric Alert within Azure Monitor.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### Dimension Properties
+
+`Name` - (Required) One of the dimension names.
+
+`Operator` - (Required) The dimension operator. Possible values are `Include` and `Exclude`.
+
+`Values` - (Required) The list of dimension values.
+
+### Action Properties
+
 `ActionGroupId` - (Required) The ID of the Action Group can be sourced from [the `Terraform::AzureRM::MonitorActionGroup` resource](./monitor_action_group.html).
 
 `WebhookProperties` - (Optional) The map of custom string properties to include with the post operation. These data are appended to the webhook payload.
+
+### Criteria Properties
 
 `MetricNamespace` - (Required) One of the metric namespaces to be monitored.
 
@@ -38,13 +48,9 @@ Manages a Metric Alert within Azure Monitor.
 
 `Aggregation` - (Required) The statistic that runs over the metric values. Possible values are `Average`, `Minimum`, `Maximum` and `Total`.
 
-`Operator` - (Required) The dimension operator. Possible values are `Include` and `Exclude`.
-
 `Threshold` - (Required) The criteria threshold value that activates the alert.
 
 `Dimension` - (Optional) One or more `Dimension` blocks as defined below.
-
-`Values` - (Required) The list of dimension values.
 
 
 ## Return Values

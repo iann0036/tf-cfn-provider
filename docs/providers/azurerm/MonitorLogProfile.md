@@ -18,6 +18,8 @@ Manages a [Log Profile](https://docs.microsoft.com/en-us/azure/monitoring-and-di
 
 `RetentionPolicy` - (Required) A `RetentionPolicy` block as documented below. A retention policy for how long Activity Logs are retained in the storage account.
 
+### RetentionPolicy Properties
+
 `Enabled` - (Required) A boolean value to indicate whether the retention policy is enabled.
 
 `Days` - (Optional) The number of days for the retention policy. Defaults to 0.

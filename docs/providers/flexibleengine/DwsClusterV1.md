@@ -26,6 +26,8 @@ Manages a DWS cluster resource within FlexibleEngine
 
 `VpcId` - (Required) VPC ID, which is used for configuring cluster network.
 
+### PublicIp Properties
+
 `EipId` - (Optional) EIP ID.
 
 `PublicBindType` - (Optional) Binding type of an EIP. The value can be either of the following:.

@@ -19,17 +19,25 @@ documentation](https://cloud.google.com/resource-manager/docs/organization-polic
 
 `RestorePolicy` - (Optional) A restore policy is a constraint to restore the default policy. Structure is documented below.
 
-`Enforced` - (Required) If true, then the Policy is enforced. If false, then any configuration is acceptable.
+### ListPolicy Properties
 
 `SuggestedValues` - (Optional) The Google Cloud Console will try to default to a configuration that matches the value specified in this field.
 
 `InheritFromParent` - (Optional) If set to true, the values from the effective Policy of the parent resource are inherited, meaning the values set in this Policy are added to the values inherited up the hierarchy.
 
+### RestorePolicy Properties
+
+`Default` - (Required) May only be set to true. If set, then the default Policy is restored.
+
+### Allow Properties
+
 `All` - (Optional) The policy allows or denies all values.
 
 `Values` - (Optional) The policy can define specific values that are allowed or denied.
 
-`Default` - (Required) May only be set to true. If set, then the default Policy is restored.
+### BooleanPolicy Properties
+
+`Enforced` - (Required) If true, then the Policy is enforced. If false, then any configuration is acceptable.
 
 
 ## Return Values

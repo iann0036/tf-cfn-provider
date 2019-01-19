@@ -4,8 +4,6 @@ Manage a Service Fabric Cluster.
 
 ## Properties
 
-`Name` - (Required) The name of the Node Type. Changing this forces a new resource to be created.
-
 `ResourceGroupName` - (Required) The name of the Resource Group in which the Service Fabric Cluster exists. Changing this forces a new resource to be created.
 
 `Location` - (Required) Specifies the Azure Region where the Service Fabric Cluster should exist. Changing this forces a new resource to be created.
@@ -38,17 +36,7 @@ Manage a Service Fabric Cluster.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
-`TenantId` - (Required) The Azure Active Directory Tenant ID. Changing this forces a new resource to be created.
-
-`ClusterApplicationId` - (Required) The Azure Active Directory Client ID which should be used for the Client Application. Changing this forces a new resource to be created.
-
-`Thumbprint` - (Required) The Thumbprint associated with the Client Certificate.
-
-`ThumbprintSecondary` - (Required) The Secondary Thumbprint of the Certificate.
-
-`X509StoreName` - (Required) The X509 Store where the Certificate Exists, such as `My`.
-
-`IsAdmin` - (Required) Does the Client Certificate have Admin Access to the cluster? Non-admin clients can only perform read only operations on the cluster.
+### DiagnosticsConfig Properties
 
 `StorageAccountName` - (Required) The name of the Storage Account where the Diagnostics should be sent to.
 
@@ -60,7 +48,31 @@ Manage a Service Fabric Cluster.
 
 `TableEndpoint` - (Required) The Table Endpoint of the Storage Account.
 
+### FabricSettings Properties
+
 `Parameters` - (Optional) A map containing settings for the specified Fabric Setting.
+
+### EphemeralPorts Properties
+
+`StartPort` - (Required) The start of the Ephemeral Port Range on this Node Type.
+
+`EndPort` - (Required) The end of the Ephemeral Port Range on this Node Type.
+
+### ReverseProxyCertificate Properties
+
+`ThumbprintSecondary` - (Required) The Secondary Thumbprint of the Certificate.
+
+`X509StoreName` - (Required) The X509 Store where the Certificate Exists, such as `My`.
+
+### AzureActiveDirectory Properties
+
+`TenantId` - (Required) The Azure Active Directory Tenant ID. Changing this forces a new resource to be created.
+
+`ClusterApplicationId` - (Required) The Azure Active Directory Client ID which should be used for the Client Application. Changing this forces a new resource to be created.
+
+### NodeType Properties
+
+`Name` - (Required) The name of the Node Type. Changing this forces a new resource to be created.
 
 `InstanceCount` - (Required) The number of nodes for this Node Type.
 
@@ -78,9 +90,11 @@ Manage a Service Fabric Cluster.
 
 `ReverseProxyEndpointPort` - (Optional) The Port used for the Reverse Proxy Endpoint  for this Node Type. Changing this will upgrade the cluster.
 
-`StartPort` - (Required) The start of the Ephemeral Port Range on this Node Type.
+### ClientCertificateThumbprint Properties
 
-`EndPort` - (Required) The end of the Ephemeral Port Range on this Node Type.
+`Thumbprint` - (Required) The Thumbprint associated with the Client Certificate.
+
+`IsAdmin` - (Required) Does the Client Certificate have Admin Access to the cluster? Non-admin clients can only perform read only operations on the cluster.
 
 
 ## Return Values

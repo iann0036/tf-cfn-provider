@@ -24,6 +24,8 @@ Manages a V2 router resource within HuaweiCloud.
 
 `AvailabilityZoneHints` -  (Optional) An availability zone is used to make network resources highly available. Used for resources with high availability so that they are scheduled on different availability zones. Changing this creates a new router.
 
+### ExternalFixedIp Properties
+
 `SubnetId` - (Optional) Subnet in which the fixed IP belongs to.
 
 `IpAddress` - (Optional) The IP address to set on the router.

@@ -9,8 +9,6 @@ Currently, defining health checks is not supported.
 
 ## Properties
 
-`Address` - (Optional) The address of the service. Defaults to the node address.
-
 `Node` - (Required) The name of the node being added to, or referenced in the catalog.
 
 `Service` - (Optional) A service to optionally associated with the node. Supported values are documented below.
@@ -18,6 +16,10 @@ Currently, defining health checks is not supported.
 `Datacenter` - (Optional) The datacenter to use. This overrides the datacenter in the provider setup and the agent's default datacenter.
 
 `Token` - (Optional) ACL token.
+
+### Service Properties
+
+`Address` - (Optional) The address of the service. Defaults to the node address.
 
 `Id` - (Optional) The ID of the service. Defaults to the `Name`.
 

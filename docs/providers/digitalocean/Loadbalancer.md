@@ -19,6 +19,8 @@ modify, and delete Load Balancers.
 
 `RedirectHttpToHttps` - (Optional) A boolean value indicating whether HTTP requests to the Load Balancer on port 80 will be redirected to HTTPS on port 443. Default value is `false`.
 
+### ForwardingRule Properties
+
 `EntryProtocol` - (Required) The protocol used for traffic to the Load Balancer. The possible values are: `http`, `https`, or `tcp`.
 
 `EntryPort` - (Required) An integer representing the port on which the Load Balancer instance will listen.
@@ -31,11 +33,7 @@ modify, and delete Load Balancers.
 
 `TlsPassthrough` - (Optional) A boolean value indicating whether SSL encrypted traffic will be passed through to the backend Droplets. The default value is `false`.
 
-`Type` - (Required) An attribute indicating how and if requests from a client will be persistently served by the same backend Droplet. The possible values are `cookies` or `none`. If not specified, the default value is `none`.
-
-`CookieName` - (Optional) The name to be used for the cookie sent to the client. This attribute is required when using `cookies` for the sticky sessions type.
-
-`CookieTtlSeconds` - (Optional) The number of seconds until the cookie set by the Load Balancer expires. This attribute is required when using `cookies` for the sticky sessions type.
+### Healthcheck Properties
 
 `Protocol` - (Required) The protocol used for health checks sent to the backend Droplets. The possible values are `http` or `tcp`.
 
@@ -50,6 +48,14 @@ modify, and delete Load Balancers.
 `UnhealthyThreshold` - (Optional) The number of times a health check must fail for a backend Droplet to be marked "unhealthy" and be removed from the pool. If not specified, the default value is `3`.
 
 `HealthyThreshold` - (Optional) The number of times a health check must pass for a backend Droplet to be marked "healthy" and be re-added to the pool. If not specified, the default value is `5`.
+
+### StickySessions Properties
+
+`Type` - (Required) An attribute indicating how and if requests from a client will be persistently served by the same backend Droplet. The possible values are `cookies` or `none`. If not specified, the default value is `none`.
+
+`CookieName` - (Optional) The name to be used for the cookie sent to the client. This attribute is required when using `cookies` for the sticky sessions type.
+
+`CookieTtlSeconds` - (Optional) The number of seconds until the cookie set by the Load Balancer expires. This attribute is required when using `cookies` for the sticky sessions type.
 
 
 ## Return Values
