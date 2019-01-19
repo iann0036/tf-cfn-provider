@@ -2,4 +2,4 @@
 
 ## Supported Resources
 
-[Terraform::Arukas::Container](docs/providers/arukas/Container.md)
+* [Terraform::Arukas::Container](docs/providers/arukas/Container.md)

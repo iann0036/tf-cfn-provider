@@ -2,4 +2,4 @@
 
 ## Supported Resources
 
-[Terraform::PowerDNS::Record](docs/providers/powerdns/Record.md)
+* [Terraform::PowerDNS::Record](docs/providers/powerdns/Record.md)

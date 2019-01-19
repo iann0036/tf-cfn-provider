@@ -2,4 +2,4 @@
 
 ## Supported Resources
 
-[Terraform::StatusCake::Test](docs/providers/statuscake/Test.md)
+* [Terraform::StatusCake::Test](docs/providers/statuscake/Test.md)

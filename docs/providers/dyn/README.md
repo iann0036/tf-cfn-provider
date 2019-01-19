@@ -2,4 +2,4 @@
 
 ## Supported Resources
 
-[Terraform::Dyn::Record](docs/providers/dyn/Record.md)
+* [Terraform::Dyn::Record](docs/providers/dyn/Record.md)

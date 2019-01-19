@@ -2,4 +2,4 @@
 
 ## Supported Resources
 
-[Terraform::DME::Record](docs/providers/dme/Record.md)
+* [Terraform::DME::Record](docs/providers/dme/Record.md)

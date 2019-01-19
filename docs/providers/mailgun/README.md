@@ -2,4 +2,4 @@
 
 ## Supported Resources
 
-[Terraform::Mailgun::Domain](docs/providers/mailgun/Domain.md)
+* [Terraform::Mailgun::Domain](docs/providers/mailgun/Domain.md)

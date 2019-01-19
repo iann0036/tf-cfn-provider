@@ -199,7 +199,7 @@ def process_file(provider_name, file_contents, provider_readme_items):
         if provider_name in CASE_MAP:
             cfn_provider_name = CASE_MAP[provider_name][0]
             cfn_type = "Terraform::" + cfn_provider_name + "::" + tf_to_cfn_str("_".join(split_provider_name))
-            provider_readme_items.append("[{cfn_type}](docs/providers/{provider_name}/{type_stub}.md)".format(
+            provider_readme_items.append("* [{cfn_type}](docs/providers/{provider_name}/{type_stub}.md)".format(
                 cfn_type=cfn_type,
                 provider_name=provider_name,
                 type_stub=tf_to_cfn_str("_".join(split_provider_name))

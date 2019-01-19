@@ -2,5 +2,5 @@
 
 ## Supported Resources
 
-[Terraform::SoftLayer::SshKey](docs/providers/softlayer/SshKey.md)
-[Terraform::SoftLayer::VirtualGuest](docs/providers/softlayer/VirtualGuest.md)
+* [Terraform::SoftLayer::SshKey](docs/providers/softlayer/SshKey.md)
+* [Terraform::SoftLayer::VirtualGuest](docs/providers/softlayer/VirtualGuest.md)

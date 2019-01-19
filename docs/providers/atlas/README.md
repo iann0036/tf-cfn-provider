@@ -2,4 +2,4 @@
 
 ## Supported Resources
 
-[Terraform::Atlas::Artifact](docs/providers/atlas/Artifact.md)
+* [Terraform::Atlas::Artifact](docs/providers/atlas/Artifact.md)
