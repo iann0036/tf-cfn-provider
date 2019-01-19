@@ -1,0 +1,28 @@
+# CloudStack Provider
+
+## Supported Resources
+
+[Terraform::CloudStack::AffinityGroup](docs/providers/cloudstack/AffinityGroup.md)
+[Terraform::CloudStack::Disk](docs/providers/cloudstack/Disk.md)
+[Terraform::CloudStack::EgressFirewall](docs/providers/cloudstack/EgressFirewall.md)
+[Terraform::CloudStack::Firewall](docs/providers/cloudstack/Firewall.md)
+[Terraform::CloudStack::Instance](docs/providers/cloudstack/Instance.md)
+[Terraform::CloudStack::Ipaddress](docs/providers/cloudstack/Ipaddress.md)
+[Terraform::CloudStack::LoadbalancerRule](docs/providers/cloudstack/LoadbalancerRule.md)
+[Terraform::CloudStack::NetworkAclRule](docs/providers/cloudstack/NetworkAclRule.md)
+[Terraform::CloudStack::NetworkAcl](docs/providers/cloudstack/NetworkAcl.md)
+[Terraform::CloudStack::Network](docs/providers/cloudstack/Network.md)
+[Terraform::CloudStack::Nic](docs/providers/cloudstack/Nic.md)
+[Terraform::CloudStack::PortForward](docs/providers/cloudstack/PortForward.md)
+[Terraform::CloudStack::PrivateGateway](docs/providers/cloudstack/PrivateGateway.md)
+[Terraform::CloudStack::SecondaryIpaddress](docs/providers/cloudstack/SecondaryIpaddress.md)
+[Terraform::CloudStack::SecurityGroupRule](docs/providers/cloudstack/SecurityGroupRule.md)
+[Terraform::CloudStack::SecurityGroup](docs/providers/cloudstack/SecurityGroup.md)
+[Terraform::CloudStack::SshKeypair](docs/providers/cloudstack/SshKeypair.md)
+[Terraform::CloudStack::StaticNat](docs/providers/cloudstack/StaticNat.md)
+[Terraform::CloudStack::StaticRoute](docs/providers/cloudstack/StaticRoute.md)
+[Terraform::CloudStack::Template](docs/providers/cloudstack/Template.md)
+[Terraform::CloudStack::Vpc](docs/providers/cloudstack/Vpc.md)
+[Terraform::CloudStack::VpnConnection](docs/providers/cloudstack/VpnConnection.md)
+[Terraform::CloudStack::VpnCustomerGateway](docs/providers/cloudstack/VpnCustomerGateway.md)
+[Terraform::CloudStack::VpnGateway](docs/providers/cloudstack/VpnGateway.md)

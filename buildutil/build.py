@@ -126,17 +126,33 @@ def checkout(url, provider_name):
 
 def iterate_resources(provider_name):
     path = "/tmp/{}/website/docs/r/".format(provider_name)
-    if os.path.isdir(path):
-        files = [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
+    if os.path.isdir(path) and provider_name in CASE_MAP:
 
-        for filename in files:
-            with open(os.path.join(path, filename), 'r') as f:
-                #print(filename)
-                resource_file_contents = f.read()
-                process_file(provider_name, resource_file_contents)
+        # make provider readme
+        try:
+            os.makedirs("../docs/providers/{}".format(provider_name))
+        except:
+            pass
+        
+        with open("../docs/providers/{}/README.md".format(provider_name), 'w') as provider_readme:
+            readable_provider_name = CASE_MAP[provider_name][1]
+            provider_readme.write("# {} Provider\n\n## Supported Resources\n\n".format(readable_provider_name))
+
+            # iterate provider resources
+            provider_readme_items = []
+            files = [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
+            for filename in files:
+                with open(os.path.join(path, filename), 'r') as f:
+                    #print(filename)
+                    resource_file_contents = f.read()
+                    process_file(provider_name, resource_file_contents, provider_readme_items)
+            
+            provider_readme_items = list(set(provider_readme_items))
+            provider_readme_items.sort()
+            provider_readme.write("\n".join(provider_readme_items))
 
 
-def process_file(provider_name, file_contents):
+def process_file(provider_name, file_contents, provider_readme_items):
     section = ""
 
     resource_type = ""
@@ -182,10 +198,8 @@ def process_file(provider_name, file_contents):
         cfn_provider_name = provider_name
         if provider_name in CASE_MAP:
             cfn_provider_name = CASE_MAP[provider_name][0]
-            readable_provider_name = CASE_MAP[provider_name][1]
             cfn_type = "Terraform::" + cfn_provider_name + "::" + tf_to_cfn_str("_".join(split_provider_name))
-            print("{readable_provider_name} | [{cfn_type}](docs/providers/{provider_name}/{type_stub}.md)".format(
-                readable_provider_name=readable_provider_name,
+            provider_readme_items.append("[{cfn_type}](docs/providers/{provider_name}/{type_stub}.md)".format(
                 cfn_type=cfn_type,
                 provider_name=provider_name,
                 type_stub=tf_to_cfn_str("_".join(split_provider_name))
@@ -213,3 +227,13 @@ while len(repos) > 0:
         iterate_resources(repo['name'][19:])
     page+=1
     repos = json.loads(requests.get("https://api.github.com/orgs/terraform-providers/repos?page=" + str(page)).text)
+
+provider_list = []
+for provider in CASE_MAP:
+    provider_list.append("* [{provider_long_name}](docs/providers/{provider_short_name}/README.md)".format(
+        provider_long_name = CASE_MAP[provider][1],
+        provider_short_name=provider
+    ))
+provider_list.sort()
+with open("./READMEResources.txt", 'w') as f:
+    f.write("\n".join(provider_list))
