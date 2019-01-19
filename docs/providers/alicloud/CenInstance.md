@@ -4,11 +4,13 @@ Provides a CEN instance resource. Cloud Enterprise Network (CEN) is a service th
 
 For information about CEN and how to use it, see [What is Cloud Enterprise Network](https://www.alibabacloud.com/help/doc-detail/59870.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the CEN instance.
 

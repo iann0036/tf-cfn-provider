@@ -4,11 +4,13 @@ Provides an RDS instance backup policy resource and used to configure instance b
 
 ~> **NOTE:** Each DB instance has a backup policy and it will be set default values when destroying the resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The current backup policy resource ID. It is same as 'instance_id'.
 

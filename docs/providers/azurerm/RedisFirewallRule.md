@@ -2,11 +2,13 @@
 
 Manages a Firewall Rule associated with a Redis Cache.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The Redis Firewall Rule ID.
 

@@ -10,11 +10,13 @@ Because certificate_name in the listener is an updatable parameter, terraform wi
 Setting the flag makes it so that when a certificate is recreated, the new certificate will be created first before the old one gets deleted.
 Whenever you change any values on a certificate that causes it to be recreated the certificate_name MUST also change. Otherwise you will get an error saying that a certificate with that name already exists.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CaCertificate` - The Certificate Authority certificate, or any interim certificate, that you received from your SSL certificate provider.
 

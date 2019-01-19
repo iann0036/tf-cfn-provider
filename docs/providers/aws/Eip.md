@@ -6,11 +6,13 @@ Provides an Elastic IP resource.
 
 ~> **Note:** Do not use `network_interface` to associate the EIP to `aws_lb` or `aws_nat_gateway` resources. Instead use the `allocation_id` available in those resources to allow AWS to manage the association, otherwise you will see `AuthFailure` errors.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - Contains the EIP allocation ID.
 

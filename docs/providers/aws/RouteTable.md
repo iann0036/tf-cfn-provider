@@ -21,11 +21,13 @@ this resource will delete any propagating gateways not explicitly listed in
 `propagating_vgws`. Omit this argument when defining route propagation using
 the separate resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the routing table.
 

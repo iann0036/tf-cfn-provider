@@ -2,11 +2,13 @@
 
 Manages a Neptune database cluster snapshot.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AllocatedStorage` - Specifies the allocated storage size in gigabytes (GB).
 

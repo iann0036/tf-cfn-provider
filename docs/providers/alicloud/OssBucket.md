@@ -4,11 +4,13 @@ Provides a resource to create a oss bucket and set its attribution.
 
 ~> **NOTE:** The bucket namespace is shared by all users of the OSS system. Please set bucket name as unique as possible.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The name of the bucket.
 

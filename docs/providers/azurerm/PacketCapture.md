@@ -2,11 +2,13 @@
 
 Configures Packet Capturing against a Virtual Machine using a Network Watcher.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The Packet Capture ID.
 

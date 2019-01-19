@@ -5,11 +5,13 @@ accomplished using a signed identity request from IAM or using ec2
 instance metadata. For more information, see the [Vault
 documentation](https://www.vaultproject.io/docs/auth/aws.html).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `LeaseDuration` - The duration in seconds the token will be valid, relative.
 

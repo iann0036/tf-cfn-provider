@@ -4,11 +4,13 @@ This resource provides the Key resource in Oracle Cloud Infrastructure Kms servi
 
 Creates a new key.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the compartment that contains this key.
 

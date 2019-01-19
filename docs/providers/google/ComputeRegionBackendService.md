@@ -7,11 +7,13 @@ and [API](https://cloud.google.com/compute/docs/reference/latest/regionBackendSe
 ~> **Note**: Region backend services can only be used when using internal load balancing. For external load balancing, use
   [`google_compute_backend_service`](compute_backend_service.html) instead.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Fingerprint` - The fingerprint of the backend service.
 

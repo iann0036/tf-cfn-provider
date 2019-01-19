@@ -13,11 +13,13 @@ the `create_before_destroy` lifecycle flag set to avoid conflicts with
 unique names during the brief period where both the old and new resources
 exist concurrently.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `B64Url` - The generated id presented in base64, using the URL-friendly character set: case-sensitive letters, digits and the characters `_` and `-`.
 

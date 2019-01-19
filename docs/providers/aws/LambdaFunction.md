@@ -4,11 +4,13 @@ Provides a Lambda Function resource. Lambda allows you to trigger execution of c
 
 For information about Lambda and how to use it, see [What is AWS Lambda?][1]
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Arn` - The Amazon Resource Name (ARN) identifying your Lambda Function.
 

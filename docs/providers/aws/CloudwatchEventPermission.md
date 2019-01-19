@@ -2,11 +2,13 @@
 
 Provides a resource to create a CloudWatch Events permission to support cross-account events in the current account default event bus.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The statement ID of the CloudWatch Events permission.
 

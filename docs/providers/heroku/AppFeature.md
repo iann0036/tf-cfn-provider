@@ -2,11 +2,9 @@
 
 Provides a Heroku App Feature resource. This can be used to create and manage App Features on Heroku.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

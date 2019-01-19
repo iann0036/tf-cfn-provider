@@ -6,11 +6,9 @@ Address groups are either statically defined or dynamically defined, so only
 `static_addresses` or `dynamic_match` should be defined within a given address
 group.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

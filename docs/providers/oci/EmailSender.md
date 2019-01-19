@@ -4,11 +4,13 @@ This resource provides the Sender resource in Oracle Cloud Infrastructure Email 
 
 Creates a sender for a tenancy in a given compartment.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `EmailAddress` - The email address of the sender.
 

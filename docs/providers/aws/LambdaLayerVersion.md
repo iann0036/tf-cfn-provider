@@ -4,11 +4,13 @@ Provides a Lambda Layer Version resource. Lambda Layers allow you to reuse share
 
 For information about Lambda Layers and how to use them, see [AWS Lambda Layers][1]
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Arn` - The Amazon Resource Name (ARN) identifying your Lambda Layer.
 

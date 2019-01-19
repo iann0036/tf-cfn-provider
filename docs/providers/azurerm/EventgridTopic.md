@@ -4,11 +4,13 @@ Manages an EventGrid Topic
 
 ~> **Note:** at this time EventGrid Topic's are only available in a limited number of regions.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The EventGrid Topic ID.
 

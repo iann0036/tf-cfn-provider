@@ -10,11 +10,13 @@ If you want to add public IP, you can use resource 'alicloud_eip_association' to
 ~> **NOTE:** From version 1.7.1, this resource has deprecated bandwidth packages.
 But, in order to manage stock bandwidth packages, version 1.13.0 re-support configuring 'bandwidth_packages'.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the nat gateway.
 

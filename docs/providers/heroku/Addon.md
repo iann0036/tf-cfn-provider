@@ -3,11 +3,13 @@
 Provides a Heroku Add-On resource. These can be attach
 services to a Heroku app.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the add-on.
 

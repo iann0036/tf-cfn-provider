@@ -2,11 +2,13 @@
 
 Provides an IAM access key. This is a set of credentials that allow API requests to be made as an IAM user.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The access key ID.
 

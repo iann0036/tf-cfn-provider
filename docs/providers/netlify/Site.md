@@ -2,11 +2,9 @@
 
 Primary settings for the Netlify site - should contain the bulk of your configuration. Allows configuration of most aspects of your Netlify site.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

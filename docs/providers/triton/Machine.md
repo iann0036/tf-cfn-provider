@@ -5,11 +5,9 @@ The `triton_machine` resource represents a virtual machine or infrastructure con
 ~> **Note:** Starting with Triton 0.2.0, Please note that when you want to specify the networks that you want the machine to be attached to, use the `networks` parameter
 and not the `nic` parameter.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

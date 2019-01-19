@@ -2,11 +2,13 @@
 
 Manages a ServiceBus Topic authorization Rule within a ServiceBus Topic.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ServiceBus Topic ID.
 

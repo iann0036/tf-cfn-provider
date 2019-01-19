@@ -5,11 +5,13 @@ The `oci_kms_key_version` resource creates and manages an OCI KeyVersion
 Generates new cryptographic material for a key. Key must be in an `ENABLED` state to be
 rotated.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the compartment that contains this key version.
 

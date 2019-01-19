@@ -14,11 +14,13 @@ Every user has permission to create a secret key for *their own user ID*. An adm
 does not need to write a policy to give users this ability. To compare, administrators who have permission to the
 tenancy can use this operation to create a secret key for any user, including themselves.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `DisplayName` - The display name you assign to the secret key. Does not have to be unique, and it's changeable.
 

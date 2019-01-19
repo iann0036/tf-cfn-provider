@@ -13,11 +13,13 @@ Every user has permission to create an auth token for *their own user ID*. An ad
 does not need to write a policy to give users this ability. To compare, administrators who have permission to the
 tenancy can use this operation to create an auth token for any user, including themselves.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Description` - The description you assign to the auth token. Does not have to be unique, and it's changeable.
 

@@ -6,11 +6,13 @@ For information about slb and how to use it, see [What is Server Load Balancer](
 
 For information about Server Certificate and how to use it, see [Configure Server Certificate](https://www.alibabacloud.com/help/doc-detail/85968.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The Id of Server Certificate (SSL Certificate).
 

@@ -2,11 +2,9 @@
 
 Provides a Hetzner Cloud Floating IP to represent a publicly-accessible static IP address that can be mapped to one of your servers.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

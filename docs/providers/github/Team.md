@@ -5,11 +5,13 @@ Provides a GitHub team resource.
 This resource allows you to add/remove teams from your organization. When applied,
 a new team will be created. When destroyed, that team will be removed.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the created team.
 

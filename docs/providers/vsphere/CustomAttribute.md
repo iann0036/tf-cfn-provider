@@ -12,11 +12,9 @@ For more information about custom attributes, click [here][ext-custom-attributes
 ~> **NOTE:** Custom attributes are unsupported on direct ESXi connections 
 and require vCenter.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

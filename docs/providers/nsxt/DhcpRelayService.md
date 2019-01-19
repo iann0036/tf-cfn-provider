@@ -5,11 +5,13 @@ The DHCP relay service uses a DHCP relay profile and later consumed by a router
 downlink port to provide DHCP addresses to virtual machines connected to a logical switch.
 Currently the DHCP relay is not supported for logical routers link ports on Tier0 or Tier1.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - ID of the DHCP relay service.
 

@@ -4,11 +4,9 @@ The ``postgresql_schema`` resource creates and manages [schema
 objects](https://www.postgresql.org/docs/current/static/ddl-schemas.html) within
 a PostgreSQL database.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

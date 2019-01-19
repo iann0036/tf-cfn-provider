@@ -3,11 +3,9 @@
 Creates and manages a Container in the Oracle Cloud Infrastructure Storage Classic service. `storage_endpoint` must be set in the
 provider or environment to manage these resources.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

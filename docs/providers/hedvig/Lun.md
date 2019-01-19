@@ -2,11 +2,9 @@
 
 A Hedvig Lun adds a vdisk resource to a particular controller, enabling the addition of ACL access resources to the vdisk.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

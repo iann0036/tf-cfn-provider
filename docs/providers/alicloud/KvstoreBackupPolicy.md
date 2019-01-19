@@ -2,11 +2,13 @@
 
 Provides a backup policy for ApsaraDB Redis / Memcache instance resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The id of the backup policy.
 

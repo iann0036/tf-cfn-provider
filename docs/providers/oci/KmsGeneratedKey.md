@@ -4,11 +4,13 @@ The `oci_kms_generated_key` resource creates and manages an OCI GeneratedKey
 
 Generates a key that you can use to encrypt or decrypt data.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Ciphertext` - The encrypted generated data encryption key.
 

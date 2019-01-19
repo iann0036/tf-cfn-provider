@@ -4,11 +4,13 @@ Manage a Load Balancer Backend Address Pool.
 
 ~> **NOTE:** When using this resource, the Load Balancer needs to have a FrontEnd IP Configuration Attached
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the Backend Address Pool.
 

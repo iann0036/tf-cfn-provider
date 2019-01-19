@@ -4,11 +4,13 @@ Provides an AutoScaling Group resource.
 
 -> **Note:** You must specify either `launch_configuration`, `launch_template`, or `mixed_instances_policy`.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The autoscaling group id.
 

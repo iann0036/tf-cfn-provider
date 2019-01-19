@@ -4,11 +4,13 @@ Provides a key pair attachment resource to bind key pair for several ECS instanc
 
 -> **NOTE:** After the key pair is attached with sone instances, there instances must be rebooted to make the key pair affect.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `KeyName` - The name of the key pair.
 

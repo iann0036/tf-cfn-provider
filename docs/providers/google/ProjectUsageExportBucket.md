@@ -12,11 +12,9 @@ and for further details, the
 they will fight over which bucket the reports should be stored in.  It is
 safe to have multiple resources with the same backing bucket.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

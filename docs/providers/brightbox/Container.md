@@ -3,11 +3,13 @@
 Provides a Brightbox Container resource. This can be used to create,
 modify, and delete Containers in Orbit.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AuthUser` - the api client id used to access the container.
 

@@ -17,11 +17,13 @@ in the Identity and Access Management Service API.
 You may optionally specify a *display name* for the volume, which is simply a friendly name or
 description. It does not have to be unique, and you can change it. Avoid entering confidential information.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AvailabilityDomain` - The availability domain of the volume.  Example: `Uocm:PHX-AD-1`.
 

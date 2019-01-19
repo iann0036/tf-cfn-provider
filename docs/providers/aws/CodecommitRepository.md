@@ -6,11 +6,13 @@ Provides a CodeCommit Repository Resource.
 in all regions - available regions are listed
 [the AWS Docs](https://docs.aws.amazon.com/general/latest/gr/rande.html#codecommit_region).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `RepositoryId` - The ID of the repository.
 

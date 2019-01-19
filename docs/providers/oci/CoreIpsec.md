@@ -29,11 +29,13 @@ For each tunnel, that operation gives you the IP address of Oracle's VPN headend
 To get the status of the tunnels (whether they're up or down), use
 [GetIPSecConnectionDeviceStatus](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/IPSecConnectionDeviceStatus/GetIPSecConnectionDeviceStatus).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the compartment containing the IPSec connection.
 

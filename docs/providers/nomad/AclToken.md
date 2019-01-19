@@ -6,11 +6,9 @@ Manages an ACL token in Nomad.
   Terraform's state file. Take care to
   [protect your state file](/docs/state/sensitive-data.html).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

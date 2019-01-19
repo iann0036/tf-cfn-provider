@@ -26,11 +26,13 @@ You may optionally specify a *display name* for the image, which is simply a fri
 It does not have to be unique, and you can change it. See [UpdateImage](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/Image/UpdateImage).
 Avoid entering confidential information.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `BaseImageId` - The OCID of the image originally used to launch the instance.
 

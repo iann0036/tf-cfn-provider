@@ -2,11 +2,13 @@
 
 Manages a VPC Endpoint Route Table Association
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - A hash of the EC2 Route Table and VPC Endpoint identifiers.
 

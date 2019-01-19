@@ -5,11 +5,13 @@ Creates a new Cloud Function. For more information see
 and
 [API](https://cloud.google.com/functions/docs/apis).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `HttpsTriggerUrl` - URL which triggers function execution. Returned only if `trigger_http` is used.
 

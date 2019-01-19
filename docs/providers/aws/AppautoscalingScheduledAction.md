@@ -2,11 +2,13 @@
 
 Provides an Application AutoScaling ScheduledAction resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Arn` - The Amazon Resource Name (ARN) of the scheduled action.
 

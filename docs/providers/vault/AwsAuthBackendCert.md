@@ -15,11 +15,9 @@ appear in the console output when Terraform runs. Protect these artifacts
 accordingly. See [the main provider documentation](../index.html) for more
 details.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

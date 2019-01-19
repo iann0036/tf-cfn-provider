@@ -7,11 +7,13 @@ the IAM policy for an existing Google Cloud Platform Billing Account.
    `google_billing_account_iam_binding` for the __same role__ or they will fight over
    what your policy should be.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Etag` - (Computed) The etag of the billing account's IAM policy.
 

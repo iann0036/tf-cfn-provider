@@ -4,11 +4,9 @@ A Replication Controller ensures that a specified number of pod “replicas” a
 
 ~> **WARNING:** In many cases it is recommended to create a Deployment instead of a Replication Controller.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

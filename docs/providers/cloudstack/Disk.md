@@ -3,11 +3,13 @@
 Creates a disk volume from a disk offering. This disk volume will be attached to
 a virtual machine if the optional parameters are configured.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the disk volume.
 

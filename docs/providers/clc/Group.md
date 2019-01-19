@@ -4,11 +4,9 @@ Manages a CLC server group. Either provisions or resolves to an existing group.
 
 See also [Complete API documentation](https://www.ctl.io/api-docs/v2/#groups).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

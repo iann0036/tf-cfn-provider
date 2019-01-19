@@ -5,11 +5,13 @@ Provides a Alicloud Function Compute Trigger resource. Based on trigger, execute
 
 -> **NOTE:** The resource requires a provider field 'account_id'. [See account_id](https://www.terraform.io/docs/providers/alicloud/index.html#account_id).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the function. The value is formate as `<service>:<function>:<name>`.
 

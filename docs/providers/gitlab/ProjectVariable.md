@@ -4,11 +4,9 @@ This resource allows you to create and manage CI/CD variables for your GitLab pr
 For further information on variables, consult the [gitlab
 documentation](https://docs.gitlab.com/ce/ci/variables/README.html#variables).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

@@ -2,11 +2,13 @@
 
 Provides a resource to allow users to manage Virtual Networks in their projects. VLANs are used in [Layer 2 networking setup](https://packet.kayako.com/article/57-layer-2-overview).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Vxlan` - VXLAN segment ID.
 

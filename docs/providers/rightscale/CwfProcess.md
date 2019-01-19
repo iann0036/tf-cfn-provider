@@ -8,11 +8,13 @@ Destroying the resource deletes the corresponding CWF process. Destroying a runn
 
 It is NOT possible to update a CWF process.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Status` - Process status, one of "completed", "failed", "canceled" or "aborted".
 

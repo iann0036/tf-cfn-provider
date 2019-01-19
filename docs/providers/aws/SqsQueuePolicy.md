@@ -3,11 +3,9 @@
 Allows you to set a policy of an SQS Queue
 while referencing ARN of the queue within the policy.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

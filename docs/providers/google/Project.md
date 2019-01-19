@@ -28,11 +28,13 @@ behavior, either:
 prior to 0.8.5 will continue to function as they always have, and will not be managed by
 Terraform. Only newly added projects are affected.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Number` - The numeric identifier of the project.
 

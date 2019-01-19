@@ -6,11 +6,13 @@ target of a network load balancer (Forwarding Rule). For more information see
 documentation](https://cloud.google.com/compute/docs/load-balancing/network/target-pools)
 and [API](https://cloud.google.com/compute/docs/reference/latest/targetPools).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `SelfLink` - The URI of the created resource.
 

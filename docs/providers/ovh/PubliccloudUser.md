@@ -3,11 +3,13 @@
 __DEPRECATED__ use `ovh_cloud_user` instead.
 Creates a user in a public cloud project.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `ProjectId` - See Argument Reference above.
 

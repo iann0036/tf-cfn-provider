@@ -4,11 +4,9 @@ Provides a resource for assigning an existing DigitalOcean Floating IP to a Drop
 makes it easy to provision floating IP addresses that are not tied to the lifecycle of your
 Droplet.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

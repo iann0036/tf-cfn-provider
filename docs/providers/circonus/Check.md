@@ -10,11 +10,9 @@ The `circonus_check` creates a higher-level abstraction over the implementation
 of a Check Bundle.  As such, the naming and structure does not map 1:1 with the
 underlying Circonus API.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

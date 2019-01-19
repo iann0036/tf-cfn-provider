@@ -11,11 +11,9 @@ This resource allows you to add/remove repository deploy keys.
 Further documentation on GitHub repository deploy keys:
 - [About deploy keys](https://developer.github.com/guides/managing-deploy-keys/#deploy-keys)
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

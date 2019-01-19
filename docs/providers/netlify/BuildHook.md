@@ -6,11 +6,9 @@ at the time of writing, only be used to trigger new builds of the site.
 To create one, provide your site id along with the name of the hook, and
 the branch to be built when the hook is triggered.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

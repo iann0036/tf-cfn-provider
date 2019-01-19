@@ -4,11 +4,13 @@ Creates a job on Dataflow, which is an implementation of Apache Beam running on 
 the official documentation for
 [Beam](https://beam.apache.org) and [Dataflow](https://cloud.google.com/dataflow/).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `State` - The current state of the resource, selected from the [JobState enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState).
 

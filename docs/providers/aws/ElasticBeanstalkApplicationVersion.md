@@ -17,11 +17,13 @@ To work around this you can:
 Elastic Beanstalk Application. For example &lt;revision&gt;-&lt;environment&gt;.</li>
 </ol>
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Name` - The Application Version name.
 

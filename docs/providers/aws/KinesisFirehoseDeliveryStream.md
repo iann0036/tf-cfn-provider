@@ -4,11 +4,13 @@ Provides a Kinesis Firehose Delivery Stream resource. Amazon Kinesis Firehose is
 
 For more details, see the [Amazon Kinesis Firehose Documentation][1].
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Arn` - The Amazon Resource Name (ARN) specifying the Stream.
 

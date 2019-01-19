@@ -2,11 +2,13 @@
 
 This resource provides a means to configure static routes in NSX to determine where IP traffic is routed.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - ID of the static route.
 

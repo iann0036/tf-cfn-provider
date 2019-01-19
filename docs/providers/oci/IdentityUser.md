@@ -6,11 +6,13 @@ Manages the capabilities of the specified user.
 
 **Important:** Deleting the User Capabilities Management leaves the User resource in its existing state (rather than returning to its defaults)
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `UserId` - The OCID of the user.
 

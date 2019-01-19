@@ -7,11 +7,13 @@ Creates a new object inside an existing bucket in Google cloud storage service (
 and 
 [API](https://cloud.google.com/storage/docs/json_api/v1/objects).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Crc32c` - (Computed) Base 64 CRC32 hash of the uploaded data.
 

@@ -18,11 +18,13 @@ resource. Ongoing updates to the referenced instance will not be propagated into
 the generated AMI. Users may taint or otherwise recreate the resource in order
 to produce a fresh snapshot.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the created AMI.
 

@@ -2,11 +2,13 @@
 
 Creates firewall rules for a given IP address.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The IP address ID for which the firewall rules are created.
 

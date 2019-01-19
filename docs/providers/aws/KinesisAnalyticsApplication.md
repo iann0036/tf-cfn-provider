@@ -5,11 +5,13 @@ allows processing and analyzing streaming data using standard SQL.
 
 For more details, see the [Amazon Kinesis Analytics Documentation][1].
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ARN of the Kinesis Analytics Application.
 

@@ -2,11 +2,13 @@
 
 Provides a workspace resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the workspace within Terraform. This is a custom ID that is.
 

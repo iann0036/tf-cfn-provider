@@ -7,11 +7,13 @@ the IAM policy for an existing Google Cloud Platform Organization.
    `google_organization_iam_binding` for the __same role__ or they will fight over
    what your policy should be.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Etag` - (Computed) The etag of the organization's IAM policy.
 

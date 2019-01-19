@@ -8,11 +8,13 @@ obscured by an unsalted hash in the state
 [Read more about sensitive data in state](/docs/state/sensitive-data.html).
 Care is required when using this resource, to avoid disclosing the password.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `User` - The name of the user.
 

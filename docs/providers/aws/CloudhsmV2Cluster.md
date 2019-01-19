@@ -11,11 +11,13 @@ Practically no single attribute can be updated except TAGS.
 If you need to delete a cluster, you have to remove its HSM modules first.
 To initialize cluster you have to sign CSR and upload it.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `ClusterId` - The id of the CloudHSM cluster.
 

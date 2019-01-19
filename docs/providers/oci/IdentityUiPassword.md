@@ -14,11 +14,13 @@ user.
 **Note:** The user's Console login is the unique name you specified when you created the user
 (see [CreateUser](https://docs.cloud.oracle.com/iaas/api/#/en/identity/20160918/User/CreateUser)).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `InactiveStatus` - The detailed status of INACTIVE lifecycleState.
 

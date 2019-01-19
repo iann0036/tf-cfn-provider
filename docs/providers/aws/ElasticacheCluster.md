@@ -11,11 +11,13 @@ place. You can use the `apply_immediately` flag to instruct the service to apply
 change immediately. Using `apply_immediately` can result in a brief downtime as the server reboots.
 See the AWS Docs on [Modifying an ElastiCache Cache Cluster][2] for more information.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CacheNodes` - List of node objects including `id`, `address`, `port` and `availability_zone`.
 

@@ -18,11 +18,13 @@ of Terraform.
 It's recommended to specify `create_before_destroy = true` in a [lifecycle][1] block to replace a certificate
 which is currently in use (eg, by [`aws_lb_listener`](lb_listener.html)).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ARN of the certificate.
 

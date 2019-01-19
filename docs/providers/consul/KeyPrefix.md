@@ -22,11 +22,13 @@ that are not present in the configuration. It will also delete *all* keys under
 the given prefix when a `consul_key_prefix` resource is destroyed, even if
 those keys were created outside of Terraform.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Datacenter` - The datacenter the keys are being read/written to.
 

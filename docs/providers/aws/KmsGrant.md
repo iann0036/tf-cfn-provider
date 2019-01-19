@@ -2,11 +2,13 @@
 
 Provides a resource-based access control mechanism for a KMS customer master key.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `GrantId` - The unique identifier for the grant.
 

@@ -2,11 +2,13 @@
 
 Registers an on-premises server or virtual machine with Amazon EC2 so that it can be managed using Run Command.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `ActivationCode` - The code the system generates when it processes the activation.
 

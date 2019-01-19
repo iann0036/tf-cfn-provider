@@ -7,11 +7,13 @@ The DHCP relay profile can be used in a DHCP relay service and later consumed by
 downlink port.
 Currently the DHCP relay is not supported for logical routers link ports on Tier0 or Tier1.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - ID of the DHCP relay profile.
 

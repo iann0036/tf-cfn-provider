@@ -2,11 +2,13 @@
 
 Provides a Load Balancer resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CreateTime` - The time of creation for load balancer, formatted in RFC3339 time string.
 

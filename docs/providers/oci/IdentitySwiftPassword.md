@@ -15,11 +15,13 @@ Every user has permission to create a Swift password for *their own user ID*. An
 does not need to write a policy to give users this ability. To compare, administrators who have permission to the
 tenancy can use this operation to create a Swift password for any user, including themselves.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Description` - The description you assign to the Swift password. Does not have to be unique, and it's changeable.
 

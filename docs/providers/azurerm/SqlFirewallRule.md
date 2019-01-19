@@ -2,11 +2,13 @@
 
 Allows you to manage an Azure SQL Firewall Rule
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The SQL Firewall Rule ID.
 

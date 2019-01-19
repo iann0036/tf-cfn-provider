@@ -4,11 +4,9 @@ Provides an Elastic Beanstalk Configuration Template, which are associated with
 a specific application and are used to deploy different versions of the
 application with the same configuration settings.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

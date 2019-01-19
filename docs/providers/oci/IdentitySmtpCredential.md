@@ -7,11 +7,13 @@ You must specify a *description* for the SMTP credential (although it can be an 
 have to be unique, and you can change it anytime with
 [UpdateSmtpCredential](https://docs.cloud.oracle.com/iaas/api/#/en/identity/20160918/SmtpCredentialSummary/UpdateSmtpCredential).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Description` - The description you assign to the SMTP credential. Does not have to be unique, and it's changeable.
 

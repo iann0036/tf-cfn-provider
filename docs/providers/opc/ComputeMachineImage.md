@@ -4,11 +4,9 @@ The ``opc_compute_machine_image`` resource creates and manages a machine image t
 
 Before performing this creating the Machine Image, you must upload your machine image file to Oracle Cloud Infrastructure Object Storage Classic `compute_images` container
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

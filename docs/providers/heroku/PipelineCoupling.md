@@ -8,11 +8,13 @@ pipeline is created using [`heroku_pipeline`](./pipeline.html), and apps are add
 to different stages using `heroku_pipeline_coupling`, you can promote app slugs
 to the downstream stages.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The UUID of this pipeline coupling.
 

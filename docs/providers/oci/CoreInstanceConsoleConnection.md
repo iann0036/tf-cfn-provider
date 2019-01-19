@@ -8,11 +8,13 @@ you connect to the console using SSH.
 
 For more information about console access, see [Accessing the Console](https://docs.cloud.oracle.com/iaas/Content/Compute/References/serialconsole.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the compartment to contain the console connection.
 

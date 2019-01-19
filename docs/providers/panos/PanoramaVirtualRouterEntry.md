@@ -8,11 +8,9 @@ resource.  If you want to use this resource with the other one, then make
 sure that your `panos_panorama_virtual_router` spec does not define the
 `interfaces` field.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

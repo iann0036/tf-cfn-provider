@@ -4,11 +4,13 @@ Creates a new Google SQL Database on a Google SQL Database Instance. For more in
 the [official documentation](https://cloud.google.com/sql/),
 or the [JSON API](https://cloud.google.com/sql/docs/admin-api/v1beta4/databases).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `SelfLink` - The URI of the created resource.
 

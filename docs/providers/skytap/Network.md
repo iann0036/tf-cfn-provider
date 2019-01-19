@@ -4,11 +4,9 @@ Provides a Skytap Network resource. Networks are not top-level elements of the S
 Rather, they are elements properly contained within an environment.
 Operations on them are implicitly on the containing environment.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

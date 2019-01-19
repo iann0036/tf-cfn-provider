@@ -4,11 +4,9 @@ The `opc_lbaas_certificate` resource creates and manages an Load Balancer Classi
 
 Server certificates are used to secure the connection between clients and the load balancers. Trusted certificates are used to secure the connection between the load balancer and the origin servers in the server pool.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

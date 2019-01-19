@@ -24,11 +24,13 @@ Also, for reserved public IPs, the optional assignment part of this operation is
 asynchronous. Poll the public IP's `lifecycleState` to determine if the assignment
 succeeded.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AssignedEntityId` - The OCID of the entity the public IP is assigned to, or in the process of being assigned to.
 

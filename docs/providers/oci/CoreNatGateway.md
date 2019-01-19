@@ -5,11 +5,13 @@ This resource provides the Nat Gateway resource in Oracle Cloud Infrastructure C
 Creates a new NAT gateway for the specified VCN. You must also set up a route rule with the
 NAT gateway as the rule's target. See [Route Table](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/RouteTable/).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `BlockTraffic` - Whether the NAT gateway blocks traffic through it. The default is `false`.  Example: `true`.
 

@@ -2,11 +2,9 @@
 
 The `opc_lbaas_server_pool` resource creates and manages a Load Balancer Classic Origin Server Pool for a Load Balancer Classic instance. The Server Pool defines one or more servers (referred to as origin servers) to which the load balancer can distribute requests.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

@@ -17,11 +17,13 @@ it can be an empty string). It does not have to be unique, and you can change
 it anytime with
 [UpdateIdentityProvider](https://docs.cloud.oracle.com/iaas/api/#/en/identity/20160918/IdentityProvider/UpdateIdentityProvider).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the tenancy containing the `IdentityProvider`.
 

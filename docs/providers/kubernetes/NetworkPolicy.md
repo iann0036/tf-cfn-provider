@@ -4,11 +4,9 @@ Kubernetes supports network policies to specificy of how groups of pods are allo
 NetworkPolicy resources use labels to select pods and define rules which specify what traffic is allowed to the selected pods.
 Read more about network policies at https://kubernetes.io/docs/concepts/services-networking/network-policies/
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

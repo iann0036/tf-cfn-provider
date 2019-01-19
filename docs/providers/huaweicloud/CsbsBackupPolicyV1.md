@@ -2,11 +2,13 @@
 
 Provides an HuaweiCloud Backup Policy of Resources.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Status` - Status of Backup Policy.
 

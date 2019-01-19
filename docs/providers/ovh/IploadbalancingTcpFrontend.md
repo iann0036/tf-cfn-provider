@@ -2,11 +2,13 @@
 
 Creates a backend server group (frontend) to be used by loadbalancing frontend(s)
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - Id of your frontend.
 

@@ -3,11 +3,13 @@
 This resource provides a alarm rule resource and it can be used to monitor several cloud services according different metrics.
 Details for [alarm rule](https://www.alibabacloud.com/help/doc-detail/28608.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the alarm rule.
 

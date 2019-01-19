@@ -5,11 +5,13 @@ This resource provides the Export resource in Oracle Cloud Infrastructure File S
 Creates a new export in the specified export set, path, and
 file system.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `ExportOptions` - Policies that apply to NFS requests made through this export. `exportOptions` contains a sequential list of `ClientOptions`. Each `ClientOptions` item defines the export options that are applied to a specified set of clients.
 

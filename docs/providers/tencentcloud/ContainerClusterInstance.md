@@ -2,11 +2,13 @@
 
 Provides a Container Cluster Instance resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AbnormalReason` - Describe the reason when node is in abnormal state(if it was).
 

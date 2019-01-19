@@ -8,11 +8,13 @@ The Service resource requires a domain name that is correctly set up to direct
 traffic to the Fastly service. See Fastly's guide on [Adding CNAME Records][fastly-cname]
 on their documentation site for guidance.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the Service.
 

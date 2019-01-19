@@ -2,11 +2,13 @@
 
 Provides a Nutanix Category key resource to Create a category key name.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `ApiVersion` - (Optional) The version of the API.
 

@@ -7,11 +7,9 @@ firewall causes the firewall to reboot.  Thus it is recommended that you use
 this resource in a separate step of your overall firewall provisioning, as
 using this resource will cause the firewall to be temporarily inaccessible.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

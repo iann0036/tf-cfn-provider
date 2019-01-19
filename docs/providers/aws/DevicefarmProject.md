@@ -7,11 +7,13 @@ This resource will error if you try to create a project in another region.
 For more information about Device Farm Projects, see the AWS Documentation on
 [Device Farm Projects][aws-get-project].
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Arn` - The Amazon Resource Name of this project.
 

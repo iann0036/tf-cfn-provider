@@ -8,11 +8,13 @@ For information about common bandwidth package and how to use it, see [What is C
 
 For information about common bandwidth package billing methods, see [Common Bandwidth Package Billing Methods](https://www.alibabacloud.com/help/doc-detail/67459.html?spm=a2c5t.11065259.1996646101.searchclickresult.7ec93235Vfkwhy).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the common bandwidth package instance id.
 

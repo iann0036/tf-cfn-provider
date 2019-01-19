@@ -2,11 +2,13 @@
 
 Manages the association between a Network Interface and a Load Balancer's NAT Rule.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The (Terraform specific) ID of the Association between the Network Interface and the Load Balancers NAT Rule.
 

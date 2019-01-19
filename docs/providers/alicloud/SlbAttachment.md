@@ -2,11 +2,13 @@
 
 Add a group of backend servers (ECS instance) to the Server Load Balancer or remove them from it.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - ID of the resource.
 

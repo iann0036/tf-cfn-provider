@@ -4,11 +4,13 @@ Provides a Target Group resource for use with Load Balancer resources.
 
 ~> **Note:** `aws_alb_target_group` is known as `aws_lb_target_group`. The functionality is identical.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ARN of the Target Group (matches `arn`).
 

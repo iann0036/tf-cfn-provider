@@ -8,11 +8,13 @@ been deprecated. Unless you are using an older OpenStack environment, it is
 recommended to use the [`openstack_networking_floatingip_v2`](networking_floatingip_v2.html)
 resource instead, which uses the OpenStack Networking API.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Region` - See Argument Reference above.
 

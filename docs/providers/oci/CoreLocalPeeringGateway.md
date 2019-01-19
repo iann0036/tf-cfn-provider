@@ -4,11 +4,13 @@ This resource provides the Local Peering Gateway resource in Oracle Cloud Infras
 
 Creates a new local peering gateway (LPG) for the specified VCN.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the compartment containing the LPG.
 

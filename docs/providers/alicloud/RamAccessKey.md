@@ -4,11 +4,13 @@ Provides a RAM User access key resource.
 
 ~> **NOTE:**  You should set the `secret_file` if you want to get the access key.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The access key ID.
 

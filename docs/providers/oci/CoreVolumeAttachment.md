@@ -4,11 +4,13 @@ This resource provides the Volume Attachment resource in Oracle Cloud Infrastruc
 
 Attaches the specified storage volume to the specified instance.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AttachmentType` - The type of volume attachment.
 

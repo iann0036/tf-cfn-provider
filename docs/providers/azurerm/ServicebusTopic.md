@@ -4,11 +4,13 @@ Manage a ServiceBus Topic.
 
 **Note** Topics can only be created in Namespaces with an SKU of `standard` or higher.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ServiceBus Topic ID.
 

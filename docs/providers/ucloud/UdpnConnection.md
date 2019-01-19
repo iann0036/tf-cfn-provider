@@ -6,11 +6,13 @@ UDPN (UCloud Dedicated Private Network)，you can use Dedicated Private Network 
 
 ~> **Note** The addtional packet head will be added and included in the overall length of packet due to the tunneling UDPN adopted. Since the number of the bytes of packet head is fixed, the bigger data packet is, the less usage will be taken for the packet head.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CreateTime` - The time of creation for UDPN connection, formatted by RFC3339 time string.
 

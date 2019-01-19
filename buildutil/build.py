@@ -286,23 +286,26 @@ def process_file(provider_name, file_contents, provider_readme_items):
         #pprint.pprint(attributes)
         #print("\n-----\n")
 
-        readable_attributes = ""
-        for attr in attributes:
-            readable_attributes += "`{ret}` - {desc}\n\n".format(
-                ret=tf_to_cfn_str(attr),
-                desc=attributes[attr]
-            )
+        return_values = ""
+        if attributes:
+            return_values = "## Return Values\n\n### Fn::GetAtt\n\n"
+            for attr in attributes:
+                return_values += "`{ret}` - {desc}\n\n".format(
+                    ret=tf_to_cfn_str(attr),
+                    desc=attributes[attr]
+                )
+        
         try:
             os.makedirs("../docs/providers/{}/".format(provider_name))
         except:
             pass
         with open("../docs/providers/{}/{}.md".format(provider_name, tf_to_cfn_str("_".join(split_provider_name))), 'w') as resource_readme:
-            resource_readme.write("# {cfn_type}\n\n{description}\n\n## Return Values\n\n### Fn::GetAtt\n\nFn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.\n\n{readable_attributes}## See Also\n\n* [{provider_name}_{split_provider_name_joined}](https://www.terraform.io/docs/providers/{provider_name}/r/{split_provider_name_joined}.html) in the _Terraform Provider Documentation_".format(
+            resource_readme.write("# {cfn_type}\n\n{description}\n\n## Properties\n\nTBC\n\n{return_values}## See Also\n\n* [{provider_name}_{split_provider_name_joined}](https://www.terraform.io/docs/providers/{provider_name}/r/{split_provider_name_joined}.html) in the _Terraform Provider Documentation_".format(
                 provider_name=provider_name,
                 split_provider_name_joined="_".join(split_provider_name),
                 cfn_type=cfn_type,
                 description=description,
-                readable_attributes=readable_attributes
+                return_values=return_values
             ))
 
 

@@ -2,11 +2,13 @@
 
 Manages a Event Hubs Consumer Group as a nested resource within an Event Hub.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The EventHub Consumer Group ID.
 

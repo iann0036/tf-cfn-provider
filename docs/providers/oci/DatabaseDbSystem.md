@@ -13,11 +13,13 @@ The DB System will include a command line interface (CLI) that you can use to cr
 manage existing databases. For more information, see the
 [Oracle Database CLI Reference](https://docs.cloud.oracle.com/iaas/Content/Database/References/dbacli.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AvailabilityDomain` - The name of the availability domain that the DB system is located in.
 

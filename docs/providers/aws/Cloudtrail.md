@@ -6,11 +6,9 @@ Provides a CloudTrail resource.
 
 ~> *NOTE:* For an organization trail, this resource must be in the master account of the organization.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

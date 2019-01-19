@@ -5,11 +5,13 @@ Provides an OTS table resource.
 ~> **NOTE:** From Provider version 1.10.0, the provider field 'ots_instance_name' has been deprecated and
 you should use resource alicloud_ots_table's new field 'instance_name' and 'table_name' to re-import this resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The resource ID. The value is `<instance_name>:<table_name>`.
 

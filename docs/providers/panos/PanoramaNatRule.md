@@ -14,11 +14,9 @@ Note that while many of the params for this resource are optional in an
 absolute sense, depending on what type of NAT you wish to configure, certain
 params may become necessary to correctly configure the NAT rule.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

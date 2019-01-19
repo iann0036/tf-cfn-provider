@@ -2,11 +2,13 @@
 
 Provides an eip resource associated with other resource like CVM or ENI.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The association id.
 

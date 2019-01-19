@@ -2,11 +2,13 @@
 
 Provides a Cloud9 EC2 Development Environment.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the environment.
 

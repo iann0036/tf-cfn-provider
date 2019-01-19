@@ -20,11 +20,13 @@ It does not have to be unique, and you can change it with
 Tag namespaces cannot be deleted, but they can be retired.
 See [Retiring Key Definitions and Namespace Definitions](https://docs.cloud.oracle.com/iaas/Content/Identity/Concepts/taggingoverview.htm#Retiring) for more information.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the compartment that contains the tag namespace.
 

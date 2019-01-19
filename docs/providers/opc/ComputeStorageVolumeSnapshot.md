@@ -2,11 +2,13 @@
 
 The ``opc_compute_storage_volume_snapshot`` resource creates and manages a storage volume snapshot in an Oracle Cloud Infrastructure Compute Classic identity domain.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Account` - Account to use for snapshots.
 

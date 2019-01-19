@@ -4,11 +4,13 @@ Provides a SSL VPN server resource. [Refer to details](https://www.alibabacloud.
 
 ~> **NOTE:** Terraform will auto build ssl vpn server while it uses `alicloud_ssl_vpn_server` to build a ssl vpn server resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the SSL-VPN server.
 

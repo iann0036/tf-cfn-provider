@@ -15,11 +15,9 @@ Allows management of the entire IAM policy for an existing Google Cloud Platform
    `google_organization_iam_member` or `google_organization_iam_binding`
    or they will fight over what your policy should be.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

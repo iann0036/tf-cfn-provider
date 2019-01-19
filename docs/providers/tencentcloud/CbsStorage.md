@@ -4,11 +4,13 @@ Provides a CBS resource.
 
 ~> **NOTE:** At present, only 'PREPAID' storage is supported to create. 'PREPAID' storage cannot be deleted, once created, must wait it to be expired and release it automatically.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The storage ID, something looks like `disk-xxxxxx`.
 

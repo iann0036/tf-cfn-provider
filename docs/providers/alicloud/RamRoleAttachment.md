@@ -2,11 +2,13 @@
 
 Provides a RAM role attachment resource to bind role for several ECS instances.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `RoleName` - The name of the role.
 

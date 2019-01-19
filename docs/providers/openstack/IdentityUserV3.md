@@ -5,11 +5,13 @@ Manages a V3 User resource within OpenStack Keystone.
 Note: You _must_ have admin privileges in your OpenStack cloud to use
 this resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `DomainId` - See Argument Reference above.
 

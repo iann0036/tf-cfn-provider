@@ -2,11 +2,13 @@
 
 Provides a DMS (Data Migration Service) replication instance resource. DMS replication instances can be created, updated, deleted, and imported.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `ReplicationInstanceArn` - The Amazon Resource Name (ARN) of the replication instance.
 

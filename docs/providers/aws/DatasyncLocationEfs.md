@@ -4,11 +4,9 @@ Manages an AWS DataSync EFS Location.
 
 ~> **NOTE:** The EFS File System must have a mounted EFS Mount Target before creating this resource.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

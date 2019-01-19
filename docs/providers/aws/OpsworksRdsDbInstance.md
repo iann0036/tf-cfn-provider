@@ -5,11 +5,13 @@ Provides an OpsWorks RDS DB Instance resource.
 ~> **Note:** All arguments including the username and password will be stored in the raw state as plain-text.
 [Read more about sensitive data in state](/docs/state/sensitive-data.html).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The computed id. Please note that this is only used internally to identify the stack <-> instance relation. This value is not used in aws.
 

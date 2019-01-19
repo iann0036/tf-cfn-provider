@@ -2,11 +2,9 @@
 
 A role contains rules that represent a set of permissions. Permissions are purely additive (there are no “deny” rules).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

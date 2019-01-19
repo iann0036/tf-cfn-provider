@@ -14,11 +14,13 @@ Certificates][2] in AWS Documentation.
 ~> **Note:** All arguments including the private key will be stored in the raw state as plain-text.
 [Read more about sensitive data in state](/docs/state/sensitive-data.html).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The unique Server Certificate name.
 

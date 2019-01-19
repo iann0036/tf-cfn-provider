@@ -4,11 +4,13 @@ This resource allows you to create and manage labels for your GitLab projects.
 For further information on labels, consult the [gitlab
 documentation](https://docs.gitlab.com/ee/user/project/labels.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The unique id assigned to the label by the GitLab server (the name of the label).
 

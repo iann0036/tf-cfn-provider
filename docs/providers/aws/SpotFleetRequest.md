@@ -3,11 +3,13 @@
 Provides an EC2 Spot Fleet Request resource. This allows a fleet of Spot
 instances to be requested on the Spot market.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The Spot fleet request ID.
 

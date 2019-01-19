@@ -5,11 +5,13 @@ keys on your account. All SSH keys on your account are loaded on
 all new devices, they do not have to be explicitly declared on
 device creation.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The unique ID of the key.
 

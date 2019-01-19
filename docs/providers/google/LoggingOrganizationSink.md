@@ -7,11 +7,13 @@ Manages a organization-level logging sink. For more information see
 Note that you must have the "Logs Configuration Writer" IAM role (`roles/logging.configWriter`)
 granted to the credentials used with terraform.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `WriterIdentity` - The identity associated with this sink. This identity must be granted write access to the.
 

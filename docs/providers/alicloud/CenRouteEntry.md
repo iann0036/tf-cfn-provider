@@ -4,11 +4,13 @@ Provides a CEN route entry resource. Cloud Enterprise Network (CEN) supports pub
 
 For information about CEN route entries publishment and how to use it, see [Manage network routes](https://www.alibabacloud.com/help/doc-detail/86980.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - ID of the resource, formatted as `<instance_id>:<route_table_id>:<cidr_block>`.
 

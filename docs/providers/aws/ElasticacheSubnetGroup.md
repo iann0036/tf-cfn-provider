@@ -6,11 +6,9 @@ Provides an ElastiCache Subnet Group resource.
 ElastiCache cluster **inside** of a VPC. If you are on EC2 Classic, see the
 [ElastiCache Security Group resource](elasticache_security_group.html).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

@@ -4,11 +4,13 @@ Provides Load Balancer server attachment resource.
 
 ~> **NOTE:** Currently only support existing `loadbalancer_id` `listener_id` `location_id` and Application layer 7 load balancer
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `LoadbalancerId` - loadbalancer ID.
 

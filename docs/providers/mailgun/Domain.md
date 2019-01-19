@@ -3,11 +3,13 @@
 Provides a Mailgun App resource. This can be used to
 create and manage applications on Mailgun.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Name` - The name of the record.
 

@@ -12,11 +12,13 @@ it available in another for a multi-region deployment.
 Copying an AMI can take several minutes. The creation of this resource will
 block until the new AMI is available for use on new instances.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the created AMI.
 

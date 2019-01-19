@@ -9,11 +9,9 @@ Google automatically creates will be silently overwritten.  Also, when
 destroying NS records, Terraform will not actually remove NS records, but will
 report that it did.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

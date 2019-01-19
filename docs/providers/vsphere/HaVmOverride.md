@@ -13,11 +13,9 @@ For more information on vSphere HA, see [this page][ref-vsphere-ha-clusters].
 ~> **NOTE:** This resource requires vCenter and is not available on direct ESXi
 connections.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

@@ -2,11 +2,13 @@
 
 Provides a Cloudflare worker route resource. A route will also require a `cloudflare_worker_script`.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `ZoneId` - The zone id of the route.
 

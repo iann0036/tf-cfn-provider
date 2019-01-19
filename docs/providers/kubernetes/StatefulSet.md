@@ -12,11 +12,9 @@ A StatefulSet operates under the same pattern as any other Controller.
 You define your desired state in a StatefulSet object, and the StatefulSet controller makes any 
 necessary updates to get there from the current state.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

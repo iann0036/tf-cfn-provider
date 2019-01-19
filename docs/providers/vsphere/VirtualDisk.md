@@ -8,11 +8,9 @@ block with the [`attach`][docs-vsphere-virtual-machine-disk-attach] parameter.
 [docs-vsphere-virtual-machine]: /docs/providers/vsphere/r/virtual_machine.html
 [docs-vsphere-virtual-machine-disk-attach]: /docs/providers/vsphere/r/virtual_machine.html#attach
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

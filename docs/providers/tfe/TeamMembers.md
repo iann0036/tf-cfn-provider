@@ -9,11 +9,13 @@ single user.  The [tfe_team_members](team_members.html) resource, on the other
 hand, is used to manage all team memberships for a specific team and can only be
 used once. Both resources cannot be used for the same team simultaneously.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the team.
 

@@ -4,11 +4,13 @@ This resource provides the Node Pool resource in Oracle Cloud Infrastructure Con
 
 Create a new node pool.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `ClusterId` - The OCID of the cluster to which this node pool is attached.
 

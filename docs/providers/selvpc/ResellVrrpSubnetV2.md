@@ -2,11 +2,13 @@
 
 Manages a V2 VRRP subnet resource within Resell Selectel VPC.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Cidr` - Shows VRRP subnet CIDR representation.
 

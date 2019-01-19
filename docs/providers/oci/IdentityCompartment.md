@@ -21,11 +21,13 @@ You must also specify a *description* for the compartment (although it can be an
 not have to be unique, and you can change it anytime with
 [UpdateCompartment](https://docs.cloud.oracle.com/iaas/api/#/en/identity/20160918/Compartment/UpdateCompartment).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the parent compartment containing the compartment.
 

@@ -42,11 +42,9 @@ Software Config can be imported using the `config id`, e.g.
  $ terraform import huaweicloud_rts_software_config_v1 4779ab1c-7c1a-44b1-a02e-93dfc361b32d
 ```
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

@@ -4,11 +4,13 @@ Creates a dataset resource for Google BigQuery. For more information see
 [the official documentation](https://cloud.google.com/bigquery/docs/) and
 [API](https://cloud.google.com/bigquery/docs/reference/rest/v2/datasets).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `SelfLink` - The URI of the created resource.
 

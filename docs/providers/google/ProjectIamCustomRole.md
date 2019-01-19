@@ -12,11 +12,13 @@ and
  made available again. This means a deleted role that has been deleted for more than 7 days cannot be changed at all
  by Terraform, and new roles cannot share that name.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Deleted` - (Optional) The current deleted state of the role.
 

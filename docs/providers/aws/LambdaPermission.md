@@ -3,11 +3,9 @@
 Creates a Lambda permission to allow external sources invoking the Lambda function
 (e.g. CloudWatch Event Rule, SNS or S3).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

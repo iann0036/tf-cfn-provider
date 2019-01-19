@@ -5,11 +5,9 @@ Manages a RuntimeConfig resource in Google Cloud. For more information, see the
 or the
 [JSON API](https://cloud.google.com/deployment-manager/runtime-configurator/reference/rest/).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

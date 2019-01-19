@@ -11,11 +11,9 @@ multiple hosts, you must specify each host that you want to add in the
 
 [resource-vmfs-datastore]: /docs/providers/vsphere/r/vmfs_datastore.html
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

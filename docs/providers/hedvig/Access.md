@@ -2,11 +2,9 @@
 
 A Hedvig Access adds an address to an ACL of a controller of a vdisk. This allows for management of access resources.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

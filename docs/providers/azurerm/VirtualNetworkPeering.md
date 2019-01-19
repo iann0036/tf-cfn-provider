@@ -3,11 +3,13 @@
 Manages a virtual network peering which allows resources to access other
 resources in the linked virtual network.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The Virtual Network Peering resource ID.
 

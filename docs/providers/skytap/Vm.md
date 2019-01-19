@@ -8,11 +8,9 @@ Provides a Skytap Virtual Machine (VM) resource. The environment VM resource rep
 * Each VM is a unique resource. Therefore, a VM in a template will have a different ID than a VM in an environment created from that template.
 * The VM will be run immediately after creation.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

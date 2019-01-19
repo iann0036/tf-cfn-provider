@@ -7,11 +7,13 @@ Allows creation and management of an App Engine application.
    successfully deleted; this is a limitation of Terraform, and will go away in the future.
    Terraform is not able to delete App Engine applications.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Name` - Unique name of the app, usually `apps/{PROJECT_ID}`.
 

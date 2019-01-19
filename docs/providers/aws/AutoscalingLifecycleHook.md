@@ -14,11 +14,9 @@ behavior. If you need hooks to run on all instances, add them with
 [`aws_autoscaling_group`](/docs/providers/aws/r/autoscaling_group.html),
 but take care to not duplicate those hooks with this resource.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

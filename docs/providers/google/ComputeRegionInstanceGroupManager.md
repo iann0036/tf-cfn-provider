@@ -7,11 +7,13 @@ and [API](https://cloud.google.com/compute/docs/reference/latest/regionInstanceG
 
 ~> **Note:** Use [google_compute_instance_group_manager](/docs/providers/google/r/compute_instance_group_manager.html) to create a single-zone instance group manager.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Fingerprint` - The fingerprint of the instance group manager.
 

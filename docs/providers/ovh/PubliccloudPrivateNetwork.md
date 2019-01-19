@@ -3,11 +3,13 @@
 __DEPRECATED__ use `ovh_cloud_network_private` instead.
 Creates a private network in a public cloud project.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `ProjectId` - See Argument Reference above.
 

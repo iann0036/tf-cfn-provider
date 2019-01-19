@@ -5,11 +5,13 @@ Provides a Lambda event source mapping. This allows Lambda functions to get even
 For information about Lambda and how to use it, see [What is AWS Lambda?][1]
 For information about event source mappings, see [CreateEventSourceMapping][2] in the API docs.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `FunctionArn` - The the ARN of the Lambda function the event source mapping is sending events to. (Note: this is a computed value that differs from `function_name` above.).
 

@@ -2,11 +2,9 @@
 
 Provides a Logentries logset resource. A logset is a collection of `logentries_log` resources.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

@@ -3,11 +3,13 @@
 Log Service manages all the ECS instances whose logs need to be collected by using the Logtail client in the form of machine groups.
  [Refer to details](https://www.alibabacloud.com/help/doc-detail/28966.htm)
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the log machine group. It formats of `<project>:<name>`.
 

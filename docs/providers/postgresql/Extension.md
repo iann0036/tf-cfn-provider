@@ -3,11 +3,9 @@
 The ``postgresql_extension`` resource creates and manages an extension on a PostgreSQL
 server.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

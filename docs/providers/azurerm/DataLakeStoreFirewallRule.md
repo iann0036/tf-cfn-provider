@@ -2,11 +2,13 @@
 
 Manage a Azure Data Lake Store Firewall Rule.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The Date Lake Store Firewall Rule ID.
 

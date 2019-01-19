@@ -2,11 +2,9 @@
 
 Configures the periodic tidying operation of the blacklisted role tag entries.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

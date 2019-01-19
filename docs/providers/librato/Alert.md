@@ -3,11 +3,13 @@
 Provides a Librato Alert resource. This can be used to
 create and manage alerts on Librato.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the alert.
 

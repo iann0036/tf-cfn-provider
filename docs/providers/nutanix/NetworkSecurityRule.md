@@ -2,11 +2,13 @@
 
 Provides a Nutanix network security rule resource to Create a network security rule.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `ApiVersion` - The version of the API.
 

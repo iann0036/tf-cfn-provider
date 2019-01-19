@@ -2,11 +2,13 @@
 
 Assigns a secondary IP to a NIC.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The secondary IP address ID.
 

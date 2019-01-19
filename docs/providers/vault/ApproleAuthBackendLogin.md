@@ -4,11 +4,13 @@ Logs into Vault using the AppRole auth backend. See the [Vault
 documentation](https://www.vaultproject.io/docs/auth/approle.html) for more
 information.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Policies` - A list of policies applied to the token.
 

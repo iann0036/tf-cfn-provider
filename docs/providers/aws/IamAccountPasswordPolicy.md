@@ -6,11 +6,13 @@ Manages Password Policy for the AWS Account.
 See more about [Account Password Policy](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html)
 in the official AWS docs.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `ExpirePasswords` - Indicates whether passwords in the account expire.
 

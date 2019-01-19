@@ -2,11 +2,13 @@
 
 Provides a resource to configure lb icmp monitor on NSX-T manager
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - ID of the lb_icmp_monitor.
 

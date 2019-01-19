@@ -6,11 +6,13 @@ For information about Api Gateway App and how to use it, see [Create An APP](htt
 
 ~> **NOTE:** Terraform will auto build api app while it uses `alicloud_api_gateway_app` to build api app.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the app of api gateway.
 

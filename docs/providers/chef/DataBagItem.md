@@ -7,11 +7,13 @@ retrieved and used in Chef recipes.
 This resource creates objects within an existing data bag. To create the
 data bag itself, use the ``chef_data_bag`` resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The value of the "id" property in the ``content_json`` JSON object,.
 

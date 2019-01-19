@@ -16,11 +16,9 @@ not already exist, then this resource can actually create it.  However, since
 only the single entry for the specific serial number is deleted, then a
 `terraform destroy` would not remove the device group itself in this situation.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

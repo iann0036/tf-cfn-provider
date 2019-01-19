@@ -6,11 +6,13 @@ that can be enabled or disabled for an account on Heroku.
 ~> **NOTE:** If this resource's HCL is removed from a `.tf` file, the behavior is to disable account feature
 and remove resource from state.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - Comprised of acount email & feature name.
 

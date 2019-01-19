@@ -9,11 +9,13 @@ To get more information about Google Cloud Storage Transfer, see:
 * How-to Guides
     * [Configuring Access to Data Sources and Sinks](https://cloud.google.com/storage-transfer/docs/configure-access)
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Name` - The name of the Transfer Job.
 

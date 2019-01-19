@@ -9,11 +9,13 @@ resources.
 ~> **This resource is deprecated!** Please use the
 [Artifact Data Source](/docs/providers/terraform-enterprise/d/artifact.html)
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the artifact. This could be an AMI ID, GCE Image ID, etc.
 

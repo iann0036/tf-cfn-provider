@@ -5,11 +5,9 @@ Provides a LogicMonitor collector resource. This can be used to create and manag
 *Note:* This resource will only create the collector device in your account. See [Downloading a Collector Installer](https://www.logicmonitor.com/support/rest-api-developers-guide/collectors/downloading-a-collector-installer/) for
 information on how to download and install an existing collector.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

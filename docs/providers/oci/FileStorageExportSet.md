@@ -11,11 +11,13 @@ However, export sets expose a few attributes that can be updated.
 
 Hence we provide this resource for managing the already created export set from within Terraform.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AvailabilityDomain` - The availability domain the export set is in. May be unset as a blank or NULL value.  Example: `Uocm:PHX-AD-1`.
 

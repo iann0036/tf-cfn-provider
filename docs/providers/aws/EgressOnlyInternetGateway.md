@@ -5,11 +5,13 @@ An egress-only Internet gateway is used to enable outbound communication
 over IPv6 from instances in your VPC to the Internet, and prevents hosts
 outside of your VPC from initiating an IPv6 connection with your instance.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the Egress Only Internet Gateway.
 

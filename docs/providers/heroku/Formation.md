@@ -12,11 +12,13 @@ The Heroku Platform does not have a `DELETE` endpoint for `formation`.
 - This resource works well with the `heroku_app_release` resource, which allows you to deploy a slug/release to an application
 before the formation can be updated.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the formation.
 

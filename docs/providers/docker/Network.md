@@ -4,11 +4,9 @@ Manages a Docker Network. This can be used alongside
 [docker\_container](/docs/providers/docker/r/container.html)
 to create virtual networks within the docker environment.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

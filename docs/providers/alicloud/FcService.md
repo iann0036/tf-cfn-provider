@@ -11,11 +11,13 @@ which is in the upper of [Function Service Web Console](https://fc.console.aliyu
 -> **NOTE:** Currently not all regions support Function Compute Service.
 For more details supported regions, see [Service endpoints](https://www.alibabacloud.com/help/doc-detail/52984.htm)
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the FC service. The value is same as name.
 

@@ -2,11 +2,13 @@
 
 Manages a Virtual Network Gateway to establish secure, cross-premises connectivity.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the Virtual Network Gateway.
 

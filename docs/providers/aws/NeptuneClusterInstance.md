@@ -5,11 +5,13 @@ A Cluster Instance Resource defines attributes that are specific to a single ins
 You can simply add neptune instances and Neptune manages the replication. You can use the [count][1]
 meta-parameter to make multiple instances and join them all to the same Neptune Cluster, or you may specify different Cluster Instance resources with various `instance_class` sizes.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Address` - The hostname of the instance. See also `endpoint` and `port`.
 

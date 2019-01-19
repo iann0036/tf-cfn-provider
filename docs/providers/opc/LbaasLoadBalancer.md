@@ -2,11 +2,9 @@
 
 The `opc_lbaas_load_balancer` resource creates and manages a Load Balancer Classic instance in an Oracle Cloud Infrastructure Classic Compute region. You must define server pools, create at least one listener, and optionally define the policies for the load balancer before it will be operational.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

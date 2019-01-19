@@ -34,11 +34,13 @@ You can also add a DNS label for the subnet, which is required if you want the I
 VCN Resolver to resolve hostnames for instances in the subnet. For more information, see
 [DNS in Your Virtual Cloud Network](https://docs.cloud.oracle.com/iaas/Content/Network/Concepts/dns.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AvailabilityDomain` - The subnet's availability domain.  Example: `Uocm:PHX-AD-1`.
 

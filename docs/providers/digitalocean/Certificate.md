@@ -7,11 +7,13 @@ Load Balancer configuration via their ID. The certificate can either
 be a custom one provided by you or automatically generated one with
 Let's Encrypt.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The unique ID of the certificate.
 

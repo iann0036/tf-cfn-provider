@@ -2,11 +2,13 @@
 
 Manages a V2 router resource within FlexibleEngine. The router is the top-level resource for the VPC within FlexibleEngine.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - ID of the router.
 

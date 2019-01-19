@@ -4,11 +4,9 @@ The resource provides a piece of networked storage in the cluster provisioned by
 
 For more info see [Kubernetes reference](https://kubernetes.io/docs/concepts/storage/persistent-volumes)/
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

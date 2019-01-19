@@ -2,11 +2,13 @@
 
 Manages a local network gateway connection over which specific connections can be configured.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The local network gateway unique ID within Azure.
 

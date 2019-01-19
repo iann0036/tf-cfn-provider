@@ -8,11 +8,13 @@ been deprecated. Unless you are using an older TelefonicaOpenCloud environment, 
 recommended to use the [`telefonicaopencloud_networking_floatingip_v2`](networking_floatingip_v2.html)
 resource instead, which uses the TelefonicaOpenCloud Networking API.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Region` - See Argument Reference above.
 

@@ -7,11 +7,9 @@ the `create_before_destroy` lifecycle flag set, to avoid conflicts with
 unique names during the brief period where both the old and new resources
 exist concurrently.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

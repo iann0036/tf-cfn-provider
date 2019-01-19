@@ -2,11 +2,13 @@
 
 Provides a Rancher Stack resource. This can be used to create and manage stacks on rancher.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - (Computed) The ID of the resource.
 

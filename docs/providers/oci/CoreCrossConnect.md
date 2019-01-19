@@ -22,11 +22,13 @@ For information about OCIDs, see
 You may optionally specify a *display name* for the cross-connect.
 It does not have to be unique, and you can change it. Avoid entering confidential information.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the compartment containing the cross-connect group.
 

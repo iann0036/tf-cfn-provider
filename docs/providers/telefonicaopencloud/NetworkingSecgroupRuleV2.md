@@ -4,11 +4,13 @@ Manages a V2 neutron security group rule resource within TelefonicaOpenCloud.
 Unlike Nova security groups, neutron separates the group from the rules
 and also allows an admin to target a specific tenant_id.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Region` - See Argument Reference above.
 

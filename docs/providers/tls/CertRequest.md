@@ -16,11 +16,13 @@ resource caused non-convergent configuration. The data source form is no longer
 supported as of Terraform 0.7.5 and any users should return to using the
 resource form.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CertRequestPem` - The certificate request data in PEM format.
 

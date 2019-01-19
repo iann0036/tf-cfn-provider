@@ -9,11 +9,9 @@ should only be one `panos_dag_tags` block defined in a given plan.
 applied terraform plan to have alternative tags will leave behind the
 old tags from the previously published plan(s).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

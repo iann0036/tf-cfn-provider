@@ -4,11 +4,13 @@ A [bucket](https://www.runscope.com/docs/api/buckets) resource.
 [Buckets](https://www.runscope.com/docs/buckets) are a simple way to
 organize your requests and tests.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Name` - The name of this bucket.
 

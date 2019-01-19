@@ -9,11 +9,13 @@ The requester can use the `aws_vpc_peering_connection` resource to manage its si
 and the accepter can use the `aws_vpc_peering_connection_accepter` resource to "adopt" its side of the
 connection into management.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the VPC Peering Connection.
 

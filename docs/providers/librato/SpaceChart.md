@@ -3,11 +3,13 @@
 Provides a Librato Space Chart resource. This can be used to
 create and manage charts in Librato Spaces.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the chart.
 

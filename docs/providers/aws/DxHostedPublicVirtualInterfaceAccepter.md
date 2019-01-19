@@ -3,11 +3,13 @@
 Provides a resource to manage the accepter's side of a Direct Connect hosted public virtual interface.
 This resource accepts ownership of a public virtual interface created by another AWS account.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the virtual interface.
 

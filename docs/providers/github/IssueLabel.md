@@ -13,11 +13,9 @@ and those labels easily conflict with custom ones.
 This resource will first check if the label exists, and then issue an update,
 otherwise it will create.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

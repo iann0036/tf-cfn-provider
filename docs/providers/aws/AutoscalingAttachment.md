@@ -9,11 +9,9 @@ an ELB), and an [AutoScaling Group resource](autoscaling_group.html) with
 load balancers in conjunction with an ASG Attachment resource. Doing so will cause a
 conflict and will overwrite attachments.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

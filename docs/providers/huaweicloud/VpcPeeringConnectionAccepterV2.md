@@ -8,11 +8,13 @@ The requester can use the `huaweicloud_vpc_peering_connection_v2` resource to ma
 and the accepter can use the `huaweicloud_vpc_peering_connection_accepter_v2` resource to "adopt" its side of the
 connection into management.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Name` - 	The VPC peering connection name.
 

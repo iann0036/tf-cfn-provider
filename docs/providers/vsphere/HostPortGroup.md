@@ -10,11 +10,9 @@ For an overview on vSphere networking concepts, see [this page][ref-vsphere-net-
 [host-virtual-switch]: /docs/providers/vsphere/r/host_virtual_switch.html
 [ref-vsphere-net-concepts]: https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-2B11DBB8-CB3C-4AFF-8885-EFEA0FC562F4.html
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

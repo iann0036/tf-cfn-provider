@@ -2,11 +2,9 @@
 
 A Service is an abstraction which defines a logical set of pods and a policy by which to access them - sometimes called a micro-service.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

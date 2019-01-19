@@ -4,11 +4,13 @@
 
 Enables Security Hub for this AWS account.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - AWS Account ID.
 

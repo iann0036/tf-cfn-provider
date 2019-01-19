@@ -4,11 +4,13 @@ This resource provides the Preauthenticated Request resource in Oracle Cloud Inf
 
 Creates a pre-authenticated request specific to the bucket.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AccessType` - The operation that can be performed on this resource.
 

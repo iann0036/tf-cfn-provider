@@ -38,11 +38,13 @@ The VCN and subnets you create are not accessible until you attach an internet g
 or FastConnect. For more information, see
 [Overview of the Networking Service](https://docs.cloud.oracle.com/iaas/Content/Network/Concepts/overview.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CidrBlock` - The CIDR IP address block of the VCN.  Example: `172.16.0.0/16`.
 

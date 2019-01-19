@@ -4,11 +4,13 @@ This resource provides the Object resource in Oracle Cloud Infrastructure Object
 
 Creates a new object or overwrites an existing one.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Bucket` - The name of the bucket for the source object.
 

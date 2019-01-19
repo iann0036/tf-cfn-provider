@@ -3,11 +3,13 @@
 Manages user SSH Keys to access servers provisioned on scaleway.
 For additional details please refer to [API documentation](https://developer.scaleway.com/#users-user-get).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - fingerprint of the SSH key.
 

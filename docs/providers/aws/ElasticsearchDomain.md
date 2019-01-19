@@ -2,11 +2,13 @@
 
 Manages an AWS Elasticsearch Domain.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Arn` - Amazon Resource Name (ARN) of the domain.
 

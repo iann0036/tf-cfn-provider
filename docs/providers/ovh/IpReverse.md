@@ -2,11 +2,13 @@
 
 Provides a OVH IP reverse.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Ipreverse` - The IP to set the reverse of.
 

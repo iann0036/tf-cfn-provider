@@ -7,11 +7,13 @@ you can use [Postgresql Provider](https://www.terraform.io/docs/providers/postgr
 
 -> **NOTE:** This resource does not support creating 'PPAS' database. You have to login RDS instance to create manually.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The current database resource ID. Composed of instance ID and database name with format `<instance_id>:<name>`.
 

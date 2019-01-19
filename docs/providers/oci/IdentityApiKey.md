@@ -15,11 +15,13 @@ management (e.g., `ListUsers`, `LaunchInstance`) and receive an "unauthorized" e
 check with an administrator to confirm which IAM Service group(s) you're in and what access
 you have. Also confirm you're working in the correct compartment.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Fingerprint` - The key's fingerprint (e.g., 12:34:56:78:90:ab:cd:ef:12:34:56:78:90:ab:cd:ef).
 

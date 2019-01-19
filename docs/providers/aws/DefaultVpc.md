@@ -11,11 +11,13 @@ The `aws_default_vpc` behaves differently from normal resources, in that
 Terraform does not _create_ this resource, but instead "adopts" it
 into management.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Arn` - Amazon Resource Name (ARN) of VPC.
 

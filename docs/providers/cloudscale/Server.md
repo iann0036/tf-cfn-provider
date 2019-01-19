@@ -2,11 +2,13 @@
 
 Provides a cloudscale.ch Server resource. This can be used to create, modify, and delete servers.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The UUID of this server.
 

@@ -24,11 +24,13 @@ traffic will flow to/from the internet even if there's a route rule that enables
 use [UpdateInternetGateway](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/InternetGateway/UpdateInternetGateway) to easily disable/enable
 the gateway without changing the route rule.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the compartment containing the internet gateway.
 

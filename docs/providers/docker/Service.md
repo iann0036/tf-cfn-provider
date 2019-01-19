@@ -6,11 +6,9 @@ With the [Converge Config](#convergeconfig) the behavior of the `docker cli` is 
 for example, all tasks of a service are running or successfully updated or to inform `terraform` that a service could not
 be updated and was successfully rolled back.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

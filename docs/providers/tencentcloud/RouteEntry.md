@@ -2,11 +2,13 @@
 
 Provides a resource to create a routing entry in a VPC routing table.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `RouteTableId` - The ID of the route table.
 

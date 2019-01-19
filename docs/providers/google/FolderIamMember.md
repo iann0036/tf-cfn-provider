@@ -8,11 +8,13 @@ the IAM policy for an existing Google Cloud Platform folder.
    should be. Similarly, roles controlled by `google_folder_iam_binding`
    should not be assigned to using `google_folder_iam_member`.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Etag` - (Computed) The etag of the folder's IAM policy.
 

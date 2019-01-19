@@ -10,11 +10,13 @@ If you have had several listeners in one load balancer, you can import them via 
 -> **NOTE:** The supported specifications vary by region. Currently not all regions support guaranteed-performance instances.
 For more details about guaranteed-performance instance, see [Guaranteed-performance instances](https://www.alibabacloud.com/help/doc-detail/27657.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the load balancer.
 

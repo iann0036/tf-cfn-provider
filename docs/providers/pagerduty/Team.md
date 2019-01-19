@@ -4,11 +4,13 @@ A [team](https://v2.developer.pagerduty.com/v2/page/api-reference#!/Teams/get_te
 
 The account must have the `teams` ability to use the following resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the team.
 

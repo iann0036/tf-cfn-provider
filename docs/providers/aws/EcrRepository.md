@@ -6,11 +6,13 @@ Provides an EC2 Container Registry Repository.
 in all regions - available regions are listed
 [the AWS Docs](https://docs.aws.amazon.com/general/latest/gr/rande.html#ecr_region).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Arn` - Full ARN of the repository.
 

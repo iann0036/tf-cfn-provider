@@ -9,11 +9,9 @@ is better to use [the `chef` provisioner](/docs/provisioners/chef.html) to
 configure the Chef client on a computer and have it register itself with the
 Chef server.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

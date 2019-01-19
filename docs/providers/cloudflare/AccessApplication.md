@@ -4,11 +4,9 @@ Provides a Cloudflare Access Application resource. Access Applications
 are used to restrict access to a whole application using an
 authorisation gateway managed by Cloudflare.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

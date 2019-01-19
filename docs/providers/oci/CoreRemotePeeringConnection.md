@@ -4,11 +4,13 @@ This resource provides the Remote Peering Connection resource in Oracle Cloud In
 
 Creates a new remote peering connection (RPC) for the specified DRG.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the compartment that contains the RPC.
 

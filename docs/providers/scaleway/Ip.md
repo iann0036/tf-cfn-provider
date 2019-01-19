@@ -3,11 +3,13 @@
 Provides IPs for servers. This allows IPs to be created, updated and deleted.
 For additional details please refer to [API documentation](https://developer.scaleway.com/#ips).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - ID of the new resource.
 

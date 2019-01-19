@@ -4,11 +4,13 @@ The project resource allows Rundeck projects to be managed by Terraform. In Rund
 is the container object for a set of jobs and the configuration for which servers those jobs
 can be run on.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Name` - The unique name that identifies the project, as set in the arguments.
 

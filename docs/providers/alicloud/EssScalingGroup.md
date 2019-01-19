@@ -6,11 +6,13 @@ It defines the maximum and minimum numbers of ECS instances in the group, and th
 
 ~> **NOTE:** You can launch an ESS scaling group for a VPC network via specifying parameter `vswitch_ids`.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The scaling group ID.
 

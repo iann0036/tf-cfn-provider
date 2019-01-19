@@ -4,11 +4,13 @@ This resource provides the Object Lifecycle Policy resource in Oracle Cloud Infr
 
 Creates or replaces the object lifecycle policy for the bucket.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Rules` - The live lifecycle policy on the bucket.
 

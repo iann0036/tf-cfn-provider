@@ -3,11 +3,13 @@
 Provides a VPC/Subnet/ENI Flow Log to capture IP traffic for a specific network
 interface, subnet, or VPC. Logs are sent to a CloudWatch Log Group or a S3 Bucket.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The Flow Log ID.
 

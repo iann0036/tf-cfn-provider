@@ -3,11 +3,13 @@
 Provides a VPC Endpoint connection notification resource.
 Connection notifications notify subscribers of VPC Endpoint events.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the VPC connection notification.
 

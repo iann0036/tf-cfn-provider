@@ -10,11 +10,9 @@ sure that your `panos_panorama_template_stack` spec does not define any
 This is the appropriate resource to use if `terraform destroy` should delete
 the template stack.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

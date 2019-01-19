@@ -9,11 +9,9 @@ Devices can be specified manually, or discovered using the
 
 [data-source-vmfs-disks]: /docs/providers/vsphere/d/vmfs_disks.html
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

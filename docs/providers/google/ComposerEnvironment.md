@@ -23,11 +23,9 @@ To get more information about Environments, see:
   * **Environments create Google Cloud Storage buckets that do not get cleaned up automatically** on environment 
     deletion. [More about Composer's use of Cloud Storage](https://cloud.google.com/composer/docs/concepts/cloud-storage).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

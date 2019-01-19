@@ -2,11 +2,13 @@
 
 Acquires and associates a public IP.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the acquired and associated IP address.
 

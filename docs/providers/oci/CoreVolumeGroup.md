@@ -10,11 +10,13 @@ description. It does not have to be unique, and you can change it. Avoid enterin
 
 For more information, see [Volume Groups](https://docs.cloud.oracle.com/iaas/Content/Block/Concepts/volumegroups.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AvailabilityDomain` - The availability domain of the volume group.
 

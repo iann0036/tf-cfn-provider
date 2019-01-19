@@ -2,11 +2,13 @@
 
 Manages a Route53 Hosted Zone.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `ZoneId` - The Hosted Zone ID. This can be referenced by zone records.
 

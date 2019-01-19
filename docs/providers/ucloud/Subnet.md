@@ -2,11 +2,13 @@
 
 Provides a Subnet resource under VPC resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CreateTime` - The time of creation of subnet, formatted in RFC3339 time string.
 

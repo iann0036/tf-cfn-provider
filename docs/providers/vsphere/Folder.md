@@ -10,11 +10,9 @@ Subfolders are discovered by parsing the relative path specified in `path`, so
 `foo/bar` will create a folder named `bar` in the parent folder `foo`, as long
 as that folder exists.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

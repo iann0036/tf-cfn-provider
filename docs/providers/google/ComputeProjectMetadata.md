@@ -10,11 +10,9 @@ Keys unset in config but set on the server will be removed. If you want to manag
 key/value pairs within the project metadata rather than the entire set, then use
 [google_compute_project_metadata_item](compute_project_metadata_item.html).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

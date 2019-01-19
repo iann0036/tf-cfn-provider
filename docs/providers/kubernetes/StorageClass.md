@@ -4,11 +4,9 @@ Storage class is the foundation of dynamic provisioning, allowing cluster admini
 
 Read more at http://blog.kubernetes.io/2017/03/dynamic-provisioning-and-storage-classes-kubernetes.html
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

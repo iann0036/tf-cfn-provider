@@ -2,11 +2,9 @@
 
 Fetches a predefined instance type for 1&1 servers
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

@@ -5,11 +5,9 @@ Manages a Cloud NAT. For more information see
 and
 [API](https://cloud.google.com/compute/docs/reference/rest/beta/routers).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

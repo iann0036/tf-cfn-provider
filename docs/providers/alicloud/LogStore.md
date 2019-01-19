@@ -3,11 +3,13 @@
 The log store is a unit in Log Service to collect, store, and query the log data. Each log store belongs to a project,
 and each project can create multiple Logstores. [Refer to details](https://www.alibabacloud.com/help/doc-detail/48874.htm)
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the log project. It formats of `<project>:<name>`.
 

@@ -2,11 +2,13 @@
 
 Allows management of a [Google Cloud Platform service account](https://cloud.google.com/compute/docs/access/service-accounts)
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Email` - The e-mail address of the service account. This value.
 

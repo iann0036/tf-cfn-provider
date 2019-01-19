@@ -5,11 +5,13 @@ Manages a VM instance template resource within GCE. For more information see
 and
 [API](https://cloud.google.com/compute/docs/reference/latest/instanceTemplates).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `MetadataFingerprint` - The unique fingerprint of the metadata.
 

@@ -4,11 +4,9 @@ Creates a Google Bigtable instance. For more information see
 [the official documentation](https://cloud.google.com/bigtable/) and
 [API](https://cloud.google.com/bigtable/docs/go/reference).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

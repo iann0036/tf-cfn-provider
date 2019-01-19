@@ -2,11 +2,13 @@
 
 Use this resource to create, update or destroy RightScale [SSH keys](http://reference.rightscale.com/api1.5/resources/ResourceSshKeys.html).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `ResourceUid` - Cloud resource_uid.
 

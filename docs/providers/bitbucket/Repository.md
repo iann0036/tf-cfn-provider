@@ -5,11 +5,9 @@ Provides a Bitbucket repository resource.
 This resource allows you manage your repositories such as scm type, if it is
 private, how to fork the repository and other options.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

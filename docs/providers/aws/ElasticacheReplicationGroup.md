@@ -12,11 +12,13 @@ actual modification has not yet taken place. You can use the
 immediately. Using `apply_immediately` can result in a brief downtime as
 servers reboots.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the ElastiCache Replication Group.
 

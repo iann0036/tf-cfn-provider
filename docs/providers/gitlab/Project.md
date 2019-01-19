@@ -3,11 +3,13 @@
 This resource allows you to create and manage projects within your
 GitLab group or within your user.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - Integer that uniquely identifies the project within the gitlab install.
 

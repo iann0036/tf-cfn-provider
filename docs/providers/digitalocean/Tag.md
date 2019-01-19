@@ -5,11 +5,13 @@ Droplet resource in order to better organize or facilitate the lookups and
 actions on it. Tags created with this resource can be referenced in your Droplet
 configuration via their ID or name.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The id of the tag.
 

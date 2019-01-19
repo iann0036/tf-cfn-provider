@@ -9,11 +9,13 @@ Manages a billing account logging sink. For more information see
 the credentials used with Terraform. [IAM roles granted on a billing account](https://cloud.google.com/billing/docs/how-to/billing-access) are separate from the
 typical IAM roles granted on a project.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `WriterIdentity` - The identity associated with this sink. This identity must be granted write access to the.
 

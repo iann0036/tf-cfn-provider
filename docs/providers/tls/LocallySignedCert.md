@@ -7,11 +7,13 @@ Locally-signed certificates are generally only trusted by client software when
 setup to use the provided CA. They are normally used in development environments
 or when deployed internally to an organization.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CertPem` - The certificate data in PEM format.
 

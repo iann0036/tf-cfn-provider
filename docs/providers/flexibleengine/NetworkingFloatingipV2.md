@@ -5,11 +5,13 @@ that can be used for load balancers.
 These are similar to Nova (compute) floating IP resources,
 but only compute floating IPs can be used with compute instances.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Region` - See Argument Reference above.
 

@@ -2,11 +2,13 @@
 
 Allows you to set a user or group as the AD administrator for an Azure SQL server
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The SQL Active Directory Administrator ID.
 

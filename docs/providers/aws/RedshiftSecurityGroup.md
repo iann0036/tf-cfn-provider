@@ -2,11 +2,13 @@
 
 Creates a new Amazon Redshift security group. You use security groups to control access to non-VPC clusters
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The Redshift security group ID.
 

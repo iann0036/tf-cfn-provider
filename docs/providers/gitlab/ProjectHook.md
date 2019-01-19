@@ -4,11 +4,13 @@ This resource allows you to create and manage hooks for your GitLab projects.
 For further information on hooks, consult the [gitlab
 documentation](https://docs.gitlab.com/ce/user/project/integrations/webhooks.html).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The unique id assigned to the hook by the GitLab server.
 

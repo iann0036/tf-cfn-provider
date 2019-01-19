@@ -4,11 +4,13 @@ This resource provides the User Group Membership resource in Oracle Cloud Infras
 
 Adds the specified user to the specified group and returns a `UserGroupMembership` object with its own OCID.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the tenancy containing the user, group, and membership object.
 

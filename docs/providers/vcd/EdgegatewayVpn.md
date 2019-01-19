@@ -3,11 +3,9 @@
 Provides a vCloud Director IPsec VPN. This can be used to create,
 modify, and delete VPN settings and rules.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

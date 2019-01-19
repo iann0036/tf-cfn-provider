@@ -4,11 +4,9 @@ Limit Range sets resource usage limits (e.g. memory, cpu, storage) for supported
 
 Read more in [the official docs](https://kubernetes.io/docs/tasks/configure-pod-container/apply-resource-quota-limit/#applying-default-resource-requests-and-limits).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

@@ -35,11 +35,13 @@ you can find its OCID in the response. You can also retrieve a
 resource's OCID by using a List API operation on that resource
 type, or by viewing the resource in the Console.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AvailabilityDomain` - The availability domain the mount target is in. May be unset as a blank or NULL value.  Example: `Uocm:PHX-AD-1`.
 

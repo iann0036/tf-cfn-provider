@@ -2,11 +2,13 @@
 
 Provides a Inspector assessment template
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Arn` - The template assessment ARN.
 

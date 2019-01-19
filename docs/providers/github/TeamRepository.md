@@ -10,11 +10,9 @@ The repository and the team must both belong to the same organization
 on GitHub. This resource does not actually *create* any repositories;
 to do that, see [`github_repository`](repository.html).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

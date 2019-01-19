@@ -2,11 +2,9 @@
 
 The ``opc_compute_ssh_key`` resource creates and manages an SSH key in an Oracle Cloud Infrastructure Compute Classic identity domain.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

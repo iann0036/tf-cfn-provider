@@ -5,11 +5,13 @@ This resource provides the Path Route Set resource in Oracle Cloud Infrastructur
 Adds a path route set to a load balancer. For more information, see
 [Managing Request Routing](https://docs.cloud.oracle.com/iaas/Content/Balance/Tasks/managingrequest.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Name` - The unique name for this set of path route rules. Avoid entering confidential information.  Example: `example_path_route_set`.
 

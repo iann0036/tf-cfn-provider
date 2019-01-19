@@ -8,11 +8,13 @@ Manages a Cloud Dataproc cluster resource within GCP. For more information see
 `labels`,`cluster_config.worker_config.num_instances` and `cluster_config.preemptible_worker_config.num_instances` are non-updateable. Changing others will cause recreation of the
 whole cluster!
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `ClusterConfig.masterConfig.instanceNames` - List of master instance names which.
 

@@ -8,11 +8,13 @@ disassociate Elastic IPs from AWS Instances and Network Interfaces.
 ~> **NOTE:** `aws_eip_association` is useful in scenarios where EIPs are either
 pre-existing or distributed to customers or users and therefore cannot be changed.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AssociationId` - The ID that represents the association of the Elastic IP.
 

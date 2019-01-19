@@ -2,11 +2,13 @@
 
 A kms key can help user to protect data security in the transmission process.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the key.
 

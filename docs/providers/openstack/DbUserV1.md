@@ -2,11 +2,13 @@
 
 Manages a V1 DB user resource within OpenStack.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Region` - Openstack region resource is created in.
 

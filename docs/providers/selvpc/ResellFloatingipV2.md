@@ -2,11 +2,13 @@
 
 Manages a V2 floatingip resource within Resell Selectel VPC.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `PortId` - Contains id of the Networking service port.
 

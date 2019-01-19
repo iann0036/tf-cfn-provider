@@ -4,11 +4,13 @@ Provides one-time creation of a IAM user login profile, and uses PGP to
 encrypt the password for safe transport to the user. PGP keys can be
 obtained from Keybase.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `KeyFingerprint` - The fingerprint of the PGP key used to encrypt.
 

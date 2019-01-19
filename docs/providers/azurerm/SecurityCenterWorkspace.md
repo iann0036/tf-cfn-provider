@@ -6,11 +6,13 @@ Manages the subscription's Security Center Workspace.
 
 ~> **NOTE:** The subscription's pricing model can not be `Free` for this to have any affect.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The Security Center Workspace ID.
 

@@ -6,11 +6,13 @@ Creates a secondary VNIC and attaches it to the specified instance.
 For more information about secondary VNICs, see
 [Virtual Network Interface Cards (VNICs)](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/managingVNICs.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AvailabilityDomain` - The availability domain of the instance.  Example: `Uocm:PHX-AD-1`.
 

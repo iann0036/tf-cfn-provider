@@ -6,11 +6,13 @@ used as unique identifiers for other resources.
 This resource uses the `hashicorp/go-uuid` to generate a UUID-formatted string
 for use with services needed a unique string identifier.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Result` - The generated uuid presented in string format.
 

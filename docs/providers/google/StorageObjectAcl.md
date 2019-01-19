@@ -12,11 +12,9 @@ and
 -> Want fine-grained control over object ACLs? Use `google_storage_object_access_control` to control individual
 role entity pairs.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

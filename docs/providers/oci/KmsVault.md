@@ -7,11 +7,13 @@ placement, pricing, and available options. Options include storage
 isolation, a dedicated service endpoint instead of a shared service
 endpoint for API calls, and a dedicated HSM or a multitenant HSM.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the compartment that contains this vault.
 

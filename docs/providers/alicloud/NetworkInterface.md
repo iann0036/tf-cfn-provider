@@ -6,11 +6,13 @@ For information about Elastic Network Interface and how to use it, see [Elastic 
 
 ~> **NOTE** Only one of private_ips or private_ips_count can be specified when assign private IPs.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ENI ID.
 

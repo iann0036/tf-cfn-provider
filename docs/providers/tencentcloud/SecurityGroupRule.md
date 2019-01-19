@@ -2,11 +2,13 @@
 
 Provides a security group rule resource. Represents a single `ingress` or `egress` group rule, which can be added to external Security Groups.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the security group rule.
 

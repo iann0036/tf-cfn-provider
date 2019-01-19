@@ -10,11 +10,13 @@ To manage *all* keys sharing a common prefix, and thus have Terraform
 remove errant keys not present in the configuration, consider using the
 `consul_key_prefix` resource instead.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Datacenter` - The datacenter the keys are being written to.
 

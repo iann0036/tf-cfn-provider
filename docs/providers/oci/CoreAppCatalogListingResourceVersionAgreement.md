@@ -2,11 +2,13 @@
 
 The `oci_core_app_catalog_listing_resource_version_agreement` resource creates AppCatalogListingResourceVersionAgreement for a particular resource version of a listing.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `EulaLink` - EULA link.
 

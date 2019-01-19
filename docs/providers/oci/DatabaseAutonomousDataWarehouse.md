@@ -4,11 +4,13 @@ This resource provides the Autonomous Data Warehouse resource in Oracle Cloud In
 
 Creates a new Autonomous Data Warehouse.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the compartment.
 

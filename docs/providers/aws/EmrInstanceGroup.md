@@ -7,11 +7,13 @@ See [Amazon Elastic MapReduce Documentation](https://aws.amazon.com/documentatio
 web interface. Instance Groups are destroyed when the EMR Cluster is destroyed.
 Terraform will resize any Instance Group to zero when destroying the resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The EMR Instance ID.
 

@@ -10,11 +10,13 @@ When importing an existing key pair the public key material may be in any format
 * Base64 encoded DER format
 * SSH public key file format as specified in RFC4716
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `KeyName` - The key pair name.
 

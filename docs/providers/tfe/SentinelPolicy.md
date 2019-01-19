@@ -7,11 +7,13 @@ Policies are configured on a per-organization level and are organized and
 grouped into policy sets, which define the workspaces on which policies are
 enforced during runs.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the policy.
 

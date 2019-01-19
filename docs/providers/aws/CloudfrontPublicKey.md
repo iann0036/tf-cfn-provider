@@ -2,11 +2,13 @@
 
 
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CallerReference` - Internal value used by CloudFront to allow future updates to the public key configuration.
 

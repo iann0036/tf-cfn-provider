@@ -7,11 +7,13 @@ the infrastructure that runs those applications.
 Environments are often things such as `development`, `integration`, or
 `production`.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - ID of the Elastic Beanstalk Environment.
 

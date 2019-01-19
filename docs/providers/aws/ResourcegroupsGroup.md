@@ -2,11 +2,13 @@
 
 Provides a Resource Group.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Arn` - The ARN assigned by AWS for this resource group.
 

@@ -8,11 +8,13 @@ By using policy sets, you can group your policies by attributes such as environm
 or region. Individual policies that are members of policy sets will only be checked
 for workspaces that the policy set is attached to.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the policy set.
 

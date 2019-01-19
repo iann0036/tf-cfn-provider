@@ -2,11 +2,13 @@
 
 Provides an RDS account resource and used to manage databases. A RDS instance supports multiple database account.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The current account resource ID. Composed of instance ID and account name with format `<instance_id>:<name>`.
 

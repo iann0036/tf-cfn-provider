@@ -4,11 +4,9 @@ Creates and destroys a volume in Docker. This can be used alongside
 [docker\_container](/docs/providers/docker/r/container.html)
 to prepare volumes that can be shared across containers.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

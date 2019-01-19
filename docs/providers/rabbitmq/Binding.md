@@ -3,11 +3,13 @@
 The ``rabbitmq_binding`` resource creates and manages a binding relationship
 between a queue an exchange.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `PropertiesKey` - A unique key to refer to the binding.
 

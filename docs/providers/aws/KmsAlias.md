@@ -4,11 +4,13 @@ Provides an alias for a KMS customer master key. AWS Console enforces 1-to-1 map
 but API (hence Terraform too) allows you to create as many aliases as
 the [account limits](http://docs.aws.amazon.com/kms/latest/developerguide/limits.html) allow you.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Arn` - The Amazon Resource Name (ARN) of the key alias.
 

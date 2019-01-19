@@ -2,11 +2,13 @@
 
 The ``opc_compute_ip_network`` resource creates and manages an IP Network in an Oracle Cloud Infrastructure Compute Classic identity domain.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Name` - The name of the IP Network.
 

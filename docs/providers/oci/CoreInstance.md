@@ -34,11 +34,13 @@ operation to get the VNIC ID for the instance, and then call
 You can later add secondary VNICs to an instance. For more information, see
 [Virtual Network Interface Cards (VNICs)](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/managingVNICs.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AvailabilityDomain` - The availability domain the instance is running in.  Example: `Uocm:PHX-AD-1`.
 

@@ -2,11 +2,13 @@
 
 Adds launch permission to Amazon Machine Image (AMI) from another AWS account.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - A combination of "`image_id`-`account_id`".
 

@@ -2,11 +2,9 @@
 
 Provides an API Gateway Method Settings, e.g. logging or monitoring.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

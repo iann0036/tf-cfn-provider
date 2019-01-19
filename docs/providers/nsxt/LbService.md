@@ -9,11 +9,13 @@ following preconditions:
 In order to enforce correct order of create/delete, it is recommended to add
 depends_on clause to lb service.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - ID of the lb_service.
 

@@ -4,11 +4,13 @@ This resource provides the ability to associate a route table for a subnet in Or
 
 Attaches the specified `route table` to the specified `subnet`.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `SubnetId` - (Required) The OCID of the subnet.
 

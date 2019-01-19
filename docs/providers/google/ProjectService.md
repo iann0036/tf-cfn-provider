@@ -8,11 +8,9 @@ For a list of services available, visit the
 ~> **Note:** This resource _must not_ be used in conjunction with
    `google_project_services` or they will fight over which services should be enabled.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

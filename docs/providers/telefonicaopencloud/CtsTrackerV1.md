@@ -2,11 +2,13 @@
 
 Allows you to collect, store, and query cloud resource operation records.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Status` - The status of a tracker. The value is **enabled**.
 

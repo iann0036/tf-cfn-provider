@@ -10,11 +10,9 @@ present.  This means that either the `panos_licensing` resource must use
 param to `true`.  As there is no harm in leaving the licensing API key on the
 PAN-OS firewall, it is recommended that `retain_key` be set to `true`.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

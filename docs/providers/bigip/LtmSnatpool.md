@@ -4,11 +4,9 @@
 
 Resource should be named with their "full path". The full path is the combination of the partition + name of the resource, for example /Common/my-snatpool.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

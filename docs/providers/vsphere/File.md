@@ -13,11 +13,9 @@ re-created. Depending on if destination parameters are being changed as well,
 this may result in the destination file either being overwritten or deleted at
 the old location.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

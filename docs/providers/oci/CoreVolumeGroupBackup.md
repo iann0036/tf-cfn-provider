@@ -5,11 +5,13 @@ This resource provides the Volume Group Backup resource in Oracle Cloud Infrastr
 Creates a new backup volume group of the specified volume group.
 For more information, see [Volume Groups](https://docs.cloud.oracle.com/iaas/Content/Block/Concepts/volumegroups.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the compartment that contains the volume group backup.
 

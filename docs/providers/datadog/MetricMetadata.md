@@ -2,11 +2,9 @@
 
 Provides a Datadog metric_metadata resource. This can be used to manage a metric's metadata.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

@@ -4,11 +4,13 @@ This resource provides the Cluster resource in Oracle Cloud Infrastructure Conta
 
 Create a new cluster.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AvailableKubernetesUpgrades` - Available Kubernetes versions to which the clusters masters may be upgraded.
 

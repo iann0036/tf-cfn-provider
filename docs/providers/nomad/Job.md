@@ -9,11 +9,9 @@ Nomad cluster often runs core system services that are ideally setup during
 infrastructure creation. This resource is ideal for the latter type of job, but
 can be used to manage any job within Nomad.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

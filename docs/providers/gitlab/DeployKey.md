@@ -2,11 +2,9 @@
 
 This resource allows you to create and manage deploy keys for your GitLab projects.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

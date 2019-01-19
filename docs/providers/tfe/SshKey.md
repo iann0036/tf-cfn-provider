@@ -3,11 +3,9 @@
 This resource represents an SSH key which includes a name and the SSH private
 key. An organization can have multiple SSH keys available.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

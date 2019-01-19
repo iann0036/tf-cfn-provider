@@ -16,11 +16,13 @@ policies, see [How Policies Work](https://docs.cloud.oracle.com/iaas/Content/Ide
 [Common Policies](https://docs.cloud.oracle.com/iaas/Content/Identity/Concepts/commonpolicies.htm).
 New policies take effect typically within 10 seconds.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the compartment containing the policy (either the tenancy or another compartment).
 

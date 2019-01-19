@@ -17,11 +17,13 @@ It does not have to be unique, and you can change it. Avoid entering confidentia
 
 For more information on configuring a VCN's default DHCP options, see [Managing Default VCN Resources](/docs/providers/oci/guides/managing_default_resources.html)
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the compartment containing the set of DHCP options.
 

@@ -2,11 +2,13 @@
 
 Provides an OpsWorks permission resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The computed id of the permission. Please note that this is only used internally to identify the permission. This value is not used in aws.
 

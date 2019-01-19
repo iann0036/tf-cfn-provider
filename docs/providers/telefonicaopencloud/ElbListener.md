@@ -2,11 +2,13 @@
 
 Manages an elastic loadbalancer listener resource within telefonica open cloud.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Name` - See Argument Reference above.
 

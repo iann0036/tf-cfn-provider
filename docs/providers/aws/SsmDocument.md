@@ -6,11 +6,13 @@ Provides an SSM Document resource
 or greater can update their content once created, see [SSM Schema Features][1]. To update a document with an older
 schema version you must recreate the resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CreatedDate` - The date the document was created.
 

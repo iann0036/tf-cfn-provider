@@ -5,11 +5,9 @@ Provides a Pinpoint ADM (Amazon Device Messaging) Channel resource.
 ~> **Note:** All arguments including the Client ID and Client Secret will be stored in the raw state as plain-text.
 [Read more about sensitive data in state](/docs/state/sensitive-data.html).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

@@ -20,11 +20,13 @@ metadata).
 4. Optionally, use `DeleteConsoleHistory` to delete the console history metadata
 and the console history data.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AvailabilityDomain` - The availability domain of an instance.  Example: `Uocm:PHX-AD-1`.
 

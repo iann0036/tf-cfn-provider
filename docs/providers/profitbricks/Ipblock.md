@@ -2,11 +2,9 @@
 
 Manages IP Blocks on ProfitBricks. IP Blocks contain reserved public IP addresses that can be assigned servers or other resources.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

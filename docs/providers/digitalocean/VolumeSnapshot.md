@@ -2,11 +2,13 @@
 
 Provides a DigitalOcean Volume Snapshot which can be used to create a snapshot from an existing volume.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CreatedAt` - The date and time the volume snapshot was created.
 

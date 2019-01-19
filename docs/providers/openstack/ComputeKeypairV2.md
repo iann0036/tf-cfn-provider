@@ -8,11 +8,13 @@ for production deployments is *not* recommended**. Instead, generate
 a private key file outside of Terraform and distribute it securely
 to the system where Terraform will be run.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Region` - See Argument Reference above.
 

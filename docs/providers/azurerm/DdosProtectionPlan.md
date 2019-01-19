@@ -4,11 +4,13 @@ Manages an Azure DDoS Protection Plan.
 
 -> **NOTE** Azure only allow `one` DDoS Protection Plan per region.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The Resource ID of the DDoS Protection Plan.
 

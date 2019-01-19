@@ -8,11 +8,13 @@ will remain in place. If you wish to automatically regenerate a URL, set
 the `regenerate` argument to `true`. This will create a new resource with
 a new ID and URL.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - Computed md5 hash based on the generated url.
 

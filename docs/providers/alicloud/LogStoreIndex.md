@@ -3,11 +3,13 @@
 Log Service provides the LogSearch/Analytics function to query and analyze large amounts of logs in real time.
 You can use this function by enabling the index and field statistics. [Refer to details](https://www.alibabacloud.com/help/doc-detail/43772.htm)
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the log store index. It formats of `<project>:<logstore>`.
 

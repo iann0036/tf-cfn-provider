@@ -6,11 +6,13 @@ Encrypts data using the given EncryptDataDetails resource.
 Plaintext included in the example request is a base64-encoded value 
 of a UTF-8 string.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Ciphertext` - The encrypted data.
 

@@ -2,11 +2,9 @@
 
 The `opc_lbaas_listener` resource creates and manages a Load Balancer Classic Listener for a Load Balancer Classic instance.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

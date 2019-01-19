@@ -15,11 +15,13 @@ You must also specify a *description* for the tag.
 It does not have to be unique, and you can change it with
 [UpdateTag](https://docs.cloud.oracle.com/iaas/api/#/en/tagging/20170901/Tag/UpdateTag).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Operations.CostCenter": "42"}``.
 

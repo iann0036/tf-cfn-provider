@@ -2,11 +2,9 @@
 
 Allows setting policy to an Elasticsearch domain while referencing domain attributes (e.g. ARN)
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

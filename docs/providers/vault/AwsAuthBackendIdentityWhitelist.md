@@ -5,11 +5,9 @@ Configures the periodic tidying operation of the whitelisted identity entries.
 For more information, see the
 [Vault docs](https://www.vaultproject.io/api/auth/aws/index.html#configure-identity-whitelist-tidy-operation).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

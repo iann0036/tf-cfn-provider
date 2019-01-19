@@ -10,11 +10,13 @@ user on a MySQL server.
 ~> **NOTE on How Passwords are Created:** This resource **automatically**
    generates a **random** password. The password will be a random UUID.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `KeyFingerprint` - The fingerprint of the PGP key used to encrypt the password.
 

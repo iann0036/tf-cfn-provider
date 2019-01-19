@@ -2,11 +2,13 @@
 
 Provides an RDS account privilege resource and used to grant several database some access privilege. A database can be granted by multiple account.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The current account resource ID. Composed of instance ID, account name and privilege with format `<instance_id>:<name>:<privilege>`.
 

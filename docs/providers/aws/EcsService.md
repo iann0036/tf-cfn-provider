@@ -6,11 +6,13 @@ Provides an ECS service - effectively a task that is expected to run until an er
 
 See [ECS Services section in AWS developer guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_services.html).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The Amazon Resource Name (ARN) that identifies the service.
 

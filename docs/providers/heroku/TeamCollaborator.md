@@ -7,11 +7,13 @@ A team collaborator represents an account that has been given access to a team a
 
 ~> **NOTE:** Please only use this resource if you have team/organization apps
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the team collaborator.
 

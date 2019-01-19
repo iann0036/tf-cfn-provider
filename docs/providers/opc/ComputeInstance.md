@@ -8,11 +8,13 @@ consider setting
 [``prevent_destroy``](/docs/configuration/resources.html#prevent_destroy)
 on your instance resources as an extra safety measure.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The `id` of the instance.
 

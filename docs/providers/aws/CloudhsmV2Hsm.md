@@ -2,11 +2,13 @@
 
 Creates an HSM module in Amazon CloudHSM v2 cluster.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `HsmId` - The id of the HSM module.
 

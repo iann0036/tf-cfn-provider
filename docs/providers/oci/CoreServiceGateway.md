@@ -12,11 +12,13 @@ For information about OCIDs, see [Resource Identifiers](https://docs.cloud.oracl
 You may optionally specify a *display name* for the service gateway, otherwise a default is provided.
 It does not have to be unique, and you can change it. Avoid entering confidential information.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `BlockTraffic` - Whether the service gateway blocks all traffic through it. The default is `false`. When this is `true`, traffic is not routed to any services, regardless of route rules.  Example: `true`.
 

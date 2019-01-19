@@ -26,11 +26,13 @@ result in diff shown. For these reasons, this resource is incompatible with the
 For more information about Default Security Groups, see the AWS Documentation on
 [Default Security Groups][aws-default-security-groups].
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the security group.
 

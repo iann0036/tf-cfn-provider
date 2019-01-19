@@ -6,11 +6,13 @@ Manages the Pricing Tier for Azure Security Center in the current subscription.
 
 ~> **NOTE:** Deletion of this resource does not change or reset the pricing tier to `Free`
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The subscription pricing ID.
 

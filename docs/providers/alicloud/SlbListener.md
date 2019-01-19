@@ -11,11 +11,13 @@ For information about listener and how to use it, to see the following:
 * [Configure a TCP Listener](https://www.alibabacloud.com/help/doc-detail/27594.htm).
 * [Configure a UDP Listener](https://www.alibabacloud.com/help/doc-detail/27595.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the load balancer listener. It is consist of `load_balancer_id` and `frontend_port`: `<load_balancer_id>:<frontend_port>`.
 

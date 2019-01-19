@@ -5,11 +5,9 @@ a project in GCE. Using `google_compute_project_metadata_item` lets you
 manage a single key/value setting in Terraform rather than the entire
 project metadata map.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

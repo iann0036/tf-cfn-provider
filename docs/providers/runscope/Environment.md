@@ -9,11 +9,13 @@ environments as needed. For common settings (base URLs, API keys)
 that you'd like to use across all tests within a bucket,
 use a [Shared Environment](https://www.runscope.com/docs/api-testing/environments#shared).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the environment.
 

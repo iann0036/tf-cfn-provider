@@ -2,11 +2,13 @@
 
 Provides a Logentries log resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Token` - If the log `source` is `token`, this value holds the generated log token that is used by logging clients. See the Logentries [token-based input documentation](https://logentries.com/doc/input-token/) for more information.
 

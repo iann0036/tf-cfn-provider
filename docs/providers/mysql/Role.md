@@ -5,11 +5,9 @@ server.
 
 ~> **Note:** MySQL introduced roles in version 8. They do not work on MySQL 5 and lower.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

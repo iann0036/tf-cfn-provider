@@ -8,11 +8,13 @@ If the record exists, then it will be updated to represent the record in
 the body of the request. If a record in the zone does not exist in the
 request body, the record will be removed from the zone.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the compartment the resource belongs to.
 

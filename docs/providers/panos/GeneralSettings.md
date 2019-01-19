@@ -8,11 +8,9 @@ then whatever is already configured on the firewall is left as-is.  The
 general device settings will always exist on the firewall, so `terraform
 destroy` does not remove config from the firewall.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

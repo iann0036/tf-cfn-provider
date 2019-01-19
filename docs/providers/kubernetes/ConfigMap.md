@@ -3,11 +3,9 @@
 The resource provides mechanisms to inject containers with configuration data while keeping containers agnostic of Kubernetes.
 Config Map can be used to store fine-grained information like individual properties or coarse-grained information like entire config files or JSON blobs.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

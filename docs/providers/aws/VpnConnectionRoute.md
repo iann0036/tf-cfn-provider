@@ -2,11 +2,9 @@
 
 Provides a static route between a VPN connection and a customer gateway.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

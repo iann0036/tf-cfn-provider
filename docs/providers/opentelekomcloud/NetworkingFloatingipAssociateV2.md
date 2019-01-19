@@ -4,11 +4,13 @@ Associates a floating IP to a port. This is useful for situations
 where you have a pre-allocated floating IP or are unable to use the
 `opentelekomcloud_networking_floatingip_v2` resource to create a floating IP.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Region` - See Argument Reference above.
 

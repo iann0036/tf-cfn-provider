@@ -4,11 +4,13 @@ Provides an Alicloud ECS Elastic Network Interface Attachment as a resource to a
 
 For information about Elastic Network Interface and how to use it, see [Elastic Network Interface](https://www.alibabacloud.com/help/doc-detail/58496.html).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the resource, formatted as `<network_interface_id>:<instance_id>`.
 

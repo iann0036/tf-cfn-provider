@@ -5,11 +5,13 @@ API tests are comprised of a series of steps, most often HTTP requests.
 In addition to requests, you can also add additional types of steps to
 your tests like pauses and conditions.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the step.
 

@@ -2,11 +2,13 @@
 
 Adds permission to create volumes off of a given EBS Snapshot.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - A combination of "`snapshot_id`-`account_id`".
 

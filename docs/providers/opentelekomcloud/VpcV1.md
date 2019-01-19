@@ -2,11 +2,13 @@
 
 Manages a VPC resource within OpenTelekomCloud.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` -  ID of the VPC.
 

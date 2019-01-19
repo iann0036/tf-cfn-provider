@@ -12,11 +12,9 @@ after creation or modification. During this time, deletes to resources will be
 blocked. If you need to delete a distribution that is enabled and you do not
 want to wait, you need to use the `retain_on_delete` flag.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

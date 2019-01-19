@@ -7,11 +7,9 @@ For information about CloudFront distributions, see the
 origin access identities, see
 [Using an Origin Access Identity to Restrict Access to Your Amazon S3 Content][2].
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

@@ -11,11 +11,13 @@ an existing Google Cloud Platform folder.
     Use `terraform import` and inspect the `terraform plan` output to ensure
     your existing members are preserved.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Etag` - (Computed) The etag of the folder's IAM policy.
 

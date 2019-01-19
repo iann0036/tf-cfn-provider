@@ -12,11 +12,13 @@ It is only possible to create public IPv4 blocks, with masks from /24 (256 addre
 
 Once IP block is allocated or imported, an address from it can be assigned to device with the `packet_ip_attachment` resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Facility` - The facility where the addresses are.
 

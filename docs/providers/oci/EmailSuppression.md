@@ -4,11 +4,13 @@ This resource provides the Suppression resource in Oracle Cloud Infrastructure E
 
 Adds recipient email addresses to the suppression list for a tenancy.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `EmailAddress` - The email address of the suppression.
 

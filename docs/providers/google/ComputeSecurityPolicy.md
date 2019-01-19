@@ -4,11 +4,13 @@ A Security Policy defines an IP blacklist or whitelist that protects load balanc
 see the [official documentation](https://cloud.google.com/armor/docs/configure-security-policies)
 and the [API](https://cloud.google.com/compute/docs/reference/rest/beta/securityPolicies).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Fingerprint` - Fingerprint of this resource.
 

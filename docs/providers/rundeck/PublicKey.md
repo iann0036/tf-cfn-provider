@@ -7,11 +7,13 @@ it runs commands.
 This resource also allows the retrieval of an existing public key from the store, so that it
 may be used in the configuration of other resources such as ``aws_key_pair``.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Url` - The URL at which the key material can be retrieved from the key store by other clients.
 

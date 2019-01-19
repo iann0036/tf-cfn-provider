@@ -18,11 +18,13 @@ about policies, see [How Policies Work](https://docs.cloud.oracle.com/iaas/Conte
 You must also specify a *description* for the dynamic group (although it can be an empty string). It does not
 have to be unique, and you can change it anytime with [UpdateDynamicGroup](https://docs.cloud.oracle.com/iaas/api/#/en/identity/20160918/DynamicGroup/UpdateDynamicGroup).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the tenancy containing the group.
 

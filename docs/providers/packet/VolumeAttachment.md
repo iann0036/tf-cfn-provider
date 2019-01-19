@@ -6,11 +6,13 @@ Device and volume must be in the same location (facility).
 
 Once attached by Terraform, they must then be mounted using the `packet_block_attach` and `packet_block_detach` scripts.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The unique ID of the volume attachment.
 

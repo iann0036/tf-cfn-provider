@@ -3,11 +3,13 @@
 Provides an UltraDNS Resource Distribution (RD) pool resource, which are
 used to define rules for returning multiple A or AAAA records for a given owner name. Ordering can be FIXED, RANDOM or ROUND_ROBIN.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The record ID.
 

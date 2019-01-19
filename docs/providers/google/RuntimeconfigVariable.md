@@ -5,11 +5,13 @@ Manages a RuntimeConfig variable in Google Cloud. For more information, see the
 or the
 [JSON API](https://cloud.google.com/deployment-manager/runtime-configurator/reference/rest/).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `UpdateTime` - (Computed) The timestamp in RFC3339 UTC "Zulu" format,.
 

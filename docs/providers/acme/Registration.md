@@ -9,11 +9,9 @@ ACME v1 spec, a _registration_ referred to the account entity.  This resource
 name is stable and more than likely will not change until a later major version
 of the provider, if at all.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

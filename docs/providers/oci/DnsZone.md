@@ -4,11 +4,13 @@ This resource provides the Zone resource in Oracle Cloud Infrastructure Dns serv
 
 Creates a new zone in the specified compartment.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the compartment containing the zone.
 

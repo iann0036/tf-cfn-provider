@@ -7,11 +7,9 @@ clusters.
 ElastiCache cluster **outside** of a VPC. If you are using a VPC, see the
 [ElastiCache Subnet Group resource](elasticache_subnet_group.html).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

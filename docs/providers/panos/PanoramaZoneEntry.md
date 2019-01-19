@@ -11,11 +11,9 @@ sure that your `panos_panorama_zone` spec does not define the
 This is the appropriate resource to use if you have a pre-existing zone
 in Panorama and don't want Terraform to delete it on `terraform destroy`.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

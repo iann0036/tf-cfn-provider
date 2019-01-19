@@ -5,11 +5,9 @@ Creates a new bucket ACL in Google cloud storage service (GCS). For more informa
 and 
 [API](https://cloud.google.com/storage/docs/json_api/v1/bucketAccessControls).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

@@ -5,11 +5,9 @@ For more information, see [Getting Started with Linode](https://linode.com/docs/
 
 Linode Instances can also use [provisioners](/docs/provisioners/index.html).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

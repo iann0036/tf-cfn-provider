@@ -2,11 +2,13 @@
 
 Provides a VMware vSphere license resource. This can be used to add and remove license keys.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `EditionKey` - The product edition of the license key.
 

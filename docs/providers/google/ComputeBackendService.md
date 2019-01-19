@@ -6,11 +6,13 @@ and the [API](https://cloud.google.com/compute/docs/reference/latest/backendServ
 
 For internal load balancing, use a [google_compute_region_backend_service](/docs/providers/google/r/compute_region_backend_service.html).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Fingerprint` - The fingerprint of the backend service.
 

@@ -5,11 +5,9 @@ The ``circonus_graph`` resource creates and manages a
 
 https://login.circonus.com/resources/api/calls/graph).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

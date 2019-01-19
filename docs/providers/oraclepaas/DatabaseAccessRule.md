@@ -2,11 +2,9 @@
 
 The `oraclepaas_database_access_rule` resource creates and manages a Database Access Rule for an Oracle Database Cloud service instance.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

@@ -4,11 +4,9 @@ The private key resource allows SSH private keys to be stored into Rundeck's key
 The key store is where Rundeck keeps credentials that are needed to access the nodes on which
 it runs commands.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

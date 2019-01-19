@@ -10,11 +10,13 @@ phase because a modification has not yet taken place. You can use the
 `apply_immediately` flag to instruct the service to apply the change immediately
 (see documentation below).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Arn` - The Neptune Cluster Amazon Resource Name (ARN).
 

@@ -2,11 +2,13 @@
 
 Allows you to add, update, or remove an Azure SQL server to a subnet of a virtual network.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the SQL virtual network rule.
 

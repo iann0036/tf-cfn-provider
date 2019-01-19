@@ -7,11 +7,13 @@ groups.
 To exclusively manage the users in a group, see the
 [`aws_iam_group_membership` resource][3].
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `User` - The name of the IAM User.
 

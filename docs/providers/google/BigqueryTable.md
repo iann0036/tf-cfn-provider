@@ -4,11 +4,13 @@ Creates a table resource in a dataset for Google BigQuery. For more information 
 [the official documentation](https://cloud.google.com/bigquery/docs/) and
 [API](https://cloud.google.com/bigquery/docs/reference/rest/v2/tables).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CreationTime` - The time when this table was created, in milliseconds since the epoch.
 

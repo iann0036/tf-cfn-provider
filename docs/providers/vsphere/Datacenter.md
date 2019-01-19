@@ -3,11 +3,9 @@
 Provides a VMware vSphere datacenter resource. This can be used as the primary
 container of inventory objects such as hosts and virtual machines.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

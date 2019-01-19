@@ -2,11 +2,13 @@
 
 Provides an IAM policy attached to a user.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The user policy ID, in the form of `user_name:user_policy_name`.
 

@@ -2,11 +2,13 @@
 
 Manages an HTTP Action within a Logic App Workflow
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the HTTP Action within the Logic App Workflow.
 

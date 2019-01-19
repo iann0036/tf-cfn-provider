@@ -3,11 +3,13 @@
 The organization resource allows Grafana organizations and their membership to
 be created and managed.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `OrgId` - The organization id assigned to this organization by Grafana.
 

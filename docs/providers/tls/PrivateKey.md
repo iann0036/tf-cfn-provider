@@ -13,11 +13,13 @@ to the system where Terraform will be run.
 This is a *logical resource*, so it contributes only to the current Terraform
 state and does not create any external managed resources.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Algorithm` - The algorithm that was selected for the key.
 

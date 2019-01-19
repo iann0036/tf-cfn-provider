@@ -14,11 +14,13 @@ For the purposes of access control, the DRG attachment is automatically placed i
 as the VCN. For more information about compartments and access control, see
 [Overview of the IAM Service](https://docs.cloud.oracle.com/iaas/Content/Identity/Concepts/overview.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the compartment containing the DRG attachment.
 

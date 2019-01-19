@@ -6,11 +6,13 @@ Provides an Alicloud Common Bandwidth Package Attachment resource for associatin
 
 For information about common bandwidth package and how to use it, see [What is Common Bandwidth Package](https://www.alibabacloud.com/help/product/55092.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the common bandwidth package attachment id and formates as `<bandwidth_package_id>:<instance_id>`.
 

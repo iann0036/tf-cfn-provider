@@ -4,11 +4,13 @@ Provides a Datadog - Amazon Web Services integration resource. This can be used 
 
 Update operations are currently not supported with datadog API so any change forces a new resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `ExternalId` - AWS External ID.
 

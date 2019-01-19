@@ -4,11 +4,9 @@ Creates a snapshot copy grant that allows AWS Redshift to encrypt copied snapsho
 
 Note that the grant must exist in the destination region, and not in the region of the cluster.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

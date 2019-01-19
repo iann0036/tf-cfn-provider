@@ -8,11 +8,13 @@ and a single `subnet_id`) and a [VPC Endpoint](vpc_endpoint.html) resource with 
 attribute. Do not use the same subnet ID in both a VPC Endpoint resource and a VPC Endpoint Subnet
 Association resource. Doing so will cause a conflict of associations and will overwrite the association.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the association.
 

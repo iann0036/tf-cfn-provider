@@ -5,11 +5,13 @@ Manages a Cloud Router BGP peer. For more information see
 and
 [API](https://cloud.google.com/compute/docs/reference/latest/routers).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `IpAddress` - IP address of the interface inside Google Cloud Platform.
 

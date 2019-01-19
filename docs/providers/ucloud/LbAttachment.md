@@ -2,11 +2,13 @@
 
 Provides a Load Balancer Attachment resource for attaching Load Balancer to UHost Instance, etc.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `PrivateIp` - The private ip address for backend servers.
 

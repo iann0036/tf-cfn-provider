@@ -6,11 +6,9 @@ Requests automatic route propagation between a VPN gateway and a route table.
 the `propagating_vgws` argument set. If that argument is set, any route
 propagation not explicitly listed in its value will be removed.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

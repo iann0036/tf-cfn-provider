@@ -5,11 +5,9 @@ Manages a Node Pool resource within GKE. For more information see
 and
 [API](https://cloud.google.com/container-engine/reference/rest/v1/projects.zones.clusters.nodePools).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

@@ -8,11 +8,13 @@ and [API](https://cloud.google.com/compute/docs/reference/latest/instanceGroups)
 `resourceInUseByAnotherResource` error. You can avoid this error with a
 Terraform `lifecycle` block as outlined in the example below.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `SelfLink` - The URI of the created resource.
 

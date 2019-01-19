@@ -4,11 +4,13 @@ This resource provides the App Catalog Subscription resource in Oracle Cloud Inf
 
 Create a subscription for listing resource version for a compartment. It will take some time to propagate to all regions.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The compartmentID of the subscription.
 

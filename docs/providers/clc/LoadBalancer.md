@@ -4,11 +4,9 @@ Manages a CLC load balancer. Manage connected backends with [clc_load_balancer_p
 
 See also [Complete API documentation](https://www.ctl.io/api-docs/v2/#shared-load-balancer).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

@@ -12,11 +12,9 @@ see the [Vault documentation](https://www.vaultproject.io/docs/auth/aws.html#cro
  accordingly. See [the main provider documentation](../../index.html) for more
  details.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

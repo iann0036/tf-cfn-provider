@@ -8,11 +8,13 @@ that will be created in the future when creating intentions. This resource can b
 in conjunction with the `consul_service` datasource when referencing services
 registered on nodes that have a running Consul agent.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the intention.
 

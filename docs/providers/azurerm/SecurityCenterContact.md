@@ -4,11 +4,13 @@ Manages the subscription's Security Center Contact.
 
 ~> **NOTE:** Owner access permission is required.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The Security Center Contact ID.
 

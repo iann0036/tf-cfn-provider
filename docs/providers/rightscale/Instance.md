@@ -2,11 +2,13 @@
 
 Use this resource to create, update or destroy RightScale [instances](http://reference.rightscale.com/api1.5/resources/ResourceInstances.html).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Links` - Hrefs of related API resources.
 

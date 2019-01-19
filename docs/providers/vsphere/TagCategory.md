@@ -14,11 +14,9 @@ information about tag categories specifically, click
 ~> **NOTE:** Tagging support is unsupported on direct ESXi connections and
 requires vCenter 6.0 or higher.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

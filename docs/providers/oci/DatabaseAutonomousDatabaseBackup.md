@@ -4,11 +4,13 @@ This resource provides the Autonomous Database Backup resource in Oracle Cloud I
 
 Creates a new Autonomous Database backup for the specified database based on the provided request parameters.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AutonomousDatabaseId` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the Autonomous Database.
 

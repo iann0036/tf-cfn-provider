@@ -5,11 +5,13 @@ A [test](https://www.runscope.com/docs/api/tests) resource.
 a collection of [test steps](step.html) and an
 [environment](environment.html).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The unique identifier for the test.
 

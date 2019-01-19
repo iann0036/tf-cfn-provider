@@ -4,11 +4,13 @@ Provides an Alicloud HaVip Attachment resource for associating HaVip to ECS Inst
 
 ~> **NOTE:** Terraform will auto build havip attachment while it uses `alicloud_havip_attachment` to build a havip attachment resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the havip attachment id and formates as `<havip_id>:<instance_id>`.
 

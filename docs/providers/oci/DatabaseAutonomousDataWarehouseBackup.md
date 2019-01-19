@@ -4,11 +4,13 @@ This resource provides the Autonomous Data Warehouse Backup resource in Oracle C
 
 Creates a new Autonomous Data Warehouse backup for the specified database based on the provided request parameters.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AutonomousDataWarehouseId` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the Autonomous Data Warehouse.
 

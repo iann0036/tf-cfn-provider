@@ -7,11 +7,13 @@ An app release represents a combination of code, config vars and add-ons for an 
 
 ~> **NOTE:** This resource requires the slug be uploaded to Heroku using [`heroku_slug`](slug.html) or with external tooling prior to running terraform.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the app release.
 

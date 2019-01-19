@@ -3,11 +3,9 @@
 The ``circonus_contact_group`` resource creates and manages a
 [Circonus Contact Group](https://login.circonus.com/user/docs/Alerting/ContactGroups).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

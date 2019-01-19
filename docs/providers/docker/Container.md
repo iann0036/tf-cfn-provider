@@ -2,11 +2,13 @@
 
 Manages the lifecycle of a Docker container.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `ExitCode` - The exit code of the container if its execution is done (`must_run` must be disabled).
 

@@ -14,11 +14,9 @@ one or the other.
 [1]: /docs/providers/aws/d/instance.html
 [2]: /docs/providers/aws/r/network_interface.html
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

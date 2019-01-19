@@ -4,11 +4,13 @@ This allows volumes to be attached to servers.
 
 ~> **Warning:** Attaching volumes requires the servers to be powered off. This will lead to downtime if the server is already in use.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - id of the new resource.
 

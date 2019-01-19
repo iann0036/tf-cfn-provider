@@ -4,11 +4,9 @@ A pod is a group of one or more containers, the shared storage for those contain
 
 Read more at [Kubernetes reference](https://kubernetes.io/docs/concepts/workloads/pods/pod)/
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

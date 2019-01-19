@@ -2,11 +2,13 @@
 
 Enables you to manage DNS TXT Records within Azure DNS.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The DNS TXT Record ID.
 

@@ -3,11 +3,13 @@
 Provides a DigitalOcean Cloud Firewall resource. This can be used to create,
 modify, and delete Firewalls.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - A unique ID that can be used to identify and reference a Firewall.
 

@@ -2,11 +2,9 @@
 
 The `triton_firewall_rule` resource represents a rule for the Triton cloud firewall.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

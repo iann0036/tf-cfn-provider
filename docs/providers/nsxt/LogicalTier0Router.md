@@ -2,11 +2,13 @@
 
 This resource provides a method for the management of a tier 0 logical router.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - ID of the logical Tier0 router.
 

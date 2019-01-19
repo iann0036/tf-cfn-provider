@@ -12,11 +12,13 @@ account's email address, use the `google_storage_project_service_account` dataso
 for an example of enabling notifications by granting the correct IAM permission. See
 [the notifications documentation](https://cloud.google.com/storage/docs/gsutil/commands/notification) for more details.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `SelfLink` - The URI of the created resource.
 

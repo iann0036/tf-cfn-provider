@@ -3,11 +3,13 @@
 Associate a floating IP to an instance. This can be used instead of the
 `floating_ip` options in `huaweicloud_compute_instance_v2`.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Region` - See Argument Reference above.
 

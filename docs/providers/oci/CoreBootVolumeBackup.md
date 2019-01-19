@@ -9,11 +9,13 @@ When the request is received, the backup object is in a REQUEST_RECEIVED state.
 When the data is imaged, it goes into a CREATING state.
 After the backup is fully uploaded to the cloud, it goes into an AVAILABLE state.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `BootVolumeId` - The OCID of the boot volume.
 

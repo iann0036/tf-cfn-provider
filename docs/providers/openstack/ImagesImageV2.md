@@ -2,11 +2,13 @@
 
 Manages a V2 Image resource within OpenStack Glance.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Checksum` - The checksum of the data associated with the image.
 

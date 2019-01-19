@@ -9,11 +9,9 @@ an ELB), and an [Elastic Load Balancer resource](elb.html) with
 instances in conjunction with an ELB Attachment resource. Doing so will cause a
 conflict and will overwrite attachments.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

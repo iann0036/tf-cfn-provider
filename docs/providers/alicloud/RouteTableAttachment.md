@@ -6,11 +6,13 @@ Provides an Alicloud Route Table Attachment resource for associating Route Table
 
 For information about route table and how to use it, see [What is Route Table](https://www.alibabacloud.com/help/doc-detail/87057.htm).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the route table attachment id and formates as `<route_table_id>:<vswitch_id>`.
 

@@ -3,11 +3,9 @@
 Provides a vCloud Director VDC Network. This can be used to create,
 modify, and delete internal networks for vApps to connect.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

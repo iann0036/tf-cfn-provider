@@ -20,11 +20,13 @@ After creating the group, you need to put users in it and write policies for it.
 See [AddUserToGroup](https://docs.cloud.oracle.com/iaas/api/#/en/identity/20160918/UserGroupMembership/AddUserToGroup) and
 [CreatePolicy](https://docs.cloud.oracle.com/iaas/api/#/en/identity/20160918/Policy/CreatePolicy).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `CompartmentId` - The OCID of the tenancy containing the group.
 

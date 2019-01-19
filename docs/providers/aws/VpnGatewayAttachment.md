@@ -7,11 +7,13 @@ hardware VPN gateway to be attached and/or detached from a VPC.
 resource can also automatically attach the Virtual Private Gateway it creates
 to an existing VPC by setting the [`vpc_id`](vpn_gateway.html#vpc_id) attribute accordingly.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `VpcId` - The ID of the VPC that Virtual Private Gateway is attached to.
 

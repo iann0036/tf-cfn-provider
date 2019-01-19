@@ -5,11 +5,13 @@ Manages a Key Vault Secret.
 ~> **Note:** All arguments including the secret value will be stored in the raw state as plain-text.
 [Read more about sensitive data in state](/docs/state/sensitive-data.html).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The Key Vault Secret ID.
 

@@ -2,11 +2,13 @@
 
 Manages a Log Analytics (formally Operational Insights) Workspace.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The Log Analytics Workspace ID.
 

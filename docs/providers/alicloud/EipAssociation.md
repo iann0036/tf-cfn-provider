@@ -9,11 +9,13 @@ Provides an Alicloud EIP Association resource for associating Elastic IP to ECS 
 
 ~> **NOTE:** One EIP can only be associated with ECS or SLB instance which in the VPC.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AllocationId` - As above.
 

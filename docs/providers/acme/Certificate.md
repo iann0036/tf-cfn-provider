@@ -7,11 +7,9 @@ certificate.
 a different server than a certificate would normally be placed on, the
 `acme_certifiate` resource only supports DNS challenges.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

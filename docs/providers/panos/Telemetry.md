@@ -10,11 +10,9 @@ intelligence, and device health information to improve the fidelity of the
 protections we deliver. This is an opt-in feature controlled with granular
 policy, and we encourage you to join the community.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

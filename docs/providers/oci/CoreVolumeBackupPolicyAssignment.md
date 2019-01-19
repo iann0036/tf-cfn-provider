@@ -6,11 +6,13 @@ Assigns a policy to the specified asset, such as a volume. Note that a given ass
 only have one policy assigned to it; if this method is called for an asset that previously
 has a different policy assigned, the prior assignment will be silently deleted.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `AssetId` - The OCID of the asset (e.g. a volume) to which the policy has been assigned.
 

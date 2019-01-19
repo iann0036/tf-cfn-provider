@@ -3,11 +3,9 @@
 Provides a Skytap Project resource. Projects are an access permissions model used to share environments, 
 templates, and assets with other users.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

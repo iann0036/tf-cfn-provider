@@ -3,11 +3,9 @@
 Provides a resource to manage CA information in an SSH secret backend
 [SSH secret backend within Vault](https://www.vaultproject.io/docs/secrets/ssh/index.html).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

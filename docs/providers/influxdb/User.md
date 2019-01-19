@@ -2,11 +2,13 @@
 
 The user resource allows a user to be created on an InfluxDB server.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Admin` - (Bool) indication if the user is an admin or not.
 

@@ -6,11 +6,13 @@ For information about Api Gateway Group and how to use it, see [Create An Api Gr
 
 ~> **NOTE:** Terraform will auto build api group while it uses `alicloud_api_gateway_group` to build api group.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the api group of api gateway.
 

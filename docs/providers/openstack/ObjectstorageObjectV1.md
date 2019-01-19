@@ -2,11 +2,13 @@
 
 Manages a V1 container object resource within OpenStack.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `ContentLength` - If the operation succeeds, this value is zero (0) or the.
 

@@ -8,11 +8,13 @@ recommended to use the [`telefonicaopencloud_networking_secgroup_v2`](networking
 and [`telefonicaopencloud_networking_secgroup_rule_v2`](networking_secgroup_rule_v2.html)
 resources instead, which uses the TelefonicaOpenCloud Networking API.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Region` - See Argument Reference above.
 

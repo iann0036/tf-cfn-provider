@@ -4,11 +4,13 @@ A service account provides an identity for processes that run in a Pod.
 
 Read more at [Kubernetes reference](https://kubernetes.io/docs/admin/service-accounts-admin)/
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `DefaultSecretName` - Name of the default secret the is created & managed by the service.
 

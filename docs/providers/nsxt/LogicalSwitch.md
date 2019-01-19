@@ -2,11 +2,13 @@
 
 This resource provides a method to create a logical switch in NSX. Virtual machines can then be connected to the appropriate logical switch for the desired topology and network connectivity.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - ID of the logical switch.
 

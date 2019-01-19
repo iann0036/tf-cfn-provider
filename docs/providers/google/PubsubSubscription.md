@@ -4,11 +4,13 @@ Creates a subscription in Google's pubsub queueing system. For more information 
 [the official documentation](https://cloud.google.com/pubsub/docs) and
 [API](https://cloud.google.com/pubsub/docs/reference/rest/v1/projects.subscriptions).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Path` - Path of the subscription in the format `projects/{project}/subscriptions/{sub}`.
 

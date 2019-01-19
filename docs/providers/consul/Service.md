@@ -8,11 +8,13 @@ with a [local agent](https://www.consul.io/docs/agent/basics.html).
 If the Consul agent is running on the node where this service is registered, it is
 not recommended to use this resource.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `ServiceId` - The ID of the service.
 

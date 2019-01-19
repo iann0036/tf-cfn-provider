@@ -4,11 +4,9 @@ Manages an AppRole auth backend role in a Vault server. See the [Vault
 documentation](https://www.vaultproject.io/docs/auth/approle.html) for more
 information.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

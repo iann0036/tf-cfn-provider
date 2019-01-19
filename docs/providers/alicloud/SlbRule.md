@@ -13,11 +13,13 @@ You can add forwarding rules to a listener to forward requests based on the doma
 
 ~> **NOTE:** Only rule's virtual server group can be modified.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the forwarding rule.
 

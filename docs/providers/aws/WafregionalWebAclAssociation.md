@@ -4,11 +4,13 @@ Provides a resource to create an association between a WAF Regional WebACL and A
 
 -> **Note:** An Application Load Balancer can only be associated with one WAF Regional WebACL.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the association.
 

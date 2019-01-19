@@ -4,11 +4,13 @@ Provides a Glacier Vault Resource. You can refer to the [Glacier Developer Guide
 
 ~> **NOTE:** When removing a Glacier Vault, the Vault must be empty.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Location` - The URI of the vault that was created.
 

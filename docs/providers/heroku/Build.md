@@ -11,11 +11,13 @@ If the build fails, the error will contain a URL to view the build log. `curl "h
 
 To start the app from a successful build, use a [Formation resource](formation.html) to specify the process, dyno size, and dyno quantity.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Uuid` - The ID of the build.
 

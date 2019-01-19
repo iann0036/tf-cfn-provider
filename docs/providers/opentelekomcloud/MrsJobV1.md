@@ -2,11 +2,13 @@
 
 Manages resource job within OpenTelekomCloud MRS.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `JobType` - See Argument Reference above.
 

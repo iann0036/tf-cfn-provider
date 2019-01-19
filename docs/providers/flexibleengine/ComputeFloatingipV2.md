@@ -5,11 +5,13 @@ that can be used for compute instances.
 These are similar to Neutron (networking) floating IP resources,
 but only networking floating IPs can be used with load balancers.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Region` - See Argument Reference above.
 

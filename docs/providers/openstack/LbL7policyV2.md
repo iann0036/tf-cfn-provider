@@ -2,11 +2,13 @@
 
 Manages a Load Balancer L7 Policy resource within OpenStack.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The unique ID for the L7 {olicy.
 

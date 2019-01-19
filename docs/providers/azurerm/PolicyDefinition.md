@@ -4,11 +4,13 @@ Manages a policy rule definition on a management group or your provider subscrip
 
 Policy definitions do not take effect until they are assigned to a scope using a Policy Assignment.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The policy definition id.
 

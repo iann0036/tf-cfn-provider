@@ -3,11 +3,9 @@
 The ``circonus_rule_set`` resource creates and manages a
 [Circonus Rule Set](https://login.circonus.com/resources/api/calls/rule_set).
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

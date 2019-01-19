@@ -8,11 +8,13 @@ default 'root'@'%' user with no password. This user will be deleted by Terraform
 instance creation. You should use `google_sql_user` to define a custom user with
 a restricted host and strong password.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `FirstIpAddress` - The first IPv4 address of the addresses assigned. This is.
 

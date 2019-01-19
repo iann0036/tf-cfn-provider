@@ -2,11 +2,13 @@
 
 This resource will help you to bind a VPC to an OTS instance.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The resource ID. The value is same as "instance_name".
 

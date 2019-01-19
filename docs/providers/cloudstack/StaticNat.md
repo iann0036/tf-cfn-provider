@@ -2,11 +2,13 @@
 
 Enables static NAT for a given IP address
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The static nat ID.
 

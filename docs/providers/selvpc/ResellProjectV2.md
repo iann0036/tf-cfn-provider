@@ -2,11 +2,13 @@
 
 Manages a V2 project resource within Resell Selectel VPC.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Url` - An url of the Selectel VP project. It is set by the Selectel and can't.
 

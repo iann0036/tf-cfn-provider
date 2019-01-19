@@ -6,11 +6,9 @@ Creates a new Google SQL User on a Google SQL User Instance. For more informatio
 [Read more about sensitive data in state](/docs/state/sensitive-data.html). Passwords will not be retrieved when running
 "terraform import".
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

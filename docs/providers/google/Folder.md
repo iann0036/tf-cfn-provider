@@ -14,11 +14,13 @@ resource must have `roles/resourcemanager.folderCreator`. See the
 [Access Control for Folders Using IAM](https://cloud.google.com/resource-manager/docs/access-control-folders)
 doc for more information.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Name` - The resource name of the Folder. Its format is folders/{folder_id}.
 

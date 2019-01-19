@@ -17,11 +17,13 @@ after creating cluster successfully, and you can put them into the specified loc
 
 -> **NOTE:** If you want to manage managed Kubernetes, you can use [Kubernetes Provider](https://www.terraform.io/docs/providers/kubernetes/index.html).
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - The ID of the container cluster.
 

@@ -4,11 +4,9 @@ Provides a [Heroku Team Collaborator](https://devcenter.heroku.com/articles/plat
 
 ~> **NOTE:** Please only use this resource if you have team/organization apps
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

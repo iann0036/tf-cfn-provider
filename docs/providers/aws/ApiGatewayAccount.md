@@ -4,11 +4,9 @@ Provides a settings of an API Gateway Account. Settings is applied region-wide p
 
 -> **Note:** As there is no API method for deleting account settings or resetting it to defaults, destroying this resource will keep your account settings intact
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

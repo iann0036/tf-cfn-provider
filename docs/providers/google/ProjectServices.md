@@ -12,11 +12,9 @@ For a list of services available, visit the
 	*exclusively* a particular set of APIs are enabled, you should most likely use the
 	[google_project_service](google_project_service.html) resource, one resource per API.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 

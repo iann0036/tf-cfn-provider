@@ -2,11 +2,13 @@
 
 This resource provides a resource to configure a logical port on a logical switch, and attach it to a DHCP server.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Id` - ID of the logical DHCP port.
 

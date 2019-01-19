@@ -14,11 +14,13 @@ different cloud provider.
 This does not actually attach a volume to an instance. Please use
 the `opentelekomcloud_compute_volume_attach_v2` resource for that.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `Data` - This is a map of key/value pairs that contain the connection.
 

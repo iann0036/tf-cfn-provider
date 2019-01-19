@@ -16,11 +16,13 @@ previously encrypted with these keys will be irrecoverable. For this reason, it
 is strongly recommended that you add lifecycle hooks to the resource to prevent
 accidental destruction.
 
+## Properties
+
+TBC
+
 ## Return Values
 
 ### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
 
 `SelfLink` - The self link of the created CryptoKey. Its format is `projects/{projectId}/locations/{location}/keyRings/{keyRingName}/cryptoKeys/{cryptoKeyName}`.
 

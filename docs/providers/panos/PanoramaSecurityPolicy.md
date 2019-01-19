@@ -32,11 +32,9 @@ the following params:
 If the `group` param and none of the `Profiles` params are specified, then
 the Profile Setting is set to `None`.
 
-## Return Values
+## Properties
 
-### Fn::GetAtt
-
-Fn::GetAtt returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+TBC
 
 ## See Also
 
