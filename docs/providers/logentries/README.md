@@ -8,5 +8,5 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::Logentries::Log](docs/providers/logentries/Log.md)
-* [Terraform::Logentries::Logset](docs/providers/logentries/Logset.md)
+* [Terraform::Logentries::Log](Log.md)
+* [Terraform::Logentries::Logset](Logset.md)

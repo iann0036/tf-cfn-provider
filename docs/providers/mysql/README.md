@@ -12,8 +12,8 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::MySQL::Database](docs/providers/mysql/Database.md)
-* [Terraform::MySQL::Grant](docs/providers/mysql/Grant.md)
-* [Terraform::MySQL::Role](docs/providers/mysql/Role.md)
-* [Terraform::MySQL::UserPassword](docs/providers/mysql/UserPassword.md)
-* [Terraform::MySQL::User](docs/providers/mysql/User.md)
+* [Terraform::MySQL::Database](Database.md)
+* [Terraform::MySQL::Grant](Grant.md)
+* [Terraform::MySQL::Role](Role.md)
+* [Terraform::MySQL::UserPassword](UserPassword.md)
+* [Terraform::MySQL::User](User.md)

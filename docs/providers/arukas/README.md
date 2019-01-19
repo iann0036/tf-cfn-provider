@@ -17,4 +17,4 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::Arukas::Container](docs/providers/arukas/Container.md)
+* [Terraform::Arukas::Container](Container.md)

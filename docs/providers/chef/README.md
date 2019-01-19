@@ -19,8 +19,8 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::Chef::DataBagItem](docs/providers/chef/DataBagItem.md)
-* [Terraform::Chef::DataBag](docs/providers/chef/DataBag.md)
-* [Terraform::Chef::Environment](docs/providers/chef/Environment.md)
-* [Terraform::Chef::Node](docs/providers/chef/Node.md)
-* [Terraform::Chef::Role](docs/providers/chef/Role.md)
+* [Terraform::Chef::DataBagItem](DataBagItem.md)
+* [Terraform::Chef::DataBag](DataBag.md)
+* [Terraform::Chef::Environment](Environment.md)
+* [Terraform::Chef::Node](Node.md)
+* [Terraform::Chef::Role](Role.md)

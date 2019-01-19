@@ -13,4 +13,4 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::DME::Record](docs/providers/dme/Record.md)
+* [Terraform::DME::Record](Record.md)

@@ -13,11 +13,11 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::OneAndOne::Baremetal](docs/providers/oneandone/Baremetal.md)
-* [Terraform::OneAndOne::BlockStorage](docs/providers/oneandone/BlockStorage.md)
-* [Terraform::OneAndOne::Image](docs/providers/oneandone/Image.md)
-* [Terraform::OneAndOne::InstanceSize](docs/providers/oneandone/InstanceSize.md)
-* [Terraform::OneAndOne::Ip](docs/providers/oneandone/Ip.md)
-* [Terraform::OneAndOne::Server](docs/providers/oneandone/Server.md)
-* [Terraform::OneAndOne::SshKey](docs/providers/oneandone/SshKey.md)
-* [Terraform::OneAndOne::Vpn](docs/providers/oneandone/Vpn.md)
+* [Terraform::OneAndOne::Baremetal](Baremetal.md)
+* [Terraform::OneAndOne::BlockStorage](BlockStorage.md)
+* [Terraform::OneAndOne::Image](Image.md)
+* [Terraform::OneAndOne::InstanceSize](InstanceSize.md)
+* [Terraform::OneAndOne::Ip](Ip.md)
+* [Terraform::OneAndOne::Server](Server.md)
+* [Terraform::OneAndOne::SshKey](SshKey.md)
+* [Terraform::OneAndOne::Vpn](Vpn.md)

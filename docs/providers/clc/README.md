@@ -13,8 +13,8 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::CLC::Group](docs/providers/clc/Group.md)
-* [Terraform::CLC::LoadBalancerPool](docs/providers/clc/LoadBalancerPool.md)
-* [Terraform::CLC::LoadBalancer](docs/providers/clc/LoadBalancer.md)
-* [Terraform::CLC::PublicIp](docs/providers/clc/PublicIp.md)
-* [Terraform::CLC::Server](docs/providers/clc/Server.md)
+* [Terraform::CLC::Group](Group.md)
+* [Terraform::CLC::LoadBalancerPool](LoadBalancerPool.md)
+* [Terraform::CLC::LoadBalancer](LoadBalancer.md)
+* [Terraform::CLC::PublicIp](PublicIp.md)
+* [Terraform::CLC::Server](Server.md)

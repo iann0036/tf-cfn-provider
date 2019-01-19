@@ -44,10 +44,10 @@ the environment.
 
 ## Supported Resources
 
-* [Terraform::Docker::Config](docs/providers/docker/Config.md)
-* [Terraform::Docker::Container](docs/providers/docker/Container.md)
-* [Terraform::Docker::Image](docs/providers/docker/Image.md)
-* [Terraform::Docker::Network](docs/providers/docker/Network.md)
-* [Terraform::Docker::Secret](docs/providers/docker/Secret.md)
-* [Terraform::Docker::Service](docs/providers/docker/Service.md)
-* [Terraform::Docker::Volume](docs/providers/docker/Volume.md)
+* [Terraform::Docker::Config](Config.md)
+* [Terraform::Docker::Container](Container.md)
+* [Terraform::Docker::Image](Image.md)
+* [Terraform::Docker::Network](Network.md)
+* [Terraform::Docker::Secret](Secret.md)
+* [Terraform::Docker::Service](Service.md)
+* [Terraform::Docker::Volume](Volume.md)

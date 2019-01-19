@@ -17,11 +17,11 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::Consul::AgentService](docs/providers/consul/AgentService.md)
-* [Terraform::Consul::CatalogEntry](docs/providers/consul/CatalogEntry.md)
-* [Terraform::Consul::Intention](docs/providers/consul/Intention.md)
-* [Terraform::Consul::KeyPrefix](docs/providers/consul/KeyPrefix.md)
-* [Terraform::Consul::Keys](docs/providers/consul/Keys.md)
-* [Terraform::Consul::Node](docs/providers/consul/Node.md)
-* [Terraform::Consul::PreparedQuery](docs/providers/consul/PreparedQuery.md)
-* [Terraform::Consul::Service](docs/providers/consul/Service.md)
+* [Terraform::Consul::AgentService](AgentService.md)
+* [Terraform::Consul::CatalogEntry](CatalogEntry.md)
+* [Terraform::Consul::Intention](Intention.md)
+* [Terraform::Consul::KeyPrefix](KeyPrefix.md)
+* [Terraform::Consul::Keys](Keys.md)
+* [Terraform::Consul::Node](Node.md)
+* [Terraform::Consul::PreparedQuery](PreparedQuery.md)
+* [Terraform::Consul::Service](Service.md)

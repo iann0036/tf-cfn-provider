@@ -13,4 +13,4 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::Atlas::Artifact](docs/providers/atlas/Artifact.md)
+* [Terraform::Atlas::Artifact](Artifact.md)

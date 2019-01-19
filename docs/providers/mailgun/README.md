@@ -10,4 +10,4 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::Mailgun::Domain](docs/providers/mailgun/Domain.md)
+* [Terraform::Mailgun::Domain](Domain.md)

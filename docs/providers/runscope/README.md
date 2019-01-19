@@ -11,8 +11,8 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::RunScope::Bucket](docs/providers/runscope/Bucket.md)
-* [Terraform::RunScope::Environment](docs/providers/runscope/Environment.md)
-* [Terraform::RunScope::Schedule](docs/providers/runscope/Schedule.md)
-* [Terraform::RunScope::Step](docs/providers/runscope/Step.md)
-* [Terraform::RunScope::Test](docs/providers/runscope/Test.md)
+* [Terraform::RunScope::Bucket](Bucket.md)
+* [Terraform::RunScope::Environment](Environment.md)
+* [Terraform::RunScope::Schedule](Schedule.md)
+* [Terraform::RunScope::Step](Step.md)
+* [Terraform::RunScope::Test](Test.md)

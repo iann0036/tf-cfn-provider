@@ -33,7 +33,7 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::PostgreSQL::Database](docs/providers/postgresql/Database.md)
-* [Terraform::PostgreSQL::Extension](docs/providers/postgresql/Extension.md)
-* [Terraform::PostgreSQL::Role](docs/providers/postgresql/Role.md)
-* [Terraform::PostgreSQL::Schema](docs/providers/postgresql/Schema.md)
+* [Terraform::PostgreSQL::Database](Database.md)
+* [Terraform::PostgreSQL::Extension](Extension.md)
+* [Terraform::PostgreSQL::Role](Role.md)
+* [Terraform::PostgreSQL::Schema](Schema.md)

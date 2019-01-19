@@ -17,7 +17,7 @@ Use the navigation to the left to read about the available resources.
 
 ## Supported Resources
 
-* [Terraform::Rundeck::Job](docs/providers/rundeck/Job.md)
-* [Terraform::Rundeck::PrivateKey](docs/providers/rundeck/PrivateKey.md)
-* [Terraform::Rundeck::Project](docs/providers/rundeck/Project.md)
-* [Terraform::Rundeck::PublicKey](docs/providers/rundeck/PublicKey.md)
+* [Terraform::Rundeck::Job](Job.md)
+* [Terraform::Rundeck::PrivateKey](PrivateKey.md)
+* [Terraform::Rundeck::Project](Project.md)
+* [Terraform::Rundeck::PublicKey](PublicKey.md)

@@ -6,10 +6,10 @@ No configuration is required for this provider.
 
 ## Supported Resources
 
-* [Terraform::HCloud::FloatingIpAssignment](docs/providers/hcloud/FloatingIpAssignment.md)
-* [Terraform::HCloud::FloatingIp](docs/providers/hcloud/FloatingIp.md)
-* [Terraform::HCloud::Rdns](docs/providers/hcloud/Rdns.md)
-* [Terraform::HCloud::Server](docs/providers/hcloud/Server.md)
-* [Terraform::HCloud::SshKey](docs/providers/hcloud/SshKey.md)
-* [Terraform::HCloud::VolumeAttachment](docs/providers/hcloud/VolumeAttachment.md)
-* [Terraform::HCloud::Volume](docs/providers/hcloud/Volume.md)
+* [Terraform::HCloud::FloatingIpAssignment](FloatingIpAssignment.md)
+* [Terraform::HCloud::FloatingIp](FloatingIp.md)
+* [Terraform::HCloud::Rdns](Rdns.md)
+* [Terraform::HCloud::Server](Server.md)
+* [Terraform::HCloud::SshKey](SshKey.md)
+* [Terraform::HCloud::VolumeAttachment](VolumeAttachment.md)
+* [Terraform::HCloud::Volume](Volume.md)

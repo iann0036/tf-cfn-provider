@@ -9,5 +9,5 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::CloudScale::FloatingIp](docs/providers/cloudscale/FloatingIp.md)
-* [Terraform::CloudScale::Server](docs/providers/cloudscale/Server.md)
+* [Terraform::CloudScale::FloatingIp](FloatingIp.md)
+* [Terraform::CloudScale::Server](Server.md)

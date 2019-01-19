@@ -6,4 +6,4 @@ No configuration is required for this provider.
 
 ## Supported Resources
 
-* [Terraform::Template::Dir](docs/providers/template/Dir.md)
+* [Terraform::Template::Dir](Dir.md)

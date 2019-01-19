@@ -21,6 +21,6 @@ Use the navigation to the left to read about the available resources.
 
 ## Supported Resources
 
-* [Terraform::InfluxDB::ContinuousQuery](docs/providers/influxdb/ContinuousQuery.md)
-* [Terraform::InfluxDB::Database](docs/providers/influxdb/Database.md)
-* [Terraform::InfluxDB::User](docs/providers/influxdb/User.md)
+* [Terraform::InfluxDB::ContinuousQuery](ContinuousQuery.md)
+* [Terraform::InfluxDB::Database](Database.md)
+* [Terraform::InfluxDB::User](User.md)

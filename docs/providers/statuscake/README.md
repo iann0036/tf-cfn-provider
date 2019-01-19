@@ -13,4 +13,4 @@ Use the navigation to the left to read about the available resources.
 
 ## Supported Resources
 
-* [Terraform::StatusCake::Test](docs/providers/statuscake/Test.md)
+* [Terraform::StatusCake::Test](Test.md)

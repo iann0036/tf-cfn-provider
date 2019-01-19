@@ -11,6 +11,6 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::Bitbucket::DefaultReviewers](docs/providers/bitbucket/DefaultReviewers.md)
-* [Terraform::Bitbucket::Hook](docs/providers/bitbucket/Hook.md)
-* [Terraform::Bitbucket::Repository](docs/providers/bitbucket/Repository.md)
+* [Terraform::Bitbucket::DefaultReviewers](DefaultReviewers.md)
+* [Terraform::Bitbucket::Hook](Hook.md)
+* [Terraform::Bitbucket::Repository](Repository.md)

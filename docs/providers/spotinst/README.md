@@ -10,10 +10,10 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::Spotinst::ElastigroupAwsBeanstalk](docs/providers/spotinst/ElastigroupAwsBeanstalk.md)
-* [Terraform::Spotinst::ElastigroupAws](docs/providers/spotinst/ElastigroupAws.md)
-* [Terraform::Spotinst::ElastigroupAzure](docs/providers/spotinst/ElastigroupAzure.md)
-* [Terraform::Spotinst::ElastigroupGcp](docs/providers/spotinst/ElastigroupGcp.md)
-* [Terraform::Spotinst::ElastigroupGke](docs/providers/spotinst/ElastigroupGke.md)
-* [Terraform::Spotinst::OceanAws](docs/providers/spotinst/OceanAws.md)
-* [Terraform::Spotinst::Subscription](docs/providers/spotinst/Subscription.md)
+* [Terraform::Spotinst::ElastigroupAwsBeanstalk](ElastigroupAwsBeanstalk.md)
+* [Terraform::Spotinst::ElastigroupAws](ElastigroupAws.md)
+* [Terraform::Spotinst::ElastigroupAzure](ElastigroupAzure.md)
+* [Terraform::Spotinst::ElastigroupGcp](ElastigroupGcp.md)
+* [Terraform::Spotinst::ElastigroupGke](ElastigroupGke.md)
+* [Terraform::Spotinst::OceanAws](OceanAws.md)
+* [Terraform::Spotinst::Subscription](Subscription.md)

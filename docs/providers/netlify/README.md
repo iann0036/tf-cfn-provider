@@ -10,7 +10,7 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::Netlify::BuildHook](docs/providers/netlify/BuildHook.md)
-* [Terraform::Netlify::DeployKey](docs/providers/netlify/DeployKey.md)
-* [Terraform::Netlify::Hook](docs/providers/netlify/Hook.md)
-* [Terraform::Netlify::Site](docs/providers/netlify/Site.md)
+* [Terraform::Netlify::BuildHook](BuildHook.md)
+* [Terraform::Netlify::DeployKey](DeployKey.md)
+* [Terraform::Netlify::Hook](Hook.md)
+* [Terraform::Netlify::Site](Site.md)

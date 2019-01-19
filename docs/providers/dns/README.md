@@ -17,10 +17,10 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::DNS::ARecordSet](docs/providers/dns/ARecordSet.md)
-* [Terraform::DNS::AaaaRecordSet](docs/providers/dns/AaaaRecordSet.md)
-* [Terraform::DNS::CnameRecord](docs/providers/dns/CnameRecord.md)
-* [Terraform::DNS::MxRecordSet](docs/providers/dns/MxRecordSet.md)
-* [Terraform::DNS::NsRecordSet](docs/providers/dns/NsRecordSet.md)
-* [Terraform::DNS::PtrRecord](docs/providers/dns/PtrRecord.md)
-* [Terraform::DNS::TxtRecordSet](docs/providers/dns/TxtRecordSet.md)
+* [Terraform::DNS::ARecordSet](ARecordSet.md)
+* [Terraform::DNS::AaaaRecordSet](AaaaRecordSet.md)
+* [Terraform::DNS::CnameRecord](CnameRecord.md)
+* [Terraform::DNS::MxRecordSet](MxRecordSet.md)
+* [Terraform::DNS::NsRecordSet](NsRecordSet.md)
+* [Terraform::DNS::PtrRecord](PtrRecord.md)
+* [Terraform::DNS::TxtRecordSet](TxtRecordSet.md)

@@ -16,7 +16,7 @@ To configure this resource, you may optionally create an AWS Secrets Manager sec
 
 ## Supported Resources
 
-* [Terraform::Hedvig::Access](docs/providers/hedvig/Access.md)
-* [Terraform::Hedvig::Lun](docs/providers/hedvig/Lun.md)
-* [Terraform::Hedvig::Mount](docs/providers/hedvig/Mount.md)
-* [Terraform::Hedvig::Vdisk](docs/providers/hedvig/Vdisk.md)
+* [Terraform::Hedvig::Access](Access.md)
+* [Terraform::Hedvig::Lun](Lun.md)
+* [Terraform::Hedvig::Mount](Mount.md)
+* [Terraform::Hedvig::Vdisk](Vdisk.md)

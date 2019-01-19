@@ -11,4 +11,4 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::Dyn::Record](docs/providers/dyn/Record.md)
+* [Terraform::Dyn::Record](Record.md)

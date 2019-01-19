@@ -11,12 +11,12 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::Rancher::Certificate](docs/providers/rancher/Certificate.md)
-* [Terraform::Rancher::Environment](docs/providers/rancher/Environment.md)
-* [Terraform::Rancher::Host](docs/providers/rancher/Host.md)
-* [Terraform::Rancher::RegistrationToken](docs/providers/rancher/RegistrationToken.md)
-* [Terraform::Rancher::RegistryCredential](docs/providers/rancher/RegistryCredential.md)
-* [Terraform::Rancher::Registry](docs/providers/rancher/Registry.md)
-* [Terraform::Rancher::Secrets](docs/providers/rancher/Secrets.md)
-* [Terraform::Rancher::Stack](docs/providers/rancher/Stack.md)
-* [Terraform::Rancher::Volumes](docs/providers/rancher/Volumes.md)
+* [Terraform::Rancher::Certificate](Certificate.md)
+* [Terraform::Rancher::Environment](Environment.md)
+* [Terraform::Rancher::Host](Host.md)
+* [Terraform::Rancher::RegistrationToken](RegistrationToken.md)
+* [Terraform::Rancher::RegistryCredential](RegistryCredential.md)
+* [Terraform::Rancher::Registry](Registry.md)
+* [Terraform::Rancher::Secrets](Secrets.md)
+* [Terraform::Rancher::Stack](Stack.md)
+* [Terraform::Rancher::Volumes](Volumes.md)

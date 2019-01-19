@@ -29,10 +29,10 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::VCD::Dnat](docs/providers/vcd/Dnat.md)
-* [Terraform::VCD::EdgegatewayVpn](docs/providers/vcd/EdgegatewayVpn.md)
-* [Terraform::VCD::FirewallRules](docs/providers/vcd/FirewallRules.md)
-* [Terraform::VCD::Network](docs/providers/vcd/Network.md)
-* [Terraform::VCD::Snat](docs/providers/vcd/Snat.md)
-* [Terraform::VCD::VappVm](docs/providers/vcd/VappVm.md)
-* [Terraform::VCD::Vapp](docs/providers/vcd/Vapp.md)
+* [Terraform::VCD::Dnat](Dnat.md)
+* [Terraform::VCD::EdgegatewayVpn](EdgegatewayVpn.md)
+* [Terraform::VCD::FirewallRules](FirewallRules.md)
+* [Terraform::VCD::Network](Network.md)
+* [Terraform::VCD::Snat](Snat.md)
+* [Terraform::VCD::VappVm](VappVm.md)
+* [Terraform::VCD::Vapp](Vapp.md)

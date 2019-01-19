@@ -15,4 +15,4 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
-* [Terraform::Fastly::ServiceV1](docs/providers/fastly/ServiceV1.md)
+* [Terraform::Fastly::ServiceV1](ServiceV1.md)

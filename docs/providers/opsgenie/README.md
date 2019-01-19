@@ -11,5 +11,5 @@ You can generate an API Key within OpsGenie by creating a new API Integration wi
 
 ## Supported Resources
 
-* [Terraform::OpsGenie::Team](docs/providers/opsgenie/Team.md)
-* [Terraform::OpsGenie::User](docs/providers/opsgenie/User.md)
+* [Terraform::OpsGenie::Team](Team.md)
+* [Terraform::OpsGenie::User](User.md)
