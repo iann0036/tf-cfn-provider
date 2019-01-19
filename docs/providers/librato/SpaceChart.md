@@ -7,7 +7,13 @@ create and manage charts in Librato Spaces.
 
 `SpaceId` - (Required) The ID of the space this chart should be in.
 
+`Name` - (Required) The title of the chart when it is displayed.
+
 `Type` - (Optional) Indicates the type of chart. Must be one of line or stacked (default to line).
+
+`Min` - (Optional) The minimum display value of the chart's Y-axis.
+
+`Max` - (Optional) The maximum display value of the chart's Y-axis.
 
 `Label` - (Optional) The Y-axis label.
 
@@ -16,12 +22,6 @@ create and manage charts in Librato Spaces.
 `Stream` - (Optional) Nested block describing a metric to use for data in the chart. The structure of this block is described below.
 
 ### Stream Properties
-
-`Name` - (Optional) A display name to use for the stream when generating the tooltip.
-
-`Min` - (Optional) Theoretical minimum Y-axis value.
-
-`Max` - (Optional) Theoretical maximum Y-axis value.
 
 `Metric` - (Required) The name of the metric. May not be specified if `Composite` is specified.
 
@@ -33,11 +33,17 @@ create and manage charts in Librato Spaces.
 
 `SummaryFunction` - (Optional) When visualizing complex measurements or a rolled-up measurement, this allows you to choose which statistic to use. Defaults to "average". Valid options are: "max", "min", "average", "sum" or "count".
 
+`Name` - (Optional) A display name to use for the stream when generating the tooltip.
+
 `Color` - (Optional) Sets a color to use when rendering the stream. Must be a seven character string that represents the hex code of the color e.g. "#52D74C".
 
 `UnitsShort` - (Optional) Unit value string to use as the tooltip label.
 
 `UnitsLong` - (Optional) String value to set as they Y-axis label. All streams that share the same units_long value will be plotted on the same Y-axis.
+
+`Min` - (Optional) Theoretical minimum Y-axis value.
+
+`Max` - (Optional) Theoretical maximum Y-axis value.
 
 `TransformFunction` - (Optional) Linear formula to run on each measurement prior to visualization.
 

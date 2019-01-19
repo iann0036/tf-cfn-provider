@@ -4,6 +4,8 @@ Manages an Action Group within Azure Monitor.
 
 ## Properties
 
+`Name` - (Required) The name of the Action Group. Changing this forces a new resource to be created.
+
 `ResourceGroupName` - (Required) The name of the resource group in which to create the Action Group instance.
 
 `ShortName` - (Required) The short name of the action group. This will be used in SMS messages.
@@ -18,21 +20,25 @@ Manages an Action Group within Azure Monitor.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
-### WebhookReceiver Properties
-
-`Name` - (Required) The name of the webhook receiver. Names must be unique (case-insensitive) across all receivers within an action group.
-
-`ServiceUri` - (Required) The URI where webhooks should be sent.
-
 ### EmailReceiver Properties
+
+`Name` - (Required) The name of the email receiver. Names must be unique (case-insensitive) across all receivers within an action group.
 
 `EmailAddress` - (Required) The email address of this receiver.
 
 ### SmsReceiver Properties
 
+`Name` - (Required) The name of the SMS receiver. Names must be unique (case-insensitive) across all receivers within an action group.
+
 `CountryCode` - (Required) The country code of the SMS receiver.
 
 `PhoneNumber` - (Required) The phone number of the SMS receiver.
+
+### WebhookReceiver Properties
+
+`Name` - (Required) The name of the webhook receiver. Names must be unique (case-insensitive) across all receivers within an action group.
+
+`ServiceUri` - (Required) The URI where webhooks should be sent.
 
 
 ## Return Values

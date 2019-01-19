@@ -16,6 +16,8 @@ a restricted host and strong password.
 
 `DatabaseVersion` - (Optional, Default: `MYSQL_5_6`) The MySQL version to use. Can be `MYSQL_5_6`, `MYSQL_5_7` or `POSTGRES_9_6` for second-generation instances, or `MYSQL_5_5` or `MYSQL_5_6` for first-generation instances. See [Second Generation Capabilities](https://cloud.google.com/sql/docs/1st-2nd-gen-differences) for more information. `POSTGRES_9_6` support is in beta.
 
+`Name` - (Optional, Computed) The name of the instance. If the name is left blank, Terraform will randomly generate one when the instance is first created. This is done because after a name is used, it cannot be reused for up to [one week](https://cloud.google.com/sql/docs/delete-instance).
+
 `MasterInstanceName` - (Optional) The name of the instance that will act as the master in the replication setup. Note, this requires the master to have `BinaryLogEnabled` set, as well as existing backups.
 
 `Project` - (Optional) The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
@@ -23,8 +25,6 @@ a restricted host and strong password.
 `ReplicaConfiguration` - (Optional) The configuration for replication. The configuration is detailed below.
 
 ### Settings Properties
-
-`Name` - (Optional) A name for this whitelist entry.
 
 `Tier` - (Required) The machine tier (First Generation) or type (Second Generation) to use. See [tiers](https://cloud.google.com/sql/docs/admin-api/v1beta4/tiers) for more details and supported versions. Postgres supports only shared-core machine types such as `db-f1-micro`, and custom machine types such as `db-custom-2-13312`. See the [Custom Machine Type Documentation](https://cloud.google.com/compute/docs/instances/creating-instance-with-custom-machine-type#create) to learn about specifying custom machine types.
 
@@ -48,7 +48,9 @@ a restricted host and strong password.
 
 `UserLabels` - (Optional) A set of key/value user label pairs to assign to the instance.
 
-`Value` - (Optional) A CIDR notation IPv4 or IPv6 address that is allowed to access this instance. Must be set even if other two attributes are not for the whitelist to become active.
+`Name` - (Optional) Name of the flag.
+
+`Value` - (Optional) Value of the flag.
 
 `BinaryLogEnabled` - (Optional) True if binary logging is enabled. If `logging` is false, this must be as well. Cannot be used with Postgres.
 
@@ -63,6 +65,10 @@ a restricted host and strong password.
 `PrivateNetwork` - (Optional) The resource link for the VPC network from which the Cloud SQL instance is accessible for private IP.
 
 `ExpirationTime` - (Optional) The [RFC 3339](https://tools.ietf.org/html/rfc3339) formatted date time string indicating when this whitelist expires.
+
+`Name` - (Optional) A name for this whitelist entry.
+
+`Value` - (Optional) A CIDR notation IPv4 or IPv6 address that is allowed to access this instance. Must be set even if other two attributes are not for the whitelist to become active.
 
 `FollowGaeApplication` - (Optional) A GAE application whose zone to remain in. Must be in the same region as this instance.
 

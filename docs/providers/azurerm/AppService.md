@@ -6,6 +6,8 @@ Manages an App Service (within an App Service Plan).
 
 ## Properties
 
+`Name` - (Required) Specifies the name of the App Service. Changing this forces a new resource to be created.
+
 `ResourceGroupName` - (Required) The name of the resource group in which to create the App Service.
 
 `Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
@@ -28,15 +30,17 @@ Manages an App Service (within an App Service Plan).
 
 `Identity` - (Optional) A Managed Service Identity block as defined below.
 
-### Identity Properties
-
-`Type` - (Required) Specifies the identity type of the App Service. At this time the only allowed value is `SystemAssigned`.
-
 ### ConnectionString Properties
 
 `Name` - (Required) The name of the Connection String.
 
+`Type` - (Required) The type of the Connection String. Possible values are `APIHub`, `Custom`, `DocDb`, `EventHub`, `MySQL`, `NotificationHub`, `PostgreSQL`, `RedisCache`, `ServiceBus`, `SQLAzure` and  `SQLServer`.
+
 `Value` - (Required) The value for the Connection String.
+
+### Identity Properties
+
+`Type` - (Required) Specifies the identity type of the App Service. At this time the only allowed value is `SystemAssigned`.
 
 ### SiteConfig Properties
 

@@ -8,11 +8,11 @@ Manages a Baremetal Server on 1&1
 
 `Description` - (Optional) Description of the server.
 
-`FirewallPolicyId` - (Computed) The attached firewall policy.
+`FirewallPolicyId` - (Optional) ID of firewall policy.
 
 `BaremetalModelId` - (Required) ID of a baremetal model.
 
-`Ip` - (Computed) The IP.
+`Ip` - (Optional) IP address for the server.
 
 `LoadbalancerId` - (Optional) ID of the load balancer.
 
@@ -25,6 +25,10 @@ Manages a Baremetal Server on 1&1
 `SshKeyPublic` - (Optional) The public key data in OpenSSH authorized_keys format.
 
 `Id` - (Computed) The ID of the attached IP.
+
+`Ip` - (Computed) The IP.
+
+`FirewallPolicyId` - (Computed) The attached firewall policy.
 
 
 ## See Also

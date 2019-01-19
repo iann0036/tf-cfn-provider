@@ -4,11 +4,15 @@ Provides a S3 bucket resource.
 
 ## Properties
 
+`Bucket` - (Optional, Forces new resource) The name of the bucket. If omitted, Terraform will assign a random, unique name.
+
 `BucketPrefix` - (Optional, Forces new resource) Creates a unique bucket name beginning with the specified prefix. Conflicts with `Bucket`.
 
 `Acl` - (Optional) The [canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl) to apply. Defaults to "private".
 
 `Policy` - (Optional) A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html) JSON document. Note that if the policy document is not specific enough (but still valid), Terraform may view the policy as constantly changing in a `terraform plan`. In this case, please make sure you use the verbose/specific version of the policy. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](/docs/providers/aws/guides/iam-policy-documents.html).
+
+`Tags` - (Optional) A mapping of tags to assign to the bucket.
 
 `ForceDestroy` - (Optional, Default:false ) A boolean that indicates all objects should be deleted from the bucket so that the bucket can be destroyed without error. These objects are *not* recoverable.
 
@@ -34,44 +38,6 @@ Provides a S3 bucket resource.
 
 `ObjectLockConfiguration` - (Optional) A configuration of [S3 object locking](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock.html) (documented below).
 
-### Rules Properties
-
-`Id` - (Optional) Unique identifier for the rule.
-
-`Priority` - (Optional) The priority associated with the rule.
-
-`Destination` - (Required) Specifies the destination for the rule (documented below).
-
-`SourceSelectionCriteria` - (Optional) Specifies special object selection criteria (documented below).
-
-`Status` - (Required) The status of the rule. Either `Enabled` or `Disabled`. The rule is ignored if status is not Enabled.
-
-`Filter` - (Optional) Filter that identifies subset of objects to which the replication rule applies (documented below).
-
-### LifecycleRule Properties
-
-`Expiration` - (Optional) Specifies a period in the object's expire (documented below).
-
-`Transition` - (Optional) Specifies a period in the object's transitions (documented below).
-
-`NoncurrentVersionExpiration` - (Optional) Specifies when noncurrent object versions expire (documented below).
-
-`NoncurrentVersionTransition` - (Optional) Specifies when noncurrent object versions transitions (documented below).
-
-### SourceSelectionCriteria Properties
-
-`SseKmsEncryptedObjects` - (Optional) Match SSE-KMS encrypted objects (documented below). If specified, `ReplicaKmsKeyId` in `Destination` must be specified as well.
-
-### Versioning Properties
-
-`MfaDelete` - (Optional) Enable MFA delete for either `Change the versioning state of your bucket` or `Permanently delete an object version`. Default is `false`.
-
-### Filter Properties
-
-`Tags` - (Optional)  A mapping of tags that identifies subset of objects to which the rule applies. The rule applies only to objects having all the tags in its tagset.
-
-`Prefix` - (Optional) Object keyname prefix that identifies subset of objects to which the rule applies.
-
 ### Website Properties
 
 `IndexDocument` - (Required, unless using `RedirectAllRequestsTo`) Amazon S3 returns this index document when requests are made to the root domain or any of the subfolders.
@@ -82,31 +48,57 @@ Provides a S3 bucket resource.
 
 `RoutingRules` - (Optional) A json array containing [routing rules](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules.html) describing redirect behavior and when redirects are applied.
 
-### Rule Properties
+### Versioning Properties
 
-`ApplyServerSideEncryptionByDefault` - (required) A single object for setting server-side encryption by default. (documented below).
+`Enabled` - (Optional) Enable versioning. Once you version-enable a bucket, it can never return to an unversioned state. You can, however, suspend versioning on that bucket.
 
-`DefaultRetention` - (Required) The default retention period that you want to apply to new objects placed in this bucket.
+`MfaDelete` - (Optional) Enable MFA delete for either `Change the versioning state of your bucket` or `Permanently delete an object version`. Default is `false`.
 
-### ApplyServerSideEncryptionByDefault Properties
+### Logging Properties
 
-`SseAlgorithm` - (required) The server-side encryption algorithm to use. Valid values are `AES256` and `aws:kms`.
+`TargetBucket` - (Required) The name of the bucket that will receive the log objects.
 
-`KmsMasterKeyId` - (optional) The AWS KMS master key ID used for the SSE-KMS encryption. This can only be used when you set the value of `SseAlgorithm` as `aws:kms`. The default `aws/s3` AWS KMS master key is used if this element is absent while the `SseAlgorithm` is `aws:kms`.
+`TargetPrefix` - (Optional) To specify a key prefix for log objects.
 
-### DefaultRetention Properties
+### LifecycleRule Properties
 
-`Mode` - (Required) The default Object Lock retention mode you want to apply to new objects placed in this bucket. Valid values are `GOVERNANCE` and `COMPLIANCE`.
+`Id` - (Optional) Unique identifier for the rule.
 
-`Days` - (Optional) The number of days that you want to specify for the default retention period.
+`Prefix` - (Optional) Object key prefix identifying one or more objects to which the rule applies.
 
-`Years` - (Optional) The number of years that you want to specify for the default retention period.
+`Tags` - (Optional) Specifies object tags key and value.
+
+`Enabled` - (Required) Specifies lifecycle rule status.
+
+`Expiration` - (Optional) Specifies a period in the object's expire (documented below).
+
+`Transition` - (Optional) Specifies a period in the object's transitions (documented below).
+
+`NoncurrentVersionExpiration` - (Optional) Specifies when noncurrent object versions expire (documented below).
+
+`NoncurrentVersionTransition` - (Optional) Specifies when noncurrent object versions transitions (documented below).
 
 ### ReplicationConfiguration Properties
 
 `Role` - (Required) The ARN of the IAM role for Amazon S3 to assume when replicating the objects.
 
 `Rules` - (Required) Specifies the rules managing the replication (documented below).
+
+### Rules Properties
+
+`Id` - (Optional) Unique identifier for the rule.
+
+`Priority` - (Optional) The priority associated with the rule.
+
+`Destination` - (Required) Specifies the destination for the rule (documented below).
+
+`SourceSelectionCriteria` - (Optional) Specifies special object selection criteria (documented below).
+
+`Prefix` - (Optional) Object keyname prefix identifying one or more objects to which the rule applies.
+
+`Status` - (Required) The status of the rule. Either `Enabled` or `Disabled`. The rule is ignored if status is not Enabled.
+
+`Filter` - (Optional) Filter that identifies subset of objects to which the replication rule applies (documented below).
 
 ### Destination Properties
 
@@ -120,9 +112,35 @@ Provides a S3 bucket resource.
 
 `AccountId` - (Optional) The Account ID to use for overriding the object owner on replication. Must be used in conjunction with `AccessControlTranslation` override configuration.
 
+### SourceSelectionCriteria Properties
+
+`SseKmsEncryptedObjects` - (Optional) Match SSE-KMS encrypted objects (documented below). If specified, `ReplicaKmsKeyId` in `Destination` must be specified as well.
+
 ### SseKmsEncryptedObjects Properties
 
 `Enabled` - (Required) Boolean which indicates if this criteria is enabled.
+
+### Filter Properties
+
+`Prefix` - (Optional) Object keyname prefix that identifies subset of objects to which the rule applies.
+
+`Tags` - (Optional)  A mapping of tags that identifies subset of objects to which the rule applies. The rule applies only to objects having all the tags in its tagset.
+
+### ServerSideEncryptionConfiguration Properties
+
+`Rule` - (required) A single object for server-side encryption by default configuration. (documented below).
+
+### Rule Properties
+
+`ApplyServerSideEncryptionByDefault` - (required) A single object for setting server-side encryption by default. (documented below).
+
+`DefaultRetention` - (Required) The default retention period that you want to apply to new objects placed in this bucket.
+
+### ApplyServerSideEncryptionByDefault Properties
+
+`SseAlgorithm` - (required) The server-side encryption algorithm to use. Valid values are `AES256` and `aws:kms`.
+
+`KmsMasterKeyId` - (optional) The AWS KMS master key ID used for the SSE-KMS encryption. This can only be used when you set the value of `SseAlgorithm` as `aws:kms`. The default `aws/s3` AWS KMS master key is used if this element is absent while the `SseAlgorithm` is `aws:kms`.
 
 ### AccessControlTranslation Properties
 
@@ -130,15 +148,17 @@ Provides a S3 bucket resource.
 
 ### ObjectLockConfiguration Properties
 
-`Rule` - (Optional) The Object Lock rule in place for this bucket.
-
 `ObjectLockEnabled` - (Required) Indicates whether this bucket has an Object Lock configuration enabled. Valid value is `Enabled`.
 
-### Logging Properties
+`Rule` - (Optional) The Object Lock rule in place for this bucket.
 
-`TargetBucket` - (Required) The name of the bucket that will receive the log objects.
+### DefaultRetention Properties
 
-`TargetPrefix` - (Optional) To specify a key prefix for log objects.
+`Mode` - (Required) The default Object Lock retention mode you want to apply to new objects placed in this bucket. Valid values are `GOVERNANCE` and `COMPLIANCE`.
+
+`Days` - (Optional) The number of days that you want to specify for the default retention period.
+
+`Years` - (Optional) The number of years that you want to specify for the default retention period.
 
 
 ## Return Values

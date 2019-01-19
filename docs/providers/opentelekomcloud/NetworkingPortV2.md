@@ -12,6 +12,8 @@ Manages a V2 port resource within OpenTelekomCloud.
 
 `AdminStateUp` - (Optional) Administrative up/down status for the port (must be "true" or "false" if provided). Changing this updates the `AdminStateUp` of an existing port.
 
+`MacAddress` - (Optional) Specify a specific MAC address for the port. Changing this creates a new port.
+
 `TenantId` - (Optional) The owner of the Port. Required if admin wants to create a port for another tenant. Changing this creates a new port.
 
 `DeviceOwner` - (Optional) The device owner of the Port. Changing this creates a new port.
@@ -26,15 +28,17 @@ Manages a V2 port resource within OpenTelekomCloud.
 
 `ValueSpecs` - (Optional) Map of additional options.
 
-### AllowedAddressPairs Properties
-
-`MacAddress` - (Optional) The additional MAC address.
-
-`IpAddress` - (Required) The additional IP address.
-
 ### FixedIp Properties
 
 `SubnetId` - (Required) Subnet in which to allocate IP address for this port.
+
+`IpAddress` - (Optional) IP address desired in the subnet for this port. If you don't specify `IpAddress`, an available IP address from the specified subnet will be allocated to this port.
+
+### AllowedAddressPairs Properties
+
+`IpAddress` - (Required) The additional IP address.
+
+`MacAddress` - (Optional) The additional MAC address.
 
 
 ## Return Values

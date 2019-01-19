@@ -16,7 +16,7 @@ Provides a Skytap Virtual Machine (VM) resource. The environment VM resource rep
 
 `VmId` - (Required, Force New) ID of the VM you want to create the VM from. If updating with a new one then the VM will be recreated.
 
-`Name` - (Required, Force New) A unique name for the published service. * `InternalPort` - (Required, Force New) The port that is exposed on the interface. Typically this will be dictated by standard usage (e.g., port 80 for http traffic, port 22 for SSH).
+`Name` - (Optional, Computed) User-defined name. Limited to 100 characters.
 
 `Cpus` - (Optional, Computed) Number of CPUs allocated to this virtual machine. Valid range is 1 to 12. Maximum limit depends on the `max_cpus` setting.
 
@@ -25,6 +25,8 @@ Provides a Skytap Virtual Machine (VM) resource. The environment VM resource rep
 `OsDiskSize` - (Optional, Computed) The size of the OS disk. The disk size is in MiB; it will be converted to GiB in the Skytap UI. The maximum disk size is 2,096,128 MiB (1.999 TiB).
 
 `Disk` - (Optional) Array of virtual disks within the VM. The disk size is in MiB; it will be converted to GiB in the Skytap UI. The maximum disk size is 2,096,128 MiB (1.999 TiB).
+
+`Name` - (Required) A unique name for the disk. * `Size` - (Required) Specify the size of the disk. The new disk’s size should be provided in MiB. The minimum disk size is 2048 MiB; the maximum is 2096128 MiB (1.999 TiB).
 
 `Size` - (Required) Specify the size of the disk. The new disk’s size should be provided in MiB. The minimum disk size is 2048 MiB; the maximum is 2096128 MiB (1.999 TiB).
 
@@ -37,6 +39,8 @@ Provides a Skytap Virtual Machine (VM) resource. The environment VM resource rep
 `Hostname` - (Required, Force New) Limited to 32 characters. Valid characters are lowercase letters, numbers, and hyphens. Cannot begin or end with hyphens. Cannot be `gw`. * `PublishedService` - (Optional, Force New) Generally, a published service represents a binding of a port on a network interface to an IP and port that is routable and accessible from the public Internet. This mechanism is used to selectively expose ports on the guest to the public Internet.
 
 `PublishedService` - (Optional, Force New) Generally, a published service represents a binding of a port on a network interface to an IP and port that is routable and accessible from the public Internet. This mechanism is used to selectively expose ports on the guest to the public Internet.
+
+`Name` - (Required, Force New) A unique name for the published service. * `InternalPort` - (Required, Force New) The port that is exposed on the interface. Typically this will be dictated by standard usage (e.g., port 80 for http traffic, port 22 for SSH).
 
 `InternalPort` - (Required, Force New) The port that is exposed on the interface. Typically this will be dictated by standard usage (e.g., port 80 for http traffic, port 22 for SSH).
 

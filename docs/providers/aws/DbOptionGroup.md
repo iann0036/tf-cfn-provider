@@ -8,7 +8,7 @@ Provides an RDS DB option group resource. Documentation of the available options
 
 ## Properties
 
-`Name` - (Optional) The Name of the setting.
+`Name` - (Optional, Forces new resource) The name of the option group. If omitted, Terraform will assign a random, unique name. Must be lowercase, to match as it is stored in AWS.
 
 `NamePrefix` - (Optional, Forces new resource) Creates a unique name beginning with the specified prefix. Conflicts with `Name`. Must be lowercase, to match as it is stored in AWS.
 
@@ -33,6 +33,8 @@ Provides an RDS DB option group resource. Documentation of the available options
 `DbSecurityGroupMemberships` - (Optional) A list of DB Security Groups for which the option is enabled.
 
 `VpcSecurityGroupMemberships` - (Optional) A list of VPC Security Groups for which the option is enabled.
+
+`Name` - (Optional) The Name of the setting.
 
 `Value` - (Optional) The Value of the setting.
 

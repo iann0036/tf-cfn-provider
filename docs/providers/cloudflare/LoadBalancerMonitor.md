@@ -18,11 +18,13 @@ If you're using Cloudflare's Load Balancing to load-balance across multiple orig
 
 `Retries` - (Optional) The number of retries to attempt in case of a timeout before marking the origin as unhealthy. Retries are attempted immediately. Default: 2.
 
-`Header` - (Required) The header name.
+`Header` - (Optional) The HTTP request headers to send in the health check. It is recommended you set a Host header by default. The User-Agent header cannot be overridden. Fields documented below.
 
 `Type` - (Optional) The protocol to use for the healthcheck. Currently supported protocols are 'HTTP' and 'HTTPS'. Default: "http".
 
 `Description` - (Optional) Free text description.
+
+`Header` - (Required) The header name.
 
 `Values` - (Required) A list of string values for the header.
 

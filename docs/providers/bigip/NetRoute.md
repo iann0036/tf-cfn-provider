@@ -8,6 +8,8 @@ For resources should be named with their "full path". The full path is the combi
 
 `Name` - (Required) Name of the route.
 
+`Network` - (Optional) The destination subnet and netmask for the route.
+
 `Network` - (Optional) Specifies a gateway address for the route.
 
 

@@ -18,7 +18,7 @@ For information about compute environment, see [Compute Environments][2] .
 
 `State` - (Optional) The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
 
-`Type` - (Required) The type of compute environment. Valid items are `EC2` or `SPOT`.
+`Type` - (Required) The type of the compute environment. Valid items are `MANAGED` or `UNMANAGED`.
 
 `BidPercentage` - (Optional) Integer of minimum percentage that a Spot Instance price must be when compared with the On-Demand price for that instance type before instances are launched. For example, if your bid percentage is 20% (`20`), then the Spot price must be below 20% of the current On-Demand price for that EC2 instance. This parameter is required for SPOT compute environments.
 
@@ -43,6 +43,8 @@ For information about compute environment, see [Compute Environments][2] .
 `Subnets` - (Required) A list of VPC subnets into which the compute resources are launched.
 
 `Tags` - (Optional) Key-value pair tags to be applied to resources that are launched in the compute environment.
+
+`Type` - (Required) The type of compute environment. Valid items are `EC2` or `SPOT`.
 
 
 ## Return Values

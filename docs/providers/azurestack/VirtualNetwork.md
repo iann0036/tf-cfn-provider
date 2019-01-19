@@ -9,6 +9,8 @@ At this time you cannot use a Virtual Network with in-line Subnets in conjunctio
 
 ## Properties
 
+`Name` - (Required) The name of the virtual network. Changing this forces a new resource to be created.
+
 `ResourceGroupName` - (Required) The name of the resource group in which to create the virtual network.
 
 `AddressSpace` - (Required) The address space that is used the virtual network. You can supply more than one address space. Changing this forces a new resource to be created.

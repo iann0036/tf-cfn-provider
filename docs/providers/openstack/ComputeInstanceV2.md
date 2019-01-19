@@ -6,6 +6,8 @@ Manages a V2 VM instance resource within OpenStack.
 
 `Region` - (Optional) The region in which to create the server instance. If omitted, the `Region` argument of the provider is used. Changing this creates a new server.
 
+`Name` - (Required) A unique name for the resource.
+
 `ImageId` - (Optional; Required if `ImageName` is empty and not booting from a volume. Do not specify if booting from a volume.) The image ID of the desired image for the server. Changing this creates a new server.
 
 `ImageName` - (Optional; Required if `ImageId` is empty and not booting from a volume. Do not specify if booting from a volume.) The name of the desired image for the server. Changing this creates a new server.
@@ -44,33 +46,9 @@ Manages a V2 VM instance resource within OpenStack.
 
 `VendorOptions` - (Optional) Map of additional vendor-specific options. Supported options are described below.
 
-### Personality Properties
-
-`File` - (Required) The absolute path of the destination file.
-
-`Contents` - (Required) The contents of the file. Limited to 255 bytes.
-
-### SchedulerHints Properties
-
-`Group` - (Optional) A UUID of a Server Group. The instance will be placed into that group.
-
-`DifferentHost` - (Optional) A list of instance UUIDs. The instance will be scheduled on a different host than all other instances.
-
-`SameHost` - (Optional) A list of instance UUIDs. The instance will be scheduled on the same host of those specified.
-
-`Query` - (Optional) A conditional query that a compute node must pass in order to host an instance.
-
-`TargetCell` - (Optional) The name of a cell to host the instance.
-
-`BuildNearHostIp` - (Optional) An IP Address in CIDR form. The instance will be placed on a compute node that is in the same subnet.
-
-`AdditionalProperties` - (Optional) Arbitrary key/value pairs of additional properties to pass to the scheduler.
-
-### VendorOptions Properties
-
-`IgnoreResizeConfirmation` - (Optional) Boolean to control whether to ignore manual confirmation of the instance resizing. This can be helpful to work with some OpenStack clouds which automatically confirm resizing of instances after some timeout.
-
 ### Network Properties
+
+`Uuid` - (Required unless `Port`  or `Name` is provided) The network UUID to attach to the server. Changing this creates a new server.
 
 `Name` - (Required unless `Uuid` or `Port` is provided) The human-readable name of the network. Changing this creates a new server.
 
@@ -99,6 +77,32 @@ Manages a V2 VM instance resource within OpenStack.
 `DeviceType` - (Optional) The low-level device type that will be used. Most common thing is to leave this empty. Changing this creates a new server.
 
 `DiskBus` - (Optional) The low-level disk bus that will be used. Most common thing is to leave this empty. Changing this creates a new server.
+
+### SchedulerHints Properties
+
+`Group` - (Optional) A UUID of a Server Group. The instance will be placed into that group.
+
+`DifferentHost` - (Optional) A list of instance UUIDs. The instance will be scheduled on a different host than all other instances.
+
+`SameHost` - (Optional) A list of instance UUIDs. The instance will be scheduled on the same host of those specified.
+
+`Query` - (Optional) A conditional query that a compute node must pass in order to host an instance.
+
+`TargetCell` - (Optional) The name of a cell to host the instance.
+
+`BuildNearHostIp` - (Optional) An IP Address in CIDR form. The instance will be placed on a compute node that is in the same subnet.
+
+`AdditionalProperties` - (Optional) Arbitrary key/value pairs of additional properties to pass to the scheduler.
+
+### Personality Properties
+
+`File` - (Required) The absolute path of the destination file.
+
+`Contents` - (Required) The contents of the file. Limited to 255 bytes.
+
+### VendorOptions Properties
+
+`IgnoreResizeConfirmation` - (Optional) Boolean to control whether to ignore manual confirmation of the instance resizing. This can be helpful to work with some OpenStack clouds which automatically confirm resizing of instances after some timeout.
 
 
 ## Return Values

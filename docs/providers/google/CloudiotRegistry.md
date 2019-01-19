@@ -22,27 +22,31 @@ Creates a device registry in Google's Cloud IoT Core platform. For more informat
 
 `Credentials` - (Optional) List of public key certificates to authenticate devices. Structure is documented below.
 
+### EventNotificationConfig Properties
+
+`PubsubTopicName` - (Required) PubSub topic name to publish device events.
+
 ### StateNotificationConfig Properties
 
 `PubsubTopicName` - (Required) PubSub topic name to publish device state updates.
+
+### MqttConfig Properties
+
+`MqttEnabledState` - (Required) The field allows `MQTT_ENABLED` or `MQTT_DISABLED`.
 
 ### HttpConfig Properties
 
 `HttpEnabledState` - (Required) The field allows `HTTP_ENABLED` or `HTTP_DISABLED`.
 
-### MqttConfig Properties
+### Credentials Properties
 
-`MqttEnabledState` - (Required) The field allows `MQTT_ENABLED` or `MQTT_DISABLED`.
+`PublicKeyCertificate` - (Required) The certificate format and data.
 
 ### PublicKeyCertificate Properties
 
 `Format` - (Required) The field allows only  `X509_CERTIFICATE_PEM`.
 
 `Certificate` - (Required) The certificate data.
-
-### Credentials Properties
-
-`PublicKeyCertificate` - (Required) The certificate format and data.
 
 
 ## See Also

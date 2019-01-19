@@ -10,7 +10,7 @@ Create an instance pool.
 
 `DefinedTags` - (Optional) (Updatable) Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
 
-`DisplayName` - (Optional) (Updatable) The displayName of the vnic. This is also use to match against the Instance Configuration defined secondary vnic. * `SubnetId` - (Required) (Updatable) The subnet OCID for the secondary vnic.
+`DisplayName` - (Optional) (Updatable) The user-friendly name.  Does not have to be unique.
 
 `FreeformTags` - (Optional) (Updatable) Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
 
@@ -23,6 +23,8 @@ Create an instance pool.
 `PrimarySubnetId` - (Required) (Updatable) The OCID of the primary subnet to place instances. * `SecondaryVnicSubnets` - (Optional) (Updatable) The set of secondary VNIC data for instances in the pool. * `DisplayName` - (Optional) (Updatable) The displayName of the vnic. This is also use to match against the Instance Configuration defined secondary vnic. * `SubnetId` - (Required) (Updatable) The subnet OCID for the secondary vnic.
 
 `SecondaryVnicSubnets` - (Optional) (Updatable) The set of secondary VNIC data for instances in the pool. * `DisplayName` - (Optional) (Updatable) The displayName of the vnic. This is also use to match against the Instance Configuration defined secondary vnic. * `SubnetId` - (Required) (Updatable) The subnet OCID for the secondary vnic.
+
+`DisplayName` - (Optional) (Updatable) The displayName of the vnic. This is also use to match against the Instance Configuration defined secondary vnic. * `SubnetId` - (Required) (Updatable) The subnet OCID for the secondary vnic.
 
 `SubnetId` - (Required) (Updatable) The subnet OCID for the secondary vnic.
 

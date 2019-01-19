@@ -24,6 +24,30 @@ Provides an Elastic Transcoder pipeline resource.
 
 `ThumbnailConfigPermissions` - (Optional) The permissions for the `ThumbnailConfig` object. (documented below).
 
+### ContentConfig Properties
+
+`Bucket` - The Amazon S3 bucket in which you want Elastic Transcoder to save transcoded files and playlists.
+
+`StorageClass` - The Amazon S3 storage class, Standard or ReducedRedundancy, that you want Elastic Transcoder to assign to the files and playlists that it stores in your Amazon S3 bucket.
+
+### ContentConfigPermissions Properties
+
+`Access` - The permission that you want to give to the AWS user that you specified in `content_config_permissions.grantee`.
+
+`Grantee` - The AWS user or group that you want to have access to transcoded files and playlists.
+
+`GranteeType` - Specify the type of value that appears in the `content_config_permissions.grantee` object. Valid values are `Canonical`, `Email` or `Group`.
+
+### Notifications Properties
+
+`Completed` - The topic ARN for the Amazon SNS topic that you want to notify when Elastic Transcoder has finished processing a job in this pipeline.
+
+`Error` - The topic ARN for the Amazon SNS topic that you want to notify when Elastic Transcoder encounters an error condition while processing a job in this pipeline.
+
+`Progressing` - The topic ARN for the Amazon Simple Notification Service (Amazon SNS) topic that you want to notify when Elastic Transcoder has started to process a job in this pipeline.
+
+`Warning` - The topic ARN for the Amazon SNS topic that you want to notify when Elastic Transcoder encounters a warning condition while processing a job in this pipeline.
+
 ### ThumbnailConfig Properties
 
 `Bucket` - The Amazon S3 bucket in which you want Elastic Transcoder to save thumbnail files.
@@ -37,16 +61,6 @@ Provides an Elastic Transcoder pipeline resource.
 `Grantee` - The AWS user or group that you want to have access to thumbnail files.
 
 `GranteeType` - Specify the type of value that appears in the `thumbnail_config_permissions.grantee` object.
-
-### Notifications Properties
-
-`Completed` - The topic ARN for the Amazon SNS topic that you want to notify when Elastic Transcoder has finished processing a job in this pipeline.
-
-`Error` - The topic ARN for the Amazon SNS topic that you want to notify when Elastic Transcoder encounters an error condition while processing a job in this pipeline.
-
-`Progressing` - The topic ARN for the Amazon Simple Notification Service (Amazon SNS) topic that you want to notify when Elastic Transcoder has started to process a job in this pipeline.
-
-`Warning` - The topic ARN for the Amazon SNS topic that you want to notify when Elastic Transcoder encounters a warning condition while processing a job in this pipeline.
 
 
 ## See Also

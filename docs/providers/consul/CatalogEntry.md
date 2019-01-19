@@ -9,6 +9,8 @@ Currently, defining health checks is not supported.
 
 ## Properties
 
+`Address` - (Required) The address of the node being added to, or referenced in the catalog.
+
 `Node` - (Required) The name of the node being added to, or referenced in the catalog.
 
 `Service` - (Optional) A service to optionally associated with the node. Supported values are documented below.

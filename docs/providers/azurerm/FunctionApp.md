@@ -4,6 +4,8 @@ Manages a Function App.
 
 ## Properties
 
+`Name` - (Required) Specifies the name of the Function App. Changing this forces a new resource to be created.
+
 `ResourceGroupName` - (Required) The name of the resource group in which to create the Function App.
 
 `Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
@@ -32,13 +34,11 @@ Manages a Function App.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
-### Identity Properties
-
-`Type` - (Required) Specifies the identity type of the App Service. At this time the only allowed value is `SystemAssigned`.
-
 ### ConnectionString Properties
 
 `Name` - (Required) The name of the Connection String.
+
+`Type` - (Required) The type of the Connection String. Possible values are `APIHub`, `Custom`, `DocDb`, `EventHub`, `MySQL`, `NotificationHub`, `PostgreSQL`, `RedisCache`, `ServiceBus`, `SQLAzure` and  `SQLServer`.
 
 `Value` - (Required) The value for the Connection String.
 
@@ -49,6 +49,10 @@ Manages a Function App.
 `Use32BitWorkerProcess` - (Optional) Should the Function App run in 32 bit mode, rather than 64 bit mode? Defaults to `true`.
 
 `WebsocketsEnabled` - (Optional) Should WebSockets be enabled?.
+
+### Identity Properties
+
+`Type` - (Required) Specifies the identity type of the App Service. At this time the only allowed value is `SystemAssigned`.
 
 
 ## Return Values

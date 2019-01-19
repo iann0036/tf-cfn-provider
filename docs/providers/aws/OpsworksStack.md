@@ -26,7 +26,7 @@ Provides an OpsWorks stack resource.
 
 `CustomCookbooksSource` - (Optional) When `UseCustomCookbooks` is set, provide this sub-object as described below.
 
-`CustomJson` - (Optional) Custom JSON attributes to apply to the entire stack.
+`CustomJson` - (Optional) User defined JSON passed to "Chef". Use a "here doc" for multiline JSON.
 
 `DefaultOs` - (Optional) Name of OS that will be installed on instances by default.
 
@@ -47,6 +47,8 @@ Provides an OpsWorks stack resource.
 `UseOpsworksSecurityGroups` - (Optional) Boolean value controlling whether the standard OpsWorks security groups apply to created instances.
 
 `VpcId` - (Optional) The id of the VPC that this stack belongs to.
+
+`CustomJson` - (Optional) Custom JSON attributes to apply to the entire stack.
 
 ### CustomCookbooksSource Properties
 

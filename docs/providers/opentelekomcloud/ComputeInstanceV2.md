@@ -6,6 +6,8 @@ Manages a V2 VM instance resource within OpenTelekomCloud.
 
 `Region` - (Optional) The region in which to create the server instance. If omitted, the `Region` argument of the provider is used. Changing this creates a new server.
 
+`Name` - (Required) A unique name for the resource.
+
 `ImageId` - (Optional; Required if `ImageName` is empty and not booting from a volume. Do not specify if booting from a volume.) The image ID of the desired image for the server. Changing this creates a new server.
 
 `ImageName` - (Optional; Required if `ImageId` is empty and not booting from a volume. Do not specify if booting from a volume.) The name of the desired image for the server. Changing this creates a new server.
@@ -46,31 +48,9 @@ Manages a V2 VM instance resource within OpenTelekomCloud.
 
 `AutoRecovery` - (Optional) Configures or deletes automatic recovery of an instance.
 
-### Personality Properties
-
-`File` - (Required) The absolute path of the destination file.
-
-`Contents` - (Required) The contents of the file. Limited to 255 bytes.
-
-### SchedulerHints Properties
-
-`Group` - (Optional) A UUID of a Server Group. The instance will be placed into that group.
-
-`DifferentHost` - (Optional) A list of instance UUIDs. The instance will be scheduled on a different host than all other instances.
-
-`SameHost` - (Optional) A list of instance UUIDs. The instance will be scheduled on the same host of those specified.
-
-`Query` - (Optional) A conditional query that a compute node must pass in order to host an instance.
-
-`TargetCell` - (Optional) The name of a cell to host the instance.
-
-`BuildNearHostIp` - (Optional) An IP Address in CIDR form. The instance will be placed on a compute node that is in the same subnet.
-
-`Tenancy` - (Optional) The tenancy specifies whether the ECS is to be created on a Dedicated Host (DeH) or in a shared pool.
-
-`DehId` - (Optional) The ID of DeH. This parameter takes effect only when the value of tenancy is dedicated.
-
 ### Network Properties
+
+`Uuid` - (Required unless `Port`  or `Name` is provided) The network UUID to attach to the server. Changing this creates a new server.
 
 `Name` - (Required unless `Uuid` or `Port` is provided) The human-readable name of the network. Changing this creates a new server.
 
@@ -97,6 +77,30 @@ Manages a V2 VM instance resource within OpenTelekomCloud.
 `DestinationType` - (Optional) The type that gets created. Currently only support "volume". Changing this creates a new server.
 
 `DeleteOnTermination` - (Optional) Delete the volume / block device upon termination of the instance. Defaults to false. Changing this creates a new server.
+
+### SchedulerHints Properties
+
+`Group` - (Optional) A UUID of a Server Group. The instance will be placed into that group.
+
+`DifferentHost` - (Optional) A list of instance UUIDs. The instance will be scheduled on a different host than all other instances.
+
+`SameHost` - (Optional) A list of instance UUIDs. The instance will be scheduled on the same host of those specified.
+
+`Query` - (Optional) A conditional query that a compute node must pass in order to host an instance.
+
+`TargetCell` - (Optional) The name of a cell to host the instance.
+
+`BuildNearHostIp` - (Optional) An IP Address in CIDR form. The instance will be placed on a compute node that is in the same subnet.
+
+`Tenancy` - (Optional) The tenancy specifies whether the ECS is to be created on a Dedicated Host (DeH) or in a shared pool.
+
+`DehId` - (Optional) The ID of DeH. This parameter takes effect only when the value of tenancy is dedicated.
+
+### Personality Properties
+
+`File` - (Required) The absolute path of the destination file.
+
+`Contents` - (Required) The contents of the file. Limited to 255 bytes.
 
 
 ## Return Values

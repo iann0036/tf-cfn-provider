@@ -4,11 +4,17 @@ Provides an TelefonicaOpenCloud Backup Policy of Resources.
 
 ## Properties
 
+`Name` - (Required) Specifies the name of backup policy. The value consists of 1 to 255 characters and can contain only letters, digits, underscores (_), and hyphens (-).
+
+`Description` - (Optional) Backup policy description. The value consists of 0 to 255 characters and must not contain a greater-than sign (>) or less-than sign (<).
+
 `ProviderId` - (Required) Specifies backup provider ID. Default value is **fc4d5750-22e7-4798-8a46-f48f62c4c1da**.
 
 `Common` - (Optional) General backup policy parameters, which are blank by default.
 
 ### ScheduledOperation Properties
+
+`Name` - (Optional) Specifies Scheduling period name.The value consists of 1 to 255 characters and can contain only letters, digits, underscores (_), and hyphens (-).
 
 `Description` - (Optional) Specifies Scheduling period description.The value consists of 0 to 255 characters and must not contain a greater-than sign (>) or less-than sign (<).
 
@@ -26,11 +32,11 @@ Provides an TelefonicaOpenCloud Backup Policy of Resources.
 
 ### Resource Properties
 
-`Name` - (Required) Specifies backup object name.
-
 `Id` - (Required) Specifies the ID of the object to be backed up.
 
 `Type` - (Required) Entity object type of the backup object. If the type is VMs, the value is **OS::Nova::Server**.
+
+`Name` - (Required) Specifies backup object name.
 
 
 ## Return Values

@@ -10,6 +10,8 @@ Provides an OpsWorks application resource.
 
 `StackId` - (Required) The id of the stack the application will belong to.
 
+`Type` - (Required) Opsworks application type. One of `aws-flow-ruby`, `java`, `rails`, `php`, `nodejs`, `static` or `other`.
+
 `Description` - (Optional) A description of the app.
 
 `Environment` - (Optional) Object to define environment variables.  Object is described below.
@@ -36,14 +38,6 @@ Provides an OpsWorks application resource.
 
 `AwsFlowRubySettings` - (Optional) Specify activity and workflow workers for your app using the aws-flow gem.
 
-### Environment Properties
-
-`Key` - (Required) Variable name.
-
-`Value` - (Required) Variable value.
-
-`Secure` - (Optional) Set visibility of the variable value to `true` or `false`.
-
 ### AppSource Properties
 
 `Type` - (Required) The type of source to use. For example, "archive".
@@ -57,6 +51,14 @@ Provides an OpsWorks application resource.
 `SshKey` - (Optional) SSH key to use when authenticating to the source.
 
 `Revision` - (Optional) For sources that are version-aware, the revision to use.
+
+### Environment Properties
+
+`Key` - (Required) Variable name.
+
+`Value` - (Required) Variable value.
+
+`Secure` - (Optional) Set visibility of the variable value to `true` or `false`.
 
 ### SslConfiguration Properties
 

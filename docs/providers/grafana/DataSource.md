@@ -30,12 +30,6 @@ The data source resource allows a data source to be created on a Grafana server.
 
 `AccessMode` - (Optional) The method by which the browser-based Grafana application will access the data source. The default is "proxy", which means that the application will make requests via a proxy endpoint on the Grafana server.
 
-### SecureJsonData Properties
-
-`AccessKey` - (Required by some data source types) The access key required to access the data source.
-
-`SecretKey` - (Required by some data source types) The secret key required to access the data source.
-
 ### JsonData Properties
 
 `AuthType` - (Required by some data source types) The authentication type type used to access the data source.
@@ -45,6 +39,12 @@ The data source resource allows a data source to be created on a Grafana server.
 `CustomMetricsNamespaces` - (Optional, for the CloudWatch data source type) A comma-separated list of custom namespaces to be queried by the CloudWatch data source.
 
 `AssumeRoleArn` - (Optional, for the CloudWatch data source type) The role ARN to be assumed by Grafana when using the CloudWatch data source.
+
+### SecureJsonData Properties
+
+`AccessKey` - (Required by some data source types) The access key required to access the data source.
+
+`SecretKey` - (Required by some data source types) The secret key required to access the data source.
 
 
 ## Return Values

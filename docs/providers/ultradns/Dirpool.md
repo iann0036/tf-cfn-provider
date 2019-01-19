@@ -6,7 +6,7 @@ Provides an UltraDNS Directional Controller pool resource.
 
 `Zone` - (Required) The domain to add the record to.
 
-`Name` - (Optional) String. - `IsAccountLevel` - (Optional) Boolean. Default: `false`. - `Ips` - (Optional) Set of IP blocks. IP Info documented below.
+`Name` - (Required) The name of the record - `Type` - (Required) The Record Type of the record.
 
 `Type` - (Required) The Record Type of the record.
 
@@ -28,9 +28,15 @@ Provides an UltraDNS Directional Controller pool resource.
 
 `IpInfo` - (Optional) a single IP Info block. IP Info documented below.
 
-`IsAccountLevel` - (Optional) Boolean. Default: `false`. - `Ips` - (Optional) Set of IP blocks. IP Info documented below.
+`Name` - (Optional) String. - `IsAccountLevel` - (Optional) Boolean. Default: `false`. - `Codes` - (Optional) Set of geo code strings. Shorthand codes are expanded.
+
+`IsAccountLevel` - (Optional) Boolean. Default: `false`. - `Codes` - (Optional) Set of geo code strings. Shorthand codes are expanded.
 
 `Codes` - (Optional) Set of geo code strings. Shorthand codes are expanded.
+
+`Name` - (Optional) String. - `IsAccountLevel` - (Optional) Boolean. Default: `false`. - `Ips` - (Optional) Set of IP blocks. IP Info documented below.
+
+`IsAccountLevel` - (Optional) Boolean. Default: `false`. - `Ips` - (Optional) Set of IP blocks. IP Info documented below.
 
 `Ips` - (Optional) Set of IP blocks. IP Info documented below.
 

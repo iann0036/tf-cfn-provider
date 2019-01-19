@@ -42,41 +42,17 @@ Manages a Scheduler Job.
 
 `AuthenticationActiveDirectory` - (Optional) An `AuthenticationActiveDirectory` block which defines the OAUTH Active Directory information to use.
 
-### AuthenticationCertificate Properties
-
-`Password` - (Required) Specifies the certificate password.
-
-`Pfx` - (Required) Specifies the pfx certificate in base-64 format.
-
-### MonthlyOccurrences Properties
-
-`Day` - (Optional) Specifies the day of the week that the job should execute on. Must be one of  one of `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, `Saturday`, `Sunday`.
-
-`Occurrence` - (Optional) Specifies the week the job should run on. For example  `1` for the first week, `-1` for the last week of the month. Must be between `-5` and `5`.
-
 ### AuthenticationBasic Properties
 
 `Username` - (Required) Specifies the username to use.
 
-### Recurrence Properties
+`Password` - (Required) Specifies the password to use.
 
-`Interval` - (Optional) Specifies the interval between executions. Defaults to `1`.
+### AuthenticationCertificate Properties
 
-`Count` - (Optional) Specifies the maximum number of times that the job should run.
+`Pfx` - (Required) Specifies the pfx certificate in base-64 format.
 
-`Frequency` - (Required) Specifies the frequency of recurrence. Must be one of `Minute`, `Hour`, `Day`, `Week`, `Month`.
-
-`EndTime` - (Optional) Specifies the time at which the job will cease running. Must be less then 500 days into the future.
-
-`Minutes` - (Optional) Specifies the minutes of the hour that the job should execute at. Must be between `0` and `59`.
-
-`Hours` - (Optional) Specifies the hours of the day that the job should execute at. Must be between `0` and `23`.
-
-`WeekDays` - (Optional) Specifies the days of the week that the job should execute on. Must be one of `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, `Saturday`, `Sunday`. Only applies when `Week` is used for frequency.
-
-`MonthDays` - (Optional) Specifies the days of the month that the job should execute on. Must be non zero and between `-1` and `31`. Only applies when `Month` is used for frequency.
-
-`MonthlyOccurrences` - (Optional) Specifies specific monthly occurrences like "last sunday of the month" with `MonthlyOccurrences` blocks. Only applies when `Month` is used for frequency.
+`Password` - (Required) Specifies the certificate password.
 
 ### AuthenticationActiveDirectory Properties
 
@@ -97,6 +73,38 @@ Manages a Scheduler Job.
 `SasToken` - (Required) Specifies a SAS token/key to authenticate with.
 
 `Message` - (Required) The message to send into the queue.
+
+### Retry Properties
+
+`Interval` - (Required) Specifies the duration between retries.
+
+`Count` - (Required) Specifies the number of times a retry should be attempted.
+
+### Recurrence Properties
+
+`Frequency` - (Required) Specifies the frequency of recurrence. Must be one of `Minute`, `Hour`, `Day`, `Week`, `Month`.
+
+`Interval` - (Optional) Specifies the interval between executions. Defaults to `1`.
+
+`Count` - (Optional) Specifies the maximum number of times that the job should run.
+
+`EndTime` - (Optional) Specifies the time at which the job will cease running. Must be less then 500 days into the future.
+
+`Minutes` - (Optional) Specifies the minutes of the hour that the job should execute at. Must be between `0` and `59`.
+
+`Hours` - (Optional) Specifies the hours of the day that the job should execute at. Must be between `0` and `23`.
+
+`WeekDays` - (Optional) Specifies the days of the week that the job should execute on. Must be one of `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, `Saturday`, `Sunday`. Only applies when `Week` is used for frequency.
+
+`MonthDays` - (Optional) Specifies the days of the month that the job should execute on. Must be non zero and between `-1` and `31`. Only applies when `Month` is used for frequency.
+
+`MonthlyOccurrences` - (Optional) Specifies specific monthly occurrences like "last sunday of the month" with `MonthlyOccurrences` blocks. Only applies when `Month` is used for frequency.
+
+### MonthlyOccurrences Properties
+
+`Day` - (Optional) Specifies the day of the week that the job should execute on. Must be one of  one of `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, `Saturday`, `Sunday`.
+
+`Occurrence` - (Optional) Specifies the week the job should run on. For example  `1` for the first week, `-1` for the last week of the month. Must be between `-5` and `5`.
 
 
 ## Return Values

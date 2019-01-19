@@ -4,6 +4,8 @@ Manages an Azure Storage Account.
 
 ## Properties
 
+`Name` - (Required) Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
+
 `ResourceGroupName` - (Required) The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
 
 `Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.

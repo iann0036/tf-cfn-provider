@@ -4,7 +4,7 @@ Manages a Neptune Parameter Group
 
 ## Properties
 
-`Name` - (Required) The name of the Neptune parameter.
+`Name` - (Required, Forces new resource) The name of the Neptune parameter group.
 
 `Family` - (Required) The family of the Neptune parameter group.
 
@@ -13,6 +13,8 @@ Manages a Neptune Parameter Group
 `Parameter` - (Optional) A list of Neptune parameters to apply.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
+
+`Name` - (Required) The name of the Neptune parameter.
 
 `Value` - (Required) The value of the Neptune parameter.
 

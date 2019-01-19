@@ -6,15 +6,37 @@ Provides a CodePipeline.
 
 ## Properties
 
+`Name` - (Required) The name of the pipeline.
+
+`RoleArn` - (Required) A service role Amazon Resource Name (ARN) that grants AWS CodePipeline permission to make calls to AWS services on your behalf.
+
+### ArtifactStore Properties
+
+`Location` - (Required) The location where AWS CodePipeline stores artifacts for a pipeline, such as an S3 bucket.
+
+`Type` - (Required) The type of the artifact store, such as Amazon S3.
+
+`EncryptionKey` - (Optional) The encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If you don't specify a key, AWS CodePipeline uses the default key for Amazon Simple Storage Service (Amazon S3). An `EncryptionKey` block is documented below.
+
+### EncryptionKey Properties
+
+`Id` - (Required) The KMS key ARN or ID.
+
+`Type` - (Required) The type of key; currently only `KMS` is supported.
+
+### Stage Properties
+
+`Name` - (Required) The name of the stage.
+
+`Action` - (Required) The action(s) to include in the stage. Defined as an `Action` block below.
+
 ### Action Properties
-
-`Name` - (Required) The action declaration's name.
-
-`RoleArn` - (Optional) The ARN of the IAM service role that will perform the declared action. This is assumed through the roleArn for the pipeline.
 
 `Category` - (Required) A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are `Approval`, `Build`, `Deploy`, `Invoke`, `Source` and `Test`.
 
 `Owner` - (Required) The creator of the action being called. Possible values are `AWS`, `Custom` and `ThirdParty`.
+
+`Name` - (Required) The action declaration's name.
 
 `Provider` - (Required) The provider of the service being called by the action. Valid providers are determined by the action category. For example, an action in the Deploy category type might have a provider of AWS CodeDeploy, which would be specified as CodeDeploy.
 
@@ -26,23 +48,9 @@ Provides a CodePipeline.
 
 `OutputArtifacts` - (Optional) A list of artifact names to output. Output artifact names must be unique within a pipeline.
 
+`RoleArn` - (Optional) The ARN of the IAM service role that will perform the declared action. This is assumed through the roleArn for the pipeline.
+
 `RunOrder` - (Optional) The order in which actions are run.
-
-### EncryptionKey Properties
-
-`Type` - (Required) The type of key; currently only `KMS` is supported.
-
-`Id` - (Required) The KMS key ARN or ID.
-
-### ArtifactStore Properties
-
-`Location` - (Required) The location where AWS CodePipeline stores artifacts for a pipeline, such as an S3 bucket.
-
-`EncryptionKey` - (Optional) The encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If you don't specify a key, AWS CodePipeline uses the default key for Amazon Simple Storage Service (Amazon S3). An `EncryptionKey` block is documented below.
-
-### Stage Properties
-
-`Action` - (Required) The action(s) to include in the stage. Defined as an `Action` block below.
 
 
 ## Return Values

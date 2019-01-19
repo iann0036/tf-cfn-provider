@@ -4,6 +4,8 @@ Manages a Network Rule Collection within an Azure Firewall.
 
 ## Properties
 
+`Name` - (Required) Specifies the name of the Network Rule Collection which must be unique within the Firewall. Changing this forces a new resource to be created.
+
 `AzureFirewallName` - (Required) Specifies the name of the Firewall in which the Network Rule Collection should be created. Changing this forces a new resource to be created.
 
 `ResourceGroupName` - (Required) Specifies the name of the Resource Group in which the Firewall exists. Changing this forces a new resource to be created.

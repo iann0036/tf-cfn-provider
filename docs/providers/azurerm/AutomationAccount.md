@@ -4,6 +4,8 @@ Manages a Automation Account.
 
 ## Properties
 
+`Name` - (Required) Specifies the name of the Automation Account. Changing this forces a new resource to be created.
+
 `ResourceGroupName` - (Required) The name of the resource group in which the Automation Account is created. Changing this forces a new resource to be created.
 
 `Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.

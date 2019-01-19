@@ -16,6 +16,8 @@ Provides an SSM Maintenance Window Task resource
 
 `ServiceRoleArn` - (Required) The role that should be assumed when executing the task.
 
+`Name` - (Optional) The name of the maintenance window task.
+
 `Description` - (Optional) The description of the maintenance window task.
 
 `Targets` - (Required) The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
@@ -26,12 +28,6 @@ Provides an SSM Maintenance Window Task resource
 
 `TaskParameters` - (Optional) A structure containing information about parameters required by the particular `TaskArn`. Documented below.
 
-### TaskParameters Properties
-
-`Name` - (Required).
-
-`Values` - (Required).
-
 ### LoggingInfo Properties
 
 `S3BucketName` - (Required).
@@ -39,6 +35,12 @@ Provides an SSM Maintenance Window Task resource
 `S3Region` - (Required).
 
 `S3BucketPrefix` - (Optional).
+
+### TaskParameters Properties
+
+`Name` - (Required).
+
+`Values` - (Required).
 
 
 ## Return Values

@@ -4,6 +4,8 @@ Manage as an Azure Container Group instance.
 
 ## Properties
 
+`Name` - (Required) Specifies the name of the Container Group. Changing this forces a new resource to be created.
+
 `ResourceGroupName` - (Required) The name of the resource group in which to create the Container Group. Changing this forces a new resource to be created.
 
 `Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
@@ -22,35 +24,9 @@ Manage as an Azure Container Group instance.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
-### ImageRegistryCredential Properties
-
-`Username` - (Required) The username with which to connect to the registry.
-
-`Password` - (Required) The password with which to connect to the registry.
-
-`Server` - (Required) The address to use to connect to the registry without protocol ("https"/"http"). For example: "myacr.acr.io".
-
-### Volume Properties
-
-`Name` - (Required) The name of the volume mount. Changing this forces a new resource to be created.
-
-`MountPath` - (Required) The path on which this volume is to be mounted. Changing this forces a new resource to be created.
-
-`ReadOnly` - (Optional) Specify if the volume is to be mounted as read only or not. The default value is `false`. Changing this forces a new resource to be created.
-
-`StorageAccountName` - (Required) The Azure storage account from which the volume is to be mounted. Changing this forces a new resource to be created.
-
-`StorageAccountKey` - (Required) The access key for the Azure Storage account specified as above. Changing this forces a new resource to be created.
-
-`ShareName` - (Required) The Azure storage share that is to be mounted as a volume. This must be created on the storage account specified as above. Changing this forces a new resource to be created.
-
-### Ports Properties
-
-`Port` - (Required) The port number the container will expose.
-
-`Protocol` - (Required) The network protocol associated with port. Possible values are `TCP` & `UDP`.
-
 ### Container Properties
+
+`Name` - (Required) Specifies the name of the Container. Changing this forces a new resource to be created.
 
 `Image` - (Required) The container image name. Changing this forces a new resource to be created.
 
@@ -69,6 +45,34 @@ Manage as an Azure Container Group instance.
 `Commands` - (Optional) A list of commands which should be run on the container.
 
 `Volume` - (Optional) The definition of a volume mount for this container as documented in the `Volume` block below. Changing this forces a new resource to be created.
+
+### Volume Properties
+
+`Name` - (Required) The name of the volume mount. Changing this forces a new resource to be created.
+
+`MountPath` - (Required) The path on which this volume is to be mounted. Changing this forces a new resource to be created.
+
+`ReadOnly` - (Optional) Specify if the volume is to be mounted as read only or not. The default value is `false`. Changing this forces a new resource to be created.
+
+`StorageAccountName` - (Required) The Azure storage account from which the volume is to be mounted. Changing this forces a new resource to be created.
+
+`StorageAccountKey` - (Required) The access key for the Azure Storage account specified as above. Changing this forces a new resource to be created.
+
+`ShareName` - (Required) The Azure storage share that is to be mounted as a volume. This must be created on the storage account specified as above. Changing this forces a new resource to be created.
+
+### ImageRegistryCredential Properties
+
+`Username` - (Required) The username with which to connect to the registry.
+
+`Password` - (Required) The password with which to connect to the registry.
+
+`Server` - (Required) The address to use to connect to the registry without protocol ("https"/"http"). For example: "myacr.acr.io".
+
+### Ports Properties
+
+`Port` - (Required) The port number the container will expose.
+
+`Protocol` - (Required) The network protocol associated with port. Possible values are `TCP` & `UDP`.
 
 
 ## Return Values

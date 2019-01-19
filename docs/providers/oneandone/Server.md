@@ -18,7 +18,11 @@ Manages a Monitoring Policy on 1&1
 
 `AlertIf` - (Required) Condition for the alert to be issued.
 
+`EmailNotification` - (Required) If set true email will be sent.
+
 `Process` - (Required) Process name.
+
+`AlertIf` - (Required) Condition for the alert to be issued.
 
 
 ## See Also

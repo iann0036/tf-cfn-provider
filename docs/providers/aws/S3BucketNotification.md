@@ -12,13 +12,11 @@ Provides a S3 bucket notification resource.
 
 `LambdaFunction` - (Optional, Multiple) Used to configure notifications to a Lambda Function (documented below).
 
-### Queue Properties
-
-`QueueArn` - (Required) Specifies Amazon SQS queue ARN.
-
-### LambdaFunction Properties
+### Topic Properties
 
 `Id` - (Optional) Specifies unique identifier for each of the notification configurations.
+
+`TopicArn` - (Required) Specifies Amazon SNS topic ARN.
 
 `Events` - (Required) Specifies [event](http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html#notification-how-to-event-types-and-destinations) for which to send notifications.
 
@@ -26,11 +24,29 @@ Provides a S3 bucket notification resource.
 
 `FilterSuffix` - (Optional) Specifies object key name suffix.
 
+### Queue Properties
+
+`Id` - (Optional) Specifies unique identifier for each of the notification configurations.
+
+`QueueArn` - (Required) Specifies Amazon SQS queue ARN.
+
+`Events` - (Required) Specifies [event](http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html#notification-how-to-event-types-and-destinations) for which to send notifications.
+
+`FilterPrefix` - (Optional) Specifies object key name prefix.
+
+`FilterSuffix` - (Optional) Specifies object key name suffix.
+
+### LambdaFunction Properties
+
+`Id` - (Optional) Specifies unique identifier for each of the notification configurations.
+
 `LambdaFunctionArn` - (Required) Specifies Amazon Lambda function ARN.
 
-### Topic Properties
+`Events` - (Required) Specifies [event](http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html#notification-how-to-event-types-and-destinations) for which to send notifications.
 
-`TopicArn` - (Required) Specifies Amazon SNS topic ARN.
+`FilterPrefix` - (Optional) Specifies object key name prefix.
+
+`FilterSuffix` - (Optional) Specifies object key name suffix.
 
 
 ## See Also

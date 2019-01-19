@@ -4,13 +4,15 @@ Provides a Redshift Cluster parameter group resource.
 
 ## Properties
 
-`Name` - (Required) The name of the Redshift parameter.
+`Name` - (Required) The name of the Redshift parameter group.
 
 `Family` - (Required) The family of the Redshift parameter group.
 
 `Description` - (Optional) The description of the Redshift parameter group. Defaults to "Managed by Terraform".
 
 `Parameter` - (Optional) A list of Redshift parameters to apply.
+
+`Name` - (Required) The name of the Redshift parameter.
 
 `Value` - (Required) The value of the Redshift parameter.
 

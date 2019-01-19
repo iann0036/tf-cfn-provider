@@ -10,6 +10,8 @@ Manages a networking V2 trunk resource within OpenStack.
 
 `Description` - (Optional) Human-readable description of the port. Changing this updates the name of the existing port.
 
+`PortId` - (Required) The ID of the port to be used as the parent port of the trunk. This is the port that should be used as the compute instance network port. Changing this creates a new trunk.
+
 `AdminStateUp` - (Optional) Administrative up/down status for the trunk (must be "true" or "false" if provided). Changing this updates the `AdminStateUp` of an existing trunk.
 
 `TenantId` - (Optional) The owner of the Trunk. Required if admin wants to create a trunk on behalf of another tenant. Changing this creates a new trunk.

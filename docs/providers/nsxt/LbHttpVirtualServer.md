@@ -40,13 +40,13 @@ Provides a resource to configure lb http virtual server on NSX-T manager
 
 `DefaultCertificateId` - (Required) Id of certificate that will be used if the server does not host     multiple hostnames on the same IP address or if the client does not support SNI extension. * `CertificateChainDepth` - (Optional) Allowed depth of certificate chain. Default is 3. * `ClientAuth` - (Optional) Whether client authentication is mandatory. Default is false. * `CaIds` - (Optional) List of CA certificate ids for client authentication. * `CrlIds` - (Optional) List of CRL certificate ids for client authentication. * `SniCertificateIds` - (Optional) List of certificates to serve different hostnames.
 
-`CertificateChainDepth` - (Optional) Allowed depth of certificate chain. Default is 3. * `ClientCertificateId` - (Optional) Whether server authentication is required. Default is false. * `CaIds` - (Optional) List of CA certificate ids for server authentication. * `CrlIds` - (Optional) List of CRL certificate ids for server authentication.
+`CertificateChainDepth` - (Optional) Allowed depth of certificate chain. Default is 3. * `ClientAuth` - (Optional) Whether client authentication is mandatory. Default is false. * `CaIds` - (Optional) List of CA certificate ids for client authentication. * `CrlIds` - (Optional) List of CRL certificate ids for client authentication. * `SniCertificateIds` - (Optional) List of certificates to serve different hostnames.
 
 `ClientAuth` - (Optional) Whether client authentication is mandatory. Default is false. * `CaIds` - (Optional) List of CA certificate ids for client authentication. * `CrlIds` - (Optional) List of CRL certificate ids for client authentication. * `SniCertificateIds` - (Optional) List of certificates to serve different hostnames.
 
-`CaIds` - (Optional) List of CA certificate ids for server authentication. * `CrlIds` - (Optional) List of CRL certificate ids for server authentication.
+`CaIds` - (Optional) List of CA certificate ids for client authentication. * `CrlIds` - (Optional) List of CRL certificate ids for client authentication. * `SniCertificateIds` - (Optional) List of certificates to serve different hostnames.
 
-`CrlIds` - (Optional) List of CRL certificate ids for server authentication.
+`CrlIds` - (Optional) List of CRL certificate ids for client authentication. * `SniCertificateIds` - (Optional) List of certificates to serve different hostnames.
 
 `SniCertificateIds` - (Optional) List of certificates to serve different hostnames.
 
@@ -56,7 +56,13 @@ Provides a resource to configure lb http virtual server on NSX-T manager
 
 `ServerAuth` - (Optional) Whether server authentication is needed. Default is False. If true, ca_ids should be provided. * `CertificateChainDepth` - (Optional) Allowed depth of certificate chain. Default is 3. * `ClientCertificateId` - (Optional) Whether server authentication is required. Default is false. * `CaIds` - (Optional) List of CA certificate ids for server authentication. * `CrlIds` - (Optional) List of CRL certificate ids for server authentication.
 
+`CertificateChainDepth` - (Optional) Allowed depth of certificate chain. Default is 3. * `ClientCertificateId` - (Optional) Whether server authentication is required. Default is false. * `CaIds` - (Optional) List of CA certificate ids for server authentication. * `CrlIds` - (Optional) List of CRL certificate ids for server authentication.
+
 `ClientCertificateId` - (Optional) Whether server authentication is required. Default is false. * `CaIds` - (Optional) List of CA certificate ids for server authentication. * `CrlIds` - (Optional) List of CRL certificate ids for server authentication.
+
+`CaIds` - (Optional) List of CA certificate ids for server authentication. * `CrlIds` - (Optional) List of CRL certificate ids for server authentication.
+
+`CrlIds` - (Optional) List of CRL certificate ids for server authentication.
 
 
 ## Return Values

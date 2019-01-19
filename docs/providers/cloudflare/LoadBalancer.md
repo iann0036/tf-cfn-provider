@@ -28,9 +28,11 @@ Provides a Cloudflare Load Balancer resource. This sits in front of a number of 
 
 `Region` - (Required) A region code which must be in the list defined [here](https://support.cloudflare.com/hc/en-us/articles/115000540888-Load-Balancing-Geographic-Regions). Multiple entries should not be specified with the same region.
 
-`PoolIds` - (Required) A list of pool IDs in failover priority to use for traffic reaching the given PoP.
+`PoolIds` - (Required) A list of pool IDs in failover priority to use in the given region.
 
 `Pop` - (Required) A 3-letter code for the Point-of-Presence. Allowed values can be found in the list of datacenters on the [status page](https://www.cloudflarestatus.com/). Multiple entries should not be specified with the same PoP.
+
+`PoolIds` - (Required) A list of pool IDs in failover priority to use for traffic reaching the given PoP.
 
 
 ## Return Values

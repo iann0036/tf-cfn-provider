@@ -232,7 +232,7 @@ def process_file(provider_name, file_contents, provider_readme_items):
     resource_type = ""
     description = ""
     example = ""
-    arguments = {}
+    arguments = []
     argument_lines = []
     attributes = {}
 
@@ -289,10 +289,11 @@ def process_file(provider_name, file_contents, provider_readme_items):
                     if argument_description[-1] != ".":
                         argument_description += "."
                     
-                    arguments[argument_name] = {
+                    arguments.append({
+                        'name': argument_name,
                         'description': argument_description,
                         'property_of': argument_block
-                    }
+                    })
         if line.strip().endswith(":") and argument_lines[line_number+1].strip() == "":
             for argument_name in argument_names:
                 if "`{}`".format(argument_name) in line:
@@ -325,21 +326,25 @@ def process_file(provider_name, file_contents, provider_readme_items):
         properties = ""
         property_of_list = []
         for arg in arguments:
-            if not arguments[arg]['property_of']:
+            if not arg['property_of']:
                 properties += "`{ret}` - {desc}\n\n".format(
-                    ret=tf_to_cfn_str(arg),
-                    desc=arguments[arg]['description']
+                    ret=tf_to_cfn_str(arg['name']),
+                    desc=arg['description']
                 )
             else:
-                property_of_list.append(arguments[arg]['property_of'])
-        for property_of in list(set(property_of_list)):
-            properties += "### {} Properties\n\n".format(tf_to_cfn_str(property_of))
-            for arg in arguments:
-                if arguments[arg]['property_of'] == property_of:
-                    properties += "`{ret}` - {desc}\n\n".format(
-                        ret=tf_to_cfn_str(arg),
-                        desc=arguments[arg]['description']
-                    )
+                property_of_list.append(arg['property_of'])
+
+        used_property_of_list = []
+        for property_of in property_of_list:
+            if property_of not in used_property_of_list:
+                used_property_of_list.append(property_of)
+                properties += "### {} Properties\n\n".format(tf_to_cfn_str(property_of))
+                for arg in arguments:
+                    if arg['property_of'] == property_of:
+                        properties += "`{ret}` - {desc}\n\n".format(
+                            ret=tf_to_cfn_str(arg['name']),
+                            desc=arg['description']
+                        )
 
         # return values
         return_values = ""
@@ -363,7 +368,7 @@ def process_file(provider_name, file_contents, provider_readme_items):
         )
 
         for argument_name in argument_names:
-            output = output.replace("`{}`".format(argument_name), "`{}`".format(tf_to_cfn_str(argument_name)))
+            output = output.replace("`" + argument_name + "`", "`{}`".format(tf_to_cfn_str(argument_name)))
         
         output = re.sub(r"(\`%s\_.+\`)" % provider_name, lambda x: "`" + tf_type_to_cfn_type(x.group(1), provider_name), output) # TODO - why only one backtick used?!?
 

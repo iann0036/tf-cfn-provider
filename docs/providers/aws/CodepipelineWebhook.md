@@ -14,17 +14,17 @@ Provides a CodePipeline Webhook.
 
 `TargetPipeline` - (Required) The name of the pipeline.
 
-### Filter Properties
-
-`JsonPath` - (Required) The [JSON path](https://github.com/json-path/JsonPath) to filter on.
-
-`MatchEquals` - (Required) The value to match on (e.g. `refs/heads/{Branch}`). See [AWS docs](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_WebhookFilterRule.html) for details.
-
 ### AuthenticationConfiguration Properties
 
 `SecretToken` - (Optional) The shared secret for the GitHub repository webhook. Set this as `secret` in your `github_repository_webhook`'s `configuration` block. Required for `GITHUB_HMAC`.
 
 `AllowedIpRange` - (Optional) A valid CIDR block for `IP` filtering. Required for `IP`.
+
+### Filter Properties
+
+`JsonPath` - (Required) The [JSON path](https://github.com/json-path/JsonPath) to filter on.
+
+`MatchEquals` - (Required) The value to match on (e.g. `refs/heads/{Branch}`). See [AWS docs](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_WebhookFilterRule.html) for details.
 
 
 ## Return Values

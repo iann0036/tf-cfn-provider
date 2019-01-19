@@ -40,9 +40,35 @@ whole cluster!
 
 `Metadata` - (Optional) A map of the Compute Engine metadata entries to add to all instances (see [Project and instance metadata](https://cloud.google.com/compute/docs/storing-retrieving-metadata#project_and_instance_metadata)).
 
-`NumInstances` - (Optional) Specifies the number of preemptible nodes to create. Defaults to 0.
+`NumInstances` - (Optional, Computed) Specifies the number of master nodes to create. If not specified, GCP will default to a predetermined computed value (currently 1).
+
+`MachineType` - (Optional, Computed) The name of a Google Compute Engine machine type to create for the master. If not specified, GCP will default to a predetermined computed value (currently `n1-standard-4`).
+
+`BootDiskType` - (Optional) The disk type of the primary disk attached to each node. One of `"pd-ssd"` or `"pd-standard"`. Defaults to `"pd-standard"`.
+
+`BootDiskSizeGb` - (Optional, Computed) Size of the primary disk attached to each node, specified in GB. The primary disk contains the boot volume and system libraries, and the smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
+
+`NumLocalSsds` - (Optional) The amount of local SSD disks that will be attached to each master cluster node. Defaults to 0.
+
+`AcceleratorType` - (Required) The short name of the accelerator type to expose to this instance. For example, `nvidia-tesla-k80`.
+
+`AcceleratorCount` - (Required) The number of the accelerator cards of this type exposed to this instance. Often restricted to one of `1`, `2`, `4`, or `8`.
+
+`NumInstances` - (Optional, Computed) Specifies the number of worker nodes to create. If not specified, GCP will default to a predetermined computed value (currently 2). There is currently a beta feature which allows you to run a [Single Node Cluster](https://cloud.google.com/dataproc/docs/concepts/single-node-clusters). In order to take advantage of this you need to set `"dataproc:dataproc.allow.zero.workers" = "true"` in `cluster_config.software_config.properties`.
 
 `MachineType` - (Optional, Computed) The name of a Google Compute Engine machine type to create for the worker nodes. If not specified, GCP will default to a predetermined computed value (currently `n1-standard-4`).
+
+`BootDiskType` - (Optional) The disk type of the primary disk attached to each node. One of `"pd-ssd"` or `"pd-standard"`. Defaults to `"pd-standard"`.
+
+`BootDiskSizeGb` - (Optional, Computed) Size of the primary disk attached to each worker node, specified in GB. The smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
+
+`NumLocalSsds` - (Optional) The amount of local SSD disks that will be attached to each worker cluster node. Defaults to 0.
+
+`AcceleratorType` - (Required) The short name of the accelerator type to expose to this instance. For example, `nvidia-tesla-k80`.
+
+`AcceleratorCount` - (Required) The number of the accelerator cards of this type exposed to this instance. Often restricted to one of `1`, `2`, `4`, or `8`.
+
+`NumInstances` - (Optional) Specifies the number of preemptible nodes to create. Defaults to 0.
 
 `BootDiskType` - (Optional) The disk type of the primary disk attached to each preemptible worker node. One of `"pd-ssd"` or `"pd-standard"`. Defaults to `"pd-standard"`.
 
@@ -50,23 +76,19 @@ whole cluster!
 
 `NumLocalSsds` - (Optional) The amount of local SSD disks that will be attached to each preemptible worker node. Defaults to 0.
 
-`AcceleratorType` - (Required) The short name of the accelerator type to expose to this instance. For example, `nvidia-tesla-k80`.
-
-`AcceleratorCount` - (Required) The number of the accelerator cards of this type exposed to this instance. Often restricted to one of `1`, `2`, `4`, or `8`.
-
 `ImageVersion` - (Optional, Computed) The Cloud Dataproc image version to use for the cluster - this controls the sets of software versions installed onto the nodes when you create clusters. If not specified, defaults to the latest version. For a list of valid versions see [Cloud Dataproc versions](https://cloud.google.com/dataproc/docs/concepts/dataproc-versions).
 
 `OverrideProperties` - (Optional) A list of override and additional properties (key/value pairs) used to modify various aspects of the common configuration files used when creating a cluster. For a list of valid properties please see [Cluster properties](https://cloud.google.com/dataproc/docs/concepts/cluster-properties).
-
-### EncryptionConfig Properties
-
-`KmsKeyName` - (Required) The Cloud KMS key name to use for PD disk encryption for all instances in the cluster.
 
 ### InitializationAction Properties
 
 `Script` - (Required) The script to be executed during initialization of the cluster. The script must be a GCS file with a gs:// prefix.
 
 `TimeoutSec` - (Optional, Computed) The maximum duration (in seconds) which `Script` is allowed to take to execute its action. GCP will default to a predetermined computed value if not set (currently 300).
+
+### EncryptionConfig Properties
+
+`KmsKeyName` - (Required) The Cloud KMS key name to use for PD disk encryption for all instances in the cluster.
 
 
 ## Return Values

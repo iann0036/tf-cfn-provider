@@ -7,6 +7,8 @@ and
 
 ## Properties
 
+`Name` - (Required) A unique name for Cloud NAT, required by GCE. Changing this forces a new NAT to be created.
+
 `Router` - (Required) The name of the router in which this NAT will be configured. Changing this forces a new NAT to be created.
 
 `NatIpAllocateOption` - (Required) How external IPs should be allocated for this NAT. Valid values are `AUTO_ONLY` or `MANUAL_ONLY`. Changing this forces a new NAT to be created.

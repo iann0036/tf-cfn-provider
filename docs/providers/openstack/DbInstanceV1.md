@@ -6,6 +6,8 @@ Manages a V1 DB instance resource within OpenStack.
 
 `Region` - (Required) The region in which to create the db instance. Changing this creates a new instance.
 
+`Name` - (Required) A unique name for the resource.
+
 `FlavorId` - (Required) The flavor ID of the desired flavor for the instance. Changing this creates new instance.
 
 `ConfigurationId` - (Optional) Configuration ID to be attached to the instance. Database instance will be rebooted when configuration is detached.
@@ -26,14 +28,6 @@ Manages a V1 DB instance resource within OpenStack.
 
 `Version` - (Required) Version of database engine type to be used in new instance. Changing this creates a new instance.
 
-### Database Properties
-
-`Name` - (Optional) Database to be created on new instance. Changing this creates a new instance.
-
-`Collate` - (Optional) Database collation. Changing this creates a new instance.
-
-`Charset` - (Optional) Database character set. Changing this creates a new instance.
-
 ### Network Properties
 
 `Uuid` - (Required unless `Port` is provided) The network UUID to attach to the instance. Changing this creates a new instance.
@@ -46,11 +40,21 @@ Manages a V1 DB instance resource within OpenStack.
 
 ### User Properties
 
+`Name` - (Optional) Username to be created on new instance. Changing this creates a new instance.
+
 `Password` - (Optional) User's password. Changing this creates a new instance.
 
 `Host` - (Optional) An ip address or % sign indicating what ip addresses can connect with this user credentials. Changing this creates a new instance.
 
 `Databases` - (Optional) A list of databases that user will have access to. If not specified, user has access to all databases on th einstance. Changing this creates a new instance.
+
+### Database Properties
+
+`Name` - (Optional) Database to be created on new instance. Changing this creates a new instance.
+
+`Collate` - (Optional) Database collation. Changing this creates a new instance.
+
+`Charset` - (Optional) Database character set. Changing this creates a new instance.
 
 
 ## Return Values

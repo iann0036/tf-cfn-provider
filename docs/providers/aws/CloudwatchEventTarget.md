@@ -28,6 +28,26 @@ Provides a CloudWatch Event Target resource.
 
 `InputTransformer` - (Optional) Parameters used when you are providing a custom input to a target based on certain event data.
 
+### RunCommandTargets Properties
+
+`Key` - (Required) Can be either `tag:tag-key` or `InstanceIds`.
+
+`Values` - (Required) If Key is `tag:tag-key`, Values is a list of tag values. If Key is `InstanceIds`, Values is a list of Amazon EC2 instance IDs.
+
+### EcsTarget Properties
+
+`Group` - (Optional) Specifies an ECS task group for the task. The maximum length is 255 characters.
+
+`LaunchType` - (Optional) Specifies the launch type on which your task is running. The launch type that you specify here must match one of the launch type (compatibilities) of the target task. Valid values are EC2 or FARGATE.
+
+`NetworkConfiguration` - (Optional) Use this if the ECS task uses the awsvpc network mode. This specifies the VPC subnets and security groups associated with the task, and whether a public IP address is to be used. Required if launch_type is FARGATE because the awsvpc mode is required for Fargate tasks.
+
+`PlatformVersion` - (Optional) Specifies the platform version for the task. Specify only the numeric portion of the platform version, such as 1.1.0. This is used only if LaunchType is FARGATE. For more information about valid platform versions, see [AWS Fargate Platform Versions](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html).
+
+`TaskCount` - (Optional) The number of tasks to create based on the TaskDefinition. The default is 1.
+
+`TaskDefinitionArn` - (Required) The ARN of the task definition to use if the event target is an Amazon ECS cluster.
+
 ### NetworkConfiguration Properties
 
 `Subnets` - (Required) The subnets associated with the task or service.
@@ -46,39 +66,19 @@ Provides a CloudWatch Event Target resource.
 
 `JobAttempts` - (Optional) The number of times to attempt to retry, if the job fails. Valid values are 1 to 10.
 
-### RunCommandTargets Properties
-
-`Key` - (Required) Can be either `tag:tag-key` or `InstanceIds`.
-
-`Values` - (Required) If Key is `tag:tag-key`, Values is a list of tag values. If Key is `InstanceIds`, Values is a list of Amazon EC2 instance IDs.
-
 ### KinesisTarget Properties
 
 `PartitionKeyPath` - (Optional) The JSON path to be extracted from the event and used as the partition key.
+
+### SqsTarget Properties
+
+`MessageGroupId` - (Optional) The FIFO message group ID to use as the target.
 
 ### InputTransformer Properties
 
 `InputPaths` - (Optional) Key value pairs specified in the form of JSONPath (for example, time = $.time).
 
 `InputTemplate` - (Required) Structure containing the template body.
-
-### EcsTarget Properties
-
-`Group` - (Optional) Specifies an ECS task group for the task. The maximum length is 255 characters.
-
-`LaunchType` - (Optional) Specifies the launch type on which your task is running. The launch type that you specify here must match one of the launch type (compatibilities) of the target task. Valid values are EC2 or FARGATE.
-
-`NetworkConfiguration` - (Optional) Use this if the ECS task uses the awsvpc network mode. This specifies the VPC subnets and security groups associated with the task, and whether a public IP address is to be used. Required if launch_type is FARGATE because the awsvpc mode is required for Fargate tasks.
-
-`PlatformVersion` - (Optional) Specifies the platform version for the task. Specify only the numeric portion of the platform version, such as 1.1.0. This is used only if LaunchType is FARGATE. For more information about valid platform versions, see [AWS Fargate Platform Versions](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html).
-
-`TaskCount` - (Optional) The number of tasks to create based on the TaskDefinition. The default is 1.
-
-`TaskDefinitionArn` - (Required) The ARN of the task definition to use if the event target is an Amazon ECS cluster.
-
-### SqsTarget Properties
-
-`MessageGroupId` - (Optional) The FIFO message group ID to use as the target.
 
 
 ## See Also

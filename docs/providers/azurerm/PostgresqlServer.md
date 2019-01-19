@@ -4,6 +4,8 @@ Manage a PostgreSQL Server.
 
 ## Properties
 
+`Name` - (Required) Specifies the name of the PostgreSQL Server. Changing this forces a new resource to be created.
+
 `ResourceGroupName` - (Required) The name of the resource group in which to create the PostgreSQL Server. Changing this forces a new resource to be created.
 
 `Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
@@ -22,14 +24,6 @@ Manage a PostgreSQL Server.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
-### StorageProfile Properties
-
-`StorageMb` - (Required) Max storage allowed for a server. Possible values are between `5120` MB(5GB) and `1048576` MB(1TB) for the Basic SKU and between `5120` MB(5GB) and `4194304` MB(4TB) for General Purpose/Memory Optimized SKUs. For more information see the [product documentation](https://docs.microsoft.com/en-us/rest/api/postgresql/servers/create#StorageProfile).
-
-`BackupRetentionDays` - (Optional) Backup retention days for the server, supported values are between `7` and `35` days.
-
-`GeoRedundantBackup` - (Optional) Enable Geo-redundant or not for server backup. Valid values for this property are `Enabled` or `Disabled`, not supported for the `basic` tier.
-
 ### Sku Properties
 
 `Name` - (Required) Specifies the SKU Name for this PostgreSQL Server. The name of the SKU, follows the `Tier` + `Family` + `cores` pattern (e.g. B_Gen4_1, GP_Gen5_8). For more information see the [product documentation](https://docs.microsoft.com/en-us/rest/api/postgresql/servers/create#sku).
@@ -39,6 +33,14 @@ Manage a PostgreSQL Server.
 `Tier` - (Required) The tier of the particular SKU. Possible values are `Basic`, `GeneralPurpose`, and `MemoryOptimized`. For more information see the [product documentation](https://docs.microsoft.com/en-us/azure/postgresql/concepts-pricing-tiers).
 
 `Family` - (Required) The `Family` of hardware `Gen4` or `Gen5`, before selecting your `Family` check the [product documentation](https://docs.microsoft.com/en-us/azure/postgresql/concepts-pricing-tiers#compute-generations-vcores-and-memory) for availability in your region.
+
+### StorageProfile Properties
+
+`StorageMb` - (Required) Max storage allowed for a server. Possible values are between `5120` MB(5GB) and `1048576` MB(1TB) for the Basic SKU and between `5120` MB(5GB) and `4194304` MB(4TB) for General Purpose/Memory Optimized SKUs. For more information see the [product documentation](https://docs.microsoft.com/en-us/rest/api/postgresql/servers/create#StorageProfile).
+
+`BackupRetentionDays` - (Optional) Backup retention days for the server, supported values are between `7` and `35` days.
+
+`GeoRedundantBackup` - (Optional) Enable Geo-redundant or not for server backup. Valid values for this property are `Enabled` or `Disabled`, not supported for the `basic` tier.
 
 
 ## Return Values

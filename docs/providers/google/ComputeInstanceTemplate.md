@@ -43,50 +43,6 @@ and
 
 `MinCpuPlatform` - (Optional) Specifies a minimum CPU platform. Applicable values are the friendly names of CPU platforms, such as `Intel Haswell` or `Intel Skylake`. See the complete list [here](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform).
 
-### ServiceAccount Properties
-
-`Email` - (Optional) The service account e-mail address. If not given, the default Google Compute Engine service account is used.
-
-`Scopes` - (Required) A list of service scopes. Both OAuth2 URLs and gcloud short names are supported. To allow full access to all Cloud APIs, use the `cloud-platform` scope. See a complete list of scopes [here](https://cloud.google.com/sdk/gcloud/reference/alpha/compute/instances/set-scopes#--scopes).
-
-### AliasIpRange Properties
-
-`IpCidrRange` - The IP CIDR range represented by this alias IP range. This IP CIDR range must belong to the specified subnetwork and cannot contain IP addresses reserved by system or used by other network interfaces. At the time of writing only a netmask (e.g. /24) may be supplied, with a CIDR format resulting in an API error.
-
-`SubnetworkRangeName` - (Optional) The subnetwork secondary range name specifying the secondary range from which to allocate the IP CIDR range for this alias IP range. If left unspecified, the primary range of the subnetwork will be used.
-
-### NetworkInterface Properties
-
-`Network` - (Optional) The name or self_link of the network to attach this interface to. Use `Network` attribute for Legacy or Auto subnetted networks and `Subnetwork` for custom subnetted networks.
-
-`Subnetwork` - (Optional) the name of the subnetwork to attach this interface to. The subnetwork must exist in the same `Region` this instance will be created in. Either `Network` or `Subnetwork` must be provided.
-
-`SubnetworkProject` - (Optional) The ID of the project in which the subnetwork belongs. If it is not provided, the provider project is used.
-
-`NetworkIp` - (Optional) The private IP address to assign to the instance. If empty, the address will be automatically assigned.
-
-`AccessConfig` - (Optional) Access configurations, i.e. IPs via which this instance can be accessed via the Internet. Omit to ensure that the instance is not accessible from the Internet (this means that ssh provisioners will not work unless you are running Terraform can send traffic to the instance's network (e.g. via tunnel or because it is running on another cloud instance on that network). This block can be repeated multiple times. Structure documented below.
-
-`AliasIpRange` - (Optional) An array of alias IP ranges for this network interface. Can only be specified for network interfaces on subnet-mode networks. Structure documented below.
-
-### DiskEncryptionKey Properties
-
-`KmsKeySelfLink` - (Optional) The self link of the encryption key that is stored in Google Cloud KMS.
-
-### AccessConfig Properties
-
-`NatIp` - (Optional) The IP address that will be 1:1 mapped to the instance's network ip. If not given, one will be generated.
-
-`NetworkTier` - (Optional) The [networking tier][network-tier] used for configuring this instance template. This field can take the following values: PREMIUM or STANDARD. If this field is not specified, it is assumed to be PREMIUM.
-
-### Scheduling Properties
-
-`AutomaticRestart` - (Optional) Specifies whether the instance should be automatically restarted if it is terminated by Compute Engine (not terminated by a user). This defaults to true.
-
-`OnHostMaintenance` - (Optional) Defines the maintenance behavior for this instance.
-
-`Preemptible` - (Optional) Allows instance to be preempted. This defaults to false. Read more on this [here](https://cloud.google.com/compute/docs/instances/preemptible).
-
 ### Disk Properties
 
 `AutoDelete` - (Optional) Whether or not the disk should be auto-deleted. This defaults to true.
@@ -112,6 +68,50 @@ and
 `Type` - (Optional) The type of GCE disk, can be either `"SCRATCH"` or `"PERSISTENT"`.
 
 `DiskEncryptionKey` - (Optional) Encrypts or decrypts a disk using a customer-supplied encryption key.
+
+### DiskEncryptionKey Properties
+
+`KmsKeySelfLink` - (Optional) The self link of the encryption key that is stored in Google Cloud KMS.
+
+### NetworkInterface Properties
+
+`Network` - (Optional) The name or self_link of the network to attach this interface to. Use `Network` attribute for Legacy or Auto subnetted networks and `Subnetwork` for custom subnetted networks.
+
+`Subnetwork` - (Optional) the name of the subnetwork to attach this interface to. The subnetwork must exist in the same `Region` this instance will be created in. Either `Network` or `Subnetwork` must be provided.
+
+`SubnetworkProject` - (Optional) The ID of the project in which the subnetwork belongs. If it is not provided, the provider project is used.
+
+`NetworkIp` - (Optional) The private IP address to assign to the instance. If empty, the address will be automatically assigned.
+
+`AccessConfig` - (Optional) Access configurations, i.e. IPs via which this instance can be accessed via the Internet. Omit to ensure that the instance is not accessible from the Internet (this means that ssh provisioners will not work unless you are running Terraform can send traffic to the instance's network (e.g. via tunnel or because it is running on another cloud instance on that network). This block can be repeated multiple times. Structure documented below.
+
+`AliasIpRange` - (Optional) An array of alias IP ranges for this network interface. Can only be specified for network interfaces on subnet-mode networks. Structure documented below.
+
+### AccessConfig Properties
+
+`NatIp` - (Optional) The IP address that will be 1:1 mapped to the instance's network ip. If not given, one will be generated.
+
+`NetworkTier` - (Optional) The [networking tier][network-tier] used for configuring this instance template. This field can take the following values: PREMIUM or STANDARD. If this field is not specified, it is assumed to be PREMIUM.
+
+### AliasIpRange Properties
+
+`IpCidrRange` - The IP CIDR range represented by this alias IP range. This IP CIDR range must belong to the specified subnetwork and cannot contain IP addresses reserved by system or used by other network interfaces. At the time of writing only a netmask (e.g. /24) may be supplied, with a CIDR format resulting in an API error.
+
+`SubnetworkRangeName` - (Optional) The subnetwork secondary range name specifying the secondary range from which to allocate the IP CIDR range for this alias IP range. If left unspecified, the primary range of the subnetwork will be used.
+
+### ServiceAccount Properties
+
+`Email` - (Optional) The service account e-mail address. If not given, the default Google Compute Engine service account is used.
+
+`Scopes` - (Required) A list of service scopes. Both OAuth2 URLs and gcloud short names are supported. To allow full access to all Cloud APIs, use the `cloud-platform` scope. See a complete list of scopes [here](https://cloud.google.com/sdk/gcloud/reference/alpha/compute/instances/set-scopes#--scopes).
+
+### Scheduling Properties
+
+`AutomaticRestart` - (Optional) Specifies whether the instance should be automatically restarted if it is terminated by Compute Engine (not terminated by a user). This defaults to true.
+
+`OnHostMaintenance` - (Optional) Defines the maintenance behavior for this instance.
+
+`Preemptible` - (Optional) Allows instance to be preempted. This defaults to false. Read more on this [here](https://cloud.google.com/compute/docs/instances/preemptible).
 
 
 ## Return Values

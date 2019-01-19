@@ -22,11 +22,13 @@ or [dynamic](https://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/as-sc
 
 `Cooldown` - (Optional) The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
 
-`ScalingAdjustment` - (Required) The number of members by which to scale, when the adjustment bounds are breached. A positive value scales up. A negative value scales down.
+`ScalingAdjustment` - (Optional) The number of instances by which to scale. `AdjustmentType` determines the interpretation of this number (e.g., as an absolute number or as a percentage of the existing Auto Scaling group size). A positive increment adds to the current capacity and a negative value removes from the current capacity.
 
 `MetricAggregationType` - (Optional) The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
 
 `StepAdjustments` - (Optional) A set of adjustments that manage group scaling. These have the following structure:.
+
+`ScalingAdjustment` - (Required) The number of members by which to scale, when the adjustment bounds are breached. A positive value scales up. A negative value scales down.
 
 `MetricIntervalLowerBound` - (Optional) The lower bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS will treat this bound as infinity.
 

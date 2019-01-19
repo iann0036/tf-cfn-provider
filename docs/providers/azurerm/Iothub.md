@@ -4,6 +4,8 @@ Manages an IotHub
 
 ## Properties
 
+`Name` - (Required) Specifies the name of the IotHub resource. Changing this forces a new resource to be created.
+
 `ResourceGroupName` - (Required) The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.
 
 `Location` - (Required) Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.
@@ -16,11 +18,21 @@ Manages an IotHub
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
+### Sku Properties
+
+`Name` - (Required) The name of the sku. Possible values are `B1`, `B2`, `B3`, `F1`, `S1`, `S2`, and `S3`.
+
+`Tier` - (Required) The billing tier for the IoT Hub. Possible values are `Basic`, `Free` or `Standard`.
+
+`Capacity` - (Required) The number of provisioned IoT Hub units.
+
 ### Endpoint Properties
 
 `Type` - (Required) The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
 
 `ConnectionString` - (Required) The connection string for the endpoint.
+
+`Name` - (Required) The name of the endpoint. The name must be unique across endpoint types. The following names are reserved:  `events`, `operationsMonitoringEvents`, `fileNotifications` and `$default`.
 
 `BatchFrequencyInSeconds` - (Optional) Time interval at which blobs are written to storage. Value should be between 60 and 720 seconds. Default value is 300 seconds. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
 
@@ -43,12 +55,6 @@ Manages an IotHub
 `EndpointNames` - (Required) The list of endpoints to which messages that satisfy the condition are routed.
 
 `Enabled` - (Required) Used to specify whether a route is enabled.
-
-### Sku Properties
-
-`Tier` - (Required) The billing tier for the IoT Hub. Possible values are `Basic`, `Free` or `Standard`.
-
-`Capacity` - (Required) The number of provisioned IoT Hub units.
 
 
 ## Return Values

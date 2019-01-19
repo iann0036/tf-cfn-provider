@@ -38,12 +38,6 @@ Manage a managed disk.
 
 `Zones` - (Optional) A collection containing the availability zone to allocate the Managed Disk in.
 
-### KeyEncryptionKey Properties
-
-`SourceVaultId` - (Required) The URL of the Key Vault. This can be found as `vault_uri` on the `Terraform::AzureRM::KeyVault` resource.
-
-`KeyUrl` - (Required) The URL to the Key Vault Key used as the Key Encryption Key. This can be found as `id` on the `Terraform::AzureRM::KeyVaultSecret` resource.
-
 ### EncryptionSettings Properties
 
 `Enabled` - (Required) Is Encryption enabled on this Managed Disk? Changing this forces a new resource to be created.
@@ -55,6 +49,14 @@ Manage a managed disk.
 ### DiskEncryptionKey Properties
 
 `SecretUrl` - (Required) The URL to the Key Vault Secret used as the Disk Encryption Key. This can be found as `id` on the `Terraform::AzureRM::KeyVaultSecret` resource.
+
+`SourceVaultId` - (Required) The URL of the Key Vault. This can be found as `vault_uri` on the `Terraform::AzureRM::KeyVault` resource.
+
+### KeyEncryptionKey Properties
+
+`KeyUrl` - (Required) The URL to the Key Vault Key used as the Key Encryption Key. This can be found as `id` on the `Terraform::AzureRM::KeyVaultSecret` resource.
+
+`SourceVaultId` - (Required) The URL of the Key Vault. This can be found as `vault_uri` on the `Terraform::AzureRM::KeyVault` resource.
 
 
 ## Return Values

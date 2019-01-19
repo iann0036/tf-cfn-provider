@@ -15,6 +15,8 @@ use a [Shared Environment](https://www.runscope.com/docs/api-testing/environment
 
 `TestId` - (Optional) The id of the test to associate this environment with. If given, creates a test specific environment, otherwise creates a shared environment.
 
+`Name` - (Required) The name of environment.
+
 `Script` - (Optional) The [script](https://www.runscope.com/docs/api-testing/scripts#initial-script) to to run to setup the environment.
 
 `PreserveCookies` - (Optional) If this is set to true, tests using this enviornment will manage cookies between steps.
@@ -27,15 +29,9 @@ use a [Shared Environment](https://www.runscope.com/docs/api-testing/environment
 
 `RemoteAgents` - (Optional) A list of [Remote Agents](https://www.runscope.com/docs/api/agents) to execute test runs in when using this environment. Remote Agents documented below.
 
-### Recipients Properties
-
-`Name` - (Optional) The name of the person.
-
-`Id` - (Optional) The unique identifier for this person's account.
-
-`Email` - (Optional) The email address for this account.
-
 ### RemoteAgents Properties
+
+`Name` - (Required) The name of the remote agent.
 
 `Uuid` - (Required) The uuid of the remote agent.
 
@@ -44,6 +40,14 @@ use a [Shared Environment](https://www.runscope.com/docs/api-testing/environment
 `NotifyAll` - (Required) Send an email to all team members according to the `NotifyOn` rules.
 
 `NotifyOn` - (Required) Upon completion of a test run Runscope will send email notifications, allowed values: `all`, `failures`, `threshold` or `switch`.
+
+### Recipients Properties
+
+`Name` - (Optional) The name of the person.
+
+`Id` - (Optional) The unique identifier for this person's account.
+
+`Email` - (Optional) The email address for this account.
 
 
 ## Return Values

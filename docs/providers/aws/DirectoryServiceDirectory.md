@@ -37,6 +37,10 @@ Provides a Simple or Managed Microsoft directory in AWS Directory Service.
 
 `CustomerDnsIps` - (Required) The DNS IP addresses of the domain to connect to.
 
+`SubnetIds` - (Required) The identifiers of the subnets for the directory servers (2 subnets in 2 different AZs).
+
+`VpcId` - (Required) The identifier of the VPC that the directory is in.
+
 
 ## Return Values
 

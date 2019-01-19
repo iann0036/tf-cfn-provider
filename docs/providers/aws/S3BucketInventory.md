@@ -4,6 +4,8 @@ Provides a S3 bucket [inventory configuration](https://docs.aws.amazon.com/Amazo
 
 ## Properties
 
+`Bucket` - (Required) The name of the bucket to put inventory configuration.
+
 `Name` - (Required) Unique identifier of the inventory configuration for the bucket.
 
 `IncludedObjectVersions` - (Required) Object filtering that accepts a prefix (documented below). Can be `All` or `Current`.
@@ -18,19 +20,13 @@ Provides a S3 bucket [inventory configuration](https://docs.aws.amazon.com/Amazo
 
 `OptionalFields` - (Optional) Contains the optional fields that are included in the inventory results.
 
-### Encryption Properties
+### Filter Properties
 
-`SseKms` - (Optional) Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).
-
-`SseS3` - (Optional) Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.
+`Prefix` - (Optional) Object prefix for filtering (singular).
 
 ### Schedule Properties
 
 `Frequency` - (Required) Specifies how frequently inventory results are produced. Can be `Daily` or `Weekly`.
-
-### SseKms Properties
-
-`KeyId` - (Required) The ARN of the KMS customer master key (CMK) used to encrypt the inventory file.
 
 ### Destination Properties
 
@@ -38,15 +34,25 @@ Provides a S3 bucket [inventory configuration](https://docs.aws.amazon.com/Amazo
 
 ### Bucket Properties
 
-`Prefix` - (Optional) The prefix that is prepended to all inventory results.
-
 `BucketArn` - (Required) The Amazon S3 bucket ARN of the destination.
 
 `Format` - (Required) Specifies the output format of the inventory results. Can be `CSV`, [`ORC`](https://orc.apache.org/) or [`Parquet`](https://parquet.apache.org/).
 
 `AccountId` - (Optional) The ID of the account that owns the destination bucket. Recommended to be set to prevent problems if the destination bucket ownership changes.
 
+`Prefix` - (Optional) The prefix that is prepended to all inventory results.
+
 `Encryption` - (Optional) Contains the type of server-side encryption to use to encrypt the inventory (documented below).
+
+### Encryption Properties
+
+`SseKms` - (Optional) Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).
+
+`SseS3` - (Optional) Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.
+
+### SseKms Properties
+
+`KeyId` - (Required) The ARN of the KMS customer master key (CMK) used to encrypt the inventory file.
 
 
 ## See Also

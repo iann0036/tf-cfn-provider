@@ -30,9 +30,9 @@ Use this resource to create, update or destroy RightScale [server arrays](http:/
 
 `Bounds` - (Required).
 
-`MinCount` - (Required) The minimum number of servers that must be operational at all times in the server array. NOTE: Any changes that are made to the min/max count in the server array schedule will overwrite the array's default min/max count settings.
+`MinCount` - (Required) The minimum number of servers that must be operational at all times in the server array.
 
-`MaxCount` - (Required) The maximum number of servers that must be operational at all times in the server array. NOTE: Any changes that are made to the min/max count in the server array schedule will overwrite the array's default min/max count settings.
+`MaxCount` - (Required) The maximum number of servers that can be operational at the same time in the server array.
 
 `Pacing` - (Required).
 
@@ -65,6 +65,10 @@ Use this resource to create, update or destroy RightScale [server arrays](http:/
 `Schedule` - (Optional).
 
 `Day` - (Required) Specifies the day when an alert-based array resizes. One of "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday".
+
+`MaxCount` - (Required) The maximum number of servers that must be operational at all times in the server array. NOTE: Any changes that are made to the min/max count in the server array schedule will overwrite the array's default min/max count settings.
+
+`MinCount` - (Required) The minimum number of servers that must be operational at all times in the server array. NOTE: Any changes that are made to the min/max count in the server array schedule will overwrite the array's default min/max count settings.
 
 `Time` - (Required) Specifies the time when an alert-based array resizes.
 

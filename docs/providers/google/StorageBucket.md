@@ -22,6 +22,8 @@ and
 
 `Project` - (Optional) The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
 
+`StorageClass` - (Optional) The [Storage Class](https://cloud.google.com/storage/docs/storage-classes) of the new bucket. Supported values include: `MULTI_REGIONAL`, `REGIONAL`, `NEARLINE`, `COLDLINE`.
+
 `LifecycleRule` - (Optional) The bucket's [Lifecycle Rules](https://cloud.google.com/storage/docs/lifecycle#configuration) configuration. Multiple blocks of this type are permitted. Structure is documented below.
 
 `Versioning` - (Optional) The bucket's [Versioning](https://cloud.google.com/storage/docs/object-versioning) configuration.
@@ -38,37 +40,17 @@ and
 
 `RequesterPays` - (Optional, Default: false) Enables [Requester Pays](https://cloud.google.com/storage/docs/requester-pays) on a storage bucket.
 
-### Cors Properties
-
-`Origin` - (Optional) The list of [Origins](https://tools.ietf.org/html/rfc6454) eligible to receive CORS response headers. Note: "*" is permitted in the list of origins, and means "any Origin".
-
-`Method` - (Optional) The list of HTTP methods on which to include CORS response headers, (GET, OPTIONS, POST, etc) Note: "*" is permitted in the list of methods, and means "any method".
-
-`ResponseHeader` - (Optional) The list of HTTP headers other than the [simple response headers](https://www.w3.org/TR/cors/#simple-response-header) to give permission for the user-agent to share across domains.
-
-`MaxAgeSeconds` - (Optional) The value, in seconds, to return in the [Access-Control-Max-Age header](https://www.w3.org/TR/cors/#access-control-max-age-response-header) used in preflight responses.
-
 ### LifecycleRule Properties
 
 `Action` - (Required) The Lifecycle Rule's action configuration. A single block of this type is supported. Structure is documented below.
 
 `Condition` - (Required) The Lifecycle Rule's condition configuration. A single block of this type is supported. Structure is documented below.
 
-### Versioning Properties
-
-`Enabled` - (Optional) While set to `true`, versioning is fully enabled for this bucket.
-
 ### Action Properties
-
-`StorageClass` - (Required if action type is `SetStorageClass`) The target [Storage Class](https://cloud.google.com/storage/docs/storage-classes) of objects affected by this Lifecycle Rule. Supported values include: `MULTI_REGIONAL`, `REGIONAL`, `NEARLINE`, `COLDLINE`.
 
 `Type` - The type of the action of this Lifecycle Rule. Supported values include: `Delete` and `SetStorageClass`.
 
-### Website Properties
-
-`MainPageSuffix` - (Optional) Behaves as the bucket's directory index where missing objects are treated as potential directories.
-
-`NotFoundPage` - (Optional) The custom object to return when a requested resource is not found.
+`StorageClass` - (Required if action type is `SetStorageClass`) The target [Storage Class](https://cloud.google.com/storage/docs/storage-classes) of objects affected by this Lifecycle Rule. Supported values include: `MULTI_REGIONAL`, `REGIONAL`, `NEARLINE`, `COLDLINE`.
 
 ### Condition Properties
 
@@ -81,6 +63,26 @@ and
 `MatchesStorageClass` - (Optional) [Storage Class](https://cloud.google.com/storage/docs/storage-classes) of objects to satisfy this condition. Supported values include: `MULTI_REGIONAL`, `REGIONAL`, `NEARLINE`, `COLDLINE`, `STANDARD`, `DURABLE_REDUCED_AVAILABILITY`.
 
 `NumNewerVersions` - (Optional) Relevant only for versioned objects. The number of newer versions of an object to satisfy this condition.
+
+### Versioning Properties
+
+`Enabled` - (Optional) While set to `true`, versioning is fully enabled for this bucket.
+
+### Website Properties
+
+`MainPageSuffix` - (Optional) Behaves as the bucket's directory index where missing objects are treated as potential directories.
+
+`NotFoundPage` - (Optional) The custom object to return when a requested resource is not found.
+
+### Cors Properties
+
+`Origin` - (Optional) The list of [Origins](https://tools.ietf.org/html/rfc6454) eligible to receive CORS response headers. Note: "*" is permitted in the list of origins, and means "any Origin".
+
+`Method` - (Optional) The list of HTTP methods on which to include CORS response headers, (GET, OPTIONS, POST, etc) Note: "*" is permitted in the list of methods, and means "any method".
+
+`ResponseHeader` - (Optional) The list of HTTP headers other than the [simple response headers](https://www.w3.org/TR/cors/#simple-response-header) to give permission for the user-agent to share across domains.
+
+`MaxAgeSeconds` - (Optional) The value, in seconds, to return in the [Access-Control-Max-Age header](https://www.w3.org/TR/cors/#access-control-max-age-response-header) used in preflight responses.
 
 ### Logging Properties
 

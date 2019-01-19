@@ -46,9 +46,13 @@ The `Terraform::OraclePaaS::DatabaseServiceInstance` resource creates and manage
 
 `Standby` - (Optional) Specifies the configuration details of the standby database. This is only applicable in Oracle Cloud Infrastructure Regions. `FailoverDatabase` and `DisasterRecovery` inside the `DatabaseConfiguration` block must be set to `true`. Standby is documented below.
 
+`Subnet` - (Optional) Name of the subnet within the region where the Oracle Database Cloud Service instance is to be provisioned.
+
 `AdminPassword` - (Required) Password for Oracle Database administrator users sys and system. The password must meet the following requirements: Starts with a letter. Is between 8 and 30 characters long. Contains letters, at least one number, and optionally, any number of these special characters: dollar sign `$`, pound sign `#`, and underscore `_`.
 
 `UsableStorage` - (Required) Storage size for data (in GB). Minimum value is `15`. Maximum value depends on the backup destination: if `BOTH` is specified, the maximum value is `1200`; if `OSS` or `NONE` is specified, the maximum value is `2048`.
+
+`AvailabilityDomain` - (Optional) Name of the availability domain within the region where the Oracle Database Cloud Service instance is to be provisioned.
 
 `BackupDestination` - (Optional) Backup Destination. Possible values are `BOTH`, `OSS`, `NONE`.This defaults to `NONE`.
 
@@ -57,10 +61,6 @@ The `Terraform::OraclePaaS::DatabaseServiceInstance` resource creates and manage
 `CharacterSet` - (Optional) Character Set for the Database Cloud Service Instance. Default value is `AL32UTF8`. Supported values are:.
 
 ### CharacterSet Properties
-
-`Subnet` - (Required) Name of the subnet within the region where the standby database of the Oracle Database Cloud Service instance is to be provisioned.
-
-`AvailabilityDomain` - (Required) Name of the availability domain within the region where the standby database of the Oracle Database Cloud Service instance is to be provisioned.
 
 `DataStorageVolumeSize` - (Optional) The size (in GB) for the data storage volume.
 
@@ -108,11 +108,15 @@ The `Terraform::OraclePaaS::DatabaseServiceInstance` resource creates and manage
 
 `EnableRacOns` - (Optional) Indicates whether to enable the rac ons access rule. This is only configurable with a RAC instance.
 
-`CloudStorageContainer` - (Required) Name of the Oracle Storage Cloud Service container where the backup from on-premise instance is stored. Use the following format to specify the container name: `<storageservicename>-<storageidentitydomain>/<containername>`.
+`AvailabilityDomain` - (Required) Name of the availability domain within the region where the standby database of the Oracle Database Cloud Service instance is to be provisioned.
 
-`CloudStorageUsername` - (Required) Username for the Oracle Storage Cloud Service administrator.
+`Subnet` - (Required) Name of the subnet within the region where the standby database of the Oracle Database Cloud Service instance is to be provisioned.
 
-`CloudStoragePassword` - (Required) Password for the Oracle Storage Cloud Service administrator.
+`CloudStorageContainer` - (Required) Name of the Oracle Storage Cloud Service container where the existing cloud backup is stored.
+
+`CloudStorageUsername` - (Required) Username of the Oracle Cloud user.
+
+`CloudStoragePassword` - (Required) Password of the Oracle Cloud user specified in `ibkup_cloud_storage_user`.
 
 `DatabaseId` - (Required) Database id of the database from which the existing cloud backup was created.
 
@@ -124,7 +128,19 @@ The `Terraform::OraclePaaS::DatabaseServiceInstance` resource creates and manage
 
 `WalletFileContent` - (Optional) String containing the xsd:base64Binary representation of the cloud backup's wallet file. This wallet is used to decrypt the backup. Specify either `ibkup_decryption_key` or `ibkup_wallet_file_content` for decrypting the backup.
 
+`CloudStorageContainer` - (Required) Name of the Oracle Storage Cloud Service container used to provide storage for your service instance backups. Use the following format to specify the container name: `<storageservicename>-<storageidentitydomain>/<containername>`.
+
+`CloudStorageUsername` - (Required) Username for the Oracle Storage Cloud Service administrator.
+
+`CloudStoragePassword` - (Required) Password for the Oracle Storage Cloud Service administrator.
+
 `CreateIfMissing` - (Optional) Specify if the given cloud_storage_container is to be created if it does not already exist. Default value is `false`.
+
+`CloudStorageContainer` - (Required) Name of the Oracle Storage Cloud Service container where the backup from on-premise instance is stored. Use the following format to specify the container name: `<storageservicename>-<storageidentitydomain>/<containername>`.
+
+`CloudStorageUsername` - (Required) Username for the Oracle Storage Cloud Service administrator.
+
+`CloudStoragePassword` - (Required) Password for the Oracle Storage Cloud Service administrator.
 
 `ComputeSiteName` - The Oracle Cloud location housing the service instance.
 

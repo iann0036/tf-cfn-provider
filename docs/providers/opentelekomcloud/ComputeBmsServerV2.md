@@ -6,6 +6,8 @@ Manages a BMS Server resource within OpenTelekomCloud.
 
 `Region` - (Optional) The region in which to create the bms server instance. If omitted, the `Region` argument of the provider is used. Changing this creates a new bms server.
 
+`Name` - (Required) The name of the BMS.
+
 `ImageId` - (Optional; Required if `ImageName` is empty.) Changing this creates a new bms server.
 
 `ImageName` - (Optional; Required if `ImageId` is empty.) The name of the desired image for the bms server. Changing this creates a new bms server.
@@ -32,9 +34,9 @@ Manages a BMS Server resource within OpenTelekomCloud.
 
 ### Network Properties
 
-`Name` - (Required unless `Uuid` or `Port` is provided) The human-readable name of the network. Changing this creates a new bms server.
-
 `Uuid` - (Required unless `Port`  or `Name` is provided) The network UUID to attach to the bms server. Changing this creates a new bms server.
+
+`Name` - (Required unless `Uuid` or `Port` is provided) The human-readable name of the network. Changing this creates a new bms server.
 
 `Port` - (Required unless `Uuid` or `Name` is provided) The port UUID of a network to attach to the bms server. Changing this creates a new server.
 

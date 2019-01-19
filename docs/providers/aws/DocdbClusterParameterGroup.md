@@ -4,7 +4,7 @@ Manages a DocumentDB Cluster Parameter Group
 
 ## Properties
 
-`Name` - (Required) The name of the documentDB parameter.
+`Name` - (Optional, Forces new resource) The name of the documentDB cluster parameter group. If omitted, Terraform will assign a random, unique name.
 
 `NamePrefix` - (Optional, Forces new resource) Creates a unique name beginning with the specified prefix. Conflicts with `Name`.
 
@@ -15,6 +15,8 @@ Manages a DocumentDB Cluster Parameter Group
 `Parameter` - (Optional) A list of documentDB parameters to apply.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
+
+`Name` - (Required) The name of the documentDB parameter.
 
 `Value` - (Required) The value of the documentDB parameter.
 

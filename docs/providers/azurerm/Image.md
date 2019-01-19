@@ -18,7 +18,11 @@ Manage a custom virtual machine image that can be used to create virtual machine
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
-### DataDisk Properties
+### OsDisk Properties
+
+`OsType` - (Required) Specifies the type of operating system contained in the the virtual machine image. Possible values are: Windows or Linux.
+
+`OsState` - (Required) Specifies the state of the operating system contained in the blob. Currently, the only value is Generalized.
 
 `ManagedDiskId` - (Optional) Specifies the ID of the managed disk resource that you want to use to create the image.
 
@@ -28,13 +32,17 @@ Manage a custom virtual machine image that can be used to create virtual machine
 
 `SizeGb` - (Optional) Specifies the size of the image to be created. The target size can't be smaller than the source size.
 
+### DataDisk Properties
+
 `Lun` - (Required) Specifies the logical unit number of the data disk.
 
-### OsDisk Properties
+`ManagedDiskId` - (Optional) Specifies the ID of the managed disk resource that you want to use to create the image.
 
-`OsType` - (Required) Specifies the type of operating system contained in the the virtual machine image. Possible values are: Windows or Linux.
+`BlobUri` - (Optional) Specifies the URI in Azure storage of the blob that you want to use to create the image.
 
-`OsState` - (Required) Specifies the state of the operating system contained in the blob. Currently, the only value is Generalized.
+`Caching` - (Optional) Specifies the caching mode as `ReadWrite`, `ReadOnly`, or `None`. The default is `None`.
+
+`SizeGb` - (Optional) Specifies the size of the image to be created. The target size can't be smaller than the source size.
 
 
 ## Return Values

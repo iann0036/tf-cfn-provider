@@ -6,7 +6,7 @@ Provides a DynamoDB table resource
 
 ## Properties
 
-`Name` - (Required) The name of the attribute * `Type` - (Required) Attribute type, which must be a scalar type: `S`, `N`, or `B` for (S)tring, (N)umber or (B)inary data.
+`Name` - (Required) The name of the table, this needs to be unique within a region.
 
 `BillingMode` - (Optional) Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
 
@@ -19,6 +19,8 @@ Provides a DynamoDB table resource
 `ReadCapacity` - (Optional) The number of read units for this table. If the `BillingMode` is `PROVISIONED`, this field is required.
 
 `Attribute` - (Required) List of nested attribute definitions. Only required for `HashKey` and `RangeKey` attributes. Each attribute has two properties: * `Name` - (Required) The name of the attribute * `Type` - (Required) Attribute type, which must be a scalar type: `S`, `N`, or `B` for (S)tring, (N)umber or (B)inary data.
+
+`Name` - (Required) The name of the attribute * `Type` - (Required) Attribute type, which must be a scalar type: `S`, `N`, or `B` for (S)tring, (N)umber or (B)inary data.
 
 `Type` - (Required) Attribute type, which must be a scalar type: `S`, `N`, or `B` for (S)tring, (N)umber or (B)inary data.
 

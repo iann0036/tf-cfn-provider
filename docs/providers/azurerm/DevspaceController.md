@@ -4,6 +4,8 @@ Manages a DevSpace Controller.
 
 ## Properties
 
+`Name` - (Required) Specifies the name of the DevSpace Controller. Changing this forces a new resource to be created.
+
 `ResourceGroupName` - (Required) The name of the resource group under which the DevSpace Controller resource has to be created. Changing this forces a new resource to be created.
 
 `Location` - (Required) Specifies the supported location where the DevSpace Controller should exist. Changing this forces a new resource to be created.

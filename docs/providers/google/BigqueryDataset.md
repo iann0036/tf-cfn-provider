@@ -6,7 +6,7 @@ Creates a dataset resource for Google BigQuery. For more information see
 
 ## Properties
 
-`DatasetId` - (Required) The ID of the dataset containing this table.
+`DatasetId` - (Required) A unique ID for the resource. Changing this forces a new resource to be created.
 
 `Project` - (Optional) The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
 
@@ -35,6 +35,8 @@ Creates a dataset resource for Google BigQuery. For more information see
 `UserByEmail` - (Optional) An email address of a user to grant access to.
 
 `View` - (Optional) A view from a different dataset to grant access to. Queries executed against that view will have read access to tables in this dataset. The role field is not required when this field is set. If that view is updated by any user, access to the view needs to be granted again via an update operation. Structure is documented below.
+
+`DatasetId` - (Required) The ID of the dataset containing this table.
 
 `ProjectId` - (Required) The ID of the project containing this table.
 

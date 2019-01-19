@@ -48,9 +48,15 @@ Provides an SES receipt rule resource
 
 `TopicArn` - (Optional) The ARN of an SNS topic to notify.
 
+`Position` - (Required) The position of the action in the receipt rule.
+
 `FunctionArn` - (Required) The ARN of the Lambda function to invoke.
 
 `InvocationType` - (Optional) Event or RequestResponse.
+
+`TopicArn` - (Optional) The ARN of an SNS topic to notify.
+
+`Position` - (Required) The position of the action in the receipt rule.
 
 `BucketName` - (Required) The name of the S3 bucket.
 
@@ -58,9 +64,25 @@ Provides an SES receipt rule resource
 
 `ObjectKeyPrefix` - (Optional) The key prefix of the S3 bucket.
 
+`TopicArn` - (Optional) The ARN of an SNS topic to notify.
+
+`Position` - (Required) The position of the action in the receipt rule.
+
+`TopicArn` - (Required) The ARN of an SNS topic to notify.
+
+`Position` - (Required) The position of the action in the receipt rule.
+
 `Scope` - (Required) The scope to apply.
 
+`TopicArn` - (Optional) The ARN of an SNS topic to notify.
+
+`Position` - (Required) The position of the action in the receipt rule.
+
 `OrganizationArn` - (Required) The ARN of the WorkMail organization.
+
+`TopicArn` - (Optional) The ARN of an SNS topic to notify.
+
+`Position` - (Required) The position of the action in the receipt rule.
 
 
 ## See Also

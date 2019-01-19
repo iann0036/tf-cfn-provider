@@ -4,6 +4,8 @@ Manages a Route Table
 
 ## Properties
 
+`Name` - (Required) The name of the route table. Changing this forces a new resource to be created.
+
 `ResourceGroupName` - (Required) The name of the resource group in which to create the route table. Changing this forces a new resource to be created.
 
 `Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.

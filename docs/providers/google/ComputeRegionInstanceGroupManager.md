@@ -11,7 +11,11 @@ and [API](https://cloud.google.com/compute/docs/reference/latest/regionInstanceG
 
 `BaseInstanceName` - (Required) The base instance name to use for instances in this group. The value must be a valid [RFC1035](https://www.ietf.org/rfc/rfc1035.txt) name. Supported characters are lowercase letters, numbers, and hyphens (-). Instances are named by appending a hyphen and a random four-character string to the base instance name.
 
+`InstanceTemplate` - (Optional) The full URL to an instance template from which all new instances will be created. This field is only present in the `google` provider.
+
 `Version` - (Optional, [Beta](https://terraform.io/docs/providers/google/provider_versions.html)) Application versions managed by this instance group. Each version deals with a specific instance template, allowing canary release scenarios. Structure is documented below.
+
+`Name` - (Required) The name of the instance group manager. Must be 1-63 characters long and comply with [RFC1035](https://www.ietf.org/rfc/rfc1035.txt). Supported characters include lowercase letters, numbers, and hyphens.
 
 `Region` - (Required) The region where the managed instance group resides.
 
@@ -20,6 +24,8 @@ and [API](https://cloud.google.com/compute/docs/reference/latest/regionInstanceG
 `NamedPort` - (Optional) The named port configuration. See the section below for details on configuration.
 
 `Project` - (Optional) The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
+
+`TargetSize` - (Optional) The target number of running instances for this managed instance group. This value should always be explicitly set unless this resource is attached to an autoscaler, in which case it should never be set. Defaults to `0`.
 
 `TargetPools` - (Optional) The full URL of all target pools to which new instances in the group are added. Updating the target pools attribute does not affect existing instances.
 
@@ -30,26 +36,6 @@ and [API](https://cloud.google.com/compute/docs/reference/latest/regionInstanceG
 `UpdatePolicy` - (Optional, [Beta](https://terraform.io/docs/providers/google/provider_versions.html)) The update policy for this managed instance group. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/updating-managed-instance-groups) and [API](https://cloud.google.com/compute/docs/reference/rest/beta/regionInstanceGroupManagers/patch).
 
 `DistributionPolicyZones` - (Optional) The distribution policy for this managed instance group. You can specify one or more values. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/distributing-instances-with-regional-instance-groups#selectingzones). - - -.
-
-### Version Properties
-
-`InstanceTemplate` - (Required) - The full URL to an instance template from which all new instances of this version will be created.
-
-`Name` - (Required) - Version name.
-
-`TargetSize` - (Optional) - The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
-
-### AutoHealingPolicies Properties
-
-`HealthCheck` - (Required) The health check resource that signals autohealing.
-
-`InitialDelaySec` - (Required) The number of seconds that the managed instance group waits before it applies autohealing policies to new instances or recently recreated instances. Between 0 and 3600.
-
-### TargetSize Properties
-
-`Fixed` - (Optional), The number of instances which are managed for this version. Conflicts with `Percent`.
-
-`Percent` - (Optional), The number of instances (calculated as percentage) which are managed for this version. Conflicts with `Fixed`. Note that when using `Percent`, rounding will be in favor of explicitly set `TargetSize` values; a managed instance group with 2 instances and 2 `Version`s, one of which has a `target_size.percent` of `60` will create 2 instances of that `Version`.
 
 ### UpdatePolicy Properties
 
@@ -67,7 +53,29 @@ and [API](https://cloud.google.com/compute/docs/reference/latest/regionInstanceG
 
 `MinReadySec` - (Optional), Minimum number of seconds to wait for after a newly created instance becomes available. This value must be from range [0, 3600] - - -.
 
+`Name` - (Required) The name of the port.
+
 `Port` - (Required) The port number. - - -.
+
+### AutoHealingPolicies Properties
+
+`HealthCheck` - (Required) The health check resource that signals autohealing.
+
+`InitialDelaySec` - (Required) The number of seconds that the managed instance group waits before it applies autohealing policies to new instances or recently recreated instances. Between 0 and 3600.
+
+### Version Properties
+
+`Name` - (Required) - Version name.
+
+`InstanceTemplate` - (Required) - The full URL to an instance template from which all new instances of this version will be created.
+
+`TargetSize` - (Optional) - The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.
+
+### TargetSize Properties
+
+`Fixed` - (Optional), The number of instances which are managed for this version. Conflicts with `Percent`.
+
+`Percent` - (Optional), The number of instances (calculated as percentage) which are managed for this version. Conflicts with `Fixed`. Note that when using `Percent`, rounding will be in favor of explicitly set `TargetSize` values; a managed instance group with 2 instances and 2 `Version`s, one of which has a `target_size.percent` of `60` will create 2 instances of that `Version`.
 
 
 ## Return Values

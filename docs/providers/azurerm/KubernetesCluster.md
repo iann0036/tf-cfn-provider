@@ -6,6 +6,8 @@ Manages a Managed Kubernetes Cluster (also known as AKS / Azure Kubernetes Servi
 
 ## Properties
 
+`Name` - (Required) The name of the Managed Kubernetes Cluster to create. Changing this forces a new resource to be created.
+
 `Location` - (Required) The location where the Managed Kubernetes Cluster should be created. Changing this forces a new resource to be created.
 
 `ResourceGroupName` - (Required) Specifies the Resource Group where the Managed Kubernetes Cluster should exist. Changing this forces a new resource to be created.
@@ -28,9 +30,13 @@ Manages a Managed Kubernetes Cluster (also known as AKS / Azure Kubernetes Servi
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
-### SshKey Properties
+### AddonProfile Properties
 
-`KeyData` - (Required) The Public SSH Key used to access the cluster. Changing this forces a new resource to be created.
+`AciConnectorLinux` - (Optional) A `AciConnectorLinux` block. For more details, please visit [Create and configure an AKS cluster to use virtual nodes](https://docs.microsoft.com/en-us/azure/aks/virtual-nodes-portal).
+
+`HttpApplicationRouting` - (Optional) A `HttpApplicationRouting` block.
+
+`OmsAgent` - (Optional) A `OmsAgent` block. For more details, please visit [How to onboard Azure Monitor for containers](https://docs.microsoft.com/en-us/azure/monitoring/monitoring-container-insights-onboard).
 
 ### AgentPoolProfile Properties
 
@@ -56,11 +62,11 @@ Manages a Managed Kubernetes Cluster (also known as AKS / Azure Kubernetes Servi
 
 `TenantId` - (Optional) The Tenant ID used for Azure Active Directory Application. If this isn't specified the Tenant ID of the current Subscription is used. Changing this forces a new resource to be created.
 
-### RoleBasedAccessControl Properties
+### LinuxProfile Properties
 
-`Enabled` - (Required) Is Role Based Access Control Enabled? Changing this forces a new resource to be created.
+`AdminUsername` - (Required) The Admin Username for the Cluster. Changing this forces a new resource to be created.
 
-`AzureActiveDirectory` - (Optional) An `AzureActiveDirectory` block. Changing this forces a new resource to be created.
+`SshKey` - (Required) One or more `SshKey` blocks. Changing this forces a new resource to be created.
 
 ### NetworkProfile Properties
 
@@ -74,9 +80,23 @@ Manages a Managed Kubernetes Cluster (also known as AKS / Azure Kubernetes Servi
 
 `ServiceCidr` - (Optional) The Network Range used by the Kubernetes service. This is required when `NetworkPlugin` is set to `kubenet`. Changing this forces a new resource to be created.
 
+### OmsAgent Properties
+
+`Enabled` - (Required) Is the OMS Agent Enabled?.
+
+`LogAnalyticsWorkspaceId` - (Required) The ID of the Log Analytics Workspace which the OMS Agent should send data to.
+
 ### AciConnectorLinux Properties
 
+`Enabled` - (Required) Is the virtual node addon enabled?.
+
 `SubnetName` - (Required) The subnet name for the virtual nodes to run.
+
+### RoleBasedAccessControl Properties
+
+`AzureActiveDirectory` - (Optional) An `AzureActiveDirectory` block. Changing this forces a new resource to be created.
+
+`Enabled` - (Required) Is Role Based Access Control Enabled? Changing this forces a new resource to be created.
 
 ### ServicePrincipal Properties
 
@@ -84,23 +104,9 @@ Manages a Managed Kubernetes Cluster (also known as AKS / Azure Kubernetes Servi
 
 `ClientSecret` - (Required) The Client Secret for the Service Principal. Changing this forces a new resource to be created.
 
-### LinuxProfile Properties
+### SshKey Properties
 
-`AdminUsername` - (Required) The Admin Username for the Cluster. Changing this forces a new resource to be created.
-
-`SshKey` - (Required) One or more `SshKey` blocks. Changing this forces a new resource to be created.
-
-### AddonProfile Properties
-
-`AciConnectorLinux` - (Optional) A `AciConnectorLinux` block. For more details, please visit [Create and configure an AKS cluster to use virtual nodes](https://docs.microsoft.com/en-us/azure/aks/virtual-nodes-portal).
-
-`HttpApplicationRouting` - (Optional) A `HttpApplicationRouting` block.
-
-`OmsAgent` - (Optional) A `OmsAgent` block. For more details, please visit [How to onboard Azure Monitor for containers](https://docs.microsoft.com/en-us/azure/monitoring/monitoring-container-insights-onboard).
-
-### OmsAgent Properties
-
-`LogAnalyticsWorkspaceId` - (Required) The ID of the Log Analytics Workspace which the OMS Agent should send data to.
+`KeyData` - (Required) The Public SSH Key used to access the cluster. Changing this forces a new resource to be created.
 
 
 ## Return Values

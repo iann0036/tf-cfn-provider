@@ -6,7 +6,7 @@ Provides an RDS DB cluster parameter group resource. Documentation of the availa
 
 ## Properties
 
-`Name` - (Required) The name of the DB parameter.
+`Name` - (Optional, Forces new resource) The name of the DB cluster parameter group. If omitted, Terraform will assign a random, unique name.
 
 `NamePrefix` - (Optional, Forces new resource) Creates a unique name beginning with the specified prefix. Conflicts with `Name`.
 
@@ -17,6 +17,8 @@ Provides an RDS DB cluster parameter group resource. Documentation of the availa
 `Parameter` - (Optional) A list of DB parameters to apply. Note that parameters may differ from a family to an other. Full list of all parameters can be discovered via [`aws rds describe-db-cluster-parameters`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-cluster-parameters.html) after initial creation of the group.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
+
+`Name` - (Required) The name of the DB parameter.
 
 `Value` - (Required) The value of the DB parameter.
 

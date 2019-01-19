@@ -4,6 +4,8 @@ Manages a Notification Hub Namespace.
 
 ## Properties
 
+`Name` - (Required) The name to use for this Notification Hub Namespace. Changing this forces a new resource to be created.
+
 `ResourceGroupName` - (Required) The name of the Resource Group in which the Notification Hub Namespace should exist. Changing this forces a new resource to be created.
 
 `Location` - (Required) The Azure Region in which this Notification Hub Namespace should be created.

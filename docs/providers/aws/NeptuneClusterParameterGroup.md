@@ -4,7 +4,7 @@ Manages a Neptune Cluster Parameter Group
 
 ## Properties
 
-`Name` - (Required) The name of the neptune parameter.
+`Name` - (Optional, Forces new resource) The name of the neptune cluster parameter group. If omitted, Terraform will assign a random, unique name.
 
 `NamePrefix` - (Optional, Forces new resource) Creates a unique name beginning with the specified prefix. Conflicts with `Name`.
 
@@ -15,6 +15,8 @@ Manages a Neptune Cluster Parameter Group
 `Parameter` - (Optional) A list of neptune parameters to apply.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
+
+`Name` - (Required) The name of the neptune parameter.
 
 `Value` - (Required) The value of the neptune parameter.
 

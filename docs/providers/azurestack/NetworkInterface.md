@@ -4,6 +4,8 @@ Manages a Network Interface located in a Virtual Network, usually attached to a 
 
 ## Properties
 
+`Name` - (Required) The name of the network interface. Changing this forces a new resource to be created.
+
 `ResourceGroupName` - (Required) The name of the resource group in which to create the network interface. Changing this forces a new resource to be created.
 
 `Location` - (Required) The location/region where the network interface is created. Changing this forces a new resource to be created.

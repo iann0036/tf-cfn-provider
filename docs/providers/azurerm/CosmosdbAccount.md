@@ -4,7 +4,11 @@ Manages a CosmosDB (formally DocumentDB) Account.
 
 ## Properties
 
+`Name` - (Required) Specifies the name of the CosmosDB Account. Changing this forces a new resource to be created.
+
 `ResourceGroupName` - (Required) The name of the resource group in which the CosmosDB Account is created. Changing this forces a new resource to be created.
+
+`Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
@@ -28,10 +32,6 @@ Manages a CosmosDB (formally DocumentDB) Account.
 
 `EnableMultipleWriteLocations` - (Optional) Enable multi-master support for this Cosmos DB account.
 
-### Capabilities Properties
-
-`Name` - (Required) The capability to enable - Possible values are `EnableTable`, `EnableCassandra`, and `EnableGremlin`.
-
 ### ConsistencyPolicy Properties
 
 `ConsistencyLevel` - (Required) The Consistency Level to use for this CosmosDB Account - can be either `BoundedStaleness`, `Eventual`, `Session`, `Strong` or `ConsistentPrefix`.
@@ -40,17 +40,21 @@ Manages a CosmosDB (formally DocumentDB) Account.
 
 `MaxStalenessPrefix` - (Optional) When used with the Bounded Staleness consistency level, this value represents the number of stale requests tolerated. Accepted range for this value is `10` – `2147483647`. Defaults to `100`. Required when `ConsistencyLevel` is set to `BoundedStaleness`.
 
-### VirtualNetworkRule Properties
-
-`Id` - (Required) The ID of the virtual network subnet.
-
 ### GeoLocation Properties
-
-`Location` - (Required) The name of the Azure region to host replicated data.
 
 `Prefix` - (Optional) The string used to generate the document endpoints for this region. If not specified it defaults to `${cosmosdb_account.name}-${location}`. Changing this causes the location to be deleted and re-provisioned and cannot be changed for the location with failover priority `0`.
 
+`Location` - (Required) The name of the Azure region to host replicated data.
+
 `FailoverPriority` - (Required) The failover priority of the region. A failover priority of `0` indicates a write region. The maximum value for a failover priority = (total number of regions - 1). Failover priority values must be unique for each of the regions in which the database account exists. Changing this causes the location to be re-provisioned and cannot be changed for the location with failover priority `0`.
+
+### Capabilities Properties
+
+`Name` - (Required) The capability to enable - Possible values are `EnableTable`, `EnableCassandra`, and `EnableGremlin`.
+
+### VirtualNetworkRule Properties
+
+`Id` - (Required) The ID of the virtual network subnet.
 
 
 ## Return Values

@@ -4,6 +4,8 @@ A [schedule](https://v2.developer.pagerduty.com/v2/page/api-reference#!/Schedule
 
 ## Properties
 
+`Name` - (Optional) The name of the schedule.
+
 `TimeZone` - (Required) The time zone of the schedule (e.g Europe/Berlin).
 
 `Description` - (Optional) The description of the schedule.

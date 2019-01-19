@@ -30,11 +30,17 @@ The ``Terraform::OPC::ComputeVpnEndpointV2`` resource creates and manages an VPN
 
 `Tags` - (Optional) List of tags that may be applied to the VPN Endpoint V2.
 
+`Encryption` - (Required) IKE Encryption. `aes128`, `aes192` or `aes256`.
+
+`Hash` - (Required) IKE Hash. `sha1`, `sha2_256` or `md5`.
+
+`DhGroup` - (Required) Diffie-Hellman group for both IKE and ESP. `group2`, `group5`, `group14`, `group22`, `group23`, or `group24`.
+
+`Lifetime` - (Optional) IKE Lifetime in seconds.
+
 `Encryption` - (Required) ESP Encryption.  `aes128`, `aes192` or `aes256`.
 
 `Hash` - (Required) ESP Hash. `sha1`, `sha2_256` or `md5`.
-
-`DhGroup` - (Required) Diffie-Hellman group for both IKE and ESP. `group2`, `group5`, `group14`, `group22`, `group23`, or `group24`.
 
 `Lifetime` - (Optional) IPSEC Lifetime in seconds.
 

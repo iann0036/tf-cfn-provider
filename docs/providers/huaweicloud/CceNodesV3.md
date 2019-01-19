@@ -52,6 +52,12 @@ Add a node to a container cluster.
 
 `ExtendParam` - (Optional) Disk expansion parameters.
 
+`Size` - (Required) Disk size in GB.
+
+`Volumetype` - (Required) Disk type.
+
+`ExtendParam` - (Optional) Disk expansion parameters.
+
 
 ## Return Values
 

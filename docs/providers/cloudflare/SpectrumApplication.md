@@ -22,6 +22,8 @@ Provides a Cloudflare Spectrum Application. You can extend the power of Cloudfla
 
 `Type` - (Requried) The type of DNS record associated with the application. Valid values: `CNAME`.
 
+`Name` - (Required) The name of the DNS record associated with the application.i.e. `ssh.example.com`.
+
 `Name` - (Required) Fully qualified domain name of the origin e.g. origin-ssh.example.com.
 
 

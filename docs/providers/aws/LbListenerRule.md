@@ -14,56 +14,6 @@ Provides a Load Balancer Listener Rule resource.
 
 `Condition` - (Required) A Condition block. Condition blocks are documented below.
 
-### AuthenticationRequestExtraParams Properties
-
-`Key` - (Required) The key of query parameter.
-
-`Value` - (Required) The value of query parameter.
-
-### AuthenticateCognito Properties
-
-`UserPoolArn` - (Required) The ARN of the Cognito user pool.
-
-`UserPoolClientId` - (Required) The ID of the Cognito user pool client.
-
-`UserPoolDomain` - (Required) The domain prefix or fully-qualified domain name of the Cognito user pool.
-
-### AuthenticateOidc Properties
-
-`AuthenticationRequestExtraParams` - (Optional) The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
-
-`OnUnauthenticatedRequest` - (Optional) The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`.
-
-`Scope` - (Optional) The set of user claims to be requested from the IdP.
-
-`SessionCookieName` - (Optional) The name of the cookie used to maintain session information.
-
-`SessionTimeout` - (Optional) The maximum duration of the authentication session, in seconds.
-
-`AuthorizationEndpoint` - (Required) The authorization endpoint of the IdP.
-
-`ClientId` - (Required) The OAuth 2.0 client identifier.
-
-`ClientSecret` - (Required) The OAuth 2.0 client secret.
-
-`Issuer` - (Required) The OIDC issuer identifier of the IdP.
-
-`TokenEndpoint` - (Required) The token endpoint of the IdP.
-
-`UserInfoEndpoint` - (Required) The user info endpoint of the IdP.
-
-### Redirect Properties
-
-`Host` - (Optional) The hostname. This component is not percent-encoded. The hostname can contain `#{host}`. Defaults to `#{host}`.
-
-`Path` - (Optional) The absolute path, starting with the leading "/". This component is not percent-encoded. The path can contain #{host}, #{path}, and #{port}. Defaults to `/#{path}`.
-
-`Port` - (Optional) The port. Specify a value from `1` to `65535` or `#{port}`. Defaults to `#{port}`.
-
-`Protocol` - (Optional) The protocol. Valid values are `HTTP`, `HTTPS`, or `#{protocol}`. Defaults to `#{protocol}`.
-
-`Query` - (Optional) The query parameters, URL-encoded when necessary, but not percent-encoded. Do not include the leading "?". Defaults to `#{query}`.
-
 ### Action Properties
 
 `Type` - (Required) The type of routing action. Valid values are `forward`, `Redirect`, `fixed-response`, `authenticate-cognito` and `authenticate-oidc`.
@@ -78,13 +28,75 @@ Provides a Load Balancer Listener Rule resource.
 
 `AuthenticateOidc` - (Optional) Information for creating an authenticate action using OIDC. Required if `Type` is `authenticate-oidc`.
 
-### FixedResponse Properties
+### Redirect Properties
 
-`StatusCode` - (Optional) The HTTP response code. Valid values are `2XX`, `4XX`, or `5XX`.
+`Host` - (Optional) The hostname. This component is not percent-encoded. The hostname can contain `#{host}`. Defaults to `#{host}`.
+
+`Path` - (Optional) The absolute path, starting with the leading "/". This component is not percent-encoded. The path can contain #{host}, #{path}, and #{port}. Defaults to `/#{path}`.
+
+`Port` - (Optional) The port. Specify a value from `1` to `65535` or `#{port}`. Defaults to `#{port}`.
+
+`Protocol` - (Optional) The protocol. Valid values are `HTTP`, `HTTPS`, or `#{protocol}`. Defaults to `#{protocol}`.
+
+`Query` - (Optional) The query parameters, URL-encoded when necessary, but not percent-encoded. Do not include the leading "?". Defaults to `#{query}`.
+
+`StatusCode` - (Required) The HTTP redirect code. The redirect is either permanent (`HTTP_301`) or temporary (`HTTP_302`).
+
+### FixedResponse Properties
 
 `ContentType` - (Required) The content type. Valid values are `text/plain`, `text/css`, `text/html`, `application/javascript` and `application/json`.
 
 `MessageBody` - (Optional) The message body.
+
+`StatusCode` - (Optional) The HTTP response code. Valid values are `2XX`, `4XX`, or `5XX`.
+
+### AuthenticateCognito Properties
+
+`AuthenticationRequestExtraParams` - (Optional) The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
+
+`OnUnauthenticatedRequest` - (Optional) The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`.
+
+`Scope` - (Optional) The set of user claims to be requested from the IdP.
+
+`SessionCookieName` - (Optional) The name of the cookie used to maintain session information.
+
+`SessionTimeout` - (Optional) The maximum duration of the authentication session, in seconds.
+
+`UserPoolArn` - (Required) The ARN of the Cognito user pool.
+
+`UserPoolClientId` - (Required) The ID of the Cognito user pool client.
+
+`UserPoolDomain` - (Required) The domain prefix or fully-qualified domain name of the Cognito user pool.
+
+### AuthenticateOidc Properties
+
+`AuthenticationRequestExtraParams` - (Optional) The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
+
+`AuthorizationEndpoint` - (Required) The authorization endpoint of the IdP.
+
+`ClientId` - (Required) The OAuth 2.0 client identifier.
+
+`ClientSecret` - (Required) The OAuth 2.0 client secret.
+
+`Issuer` - (Required) The OIDC issuer identifier of the IdP.
+
+`OnUnauthenticatedRequest` - (Optional) The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`.
+
+`Scope` - (Optional) The set of user claims to be requested from the IdP.
+
+`SessionCookieName` - (Optional) The name of the cookie used to maintain session information.
+
+`SessionTimeout` - (Optional) The maximum duration of the authentication session, in seconds.
+
+`TokenEndpoint` - (Required) The token endpoint of the IdP.
+
+`UserInfoEndpoint` - (Required) The user info endpoint of the IdP.
+
+### AuthenticationRequestExtraParams Properties
+
+`Key` - (Required) The key of query parameter.
+
+`Value` - (Required) The value of query parameter.
 
 ### Condition Properties
 

@@ -36,7 +36,7 @@ Manages an AWS Elasticsearch Domain.
 
 `Iops` - (Optional) The baseline input/output (I/O) performance of EBS volumes attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type.
 
-`Enabled` - (Optional, Default: false) Specifies whether Amazon Cognito authentication with Kibana is enabled or not.
+`Enabled` - (Required) Whether to enable encryption at rest. If the `EncryptAtRest` block is not provided then this defaults to `false`.
 
 `KmsKeyId` - (Optional) The KMS key id to encrypt the Elasticsearch domain with. If not specified then it defaults to using the `aws/es` service KMS key.
 
@@ -52,6 +52,8 @@ Manages an AWS Elasticsearch Domain.
 
 `ZoneAwarenessEnabled` - (Optional) Indicates whether zone awareness is enabled.
 
+`Enabled` - (Required) Whether to enable node-to-node encryption. If the `NodeToNodeEncryption` block is not provided then this defaults to `false`.
+
 `SecurityGroupIds` - (Optional) List of VPC Security Group IDs to be applied to the Elasticsearch domain endpoints. If omitted, the default Security Group for the VPC will be used.
 
 `SubnetIds` - (Required) List of VPC Subnet IDs for the Elasticsearch domain endpoints to be created in.
@@ -61,6 +63,10 @@ Manages an AWS Elasticsearch Domain.
 `LogType` - (Required) A type of Elasticsearch log. Valid values: INDEX_SLOW_LOGS, SEARCH_SLOW_LOGS, ES_APPLICATION_LOGS.
 
 `CloudwatchLogGroupArn` - (Required) ARN of the Cloudwatch log group to which log needs to be published.
+
+`Enabled` - (Optional, Default: true) Specifies whether given log publishing option is enabled or not.
+
+`Enabled` - (Optional, Default: false) Specifies whether Amazon Cognito authentication with Kibana is enabled or not.
 
 `UserPoolId` - (Required) ID of the Cognito User Pool to use.
 

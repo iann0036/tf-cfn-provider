@@ -32,6 +32,12 @@ Manages an Azure Batch pool.
 
 `ResizeTimeout` - (Optional) The timeout for resize operations. Defaults to `PT15M`.
 
+### AutoScale Properties
+
+`EvaluationInterval` - (Optional) The interval to wait before evaluating if the pool needs to be scaled. Defaults to `PT15M`.
+
+`Formula` - (Required) The autoscale formula that needs to be used for scaling the Batch pool.
+
 ### StartTask Properties
 
 `CommandLine` - (Required) The command line executed by the start task.
@@ -44,23 +50,17 @@ Manages an Azure Batch pool.
 
 `UserIdentity` - (Required) A `UserIdentity` block that describes the user identity under which the start task runs.
 
-### AutoUser Properties
-
-`ElevationLevel` - (Optional) The elevation level of the user identity under which the start task runs. Possible values are `Admin` or `NonAdmin`. Defaults to `NonAdmin`.
-
-`Scope` - (Optional) The scope of the user identity under which the start task runs. Possible values are `Task` or `Pool`. Defaults to `Task`.
-
 ### UserIdentity Properties
 
 `UserName` - (Optional) The username to be used by the Batch pool start task.
 
 `AutoUser` - (Optional) A `AutoUser` block that describes the user identity under which the start task runs.
 
-### AutoScale Properties
+### AutoUser Properties
 
-`EvaluationInterval` - (Optional) The interval to wait before evaluating if the pool needs to be scaled. Defaults to `PT15M`.
+`ElevationLevel` - (Optional) The elevation level of the user identity under which the start task runs. Possible values are `Admin` or `NonAdmin`. Defaults to `NonAdmin`.
 
-`Formula` - (Required) The autoscale formula that needs to be used for scaling the Batch pool.
+`Scope` - (Optional) The scope of the user identity under which the start task runs. Possible values are `Task` or `Pool`. Defaults to `Task`.
 
 
 ## Return Values

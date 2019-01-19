@@ -16,7 +16,7 @@
 
 `AlarmName` - (Required) The CloudWatch alarm name.
 
-`RoleArn` - (Required) The ARN of the IAM role that grants access.
+`RoleArn` - (Required) The IAM role ARN that allows access to the CloudWatch alarm.
 
 `StateReason` - (Required) The reason for the alarm change.
 
@@ -32,6 +32,8 @@
 
 `MetricValue` - (Required) The CloudWatch metric value.
 
+`RoleArn` - (Required) The IAM role ARN that allows access to the CloudWatch metric.
+
 `HashKeyField` - (Required) The hash key name.
 
 `HashKeyType` - (Optional) The hash key type. Valid values are "STRING" or "NUMBER".
@@ -46,6 +48,8 @@
 
 `RangeKeyValue` - (Optional) The range key value.
 
+`RoleArn` - (Required) The ARN of the IAM role that grants access to the DynamoDB table.
+
 `TableName` - (Required) The name of the DynamoDB table.
 
 `Endpoint` - (Required) The endpoint of your Elasticsearch domain.
@@ -54,17 +58,25 @@
 
 `Index` - (Required) The Elasticsearch index where you want to store your data.
 
+`RoleArn` - (Required) The IAM role ARN that has access to Elasticsearch.
+
 `Type` - (Required) The type of document you are storing.
 
 `DeliveryStreamName` - (Required) The delivery stream name.
+
+`RoleArn` - (Required) The IAM role ARN that grants access to the Amazon Kinesis Firehose stream.
 
 `Separator` - (Optional) A character separator that is used to separate records written to the Firehose stream. Valid values are: '\n' (newline), '\t' (tab), '\r\n' (Windows newline), ',' (comma).
 
 `PartitionKey` - (Optional) The partition key.
 
+`RoleArn` - (Required) The ARN of the IAM role that grants access to the Amazon Kinesis stream.
+
 `StreamName` - (Required) The name of the Amazon Kinesis stream.
 
 `FunctionArn` - (Required) The ARN of the Lambda function.
+
+`RoleArn` - (Required) The ARN of the IAM role that grants access.
 
 `Topic` - (Required) The name of the MQTT topic the message should be republished to.
 
@@ -72,11 +84,17 @@
 
 `Key` - (Required) The object key.
 
+`RoleArn` - (Required) The ARN of the IAM role that grants access.
+
 `MessageFormat` - (Required) The message format of the message to publish. Accepted values are "JSON" and "RAW".
+
+`RoleArn` - (Required) The ARN of the IAM role that grants access.
 
 `TargetArn` - (Required) The ARN of the SNS topic.
 
 `QueueUrl` - (Required) The URL of the Amazon SQS queue.
+
+`RoleArn` - (Required) The ARN of the IAM role that grants access.
 
 `UseBase64` - (Required) Specifies whether to use Base64 encoding.
 

@@ -14,7 +14,7 @@ Provides an UltraDNS Traffic Controller pool resource.
 
 `Ttl` - (Optional) The TTL of the record. Default: `3600`.
 
-`RunProbes` - (Optional) Whether probes are run for this pool record. Boolean. Default: `true`.
+`RunProbes` - (Optional) Boolean to run probes for this pool. Default: `true`.
 
 `ActOnProbes` - (Optional) Boolean to enable and disable pool records when probes are run. Default: `true`.
 
@@ -29,6 +29,8 @@ Provides an UltraDNS Traffic Controller pool resource.
 `FailoverDelay` - (Optional) Time in minutes that Traffic Controller waits after detecting that the pool record has failed before activating secondary records. `0` will activate the secondary records immediately. Integer. Range: `0` - `30`. Default: `0`.
 
 `Priority` - (Optional) Indicates the serving preference for this pool record. Valid values are integers `1` or greater. Default: `1`.
+
+`RunProbes` - (Optional) Whether probes are run for this pool record. Boolean. Default: `true`.
 
 `State` - (Optional) Current state of the pool record. String. Must be one of `"NORMAL"`, `"ACTIVE"`, or `"INACTIVE"`. Default: `"NORMAL"`.
 

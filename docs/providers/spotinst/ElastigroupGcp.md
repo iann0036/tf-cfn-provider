@@ -4,7 +4,7 @@ Provides a Spotinst elastigroup GCP resource.
 
 ## Properties
 
-`Name` - (Optional) Name of this access configuration.
+`Name` - (Required) The group name.
 
 `Description` - (Optional) The region your GCP group will be created in.
 
@@ -46,7 +46,7 @@ Provides a Spotinst elastigroup GCP resource.
 
 `Gpu` - (Optional) Defines the GPU configuration.
 
-`Type` - (Optional) Type of scaling action to take when the scaling policy is triggered. Valid values: "adjustment", "setMinTarget", "updateCapacity", "percentageAdjustment".
+`Type` - (Required) The type of GPU instance. Valid values: `nvidia-tesla-v100`, `nvidia-tesla-p100`, `nvidia-tesla-k80`.
 
 `Count` - (Required) The number of GPUs. Must be 0, 2, 4, 6, 8.
 
@@ -57,6 +57,10 @@ Provides a Spotinst elastigroup GCP resource.
 `Network` - (Required) Network resource for this group.
 
 `AccessConfigs` - (Optional) Array of configurations.
+
+`Name` - (Optional) Name of this access configuration.
+
+`Type` - (Optional) Array of configurations for this interface. Currently, only ONE_TO_ONE_NAT is supported.
 
 `Tags` - (Optional) Tags to mark created instances.
 
@@ -72,11 +76,15 @@ Provides a Spotinst elastigroup GCP resource.
 
 `Metadata` - (Optional) Array of objects with key-value pairs.
 
+`Key` - (Optional) Metadata key.
+
+`Value` - (Optional) Metadata value.
+
+`Labels` - (Optional) Array of objects with key-value pairs.
+
 `Key` - (Optional) Labels key.
 
 `Value` - (Optional) Labels value.
-
-`Labels` - (Optional) Array of objects with key-value pairs.
 
 `Disks` - (Optional) Array of disks associated with this instance. Persistent disks must be created before you can assign them.
 
@@ -91,6 +99,8 @@ Provides a Spotinst elastigroup GCP resource.
 `Mode` - (Optional, Default: `READ_WRITE`) The mode in which to attach this disk, either READ_WRITE or READ_ONLY.
 
 `Source` - (Optional) Specifies a valid partial or full URL to an existing Persistent Disk resource. This field is only applicable for persistent disks.
+
+`Type` - (Optional, Default: `PERSISTENT`) Specifies the type of disk, either SCRATCH or PERSISTENT.
 
 `InitializeParams` - (Optional) Specifies the parameters for a new disk that will be created alongside the new instance. Use initialization parameters to create boot disks or local SSDs attached to the new instance.
 
@@ -121,6 +131,8 @@ Provides a Spotinst elastigroup GCP resource.
 `Operator` - (Optional) The operator used to evaluate the threshold against the current metric value. Valid values: "gt" (greater than), "get" (greater-than or equal), "lt" (less than), "lte" (less than or equal).
 
 `Action` - (Optional) Scaling action to take when the policy is triggered.
+
+`Type` - (Optional) Type of scaling action to take when the scaling policy is triggered. Valid values: "adjustment", "setMinTarget", "updateCapacity", "percentageAdjustment".
 
 `Adjustment` - (Optional) Value to which the action type will be adjusted. Required if using "numeric" or "percentageAdjustment" action types.
 

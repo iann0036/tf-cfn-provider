@@ -18,18 +18,6 @@ Manages mls instance resource within FlexibleEngine
 
 `MrsCluster` - (Required) Specifies the MRS cluster information which the instance is associated. The structure is described below. NOTE: The current MRS instance requires an MRS cluster whose version is 1.3.0 and that is configured with the Spark component. MRS clusters whose version is not 1.3.0 or that are not configured with the Spark component cannot be selected. Changing this creates a new instance.
 
-### PublicIp Properties
-
-`BindType` - (Required) Specifies the bind type. Possible values: `auto_assign` and `not_use`. Changing this creates a new instance.
-
-### MrsCluster Properties
-
-`Id` - (Required) Specifies the ID of the MRS cluster. Changing this creates a new instance.
-
-`UserName` - (Optional) Specifies the MRS cluster username. This parameter is mandatory only when the MRS cluster is in the security mode. Changing this creates a new instance.
-
-`UserPassword` - (Optional) Specifies the password of the MRS cluster user. The password and username work in a pair. Changing this creates a new instance.
-
 ### Network Properties
 
 `VpcId` - (Required) Specifies the ID of the virtual private cloud (VPC) where the instance resides. Changing this creates a new instance.
@@ -41,6 +29,18 @@ Manages mls instance resource within FlexibleEngine
 `AvailableZone` - (Required) Specifies the AZ of the instance. Changing this creates a new instance.
 
 `PublicIp` - (Required) Specifies the IP address of the instance. The structure is described below. Changing this creates a new instance.
+
+### PublicIp Properties
+
+`BindType` - (Required) Specifies the bind type. Possible values: `auto_assign` and `not_use`. Changing this creates a new instance.
+
+### MrsCluster Properties
+
+`Id` - (Required) Specifies the ID of the MRS cluster. Changing this creates a new instance.
+
+`UserName` - (Optional) Specifies the MRS cluster username. This parameter is mandatory only when the MRS cluster is in the security mode. Changing this creates a new instance.
+
+`UserPassword` - (Optional) Specifies the password of the MRS cluster user. The password and username work in a pair. Changing this creates a new instance.
 
 
 ## Return Values

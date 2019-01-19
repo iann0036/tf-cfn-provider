@@ -4,6 +4,8 @@ The database resource allows a database to be created on an InfluxDB server.
 
 ## Properties
 
+`Name` - (Required) The name for the database. This must be unique on the InfluxDB server.
+
 `RetentionPolicies` - (Optional) A list of retention policies for specified database.
 
 ### RetentionPolicies Properties

@@ -10,6 +10,8 @@ Terraform `lifecycle` block as outlined in the example below.
 
 ## Properties
 
+`Name` - (Required) The name of the instance group. Must be 1-63 characters long and comply with [RFC1035](https://www.ietf.org/rfc/rfc1035.txt). Supported characters include lowercase letters, numbers, and hyphens.
+
 `Zone` - (Required) The zone that this instance group should be created in.
 
 `Description` - (Optional) An optional textual description of the instance group.

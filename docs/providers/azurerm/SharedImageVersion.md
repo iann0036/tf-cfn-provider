@@ -6,6 +6,8 @@ Manages a Version of a Shared Image within a Shared Image Gallery.
 
 ## Properties
 
+`Name` - (Required) The version number for this Image Version, such as `1.0.0`. Changing this forces a new resource to be created.
+
 `GalleryName` - (Required) The name of the Shared Image Gallery in which the Shared Image exists. Changing this forces a new resource to be created.
 
 `ImageName` - (Required) The name of the Shared Image within the Shared Image Gallery in which this Version should be created. Changing this forces a new resource to be created.

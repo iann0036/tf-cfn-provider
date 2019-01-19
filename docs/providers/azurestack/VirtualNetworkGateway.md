@@ -4,6 +4,8 @@ Manages a Virtual Network Gateway to establish secure, cross-premises connectivi
 
 ## Properties
 
+`Name` - (Required) The name of the connection. Changing the name forces a new resource to be created.
+
 `ResourceGroupName` - (Required) The name of the resource group in which to create the connection Changing the name forces a new resource to be created.
 
 `Location` - (Required) The location/region where the connection is located. Changing this forces a new resource to be created.

@@ -4,6 +4,8 @@ Manages an AutoScale Setting which can be applied to Virtual Machine Scale Sets,
 
 ## Properties
 
+`Name` - (Required) The name of the AutoScale Setting. Changing this forces a new resource to be created.
+
 `ResourceGroupName` - (Required) The name of the Resource Group in the AutoScale Setting should be created. Changing this forces a new resource to be created.
 
 `Location` - (Required) Specifies the supported Azure location where the AutoScale Setting should exist. Changing this forces a new resource to be created.
@@ -17,6 +19,32 @@ Manages an AutoScale Setting which can be applied to Virtual Machine Scale Sets,
 `Notification` - (Optional) Specifies a `Notification` block as defined below.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
+
+### Profile Properties
+
+`Name` - (Required) Specifies the name of the profile.
+
+`Capacity` - (Required) A `Capacity` block as defined below.
+
+`Rule` - (Required) One or more (up to 10) `Rule` blocks as defined below.
+
+`FixedDate` - (Optional) A `FixedDate` block as defined below. This cannot be specified if a `Recurrence` block is specified.
+
+`Recurrence` - (Optional) A `Recurrence` block as defined below. This cannot be specified if a `FixedDate` block is specified.
+
+### Capacity Properties
+
+`Default` - (Required) The number of instances that are available for scaling if metrics are not available for evaluation. The default is only used if the current instance count is lower than the default.
+
+`Maximum` - (Required) The maximum number of instances for this resource. Valid values are between `1` and `40`.
+
+`Minimum` - (Required) The minimum number of instances for this resource. Valid values are between `1` and `40`.
+
+### Rule Properties
+
+`MetricTrigger` - (Required) A `MetricTrigger` block as defined below.
+
+`ScaleAction` - (Required) A `ScaleAction` block as defined below.
 
 ### MetricTrigger Properties
 
@@ -36,13 +64,21 @@ Manages an AutoScale Setting which can be applied to Virtual Machine Scale Sets,
 
 `Threshold` - (Required) Specifies the threshold of the metric that triggers the scale action.
 
-### Capacity Properties
+### ScaleAction Properties
 
-`Default` - (Required) The number of instances that are available for scaling if metrics are not available for evaluation. The default is only used if the current instance count is lower than the default.
+`Cooldown` - (Required) The amount of time to wait since the last scaling action before this action occurs. Must be between 1 minute and 1 week and formatted as a ISO 8601 string.
 
-`Maximum` - (Required) The maximum number of instances for this resource. Valid values are between `1` and `40`.
+`Direction` - (Required) The scale direction. Possible values are `Increase` and `Decrease`.
 
-`Minimum` - (Required) The minimum number of instances for this resource. Valid values are between `1` and `40`.
+`Type` - (Required) The type of action that should occur. Possible values are `ChangeCount`, `ExactCount` and `PercentChangeCount`.
+
+`Value` - (Required) The number of instances involved in the scaling action. Defaults to `1`.
+
+### FixedDate Properties
+
+`End` - (Required) Specifies the end date for the profile, formatted as an RFC3339 date string.
+
+`Start` - (Required) Specifies the start date for the profile, formatted as an RFC3339 date string.
 
 ### Recurrence Properties
 
@@ -54,45 +90,11 @@ Manages an AutoScale Setting which can be applied to Virtual Machine Scale Sets,
 
 `Minutes` - (Required) A list containing a single item which specifies the Minute interval at which this recurrence should be triggered.
 
-### ScaleAction Properties
-
-`Cooldown` - (Required) The amount of time to wait since the last scaling action before this action occurs. Must be between 1 minute and 1 week and formatted as a ISO 8601 string.
-
-`Direction` - (Required) The scale direction. Possible values are `Increase` and `Decrease`.
-
-`Type` - (Required) The type of action that should occur. Possible values are `ChangeCount`, `ExactCount` and `PercentChangeCount`.
-
-`Value` - (Required) The number of instances involved in the scaling action. Defaults to `1`.
-
-### Rule Properties
-
-`MetricTrigger` - (Required) A `MetricTrigger` block as defined below.
-
-`ScaleAction` - (Required) A `ScaleAction` block as defined below.
-
-### Profile Properties
-
-`Name` - (Required) Specifies the name of the profile.
-
-`Capacity` - (Required) A `Capacity` block as defined below.
-
-`Rule` - (Required) One or more (up to 10) `Rule` blocks as defined below.
-
-`FixedDate` - (Optional) A `FixedDate` block as defined below. This cannot be specified if a `Recurrence` block is specified.
-
-`Recurrence` - (Optional) A `Recurrence` block as defined below. This cannot be specified if a `FixedDate` block is specified.
-
 ### Notification Properties
 
 `Email` - (Required) A `Email` block as defined below.
 
 `Webhook` - (Optional) One or more `Webhook` blocks as defined below.
-
-### Webhook Properties
-
-`ServiceUri` - (Required) The HTTPS URI which should receive scale notifications.
-
-`Properties` - (Optional) A map of settings.
 
 ### Email Properties
 
@@ -102,11 +104,11 @@ Manages an AutoScale Setting which can be applied to Virtual Machine Scale Sets,
 
 `CustomEmails` - (Optional) Specifies a list of custom email addresses to which the email notifications will be sent.
 
-### FixedDate Properties
+### Webhook Properties
 
-`End` - (Required) Specifies the end date for the profile, formatted as an RFC3339 date string.
+`ServiceUri` - (Required) The HTTPS URI which should receive scale notifications.
 
-`Start` - (Required) Specifies the start date for the profile, formatted as an RFC3339 date string.
+`Properties` - (Optional) A map of settings.
 
 
 ## Return Values

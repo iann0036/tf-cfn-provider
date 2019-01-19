@@ -6,13 +6,15 @@ Provides an ElastiCache parameter group resource.
 
 ## Properties
 
-`Name` - (Required) The name of the ElastiCache parameter.
+`Name` - (Required) The name of the ElastiCache parameter group.
 
 `Family` - (Required) The family of the ElastiCache parameter group.
 
 `Description` - (Optional) The description of the ElastiCache parameter group. Defaults to "Managed by Terraform".
 
 `Parameter` - (Optional) A list of ElastiCache parameters to apply.
+
+`Name` - (Required) The name of the ElastiCache parameter.
 
 `Value` - (Required) The value of the ElastiCache parameter.
 

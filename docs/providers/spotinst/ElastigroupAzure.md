@@ -8,7 +8,7 @@ Provides a Spotinst elastigroup Azure resource.
 
 `Region` - (Required) The region your Azure group will be created in.
 
-`ResourceGroupName` - (Required) Vnet Resource Group Name.
+`ResourceGroupName` - (Required) Name of the Resource Group for Elastigroup.
 
 `Product` - (Required) Operation system type. Valid values: `"Linux"`, `"Windows"`.
 
@@ -50,13 +50,15 @@ Provides a Spotinst elastigroup Azure resource.
 
 `Sku` - (Optional) Image's Stock Keeping Unit, which is the specific version of the image. Required if publisher is specified.
 
+`ResourceGroupName` - (Optional) Name of Resource Group for custom image. Required if publisher not specified.
+
 `ImageName` - (Optional) Name of the custom image. Required if resource_group_name is specified.
 
 `HealthCheck` - (Optional) Describes the health check configuration.
 
 `HealthCheckType` - (Optional) Health check used to validate VM health. Valid values: “INSTANCE_STATE”.
 
-`GracePeriod` - (Optional) The time to allow instances to become healthy.
+`GracePeriod` - (Optional) Period of time (seconds) to wait for VM to reach healthiness before monitoring for unhealthiness.
 
 `AutoHealing` - (Optional) Enable auto-healing of unhealthy VMs.
 
@@ -65,6 +67,8 @@ Provides a Spotinst elastigroup Azure resource.
 `VirtualNetworkName` - (Required) Name of Vnet.
 
 `SubnetName` - (Required) ID of subnet.
+
+`ResourceGroupName` - (Required) Vnet Resource Group Name.
 
 `AssignPublicUp` - (Optional, Default: `false`) Assign a public IP to each VM in the Elastigroup.
 
@@ -95,6 +99,8 @@ Provides a Spotinst elastigroup Azure resource.
 `AdjustmentPercentage` - (Optional) The percent of instances to add/remove to/from the target capacity when scale is needed.
 
 `BatchSizePercentage` - (Optional) The percentage size of each batch in the scheduled deployment roll. Required when the 'task_type' is 'roll'.
+
+`GracePeriod` - (Optional) The time to allow instances to become healthy.
 
 
 ## See Also

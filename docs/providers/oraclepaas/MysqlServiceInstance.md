@@ -40,18 +40,6 @@ The `Terraform::OraclePaaS::MysqlServiceInstance` resource creates and manages a
 
 `CreateIfMissing` - (Optional) Specifies whether to create the container if it does not exist. Default value is `false`.
 
-### EnterpriseMonitorConfiguration Properties
-
-`EmAgentUsername` - (Optional). Name for the Enterprise Monitor agent user.
-
-`EmAgentPassword` - (Optional). Password for MySQL Enterprise Monitor agent.
-
-`EmUsername` - (Optional) Name for the Enterprise Monitor Manager user.
-
-`EmPassword` - (Optional) Password for MySQL Enterprise Monitor manager.
-
-`EmPort` - (Optional) The port number for the MySQL Enterprise Monitor instance. The default is 18443.
-
 ### MysqlConfiguration Properties
 
 `DbName` - (Optional). The name of the database instance. Default value is `mydatabase`.
@@ -71,6 +59,18 @@ The `Terraform::OraclePaaS::MysqlServiceInstance` resource creates and manages a
 `SnapshotName` - (Optional) The name of the snapshot of the service instance specified by `SourceServiceName` that is to be used to create a "snapshot clone". This parameter is valid only if `SourceServiceName` is specified.
 
 `EnterpriseMonitorConfiguration` - (Optional) Provides the Enterprise Monitor configuration for the MySQL Instance. If this is omitted, there will be no EM created for the MySQL Instance. `EnterpriseMonitorConfiguration` is documented below.
+
+### EnterpriseMonitorConfiguration Properties
+
+`EmAgentUsername` - (Optional). Name for the Enterprise Monitor agent user.
+
+`EmAgentPassword` - (Optional). Password for MySQL Enterprise Monitor agent.
+
+`EmUsername` - (Optional) Name for the Enterprise Monitor Manager user.
+
+`EmPassword` - (Optional) Password for MySQL Enterprise Monitor manager.
+
+`EmPort` - (Optional) The port number for the MySQL Enterprise Monitor instance. The default is 18443.
 
 
 ## See Also

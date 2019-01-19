@@ -12,23 +12,23 @@ Provides an AWS App Mesh route resource.
 
 `Spec` - (Required) The route specification to apply.
 
+### Spec Properties
+
+`HttpRoute` - (Optional) The HTTP routing information for the route.
+
 ### HttpRoute Properties
 
 `Action` - (Required) The action to take if a match is determined.
 
 `Match` - (Required) The criteria for determining an HTTP request match.
 
-### Match Properties
-
-`Prefix` - (Required) Specifies the path with which to match requests. This parameter must always start with /, which by itself matches all requests to the virtual router service name.
-
-### Spec Properties
-
-`HttpRoute` - (Optional) The HTTP routing information for the route.
-
 ### Action Properties
 
 `WeightedTarget` - (Required) The targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.
+
+### Match Properties
+
+`Prefix` - (Required) Specifies the path with which to match requests. This parameter must always start with /, which by itself matches all requests to the virtual router service name.
 
 ### WeightedTarget Properties
 

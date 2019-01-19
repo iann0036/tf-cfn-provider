@@ -4,6 +4,8 @@ Manage a Load Balancer Resource.
 
 ## Properties
 
+`Name` - (Required) Specifies the name of the Load Balancer.
+
 `ResourceGroupName` - (Required) The name of the Resource Group in which to create the Load Balancer.
 
 `Location` - (Required) Specifies the supported Azure Region where the Load Balancer should be created.

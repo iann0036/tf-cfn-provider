@@ -6,11 +6,13 @@ Resource should be named with their "full path". The full path is the combinatio
 
 ## Properties
 
-`Name` - (Required if `Record` defined), sets the value of the record's `Name` attribute, must be of type defined in `Type` attribute.
+`Name` - (Required) Name of the datagroup.
 
 `Type` - (Required) datagroup type (applies to the `Name` field of the record), supports: `string`, `ip` or `integer`.
 
 `Record` - (Optional) a set of `Name` and `Data` attributes, name must be of type specified by the `Type` attributed (`string`, `ip` and `integer`), data is optional and can take any value, multiple `Record` sets can be specified as needed.
+
+`Name` - (Required if `Record` defined), sets the value of the record's `Name` attribute, must be of type defined in `Type` attribute.
 
 `Data` - (Optional if `Record` defined), sets the value of the record's `Data` attribute, specifying a value here will create a record in the form of `name := data`.
 

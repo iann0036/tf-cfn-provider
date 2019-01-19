@@ -12,6 +12,8 @@ Manages a System within Cobbler.
 
 `FetchableFiles` - (Optional) Templates for tftp or wget.
 
+`Gateway` - (Optional) Network gateway.
+
 `Hostname` - (Optional) Hostname of the system.
 
 `Image` - (Optional) Parent image (if no profile is used).
@@ -41,6 +43,8 @@ Manages a System within Cobbler.
 `NameServersSearch` - (Optional) Name servers search path.
 
 `NameServers` - (Optional) Name servers.
+
+`Name` - (Required) The name of the system.
 
 `NetbootEnabled` - (Optional) (re)Install this machine at next boot.
 
@@ -88,8 +92,6 @@ Manages a System within Cobbler.
 
 ### Interface Properties
 
-`Gateway` - (Optional) Per-interface gateway.
-
 `Name` - (Required) The device name of the interface. ex: eth0.
 
 `Cnames` - (Optional) Canonical name records.
@@ -101,6 +103,8 @@ Manages a System within Cobbler.
 `BondingOpts` - (Optional) Options for bonded interfaces.
 
 `BridgeOpts` - (Optional) Options for bridge interfaces.
+
+`Gateway` - (Optional) Per-interface gateway.
 
 `InterfaceType` - (Optional) The type of interface: na, master, slave, bond, bond_slave, bridge, bridge_slave, bonded_bridge_slave.
 

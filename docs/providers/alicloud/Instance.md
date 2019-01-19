@@ -35,7 +35,7 @@ Provides a ECS instance resource.
 
 `SystemDiskSize` - (Optional) Size of the system disk, measured in GiB. Value range: [20, 500]. The specified value must be equal to or greater than max{20, Imagesize}. Default value: max{40, ImageSize}. ECS instance's system disk can be reset when replacing system disk.
 
-`Description` - (Optional, Force New) The description of the data disk.
+`Description` - (Optional) Description of the instance, This description can have a string of 2 to 256 characters, It cannot begin with http:// or https://. Default value is null.
 
 `InternetChargeType` - (Optional) Internet charge type of the instance, Valid values are `PayByBandwidth`, `PayByTraffic`. Default is `PayByTraffic`. At present, 'PrePaid' instance cannot change the value to "PayByBandwidth" from "PayByTraffic".
 
@@ -94,6 +94,8 @@ Provides a ECS instance resource.
 `SnapshotId` - (Optional, Force New) The snapshot ID used to initialize the data disk. If the size specified by snapshot is greater that the size of the disk, use the size specified by snapshot as the size of the data disk. * `DeleteWithInstance` - (Optional, Force New) Delete this data disk when the instance is destroyed. It only works on cloud, cloud_efficiency and cloud_ssd disk. If the category of this data disk was ephemeral_ssd, please don't set this param.
 
 `DeleteWithInstance` - (Optional, Force New) Delete this data disk when the instance is destroyed. It only works on cloud, cloud_efficiency and cloud_ssd disk. If the category of this data disk was ephemeral_ssd, please don't set this param.
+
+`Description` - (Optional, Force New) The description of the data disk.
 
 
 ## Return Values

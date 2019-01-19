@@ -4,7 +4,7 @@ The `Terraform::OraclePaaS::ApplicationContainer` resource creates and manages a
 
 ## Properties
 
-`Name` - (Required) The name of the existing service.
+`Name` - (Required) The name of the Application Container.
 
 `ManifestFile` - (Optional) The json manifest file containing the attributes related to launching an application. Use either `ManifestFile` or `manifest_attributes` when specifying launch information.
 
@@ -28,19 +28,21 @@ The `Terraform::OraclePaaS::ApplicationContainer` resource creates and manages a
 
 `LoadBalancerSubnets` - (Optional) Two load balancer subnets. Required on OCI.
 
-`Notes` - (Optional) Comments about the deployment.
+`Notes` - (Optional) Comments about the application deployment.
 
 `NotificationEmail` - (Optional) Email address to which application deployment status updates are sent.
 
 `Region` - (Optional) The name of the region where the application container will be deployed. Required on OCI.
 
-`Runtime` - (Optional) Details the availble runtime attributes. Runtime is documented below.
+`Runtime` - (Optional) The allowed runtime environment variables. The allowed variables are `java`, `node`, `php`, `python`, `golang`, `dotnet`, or `ruby`. The default is `java`.
 
 `SubscriptionType` - (Optional) Whether the subscription type is `hourly` or `monthly`. The default is `hourly`.
 
 `Tags` - (Optional) A map of tags for the application container.
 
-`Type` - (Required) The type of service. Allowed values are `JAAS`, `DBAAS`, `MYSQLCS`, `OEHCS`, `OEHPCS`, `DHCS`, `caching`.
+`Runtime` - (Optional) Details the availble runtime attributes. Runtime is documented below.
+
+`Type` - (Optional) Determines whether the application is public or private. The default is `worker` (private).
 
 `Command` - (Optional) Launch command to execute after the application has been uploaded.
 
@@ -49,6 +51,8 @@ The `Terraform::OraclePaaS::ApplicationContainer` resource creates and manages a
 `StartupTime` - (Optional) The maximum time in seconds to wait for an application to start.
 
 `ShutdownTime` - (Optional) The maximum time in seconds to wait for an application to stop.
+
+`Notes` - (Optional) Comments about the launch configuration.
 
 `Mode` - (Optional) The restart mode for application instances when the application is restarted. The only allowed value is `rolling`.
 
@@ -61,6 +65,8 @@ The `Terraform::OraclePaaS::ApplicationContainer` resource creates and manages a
 `Memory` - (Optional) The amount of memory in gigabytes made available to the application. The default is `2G`.
 
 `Instances` - (Optional) The number of application instances. The default is `2`.
+
+`Notes` - (Optional) Comments about the deployment.
 
 `Environment` - (Optional) A map of environment variables used by the application.
 
@@ -79,6 +85,10 @@ The `Terraform::OraclePaaS::ApplicationContainer` resource creates and manages a
 `Version` - (Optional) The value for a specific version.
 
 `Identifier` - (Required) The value for the identifier.
+
+`Type` - (Required) The type of service. Allowed values are `JAAS`, `DBAAS`, `MYSQLCS`, `OEHCS`, `OEHPCS`, `DHCS`, `caching`.
+
+`Name` - (Required) The name of the existing service.
 
 `Username` - (Required) The username to connect to the service.
 

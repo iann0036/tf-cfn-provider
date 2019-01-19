@@ -8,6 +8,8 @@ Provides a CodeBuild Project resource. See also the [`Terraform::AWS::CodebuildW
 
 `Environment` - (Required) Information about the project's build environment. Environment blocks are documented below.
 
+`Name` - (Required) The projects name.
+
 `Source` - (Required) Information about the project's input source code. Source blocks are documented below.
 
 `BadgeEnabled` - (Optional) Generates a publicly-accessible URL for the projects build badge. Available as `badge_url` attribute when enabled.
@@ -30,11 +32,15 @@ Provides a CodeBuild Project resource. See also the [`Terraform::AWS::CodebuildW
 
 `SecondarySources` - (Optional) A set of secondary sources to be used inside the build. Secondary sources blocks are documented below.
 
-### SecondaryArtifacts Properties
+### Artifacts Properties
 
-`Name` - (Optional) The name of the project. If `Type` is set to `S3`, this is the name of the output artifact object.
+`Type` - (Required) The build output artifact's type. Valid values for this parameter are: `CODEPIPELINE`, `NO_ARTIFACTS` or `S3`.
 
 `EncryptionDisabled` - (Optional) If set to true, output artifacts will not be encrypted. If `Type` is set to `NO_ARTIFACTS` then this value will be ignored. Defaults to `false`.
+
+`Location` - (Optional) Information about the build output artifact location. If `Type` is set to `CODEPIPELINE` or `NO_ARTIFACTS` then this value will be ignored. If `Type` is set to `S3`, this is the name of the output bucket. If `Path` is not also specified, then `Location` can also specify the path of the output artifact in the output bucket.
+
+`Name` - (Optional) The name of the project. If `Type` is set to `S3`, this is the name of the output artifact object.
 
 `NamespaceType` - (Optional) The namespace to use in storing build artifacts. If `Type` is set to `S3`, then valid values for this parameter are: `BUILD_ID` or `NONE`.
 
@@ -42,7 +48,55 @@ Provides a CodeBuild Project resource. See also the [`Terraform::AWS::CodebuildW
 
 `Path` - (Optional) If `Type` is set to `S3`, this is the path to the output artifact.
 
-`ArtifactIdentifier` - (Required) The artifact identifier. Must be the same specified inside AWS CodeBuild buildspec.
+### Cache Properties
+
+`Type` - (Optional) The type of storage that will be used for the AWS CodeBuild project cache. Valid values: `NO_CACHE` and `S3`. Defaults to `NO_CACHE`.
+
+`Location` - (Required when cache type is `S3`) The location where the AWS CodeBuild project stores cached resources. For type `S3` the value must be a valid S3 bucket name/prefix.
+
+### Environment Properties
+
+`ComputeType` - (Required) Information about the compute resources the build project will use. Available values for this parameter are: `BUILD_GENERAL1_SMALL`, `BUILD_GENERAL1_MEDIUM` or `BUILD_GENERAL1_LARGE`. `BUILD_GENERAL1_SMALL` is only valid if `Type` is set to `LINUX_CONTAINER`.
+
+`Image` - (Required) The *image identifier* of the Docker image to use for this build project ([list of Docker images provided by AWS CodeBuild.](https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-available.html)). You can read more about the AWS curated environment images in the [documentation](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ListCuratedEnvironmentImages.html).
+
+`Type` - (Required) The type of build environment to use for related builds. Available values are: `LINUX_CONTAINER` or `WINDOWS_CONTAINER`.
+
+`EnvironmentVariable` - (Optional) A set of environment variables to make available to builds for this build project.
+
+`PrivilegedMode` - (Optional) If set to true, enables running the Docker daemon inside a Docker container. Defaults to `false`.
+
+`Certificate` - (Optional) The ARN of the S3 bucket, path prefix and object key that contains the PEM-encoded certificate.
+
+### EnvironmentVariable Properties
+
+`Name` - (Required) The environment variable's name or key.
+
+`Value` - (Required) The environment variable's value.
+
+`Type` - (Optional) The type of environment variable. Valid values: `PARAMETER_STORE`, `PLAINTEXT`.
+
+### Source Properties
+
+`Type` - (Required) The type of repository that contains the source code to be built. Valid values for this parameter are: `CODECOMMIT`, `CODEPIPELINE`, `GITHUB`, `GITHUB_ENTERPRISE`, `BITBUCKET`, `S3` or `NO_SOURCE`.
+
+`Auth` - (Optional) Information about the authorization settings for AWS CodeBuild to access the source code to be built. Auth blocks are documented below.
+
+`Buildspec` - (Optional) The build spec declaration to use for this build project's related builds. This must be set when `Type` is `NO_SOURCE`.
+
+`GitCloneDepth` - (Optional) Truncate git history to this many commits.
+
+`InsecureSsl` - (Optional) Ignore SSL warnings when connecting to source control.
+
+`Location` - (Optional) The location of the source code from git or s3.
+
+`ReportBuildStatus` - (Optional) Set to `true` to report the status of a build's start and finish to your source provider. This option is only valid when the `Type` is `BITBUCKET` or `GITHUB`.
+
+### Auth Properties
+
+`Type` - (Required) The authorization type to use. The only valid value is `OAUTH`.
+
+`Resource` - (Optional) The resource value that applies to the specified authorization type.
 
 ### VpcConfig Properties
 
@@ -52,31 +106,29 @@ Provides a CodeBuild Project resource. See also the [`Terraform::AWS::CodebuildW
 
 `VpcId` - (Required) The ID of the VPC within which to run builds.
 
-### EnvironmentVariable Properties
+### SecondaryArtifacts Properties
 
-`Value` - (Required) The environment variable's value.
+`Type` - (Required) The build output artifact's type. Valid values for this parameter are: `CODEPIPELINE`, `NO_ARTIFACTS` or `S3`.
 
-### Environment Properties
+`ArtifactIdentifier` - (Required) The artifact identifier. Must be the same specified inside AWS CodeBuild buildspec.
 
-`ComputeType` - (Required) Information about the compute resources the build project will use. Available values for this parameter are: `BUILD_GENERAL1_SMALL`, `BUILD_GENERAL1_MEDIUM` or `BUILD_GENERAL1_LARGE`. `BUILD_GENERAL1_SMALL` is only valid if `Type` is set to `LINUX_CONTAINER`.
+`EncryptionDisabled` - (Optional) If set to true, output artifacts will not be encrypted. If `Type` is set to `NO_ARTIFACTS` then this value will be ignored. Defaults to `false`.
 
-`Image` - (Required) The *image identifier* of the Docker image to use for this build project ([list of Docker images provided by AWS CodeBuild.](https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-available.html)). You can read more about the AWS curated environment images in the [documentation](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ListCuratedEnvironmentImages.html).
+`Location` - (Optional) Information about the build output artifact location. If `Type` is set to `CODEPIPELINE` or `NO_ARTIFACTS` then this value will be ignored. If `Type` is set to `S3`, this is the name of the output bucket. If `Path` is not also specified, then `Location` can also specify the path of the output artifact in the output bucket.
 
-`EnvironmentVariable` - (Optional) A set of environment variables to make available to builds for this build project.
+`Name` - (Optional) The name of the project. If `Type` is set to `S3`, this is the name of the output artifact object.
 
-`PrivilegedMode` - (Optional) If set to true, enables running the Docker daemon inside a Docker container. Defaults to `false`.
+`NamespaceType` - (Optional) The namespace to use in storing build artifacts. If `Type` is set to `S3`, then valid values for this parameter are: `BUILD_ID` or `NONE`.
 
-`Certificate` - (Optional) The ARN of the S3 bucket, path prefix and object key that contains the PEM-encoded certificate.
+`Packaging` - (Optional) The type of build output artifact to create. If `Type` is set to `S3`, valid values for this parameter are: `NONE` or `ZIP`.
 
-### Auth Properties
-
-`Resource` - (Optional) The resource value that applies to the specified authorization type.
+`Path` - (Optional) If `Type` is set to `S3`, this is the path to the output artifact.
 
 ### SecondarySources Properties
 
 `Type` - (Required) The type of repository that contains the source code to be built. Valid values for this parameter are: `CODECOMMIT`, `CODEPIPELINE`, `GITHUB`, `GITHUB_ENTERPRISE`, `BITBUCKET` or `S3`.
 
-`Location` - (Optional) The location of the source code from git or s3.
+`SourceIdentifier` - (Required) The source identifier. Source data will be put inside a folder named as this parameter inside AWS CodeBuild source directory.
 
 `Auth` - (Optional) Information about the authorization settings for AWS CodeBuild to access the source code to be built. Auth blocks are documented below.
 
@@ -86,9 +138,9 @@ Provides a CodeBuild Project resource. See also the [`Terraform::AWS::CodebuildW
 
 `InsecureSsl` - (Optional) Ignore SSL warnings when connecting to source control.
 
-`ReportBuildStatus` - (Optional) Set to `true` to report the status of a build's start and finish to your source provider. This option is only valid when your source provider is `GITHUB`, `BITBUCKET`, or `GITHUB_ENTERPRISE`.
+`Location` - (Optional) The location of the source code from git or s3.
 
-`SourceIdentifier` - (Required) The source identifier. Source data will be put inside a folder named as this parameter inside AWS CodeBuild source directory.
+`ReportBuildStatus` - (Optional) Set to `true` to report the status of a build's start and finish to your source provider. This option is only valid when your source provider is `GITHUB`, `BITBUCKET`, or `GITHUB_ENTERPRISE`.
 
 
 ## Return Values

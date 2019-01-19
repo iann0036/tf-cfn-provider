@@ -4,6 +4,8 @@ A CDN Endpoint is the entity within a CDN Profile containing configuration infor
 
 ## Properties
 
+`Name` - (Required) Specifies the name of the CDN Endpoint. Changing this forces a new resource to be created.
+
 `ResourceGroupName` - (Required) The name of the resource group in which to create the CDN Endpoint.
 
 `ProfileName` - (Required) The CDN Profile to which to attach the CDN Endpoint.

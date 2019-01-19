@@ -20,11 +20,13 @@ Creates a new zone in the specified compartment.
 
 `Algorithm` - (Required) (Updatable) TSIG Algorithms are encoded as domain names, but most consist of only one non-empty label, which is not required to be explicitly absolute. Applicable algorithms include: hmac-sha1, hmac-sha224, hmac-sha256, hmac-sha512. For more information on these algorithms, see [RFC 4635](https://tools.ietf.org/html/rfc4635#section-2). * `Name` - (Required) (Updatable) A domain name identifying the key for a given pair of hosts. * `Secret` - (Required) (Updatable) A base64 string encoding the binary shared secret.
 
-`Name` - (Required) The name of the zone.
+`Name` - (Required) (Updatable) A domain name identifying the key for a given pair of hosts. * `Secret` - (Required) (Updatable) A base64 string encoding the binary shared secret.
 
 `Secret` - (Required) (Updatable) A base64 string encoding the binary shared secret.
 
 `FreeformTags` - (Optional) (Updatable) Simple key-value pair that is applied without any predefined name, type, or scope. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"bar-key": "value"}`.
+
+`Name` - (Required) The name of the zone.
 
 `ZoneType` - (Required) The type of the zone. Must be either `PRIMARY` or `SECONDARY`.
 

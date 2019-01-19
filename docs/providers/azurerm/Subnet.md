@@ -8,6 +8,8 @@ At this time you cannot use a Virtual Network with in-line Subnets in conjunctio
 
 ## Properties
 
+`Name` - (Required) The name of the subnet. Changing this forces a new resource to be created.
+
 `ResourceGroupName` - (Required) The name of the resource group in which to create the subnet. Changing this forces a new resource to be created.
 
 `VirtualNetworkName` - (Required) The name of the virtual network to which to attach the subnet. Changing this forces a new resource to be created.

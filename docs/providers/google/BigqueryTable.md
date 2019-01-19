@@ -26,12 +26,6 @@ Creates a table resource in a dataset for Google BigQuery. For more information 
 
 `View` - (Optional) If specified, configures this table as a view. Structure is documented below.
 
-### View Properties
-
-`Query` - (Required) A query that BigQuery executes when the view is referenced.
-
-`UseLegacySql` - (Optional) Specifies whether to use BigQuery's legacy SQL for this view. The default value is true. If set to false, the view will use BigQuery's standard SQL.
-
 ### TimePartitioning Properties
 
 `ExpirationMs` -  (Optional) Number of milliseconds for which to keep the storage for a partition.
@@ -41,6 +35,12 @@ Creates a table resource in a dataset for Google BigQuery. For more information 
 `Type` - (Required) The only type supported is DAY, which will generate one partition per day based on data loading time.
 
 `RequirePartitionFilter` - (Optional) If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified.
+
+### View Properties
+
+`Query` - (Required) A query that BigQuery executes when the view is referenced.
+
+`UseLegacySql` - (Optional) Specifies whether to use BigQuery's legacy SQL for this view. The default value is true. If set to false, the view will use BigQuery's standard SQL.
 
 
 ## Return Values

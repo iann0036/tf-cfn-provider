@@ -28,6 +28,8 @@ Provides a cloudscale.ch Server resource. This can be used to create, modify, an
 
 `Status` - (Optional) The desired state of a server. Can be `running` (default) or `stopped`.
 
+`Status` - (Optional) The desired state of a server. Can be `running` (default) or `stopped`.
+
 
 ## Return Values
 

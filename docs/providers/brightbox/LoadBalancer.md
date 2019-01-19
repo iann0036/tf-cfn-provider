@@ -29,7 +29,7 @@ modify, and delete Load Balancers.
 
 `Out` - (Required) Port to pass through to.
 
-`Timeout` - (Optional) Timeout of health check in milliseconds.
+`Timeout` - (Optional) Timeout of connection in milliseconds. Default is 50000.
 
 `Type` - (Required) Type of health check required: `tcp` or `http`.
 
@@ -38,6 +38,8 @@ modify, and delete Load Balancers.
 `Request` - (Optional) Path used for HTTP check.
 
 `Interval` - (Optional) Frequency of checks in milliseconds.
+
+`Timeout` - (Optional) Timeout of health check in milliseconds.
 
 `ThresholdUp` - (Optional) Number of checks that must pass before connection is considered healthy.
 
