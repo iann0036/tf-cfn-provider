@@ -46,11 +46,19 @@ def tf_format_value(obj, indent_level):
     if str(obj).isdigit(): # int
         return obj
     if isinstance(obj, list): # list
-        params = "[\n"
-        for item in obj:
-            params += indent + tf_format_value(item, indent_level + 1) + ",\n"
-        return params + "]"
-    if isinstance(obj, dict): # list
+        if len(obj) == 0:
+            return "[]"
+        if tf_format_value(obj[0], indent_level).startswith("{"):
+            blocks = []
+            for item in obj:
+                blocks.append(tf_format_value(item, indent_level))
+            return blocks
+        else:
+            params = "[\n"
+            for item in obj:
+                params += indent + tf_format_value(item, indent_level + 1) + ",\n"
+            return params + "]"
+    if isinstance(obj, dict): # dict
         params = "{\n"
         for k, v in obj.items():
             params += indent + cfn_to_tf_str(k) + " = " + tf_format_value(v, indent_level + 1) + "\n"
@@ -63,10 +71,18 @@ def process_tf_params(resource_properties):
     params = ""
 
     for k, v in resource_properties.items():
-        params += "    {key} = {value}\n".format(
-            key=cfn_to_tf_str(k),
-            value=tf_format_value(v, 1)
-        )
+        value = tf_format_value(v, 1)
+        if isinstance(value, list): # blocks
+            for block in value:
+                params += "    {key} {value}\n".format(
+                    key=cfn_to_tf_str(k),
+                    value=block
+                )
+        else:
+            params += "    {key} = {value}\n".format(
+                key=cfn_to_tf_str(k),
+                value=value
+            )
 
     return params
 
@@ -105,10 +121,6 @@ resource "{resource_type}" "{logical_id}" {{
         logical_id=logical_id,
         params=params
     )
-
-    print("#####")
-    print(terraform_file_contents)
-    print("-----")
 
     # write file
     with open("/tmp/res.tf", "w") as f:
