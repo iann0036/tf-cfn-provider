@@ -1,6 +1,6 @@
 # Oracle Cloud Infrastructure Provider
 
-##Configuration
+## Configuration
 
 No configuration is required for this provider.
 

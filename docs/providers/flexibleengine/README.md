@@ -1,6 +1,6 @@
 # FlexibleEngine Provider
 
-##Configuration
+## Configuration
 
 To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/flexibleengine**. The below arguments may be included as the key/value or JSON properties in the secret:
 

@@ -184,7 +184,7 @@ def iterate_resources(provider_name):
             for argument in arguments:
                 if "required" in argument.lower():
                     has_required_arguments = True
-            provider_readme.write("# {} Provider\n\n##Configuration\n\n".format(readable_provider_name))
+            provider_readme.write("# {} Provider\n\n## Configuration\n\n".format(readable_provider_name))
             if len(arguments) == 0:
                 provider_readme.write("No configuration is required for this provider.\n\n")
             elif not has_required_arguments:

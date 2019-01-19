@@ -1,6 +1,6 @@
 # Oracle Cloud Platform Provider
 
-##Configuration
+## Configuration
 
 To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/oraclepaas**. The below arguments may be included as the key/value or JSON properties in the secret:
 

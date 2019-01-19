@@ -1,6 +1,6 @@
 # Nomad Provider
 
-##Configuration
+## Configuration
 
 No configuration is required for this provider.
 
