@@ -1,5 +1,9 @@
 # Oracle Cloud Infrastructure Provider
 
+##Configuration
+
+No configuration is required for this provider.
+
 ## Supported Resources
 
 * [Terraform::OCI::AuditConfiguration](docs/providers/oci/AuditConfiguration.md)

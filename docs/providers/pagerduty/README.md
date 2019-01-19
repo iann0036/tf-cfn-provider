@@ -1,5 +1,13 @@
 # PagerDuty Provider
 
+##Configuration
+
+To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/pagerduty**. The below arguments may be included as the key/value or JSON properties in the secret:
+
+* `token` - (Required) The v2 authorization token. It can also be sourced from the PAGERDUTY_TOKEN environment variable. See [API Documentation](https://v2.developer.pagerduty.com/docs/authentication) for more information.
+* `skip_credentials_validation` - (Optional) Skip validation of the token against the PagerDuty API.
+
+
 ## Supported Resources
 
 * [Terraform::PagerDuty::Addon](docs/providers/pagerduty/Addon.md)

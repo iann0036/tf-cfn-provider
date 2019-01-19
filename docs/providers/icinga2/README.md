@@ -1,5 +1,26 @@
 # Icinga2 Provider
 
+##Configuration
+
+To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/icinga2**. The below arguments may be included as the key/value or JSON properties in the secret:
+
+* ``api_url`` - (Required) The root API URL of an Icinga2 server. May alternatively be
+  set via the ``ICINGA2_API_URL`` environment variable.
+
+* ``api_user`` - (Required) The API username to use to
+  authenticate to the Icinga2 server. May alternatively
+  be set via the ``ICINGA2_API_USER`` environment variable.
+
+* ``api_password`` - (Required) The password to use to
+  authenticate to the Icinga2 server. May alternatively
+  be set via the ``ICINGA2_API_PASSWORD`` environment variable.
+
+* ``insecure_skip_tls_verify`` - (optional) Defaults to false. If set to true,
+  verification of the Icinga2 server's SSL certificate is disabled. This is a security
+  risk and should be avoided. May alternatively be set via the
+  ``ICINGA2_INSECURE_SKIP_TLS_VERIFY`` environment variable.
+
+
 ## Supported Resources
 
 * [Terraform::Icinga2::Checkcommand](docs/providers/icinga2/Checkcommand.md)

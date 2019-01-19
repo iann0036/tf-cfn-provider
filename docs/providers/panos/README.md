@@ -1,5 +1,50 @@
 # Palo Alto Networks Provider
 
+##Configuration
+
+To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/panos**. The below arguments may be included as the key/value or JSON properties in the secret:
+
+* `hostname` - (Optional) This is the hostname / IP address of the firewall.  It
+  must be provided, but can also be defined via the `PANOS_HOSTNAME`
+  environment variable.
+* `username` - (Optional) The username to authenticate to the firewall as.  It
+  must be provided, but can also be defined via the `PANOS_USERNAME`
+  environment variable.
+* `password` - (Optional) The password for the given username. It must be
+  provided, but can also be defined via the `PANOS_PASSWORD` environment
+  variable.
+* `api_key` - (Optional) The API key for the firewall.  If this is given, then
+  the `username` and `password` settings are ignored.  This can also be defined
+  via the `PANOS_API_KEY` environment variable.
+* `protocol` - (Optional) The communication protocol.  This can be set to
+  either `https` or `http`.  If left unspecified, this defaults to `https`.  
+* `port` - (Optional) If the port number is non-standard for the desired
+  protocol, then the port number to use.
+* `timeout` - (Optional) The timeout for all communications with the
+  firewall.  If left unspecified, this will be set to 10 seconds.
+* `logging` - (Optional) List of logging options for the provider's connection
+  to the API.  If this is unspecified, then it defaults to
+  `["action", "uid"]`.
+* `json_config_file` - (Optional) The path to a JSON configuration file that
+  contains any number of the provider's parameters.  If specified, the params
+  present act as a last resort for any other provider param that has not been
+  specified yet.
+
+The list of strings supported for `logging` are as follows:
+
+* `quiet` - Disables logging.  This is ignored, however, if other logging
+  flags are present.
+* `action` - Log `set` / `edit` / `delete`.
+* `query` - Log `get`.
+* `op` - Log `op`.
+* `uid` - Log user-id envocations.
+* `xpath` - Log the XPATH associated with various actions.
+* `send` - Log the raw request sent to the device.  This is probably
+  only useful in development of the provider itself.
+* `receive` - Log the raw response sent back from the device.  This is probably
+  only useful in development of the provider itself.
+
+
 ## Supported Resources
 
 * [Terraform::Panos::AddressGroup](docs/providers/panos/AddressGroup.md)

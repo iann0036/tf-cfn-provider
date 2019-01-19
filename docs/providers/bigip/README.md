@@ -1,5 +1,9 @@
 # F5 BIG-IP Provider
 
+##Configuration
+
+No configuration is required for this provider.
+
 ## Supported Resources
 
 * [Terraform::BIGIP::CmDevice](docs/providers/bigip/CmDevice.md)

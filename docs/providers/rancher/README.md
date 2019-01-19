@@ -1,5 +1,14 @@
 # Rancher Provider
 
+##Configuration
+
+To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/rancher**. The below arguments may be included as the key/value or JSON properties in the secret:
+
+* `api_url` - (Required) Rancher API url. It must be provided, but it can also be sourced from the `RANCHER_URL` environment variable.
+* `access_key` - (Optional) Rancher API access key. It can also be sourced from the `RANCHER_ACCESS_KEY` environment variable.
+* `secret_key` - (Optional) Rancher API access key. It can also be sourced from the `RANCHER_SECRET_KEY` environment variable.
+
+
 ## Supported Resources
 
 * [Terraform::Rancher::Certificate](docs/providers/rancher/Certificate.md)

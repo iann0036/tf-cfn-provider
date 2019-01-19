@@ -1,5 +1,16 @@
 # Vault Provider
 
+##Configuration
+
+To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/vault**. The below arguments may be included as the key/value or JSON properties in the secret:
+
+* `cert_file` - (Required) Path to a file on local disk that contains the
+  PEM-encoded certificate to present to the server.
+
+* `key_file` - (Required) Path to a file on local disk that contains the
+  PEM-encoded private key for which the authentication certificate was issued.
+
+
 ## Supported Resources
 
 * [Terraform::Vault::ApproleAuthBackendLogin](docs/providers/vault/ApproleAuthBackendLogin.md)

@@ -1,5 +1,9 @@
 # Random Provider
 
+##Configuration
+
+No configuration is required for this provider.
+
 ## Supported Resources
 
 * [Terraform::Random::Id](docs/providers/random/Id.md)

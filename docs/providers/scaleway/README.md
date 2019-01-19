@@ -1,5 +1,9 @@
 # Scaleway Provider
 
+##Configuration
+
+No configuration is required for this provider.
+
 ## Supported Resources
 
 * [Terraform::Scaleway::Bucket](docs/providers/scaleway/Bucket.md)

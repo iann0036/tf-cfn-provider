@@ -1,5 +1,13 @@
 # Spotinst Provider
 
+##Configuration
+
+To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/spotinst**. The below arguments may be included as the key/value or JSON properties in the secret:
+
+* `token` - (Required) A Personal API Access Token issued by Spotinst. It can be sourced from the `SPOTINST_TOKEN` environment variable.
+* `account` - (Optional) A valid Spotinst account ID. It can be sourced from the `SPOTINST_ACCOUNT` environment variable.
+
+
 ## Supported Resources
 
 * [Terraform::Spotinst::ElastigroupAwsBeanstalk](docs/providers/spotinst/ElastigroupAwsBeanstalk.md)

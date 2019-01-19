@@ -125,8 +125,11 @@ def checkout(url, provider_name):
 
 
 def iterate_resources(provider_name):
-    path = "/tmp/{}/website/docs/r/".format(provider_name)
-    if os.path.isdir(path) and provider_name in CASE_MAP:
+    resources_path = "/tmp/{}/website/docs/r/".format(provider_name)
+    index_path = "/tmp/{}/website/docs/index.html.markdown".format(provider_name)
+    provider_reference_path = "/tmp/{}/website/docs/provider_reference.html.markdown".format(provider_name)
+
+    if os.path.isdir(resources_path) and provider_name in CASE_MAP:
 
         # make provider readme
         try:
@@ -136,13 +139,67 @@ def iterate_resources(provider_name):
         
         with open("../docs/providers/{}/README.md".format(provider_name), 'w') as provider_readme:
             readable_provider_name = CASE_MAP[provider_name][1]
-            provider_readme.write("# {} Provider\n\n## Supported Resources\n\n".format(readable_provider_name))
+            
+            # provider info
+            with open(index_path, 'r') as f:
+                section = ""
+                first_argument_found = False
+                arguments = []
+                index_file_contents = f.read()
+                lines = index_file_contents.split("\n")
+                for line in lines:
+                    if line.startswith("*") and section == "arguments":
+                        first_argument_found = True
+                    if line.startswith("## Argument Reference") or line.startswith("## Arguments Reference") or line.startswith("## Configuration Reference") or "the following arguments:" in line or "provide the following credentials:" in line:
+                        section = "arguments"
+                    elif line.startswith("#"):
+                        section = ""
+                    elif section == "arguments" and first_argument_found:
+                        arguments.append(line)
+            
+            # try provider reference (eg. google)
+            if len(arguments) == 0:
+                try:
+                    with open(provider_reference_path, 'r') as f:
+                        section = ""
+                        first_argument_found = False
+                        arguments = []
+                        index_file_contents = f.read()
+                        lines = index_file_contents.split("\n")
+                        for line in lines:
+                            if (line.startswith("*") or line.startswith("-")) and section == "arguments":
+                                first_argument_found = True
+                            if line.startswith("## Argument Reference") or line.startswith("## Arguments Reference") or line.startswith("## Configuration Reference") or "the following arguments:" in line or "provide the following credentials:" in line:
+                                section = "arguments"
+                            elif line.startswith("#"):
+                                section = ""
+                            elif section == "arguments" and first_argument_found and not "navigation to the left" in line:
+                                if line.startswith("-"):
+                                    line[0] = "*"
+                                arguments.append(line)
+                except:
+                    pass
 
+            has_required_arguments = False
+            for argument in arguments:
+                if "required" in argument.lower():
+                    has_required_arguments = True
+            provider_readme.write("# {} Provider\n\n##Configuration\n\n".format(readable_provider_name))
+            if len(arguments) == 0:
+                provider_readme.write("No configuration is required for this provider.\n\n")
+            elif not has_required_arguments:
+                provider_readme.write("To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/{}**. The below arguments may be included as the key/value or JSON properties in the secret:\n\n".format(provider_name))
+                provider_readme.write("\n".join(arguments) + "\n\n")
+            else:
+                provider_readme.write("To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/{}**. The below arguments may be included as the key/value or JSON properties in the secret:\n\n".format(provider_name))
+                provider_readme.write("\n".join(arguments) + "\n\n")
+
+            provider_readme.write("## Supported Resources\n\n")
             # iterate provider resources
             provider_readme_items = []
-            files = [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
+            files = [f for f in os.listdir(resources_path) if os.path.isfile(os.path.join(resources_path, f))]
             for filename in files:
-                with open(os.path.join(path, filename), 'r') as f:
+                with open(os.path.join(resources_path, filename), 'r') as f:
                     #print(filename)
                     resource_file_contents = f.read()
                     process_file(provider_name, resource_file_contents, provider_readme_items)
@@ -186,7 +243,7 @@ def process_file(provider_name, file_contents, provider_readme_items):
                 endpos = line.strip().find("`", startpos+1)
                 if startpos != -1 and endpos != -1:
                     attribute_name = line.strip()[startpos+1:endpos]
-                    if line.strip()[endpos+1:].strip().startswith("- "):
+                    if line.strip()[endpos+1:].strip().startswith("- ") or line.strip()[endpos+1:].strip().startswith("= "):
                         attribute_description = line.strip()[endpos+1:].strip()[2:]
                         if attribute_description[-1] != ".":
                             attribute_description += "."

@@ -1,5 +1,9 @@
 # Hetzner Cloud Provider
 
+##Configuration
+
+No configuration is required for this provider.
+
 ## Supported Resources
 
 * [Terraform::HCloud::FloatingIpAssignment](docs/providers/hcloud/FloatingIpAssignment.md)
