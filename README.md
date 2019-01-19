@@ -20,8 +20,6 @@ If you prefer, you can also manually upsert the [custom_resource.yaml](custom_re
 
 Once the handler stack is created, you may use the below resources by adding the `Terraform` transform to your stack. This will transform your input template to convert the Terraform resources into Custom Resources that will handle the lifecycle within that provider.
 
-The following resources are supported (click the link to see documentation):
+Most providers will require you to store credentials and/or other provider-specific settings within AWS Secrets Manager in order to access their services. See the provider documentation for more information on how to configure those secrets.
 
-Provider | Resource
--------- | --------
-DigitalOcean | [Terraform::DigitalOcean::Droplet](docs/providers/digitalocean/droplet.md)
+Click [here](docs/README.md) to see all supported resources and provider documentation.
