@@ -4,17 +4,13 @@
 
 To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/ucloud**. The below arguments may be included as the key/value or JSON properties in the secret:
 
-* `public_key` - (Required) This is the UCloud public key. It must be provided, but
-  it can also be sourced from the `UCLOUD_PUBLIC_KEY` environment variable.
+* `public_key` - (Required) This is the UCloud public key.
 
-* `private_key` - (Required) This is the UCloud private key. It must be provided, but
-  it can also be sourced from the `UCLOUD_PRIVATE_KEY` environment variable.
+* `private_key` - (Required) This is the UCloud private key.
 
-* `region` - (Required) This is the UCloud region. It must be provided, but
-  it can also be sourced from the `UCLOUD_REGION` environment variables.
+* `region` - (Required) This is the UCloud region.
 
-* `project_id` - (Required) This is the UCloud project id. It must be provided, but
-  it can also be sourced from the `UCLOUD_PROJECT_ID` environment variables.
+* `project_id` - (Required) This is the UCloud project id.
 
 * `max_retries` - (Optional) This is the max retry attempts number. Default max retry attempts number is `0`.
 

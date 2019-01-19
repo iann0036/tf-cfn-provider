@@ -4,17 +4,11 @@
 
 To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/aws**. The below arguments may be included as the key/value or JSON properties in the secret:
 
-* `access_key` - (Optional) This is the AWS access key. It must be provided, but
-  it can also be sourced from the `AWS_ACCESS_KEY_ID` environment variable, or via
-  a shared credentials file if `profile` is specified.
+* `access_key` - (Optional) This is the AWS access key.
 
-* `secret_key` - (Optional) This is the AWS secret key. It must be provided, but
-  it can also be sourced from the `AWS_SECRET_ACCESS_KEY` environment variable, or
-  via a shared credentials file if `profile` is specified.
+* `secret_key` - (Optional) This is the AWS secret key.
 
-* `region` - (Required) This is the AWS region. It must be provided, but
-  it can also be sourced from the `AWS_DEFAULT_REGION` environment variables, or
-  via a shared credentials file if `profile` is specified.
+* `region` - (Required) This is the AWS region.
 
 * `profile` - (Optional) This is the AWS profile name as set in the shared credentials
   file.
@@ -25,8 +19,7 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 * `shared_credentials_file` = (Optional) This is the path to the shared credentials file.
   If this is not set and a profile is specified, `~/.aws/credentials` will be used.
 
-* `token` - (Optional) Use this to set an MFA token. It can also be sourced
-  from the `AWS_SESSION_TOKEN` environment variable.
+* `token` - (Optional) Use this to set an MFA token.
 
 * `max_retries` - (Optional) This is the maximum number of times an API
   call is retried, in the case where requests are being throttled or

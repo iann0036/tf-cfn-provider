@@ -4,30 +4,26 @@
 
 To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/oraclepaas**. The below arguments may be included as the key/value or JSON properties in the secret:
 
-* `user` - (Optional) The username to use, generally your email address. It can also
-  be sourced from the `OPC_USERNAME` environment variable.
+* `user` - (Optional) The username to use, generally your email address.
 
-* `password` - (Optional) The password associated with the username to use. It can also be sourced from
-  the `OPC_PASSWORD` environment variable.
+* `password` - (Optional) The password associated with the username to use.
 
-* `identity_domain` - (Optional) The Identity Domain or Service Instance ID of the environment to use. It can also be sourced from the `OPC_IDENTITY_DOMAIN` environment variable.  
+* `identity_domain` - (Optional) The Identity Domain or Service Instance ID of the environment to use.  
 
 * `database_endpoint` - (Optional) The database API endpoint to use, associated with your Oracle Cloud Platform account.
-This is known as the `REST Endpoint` within the Oracle portal. It can also be sourced from the
-`ORACLEPAAS_DATABASE_ENDPOINT` environment variable.
+This is known as the `REST Endpoint` within the Oracle portal.
 
 * `java_endpoint` - (Optional) The java API endpoint to use, associated with your Oracle Cloud Platform Account.
-This is known as the `REST Endpoint` within the Oracle portal. It can also be sourced from the
-`ORACLEPAAS_JAVA_ENDPOINT` environment variable.
+This is known as the `REST Endpoint` within the Oracle portal.
 
-* `mysql_endpoint` - (Optional) The MySQL API endpoint to use, associated with your Oracle Cloud Platform Account. This is known as the `REST Endpoint` within the Oracle portal. It can also be sourced from the `ORACLEPAAS_MYSQL_ENDPOINT` environment variable.
+* `mysql_endpoint` - (Optional) The MySQL API endpoint to use, associated with your Oracle Cloud Platform Account. This is known as the `REST Endpoint` within the Oracle portal.
 
 * `max_retries` - (Optional) The maximum number of tries to make for a successful response when operating on
-resources within Oracle Cloud Platform. It can also be sourced from the `OPC_MAX_RETRIES` environment variable.
+resources within Oracle Cloud Platform.
 Defaults to 1.
 
 * `insecure` - (Optional) Skips TLS Verification for using self-signed certificates. Should only be used if
-absolutely needed. Can also via setting the `OPC_INSECURE` environment variable to `true`.
+absolutely needed.
 
 
 ## Supported Resources

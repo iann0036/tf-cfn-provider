@@ -5,36 +5,29 @@
 To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/openstack**. The below arguments may be included as the key/value or JSON properties in the secret:
 
 * `auth_url` - (Optional; required if `cloud` is not specified) The Identity
-  authentication URL. If omitted, the `OS_AUTH_URL` environment variable is used.
+  authentication URL.
 
 * `cloud` - (Optional; required if `auth_url` is not specified) An entry in a
   `clouds.yaml` file. See the OpenStack `os-client-config`
   [documentation](https://docs.openstack.org/os-client-config/latest/user/configuration.html)
-  for more information about `clouds.yaml` files. If omitted, the `OS_CLOUD`
-  environment variable is used.
+  for more information about `clouds.yaml` files.
 
-* `region` - (Optional) The region of the OpenStack cloud to use. If omitted,
-  the `OS_REGION_NAME` environment variable is used. If `OS_REGION_NAME` is
+* `region` - (Optional) The region of the OpenStack cloud to use. If `OS_REGION_NAME` is
   not set, then no region will be used. It should be possible to omit the
   region in single-region OpenStack environments, but this behavior may vary
   depending on the OpenStack environment being used.
 
-* `user_name` - (Optional) The Username to login with. If omitted, the
-  `OS_USERNAME` environment variable is used.
+* `user_name` - (Optional) The Username to login with.
 
-* `user_id` - (Optional) The User ID to login with. If omitted, the
-  `OS_USER_ID` environment variable is used.
+* `user_id` - (Optional) The User ID to login with.
 
 * `tenant_id` - (Optional) The ID of the Tenant (Identity v2) or Project
-  (Identity v3) to login with. If omitted, the `OS_TENANT_ID` or
-  `OS_PROJECT_ID` environment variables are used.
+  (Identity v3) to login with.
 
 * `tenant_name` - (Optional) The Name of the Tenant (Identity v2) or Project
-  (Identity v3) to login with. If omitted, the `OS_TENANT_NAME` or
-  `OS_PROJECT_NAME` environment variable are used.
+  (Identity v3) to login with.
 
-* `password` - (Optional) The Password to login with. If omitted, the
-  `OS_PASSWORD` environment variable is used.
+* `password` - (Optional) The Password to login with.
 
 * `token` - (Optional; Required if not using `user_name` and `password`)
   A token is an expiring, temporary means of access issued via the Keystone
@@ -43,45 +36,33 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
   band of Terraform. If omitted, the `OS_TOKEN` or `OS_AUTH_TOKEN` environment
   variables are used.
 
-* `user_domain_name` - (Optional) The domain name where the user is located. If
-  omitted, the `OS_USER_DOMAIN_NAME` environment variable is checked.
+* `user_domain_name` - (Optional) The domain name where the user is located.
 
-* `user_domain_id` - (Optional) The domain ID where the user is located. If
-  omitted, the `OS_USER_DOMAIN_ID` environment variable is checked.
+* `user_domain_id` - (Optional) The domain ID where the user is located.
 
 * `project_domain_name` - (Optional) The domain name where the project is
-  located. If omitted, the `OS_PROJECT_DOMAIN_NAME` environment variable is
-  checked.
+  located.
 
-* `project_domain_id` - (Optional) The domain ID where the project is located
-  If omitted, the `OS_PROJECT_DOMAIN_ID` environment variable is checked.
-
-* `domain_id` - (Optional) The ID of the Domain to scope to (Identity v3). If
-  omitted, the `OS_DOMAIN_ID` environment variable is checked.
+* `domain_id` - (Optional) The ID of the Domain to scope to (Identity v3).
 
 * `domain_name` - (Optional) The Name of the Domain to scope to (Identity v3).
-  If omitted, the following environment variables are checked (in this order):
-  `OS_DOMAIN_NAME`.
 
 * `default_domain` - (Optional) The ID of the Domain to scope to if no other
-  domain is specified (Identity v3). If omitted, the environment variable
-  `OS_DEFAULT_DOMAIN` is checked or a default value of "default" will be
-  used.
+  domain is specified (Identity v3).
 
-* `insecure` - (Optional) Trust self-signed SSL certificates. If omitted, the
-  `OS_INSECURE` environment variable is used.
+* `insecure` - (Optional) Trust self-signed SSL certificates.
 
 * `cacert_file` - (Optional) Specify a custom CA certificate when communicating
   over SSL. You can specify either a path to the file or the contents of the
-  certificate. If omitted, the `OS_CACERT` environment variable is used.
+  certificate.
 
 * `cert` - (Optional) Specify client certificate file for SSL client
   authentication. You can specify either a path to the file or the contents of
-  the certificate. If omitted the `OS_CERT` environment variable is used.
+  the certificate.
 
 * `key` - (Optional) Specify client private key file for SSL client
   authentication. You can specify either a path to the file or the contents of
-  the key. If omitted the `OS_KEY` environment variable is used.
+  the key.
 
 * `endpoint_type` - (Optional) Specify which type of endpoint to use from the
   service catalog. It can be set using the OS_ENDPOINT_TYPE environment

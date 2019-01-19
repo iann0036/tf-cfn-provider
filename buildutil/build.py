@@ -179,23 +179,34 @@ def iterate_resources(provider_name):
                                 arguments.append(line)
                 except:
                     pass
+            
+            # remove environmental variable references
+            argument_text = "\n".join(arguments)
+            if provider_name not in ['digitalocean', 'fastly', 'flexibleengine', 'google', 'oneandone', 'profitbricks']:
+                sentences = argument_text.split(".")
+                i = 0
+                while len(sentences) > i:
+                    if ("environment variable" in sentences[i] or "environmental variable" in sentences[i]):
+                        del sentences[i]
+                    else:
+                        i+=1
+                argument_text = ".".join(sentences)
 
             has_required_arguments = False
-            for argument in arguments:
-                if "required" in argument.lower():
-                    has_required_arguments = True
+            if "required" in argument_text.lower():
+                has_required_arguments = True
             provider_readme.write("# {} Provider\n\n## Configuration\n\n".format(readable_provider_name))
             if len(arguments) == 0:
                 provider_readme.write("No configuration is required for this provider.\n\n")
             elif not has_required_arguments:
                 provider_readme.write("To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/{}**. The below arguments may be included as the key/value or JSON properties in the secret:\n\n".format(provider_name))
-                provider_readme.write("\n".join(arguments) + "\n\n")
+                provider_readme.write(argument_text + "\n\n")
             else:
                 provider_readme.write("To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/{}**. The below arguments may be included as the key/value or JSON properties in the secret:\n\n".format(provider_name))
-                provider_readme.write("\n".join(arguments) + "\n\n")
+                provider_readme.write(argument_text + "\n\n")
 
-            provider_readme.write("## Supported Resources\n\n")
             # iterate provider resources
+            provider_readme.write("## Supported Resources\n\n")
             provider_readme_items = []
             files = [f for f in os.listdir(resources_path) if os.path.isfile(os.path.join(resources_path, f))]
             for filename in files:

@@ -6,11 +6,9 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 * `address` - (Optional) Atlas server endpoint. Defaults to
   public Atlas. This is only required when using an on-premise
-  deployment of Atlas. This can also be specified with the
-  `ATLAS_ADDRESS` shell environment variable.
+  deployment of Atlas.
 
-* `token` - (Required) API token. This can also be specified with the
-  `ATLAS_TOKEN` shell environment variable.
+* `token` - (Required) API token.
 
 
 ## Supported Resources

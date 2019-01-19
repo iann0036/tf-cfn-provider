@@ -5,11 +5,8 @@
 To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/runscope**. The below arguments may be included as the key/value or JSON properties in the secret:
 
 * `access_token` - (Required) The Runscope access token.
-  This can also be specified with the `RUNSCOPE_ACCESS_TOKEN` shell
-  environment variable.
 * `api_url` - (Optional) If set, specifies the Runscope api url, this
-   defaults to `"https://api.runscope.com`. This can also be specified
-   with the `RUNSCOPE_API_URL` shell environment variable.
+   defaults to `"https://api.runscope.com`.
 
 
 ## Supported Resources

@@ -4,21 +4,16 @@
 
 To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/alicloud**. The below arguments may be included as the key/value or JSON properties in the secret:
 
-* `access_key` - This is the Alicloud access key. It must be provided, but
-  it can also be sourced from the `ALICLOUD_ACCESS_KEY` environment variable.
+* `access_key` - This is the Alicloud access key.
 
-* `secret_key` - This is the Alicloud secret key. It must be provided, but
-  it can also be sourced from the `ALICLOUD_SECRET_KEY` environment variable.
+* `secret_key` - This is the Alicloud secret key.
 
-* `region` - This is the Alicloud region. It must be provided, but
-  it can also be sourced from the `ALICLOUD_REGION` environment variables.
+* `region` - This is the Alicloud region.
 
 * `security_token` - Alicloud [Security Token Service](https://www.alibabacloud.com/help/doc-detail/66222.html).
-  It can be sourced from the `ALICLOUD_SECURITY_TOKEN` environment variable.
 
 * `account_id` - (Optional) Alibaba Cloud Account ID. It is used by the Function Compute service and to connect router interfaces.
   If not provided, the provider will attempt to retrieve it automatically with [STS GetCallerIdentity](https://www.alibabacloud.com/help/doc-detail/43767.htm).
-  It can be sourced from the `ALICLOUD_ACCOUNT_ID` environment variable.
 
 Nested `endpoints` block supports the following:
 

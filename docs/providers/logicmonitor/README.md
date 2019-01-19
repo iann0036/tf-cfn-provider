@@ -4,9 +4,9 @@
 
 To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/logicmonitor**. The below arguments may be included as the key/value or JSON properties in the secret:
 
-* `api_id` - (Required) LogicMonitor API id. This can also be set via the `LM_API_ID` environment variable.
-* `api_key` - (Required) LogicMonitor API key. This can also be set via the `LM_API_KEY` environment variable.
-* `company` - (Required) LogicMonitor company name. This can also be set via the `LM_COMPANY` environment variable.
+* `api_id` - (Required) LogicMonitor API id.
+* `api_key` - (Required) LogicMonitor API key.
+* `company` - (Required) LogicMonitor company name.
 
 
 ## Supported Resources

@@ -4,10 +4,8 @@
 
 To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/librato**. The below arguments may be included as the key/value or JSON properties in the secret:
 
-* `token` - (Required) Librato API token. It must be provided, but it can also
-  be sourced from the `LIBRATO_TOKEN` environment variable.
-* `email` - (Required) Librato email address. It must be provided, but it can
-  also be sourced from the `LIBRATO_EMAIL` environment variable.
+* `token` - (Required) Librato API token.
+* `email` - (Required) Librato email address.
 
 
 ## Supported Resources

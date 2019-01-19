@@ -4,14 +4,11 @@
 
 To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/heroku**. The below arguments may be included as the key/value or JSON properties in the secret:
 
-* `api_key` - (Required) Heroku API token. It must be provided, but it can also
-  be sourced from the `HEROKU_API_KEY` environment variable.
+* `api_key` - (Required) Heroku API token.
 
-* `email` - (Required) Email to be notified by Heroku. It must be provided, but
-  it can also be sourced from the `HEROKU_EMAIL` environment variable.
+* `email` - (Required) Email to be notified by Heroku.
 
-* `headers` - (Optional) Additional Headers to be sent to Heroku. If not provided,
-  it can also be sourced from the `HEROKU_HEADERS` environment variable.
+* `headers` - (Optional) Additional Headers to be sent to Heroku.
 
 * `delays` - (Optional) A `delays` block (documented below). Only one
   `delays` block may be in the configuration. Delays help mitigate issues with 

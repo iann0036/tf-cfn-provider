@@ -4,11 +4,9 @@
 
 To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/bitbucket**. The below arguments may be included as the key/value or JSON properties in the secret:
 
-* `username` - (Required) Your username used to connect to bitbucket. You can
-  also set this via the environment variable. `BITBUCKET_USERNAME`
+* `username` - (Required) Your username used to connect to bitbucket. `BITBUCKET_USERNAME`
 
-* `password` - (Required) Your password used to connect to bitbucket. You can
-  also set this via the environment variable. `BITBUCKET_PASSWORD`
+* `password` - (Required) Your password used to connect to bitbucket. `BITBUCKET_PASSWORD`
 
 
 ## Supported Resources

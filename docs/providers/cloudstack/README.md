@@ -4,14 +4,11 @@
 
 To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/cloudstack**. The below arguments may be included as the key/value or JSON properties in the secret:
 
-* `api_url` - (Optional) This is the CloudStack API URL. It can also be sourced
-  from the `CLOUDSTACK_API_URL` environment variable.
+* `api_url` - (Optional) This is the CloudStack API URL.
 
-* `api_key` - (Optional) This is the CloudStack API key. It can also be sourced
-  from the `CLOUDSTACK_API_KEY` environment variable.
+* `api_key` - (Optional) This is the CloudStack API key.
 
-* `secret_key` - (Optional) This is the CloudStack secret key. It can also be
-  sourced from the `CLOUDSTACK_SECRET_KEY` environment variable.
+* `secret_key` - (Optional) This is the CloudStack secret key.
 
 * `config` - (Optional) The path to a `CloudMonkey` config file. If set the API
   URL, key and secret will be retrieved from this file.
@@ -21,12 +18,10 @@ To configure this resource, you may optionally create an AWS Secrets Manager sec
 
 * `http_get_only` - (Optional) Some cloud providers only allow HTTP GET calls to
   their CloudStack API. If using such a provider, you need to set this to `true`
-  in order for the provider to only make GET calls and no POST calls. It can also
-  be sourced from the `CLOUDSTACK_HTTP_GET_ONLY` environment variable.
+  in order for the provider to only make GET calls and no POST calls.
 
 * `timeout` - (Optional) A value in seconds. This is the time allowed for Cloudstack
-  to complete each asynchronous job triggered. If unset, this can be sourced from the
-  `CLOUDSTACK_TIMEOUT` environment variable. Otherwise, this will default to 300
+  to complete each asynchronous job triggered. Otherwise, this will default to 300
   seconds.
 
 

@@ -4,14 +4,11 @@
 
 To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/tencentcloud**. The below arguments may be included as the key/value or JSON properties in the secret:
 
-* `secret_id` - (Optional) This is the TencentCloud access key. It must be provided, but
-  it can also be sourced from the `TENCENTCLOUD_SECRET_ID` environment variable.
+* `secret_id` - (Optional) This is the TencentCloud access key.
 
-* `secret_key` - (Optional) This is the TencentCloud secret key. It must be provided, but
-  it can also be sourced from the `TENCENTCLOUD_SECRET_KEY` environment variable.
+* `secret_key` - (Optional) This is the TencentCloud secret key.
 
-* `region` - (Required) This is the TencentCloud region. It must be provided, but
-  it can also be sourced from the `TENCENTCLOUD_REGION` environment variables.
+* `region` - (Required) This is the TencentCloud region.
   The default input value is ap-guangzhou.
 
 

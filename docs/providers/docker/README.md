@@ -4,8 +4,7 @@
 
 To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/docker**. The below arguments may be included as the key/value or JSON properties in the secret:
 
-* `host` - (Required) This is the address to the Docker host. If this is
-  blank, the `DOCKER_HOST` environment variable will also be read.
+* `host` - (Required) This is the address to the Docker host.
 
 * `cert_path` - (Optional) Path to a directory with certificate information
   for connecting to the Docker host via TLS. It is expected that the 3 files `{ca, cert, key}.pem` 

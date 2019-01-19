@@ -4,7 +4,7 @@
 
 To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/newrelic**. The below arguments may be included as the key/value or JSON properties in the secret:
 
-* `api_key` - (Required) Your New Relic API key. Can also use `NEWRELIC_API_KEY` environment variable.
+* `api_key` - (Required) Your New Relic API key.
 
 
 ## Supported Resources

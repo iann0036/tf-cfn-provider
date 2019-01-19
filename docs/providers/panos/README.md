@@ -4,18 +4,13 @@
 
 To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/panos**. The below arguments may be included as the key/value or JSON properties in the secret:
 
-* `hostname` - (Optional) This is the hostname / IP address of the firewall.  It
-  must be provided, but can also be defined via the `PANOS_HOSTNAME`
-  environment variable.
-* `username` - (Optional) The username to authenticate to the firewall as.  It
-  must be provided, but can also be defined via the `PANOS_USERNAME`
-  environment variable.
+* `hostname` - (Optional) This is the hostname / IP address of the firewall.
+* `username` - (Optional) The username to authenticate to the firewall as.
 * `password` - (Optional) The password for the given username. It must be
   provided, but can also be defined via the `PANOS_PASSWORD` environment
   variable.
 * `api_key` - (Optional) The API key for the firewall.  If this is given, then
-  the `username` and `password` settings are ignored.  This can also be defined
-  via the `PANOS_API_KEY` environment variable.
+  the `username` and `password` settings are ignored.
 * `protocol` - (Optional) The communication protocol.  This can be set to
   either `https` or `http`.  If left unspecified, this defaults to `https`.  
 * `port` - (Optional) If the port number is non-standard for the desired

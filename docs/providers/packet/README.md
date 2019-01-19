@@ -4,8 +4,7 @@
 
 To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/packet**. The below arguments may be included as the key/value or JSON properties in the secret:
 
-* `auth_token` - (Required) This is your Packet API Auth token. This can also be specified
-  with the `PACKET_AUTH_TOKEN` shell environment variable.
+* `auth_token` - (Required) This is your Packet API Auth token.
 
 
 ## Supported Resources

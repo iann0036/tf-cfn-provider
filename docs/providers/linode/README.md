@@ -6,8 +6,6 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 * `token` - (Required) This is your [Linode APIv4 Token](https://developers.linode.com/api/v4#section/Personal-Access-Token).
 
-   The Linode Token can also be specified using the `LINODE_TOKEN` environment variable.
-
 
 ## Supported Resources
 

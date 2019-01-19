@@ -4,8 +4,8 @@
 
 To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/circonus**. The below arguments may be included as the key/value or JSON properties in the secret:
 
-* `key` - (Required) The Circonus API Key. It can be sourced from the `CIRCONUS_API_KEY` environment variable.
-* `api_url` - (Optional) The API URL to use to talk with. The default is `https://api.circonus.com/v2`. It can be sourced from the `CIRCONUS_API_URL` environment variable.
+* `key` - (Required) The Circonus API Key.
+* `api_url` - (Optional) The API URL to use to talk with. The default is `https://api.circonus.com/v2`.
 
 
 ## Supported Resources

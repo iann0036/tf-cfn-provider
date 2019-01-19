@@ -4,39 +4,29 @@
 
 To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/nsxt**. The below arguments may be included as the key/value or JSON properties in the secret:
 
-* `host` - (Required) The host name or IP address of the NSX-T manager. Can also
-  be specified with the `NSXT_MANAGER_HOST` environment variable.
-* `username` - (Required) The user name to connect to the NSX-T manager as. Can
-  also be specified with the `NSXT_USERNAME` environment variable.
-* `password` - (Required) The password for the NSX-T manager user. Can also be
-  specified with the `NSXT_PASSWORD` environment variable.
+* `host` - (Required) The host name or IP address of the NSX-T manager.
+* `username` - (Required) The user name to connect to the NSX-T manager as.
+* `password` - (Required) The password for the NSX-T manager user.
 * `client_auth_cert_file` - (Optional) The path to a certificate file for
-  certificate authorization. Can also be specified with the
-  `NSXT_CLIENT_AUTH_CERT_FILE` environment variable.
+  certificate authorization.
 * `client_auth_key_file` - (Optional) The path to a private key file for the
-  certificate supplied to `client_auth_cert_file`. Can also be specified with
-  the `NSXT_CLIENT_AUTH_KEY_FILE` environment variable.
+  certificate supplied to `client_auth_cert_file`.
 * `allow_unverified_ssl` - (Optional) Boolean that can be set to true to disable
   SSL certificate verification. This should be used with care as it could allow
   an attacker to intercept your auth token. If omitted, default value is
-  `false`. Can also be specified with the `NSXT_ALLOW_UNVERIFIED_SSL`
-  environment variable.
+  `false`.
 * `ca_file` - (Optional) The path to an optional CA certificate file for SSL
   validation. Can also be specified with the `NSXT_CA_FILE` environment
   variable.
 * `max_retries` - (Optional) The maximum number of retires before failing an API
-  request. Default: `10` Can also be specified with the `NSXT_MAX_RETRIES`
-  environment variable.
+  request.
 * `retry_min_delay` - (Optional) The minimum delay, in milliseconds, between
-  retires made to the API. Default:`500`. Can also be specified with the
-  `NSXT_RETRY_MIN_DELAY` environment variable.
+  retires made to the API. Default:`500`.
 * `retry_max_delay` - (Optional) The maximum delay, in milliseconds, between
-  retires made to the API. Default:`5000`. Can also be specified with the
-  `NSXT_RETRY_MAX_DELAY` environment variable.
+  retires made to the API. Default:`5000`.
 * `retry_on_status_codes` - (Optional) A list of HTTP status codes to retry on.
   By default, the provider will retry on HTTP error 429 (too many requests),
-  essentially retrying on throttled connections. Can also be specified with the
-  `NSXT_RETRY_ON_STATUS_CODES` environment variable.
+  essentially retrying on throttled connections.
 
 
 ## Supported Resources

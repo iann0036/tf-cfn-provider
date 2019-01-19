@@ -5,8 +5,7 @@
 To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/brightbox**. The below arguments may be included as the key/value or JSON properties in the secret:
 
 * `apiclient` - (optional) This is the Brightbox client id for an
-account. This can also be specified with the `BRIGHTBOX_CLIENT` shell
-environment variable.
+account.
 
 * `apisecret` - (optional) This is the Brightbox client secret. This can
 also be specified with the `BRIGHTBOX_CLIENT_SECRET` shell environment
@@ -21,8 +20,7 @@ can also be specified with the `BRIGHTBOX_PASSWORD` shell environment
 variable.
 
 * `account` - (optional) This is the Brightbox account you wish to
-operate upon. This can also be specified with the `BRIGHTBOX_ACCOUNT`
-shell environment variable.
+operate upon.
 
 * `apiurl` - (Optional) Use this to override the default endpoint URL
 constructed for the region. It's typically used to connect to custom
