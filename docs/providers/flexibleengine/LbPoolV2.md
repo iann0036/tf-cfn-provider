@@ -4,7 +4,30 @@ Manages a V2 pool resource within FlexibleEngine.
 
 ## Properties
 
-TBC
+`Region` - (Optional) The region in which to obtain the V2 Networking client. A Networking client is needed to create an . If omitted, the `Region` argument of the provider is used. Changing this creates a new pool.
+
+`TenantId` - (Optional) Required for admins. The UUID of the tenant who owns the pool.  Only administrative users can specify a tenant UUID other than their own. Changing this creates a new pool.
+
+`Name` - (Optional) Human-readable name for the pool.
+
+`Description` - (Optional) Human-readable description for the pool.
+
+`Protocol` - (Required) The protocol - can either be TCP, HTTP or HTTPS. Changing this creates a new pool.
+
+`LoadbalancerId` - (Optional) The load balancer on which to provision this pool. Changing this creates a new pool. Note:  One of LoadbalancerID or ListenerID must be provided.
+
+`ListenerId` - (Optional) The Listener on which the members of the pool will be associated with. Changing this creates a new pool. Note:  One of LoadbalancerID or ListenerID must be provided.
+
+`LbMethod` - (Required) The load balancing algorithm to distribute traffic to the pool's members. Must be one of ROUND_ROBIN, LEAST_CONNECTIONS, or SOURCE_IP.
+
+`Persistence` - Omit this field to prevent session persistence.  Indicates whether connections in the same session will be processed by the same Pool member or not. Changing this creates a new pool.
+
+`AdminStateUp` - (Optional) The administrative state of the pool. A valid value is true (UP) or false (DOWN).
+
+`Type` - (Required) The type of persistence mode. The current specification supports SOURCE_IP, HTTP_COOKIE, and APP_COOKIE.
+
+`CookieName` - (Optional) The name of the cookie if persistence mode is set appropriately. Required if `type = APP_COOKIE`.
+
 
 ## Return Values
 
@@ -12,19 +35,19 @@ TBC
 
 `Id` - The unique ID for the pool.
 
-`TenantId` - See Argument Reference above.
+`TenantId` - See Properties above.
 
-`Name` - See Argument Reference above.
+`Name` - See Properties above.
 
-`Description` - See Argument Reference above.
+`Description` - See Properties above.
 
-`Protocol` - See Argument Reference above.
+`Protocol` - See Properties above.
 
-`LbMethod` - See Argument Reference above.
+`LbMethod` - See Properties above.
 
-`Persistence` - See Argument Reference above.
+`Persistence` - See Properties above.
 
-`AdminStateUp` - See Argument Reference above.
+`AdminStateUp` - See Properties above.
 
 ## See Also
 

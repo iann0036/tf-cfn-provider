@@ -3,8 +3,8 @@
 Provides a security group resource.
 
 ~> **NOTE on Security Groups and Security Group Rules:** Terraform currently
-provides both a standalone [Security Group Rule resource](security_group_rule.html) (a single `ingress` or
-`egress` rule), and a Security Group resource with `ingress` and `egress` rules
+provides both a standalone [Security Group Rule resource](security_group_rule.html) (a single `Ingress` or
+`Egress` rule), and a Security Group resource with `Ingress` and `Egress` rules
 defined in-line. At this time you cannot use a Security Group with in-line rules
 in conjunction with any Security Group Rule resources. Doing so will cause
 a conflict of rule settings and will overwrite rules.
@@ -13,7 +13,38 @@ a conflict of rule settings and will overwrite rules.
 
 ## Properties
 
-TBC
+`Name` - (Optional, Forces new resource) The name of the security group. If omitted, Terraform will assign a random, unique name.
+
+`NamePrefix` - (Optional, Forces new resource) Creates a unique name beginning with the specified prefix. Conflicts with `Name`.
+
+`Description` - (Optional) Description of this egress rule.
+
+`Ingress` - (Optional) Can be specified multiple times for each ingress rule. Each ingress block supports fields documented below.
+
+`Egress` - (Optional, VPC only) Can be specified multiple times for each egress rule. Each egress block supports fields documented below.
+
+`RevokeRulesOnDelete` - (Optional) Instruct Terraform to revoke all of the Security Groups attached ingress and egress rules before deleting the rule itself. This is normally not needed, however certain AWS services such as Elastic Map Reduce may automatically add required rules to security groups used with the service, and those rules may contain a cyclic dependency that prevent the security groups from being destroyed without removing the dependency first. Default `false`.
+
+`VpcId` - (Optional, Forces new resource) The VPC ID.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
+`CidrBlocks` - (Optional) List of CIDR blocks.
+
+`Ipv6CidrBlocks` - (Optional) List of IPv6 CIDR blocks.
+
+`PrefixListIds` - (Optional) List of prefix list IDs (for allowing access to VPC endpoints).
+
+`FromPort` - (Required) The start port (or ICMP type number if protocol is "icmp").
+
+`Protocol` - (Required) The protocol. If you select a protocol of "-1" (semantically equivalent to `"all"`, which is not a valid value here), you must specify a "from_port" and "to_port" equal to 0. If not icmp, tcp, udp, or "-1" use the [protocol number](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml).
+
+`SecurityGroups` - (Optional) List of security group Group Names if using EC2-Classic, or Group IDs if using a VPC.
+
+`Self` - (Optional) If true, the security group itself will be added as a source to this egress rule.
+
+`ToPort` - (Required) The end range port (or ICMP code if protocol is "icmp").
+
 
 ## Return Values
 

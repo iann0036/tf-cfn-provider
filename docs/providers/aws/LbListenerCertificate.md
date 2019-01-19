@@ -4,11 +4,14 @@ Provides a Load Balancer Listener Certificate resource.
 
 This resource is for additional certificates and does not replace the default certificate on the listener.
 
-~> **Note:** `aws_alb_listener_certificate` is known as `aws_lb_listener_certificate`. The functionality is identical.
+~> **Note:** `Terraform::AWS::AlbListenerCertificate` is known as `awsLbListenerCertificate`. The functionality is identical.
 
 ## Properties
 
-TBC
+`ListenerArn` - (Required, Forces New Resource) The ARN of the listener to which to attach the certificate.
+
+`CertificateArn` - (Required, Forces New Resource) The ARN of the certificate to attach to the listener.
+
 
 ## See Also
 

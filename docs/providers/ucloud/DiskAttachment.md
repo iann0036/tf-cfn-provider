@@ -4,7 +4,12 @@ Provides a Cloud Disk Attachment resource for attaching Cloud Disk to UHost Inst
 
 ## Properties
 
-TBC
+`AvailabilityZone` - (Required) The Zone to attach the disk in.
+
+`InstanceId` - (Required) The ID of host instance.
+
+`DiskId` - (Required) The ID of disk that needs to be attached.
+
 
 ## See Also
 

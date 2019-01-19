@@ -5,7 +5,12 @@ Provides a resource to create a group in an
 
 ## Properties
 
-TBC
+`Path` - (Required) The path where the Okta auth backend is mounted.
+
+`GroupName` - (Required) Name of the group within the Okta.
+
+`Policies` - (Optional) Vault policies to associate with this group.
+
 
 ## See Also
 

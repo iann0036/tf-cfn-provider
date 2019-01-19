@@ -7,7 +7,14 @@ Provides a Pinpoint Baidu Channel resource.
 
 ## Properties
 
-TBC
+`ApplicationId` - (Required) The application ID.
+
+`Enabled` - (Optional) Specifies whether to enable the channel. Defaults to `true`.
+
+`ApiKey` - (Required) Platform credential API key from Baidu.
+
+`SecretKey` - (Required) Platform credential Secret key from Baidu.
+
 
 ## See Also
 

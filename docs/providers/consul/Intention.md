@@ -5,12 +5,23 @@ rules for which services may connect to one another when using [Consul Connect](
 
 It is appropriate to either reference existing services or specify non-existent services
 that will be created in the future when creating intentions. This resource can be used
-in conjunction with the `consul_service` datasource when referencing services
+in conjunction with the `Terraform::Consul::Service` datasource when referencing services
 registered on nodes that have a running Consul agent.
 
 ## Properties
 
-TBC
+`SourceName` - (Required, string) The name of the source service for the intention. This service does not have to exist.
+
+`DestinationName` - (Required, string) The name of the destination service for the intention. This service does not have to exist.
+
+`Action` - (Required, string) The intention action. Must be one of `allow` or `deny`.
+
+`Meta` - (Optional, map) Key/value pairs that are opaque to Consul and are associated with the intention.
+
+`Description` - (Optional, string) Optional description that can be used by Consul tooling, but is not used internally.
+
+`Datacenter` - (Optional) The datacenter to use. This overrides the datacenter in the provider setup and the agent's default datacenter.
+
 
 ## Return Values
 

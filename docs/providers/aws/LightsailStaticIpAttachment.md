@@ -6,7 +6,10 @@ Provides a static IP address attachment - relationship between a Lightsail stati
 
 ## Properties
 
-TBC
+`StaticIpName` - (Required) The name of the allocated static IP.
+
+`InstanceName` - (Required) The name of the Lightsail instance to attach the IP to.
+
 
 ## Return Values
 

@@ -7,7 +7,14 @@ Provides a Pinpoint ADM (Amazon Device Messaging) Channel resource.
 
 ## Properties
 
-TBC
+`ApplicationId` - (Required) The application ID.
+
+`ClientId` - (Required) Client ID (part of OAuth Credentials) obtained via Amazon Developer Account.
+
+`ClientSecret` - (Required) Client Secret (part of OAuth Credentials) obtained via Amazon Developer Account.
+
+`Enabled` - (Optional) Specifies whether to enable the channel. Defaults to `true`.
+
 
 ## See Also
 

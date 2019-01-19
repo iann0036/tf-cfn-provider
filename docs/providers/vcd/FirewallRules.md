@@ -5,7 +5,12 @@ modify, and delete firewall settings and rules.
 
 ## Properties
 
-TBC
+`EdgeGateway` - (Required) The name of the edge gateway on which to apply the Firewall Rules.
+
+`DefaultAction` - (Required) Either "allow" or "deny". Specifies what to do should none of the rules match.
+
+`Rule` - (Optional) Configures a firewall rule; see [Rules](#rules) below for details.
+
 
 ## See Also
 

@@ -4,7 +4,18 @@ Provides a DNSimple record resource.
 
 ## Properties
 
-TBC
+`Domain` - (Required) The domain to add the record to.
+
+`Name` - (Required) The name of the record.
+
+`Value` - (Required) The value of the record.
+
+`Type` - (Required) The type of the record.
+
+`Ttl` - (Optional) The TTL of the record.
+
+`Priority` - (Optional) The priority of the record - only useful for some record types.
+
 
 ## Return Values
 

@@ -4,7 +4,16 @@ Use this resource to create, update or destroy RightScale [network gateways](htt
 
 ## Properties
 
-TBC
+`CloudHref` - (Required) Cloud you want to create the network gateway in.
+
+`Type` - (Required) Type of network gateway.  Options are "internet" or "vpc".
+
+`Name` - (Required) Network gateway name.
+
+`Description` - (Optional) Network gateway description.
+
+`NetworkHref` - (Optional) Href of network you want to attach the network gateway to.
+
 
 ## Return Values
 

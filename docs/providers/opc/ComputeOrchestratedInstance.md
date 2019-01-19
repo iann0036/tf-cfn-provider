@@ -1,11 +1,18 @@
 # Terraform::OPC::ComputeOrchestratedInstance
 
-The `opc_compute_orchestrated_instance` resource creates and manages an orchestration containing a number of
+The `Terraform::OPC::ComputeOrchestratedInstance` resource creates and manages an orchestration containing a number of
 instances in an Oracle Cloud Infrastructure Compute Classic identity domain.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the orchestration.
+
+`DesiredState` - (Required) The desired state of the orchestration. Permitted values are:.
+
+`Instance` - (Required) The information pertaining to creating an instance through the orchestration API.
+
+`Description` - (Optional) The description of the orchestration.
+
 
 ## See Also
 

@@ -1,23 +1,30 @@
 # Terraform::HuaweiCloud::ComputeFloatingipAssociateV2
 
 Associate a floating IP to an instance. This can be used instead of the
-`floating_ip` options in `huaweicloud_compute_instance_v2`.
+`FloatingIp` options in `Terraform::HuaweiCloud::ComputeInstanceV2`.
 
 ## Properties
 
-TBC
+`Region` - (Optional) The region in which to obtain the V2 Compute client. Keypairs are associated with accounts, but a Compute client is needed to create one. If omitted, the `Region` argument of the provider is used. Changing this creates a new floatingip_associate.
+
+`FloatingIp` - (Required) The floating IP to associate.
+
+`InstanceId` - (Required) The instance to associte the floating IP with.
+
+`FixedIp` - (Optional) The specific IP address to direct traffic to.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Region` - See Argument Reference above.
+`Region` - See Properties above.
 
-`FloatingIp` - See Argument Reference above.
+`FloatingIp` - See Properties above.
 
-`InstanceId` - See Argument Reference above.
+`InstanceId` - See Properties above.
 
-`FixedIp` - See Argument Reference above.
+`FixedIp` - See Properties above.
 
 ## See Also
 

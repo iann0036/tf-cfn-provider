@@ -4,7 +4,24 @@ Provides a resource to configure MAC management switching profile on NSX-T manag
 
 ## Properties
 
-TBC
+`Description` - (Optional) Description of this resource.
+
+`DisplayName` - (Optional) The display name of this resource. Defaults to ID if not set.
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this MAC management switching profile.
+
+`MacChangeAllowed` - (Optional) A boolean flag indicating allowing source MAC address change.
+
+`MacLearning` - (Optional) Mac learning configuration: * `Enabled` - (Optional) A boolean flag indicating allowing source MAC address learning. * `UnicastFloodingAllowed` - (Optional) A boolean flag indicating allowing flooding for unlearned MAC for ingress traffic. Can be True only if mac_learning is enabled. * `Limit` - (Optional) The maximum number of MAC addresses that can be learned on this port. * `LimitPolicy` - (Optional) The policy after MAC Limit is exceeded: ALLOW/DROP.
+
+`Enabled` - (Optional) A boolean flag indicating allowing source MAC address learning. * `UnicastFloodingAllowed` - (Optional) A boolean flag indicating allowing flooding for unlearned MAC for ingress traffic. Can be True only if mac_learning is enabled. * `Limit` - (Optional) The maximum number of MAC addresses that can be learned on this port. * `LimitPolicy` - (Optional) The policy after MAC Limit is exceeded: ALLOW/DROP.
+
+`UnicastFloodingAllowed` - (Optional) A boolean flag indicating allowing flooding for unlearned MAC for ingress traffic. Can be True only if mac_learning is enabled. * `Limit` - (Optional) The maximum number of MAC addresses that can be learned on this port. * `LimitPolicy` - (Optional) The policy after MAC Limit is exceeded: ALLOW/DROP.
+
+`Limit` - (Optional) The maximum number of MAC addresses that can be learned on this port. * `LimitPolicy` - (Optional) The policy after MAC Limit is exceeded: ALLOW/DROP.
+
+`LimitPolicy` - (Optional) The policy after MAC Limit is exceeded: ALLOW/DROP.
+
 
 ## Return Values
 

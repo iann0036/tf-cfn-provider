@@ -57,7 +57,6 @@ VBS Backup Share can be imported using the `backup id`, e.g.
 
 ## Properties
 
-TBC
 
 ## See Also
 

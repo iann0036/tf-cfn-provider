@@ -1,7 +1,7 @@
 # Terraform::OCI::LoadBalancerLoadBalancer
 
 Other supported legacy names/aliases:
-  * `oci_load_balancer`
+  * `Terraform::OCI::LoadBalancer`
 
 This resource provides the Load Balancer resource in Oracle Cloud Infrastructure Load Balancer service.
 
@@ -32,7 +32,20 @@ To get the IP address, use the [GetLoadBalancer](https://docs.cloud.oracle.com/i
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the compartment in which to create the load balancer.
+
+`DefinedTags` - (Optional) (Updatable) Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
+
+`DisplayName` - (Required) (Updatable) A user-friendly name. It does not have to be unique, and it is changeable. Avoid entering confidential information.  Example: `example_load_balancer`.
+
+`FreeformTags` - (Optional) (Updatable) Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
+
+`IsPrivate` - (Optional) Whether the load balancer has a VCN-local (private) IP address.
+
+`Shape` - (Required) A template that determines the total pre-provisioned bandwidth (ingress plus egress). To get a list of available shapes, use the [ListShapes](https://docs.cloud.oracle.com/iaas/api/#/en/loadbalancer/20170115/LoadBalancerShape/ListShapes) operation.  Example: `100Mbps`.
+
+`SubnetIds` - (Required) An array of subnet [OCIDs](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm).
+
 
 ## Return Values
 

@@ -6,7 +6,8 @@ information.
 
 ## Properties
 
-TBC
+`RoleName` - (Required) The name of the role.
+
 
 ## See Also
 

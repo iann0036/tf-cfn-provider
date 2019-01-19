@@ -4,7 +4,6 @@ Manages groups and group privileges on ProfitBricks.
 
 ## Properties
 
-TBC
 
 ## See Also
 

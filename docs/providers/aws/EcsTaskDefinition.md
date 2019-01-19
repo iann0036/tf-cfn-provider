@@ -1,10 +1,9 @@
 # Terraform::AWS::EcsTaskDefinition
 
-Manages a revision of an ECS task definition to be used in `aws_ecs_service`.
+Manages a revision of an ECS task definition to be used in `Terraform::AWS::EcsService`.
 
 ## Properties
 
-TBC
 
 ## Return Values
 

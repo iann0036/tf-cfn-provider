@@ -4,7 +4,16 @@ Provides a Service Discovery Service resource.
 
 ## Properties
 
-TBC
+`Name` - (Required, ForceNew) The name of the service.
+
+`Description` - (Optional) The description of the service.
+
+`DnsConfig` - (Required) A complex type that contains information about the resource record sets that you want Amazon Route 53 to create when you register an instance.
+
+`HealthCheckConfig` - (Optional) A complex type that contains settings for an optional health check. Only for Public DNS namespaces.
+
+`HealthCheckCustomConfig` - (Optional, ForceNew) A complex type that contains settings for ECS managed health checks.
+
 
 ## Return Values
 

@@ -4,7 +4,10 @@ Manages an EC2 Transit Gateway Route Table.
 
 ## Properties
 
-TBC
+`TransitGatewayId` - (Required) Identifier of EC2 Transit Gateway.
+
+`Tags` - (Optional) Key-value tags for the EC2 Transit Gateway Route Table.
+
 
 ## See Also
 

@@ -8,7 +8,18 @@ schema version you must recreate the resource.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the document.
+
+`Content` - (Required) The JSON or YAML content of the document.
+
+`DocumentFormat` - (Optional, defaults to JSON) The format of the document. Valid document types include: `JSON` and `YAML`.
+
+`DocumentType` - (Required) The type of the document. Valid document types include: `Command`, `Policy`, `Automation` and `Session`.
+
+`Permissions` - (Optional) Additional Permissions to attach to the document. See [Permissions](#permissions) below for details.
+
+`Tags` - (Optional) A mapping of tags to assign to the object.
+
 
 ## Return Values
 

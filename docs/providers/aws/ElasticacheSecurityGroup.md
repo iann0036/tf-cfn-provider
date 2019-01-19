@@ -9,7 +9,6 @@ ElastiCache cluster **outside** of a VPC. If you are using a VPC, see the
 
 ## Properties
 
-TBC
 
 ## See Also
 

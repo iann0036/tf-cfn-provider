@@ -6,7 +6,30 @@ Create a new node pool.
 
 ## Properties
 
-TBC
+`ClusterId` - (Required) The OCID of the cluster to which this node pool is attached.
+
+`CompartmentId` - (Required) The OCID of the compartment in which the node pool exists.
+
+`InitialNodeLabels` - (Optional) (Updatable) A list of key/value pairs to add to nodes after they join the Kubernetes cluster. * `Key` - (Optional) (Updatable) The key of the pair. * `Value` - (Optional) (Updatable) The value of the pair.
+
+`Key` - (Optional) (Updatable) The key of the pair. * `Value` - (Optional) (Updatable) The value of the pair.
+
+`Value` - (Optional) (Updatable) The value of the pair.
+
+`KubernetesVersion` - (Required) (Updatable) The version of Kubernetes to install on the nodes in the node pool.
+
+`Name` - (Required) (Updatable) The name of the node pool. Avoid entering confidential information.
+
+`NodeImageName` - (Required) The name of the image running on the nodes in the node pool.
+
+`NodeShape` - (Required) The name of the node shape of the nodes in the node pool.
+
+`QuantityPerSubnet` - (Optional) (Updatable) The number of nodes to create in each subnet.
+
+`SshPublicKey` - (Optional) The SSH public key to add to each node in the node pool.
+
+`SubnetIds` - (Required) (Updatable) The OCIDs of the subnets in which to place nodes for this node pool.
+
 
 ## Return Values
 

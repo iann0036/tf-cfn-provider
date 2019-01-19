@@ -4,7 +4,12 @@ A Hedvig Lun adds a vdisk resource to a particular controller, enabling the addi
 
 ## Properties
 
-TBC
+`Cluster` - (Required) The name of the cluster hosting the LUN.
+
+`Vdisk` - (Required) The name of the vdisk the LUN is on.
+
+`Controller` - (Required) The fully qualified domain name for the controller that the LUN is to attach to.
+
 
 ## See Also
 

@@ -4,7 +4,14 @@ This resources provides a way to configure an IP set in NSX. An IP set is a coll
 
 ## Properties
 
-TBC
+`Description` - (Optional) Description of this resource.
+
+`DisplayName` - (Optional) The display name of this resource. Defaults to ID if not set.
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this IP set.
+
+`IpAddresses` - (Optional) IP addresses.
+
 
 ## Return Values
 

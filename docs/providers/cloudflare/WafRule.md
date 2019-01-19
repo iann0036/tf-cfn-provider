@@ -4,7 +4,12 @@ Provides a Cloudflare WAF rule resource for a particular zone. This can be used 
 
 ## Properties
 
-TBC
+`Zone` - (Required) The DNS zone to apply to.
+
+`RuleId` - (Required) The WAF Rule ID.
+
+`Mode` - (Required) The mode of the rule, can be one of ["block", "challenge", "default", "disable, "simulate"].
+
 
 ## Return Values
 

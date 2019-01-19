@@ -4,7 +4,10 @@ Provides a resource to create a VPC routing table.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name for the Route Table.
+
+`VpcId` - (Required, Forces new resource) The VPC ID.
+
 
 ## Return Values
 

@@ -4,7 +4,10 @@ Provides a RAM role attachment resource to bind role for several ECS instances.
 
 ## Properties
 
-TBC
+`RoleName` - (Required, Forces new resource) The name of role used to bind. This name can have a string of 1 to 64 characters, must contain only alphanumeric characters or hyphens, such as "-", "_", and must not begin with a hyphen.
+
+`InstanceIds` - (Required, Forces new resource) The list of ECS instance's IDs.
+
 
 ## Return Values
 

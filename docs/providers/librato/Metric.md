@@ -4,7 +4,20 @@ Provides a Librato Metric resource. This can be used to create and manage metric
 
 ## Properties
 
-TBC
+`Type` - (Required) The type of metric to create (gauge, counter, or composite).
+
+`Name` - (Required) The unique identifier of the metric.
+
+`DisplayName` - The name which will be used for the metric when viewing the Metrics website.
+
+`Description` - Text that can be used to explain precisely what the metric is measuring.
+
+`Period` - Number of seconds that is the standard reporting period of the metric.
+
+`Attributes` - The attributes hash configures specific components of a metric’s visualization.
+
+`Composite` - The definition of the composite metric.
+
 
 ## Return Values
 

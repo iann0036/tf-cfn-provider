@@ -5,7 +5,16 @@ For more information, see [How to Use Block Storage with Your Linode](https://ww
 
 ## Properties
 
-TBC
+`Label` - (Required) The label of the Linode Volume.
+
+`Region` - (Required) The region where this volume will be deployed.  Examples are `"us-east"`, `"us-west"`, `"ap-south"`, etc.  *Changing `Region` forces the creation of a new Linode Volume.*.
+
+`Size` - (Optional) Size of the Volume in GB.
+
+`LinodeId` - (Optional) The ID of a Linode Instance where the the Volume should be attached.
+
+`Tags` - (Optional) A list of tags applied to this object. Tags are for organizational purposes only.
+
 
 ## See Also
 

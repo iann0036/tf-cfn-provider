@@ -4,7 +4,14 @@ Provides a Inspector assessment template
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the assessment template.
+
+`TargetArn` - (Required) The assessment target ARN to attach the template to.
+
+`Duration` - (Required) The duration of the inspector run.
+
+`RulesPackageArns` - (Required) The rules to be used during the run.
+
 
 ## Return Values
 

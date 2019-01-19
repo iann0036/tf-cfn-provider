@@ -4,7 +4,8 @@ Provides an API Gateway Client Certificate.
 
 ## Properties
 
-TBC
+`Description` - (Optional) The description of the client certificate.
+
 
 ## See Also
 

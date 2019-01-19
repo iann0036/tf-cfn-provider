@@ -4,7 +4,6 @@ Provides a Nutanix Category key resource to Create a category key name.
 
 ## Properties
 
-TBC
 
 ## Return Values
 

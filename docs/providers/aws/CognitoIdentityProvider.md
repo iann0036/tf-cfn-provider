@@ -4,7 +4,6 @@ Provides a Cognito User Identity Provider resource.
 
 ## Properties
 
-TBC
 
 ## See Also
 

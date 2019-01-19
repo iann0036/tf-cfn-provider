@@ -6,7 +6,10 @@ organize your requests and tests.
 
 ## Properties
 
-TBC
+`Name` - (String, Required) The name of this bucket.
+
+`TeamUuid` - (String, Required) Unique identifier for the team this bucket is being created for.
+
 
 ## Return Values
 

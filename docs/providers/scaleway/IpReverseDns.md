@@ -5,7 +5,10 @@ For additional details please refer to [API documentation](https://developer.sca
 
 ## Properties
 
-TBC
+`Ip` - (Required) ID or Address of IP.
+
+`Reverse` - (Required) Reverse DNS of the IP.
+
 
 ## Return Values
 

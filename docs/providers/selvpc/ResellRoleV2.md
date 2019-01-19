@@ -4,7 +4,10 @@ Manages a V2 role resource within Resell Selectel VPC.
 
 ## Properties
 
-TBC
+`ProjectId` - (Required) An associated Selectel VPC project. Changing this creates a new role.
+
+`UserId` - (Required) An associated Selectel VPC user. Changing this creates a new role.
+
 
 ## See Also
 

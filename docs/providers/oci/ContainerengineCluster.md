@@ -6,7 +6,30 @@ Create a new cluster.
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) The OCID of the compartment in which to create the cluster.
+
+`KubernetesVersion` - (Required) (Updatable) The version of Kubernetes to install into the cluster masters.
+
+`Name` - (Required) (Updatable) The name of the cluster. Avoid entering confidential information.
+
+`Options` - (Optional) Optional attributes for the cluster. * `AddOns` - (Optional) Configurable cluster add-ons * `IsKubernetesDashboardEnabled` - (Optional) Whether or not to enable the Kubernetes Dashboard add-on. * `IsTillerEnabled` - (Optional) Whether or not to enable the Tiller add-on. * `KubernetesNetworkConfig` - (Optional) Network configuration for Kubernetes. * `PodsCidr` - (Optional) The CIDR block for Kubernetes pods. * `ServicesCidr` - (Optional) The CIDR block for Kubernetes services. * `ServiceLbSubnetIds` - (Optional) The OCIDs of the subnets used for Kubernetes services load balancers.
+
+`AddOns` - (Optional) Configurable cluster add-ons * `IsKubernetesDashboardEnabled` - (Optional) Whether or not to enable the Kubernetes Dashboard add-on. * `IsTillerEnabled` - (Optional) Whether or not to enable the Tiller add-on. * `KubernetesNetworkConfig` - (Optional) Network configuration for Kubernetes. * `PodsCidr` - (Optional) The CIDR block for Kubernetes pods. * `ServicesCidr` - (Optional) The CIDR block for Kubernetes services. * `ServiceLbSubnetIds` - (Optional) The OCIDs of the subnets used for Kubernetes services load balancers.
+
+`IsKubernetesDashboardEnabled` - (Optional) Whether or not to enable the Kubernetes Dashboard add-on. * `IsTillerEnabled` - (Optional) Whether or not to enable the Tiller add-on. * `KubernetesNetworkConfig` - (Optional) Network configuration for Kubernetes. * `PodsCidr` - (Optional) The CIDR block for Kubernetes pods. * `ServicesCidr` - (Optional) The CIDR block for Kubernetes services. * `ServiceLbSubnetIds` - (Optional) The OCIDs of the subnets used for Kubernetes services load balancers.
+
+`IsTillerEnabled` - (Optional) Whether or not to enable the Tiller add-on. * `KubernetesNetworkConfig` - (Optional) Network configuration for Kubernetes. * `PodsCidr` - (Optional) The CIDR block for Kubernetes pods. * `ServicesCidr` - (Optional) The CIDR block for Kubernetes services. * `ServiceLbSubnetIds` - (Optional) The OCIDs of the subnets used for Kubernetes services load balancers.
+
+`KubernetesNetworkConfig` - (Optional) Network configuration for Kubernetes. * `PodsCidr` - (Optional) The CIDR block for Kubernetes pods. * `ServicesCidr` - (Optional) The CIDR block for Kubernetes services. * `ServiceLbSubnetIds` - (Optional) The OCIDs of the subnets used for Kubernetes services load balancers.
+
+`PodsCidr` - (Optional) The CIDR block for Kubernetes pods. * `ServicesCidr` - (Optional) The CIDR block for Kubernetes services. * `ServiceLbSubnetIds` - (Optional) The OCIDs of the subnets used for Kubernetes services load balancers.
+
+`ServicesCidr` - (Optional) The CIDR block for Kubernetes services. * `ServiceLbSubnetIds` - (Optional) The OCIDs of the subnets used for Kubernetes services load balancers.
+
+`ServiceLbSubnetIds` - (Optional) The OCIDs of the subnets used for Kubernetes services load balancers.
+
+`VcnId` - (Required) The OCID of the virtual cloud network (VCN) in which to create the cluster.
+
 
 ## Return Values
 

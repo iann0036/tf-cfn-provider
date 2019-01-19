@@ -5,7 +5,14 @@ For more information, see [Linode's documentation on Images](https://www.linode.
 
 ## Properties
 
-TBC
+`Label` - (Required) A short description of the Image. Labels cannot contain special characters.
+
+`DiskId` - (Required) The ID of the Linode Disk that this Image will be created from.
+
+`LinodeId` - (Required) The ID of the Linode that this Image will be created from.
+
+`Description` - (Optional) A detailed description of this Image.
+
 
 ## See Also
 

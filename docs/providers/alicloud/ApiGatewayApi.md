@@ -4,11 +4,36 @@ Provides an api resource.When you create an API, you must enter the basic inform
 
 For information about Api Gateway Api and how to use it, see [Create an API](https://www.alibabacloud.com/help/doc-detail/29478.htm)
 
-~> **NOTE:** Terraform will auto build api while it uses `alicloud_api_gateway_api` to build api.
+~> **NOTE:** Terraform will auto build api while it uses `Terraform::Alicloud::ApiGatewayApi` to build api.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the api gateway api. Defaults to null.
+
+`GroupId` - (Required, ForcesNew) The api gateway that the api belongs to. Defaults to null.
+
+`Description` - (Required) The description of the api. Defaults to null.
+
+`AuthType` - (Required) The authorization Type including APP and ANONYMOUS. Defaults to null.
+
+`RequestConfig` - (Required, Type: list) Request_config defines how users can send requests to your API.
+
+`ServiceType` - (Required) The type of backend service. Type including HTTP,VPC and MOCK. Defaults to null.
+
+`HttpServiceConfig` - (Required, Type: list) http_service_config defines the config when service_type selected 'HTTP'.
+
+`HttpVpcServiceConfig` - (Required, Type: list) http_service_config defines the config when service_type selected 'HTTP'.
+
+`MockServiceConfig` - (Required, Type: list) http_service_config defines the config when service_type selected 'HTTP'.
+
+`RequestParameters` - (Required, Type: list) request_parameters defines .
+
+`ConstantParameters` - (Required, Type: list) http_service_config defines the config when service_type selected 'HTTP'.
+
+`SystemParameters` - (Required, Type: list) http_service_config defines the config when service_type selected 'HTTP'.
+
+`StageNames` - (Optional, Type: list) Stages that the api need to be deployed. Valid value: RELEASE | PRE | TEST.
+
 
 ## Return Values
 

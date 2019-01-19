@@ -14,7 +14,6 @@ safe to have multiple resources with the same backing bucket.
 
 ## Properties
 
-TBC
 
 ## See Also
 

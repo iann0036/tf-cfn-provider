@@ -4,7 +4,16 @@ Manage a Azure Data Lake Store Firewall Rule.
 
 ## Properties
 
-TBC
+`Name` - (Required) Specifies the name of the Data Lake Store. Changing this forces a new resource to be created. Has to be between 3 to 24 characters.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the Data Lake Store.
+
+`AccountName` - (Required) Specifies the name of the Data Lake Store for which the Firewall Rule should take effect.
+
+`StartIpAddress` - (Required) The Start IP address for the firewall rule.
+
+`EndIpAddress` - (Required) The End IP Address for the firewall rule.
+
 
 ## Return Values
 

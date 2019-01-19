@@ -31,7 +31,14 @@ For more information, See [An Introduction to DigitalOcean Spaces](https://www.d
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the bucket.
+
+`Region` - The region where the bucket resides (Defaults to `nyc3`).
+
+`Acl` - Canned ACL applied on bucket creation (`private` or `public-read`).
+
+`ForceDestroy` - Unless `true`, the bucket will only be destroyed if empty (Defalts to `false`).
+
 
 ## Return Values
 

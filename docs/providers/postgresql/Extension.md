@@ -1,11 +1,16 @@
 # Terraform::PostgreSQL::Extension
 
-The ``postgresql_extension`` resource creates and manages an extension on a PostgreSQL
+The ``Terraform::PostgreSQL::Extension`` resource creates and manages an extension on a PostgreSQL
 server.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the extension.
+
+`Schema` - (Optional) Sets the schema of an extension.
+
+`Version` - (Optional) Sets the version number of the extension.
+
 
 ## See Also
 

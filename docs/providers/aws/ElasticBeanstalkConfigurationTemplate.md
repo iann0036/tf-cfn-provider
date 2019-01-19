@@ -6,7 +6,10 @@ application with the same configuration settings.
 
 ## Properties
 
-TBC
+`Name` - (Required) A unique name for this Template.
+
+`Description` - (Optional) Short description of the Template.
+
 
 ## See Also
 

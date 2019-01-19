@@ -1,13 +1,16 @@
 # Terraform::OCI::KmsKeyVersion
 
-The `oci_kms_key_version` resource creates and manages an OCI KeyVersion
+The `Terraform::OCI::KmsKeyVersion` resource creates and manages an OCI KeyVersion
 
 Generates new cryptographic material for a key. Key must be in an `ENABLED` state to be
 rotated.
 
 ## Properties
 
-TBC
+`KeyId` - (Required) The OCID of the key.
+
+`ManagementEndpoint` - (Required) The service endpoint to perform management operations against. Management operations include 'Create,' 'Update,' 'List,' 'Get,' and 'Delete' operations. See Vault Management endpoint.
+
 
 ## Return Values
 

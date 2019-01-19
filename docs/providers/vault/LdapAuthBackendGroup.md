@@ -4,7 +4,12 @@ Provides a resource to create a group in an [LDAP auth backend within Vault](htt
 
 ## Properties
 
-TBC
+`Groupname` - (Required) The LDAP groupname.
+
+`Policies` - (Optional) Policies which should be granted to members of the group.
+
+`Backend` - (Optional) Path to the authentication backend.
+
 
 ## See Also
 

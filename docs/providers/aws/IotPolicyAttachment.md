@@ -4,7 +4,10 @@ Provides an IoT policy attachment.
 
 ## Properties
 
-TBC
+`Policy` - (Required) The name of the policy to attach.
+
+`Target` - (Required) The identity to which the policy is attached.
+
 
 ## See Also
 

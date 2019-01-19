@@ -5,7 +5,12 @@ modify, and delete Containers in Orbit.
 
 ## Properties
 
-TBC
+`Name` - (Required) A label assigned to the Container.
+
+`Description` - (Optional) A further description of the Container.
+
+`OrbitUrl` - (Optional) The Orbit URL you wish to talk to. This defaults to either `https://orbit.brightbox.com/v1/` or the contents of the `BRIGHTBOX_ORBIT_URL` environment variable if set.
+
 
 ## Return Values
 

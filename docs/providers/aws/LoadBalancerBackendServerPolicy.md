@@ -4,7 +4,12 @@ Attaches a load balancer policy to an ELB backend server.
 
 ## Properties
 
-TBC
+`LoadBalancerName` - (Required) The load balancer to attach the policy to.
+
+`PolicyNames` - (Required) List of Policy Names to apply to the backend server.
+
+`InstancePort` - (Required) The instance port to apply the policy to.
+
 
 ## Return Values
 

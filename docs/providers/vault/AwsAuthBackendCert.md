@@ -17,7 +17,14 @@ details.
 
 ## Properties
 
-TBC
+`CertName` - (Required) The name of the certificate.
+
+`AwsPublicCert` - (Required) The  Base64 encoded AWS Public key required to verify PKCS7 signature of the EC2 instance metadata. You can find this key in the [AWS documentation](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-identity-documents.html).
+
+`Type` - (Optional) Either "pkcs7" or "identity", indicating the type of document which can be verified using the given certificate. Defaults to "pkcs7".
+
+`Backend` - (Optional) The path the AWS auth backend being configured was mounted at.  Defaults to `aws`.
+
 
 ## See Also
 

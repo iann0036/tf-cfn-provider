@@ -4,7 +4,16 @@ Use this resource to create, update or destroy RightScale [deployments](http://r
 
 ## Properties
 
-TBC
+`Name` - (Required) Deployment name.
+
+`Description` - (Optional) Deployment description.
+
+`ResourceGroupHref` - (Optional) Href of the Windows Azure Resource Group attached to the deployment.
+
+`Locked` - (Optional) Set to true to lock the deployment.
+
+`ServerTagScope` - (Optional) Routing scope for tags for servers in the deployment.  Options are 'account' or 'deployment,' defaults to 'deployment.'.
+
 
 ## Return Values
 

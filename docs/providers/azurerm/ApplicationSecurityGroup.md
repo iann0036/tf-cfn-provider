@@ -4,7 +4,14 @@ Manage an Application Security Group.
 
 ## Properties
 
-TBC
+`Name` - (Required) Specifies the name of the Application Security Group. Changing this forces a new resource to be created.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the Application Security Group.
+
+`Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

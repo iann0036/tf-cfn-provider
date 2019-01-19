@@ -4,7 +4,14 @@ Provides an eip resource associated with other resource like CVM or ENI.
 
 ## Properties
 
-TBC
+`EipId` - (Required) The eip's id.
+
+`InstanceId` - (Optional) The instance id going to bind with the EIP. This field is conflict with `NetworkInterfaceId` and `PrivateIp` fields.
+
+`NetworkInterfaceId` - (Optional) Indicates the network interface id like `eni-xxxxxx`. This field is conflict with `InstanceId`.
+
+`PrivateIp` - (Optional) Indicates an IP belongs to the `NetworkInterfaceId`. This field is conflict with `InstanceId`.
+
 
 ## Return Values
 
@@ -18,7 +25,7 @@ TBC
 
 `NetworkInterfaceId` - The network interface id.
 
-`PrivateIp` - (Optional) The IP belongs to the `network_interface_id`.
+`PrivateIp` - (Optional) The IP belongs to the `NetworkInterfaceId`.
 
 ## See Also
 

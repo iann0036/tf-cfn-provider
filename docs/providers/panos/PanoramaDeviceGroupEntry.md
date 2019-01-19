@@ -3,9 +3,9 @@
 This resource allows you to add/update/delete a specific device in a Panorama
 device group.
 
-This resource has some overlap with the `panos_panorama_device_group`
+This resource has some overlap with the `Terraform::Panos::PanoramaDeviceGroup`
 resource.  If you want to use this resource with the other one, then make
-sure that your `panos_panorama_device_group` spec does not define any
+sure that your `Terraform::Panos::PanoramaDeviceGroup` spec does not define any
 `device` blocks, and just stays as "computed".
 
 This is the appropriate resource to use if you have a pre-existing device group
@@ -18,7 +18,12 @@ only the single entry for the specific serial number is deleted, then a
 
 ## Properties
 
-TBC
+`DeviceGroup` - (Required) The device group's name.
+
+`Serial` - (Required) The serial number of the firewall.
+
+`VsysList` - (Optional) A subset of all available vsys on the firewall that should be in this device group.  If the firewall is a virtual firewall, then this parameter should just be omitted.
+
 
 ## See Also
 

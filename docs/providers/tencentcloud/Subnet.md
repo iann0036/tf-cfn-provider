@@ -4,7 +4,14 @@ Provides an VPC subnet resource.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name for the Subnet.
+
+`CidrBlock` - (Required, Forces new resource) The CIDR block for the Subnet.
+
+`AvailabilityZone` - (Required, Forces new resource) The AZ for the subnet.
+
+`VpcId` - (Required, Forces new resource) The VPC ID.
+
 
 ## Return Values
 

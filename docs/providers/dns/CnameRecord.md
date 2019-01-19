@@ -4,19 +4,26 @@ Creates a CNAME type DNS record.
 
 ## Properties
 
-TBC
+`Zone` - (Required) DNS zone the record belongs to. It must be an FQDN, that is, include the trailing dot.
+
+`Name` - (Required) The name of the record. The `Zone` argument will be appended to this value to create the full record path.
+
+`Cname` - (Required) The canonical name this record will point to.
+
+`Ttl` - (Optional) The TTL of the record set. Defaults to `3600`.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Zone` - See Argument Reference above.
+`Zone` - See Properties above.
 
-`Name` - See Argument Reference above.
+`Name` - See Properties above.
 
-`Cname` - See Argument Reference above.
+`Cname` - See Properties above.
 
-`Ttl` - See Argument Reference above.
+`Ttl` - See Properties above.
 
 ## See Also
 

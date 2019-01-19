@@ -1,10 +1,17 @@
 # Terraform::BIGIP::LtmDns
 
-`bigip_ltm_dns` Configures DNS server on F5 BIG-IP
+`Terraform::BIGIP::LtmDns` Configures DNS server on F5 BIG-IP
 
 ## Properties
 
-TBC
+`Description` - Provide description for your DNS server.
+
+`NameServers` - Name or IP address of the DNS server.
+
+`NumberOfDots` - Configures the number of dots needed in a name before an initial absolute query will be made.
+
+`Search` - Specify what domains you want to search.
+
 
 ## See Also
 

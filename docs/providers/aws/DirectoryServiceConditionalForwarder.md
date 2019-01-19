@@ -4,7 +4,12 @@ Provides a conditional forwarder for managed Microsoft AD in AWS Directory Servi
 
 ## Properties
 
-TBC
+`DirectoryId` - (Required) The id of directory.
+
+`DnsIps` - (Required) A list of forwarder IP addresses.
+
+`RemoteDomainName` - (Required) The fully qualified domain name of the remote domain for which forwarders will be used.
+
 
 ## See Also
 

@@ -2,11 +2,18 @@
 
 Provides Load Balancer server attachment resource.
 
-~> **NOTE:** Currently only support existing `loadbalancer_id` `listener_id` `location_id` and Application layer 7 load balancer
+~> **NOTE:** Currently only support existing `LoadbalancerId` `ListenerId` `LocationId` and Application layer 7 load balancer
 
 ## Properties
 
-TBC
+`LoadbalancerId` - (Required, Forces new resource) loadbalancer ID.
+
+`ListenerId` - (Required, Forces new resource) listener ID.
+
+`LocationId` - (Optional) location ID only support for layer 7 loadbalancer.
+
+`Backends` - (Required) list of backend server. Valid value range [1-100].
+
 
 ## Return Values
 

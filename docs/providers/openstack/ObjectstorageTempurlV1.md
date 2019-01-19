@@ -5,12 +5,23 @@ Use this resource to generate an OpenStack Object Storage temporary URL.
 The temporary URL will be valid for as long as TTL is set to (in seconds).
 Once the URL has expired, it will no longer be valid, but the resource
 will remain in place. If you wish to automatically regenerate a URL, set
-the `regenerate` argument to `true`. This will create a new resource with
+the `Regenerate` argument to `true`. This will create a new resource with
 a new ID and URL.
 
 ## Properties
 
-TBC
+`Region` - (Optional) The region the tempurl is located in.
+
+`Container` - (Required) The container name the object belongs to.
+
+`Object` - (Required) The object name the tempurl is for.
+
+`Ttl` - (Required) The TTL, in seconds, for the URL. For how long it should be valid.
+
+`Method` - (Optional) The method allowed when accessing this URL. Valid values are `GET`, and `POST`. Default is `GET`.
+
+`Regenerate` - (Optional) Whether to automatically regenerate the URL when it has expired. If set to true, this will create a new resource with a new ID and new URL. Defaults to false.
+
 
 ## Return Values
 
@@ -18,13 +29,13 @@ TBC
 
 `Id` - Computed md5 hash based on the generated url.
 
-`Container` - See Argument Reference above.
+`Container` - See Properties above.
 
-`Object` - See Argument Reference above.
+`Object` - See Properties above.
 
-`Ttl` - See Argument Reference above.
+`Ttl` - See Properties above.
 
-`Method` - See Argument Reference above.
+`Method` - See Properties above.
 
 `Url` - The URL.
 

@@ -9,7 +9,14 @@ Terraform will resize any Instance Group to zero when destroying the resource.
 
 ## Properties
 
-TBC
+`Iops` - (Optional) The number of I/O operations per second (IOPS) that the volume supports.
+
+`Size` - (Optional) The volume size, in gibibytes (GiB). This can be a number from 1 - 1024. If the volume type is EBS-optimized, the minimum value is 10.
+
+`Type` - (Optional) The volume type. Valid options are 'gp2', 'io1' and 'standard'.
+
+`VolumesPerInstance` - (Optional) The number of EBS Volumes to attach per instance.
+
 
 ## Return Values
 

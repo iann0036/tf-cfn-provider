@@ -4,7 +4,6 @@ Provides a Hetzner Cloud Floating IP Assignment to assign a Floating IP to a Het
 
 ## Properties
 
-TBC
 
 ## See Also
 

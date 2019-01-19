@@ -7,7 +7,12 @@ Provides a Pinpoint GCM Channel resource.
 
 ## Properties
 
-TBC
+`ApplicationId` - (Required) The application ID.
+
+`ApiKey` - (Required) Platform credential API key from Google.
+
+`Enabled` - (Optional) Whether the channel is enabled or disabled. Defaults to `true`.
+
 
 ## See Also
 

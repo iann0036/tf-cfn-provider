@@ -12,7 +12,22 @@ for more details.
 
 ## Properties
 
-TBC
+`ConnectionUri` - (Required)  Specifies the RabbitMQ connection URI.
+
+`Username` - (Required) Specifies the RabbitMQ management administrator username.
+
+`Password` - (Required) Specifies the RabbitMQ management administrator password.
+
+`VerifyConnection` - (Optional) Specifies whether to verify connection URI, username, and password. Defaults to `true`.
+
+`Path` - (Optional) The unique path this backend should be mounted at. Must not begin or end with a `/`. Defaults to `aws`.
+
+`Description` - (Optional) A human-friendly description for this backend.
+
+`DefaultLeaseTtlSeconds` - (Optional) The default TTL for credentials issued by this backend.
+
+`MaxLeaseTtlSeconds` - (Optional) The maximum TTL that can be requested for credentials issued by this backend.
+
 
 ## See Also
 

@@ -1,9 +1,9 @@
 # Terraform::VSphere::HostVirtualSwitch
 
-The `vsphere_host_virtual_switch` resource can be used to manage vSphere
+The `Terraform::VSphere::HostVirtualSwitch` resource can be used to manage vSphere
 standard switches on an ESXi host. These switches can be used as a backing for
 standard port groups, which can be managed by the
-[`vsphere_host_port_group`][host-port-group] resource.
+[`Terraform::VSphere::HostPortGroup`][host-port-group] resource.
 
 For an overview on vSphere networking concepts, see [this
 page][ref-vsphere-net-concepts].
@@ -13,7 +13,14 @@ page][ref-vsphere-net-concepts].
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the virtual switch. Forces a new resource if changed.
+
+`HostSystemId` - (Required) The [managed object ID][docs-about-morefs] of the host to set the virtual switch up on. Forces a new resource if changed.
+
+`Mtu` - (Optional) The maximum transmission unit (MTU) for the virtual switch. Default: `1500`.
+
+`NumberOfPorts` - (Optional) The number of ports to create with this virtual switch. Default: `128`.
+
 
 ## See Also
 

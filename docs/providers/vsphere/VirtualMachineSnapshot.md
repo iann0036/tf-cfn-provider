@@ -1,6 +1,6 @@
 # Terraform::VSphere::VirtualMachineSnapshot
 
-The `vsphere_virtual_machine_snapshot` resource can be used to manage snapshots
+The `Terraform::VSphere::VirtualMachineSnapshot` resource can be used to manage snapshots
 for a virtual machine.
 
 For more information on managing snapshots and how they work in VMware, see
@@ -12,7 +12,7 @@ For more information on managing snapshots and how they work in VMware, see
 can contain the actual running state of the virtual machine, data for all disks
 that have not been set to be independent from the snapshot (including ones that
 have been attached via the [attach][docs-vsphere-virtual-machine-disk-attach]
-parameter to the `vsphere_virtual_machine` `disk` block), and even the
+parameter to the `Terraform::VSphere::VirtualMachine` `disk` block), and even the
 configuration of the virtual machine at the time of the snapshot. Virtual
 machine, disk activity, and configuration changes post-snapshot are not
 included in the original state. Use this resource with care! Neither VMware nor
@@ -25,7 +25,20 @@ limitation of virtual machine snapshots, see [here][ext-vm-snap-limitations].
 
 ## Properties
 
-TBC
+`VirtualMachineUuid` - (Required) The virtual machine UUID.
+
+`SnapshotName` - (Required) The name of the snapshot.
+
+`Description` - (Required) A description for the snapshot.
+
+`Memory` - (Required) If set to `true`, a dump of the internal state of the virtual machine is included in the snapshot.
+
+`Quiesce` - (Required) If set to `true`, and the virtual machine is powered on when the snapshot is taken, VMware Tools is used to quiesce the file system in the virtual machine.
+
+`RemoveChildren` - (Optional) If set to `true`, the entire snapshot subtree is removed when this resource is destroyed.
+
+`Consolidate` - (Optional) If set to `true`, the delta disks involved in this snapshot will be consolidated into the parent when this resource is destroyed.
+
 
 ## See Also
 

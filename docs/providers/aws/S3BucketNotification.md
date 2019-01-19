@@ -4,7 +4,28 @@ Provides a S3 bucket notification resource.
 
 ## Properties
 
-TBC
+`Bucket` - (Required) The name of the bucket to put notification configuration.
+
+`Topic` - (Optional) The notification configuration to SNS Topic (documented below).
+
+`Queue` - (Optional) The notification configuration to SQS Queue (documented below).
+
+`LambdaFunction` - (Optional, Multiple) Used to configure notifications to a Lambda Function (documented below).
+
+`Id` - (Optional) Specifies unique identifier for each of the notification configurations.
+
+`TopicArn` - (Required) Specifies Amazon SNS topic ARN.
+
+`Events` - (Required) Specifies [event](http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html#notification-how-to-event-types-and-destinations) for which to send notifications.
+
+`FilterPrefix` - (Optional) Specifies object key name prefix.
+
+`FilterSuffix` - (Optional) Specifies object key name suffix.
+
+`QueueArn` - (Required) Specifies Amazon SQS queue ARN.
+
+`LambdaFunctionArn` - (Required) Specifies Amazon Lambda function ARN.
+
 
 ## See Also
 

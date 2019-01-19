@@ -4,7 +4,16 @@ Provides a Rancher Registration Token resource. This can be used to create regis
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the registration token.
+
+`Description` - (Optional) A registration token description.
+
+`EnvironmentId` - (Required) The ID of the environment to create the token for.
+
+`HostLabels` - (Optional) A map of host labels to add to the registration command.
+
+`AgentIp` - (Optional) A string containing the CATTLE_AGENT_IP to add to the registration command.
+
 
 ## Return Values
 

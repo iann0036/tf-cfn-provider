@@ -4,7 +4,18 @@ This resource provides a way to configure a networking and security service whic
 
 ## Properties
 
-TBC
+`DisplayName` - (Optional) Display name, defaults to ID if not set.
+
+`Description` - (Optional) Description.
+
+`DestinationPort` - (Required) a single destination port.
+
+`SourcePorts` - (Optional) Set of source ports/ranges.
+
+`Algorithm` - (Required) Algorithm one of "ORACLE_TNS", "FTP", "SUN_RPC_TCP", "SUN_RPC_UDP", "MS_RPC_TCP", "MS_RPC_UDP", "NBNS_BROADCAST", "NBDG_BROADCAST", "TFTP".
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this service.
+
 
 ## Return Values
 

@@ -2,11 +2,14 @@
 
 Provides an Alicloud HaVip Attachment resource for associating HaVip to ECS Instance.
 
-~> **NOTE:** Terraform will auto build havip attachment while it uses `alicloud_havip_attachment` to build a havip attachment resource.
+~> **NOTE:** Terraform will auto build havip attachment while it uses `Terraform::Alicloud::HavipAttachment` to build a havip attachment resource.
 
 ## Properties
 
-TBC
+`HavipId` - (Required, ForceNew) The havip_id of the havip attachment, the field can't be changed.
+
+`InstanceId` - (Required, ForceNew) The instance_id of the havip attachment, the field can't be changed.
+
 
 ## Return Values
 

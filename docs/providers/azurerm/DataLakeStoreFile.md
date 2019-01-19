@@ -2,12 +2,17 @@
 
 Manage a Azure Data Lake Store File.
 
-~> **Note:** If you want to change the data in the remote file without changing the `local_file_path`, then 
-taint the resource so the `azurerm_data_lake_store_file` gets recreated with the new data.
+~> **Note:** If you want to change the data in the remote file without changing the `LocalFilePath`, then 
+taint the resource so the `Terraform::AzureRM::DataLakeStoreFile` gets recreated with the new data.
 
 ## Properties
 
-TBC
+`AccountName` - (Required) Specifies the name of the Data Lake Store for which the File should created.
+
+`LocalFilePath` - (Required) The path to the local file to be added to the Data Lake Store.
+
+`RemoteFilePath` - (Required) The path created for the file on the Data Lake Store.
+
 
 ## See Also
 

@@ -4,7 +4,16 @@ Provides a resource to configure LB fast UDP application profile on NSX-T manage
 
 ## Properties
 
-TBC
+`Description` - (Optional) Description of this resource.
+
+`DisplayName` - (Optional) The display name of this resource. Defaults to ID if not set.
+
+`IdleTimeout` - (Optional) Timeout in seconds to specify how long an idle UDP connection in ESTABLISHED state should be kept for this application before cleaning up. The default value will be 300 seconds.
+
+`HaFlowMirroring` - (Optional) A boolean flag which reflects whether flow mirroring is enabled, and all the flows to the bounded virtual server are mirrored to the standby node. By default this is disabled.
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this lb fast udp profile.
+
 
 ## Return Values
 

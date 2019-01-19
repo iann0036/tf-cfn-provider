@@ -6,7 +6,10 @@ For information about Elastic Network Interface and how to use it, see [Elastic 
 
 ## Properties
 
-TBC
+`InstanceId` - (Required, ForceNew) The instance ID to attach.
+
+`NetworkInterfaceId` - (Required, ForceNew) The ENI ID to attach.
+
 
 ## Return Values
 

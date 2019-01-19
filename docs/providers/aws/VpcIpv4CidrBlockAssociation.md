@@ -3,11 +3,14 @@
 Provides a resource to associate additional IPv4 CIDR blocks with a VPC.
 
 When a VPC is created, a primary IPv4 CIDR block for the VPC must be specified.
-The `aws_vpc_ipv4_cidr_block_association` resource allows further IPv4 CIDR blocks to be added to the VPC.
+The `Terraform::AWS::VpcIpv4CidrBlockAssociation` resource allows further IPv4 CIDR blocks to be added to the VPC.
 
 ## Properties
 
-TBC
+`CidrBlock` - (Required) The additional IPv4 CIDR block to associate with the VPC.
+
+`VpcId` - (Required) The ID of the VPC to make the association with.
+
 
 ## Return Values
 

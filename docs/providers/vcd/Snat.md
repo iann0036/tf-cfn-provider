@@ -5,7 +5,12 @@ and delete source NATs to allow vApps to send external traffic.
 
 ## Properties
 
-TBC
+`EdgeGateway` - (Required) The name of the edge gateway on which to apply the SNAT.
+
+`ExternalIp` - (Required) One of the external IPs available on your Edge Gateway.
+
+`InternalIp` - (Required) The IP or IP Range of the VM(s) to map from.
+
 
 ## See Also
 

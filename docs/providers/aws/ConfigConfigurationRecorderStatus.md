@@ -6,7 +6,10 @@ Manages status (recording / stopped) of an AWS Config Configuration Recorder.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the recorder.
+
+`IsEnabled` - (Required) Whether the configuration recorder should be enabled or disabled.
+
 
 ## See Also
 

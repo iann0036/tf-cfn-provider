@@ -6,7 +6,14 @@ Maintenance windows are specified to start at a certain time and end after they 
 
 ## Properties
 
-TBC
+`StartTime` - (Required) The maintenance window's start time. This is when the services will stop creating incidents. If this date is in the past, it will be updated to be the current time. * `EndTime`    - (Required) The maintenance window's end time. This is when the services will start creating incidents again. This date must be in the future and after the `StartTime`. * `Services`    - (Required) A list of service IDs to include in the maintenance window. * `Description` - (Optional) A description for the maintenance window.
+
+`EndTime` - (Required) The maintenance window's end time. This is when the services will start creating incidents again. This date must be in the future and after the `StartTime`. * `Services`    - (Required) A list of service IDs to include in the maintenance window. * `Description` - (Optional) A description for the maintenance window.
+
+`Services` - (Required) A list of service IDs to include in the maintenance window. * `Description` - (Optional) A description for the maintenance window.
+
+`Description` - (Optional) A description for the maintenance window.
+
 
 ## Return Values
 

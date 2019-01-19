@@ -4,7 +4,10 @@ Creates a site to site VPN connection.
 
 ## Properties
 
-TBC
+`CustomerGatewayId` - (Required) The Customer Gateway ID to connect. Changing this forces a new resource to be created.
+
+`VpnGatewayId` - (Required) The VPN Gateway ID to connect. Changing this forces a new resource to be created.
+
 
 ## Return Values
 

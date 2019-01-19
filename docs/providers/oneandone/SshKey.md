@@ -4,7 +4,12 @@ Manages SSH Keys on 1&1
 
 ## Properties
 
-TBC
+`Description` - (Optional) Description for the ssh key.
+
+`Name` - (Required) The name of the storage.
+
+`PublicKey` - (Optional) Public key to import. If not given, new SSH key pair will be created and the private key is returned in the response.
+
 
 ## See Also
 

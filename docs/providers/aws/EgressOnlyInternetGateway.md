@@ -7,7 +7,8 @@ outside of your VPC from initiating an IPv6 connection with your instance.
 
 ## Properties
 
-TBC
+`VpcId` - (Required) The VPC ID to create in.
+
 
 ## Return Values
 

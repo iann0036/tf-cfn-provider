@@ -6,7 +6,16 @@ This allows you to manage your webhooks on a repository.
 
 ## Properties
 
-TBC
+`Owner` - (Required) The owner of this repository. Can be you or any team you have write access to.
+
+`Repository` - (Required) The name of the repository.
+
+`Url` - (Required) Where to POST to.
+
+`Description` - (Required) The name / description to show in the UI.
+
+`Events` - (Required) The event you want to react on.
+
 
 ## See Also
 

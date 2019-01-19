@@ -6,7 +6,18 @@ Provides an AWS Config Rule.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the rule.
+
+`Description` - (Optional) Description of the rule.
+
+`InputParameters` - (Optional) A string in JSON format that is passed to the AWS Config rule Lambda function.
+
+`MaximumExecutionFrequency` - (Optional) The maximum frequency with which AWS Config runs evaluations for a rule.
+
+`Scope` - (Optional) Scope defines which resources can trigger an evaluation for the rule as documented below.
+
+`Source` - (Required) Source specifies the rule owner, the rule identifier, and the notifications that cause the function to evaluate your AWS resources as documented below.
+
 
 ## Return Values
 

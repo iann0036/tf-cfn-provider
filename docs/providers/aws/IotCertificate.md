@@ -4,7 +4,10 @@ Creates and manages an AWS IoT certificate.
 
 ## Properties
 
-TBC
+`Active` - (Required)  Boolean flag to indicate if the certificate should be active.
+
+`Csr` - (Required) The certificate signing request. Review the [IoT API Reference Guide] (http://docs.aws.amazon.com/iot/latest/apireference/API_CreateCertificateFromCsr.html) for more information on creating a certificate from a certificate signing request (CSR).
+
 
 ## Return Values
 

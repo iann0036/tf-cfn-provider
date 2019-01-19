@@ -4,7 +4,10 @@ Provides a DigitalOcean Volume Snapshot which can be used to create a snapshot f
 
 ## Properties
 
-TBC
+`Name` - (Required) A name for the volume snapshot.
+
+`VolumeId` - (Required) The ID of the volume from which the volume snapshot originated.
+
 
 ## Return Values
 

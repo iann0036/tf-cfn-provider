@@ -4,7 +4,8 @@ Provides a DNS Group resource.
 
 ## Properties
 
-TBC
+`Name` - (Required) Name of the domain group.
+
 
 ## Return Values
 

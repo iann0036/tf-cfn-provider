@@ -4,7 +4,18 @@ Provides a security group rule resource. Represents a single `ingress` or `egres
 
 ## Properties
 
-TBC
+`SecurityGroupId` - (Required, Forces new resource) The security group to apply this rule to.
+
+`Type` - (Required, Forces new resource) The type of rule being created. Valid options are "ingress" (inbound) or "egress" (outbound).
+
+`CidrIp` - (Required, Forces new resource) can be IP, or CIDR block.
+
+`IpProtocol` - (Optional, Forces new resource) Support "UDP"、"TCP"、"ICMP", Not configured means all protocols.
+
+`PortRange` - (Optional, Forces new resource) examples, Single port: "53"、Multiple ports: "80,8080,443"、Continuous port: "80-90", Not configured to represent all ports.
+
+`Policy` - (Required, Forces new resource) Policy of rule, "accept" or "drop".
+
 
 ## Return Values
 

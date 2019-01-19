@@ -7,7 +7,20 @@ Manages a SQL Azure Database Server.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the SQL Server. This needs to be globally unique within Azure.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the SQL Server.
+
+`Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+
+`Version` - (Required) The version for the new server. Valid values are: 2.0 (for v11 server) and 12.0 (for v12 server).
+
+`AdministratorLogin` - (Required) The administrator login name for the new server. Changing this forces a new resource to be created.
+
+`AdministratorLoginPassword` - (Required) The password associated with the `AdministratorLogin` user. Needs to comply with Azure's [Password Policy](https://msdn.microsoft.com/library/ms161959.aspx).
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

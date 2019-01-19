@@ -3,7 +3,7 @@
 Renders a directory containing templates into a separate directory of
 corresponding rendered files.
 
-`template_dir` is similar to [`template_file`](../d/file.html) but it walks
+`Terraform::Template::Dir` is similar to [`templateFile`](../d/file.html) but it walks
 a given source directory and treats every file it encounters as a template,
 rendering it to a corresponding file in the destination directory.
 
@@ -15,7 +15,12 @@ routinely applied by many different users or within automation systems.
 
 ## Properties
 
-TBC
+`SourceDir` - (Required) Path to the directory where the files to template reside.
+
+`DestinationDir` - (Required) Path to the directory where the templated files will be written.
+
+`Vars` - (Optional) Variables for interpolation within the template. Note that variables must all be primitives. Direct references to lists or maps will cause a validation error.
+
 
 ## See Also
 

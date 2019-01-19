@@ -4,7 +4,28 @@ Provides an AWS App Mesh route resource.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name to use for the route.
+
+`MeshName` - (Required) The name of the service mesh in which to create the route.
+
+`VirtualRouteName` - (Required) The name of the virtual router in which to create the route.
+
+`Spec` - (Required) The route specification to apply.
+
+`HttpRoute` - (Optional) The HTTP routing information for the route.
+
+`Action` - (Required) The action to take if a match is determined.
+
+`Match` - (Required) The criteria for determining an HTTP request match.
+
+`WeightedTarget` - (Required) The targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.
+
+`Prefix` - (Required) Specifies the path with which to match requests. This parameter must always start with /, which by itself matches all requests to the virtual router service name.
+
+`VirtualNode` - (Required) The virtual node to associate with the weighted target.
+
+`Weight` - (Required) The relative weight of the weighted target. An integer between 0 and 100.
+
 
 ## Return Values
 

@@ -9,7 +9,16 @@ enforced during runs.
 
 ## Properties
 
-TBC
+`Name` - (Required) Name of the policy.
+
+`Description` - (Optional) A description of the policy's purpose.
+
+`Organization` - (Required) Name of the organization.
+
+`Policy` - (Required) The actual policy itself.
+
+`EnforceMode` - (Required) The enforcement level of the policy. Valid values are `advisory`, `hard-mandatory` and `soft-mandatory`. Defaults to `soft-mandatory`.
+
 
 ## Return Values
 

@@ -22,7 +22,26 @@ For more information on configuring a VCN's default route table, see [Managing D
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) The OCID of the compartment to contain the route table.
+
+`DefinedTags` - (Optional) (Updatable) Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
+
+`DisplayName` - (Optional) (Updatable) A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
+
+`FreeformTags` - (Optional) (Updatable) Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
+
+`RouteRules` - (Required) (Updatable) The collection of rules used for routing destination IPs to network devices. * `CidrBlock` - (Optional) (Updatable) Deprecated. Instead use `Destination` and `destinationType`. Requests that include both `CidrBlock` and `Destination` will be rejected.
+
+`CidrBlock` - (Optional) (Updatable) Deprecated. Instead use `Destination` and `destinationType`. Requests that include both `CidrBlock` and `Destination` will be rejected.
+
+`Destination` - (Optional) (Updatable) Conceptually, this is the range of IP addresses used for matching when routing traffic. Required if you provide a `destinationType`.
+
+`DestinationType` - (Optional) (Updatable) Type of destination for the rule. Required if you provide a `Destination`. * `CIDRBLOCK`: If the rule's `Destination` is an IP address range in CIDR notation. * `SERVICECIDRBLOCK`: If the rule's `Destination` is the `CidrBlock` value for a [Service](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/Service/) (the rule is for traffic destined for a particular service through a service gateway). * `NetworkEntityId` - (Required) (Updatable) The OCID for the route rule's target. For information about the type of targets you can specify, see [Route Tables](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/managingroutetables.htm).
+
+`NetworkEntityId` - (Required) (Updatable) The OCID for the route rule's target. For information about the type of targets you can specify, see [Route Tables](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/managingroutetables.htm).
+
+`VcnId` - (Required) The OCID of the VCN the route table belongs to.
+
 
 ## Return Values
 
@@ -40,11 +59,11 @@ TBC
 
 `RouteRules` - The collection of rules for routing destination IPs to network devices.
 
-`CidrBlock` - Deprecated. Instead use `destination` and `destinationType`. Requests that include both `cidrBlock` and `destination` will be rejected.
+`CidrBlock` - Deprecated. Instead use `Destination` and `destinationType`. Requests that include both `CidrBlock` and `Destination` will be rejected.
 
 `Destination` - Conceptually, this is the range of IP addresses used for matching when routing traffic. Required if you provide a `destinationType`.
 
-`DestinationType` - Type of destination for the rule. Required if you provide a `destination`.
+`DestinationType` - Type of destination for the rule. Required if you provide a `Destination`.
 
 `NetworkEntityId` - The OCID for the route rule's target. For information about the type of targets you can specify, see [Route Tables](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/managingroutetables.htm).
 

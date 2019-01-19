@@ -4,7 +4,12 @@ Provides a Heroku App Feature resource. This can be used to create and manage Ap
 
 ## Properties
 
-TBC
+`App` - (Required) The Heroku app to link to.
+
+`Name` - (Required) The name of the App Feature to manage.
+
+`Enabled` - (Optional) Whether to enable or disable the App Feature. The default value is true.
+
 
 ## See Also
 

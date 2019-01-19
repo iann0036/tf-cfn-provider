@@ -4,7 +4,12 @@ Manages an EC2 Transit Gateway Route.
 
 ## Properties
 
-TBC
+`DestinationCidrBlock` - (Required) IPv4 CIDR range used for destination matches. Routing decisions are based on the most specific match.
+
+`TransitGatewayAttachmentId` - (Required) Identifier of EC2 Transit Gateway Attachment.
+
+`TransitGatewayRouteTableId` - (Required) Identifier of EC2 Transit Gateway Route Table.
+
 
 ## See Also
 

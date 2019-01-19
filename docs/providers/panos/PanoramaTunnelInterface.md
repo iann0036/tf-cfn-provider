@@ -5,7 +5,22 @@ for templates.
 
 ## Properties
 
-TBC
+`Name` - (Required) The interface's name.  This must start with `tunnel.`.
+
+`Template` - (Required) The template name.
+
+`Vsys` - (Optional) The vsys that will use this interface (default: `vsys1`).
+
+`Comment` - (Optional) The interface comment.
+
+`NetflowProfile` - (Optional) The netflow profile.
+
+`StaticIps` - (Optional) List of static IPv4 addresses to set for this data interface.
+
+`ManagementProfile` - (Optional) The management profile.
+
+`Mtu` - (Optional) The MTU.
+
 
 ## See Also
 

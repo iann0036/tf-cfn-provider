@@ -1,6 +1,6 @@
 # Terraform::AWS::TransferUser
 
-Provides a AWS Transfer User resource. Managing SSH keys can be accomplished with the [`aws_transfer_ssh_key` resource](/docs/providers/aws/r/transfer_ssh_key.html).
+Provides a AWS Transfer User resource. Managing SSH keys can be accomplished with the [`Terraform::AWS::TransferSshKey` resource](/docs/providers/aws/r/transfer_ssh_key.html).
 
 
 ```hcl
@@ -61,7 +61,18 @@ resource "aws_transfer_user" "foo" {
 
 ## Properties
 
-TBC
+`ServerId` - (Requirement) The Server ID of the Transfer Server (e.g. `s-12345678`).
+
+`UserName` - (Requirement) The name used for log in to your SFTP server.
+
+`HomeDirectory` - (Optional) The landing directory (folder) for a user when they log in to the server using their SFTP client.
+
+`Policy` - (Optional) An IAM JSON policy document that scopes down user access to portions of their Amazon S3 bucket. IAM variables you can use inside this policy include `${Transfer:UserName}`, `${Transfer:HomeDirectory}`, and `${Transfer:HomeBucket}`. Since the IAM variable syntax matches Terraform's interpolation syntax, they must be escaped inside Terraform configuration strings (`$${Transfer:UserName}`).
+
+`Role` - (Requirement) Amazon Resource Name (ARN) of an IAM role that allows the service to controls your user’s access to your Amazon S3 bucket.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

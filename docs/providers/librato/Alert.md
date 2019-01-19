@@ -5,7 +5,20 @@ create and manage alerts on Librato.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the alert.
+
+`Description` - (Required) Description of the alert.
+
+`Active` - whether the alert is active (can be triggered). Defaults to true.
+
+`RearmSeconds` - minimum amount of time between sending alert notifications, in seconds.
+
+`Services` - list of notification service IDs.
+
+`Condition` - A trigger condition for the alert. Conditions documented below.
+
+`Attributes` - A hash of additional attribtues for the alert. Attributes documented below.
+
 
 ## Return Values
 

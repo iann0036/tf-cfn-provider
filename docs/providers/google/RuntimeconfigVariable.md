@@ -7,7 +7,12 @@ or the
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the variable to manage. Note that variable names can be hierarchical using slashes (e.g. "prod-variables/hostname").
+
+`Parent` - (Required) The name of the RuntimeConfig resource containing this variable.
+
+`Project` - (Optional) The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
+
 
 ## Return Values
 

@@ -6,7 +6,10 @@ For information about CEN and how to use it, see [What is Cloud Enterprise Netwo
 
 ## Properties
 
-TBC
+`Name` - (Optional) The name of the CEN instance. Defaults to null.
+
+`Description` - (Optional) The description of the CEN instance. Defaults to null.
+
 
 ## Return Values
 

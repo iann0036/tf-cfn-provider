@@ -9,7 +9,12 @@ A team collaborator represents an account that has been given access to a team a
 
 ## Properties
 
-TBC
+`App` - (Required) The name of the team app that the team collaborator will be added to.
+
+`Email` - (Required) Email address of the team collaborator.
+
+`Permissions` - (Required) List of permissions that will be granted to the team collaborator. The order in which individual permissions are set here does not matter. Please [visit this link](https://devcenter.heroku.com/articles/app-permissions) for more information on available permissions.
+
 
 ## Return Values
 

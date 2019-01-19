@@ -18,7 +18,12 @@ Further documentation on GitHub collaborators:
 
 ## Properties
 
-TBC
+`Repository` - (Required) The GitHub repository.
+
+`Username` - (Required) The user to add to the repository as a collaborator.
+
+`Permission` - (Optional) The permission of the outside collaborator for the repository. Must be one of `pull`, `push`, or `admin`. Defaults to `push`.
+
 
 ## See Also
 

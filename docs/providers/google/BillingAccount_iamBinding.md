@@ -4,7 +4,7 @@ Allows creation and management of a single binding within IAM policy for
 an existing Google Cloud Platform Billing Account.
 
 ~> **Note:** This resource __must not__ be used in conjunction with
-   `google_billing_account_iam_member` for the __same role__ or they will fight over
+   `Terraform::Google::BillingAccountIamMember` for the __same role__ or they will fight over
    what your policy should be.
 
 ~> **Note:** On create, this resource will overwrite members of any existing roles.
@@ -13,7 +13,12 @@ an existing Google Cloud Platform Billing Account.
 
 ## Properties
 
-TBC
+`BillingAccountId` - (Required) The billing account id.
+
+`Role` - (Required) The role that should be applied.
+
+`Members` - (Required) A list of users that the role should apply to. For more details on format and restrictions see https://cloud.google.com/billing/reference/rest/v1/Policy#Binding.
+
 
 ## Return Values
 

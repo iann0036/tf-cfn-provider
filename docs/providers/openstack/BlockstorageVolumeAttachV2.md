@@ -12,11 +12,34 @@ such as a bare-metal server or a remote virtual machine in a
 different cloud provider.
 
 This does not actually attach a volume to an instance. Please use
-the `openstack_compute_volume_attach_v2` resource for that.
+the `Terraform::OpenStack::ComputeVolumeAttachV2` resource for that.
 
 ## Properties
 
-TBC
+`Region` - (Optional) The region in which to obtain the V2 Block Storage client. A Block Storage client is needed to create a volume attachment. If omitted, the `Region` argument of the provider is used. Changing this creates a new volume attachment.
+
+`AttachMode` - (Optional) Specify whether to attach the volume as Read-Only (`ro`) or Read-Write (`rw`). Only values of `ro` and `rw` are accepted. If left unspecified, the Block Storage API will apply a default of `rw`.
+
+`Device` - (Optional) The device to tell the Block Storage service this volume will be attached as. This is purely for informational purposes. You can specify `auto` or a device such as `/dev/vdc`.
+
+`HostName` - (Required) The host to attach the volume to.
+
+`Initiator` - (Optional) The iSCSI initiator string to make the connection.
+
+`IpAddress` - (Optional) The IP address of the `HostName` above.
+
+`Multipath` - (Optional) Whether to connect to this volume via multipath.
+
+`OsType` - (Optional) The iSCSI initiator OS type.
+
+`Platform` - (Optional) The iSCSI initiator platform.
+
+`VolumeId` - (Required) The ID of the Volume to attach to an Instance.
+
+`Wwpn` - (Optional) An array of wwpn strings. Used for Fibre Channel connections.
+
+`Wwnn` - (Optional) A wwnn name. Used for Fibre Channel connections.
+
 
 ## Return Values
 

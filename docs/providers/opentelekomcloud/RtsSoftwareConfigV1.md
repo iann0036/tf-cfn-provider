@@ -44,7 +44,6 @@ Software Config can be imported using the `config id`, e.g.
 
 ## Properties
 
-TBC
 
 ## See Also
 

@@ -4,7 +4,8 @@ Creates Scaleway object storage buckets.
 
 ## Properties
 
-TBC
+`Name` - (Required) Name of the Scaleway objectstorage bucket.
+
 
 ## Return Values
 

@@ -6,7 +6,14 @@ Manages the subscription's Security Center Contact.
 
 ## Properties
 
-TBC
+`Email` - (Required) The email of the Security Center Contact.
+
+`Phone` - (Required) The phone number of the Security Center Contact.
+
+`AlertNotifications` - (Required) Whether to send security alerts notifications to the security contact.
+
+`AlertsToAdmins` - (Required) Whether to send security alerts notifications to subscription admins.
+
 
 ## Return Values
 

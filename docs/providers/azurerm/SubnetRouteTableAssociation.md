@@ -2,11 +2,14 @@
 
 Associates a [Route Table](route_table.html) with a [Subnet](subnet.html) within a [Virtual Network](virtual_network.html).
 
--> **NOTE:** Subnet `<->` Route Table associations currently need to be configured on both this resource and using the `route_table_id` field on the `azurerm_subnet` resource. The next major version of the AzureRM Provider (2.0) will remove the `route_table_id` field from the `azurerm_subnet` resource such that this resource is used to link resources in future.
+-> **NOTE:** Subnet `<->` Route Table associations currently need to be configured on both this resource and using the `RouteTableId` field on the `Terraform::AzureRM::Subnet` resource. The next major version of the AzureRM Provider (2.0) will remove the `RouteTableId` field from the `azurermSubnet` resource such that this resource is used to link resources in future.
 
 ## Properties
 
-TBC
+`RouteTableId` - (Required) The ID of the Route Table which should be associated with the Subnet. Changing this forces a new resource to be created.
+
+`SubnetId` - (Required) The ID of the Subnet. Changing this forces a new resource to be created.
+
 
 ## Return Values
 

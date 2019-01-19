@@ -4,7 +4,14 @@ Provides a cloudscale.ch Floating IP to represent a publicly-accessible static I
 
 ## Properties
 
-TBC
+`Server` - (Required) (Re-)Assign the Floating IP to this server (UUID).
+
+`IpVersion` - (Required) `4` or `6`, for an IPv4 or IPv6 address or network respectively.
+
+`PrefixLength` - (Optional) If you want to assign an entire network instead of a single IP address to your server, you must specify the prefix length. Currently, there is only support for `ip_version=6` and `prefix_length=56`.
+
+`ReversePtr` - (Optional) You can specify the PTR record (reverse DNS pointer) in case of a single Floating IP address.
+
 
 ## Return Values
 

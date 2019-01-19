@@ -12,7 +12,14 @@ for more details.
 
 ## Properties
 
-TBC
+`Backend` - (Required) The path the RabbitMQ secret backend is mounted at, with no leading or trailing `/`s.
+
+`Name` - (Required) The name to identify this role within the backend. Must be unique within the backend.
+
+`Tags` - (Optional) Specifies a comma-separated RabbitMQ management tags.
+
+`Vhost` - (Optional) Specifies a map of virtual hosts to permissions.
+
 
 ## See Also
 

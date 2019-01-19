@@ -22,7 +22,16 @@ See [AddUserToGroup](https://docs.cloud.oracle.com/iaas/api/#/en/identity/201609
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) The OCID of the tenancy containing the group.
+
+`DefinedTags` - (Optional) (Updatable) Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Operations.CostCenter": "42"}`.
+
+`Description` - (Required) (Updatable) The description you assign to the group during creation. Does not have to be unique, and it's changeable.
+
+`FreeformTags` - (Optional) (Updatable) Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Department": "Finance"}`.
+
+`Name` - (Required) The name you assign to the group during creation. The name must be unique across all groups in the tenancy and cannot be changed.
+
 
 ## Return Values
 

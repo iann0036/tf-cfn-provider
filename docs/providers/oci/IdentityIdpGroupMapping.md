@@ -7,7 +7,12 @@ Creates a single mapping between an IdP group and an IAM Service
 
 ## Properties
 
-TBC
+`GroupId` - (Required) (Updatable) The OCID of the IAM Service [group](https://docs.cloud.oracle.com/iaas/api/#/en/identity/20160918/Group/) you want to map to the IdP group.
+
+`IdentityProviderId` - (Required) The OCID of the identity provider.
+
+`IdpGroupName` - (Required) (Updatable) The name of the IdP group you want to map.
+
 
 ## Return Values
 

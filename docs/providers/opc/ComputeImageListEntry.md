@@ -1,10 +1,17 @@
 # Terraform::OPC::ComputeImageListEntry
 
-The ``opc_compute_image_list_entry`` resource creates and manages an Image List Entry in an Oracle Cloud Infrastructure Compute Classic identity domain.
+The ``Terraform::OPC::ComputeImageListEntry`` resource creates and manages an Image List Entry in an Oracle Cloud Infrastructure Compute Classic identity domain.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the Image List.
+
+`MachineImages` - (Required) An array of machine images.
+
+`Version` - (Required) The unique version of the image list entry, as an integer.
+
+`Attributes` - (Optional) JSON String of optional data that will be passed to an instance of this machine image when it is launched.
+
 
 ## Return Values
 

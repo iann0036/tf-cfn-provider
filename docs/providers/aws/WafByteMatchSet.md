@@ -4,7 +4,10 @@ Provides a WAF Byte Match Set Resource
 
 ## Properties
 
-TBC
+`Name` - (Required) The name or description of the Byte Match Set.
+
+`ByteMatchTuples` - Specifies the bytes (typically a string that corresponds with ASCII characters) that you want to search for in web requests, the location in requests that you want to search, and other settings.
+
 
 ## Return Values
 

@@ -4,7 +4,12 @@ Attaches a load balancer policy to an ELB Listener.
 
 ## Properties
 
-TBC
+`LoadBalancerName` - (Required) The load balancer to attach the policy to.
+
+`LoadBalancerPort` - (Required) The load balancer listener port to apply the policy to.
+
+`PolicyNames` - (Required) List of Policy Names to apply to the backend server.
+
 
 ## Return Values
 

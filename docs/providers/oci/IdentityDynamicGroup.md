@@ -20,7 +20,14 @@ have to be unique, and you can change it anytime with [UpdateDynamicGroup](https
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) The OCID of the tenancy containing the group.
+
+`Description` - (Required) (Updatable) The description you assign to the group during creation. Does not have to be unique, and it's changeable.
+
+`MatchingRule` - (Required) (Updatable) The matching rule to dynamically match an instance certificate to this dynamic group. For rule syntax, see [Managing Dynamic Groups](https://docs.cloud.oracle.com/iaas/Content/Identity/Tasks/managingdynamicgroups.htm).
+
+`Name` - (Required) The name you assign to the group during creation. The name must be unique across all groups in the tenancy and cannot be changed.
+
 
 ## Return Values
 

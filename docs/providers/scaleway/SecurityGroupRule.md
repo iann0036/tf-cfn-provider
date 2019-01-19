@@ -5,7 +5,18 @@ For additional details please refer to [API documentation](https://developer.sca
 
 ## Properties
 
-TBC
+`SecurityGroup` - (Required) the security group which should be associated with this rule.
+
+`Action` - (Required) action of rule (`accept`, `drop`).
+
+`Direction` - (Required) direction of rule (`inbound`, `outbound`).
+
+`IpRange` - (Required) ip_range of rule.
+
+`Protocol` - (Required) protocol of rule (`ICMP`, `TCP`, `UDP`).
+
+`Port` - (Optional) port of the rule.
+
 
 ## Return Values
 

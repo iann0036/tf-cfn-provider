@@ -6,7 +6,10 @@ Read more in [the official docs](https://kubernetes.io/docs/tasks/configure-pod-
 
 ## Properties
 
-TBC
+`Metadata` - (Required) Standard limit range's metadata. For more info see [Kubernetes reference](https://github.com/kubernetes/community/blob/e59e666e3464c7d4851136baa8835a311efdfb8e/contributors/devel/api-conventions.md#metadata).
+
+`Spec` - (Optional) Spec defines the limits enforced. For more info see [Kubernetes reference](https://github.com/kubernetes/community/blob/e59e666e3464c7d4851136baa8835a311efdfb8e/contributors/devel/api-conventions.md#spec-and-status).
+
 
 ## See Also
 

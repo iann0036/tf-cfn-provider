@@ -4,7 +4,6 @@ Provides a Hetzner Cloud volume resource to manage volumes.
 
 ## Properties
 
-TBC
 
 ## See Also
 

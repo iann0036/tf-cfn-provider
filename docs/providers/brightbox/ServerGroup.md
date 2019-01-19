@@ -5,7 +5,10 @@ modify, and delete Server Groups.
 
 ## Properties
 
-TBC
+`Name` - (Optional) A label assigned to the Server Group.
+
+`Description` - (Optional) A further description of the Server Group.
+
 
 ## Return Values
 

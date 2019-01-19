@@ -6,7 +6,12 @@ Provides a key pair attachment resource to bind key pair for several ECS instanc
 
 ## Properties
 
-TBC
+`KeyName` - (Required, Force new resource) The name of key pair used to bind.
+
+`InstanceIds` - (Required, Force new resource) The list of ECS instance's IDs.
+
+`Force` - (Required, Force new resource) Set it to true and it will reboot instances which attached with the key pair to make key pair affect immediately.
+
 
 ## Return Values
 

@@ -10,7 +10,8 @@ this parameter to manage the DNS records for that domain.
 
 ## Properties
 
-TBC
+`DomainName` - (Required) The name of the Lightsail domain to manage.
+
 
 ## Return Values
 

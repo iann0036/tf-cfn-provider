@@ -7,7 +7,10 @@ This data feed is sent to an Amazon S3 bucket that you specify when you subscrib
 
 ## Properties
 
-TBC
+`Bucket` - (Required) The Amazon S3 bucket in which to store the Spot instance data feed.
+
+`Prefix` - (Optional) Path of folder inside bucket to place spot pricing data.
+
 
 ## See Also
 

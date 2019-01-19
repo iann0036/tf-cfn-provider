@@ -4,7 +4,10 @@ Provides a resource to attach an AWS Organizations policy to an organization acc
 
 ## Properties
 
-TBC
+`PolicyId` - (Required) The unique identifier (ID) of the policy that you want to attach to the target.
+
+`TargetId` - (Required) The unique identifier (ID) of the root, organizational unit, or account number that you want to attach the policy to.
+
 
 ## See Also
 

@@ -8,7 +8,10 @@ destroyed, either the invitation will be cancelled or the user will be removed.
 
 ## Properties
 
-TBC
+`Username` - (Required) The user to add to the organization.
+
+`Role` - (Optional) The role of the user within the organization. Must be one of `member` or `admin`. Defaults to `member`.
+
 
 ## See Also
 

@@ -12,7 +12,18 @@ But, in order to manage stock bandwidth packages, version 1.13.0 re-support conf
 
 ## Properties
 
-TBC
+`VpcId` - (Required, Forces New Resorce) The VPC ID.
+
+`Spec` - (Deprecated) It has been deprecated from provider version 1.7.1, and new field 'specification' can replace it.
+
+`Specification` - (Optional) The specification of the nat gateway. Valid values are `Small`, `Middle` and `Large`. Default to `Small`. Details refer to [Nat Gateway Specification](https://www.alibabacloud.com/help/doc-detail/42757.htm).
+
+`Name` - (Optional) Name of the nat gateway. The value can have a string of 2 to 128 characters, must contain only alphanumeric characters or hyphens, such as "-",".","_", and must not begin or end with a hyphen, and must not begin with http:// or https://. Defaults to null.
+
+`Description` - (Optional) Description of the nat gateway, This description can have a string of 2 to 256 characters, It cannot begin with http:// or https://. Defaults to null.
+
+`BandwidthPackages` - (Optional) A list of bandwidth packages for the nat gatway. Only support nat gateway created before 00:00 on November 4, 2017. Available in v1.13.0+ and v1.7.1-.
+
 
 ## Return Values
 

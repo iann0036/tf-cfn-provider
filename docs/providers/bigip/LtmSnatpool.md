@@ -1,12 +1,15 @@
 # Terraform::BIGIP::LtmSnatpool
 
-`bigip_ltm_snatpool` Collections of SNAT translation addresses
+`Terraform::BIGIP::LtmSnatpool` Collections of SNAT translation addresses
 
 Resource should be named with their "full path". The full path is the combination of the partition + name of the resource, for example /Common/my-snatpool.
 
 ## Properties
 
-TBC
+`Name` - (Required) Name of the snatpool.
+
+`Members` - (Required) Specifies a translation address to add to or delete from a SNAT pool (at least one address is required).
+
 
 ## See Also
 

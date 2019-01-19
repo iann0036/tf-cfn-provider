@@ -4,25 +4,38 @@ Manages a V2 nat gateway resource within OpenTelekomCloud Nat
 
 ## Properties
 
-TBC
+`Region` - (Optional) The region in which to obtain the V2 nat client. If omitted, the `Region` argument of the provider is used. Changing this creates a new nat gateway.
+
+`Name` - (Required) The name of the nat gateway.
+
+`Description` - (Optional) The description of the nat gateway.
+
+`Spec` - (Required) The specification of the nat gateway, valid values are "1", "2", "3", "4".
+
+`TenantId` - (Optional) The target tenant ID in which to allocate the nat gateway. Changing this creates a new nat gateway.
+
+`RouterId` - (Required) ID of the router this nat gateway belongs to. Changing this creates a new nat gateway.
+
+`InternalNetworkId` - (Required) ID of the network this nat gateway connects to. Changing this creates a new nat gateway.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Region` - See Argument Reference above.
+`Region` - See Properties above.
 
-`Name` - See Argument Reference above.
+`Name` - See Properties above.
 
-`Description` - See Argument Reference above.
+`Description` - See Properties above.
 
-`Spec` - See Argument Reference above.
+`Spec` - See Properties above.
 
-`TenantId` - See Argument Reference above.
+`TenantId` - See Properties above.
 
-`RouterId` - See Argument Reference above.
+`RouterId` - See Properties above.
 
-`InternalNetworkId` - See Argument Reference above.
+`InternalNetworkId` - See Properties above.
 
 ## See Also
 

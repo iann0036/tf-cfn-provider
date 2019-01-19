@@ -8,7 +8,46 @@ At this time you cannot use a Network Security Group with in-line Network Securi
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the security rule.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the network security group. Changing this forces a new resource to be created.
+
+`Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+
+`SecurityRule` - (Optional) One or more `SecurityRule` blocks as defined below.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
+`Description` - (Optional) A description for this rule. Restricted to 140 characters.
+
+`Protocol` - (Required) Network protocol this rule applies to. Can be `Tcp`, `Udp` or `*` to match both.
+
+`SourcePortRange` - (Optional) Source Port or Range. Integer or range between `0` and `65535` or `*` to match any. This is required if `SourcePortRanges` is not specified.
+
+`SourcePortRanges` - (Optional) List of source ports or port ranges. This is required if `SourcePortRange` is not specified.
+
+`DestinationPortRange` - (Optional) Destination Port or Range. Integer or range between `0` and `65535` or `*` to match any. This is required if `DestinationPortRanges` is not specified.
+
+`DestinationPortRanges` - (Optional) List of destination ports or port ranges. This is required if `DestinationPortRange` is not specified.
+
+`SourceAddressPrefix` - (Optional) CIDR or source IP range or * to match any IP. Tags such as ‘VirtualNetwork’, ‘AzureLoadBalancer’ and ‘Internet’ can also be used. This is required if `SourceAddressPrefixes` is not specified.
+
+`SourceAddressPrefixes` - (Optional) List of source address prefixes. Tags may not be used. This is required if `SourceAddressPrefix` is not specified.
+
+`SourceApplicationSecurityGroupIds` - (Optional) A List of source Application Security Group ID's.
+
+`DestinationAddressPrefix` - (Optional) CIDR or destination IP range or * to match any IP. Tags such as ‘VirtualNetwork’, ‘AzureLoadBalancer’ and ‘Internet’ can also be used. This is required if `DestinationAddressPrefixes` is not specified.
+
+`DestinationAddressPrefixes` - (Optional) List of destination address prefixes. Tags may not be used. This is required if `DestinationAddressPrefix` is not specified.
+
+`DestinationApplicationSecurityGroupIds` - (Optional) A List of destination Application Security Group ID's.
+
+`Access` - (Required) Specifies whether network traffic is allowed or denied. Possible values are `Allow` and `Deny`.
+
+`Priority` - (Required) Specifies the priority of the rule. The value can be between 100 and 4096. The priority number must be unique for each rule in the collection. The lower the priority number, the higher the priority of the rule.
+
+`Direction` - (Required) The direction specifies if rule will be evaluated on incoming or outgoing traffic. Possible values are `Inbound` and `Outbound`.
+
 
 ## Return Values
 

@@ -4,7 +4,14 @@ Use this resource to create, update or destroy RightScale [route tables](http://
 
 ## Properties
 
-TBC
+`CloudHref` - (Required) Href of the cloud you want to create the route table in.
+
+`NetworkHref` - (Required) Href of the network that owns the route table.
+
+`Name` - (Required) Route table name.
+
+`Description` - (Optional) Route table description.
+
 
 ## Return Values
 

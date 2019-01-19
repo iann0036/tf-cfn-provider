@@ -19,7 +19,26 @@ it anytime with
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) The OCID of your tenancy.
+
+`DefinedTags` - (Optional) (Updatable) Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Operations.CostCenter": "42"}`.
+
+`Description` - (Required) (Updatable) The description you assign to the `IdentityProvider` during creation. Does not have to be unique, and it's changeable.
+
+`FreeformAttributes` - (Optional) (Updatable) Extra name value pairs associated with this identity provider. Example: `{"clientId": "app_sf3kdjf3"}`.
+
+`FreeformTags` - (Optional) (Updatable) Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Department": "Finance"}`.
+
+`Metadata` - (Required) (Updatable) The XML that contains the information required for federating.
+
+`MetadataUrl` - (Required) (Updatable) The URL for retrieving the identity provider's metadata, which contains information required for federating.
+
+`Name` - (Required) The name you assign to the `IdentityProvider` during creation. The name must be unique across all `IdentityProvider` objects in the tenancy and cannot be changed.
+
+`ProductType` - (Required) The identity provider service or product. Supported identity providers are Oracle Identity Cloud Service (IDCS) and Microsoft Active Directory Federation Services (ADFS).  Example: `IDCS`.
+
+`Protocol` - (Required) (Updatable) The protocol used for federation.  Example: `SAML2`.
+
 
 ## Return Values
 

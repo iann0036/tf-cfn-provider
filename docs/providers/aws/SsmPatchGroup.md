@@ -4,7 +4,10 @@ Provides an SSM Patch Group resource
 
 ## Properties
 
-TBC
+`BaselineId` - (Required) The ID of the patch baseline to register the patch group with.
+
+`PatchGroup` - (Required) The name of the patch group that should be registered with the patch baseline.
+
 
 ## Return Values
 

@@ -1,7 +1,7 @@
 # Terraform::OCI::CoreVcn
 
 Other supported legacy names/aliases:
-  * `oci_core_virtual_network`
+  * `Terraform::OCI::CoreVirtualNetwork`
 
 This resource provides the Vcn resource in Oracle Cloud Infrastructure Core service.
 
@@ -40,7 +40,18 @@ or FastConnect. For more information, see
 
 ## Properties
 
-TBC
+`CidrBlock` - (Required) The CIDR IP address block of the VCN.  Example: `172.16.0.0/16`.
+
+`CompartmentId` - (Required) The OCID of the compartment to contain the VCN.
+
+`DefinedTags` - (Optional) (Updatable) Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
+
+`DisplayName` - (Optional) (Updatable) A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
+
+`DnsLabel` - (Optional) A DNS label for the VCN, used in conjunction with the VNIC's hostname and subnet's DNS label to form a fully qualified domain name (FQDN) for each VNIC within this subnet (for example, `bminstance-1.subnet123.vcn1.oraclevcn.com`). Not required to be unique, but it's a best practice to set unique DNS labels for VCNs in your tenancy. Must be an alphanumeric string that begins with a letter. The value cannot be changed.
+
+`FreeformTags` - (Optional) (Updatable) Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
+
 
 ## Return Values
 

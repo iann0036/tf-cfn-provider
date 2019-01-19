@@ -4,7 +4,24 @@ Manage an EventHub Namespace.
 
 ## Properties
 
-TBC
+`Name` - (Required) Specifies the name of the EventHub Namespace resource. Changing this forces a new resource to be created.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the namespace. Changing this forces a new resource to be created.
+
+`Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+
+`Sku` - (Required) Defines which tier to use. Valid options are `Basic` and `Standard`.
+
+`Capacity` - (Optional) Specifies the Capacity / Throughput Units for a `Standard` SKU namespace. Valid values range from 1 - 20.
+
+`AutoInflateEnabled` - (Optional) Is Auto Inflate enabled for the EventHub Namespace?.
+
+`MaximumThroughputUnits` - (Optional) Specifies the maximum number of throughput units when Auto Inflate is Enabled. Valid values range from 1 - 20.
+
+`KafkaEnabled` - (Optional) Is Kafka enabled for the EventHub Namespace? Defaults to `false`.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

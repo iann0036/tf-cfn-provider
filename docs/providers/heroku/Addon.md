@@ -5,7 +5,12 @@ services to a Heroku app.
 
 ## Properties
 
-TBC
+`App` - (Required) The Heroku app to add to.
+
+`Plan` - (Required) The addon to add.
+
+`Config` - (Optional) Optional plan configuration.
+
 
 ## Return Values
 

@@ -4,7 +4,12 @@ Provides a Gamelift Alias resource.
 
 ## Properties
 
-TBC
+`Name` - (Required) Name of the alias.
+
+`Description` - (Optional) Description of the alias.
+
+`RoutingStrategy` - (Required) Specifies the fleet and/or routing type to use for the alias.
+
 
 ## Return Values
 

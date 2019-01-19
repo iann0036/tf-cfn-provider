@@ -4,7 +4,6 @@ Provides a Nutanix Image resource to Create a image.
 
 ## Properties
 
-TBC
 
 ## Return Values
 

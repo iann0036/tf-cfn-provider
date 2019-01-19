@@ -6,7 +6,16 @@ Manages a Shared Image Gallery.
 
 ## Properties
 
-TBC
+`Name` - (Required) Specifies the name of the Shared Image Gallery. Changing this forces a new resource to be created.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the Shared Image Gallery. Changing this forces a new resource to be created.
+
+`Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+
+`Description` - (Optional) A description for this Shared Image Gallery.
+
+`Tags` - (Optional) A mapping of tags to assign to the Shared Image Gallery.
+
 
 ## Return Values
 

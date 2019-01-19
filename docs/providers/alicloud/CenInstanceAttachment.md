@@ -4,7 +4,12 @@ Provides a CEN child instance attachment resource.
 
 ## Properties
 
-TBC
+`InstanceId` - (Required) The ID of the CEN.
+
+`ChildInstanceId` - (Required) The ID of the child instance to attach.
+
+`ChildInstanceRegionId` - (Required) The region ID of the child instance to attach.
+
 
 ## See Also
 

@@ -1,10 +1,15 @@
 # Terraform::BIGIP::SysSnmp
 
-`bigip_sys_snmp` provides details bout how to enable "ilx", "asm" "apm" resource on BIG-IP
+`Terraform::BIGIP::SysSnmp` provides details bout how to enable "ilx", "asm" "apm" resource on BIG-IP
 
 ## Properties
 
-TBC
+`SysContact` -  (Optional) Specifies the contact information for the system administrator.
+
+`SysLocation` - Describes the system's physical location.
+
+`Allowedaddresses` - Configures hosts or networks from which snmpd can accept traffic. Entries go directly into hosts.allow.
+
 
 ## See Also
 

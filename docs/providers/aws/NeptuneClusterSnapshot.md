@@ -4,7 +4,10 @@ Manages a Neptune database cluster snapshot.
 
 ## Properties
 
-TBC
+`DbClusterIdentifier` - (Required) The DB Cluster Identifier from which to take the snapshot.
+
+`DbClusterSnapshotIdentifier` - (Required) The Identifier for the snapshot.
+
 
 ## Return Values
 

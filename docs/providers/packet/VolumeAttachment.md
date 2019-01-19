@@ -4,11 +4,14 @@ Provides attachment of Packet Block Storage Volume to Devices.
 
 Device and volume must be in the same location (facility).
 
-Once attached by Terraform, they must then be mounted using the `packet_block_attach` and `packet_block_detach` scripts.
+Once attached by Terraform, they must then be mounted using the `Terraform::Packet::BlockAttach` and `packetBlockDetach` scripts.
 
 ## Properties
 
-TBC
+`VolumeId` - (Required) The ID of the volume to attach.
+
+`DeviceId` - (Required) The ID of the device to which the volume should be attached.
+
 
 ## Return Values
 

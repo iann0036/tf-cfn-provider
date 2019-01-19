@@ -4,7 +4,6 @@ Manages IP Blocks on ProfitBricks. IP Blocks contain reserved public IP addresse
 
 ## Properties
 
-TBC
 
 ## See Also
 

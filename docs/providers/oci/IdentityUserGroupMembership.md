@@ -6,7 +6,10 @@ Adds the specified user to the specified group and returns a `UserGroupMembershi
 
 ## Properties
 
-TBC
+`GroupId` - (Required) The OCID of the group.
+
+`UserId` - (Required) The OCID of the user.
+
 
 ## Return Values
 

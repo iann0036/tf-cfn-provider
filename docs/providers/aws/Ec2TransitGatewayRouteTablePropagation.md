@@ -4,7 +4,10 @@ Manages an EC2 Transit Gateway Route Table propagation.
 
 ## Properties
 
-TBC
+`TransitGatewayAttachmentId` - (Required) Identifier of EC2 Transit Gateway Attachment.
+
+`TransitGatewayRouteTableId` - (Required) Identifier of EC2 Transit Gateway Route Table.
+
 
 ## See Also
 

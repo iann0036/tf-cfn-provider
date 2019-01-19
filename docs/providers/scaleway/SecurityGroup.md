@@ -5,7 +5,18 @@ For additional details please refer to [API documentation](https://developer.sca
 
 ## Properties
 
-TBC
+`Name` - (Required) name of security group.
+
+`Description` - (Required) description of security group.
+
+`EnableDefaultSecurity` - (Optional) default: true. Add default security group rules.
+
+`Stateful` - (Optional) default: false. Mark the security group as stateful. Note that stateful security groups can not be associated with bare metal servers.
+
+`InboundDefaultPolicy` - (Optional) default policy for inbound traffic. Can be one of accept or drop.
+
+`OutboundDefaultPolicy` - (Optional) default policy for outbound traffic. Can be one of accept or drop.
+
 
 ## Return Values
 

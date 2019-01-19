@@ -7,7 +7,6 @@ Manages a Sentinel policy registered in Nomad.
 
 ## Properties
 
-TBC
 
 ## See Also
 

@@ -6,7 +6,14 @@ documentation](https://docs.gitlab.com/ee/user/project/labels.htm).
 
 ## Properties
 
-TBC
+`Project` - (Required) The name or id of the project to add the label to.
+
+`Name` - (Required) The name of the label.
+
+`Color` - (Required) The color of the label given in 6-digit hex notation with leading '#' sign (e.g. #FFAABB) or one of the [CSS color names](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords).
+
+`Description` - (Optional) The description of the label.
+
 
 ## Return Values
 

@@ -4,7 +4,6 @@ Manages a Load Balancer on ProfitBricks.
 
 ## Properties
 
-TBC
 
 ## See Also
 

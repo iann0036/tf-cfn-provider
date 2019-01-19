@@ -4,7 +4,10 @@ This resource allows you to create and manage columns for GitHub projects.
 
 ## Properties
 
-TBC
+`ProjectId` - (Required) The id of an existing project that the column will be created in.
+
+`Name` - (Required) The name of the column.
+
 
 ## See Also
 

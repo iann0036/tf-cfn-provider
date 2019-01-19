@@ -9,7 +9,8 @@ For more information about Device Farm Projects, see the AWS Documentation on
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the project.
+
 
 ## Return Values
 

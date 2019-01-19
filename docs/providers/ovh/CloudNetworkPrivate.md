@@ -4,19 +4,26 @@ Creates a private network in a public cloud project.
 
 ## Properties
 
-TBC
+`ProjectId` - (Required) The id of the public cloud project. If omitted, the `OVH_PROJECT_ID` environment variable is used.
+
+`Name` - (Required) The name of the network.
+
+`VlanId` - a vlan id to associate with the network. Changing this value recreates the resource. Defaults to 0.
+
+`Regions` - an array of valid OVH public cloud region ID in which the network will be available. Ex.: "GRA1". Defaults to all public cloud regions.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`ProjectId` - See Argument Reference above.
+`ProjectId` - See Properties above.
 
-`Name` - See Argument Reference above.
+`Name` - See Properties above.
 
-`VlanId` - See Argument Reference above.
+`VlanId` - See Properties above.
 
-`Regions` - See Argument Reference above.
+`Regions` - See Properties above.
 
 `RegionsStatus` - A map representing the status of the network per region.
 

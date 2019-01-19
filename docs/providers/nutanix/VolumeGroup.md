@@ -4,7 +4,8 @@ Provides a Nutanix Volume Group resource to Create a volume_group.
 
 ## Properties
 
-TBC
+`ApiVersion` - (Optional) Version of the API.
+
 
 ## See Also
 

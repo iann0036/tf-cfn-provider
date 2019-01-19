@@ -1,12 +1,17 @@
 # Terraform::AWS::LbTargetGroupAttachment
 
-Provides the ability to register instances and containers with an Application Load Balancer (ALB) or Network Load Balancer (NLB) target group. For attaching resources with Elastic Load Balancer (ELB), see the [`aws_elb_attachment` resource](/docs/providers/aws/r/elb_attachment.html).
+Provides the ability to register instances and containers with an Application Load Balancer (ALB) or Network Load Balancer (NLB) target group. For attaching resources with Elastic Load Balancer (ELB), see the [`Terraform::AWS::ElbAttachment` resource](/docs/providers/aws/r/elb_attachment.html).
 
-~> **Note:** `aws_alb_target_group_attachment` is known as `aws_lb_target_group_attachment`. The functionality is identical.
+~> **Note:** `Terraform::AWS::AlbTargetGroupAttachment` is known as `awsLbTargetGroupAttachment`. The functionality is identical.
 
 ## Properties
 
-TBC
+`TargetGroupArn` - (Required) The ARN of the target group with which to register targets.
+
+`Port` - (Optional) The port on which targets receive traffic.
+
+`AvailabilityZone` - (Optional) The Availability Zone where the IP address of the target is to be registered.
+
 
 ## Return Values
 

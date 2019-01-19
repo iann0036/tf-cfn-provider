@@ -6,7 +6,10 @@ Droplet.
 
 ## Properties
 
-TBC
+`IpAddress` - (Required) The Floating IP to assign to the Droplet.
+
+`DropletId` - (Optional) The ID of Droplet that the Floating IP will be assigned to.
+
 
 ## See Also
 

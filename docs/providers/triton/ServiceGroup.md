@@ -1,12 +1,17 @@
 # Terraform::Triton::ServiceGroup
 
-The `triton_service_group` resource represents a Triton Service Group.
+The `Terraform::Triton::ServiceGroup` resource represents a Triton Service Group.
 
 ~> **NOTE:**  Triton Service Groups are in Preview and only supported in specific regions at this time. They will become Generally Available in the near future.
 
 ## Properties
 
-TBC
+`GroupName` - (string, Required) Friendly name for the service group.
+
+`Template` - (string, Required)  Identifier of an instance template.
+
+`Capacity` - (int, Optional) Number of instances to launch and monitor.
+
 
 ## See Also
 

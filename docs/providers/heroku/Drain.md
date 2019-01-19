@@ -5,7 +5,10 @@ create and manage Log Drains on Heroku.
 
 ## Properties
 
-TBC
+`Url` - (Required) The URL for Heroku to drain your logs to.
+
+`App` - (Required) The Heroku app to link to.
+
 
 ## Return Values
 

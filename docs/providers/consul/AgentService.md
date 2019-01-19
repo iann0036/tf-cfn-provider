@@ -1,6 +1,6 @@
 # Terraform::Consul::AgentService
 
-!> The `consul_agent_service` resource has been deprecated in version 2.0.0 of the provider
+!> The `Terraform::Consul::AgentService` resource has been deprecated in version 2.0.0 of the provider
 and will be removed in a future release. Please read the [upgrade guide](/docs/providers/consul/upgrading.html#deprecation-of-consul_agent_service)
 for more information.
 
@@ -10,7 +10,14 @@ health checks for an agent service is not supported.
 
 ## Properties
 
-TBC
+`Address` - (Optional) The address of the service. Defaults to the address of the agent.
+
+`Name` - (Required) The name of the service.
+
+`Port` - (Optional) The port of the service.
+
+`Tags` - (Optional) A list of values that are opaque to Consul, but can be used to distinguish between services or nodes.
+
 
 ## Return Values
 
@@ -18,7 +25,7 @@ TBC
 
 `Address` - The address of the service.
 
-`Id` - The ID of the service, defaults to the value of `name`.
+`Id` - The ID of the service, defaults to the value of `Name`.
 
 `Name` - The name of the service.
 

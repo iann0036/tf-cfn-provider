@@ -8,7 +8,18 @@ At this time you cannot use a Virtual Network with in-line Subnets in conjunctio
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the subnet. Changing this forces a new resource to be created.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the subnet. Changing this forces a new resource to be created.
+
+`VirtualNetworkName` - (Required) The name of the virtual network to which to attach the subnet. Changing this forces a new resource to be created.
+
+`AddressPrefix` - (Required) The address prefix to use for the subnet.
+
+`NetworkSecurityGroupId` - (Optional) The ID of the Network Security Group to associate with the subnet.
+
+`RouteTableId` - (Optional) The ID of the Route Table to associate with the subnet.
+
 
 ## Return Values
 

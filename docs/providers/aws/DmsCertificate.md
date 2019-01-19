@@ -7,7 +7,12 @@ Provides a DMS (Data Migration Service) certificate resource. DMS certificates c
 
 ## Properties
 
-TBC
+`CertificateId` - (Required) The certificate identifier.
+
+`CertificatePem` - (Optional) The contents of the .pem X.509 certificate file for the certificate. Either `CertificatePem` or `CertificateWallet` must be set.
+
+`CertificateWallet` - (Optional) The contents of the Oracle Wallet certificate for use with SSL. Either `CertificatePem` or `CertificateWallet` must be set.
+
 
 ## Return Values
 

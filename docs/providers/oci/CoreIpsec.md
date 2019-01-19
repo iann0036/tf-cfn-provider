@@ -31,7 +31,20 @@ To get the status of the tunnels (whether they're up or down), use
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) The OCID of the compartment to contain the IPSec connection.
+
+`CpeId` - (Required) The OCID of the CPE.
+
+`DefinedTags` - (Optional) (Updatable) Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
+
+`DisplayName` - (Optional) (Updatable) A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
+
+`DrgId` - (Required) The OCID of the DRG.
+
+`FreeformTags` - (Optional) (Updatable) Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
+
+`StaticRoutes` - (Required) Static routes to the CPE. At least one route must be included. The CIDR must not be a multicast address or class E address.  Example: `10.0.1.0/24`.
+
 
 ## Return Values
 

@@ -4,7 +4,14 @@ Provides a [Data Lifecycle Manager (DLM) lifecycle policy](https://docs.aws.amaz
 
 ## Properties
 
-TBC
+`Description` - (Required) A description for the DLM lifecycle policy.
+
+`ExecutionRoleArn` - (Required) The ARN of an IAM role that is able to be assumed by the DLM service.
+
+`PolicyDetails` - (Required) See the [`PolicyDetails` configuration](#policy-details-arguments) block. Max of 1.
+
+`State` - (Optional) Whether the lifecycle policy should be enabled or disabled. `ENABLED` or `DISABLED` are valid values. Defaults to `ENABLED`.
+
 
 ## See Also
 

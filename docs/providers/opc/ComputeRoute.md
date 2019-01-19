@@ -1,10 +1,19 @@
 # Terraform::OPC::ComputeRoute
 
-The `opc_compute_route` resource creates and manages a route for an IP Network in an Oracle Cloud Infrastructure Compute Classic identity domain.
+The `Terraform::OPC::ComputeRoute` resource creates and manages a route for an IP Network in an Oracle Cloud Infrastructure Compute Classic identity domain.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the route.
+
+`Description` - (Optional) The description of the route.
+
+`AdminDistance` - (Optional) The route's administrative distance. Defaults to `0`.
+
+`IpAddressPrefix` - (Required) The IPv4 address prefix, in CIDR format, of the external network from which to route traffic.
+
+`NextHopVnicSet` - (Required) Name of the virtual NIC set to route matching packets to. Routed flows are load-balanced among all the virtual NICs in the virtual NIC set.
+
 
 ## Return Values
 

@@ -4,7 +4,16 @@ Provides a Cognito User Group resource.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the user group.
+
+`UserPoolId` - (Required) The user pool ID.
+
+`Description` - (Optional) The description of the user group.
+
+`Precedence` - (Optional) The precedence of the user group.
+
+`RoleArn` - (Optional) The ARN of the IAM role to be associated with the user group.
+
 
 ## See Also
 

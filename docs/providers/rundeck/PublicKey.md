@@ -9,7 +9,12 @@ may be used in the configuration of other resources such as ``aws_key_pair``.
 
 ## Properties
 
-TBC
+`Delete` - (Computed) True if the key should be deleted when the resource is deleted. Defaults to true if key_material is provided in the configuration.
+
+`Path` - (Required) The path within the key store where the key will be stored. By convention this path name normally ends with ".pub" and otherwise has the same name as the associated private key.
+
+`KeyMaterial` - (Optional) The public key string to store, serialized in any way that is accepted by OpenSSH. If this is not included, ``KeyMaterial`` becomes an attribute that can be used to read the already-existing key material in the Rundeck store.
+
 
 ## Return Values
 
@@ -17,7 +22,7 @@ TBC
 
 `Url` - The URL at which the key material can be retrieved from the key store by other clients.
 
-`KeyMaterial` - If `key_material` is omitted in the configuration, it becomes an attribute that.
+`KeyMaterial` - If `KeyMaterial` is omitted in the configuration, it becomes an attribute that.
 
 ## See Also
 

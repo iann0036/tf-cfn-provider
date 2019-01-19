@@ -4,7 +4,14 @@ Provides a Heroku Space resource for running apps in isolated, highly available,
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the space.
+
+`Organization` - (Required) The name of the organization which will own the space.
+
+`Region` - (Optional) The region that the space should be created in.
+
+`Shield` - (Optional) Whether or not the private space should be [shielded](https://devcenter.heroku.com/articles/private-spaces#shield-private-spaces).
+
 
 ## Return Values
 

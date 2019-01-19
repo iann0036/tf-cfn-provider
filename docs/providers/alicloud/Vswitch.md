@@ -4,7 +4,16 @@ Provides a VPC switch resource.
 
 ## Properties
 
-TBC
+`AvailabilityZone` - (Required, Forces new resource) The AZ for the switch.
+
+`VpcId` - (Required, Forces new resource) The VPC ID.
+
+`CidrBlock` - (Required, Forces new resource) The CIDR block for the switch.
+
+`Name` - (Optional) The name of the switch. Defaults to null.
+
+`Description` - (Optional) The switch description. Defaults to null.
+
 
 ## Return Values
 

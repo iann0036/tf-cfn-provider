@@ -4,7 +4,10 @@ Manages the configuration of a Docker service in a swarm.
 
 ## Properties
 
-TBC
+`Name` - (Required, string) The name of the Docker config.
+
+`Data` - (Required, string) The base64 encoded data of the config.
+
 
 ## See Also
 

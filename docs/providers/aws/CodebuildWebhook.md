@@ -4,7 +4,10 @@ Manages a CodeBuild webhook, which is an endpoint accepted by the CodeBuild serv
 
 ## Properties
 
-TBC
+`ProjectName` - (Required) The name of the build project.
+
+`BranchFilter` - (Optional) A regular expression used to determine which branches get built. Default is all branches are built.
+
 
 ## Return Values
 

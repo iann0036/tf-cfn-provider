@@ -4,7 +4,38 @@ Manages an Recovery Services VM Protection Policy.
 
 ## Properties
 
-TBC
+`Name` - (Required) Specifies the name of the Recovery Services Vault Policy. Changing this forces a new resource to be created.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the Recovery Services Protected VM. Changing this forces a new resource to be created.
+
+`RecoveryVaultName` - (Required) Specifies the name of the Recovery Services Vault to use. Changing this forces a new resource to be created.
+
+`Backup` - (Required) Configures the Policy backup frequecent, times & days as documented in the `Backup` block below.
+
+`Timezone` - (Optional) Specifies the timezone. Defaults to `UTC`.
+
+`RetentionDaily` - (Optional) Configures the policy daily retention as documented in the `RetentionDaily` block below. Required when backup frequency is `Daily`.
+
+`RetentionWeekly` - (Optional) Configures the policy weekly retention as documented in the `RetentionWeekly` block below. Required when backup frequency is `Weekly`.
+
+`RetentionMonthly` - (Optional) Configures the policy monthly retention as documented in the `RetentionMonthly` block below.
+
+`RetentionYearly` - (Optional) Configures the policy yearly retention as documented in the `RetentionYearly` block below.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
+`Frequency` - (Required) Sets the backup frequency. Must be either `Daily` or`Weekly`.
+
+`Times` - (Required) The time of day to preform the backup in 24hour format.
+
+`Weekdays` - (Required) The weekday backups to retain . Must be one of `Sunday`, `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday` or `Saturday`.
+
+`Count` - (Required) The number of yearly backups to keep. Must be between `1` and `9999`.
+
+`Weeks` - (Required) The weeks of the month to retain backups of. Must be one of `First`, `Second`, `Third`, `Fourth`, `Last`.
+
+`Months` - (Required) The months of the year to retain backups of. Must be one of `January`, `Febuary`, `March`, `April`, `May`, `June`, `July`, `Augest`, `September`, `October`, `November` and `December`.
+
 
 ## Return Values
 

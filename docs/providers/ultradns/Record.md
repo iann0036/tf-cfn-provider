@@ -4,7 +4,16 @@ Provides an UltraDNS record resource.
 
 ## Properties
 
-TBC
+`Zone` - (Required) The domain to add the record to.
+
+`Name` - (Required) The name of the record.
+
+`Rdata` - (Required) An array containing the values of the record.
+
+`Type` - (Required) The type of the record.
+
+`Ttl` - (Optional) The TTL of the record.
+
 
 ## Return Values
 

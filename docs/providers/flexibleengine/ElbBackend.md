@@ -4,17 +4,22 @@ Manages an elastic loadbalancer backend resource within FlexibleEngine.
 
 ## Properties
 
-TBC
+`ListenerId` - (Required) Specifies the listener ID.
+
+`ServerId` - (Required) Specifies the backend member ID.
+
+`Address` - (Required) Specifies the private IP address of the backend member.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`ListenerId` - See Argument Reference above.
+`ListenerId` - See Properties above.
 
-`ServerId` - See Argument Reference above.
+`ServerId` - See Properties above.
 
-`Address` - See Argument Reference above.
+`Address` - See Properties above.
 
 `ServerAddress` - Specifies the floating IP address assigned to the backend member.
 

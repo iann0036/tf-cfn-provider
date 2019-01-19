@@ -4,7 +4,10 @@ Provides a CEN bandwidth package attachment resource. The resource can be used t
 
 ## Properties
 
-TBC
+`InstanceId` - (Required) The ID of the CEN.
+
+`BandwidthPackageId` - (Required) The ID of the bandwidth package.
+
 
 ## Return Values
 

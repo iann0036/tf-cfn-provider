@@ -1,10 +1,11 @@
 # Terraform::OPC::ComputeStorageVolumeSnapshot
 
-The ``opc_compute_storage_volume_snapshot`` resource creates and manages a storage volume snapshot in an Oracle Cloud Infrastructure Compute Classic identity domain.
+The ``Terraform::OPC::ComputeStorageVolumeSnapshot`` resource creates and manages a storage volume snapshot in an Oracle Cloud Infrastructure Compute Classic identity domain.
 
 ## Properties
 
-TBC
+`Tags` - (Optional) Comma-separated strings that tag the storage volume.
+
 
 ## Return Values
 

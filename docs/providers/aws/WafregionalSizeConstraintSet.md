@@ -4,7 +4,10 @@ Provides a WAF Regional Size Constraint Set Resource for use with Application Lo
 
 ## Properties
 
-TBC
+`Name` - (Required) The name or description of the Size Constraint Set.
+
+`SizeConstraints` - (Optional) Specifies the parts of web requests that you want to inspect the size of.
+
 
 ## Return Values
 

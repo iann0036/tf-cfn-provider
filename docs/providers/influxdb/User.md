@@ -4,7 +4,18 @@ The user resource allows a user to be created on an InfluxDB server.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name for the user.
+
+`Password` - (Required) The password for the user.
+
+`Admin` - (Optional) Mark the user as admin.
+
+`Grant` - (Optional) A list of grants for non-admin users.
+
+`Database` - (Required) The name of the database the privilege is associated with.
+
+`Privilege` - (Required) The privilege to grant (READ|WRITE|ALL).
+
 
 ## Return Values
 

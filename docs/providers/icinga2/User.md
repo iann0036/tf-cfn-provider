@@ -5,7 +5,10 @@ and deleted.
 
 ## Properties
 
-TBC
+`Name` - (Required) The user.
+
+`Email` - (Optional) An email string for this user. Useful for notification commands.
+
 
 ## See Also
 

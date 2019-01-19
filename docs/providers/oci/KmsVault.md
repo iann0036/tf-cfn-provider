@@ -1,6 +1,6 @@
 # Terraform::OCI::KmsVault
 
-The `oci_kms_vault` resource creates and manages an OCI Vault
+The `Terraform::OCI::KmsVault` resource creates and manages an OCI Vault
 
 Creates a new vault. The type of vault you create determines key 
 placement, pricing, and available options. Options include storage 
@@ -9,7 +9,12 @@ endpoint for API calls, and a dedicated HSM or a multitenant HSM.
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) The OCID of the compartment where you want to create this vault.
+
+`DisplayName` - (Required) (Updatable) A user-friendly name for the vault. It does not have to be unique, and it is changeable. Avoid entering confidential information.
+
+`VaultType` - (Required) The type of vault to create. Each type of vault stores the key with different degrees of isolation and has different options and pricing.
+
 
 ## Return Values
 

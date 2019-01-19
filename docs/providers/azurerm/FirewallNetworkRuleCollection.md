@@ -4,7 +4,28 @@ Manages a Network Rule Collection within an Azure Firewall.
 
 ## Properties
 
-TBC
+`Name` - (Required) Specifies the name of the rule.
+
+`AzureFirewallName` - (Required) Specifies the name of the Firewall in which the Network Rule Collection should be created. Changing this forces a new resource to be created.
+
+`ResourceGroupName` - (Required) Specifies the name of the Resource Group in which the Firewall exists. Changing this forces a new resource to be created.
+
+`Priority` - (Required) Specifies the priority of the rule collection. Possible values are between `100` - `65000`.
+
+`Action` - (Required) Specifies the action the rule will apply to matching traffic. Possible values are `Allow` and `Deny`.
+
+`Rule` - (Required) One or more `Rule` blocks as defined below.
+
+`Description` - (Optional) Specifies a description for the rule.
+
+`SourceAddresses` - (Required) A list of source IP addresses and/or IP ranges.
+
+`DestinationAddresses` - (Required) A list of destination IP addresses and/or IP ranges.
+
+`DestinationPorts` - (Required) A list of destination ports.
+
+`Protocols` - (Required) A list of protocols. Possible values are `Any`, `ICMP`, `TCP` and `UDP`.
+
 
 ## See Also
 

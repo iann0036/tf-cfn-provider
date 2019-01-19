@@ -4,7 +4,6 @@ Manages a volume on ProfitBricks.
 
 ## Properties
 
-TBC
 
 ## See Also
 

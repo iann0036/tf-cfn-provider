@@ -1,10 +1,15 @@
 # Terraform::OPC::ComputeIpNetworkExchange
 
-The `opc_compute_ip_network_exchange` resource creates and manages an IP network exchange in an Oracle Cloud Infrastructure Compute Classic identity domain.
+The `Terraform::OPC::ComputeIpNetworkExchange` resource creates and manages an IP network exchange in an Oracle Cloud Infrastructure Compute Classic identity domain.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the ip network exchange.
+
+`Description` - (Optional) A description of the ip network exchange.
+
+`Tags` - (Optional) List of tags that may be applied to the IP network exchange.
+
 
 ## See Also
 

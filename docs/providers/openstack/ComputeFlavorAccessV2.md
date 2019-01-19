@@ -9,17 +9,22 @@ this resource.
 
 ## Properties
 
-TBC
+`Region` - (Optional) The region in which to obtain the V2 Compute client. If omitted, the `Region` argument of the provider is used. Changing this creates a new flavor access.
+
+`FlavorId` - (Required) The UUID of flavor to use. Changing this creates a new flavor access.
+
+`TenantId` - (Required) The UUID of tenant which is allowed to use the flavor. Changing this creates a new flavor access.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Region` - See Argument Reference above.
+`Region` - See Properties above.
 
-`FlavorId` - See Argument Reference above.
+`FlavorId` - See Properties above.
 
-`TenantId` - See Argument Reference above.
+`TenantId` - See Properties above.
 
 ## See Also
 

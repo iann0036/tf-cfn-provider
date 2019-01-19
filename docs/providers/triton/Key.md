@@ -1,10 +1,13 @@
 # Terraform::Triton::Key
 
-The `triton_key` resource represents an SSH key for a Triton account.
+The `Terraform::Triton::Key` resource represents an SSH key for a Triton account.
 
 ## Properties
 
-TBC
+`Name` - (string, Change forces new resource) The name of the key. If this is left empty, the name is inferred from the comment in the SSH key material.
+
+`Key` - (string, Required, Change forces new resource) The SSH key material. In order to read this from a file, use the `file` interpolation.
+
 
 ## See Also
 

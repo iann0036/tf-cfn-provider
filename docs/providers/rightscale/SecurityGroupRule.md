@@ -4,7 +4,24 @@ Use this resource to create, update or destroy RightScale [security group rules]
 
 ## Properties
 
-TBC
+`SourceType` - (Required) Source type. May be a CIDR block or another Security Group. Options are 'cidr_ips' or 'group'.
+
+`Protocol` - (Required) Protocol to filter on.  Options are 'tcp', 'udp', 'icmp' and 'all'.
+
+`SecurityGroupHref` - (Required) Href of parent security group.
+
+`ProtocolDetails` - (Required) Block options include:.
+
+`CidrIps` - (Contextual) An IP address range in CIDR notation. Required if source_type is 'cidr'. Conflicts with 'group_name' and 'group_owner'.
+
+`GroupName` - (Contextual) Name of source Security Group. Required if source_type is 'group'.  Conflicts with 'cidr_ips'.
+
+`GroupOwner` - (Contexual) Owner of source Security Group. Required if source_type is 'group'. Conflicts with 'cidr_ips'.
+
+`Direction` - (Optional) Direction of traffic to apply rule against.  Options are 'ingress' or 'egress'.
+
+`Priority` - (Optional) Lower takes precedence. Supported by security group rules created in Microsoft Azure only.
+
 
 ## Return Values
 

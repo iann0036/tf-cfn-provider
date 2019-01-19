@@ -4,17 +4,22 @@ Manages an elastic loadbalancer backend resource within OpentelekomCloud.
 
 ## Properties
 
-TBC
+`ListenerId` - (Required) Specifies the listener ID. Changing this creates a new elb backend.
+
+`ServerId` - (Required) Specifies the backend member ID. Changing this creates a new elb backend.
+
+`Address` - (Required) Specifies the private IP address of the backend member. Changing this creates a new elb backend.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`ListenerId` - See Argument Reference above.
+`ListenerId` - See Properties above.
 
-`ServerId` - See Argument Reference above.
+`ServerId` - See Properties above.
 
-`Address` - See Argument Reference above.
+`Address` - See Properties above.
 
 `ServerAddress` - Specifies the floating IP address assigned to the backend member.
 

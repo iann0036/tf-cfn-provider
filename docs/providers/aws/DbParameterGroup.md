@@ -9,7 +9,22 @@ Provides an RDS DB parameter group resource .Documentation of the available para
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the DB parameter.
+
+`NamePrefix` - (Optional, Forces new resource) Creates a unique name beginning with the specified prefix. Conflicts with `Name`.
+
+`Family` - (Required) The family of the DB parameter group.
+
+`Description` - (Optional) The description of the DB parameter group. Defaults to "Managed by Terraform".
+
+`Parameter` - (Optional) A list of DB parameters to apply. Note that parameters may differ from a family to an other. Full list of all parameters can be discovered via [`aws rds describe-db-parameters`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-parameters.html) after initial creation of the group.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
+`Value` - (Required) The value of the DB parameter.
+
+`ApplyMethod` - (Optional) "immediate" (default), or "pending-reboot". Some engines can't apply some parameters without a reboot, and you will need to specify "pending-reboot" here.
+
 
 ## Return Values
 

@@ -5,7 +5,12 @@ For additional details please refer to [API documentation](https://developer.sca
 
 ## Properties
 
-TBC
+`Name` - (Required) name of volume.
+
+`SizeInGb` - (Required) size of the volume in GB.
+
+`Type` - (Required) type of volume.
+
 
 ## Return Values
 
@@ -13,7 +18,7 @@ TBC
 
 `Id` - id of the new resource.
 
-`Server` - (Read Only) the `scaleway_server` instance which has this volume mounted right now.
+`Server` - (Read Only) the `Terraform::Scaleway::Server` instance which has this volume mounted right now.
 
 ## See Also
 

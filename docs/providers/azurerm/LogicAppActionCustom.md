@@ -4,7 +4,12 @@ Manages a Custom Action within a Logic App Workflow
 
 ## Properties
 
-TBC
+`Name` - (Required) Specifies the name of the HTTP Action to be created within the Logic App Workflow. Changing this forces a new resource to be created.
+
+`LogicAppId` - (Required) Specifies the ID of the Logic App Workflow. Changing this forces a new resource to be created.
+
+`Body` - (Required) Specifies the JSON Blob defining the Body of this Custom Action.
+
 
 ## Return Values
 

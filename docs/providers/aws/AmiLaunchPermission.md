@@ -4,13 +4,16 @@ Adds launch permission to Amazon Machine Image (AMI) from another AWS account.
 
 ## Properties
 
-TBC
+`ImageId` - (required) A region-unique name for the AMI. * `AccountId` - (required) An AWS Account ID to add launch permissions.
+
+`AccountId` - (required) An AWS Account ID to add launch permissions.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Id` - A combination of "`image_id`-`account_id`".
+`Id` - A combination of "`ImageId`-`AccountId`".
 
 ## See Also
 

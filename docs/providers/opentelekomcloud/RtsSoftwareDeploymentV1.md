@@ -51,7 +51,6 @@ Software deployment can be imported using the `deployment id`, e.g.
 
 ## Properties
 
-TBC
 
 ## See Also
 

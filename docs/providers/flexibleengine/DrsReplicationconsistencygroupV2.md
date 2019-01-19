@@ -4,21 +4,30 @@ Manages a V2 replicationconsistencygroup resource within FlexibleEngine.
 
 ## Properties
 
-TBC
+`Name` - (Optional) The name of the replication consistency group. The name can contain a maximum of 255 bytes.
+
+`Description` - (Optional) The description of the replication consistency group. The description can contain a maximum of 255 bytes.
+
+`ReplicationIds` - (Required) An array of one or more IDs of the EVS replication pairs used to create the replication consistency group.
+
+`PriorityStation` - (Required) The primary AZ of the replication consistency group. That is the AZ where the production disk belongs.
+
+`ReplicationModel` - (Optional) The type of the created replication consistency group. Currently only type hypermetro is supported.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Name` - See Argument Reference above.
+`Name` - See Properties above.
 
-`Description` - See Argument Reference above.
+`Description` - See Properties above.
 
-`ReplicationIds` - See Argument Reference above.
+`ReplicationIds` - See Properties above.
 
-`PriorityStation` - See Argument Reference above.
+`PriorityStation` - See Properties above.
 
-`ReplicationModel` - See Argument Reference above.
+`ReplicationModel` - See Properties above.
 
 `Status` - The status of the replication consistency group.
 

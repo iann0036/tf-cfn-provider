@@ -4,7 +4,10 @@ Provides a CloudWatch Logs destination policy resource.
 
 ## Properties
 
-TBC
+`DestinationName` - (Required) A name for the subscription filter.
+
+`AccessPolicy` - (Required) The policy document. This is a JSON formatted string.
+
 
 ## See Also
 

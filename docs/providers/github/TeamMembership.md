@@ -9,7 +9,12 @@ destroyed, the user will be removed from the team.
 
 ## Properties
 
-TBC
+`TeamId` - (Required) The GitHub team id.
+
+`Username` - (Required) The user to add to the team.
+
+`Role` - (Optional) The role of the user within the team. Must be one of `member` or `maintainer`. Defaults to `member`.
+
 
 ## See Also
 

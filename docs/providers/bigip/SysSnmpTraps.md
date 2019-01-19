@@ -1,10 +1,19 @@
 # Terraform::BIGIP::SysSnmpTraps
 
-`bigip_sys_snmp_traps` provides details bout how to enable snmp_traps resource on BIG-IP
+`Terraform::BIGIP::SysSnmpTraps` provides details bout how to enable snmp_traps resource on BIG-IP
 
 ## Properties
 
-TBC
+`Name` -  (Optional) Name of the snmp trap.
+
+`Community` - (Optional) Specifies the community string used for this trap.
+
+`Host` - The host the trap will be sent to.
+
+`Description` - (Optional) The port that the trap will be sent to.
+
+`Port` - (Optional) User defined description.
+
 
 ## See Also
 

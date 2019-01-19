@@ -4,7 +4,6 @@ Provides a Hetzner Cloud Reverse DNS Entry to create, modify and reset reverse d
 
 ## Properties
 
-TBC
 
 ## See Also
 

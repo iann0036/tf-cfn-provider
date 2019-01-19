@@ -4,7 +4,12 @@ This resource allows you to add a current user to an existing project with a set
 
 ## Properties
 
-TBC
+`ProjectId` - (Required) The id of the project.
+
+`UserId` - (Required) The id of the user.
+
+`AccessLevel` - (Required) One of five levels of access to the project.
+
 
 ## See Also
 

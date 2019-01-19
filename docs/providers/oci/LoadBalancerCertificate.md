@@ -12,7 +12,18 @@ Whenever you change any values on a certificate that causes it to be recreated t
 
 ## Properties
 
-TBC
+`CaCertificate` - (Optional) The Certificate Authority certificate, or any interim certificate, that you received from your SSL certificate provider.
+
+`CertificateName` - (Required) A friendly name for the certificate bundle. It must be unique and it cannot be changed. Valid certificate bundle names include only alphanumeric characters, dashes, and underscores. Certificate bundle names cannot contain spaces. Avoid entering confidential information.  Example: `example_certificate_bundle`.
+
+`LoadBalancerId` - (Required) The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the load balancer on which to add the certificate bundle.
+
+`Passphrase` - (Optional) A passphrase for encrypted private keys. This is needed only if you created your certificate with a passphrase.
+
+`PrivateKey` - (Optional) The SSL private key for your certificate, in PEM format.
+
+`PublicCertificate` - (Optional) The public certificate, in PEM format, that you received from your SSL certificate provider.
+
 
 ## Return Values
 

@@ -4,7 +4,14 @@ Provides an TelefonicaOpenCloud Backup of Resources.
 
 ## Properties
 
-TBC
+`BackupName` - (Optional) Name for the backup. The value consists of 1 to 255 characters and can contain only letters, digits, underscores (_), and hyphens (-). Changing backup_name creates a new backup.
+
+`Description` - (Optional) Backup description. The value consists of 0 to 255 characters and must not contain a greater-than sign (>) or less-than sign (<). Changing description creates a new backup.
+
+`ResourceId` - (Required) ID of the target to which the backup is restored. Changing this creates a new backup.
+
+`ResourceType` - (Optional) Type of the target to which the backup is restored. The default value is **OS::Nova::Server** for an ECS. Changing this creates a new backup.
+
 
 ## Return Values
 

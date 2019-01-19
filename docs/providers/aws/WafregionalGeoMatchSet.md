@@ -4,7 +4,10 @@ Provides a WAF Regional Geo Match Set Resource
 
 ## Properties
 
-TBC
+`Name` - (Required) The name or description of the Geo Match Set.
+
+`GeoMatchConstraint` - (Optional) The Geo Match Constraint objects which contain the country that you want AWS WAF to search for.
+
 
 ## Return Values
 

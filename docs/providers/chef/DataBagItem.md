@@ -5,17 +5,20 @@ configuration objects that are stored as JSON in Chef Server and can be
 retrieved and used in Chef recipes.
 
 This resource creates objects within an existing data bag. To create the
-data bag itself, use the ``chef_data_bag`` resource.
+data bag itself, use the ``Terraform::Chef::DataBag`` resource.
 
 ## Properties
 
-TBC
+`DataBagName` - (Required) The name of the data bag into which this item will be placed.
+
+`ContentJson` - (Required) A string containing a JSON object that will be the content of the item. Must at minimum contain a property called "id" that is unique within the data bag, which will become the identifier of the created item.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Id` - The value of the "id" property in the ``content_json`` JSON object,.
+`Id` - The value of the "id" property in the ``ContentJson`` JSON object,.
 
 ## See Also
 

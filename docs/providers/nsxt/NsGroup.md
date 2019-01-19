@@ -4,7 +4,16 @@ This resource provides a method to create and manage a network and security (NS)
 
 ## Properties
 
-TBC
+`Description` - (Optional) Description of this resource.
+
+`DisplayName` - (Optional) The display name of this resource. Defaults to ID if not set.
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this NS group.
+
+`Member` - (Optional) Reference to the direct/static members of the NSGroup. Can be ID based expressions only. VirtualMachine cannot be added as a static member. target_type can be: NSGroup, IPSet, LogicalPort, LogicalSwitch, MACSet.
+
+`MembershipCriteria` - (Optional) List of tag or ID expressions which define the membership criteria for this NSGroup. An object must satisfy at least one of these expressions to qualify as a member of this group.
+
 
 ## Return Values
 

@@ -5,20 +5,23 @@ that can be used for compute instances.
 
 Please note that managing floating IPs through the OpenStack Compute API has
 been deprecated. Unless you are using an older OpenStack environment, it is
-recommended to use the [`openstack_networking_floatingip_v2`](networking_floatingip_v2.html)
+recommended to use the [`Terraform::OpenStack::NetworkingFloatingipV2`](networking_floatingip_v2.html)
 resource instead, which uses the OpenStack Networking API.
 
 ## Properties
 
-TBC
+`Region` - (Optional) The region in which to obtain the V2 Compute client. A Compute client is needed to create a floating IP that can be used with a compute instance. If omitted, the `Region` argument of the provider is used. Changing this creates a new floating IP (which may or may not have a different address).
+
+`Pool` - (Required) The name of the pool from which to obtain the floating IP. Changing this creates a new floating IP.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Region` - See Argument Reference above.
+`Region` - See Properties above.
 
-`Pool` - See Argument Reference above.
+`Pool` - See Properties above.
 
 `Address` - The actual floating IP address itself.
 

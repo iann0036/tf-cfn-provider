@@ -6,7 +6,14 @@ documentation](https://docs.gitlab.com/ce/ci/variables/README.html#variables).
 
 ## Properties
 
-TBC
+`Group` - (Required, string) The name or id of the group to add the hook to.
+
+`Key` - (Required, string) The name of the variable.
+
+`Value` - (Required, string) The value of the variable.
+
+`Protected` - (Optional, boolean) If set to `true`, the variable will be passed only to pipelines running on protected branches and tags. Defaults to `false`.
+
 
 ## See Also
 

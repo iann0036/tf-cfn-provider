@@ -4,19 +4,26 @@ Creates a routing entry on a OpenStack V2 router.
 
 ## Properties
 
-TBC
+`Region` - (Optional) The region in which to obtain the V2 networking client. A networking client is needed to configure a routing entry on a router. If omitted, the `Region` argument of the provider is used. Changing this creates a new routing entry.
+
+`RouterId` - (Required) ID of the router this routing entry belongs to. Changing this creates a new routing entry.
+
+`DestinationCidr` - (Required) CIDR block to match on the packet’s destination IP. Changing this creates a new routing entry.
+
+`NextHop` - (Required) IP address of the next hop gateway.  Changing this creates a new routing entry.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Region` - See Argument Reference above.
+`Region` - See Properties above.
 
-`RouterId` - See Argument Reference above.
+`RouterId` - See Properties above.
 
-`DestinationCidr` - See Argument Reference above.
+`DestinationCidr` - See Properties above.
 
-`NextHop` - See Argument Reference above.
+`NextHop` - See Properties above.
 
 ## See Also
 

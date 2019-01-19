@@ -9,7 +9,10 @@ have to be unique, and you can change it anytime with
 
 ## Properties
 
-TBC
+`Description` - (Required) (Updatable) The description you assign to the SMTP credentials during creation. Does not have to be unique, and it's changeable.
+
+`UserId` - (Required) The OCID of the user.
+
 
 ## Return Values
 

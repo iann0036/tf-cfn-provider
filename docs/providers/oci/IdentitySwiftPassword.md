@@ -17,7 +17,10 @@ tenancy can use this operation to create a Swift password for any user, includin
 
 ## Properties
 
-TBC
+`Description` - (Required) (Updatable) The description you assign to the Swift password during creation. Does not have to be unique, and it's changeable.
+
+`UserId` - (Required) The OCID of the user.
+
 
 ## Return Values
 

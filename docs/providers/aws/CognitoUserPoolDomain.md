@@ -4,7 +4,12 @@ Provides a Cognito User Pool Domain resource.
 
 ## Properties
 
-TBC
+`Domain` - (Required) The domain string.
+
+`UserPoolId` - (Required) The user pool ID.
+
+`CertificateArn` - (Optional) The ARN of an ISSUED ACM certificate in us-east-1 for a custom domain.
+
 
 ## See Also
 

@@ -12,7 +12,12 @@ When importing an existing key pair the public key material may be in any format
 
 ## Properties
 
-TBC
+`KeyName` - (Optional) The name for the key pair.
+
+`KeyNamePrefix` - (Optional) Creates a unique name beginning with the specified prefix. Conflicts with `KeyName`.
+
+`PublicKey` - (Required) The public key material.
+
 
 ## Return Values
 

@@ -5,7 +5,12 @@ in your projects.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the Project on Packet.net.
+
+`PaymentMethodId` - The UUID of payment method for this project. If you keep it empty, Packet API will pick your default Payment Method.
+
+`OrganizationId` - The UUID of Organization under which you want to create the project. If you leave it out, the project will be create under your the default Organization of your account.
+
 
 ## Return Values
 

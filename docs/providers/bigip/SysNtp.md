@@ -1,12 +1,21 @@
 # Terraform::BIGIP::SysNtp
 
-`bigip_sys_ntp` provides details about a specific bigip
+`BigipSysNtp` provides details about a specific bigip
 
 This resource is helpful when configuring NTP server on the BIG-IP.
 
 ## Properties
 
-TBC
+`BigipSysNtp` - Is the resource is used to configure ntp server on the BIG-IP.
+
+`/Common/NTP1` - Is the description of the NTP server in the main or common partition of BIG-IP.
+
+`Time.facebook.com` - Is the  NTP server configured on the BIG-IP.
+
+`Servers` - (Optional) Adds NTP servers to or deletes NTP servers from the BIG-IP system.
+
+`Timezone` - (Optional) Specifies the time zone that you want to use for the system time.
+
 
 ## See Also
 

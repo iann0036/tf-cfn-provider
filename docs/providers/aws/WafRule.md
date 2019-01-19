@@ -4,7 +4,12 @@ Provides a WAF Rule Resource
 
 ## Properties
 
-TBC
+`MetricName` - (Required) The name or description for the Amazon CloudWatch metric of this rule. The name can contain only alphanumeric characters (A-Z, a-z, 0-9); the name can't contain whitespace.
+
+`Name` - (Required) The name or description of the rule.
+
+`Predicates` - (Optional) One of ByteMatchSet, IPSet, SizeConstraintSet, SqlInjectionMatchSet, or XssMatchSet objects to include in a rule.
+
 
 ## Return Values
 

@@ -6,7 +6,34 @@ Adds a listener to a load balancer.
 
 ## Properties
 
-TBC
+`ConnectionConfiguration` - (Optional) (Updatable) * `IdleTimeoutInSeconds` - (Required) (Updatable) The maximum idle time, in seconds, allowed between two successive receive or two successive send operations between the client and backend servers. A send operation does not reset the timer for receive operations. A receive operation does not reset the timer for send operations.
+
+`IdleTimeoutInSeconds` - (Required) (Updatable) The maximum idle time, in seconds, allowed between two successive receive or two successive send operations between the client and backend servers. A send operation does not reset the timer for receive operations. A receive operation does not reset the timer for send operations.
+
+`DefaultBackendSetName` - (Required) (Updatable) The name of the associated backend set.  Example: `example_backend_set`.
+
+`HostnameNames` - (Optional) (Updatable) An array of hostname resource names.
+
+`LoadBalancerId` - (Required) The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the load balancer on which to add a listener.
+
+`Name` - (Required) A friendly name for the listener. It must be unique and it cannot be changed. Avoid entering confidential information.  Example: `example_listener`.
+
+`PathRouteSetName` - (Optional) (Updatable) The name of the set of path-based routing rules, [PathRouteSet](https://docs.cloud.oracle.com/iaas/api/#/en/loadbalancer/20170115/PathRouteSet/), applied to this listener's traffic.  Example: `example_path_route_set`.
+
+`Port` - (Required) (Updatable) The communication port for the listener.  Example: `80`.
+
+`Protocol` - (Required) (Updatable) The protocol on which the listener accepts connection requests. To get a list of valid protocols, use the [ListProtocols](https://docs.cloud.oracle.com/iaas/api/#/en/loadbalancer/20170115/LoadBalancerProtocol/ListProtocols) operation.  Example: `HTTP`.
+
+`RuleSetNames` - (Optional) (Updatable) The names of the [rule sets](https://docs.cloud.oracle.com/iaas/api/#/en/loadbalancer/20170115/RuleSet/) to apply to the listener.  Example: ["example_rule_set"].
+
+`SslConfiguration` - (Optional) (Updatable) * `CertificateName` - (Required) (Updatable) A friendly name for the certificate bundle. It must be unique and it cannot be changed. Valid certificate bundle names include only alphanumeric characters, dashes, and underscores. Certificate bundle names cannot contain spaces. Avoid entering confidential information.  Example: `example_certificate_bundle` * `VerifyDepth` - (Optional) (Updatable) The maximum depth for peer certificate chain verification.  Example: `3` * `VerifyPeerCertificate` - (Optional) (Updatable) Whether the load balancer listener should verify peer certificates.  Example: `true`.
+
+`CertificateName` - (Required) (Updatable) A friendly name for the certificate bundle. It must be unique and it cannot be changed. Valid certificate bundle names include only alphanumeric characters, dashes, and underscores. Certificate bundle names cannot contain spaces. Avoid entering confidential information.  Example: `example_certificate_bundle` * `VerifyDepth` - (Optional) (Updatable) The maximum depth for peer certificate chain verification.  Example: `3` * `VerifyPeerCertificate` - (Optional) (Updatable) Whether the load balancer listener should verify peer certificates.  Example: `true`.
+
+`VerifyDepth` - (Optional) (Updatable) The maximum depth for peer certificate chain verification.  Example: `3` * `VerifyPeerCertificate` - (Optional) (Updatable) Whether the load balancer listener should verify peer certificates.  Example: `true`.
+
+`VerifyPeerCertificate` - (Optional) (Updatable) Whether the load balancer listener should verify peer certificates.  Example: `true`.
+
 
 ## Return Values
 

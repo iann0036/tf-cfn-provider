@@ -4,7 +4,12 @@ Provides an AppSync API Key.
 
 ## Properties
 
-TBC
+`ApiId` - (Required) The ID of the associated AppSync API.
+
+`Description` - (Optional) The API key description. Defaults to "Managed by Terraform".
+
+`Expires` - (Optional) RFC3339 string representation of the expiry date. Rounded down to nearest hour. By default, it is 7 days from the date of creation.
+
 
 ## Return Values
 

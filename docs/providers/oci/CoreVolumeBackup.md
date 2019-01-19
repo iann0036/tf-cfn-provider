@@ -11,7 +11,22 @@ After the backup is fully uploaded to the cloud, it goes into an AVAILABLE state
 
 ## Properties
 
-TBC
+`DefinedTags` - (Optional) (Updatable) Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
+
+`DisplayName` - (Optional) (Updatable) A user-friendly name for the volume backup. Does not have to be unique and it's changeable. Avoid entering confidential information.
+
+`FreeformTags` - (Optional) (Updatable) Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
+
+`Type` - (Optional) The type of backup to create. If omitted, defaults to INCREMENTAL.
+
+`VolumeId` - (Required) The OCID of the volume that needs to be backed up.
+
+`SourceDetails` - (Optional) Details of the volume backup source in the cloud. * `Region` - The region of the volume backup source. * `VolumeBackupId` - The OCID of the source volume backup.
+
+`Region` - The region of the volume backup source. * `VolumeBackupId` - The OCID of the source volume backup.
+
+`VolumeBackupId` - The OCID of the source volume backup.
+
 
 ## Return Values
 

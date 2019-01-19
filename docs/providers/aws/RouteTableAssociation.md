@@ -4,7 +4,10 @@ Provides a resource to create an association between a subnet and routing table.
 
 ## Properties
 
-TBC
+`SubnetId` - (Required) The subnet ID to create an association.
+
+`RouteTableId` - (Required) The ID of the routing table to associate with.
+
 
 ## Return Values
 

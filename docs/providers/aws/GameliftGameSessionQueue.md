@@ -4,7 +4,14 @@ Provides an Gamelift Game Session Queue resource.
 
 ## Properties
 
-TBC
+`Name` - (Required) Name of the session queue.
+
+`TimeoutInSeconds` - (Required) Maximum time a game session request can remain in the queue.
+
+`Destinations` - (Optional) List of fleet/alias ARNs used by session queue for placing game sessions.
+
+`PlayerLatencyPolicy` - (Optional) One or more policies used to choose fleet based on player latency. See below.
+
 
 ## Return Values
 

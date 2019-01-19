@@ -13,7 +13,28 @@ For more details supported regions, see [Service endpoints](https://www.alibabac
 
 ## Properties
 
-TBC
+`Name` - (ForceNew) The Function Compute service name. It is the only in one Alicloud account and is conflict with "name_prefix".
+
+`NamePrefix` - (ForceNew) Setting a prefix to get a only name. It is conflict with "name".
+
+`Description` - (Optional) The function compute service description.
+
+`InternetAccess` - (Optional) Whether to allow the service to access Internet. Default to "true".
+
+`Role` - (Optional) RAM role arn attached to the Function Compute service. This governs both who / what can invoke your Function, as well as what resources our Function has access to. See [User Permissions](https://www.alibabacloud.com/help/doc-detail/52885.htm) for more details.
+
+`LogConfig` - (Optional) Provide this to store your FC service logs. Fields documented below. See [Create a Service](https://www.alibabacloud.com/help/doc-detail/51924.htm).
+
+`VpcConfig` - (Optional) Provide this to allow your FC service to access your VPC. Fields documented below. See [Function Compute Service in VPC](https://www.alibabacloud.com/help/faq-detail/72959.htm).
+
+`Project` - (Required) The project name of Logs service.
+
+`Logstore` - (Required) The log store name of Logs service.
+
+`VswitchIds` - (Required) A list of vswitch IDs associated with the FC service.
+
+`SecurityGroupId` - (Required) A security group ID associated with the FC service.
+
 
 ## Return Values
 

@@ -5,7 +5,16 @@ Log Service manages all the ECS instances whose logs need to be collected by usi
 
 ## Properties
 
-TBC
+`Project` - (Required, ForceNew) The project name to the machine group belongs.
+
+`Name` - (Required, ForceNew) The machine group name, which is unique in the same project.
+
+`IdentifyType` - The machine identification type, including IP and user-defined identity. Valid values are "ip" and "userdefined". Default to "ip".
+
+`IdentifyList` -  The specific machine identification, which can be an IP address or user-defined identity.
+
+`Topic` - The topic of a machine group.
+
 
 ## Return Values
 

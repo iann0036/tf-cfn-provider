@@ -4,7 +4,16 @@ Provides a Load Balancer Attachment resource for attaching Load Balancer to UHos
 
 ## Properties
 
-TBC
+`LoadBalancerId` - (Required) The ID of load balancer instance.
+
+`ListenerId` - (Required) The ID of listener servers.
+
+`ResourceType` - (Required) **Deprecated**, attribute `ResourceType` is deprecated for optimizing parameters.
+
+`ResourceId` - (Required) The ID of backend servers.
+
+`Port` - (Optional) Port opened on the backend server to receive requests, range: 1-65535, (Default: `80`).
+
 
 ## Return Values
 

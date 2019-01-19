@@ -4,7 +4,10 @@ Provides an ECS cluster.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the cluster (up to 255 letters, numbers, hyphens, and underscores).
+
+`Tags` - (Optional) Key-value mapping of resource tags.
+
 
 ## Return Values
 

@@ -6,7 +6,10 @@ This resource allows you to add/remove SSH keys from your user account.
 
 ## Properties
 
-TBC
+`Title` - (Required) A descriptive name for the new key. e.g. `Personal MacBook Air`.
+
+`Key` - (Required) The public SSH key to add to your GitHub account.
+
 
 ## Return Values
 

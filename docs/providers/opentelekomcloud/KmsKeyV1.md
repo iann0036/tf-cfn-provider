@@ -4,17 +4,26 @@ Manages a V1 key resource within KMS.
 
 ## Properties
 
-TBC
+`KeyAlias` - (Required) The alias in which to create the key. It is required when we create a new key. Changing this updates the alias of key.
+
+`KeyDescription` - (Optional) The description of the key as viewed in OpenTelekomCloud console. Changing this updates the description of key.
+
+`Realm` - (Optional) Region where a key resides. Changing this creates a new key.
+
+`PendingDays` - (Optional) Duration in days after which the key is deleted after destruction of the resource, must be between 7 and 1096 days. Defaults to 7. It only be used when delete a key.
+
+`IsEnabled` - (Optional) Specifies whether the key is enabled. Defaults to true. Changing this updates the state of existing key.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`KeyAlias` - See Argument Reference above.
+`KeyAlias` - See Properties above.
 
-`KeyDescription` - See Argument Reference above.
+`KeyDescription` - See Properties above.
 
-`Realm` - See Argument Reference above.
+`Realm` - See Properties above.
 
 `KeyId` - The globally unique identifier for the key.
 
@@ -30,7 +39,7 @@ TBC
 
 `CreationDate` - Creation time (time stamp) of a key.
 
-`IsEnabled` - See Argument Reference above.
+`IsEnabled` - See Properties above.
 
 ## See Also
 

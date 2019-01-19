@@ -6,7 +6,16 @@ Provides a resource to manage a GuardDuty IPSet.
 
 ## Properties
 
-TBC
+`Activate` - (Required) Specifies whether GuardDuty is to start using the uploaded IPSet.
+
+`DetectorId` - (Required) The detector ID of the GuardDuty.
+
+`Format` - (Required) The format of the file that contains the IPSet. Valid values: `TXT` | `STIX` | `OTX_CSV` | `ALIEN_VAULT` | `PROOF_POINT` | `FIRE_EYE`.
+
+`Location` - (Required) The URI of the file that contains the IPSet.
+
+`Name` - (Required) The friendly name to identify the IPSet.
+
 
 ## Return Values
 

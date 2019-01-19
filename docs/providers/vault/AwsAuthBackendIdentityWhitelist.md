@@ -7,7 +7,12 @@ For more information, see the
 
 ## Properties
 
-TBC
+`Backend` - (Optional) The path of the AWS backend being configured.
+
+`SafetyBuffer` - (Optional) The amount of extra time, in minutes, that must have passed beyond the roletag expiration, before it is removed from the backend storage.
+
+`DisablePeriodicTidy` - (Optional) If set to true, disables the periodic tidying of the identity-whitelist entries.
+
 
 ## See Also
 

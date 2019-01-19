@@ -4,7 +4,10 @@ Provides a VMware vSphere license resource. This can be used to add and remove l
 
 ## Properties
 
-TBC
+`LicenseKey` - (Required) The license key to add.
+
+`Labels` - (Optional) A map of key/value pairs to be attached as labels (tags) to the license key.
+
 
 ## Return Values
 

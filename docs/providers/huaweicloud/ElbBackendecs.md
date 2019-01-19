@@ -4,17 +4,22 @@ Manages an elastic loadbalancer backendecs resource within huawei cloud.
 
 ## Properties
 
-TBC
+`ListenerId` - (Required) Specifies the listener ID.
+
+`ServerId` - (Required) Specifies the backend member ID.
+
+`PrivateAddress` - (Required) Specifies the private IP address of the backend member.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`ListenerId` - See Argument Reference above.
+`ListenerId` - See Properties above.
 
-`ServerId` - See Argument Reference above.
+`ServerId` - See Properties above.
 
-`PrivateAddress` - See Argument Reference above.
+`PrivateAddress` - See Properties above.
 
 `PublicAddress` - Specifies the floating IP address assigned to the backend member.
 

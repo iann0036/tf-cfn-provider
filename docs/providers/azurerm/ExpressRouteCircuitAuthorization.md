@@ -4,7 +4,12 @@ Manages an ExpressRoute Circuit Authorization.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the ExpressRoute circuit. Changing this forces a new resource to be created.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the ExpressRoute circuit. Changing this forces a new resource to be created.
+
+`ExpressRouteCircuitName` - (Required) The name of the Express Route Circuit in which to create the Authorization.
+
 
 ## Return Values
 

@@ -4,7 +4,12 @@ Provides a Heroku SSL certificate resource. It allows to set a given certificate
 
 ## Properties
 
-TBC
+`App` - (Required) The Heroku app to add to.
+
+`CertificateChain` - (Required) The certificate chain to add.
+
+`PrivateKey` - (Required) The private key for a given certificate chain.
+
 
 ## Return Values
 

@@ -4,7 +4,22 @@ Provides a Cloudflare record resource.
 
 ## Properties
 
-TBC
+`Domain` - (Required) The DNS zone to add the record to.
+
+`Name` - (Required) The name of the record.
+
+`Type` - (Required) The type of the record.
+
+`Value` - (Optional) The (string) value of the record. Either this or `Data` must be specified.
+
+`Data` - (Optional) Map of attributes that constitute the record value. Primarily used for LOC and SRV record types. Either this or `Value` must be specified.
+
+`Ttl` - (Optional) The TTL of the record ([automatic: '1'](https://api.cloudflare.com/#dns-records-for-a-zone-create-dns-record)).
+
+`Priority` - (Optional) The priority of the record.
+
+`Proxied` - (Optional) Whether the record gets Cloudflare's origin protection; defaults to `false`.
+
 
 ## Return Values
 

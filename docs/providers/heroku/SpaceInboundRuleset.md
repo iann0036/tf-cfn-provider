@@ -4,7 +4,14 @@ Provides a resource for managing [inbound rulesets](https://devcenter.heroku.com
 
 ## Properties
 
-TBC
+`Space` - (Required) The name of the space.
+
+`Rule` - (Required) At least one `Rule` block. Rules are documented below.
+
+`Action` - (Required) The action to apply this rule to. Must be one of `allow` or `deny`.
+
+`Source` - (Required) A CIDR block source for the rule.
+
 
 ## Return Values
 

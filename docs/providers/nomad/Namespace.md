@@ -7,7 +7,6 @@ Nomad Enterprise. This is not present in the open source version of Nomad.
 
 ## Properties
 
-TBC
 
 ## See Also
 

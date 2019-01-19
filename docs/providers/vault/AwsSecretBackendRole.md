@@ -12,7 +12,14 @@ for more details.
 
 ## Properties
 
-TBC
+`Backend` - (Required) The path the AWS secret backend is mounted at, with no leading or trailing `/`s.
+
+`Name` - (Required) The name to identify this role within the backend. Must be unique within the backend.
+
+`Policy` - (Optional) The JSON-formatted policy to associate with this role. Either `Policy` or `PolicyArn` must be specified.
+
+`PolicyArn` - (Optional) The ARN for a pre-existing policy to associate with this role. Either `Policy` or `PolicyArn` must be specified.
+
 
 ## See Also
 

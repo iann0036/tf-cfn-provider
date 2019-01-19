@@ -4,7 +4,12 @@ The subscription is the basic unit of resource usage in Datahub Service under Pu
 
 ## Properties
 
-TBC
+`ProjectName` - (Required, ForceNew) The name of the datahub project that the subscription belongs to. Its length is limited to 3-32 and only characters such as letters, digits and '_' are allowed. It is case-insensitive.
+
+`TopicName` - (Required, ForceNew) The name of the datahub topic that the subscription belongs to. Its length is limited to 1-128 and only characters such as letters, digits and '_' are allowed. It is case-insensitive.
+
+`Comment` - (Optional) Comment of the datahub subscription. It cannot be longer than 255 characters.
+
 
 ## Return Values
 

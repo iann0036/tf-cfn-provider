@@ -4,7 +4,22 @@ Manages an EC2 Transit Gateway VPC Attachment. For examples of custom route tabl
 
 ## Properties
 
-TBC
+`SubnetIds` - (Required) Identifiers of EC2 Subnets.
+
+`TransitGatewayId` - (Required) Identifier of EC2 Transit Gateway.
+
+`VpcId` - (Required) Identifier of EC2 VPC.
+
+`DnsSupport` - (Optional) Whether DNS support is enabled. Valid values: `disable`, `enable`. Default value: `enable`.
+
+`Ipv6Support` - (Optional) Whether IPv6 support is enabled. Valid values: `disable`, `enable`. Default value: `disable`.
+
+`Tags` - (Optional) Key-value tags for the EC2 Transit Gateway VPC Attachment.
+
+`TransitGatewayDefaultRouteTableAssociation` - (Optional) Boolean whether the VPC Attachment should be associated with the EC2 Transit Gateway association default route table. Default value: `true`.
+
+`TransitGatewayDefaultRouteTablePropagation` - (Optional) Boolean whether the VPC Attachment should propagate routes with the EC2 Transit Gateway propagation default route table. Default value: `true`.
+
 
 ## See Also
 

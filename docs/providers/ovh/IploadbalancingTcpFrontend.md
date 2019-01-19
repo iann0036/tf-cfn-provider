@@ -4,7 +4,26 @@ Creates a backend server group (frontend) to be used by loadbalancing frontend(s
 
 ## Properties
 
-TBC
+`ServiceName` - (Required) The internal name of your IP load balancing.
+
+`DisplayName` - Human readable name for your frontend, this field is for you.
+
+`Port` - Port(s) attached to your frontend. Supports single port (numerical value), range (2 dash-delimited increasing ports) and comma-separated list of 'single port' and/or 'range'. Each port must be in the [1;49151] range.
+
+`Zone` - (Required) Zone where the frontend will be defined (ie. `gra`, `bhs` also supports `all`).
+
+`AllowedSource` - Restrict IP Load Balancing access to these ip block. No restriction if null. List of IP blocks.
+
+`DedicatedIpfo` - Only attach frontend on these ip. No restriction if null. List of Ip blocks.
+
+`DefaultFarmId` - Default TCP Farm of your frontend.
+
+`DefaultSslId` - Default ssl served to your customer.
+
+`Disabled` - Disable your frontend. Default: 'false'.
+
+`Ssl` - SSL deciphering. Default: 'false'.
+
 
 ## Return Values
 
@@ -12,19 +31,19 @@ TBC
 
 `Id` - Id of your frontend.
 
-`DisplayName` - See Argument Reference above.
+`DisplayName` - See Properties above.
 
-`AllowedSource` - See Argument Reference above.
+`AllowedSource` - See Properties above.
 
-`DedicatedIpfo` - See Argument Reference above.
+`DedicatedIpfo` - See Properties above.
 
-`DefaultFarmId` - See Argument Reference above.
+`DefaultFarmId` - See Properties above.
 
-`DefaultSslId` - See Argument Reference above.
+`DefaultSslId` - See Properties above.
 
-`Disabled` - See Argument Reference above.
+`Disabled` - See Properties above.
 
-`Ssl` - See Argument Reference above.
+`Ssl` - See Properties above.
 
 ## See Also
 

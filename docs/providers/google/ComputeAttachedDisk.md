@@ -16,7 +16,6 @@ To get more information about attaching disks, see:
 
 ## Properties
 
-TBC
 
 ## See Also
 

@@ -15,7 +15,12 @@ and to meet the personalized requirements of domain name and URL forwarding.
 
 ## Properties
 
-TBC
+`LoadBalancerId` - (Required, ForceNew) The Load Balancer ID which is used to launch a new virtual server group.
+
+`Name` - (Optional) Name of the virtual server group. Our plugin provides a default name: "tf-server-group".
+
+`Servers` - (Required) A list of ECS instances to be added. At most 20 ECS instances can be supported in one resource. It contains three sub-fields as `Block server` follows.
+
 
 ## Return Values
 

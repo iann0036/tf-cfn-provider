@@ -4,7 +4,12 @@ Provides an API Gateway VPC Link.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name used to label and identify the VPC link.
+
+`Description` - (Optional) The description of the VPC link.
+
+`TargetArns` - (Required, ForceNew) The list of network load balancer arns in the VPC targeted by the VPC link. Currently AWS only supports 1 target.
+
 
 ## Return Values
 

@@ -4,7 +4,18 @@ Provides a Rancher Certificate resource. This can be used to create certificates
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the certificate.
+
+`Description` - (Optional) A certificate description.
+
+`EnvironmentId` - (Required) The ID of the environment to create the certificate for.
+
+`Cert` - (Required) The certificate content.
+
+`CertChain` - (Optional) The certificate chain.
+
+`Key` - (Required) The certificate key.
+
 
 ## Return Values
 

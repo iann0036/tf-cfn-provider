@@ -4,7 +4,14 @@ Manages an Application Insights API key.
 
 ## Properties
 
-TBC
+`Name` - (Required) Specifies the name of the Application Insights API key. Changing this forces a new resource to be created.
+
+`ApplicationInsightsId` - (Required) The ID of the Application Insights component on which the API key operates. Changing this forces a new resource to be created.
+
+`ReadPermissions` - (Optional) Specifies the list of read permissions granted to the API key. Valid values are `agentconfig`, `aggregate`, `api`, `draft`, `extendqueries`, `search`. Please note these values are case sensitive. Changing this forces a new resource to be created.
+
+`WritePermissions` - (Optional) Specifies the list of write permissions granted to the API key. Valid values are `annotations`. Please note these values are case sensitive. Changing this forces a new resource to be created.
+
 
 ## Return Values
 

@@ -6,7 +6,6 @@ Enables Security Hub for this AWS account.
 
 ## Properties
 
-TBC
 
 ## Return Values
 

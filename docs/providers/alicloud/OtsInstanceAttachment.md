@@ -4,7 +4,12 @@ This resource will help you to bind a VPC to an OTS instance.
 
 ## Properties
 
-TBC
+`InstanceName` - (Required, ForceNew) The name of the OTS instance.
+
+`VpcName` - (Required, ForceNew) The name of attaching VPC to instance.
+
+`VswitchId` - (Required, ForceNew) The ID of attaching VSwitch to instance.
+
 
 ## Return Values
 

@@ -7,7 +7,14 @@ your tests like pauses and conditions.
 
 ## Properties
 
-TBC
+`BucketId` - (Required) The id of the bucket to associate this step with.
+
+`TestId` - (Required) The id of the test to associate this step with.
+
+`Note` - (Optional) A comment attached to the test step.
+
+`StepType` - (Required) The type of step. * [request](#request-steps) * pause * condition * ghost * subtest.
+
 
 ## Return Values
 

@@ -11,7 +11,6 @@ can be used to manage any job within Nomad.
 
 ## Properties
 
-TBC
 
 ## See Also
 

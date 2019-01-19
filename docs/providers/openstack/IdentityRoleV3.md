@@ -7,17 +7,22 @@ this resource.
 
 ## Properties
 
-TBC
+`Name` - The name of the role.
+
+`DomainId` - (Optional) The domain the role belongs to.
+
+`Region` - (Optional) The region in which to obtain the V3 Keystone client. If omitted, the `Region` argument of the provider is used. Changing this creates a new Role.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Name` - See Argument Reference above.
+`Name` - See Properties above.
 
-`DomainId` - See Argument Reference above.
+`DomainId` - See Properties above.
 
-`Region` - See Argument Reference above.
+`Region` - See Properties above.
 
 ## See Also
 

@@ -4,7 +4,22 @@ Provides an VPC resource.
 
 ## Properties
 
-TBC
+`CidrBlock` - (Required) The CIDR block for the VPC.
+
+`InstanceTenancy` - (Optional) A tenancy option for instances launched into the VPC.
+
+`EnableDnsSupport` - (Optional) A boolean flag to enable/disable DNS support in the VPC. Defaults true.
+
+`EnableDnsHostnames` - (Optional) A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
+
+`EnableClassiclink` - (Optional) A boolean flag to enable/disable ClassicLink for the VPC. Only valid in regions and accounts that support EC2 Classic. See the [ClassicLink documentation][1] for more information. Defaults false.
+
+`EnableClassiclinkDnsSupport` - (Optional) A boolean flag to enable/disable ClassicLink DNS Support for the VPC. Only valid in regions and accounts that support EC2 Classic.
+
+`AssignGeneratedIpv6CidrBlock` - (Optional) Requests an Amazon-provided IPv6 CIDR block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or the size of the CIDR block. Default is `false`.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

@@ -7,13 +7,20 @@ For AWS accounts created after 2013-12-04, each region comes with a Default VPC.
 **This is an advanced resource**, and has special caveats to be aware of when
 using it. Please read this document in its entirety before using this resource.
 
-The `aws_default_vpc` behaves differently from normal resources, in that
+The `Terraform::AWS::DefaultVpc` behaves differently from normal resources, in that
 Terraform does not _create_ this resource, but instead "adopts" it
 into management.
 
 ## Properties
 
-TBC
+`EnableDnsSupport` - (Optional) A boolean flag to enable/disable DNS support in the VPC. Defaults true.
+
+`EnableDnsHostnames` - (Optional) A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
+
+`EnableClassiclink` - (Optional) A boolean flag to enable/disable ClassicLink for the VPC. Only valid in regions and accounts that support EC2 Classic. See the [ClassicLink documentation][1] for more information. Defaults false.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

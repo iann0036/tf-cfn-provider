@@ -4,7 +4,16 @@ Fetches a predefined instance type for 1&1 servers
 
 ## Properties
 
-TBC
+`Ram` - (Computed) The size of the ram in GB.
+
+`Vcores` - (Computed) The number of vcores.
+
+`CoresPerProcessor` - (Computed) The number of vcores per processor.
+
+`Id` - (Computed) The ID of the instance type.
+
+`Name` - (Computed) The Name of the instance type.
+
 
 ## See Also
 

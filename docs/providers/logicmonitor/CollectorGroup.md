@@ -4,7 +4,10 @@ Provides a LogicMonitor collector group resource. This can be used to create and
 
 ## Properties
 
-TBC
+`Name` - (Required) Name of collector group.
+
+`Description` - (Optional) Set description of collector group.
+
 
 ## See Also
 

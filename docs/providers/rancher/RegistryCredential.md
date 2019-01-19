@@ -4,7 +4,16 @@ Provides a Rancher Registy Credential resource. This can be used to create regis
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the registry credential.
+
+`Description` - (Optional) A registry credential description.
+
+`RegistryId` - (Required) The ID of the registry to create the credential for.
+
+`PublicValue` - (Required) The public value (user name) of the account.
+
+`SecretValue` - (Required) The secret value (password) of the account.
+
 
 ## Return Values
 

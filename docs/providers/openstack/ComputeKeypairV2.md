@@ -10,17 +10,24 @@ to the system where Terraform will be run.
 
 ## Properties
 
-TBC
+`Region` - (Optional) The region in which to obtain the V2 Compute client. Keypairs are associated with accounts, but a Compute client is needed to create one. If omitted, the `Region` argument of the provider is used. Changing this creates a new keypair.
+
+`Name` - (Required) A unique name for the keypair. Changing this creates a new keypair.
+
+`PublicKey` - (Optional) A pregenerated OpenSSH-formatted public key. Changing this creates a new keypair. If a public key is not specified, then a public/private key pair will be automatically generated. If a pair is created, then destroying this resource means you will lose access to that keypair forever.
+
+`ValueSpecs` - (Optional) Map of additional options.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Region` - See Argument Reference above.
+`Region` - See Properties above.
 
-`Name` - See Argument Reference above.
+`Name` - See Properties above.
 
-`PublicKey` - See Argument Reference above.
+`PublicKey` - See Properties above.
 
 `Fingerprint` - The fingerprint of the public key.
 

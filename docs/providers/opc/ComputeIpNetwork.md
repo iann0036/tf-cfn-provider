@@ -1,10 +1,19 @@
 # Terraform::OPC::ComputeIpNetwork
 
-The ``opc_compute_ip_network`` resource creates and manages an IP Network in an Oracle Cloud Infrastructure Compute Classic identity domain.
+The ``Terraform::OPC::ComputeIpNetwork`` resource creates and manages an IP Network in an Oracle Cloud Infrastructure Compute Classic identity domain.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the IP Network. Changing this name forces a new resource to be created.
+
+`IpAddressPrefix` - (Required) The IPv4 address prefix, in CIDR format.
+
+`Description` - (Optional) The description of the IP Network.
+
+`IpNetworkExchange` - (Optional) Specify the IP Network exchange to which the IP Network belongs to.
+
+`PublicNaptEnabled` - (Optional) If true, enable public internet access using NAPT for VNICs without any public IP Reservation. Defaults to `false`.
+
 
 ## Return Values
 

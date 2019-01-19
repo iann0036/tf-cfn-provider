@@ -4,7 +4,6 @@ Manages a V1 Magnum cluster resource within OpenStack.
 
 ## Properties
 
-TBC
 
 ## See Also
 

@@ -2,12 +2,27 @@
 
 Provides an RDS security group resource. This is only for DB instances in the
 EC2-Classic Platform. For instances inside a VPC, use the
-[`aws_db_instance.vpc_security_group_ids`](/docs/providers/aws/r/db_instance.html#vpc_security_group_ids)
+[`Terraform::AWS::DbInstance.vpcSecurityGroupIds`](/docs/providers/aws/r/db_instance.html#vpc_security_group_ids)
 attribute instead.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the DB security group.
+
+`Description` - (Optional) The description of the DB security group. Defaults to "Managed by Terraform".
+
+`Ingress` - (Required) A list of ingress rules.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
+`Cidr` - The CIDR block to accept.
+
+`SecurityGroupName` - The name of the security group to authorize.
+
+`SecurityGroupId` - The ID of the security group to authorize.
+
+`SecurityGroupOwnerId` - The owner Id of the security group provided by `SecurityGroupName`.
+
 
 ## Return Values
 

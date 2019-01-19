@@ -4,21 +4,30 @@ Manages a V2 replication resource within FlexibleEngine.
 
 ## Properties
 
-TBC
+`Name` - (Optional) The name of the EVS replication pair. The name can contain a maximum of 255 bytes.
+
+`Description` - (Optional) The description of the EVS replication pair. The description can contain a maximum of 255 bytes.
+
+`VolumeIds` - (Required) An array of one or more IDs of the EVS disks used to create the EVS replication pair.
+
+`PriorityStation` - (Required) The primary AZ of the EVS replication pair. That is the AZ where the production disk belongs.
+
+`ReplicationModel` - (Optional) The type of the EVS replication pair. Currently only type hypermetro is supported.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Name` - See Argument Reference above.
+`Name` - See Properties above.
 
-`Description` - See Argument Reference above.
+`Description` - See Properties above.
 
-`VolumeIds` - See Argument Reference above.
+`VolumeIds` - See Properties above.
 
-`PriorityStation` - See Argument Reference above.
+`PriorityStation` - See Properties above.
 
-`ReplicationModel` - See Argument Reference above.
+`ReplicationModel` - See Properties above.
 
 `Status` - The status of the EVS replication pair.
 

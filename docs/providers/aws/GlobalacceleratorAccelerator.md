@@ -4,7 +4,20 @@ Provides a Global Accelerator accelerator.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the accelerator.
+
+`IpAddressType` - (Optional) The value for the address type must be `IPV4`.
+
+`Enabled` - (Optional) Indicates whether the accelerator is enabled. The value is true or false. The default value is true.
+
+`Attributes` - (Optional) The attributes of the accelerator. Fields documented below.
+
+`FlowLogsEnabled` - (Optional) Indicates whether flow logs are enabled.
+
+`FlowLogsS3Bucket` - (Optional) The name of the Amazon S3 bucket for the flow logs.
+
+`FlowLogsS3Prefix` - (Optional) The prefix for the location in the Amazon S3 bucket for the flow logs.
+
 
 ## Return Values
 

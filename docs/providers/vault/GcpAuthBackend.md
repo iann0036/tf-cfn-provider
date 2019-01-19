@@ -4,7 +4,8 @@ Provides a resource to configure the [GCP auth backend within Vault](https://www
 
 ## Properties
 
-TBC
+`Credentials` - (Required) A JSON string containing the contents of a GCP credentials file.
+
 
 ## See Also
 

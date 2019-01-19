@@ -4,7 +4,6 @@ Configures a source address persistence profile
 
 ## Properties
 
-TBC
 
 ## See Also
 

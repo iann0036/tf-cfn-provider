@@ -2,7 +2,7 @@
 
 This resource provides the Public Ip resource in Oracle Cloud Infrastructure Core service.
 
-Creates a public IP. Use the `lifetime` property to specify whether it's an ephemeral or
+Creates a public IP. Use the `Lifetime` property to specify whether it's an ephemeral or
 reserved public IP. For information about limits on how many you can create, see
 [Public IP Addresses](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/managingpublicIPs.htm).
 
@@ -26,7 +26,18 @@ succeeded.
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) The OCID of the compartment to contain the public IP. For ephemeral public IPs, you must set this to the private IP's compartment OCID.
+
+`DefinedTags` - (Optional) (Updatable) Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
+
+`DisplayName` - (Optional) (Updatable) A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
+
+`FreeformTags` - (Optional) (Updatable) Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
+
+`Lifetime` - (Required) Defines when the public IP is deleted and released back to the Oracle Cloud Infrastructure public IP pool. For more information, see [Public IP Addresses](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/managingpublicIPs.htm).
+
+`PrivateIpId` - (Optional) (Updatable) The OCID of the private IP to assign the public IP to.
+
 
 ## Return Values
 

@@ -4,7 +4,14 @@ Provides a resource to configure IP block on NSX-T manager
 
 ## Properties
 
-TBC
+`DisplayName` - (Optional) The display name of this resource. Defaults to ID if not set.
+
+`Description` - (Optional) Description of this resource.
+
+`Cidr` - (Required) Represents network address and the prefix length which will be associated with a layer-2 broadcast domain.
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this IP block.
+
 
 ## Return Values
 

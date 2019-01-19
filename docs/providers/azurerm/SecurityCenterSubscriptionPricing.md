@@ -8,7 +8,8 @@ Manages the Pricing Tier for Azure Security Center in the current subscription.
 
 ## Properties
 
-TBC
+`Tier` - (Required) The pricing tier to use. Possible values are `Free` and `Standard`.
+
 
 ## Return Values
 

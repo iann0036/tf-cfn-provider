@@ -3,12 +3,23 @@
 Manages a template deployment of resources
 
 ~> **Note on ARM Template Deployments:** Due to the way the underlying Azure API is designed, Terraform can only manage the deployment of the ARM Template - and not any resources which are created by it.
-This means that when deleting the `azurestack_template_deployment` resource, Terraform will only remove the reference to the deployment, whilst leaving any resources created by that ARM Template Deployment.
+This means that when deleting the `Terraform::AzureStack::TemplateDeployment` resource, Terraform will only remove the reference to the deployment, whilst leaving any resources created by that ARM Template Deployment.
 One workaround for this is to use a unique Resource Group for each ARM Template Deployment, which means deleting the Resource Group would contain any resources created within it - however this isn't ideal. [More information](https://docs.microsoft.com/en-us/rest/api/resources/deployments#Deployments_Delete).
 
 ## Properties
 
-TBC
+`Name` - (Required) Specifies the name of the template deployment. Changing this forces a new resource to be created.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the template deployment.
+
+`DeploymentMode` - (Required) Specifies the mode that is used to deploy resources. This value could be either `Incremental` or `Complete`. Note that you will almost *always* want this to be set to `Incremental` otherwise the deployment will destroy all infrastructure not specified within the template, and Terraform will not be aware of this.
+
+`TemplateBody` - (Optional) Specifies the JSON definition for the template.
+
+`Parameters` - (Optional) Specifies the name and value pairs that define the deployment parameters for the template.
+
+`ParametersBody` - (Optional) Specifies a valid Azure JSON parameters file that define the deployment parameters. It can contain KeyVault references.
+
 
 ## Return Values
 

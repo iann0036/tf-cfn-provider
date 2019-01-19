@@ -4,7 +4,14 @@ Provides a RAM User Login Profile resource.
 
 ## Properties
 
-TBC
+`UserName` - (Required, Forces new resource) Name of the RAM user. This name can have a string of 1 to 64 characters, must contain only alphanumeric characters or hyphens, such as "-",".","_", and must not begin with a hyphen.
+
+`Password` - (Required) Password of the RAM user.
+
+`MfaBindRequired` - (Optional) This parameter indicates whether the MFA needs to be bind when the user first logs in. Default value is `false`.
+
+`PasswordResetRequired` - (Optional) This parameter indicates whether the password needs to be reset when the user first logs in. Default value is `false`.
+
 
 ## Return Values
 

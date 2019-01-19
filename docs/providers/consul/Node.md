@@ -5,7 +5,12 @@ node. Currently, defining health checks is not supported.
 
 ## Properties
 
-TBC
+`Address` - (Required) The address of the node being added to, or referenced in the catalog.
+
+`Name` - (Required) The name of the node being added to, or referenced in the catalog.
+
+`Meta` - (Optional, map) Key/value pairs that are associated with the node.
+
 
 ## Return Values
 

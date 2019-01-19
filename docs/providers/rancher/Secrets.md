@@ -4,7 +4,14 @@ Provides a Rancher Secret resource. This can be used to create secrets for ranch
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the secret.
+
+`Description` - (Optional) A description of the secret.
+
+`EnvironmentId` - (Required) The ID of the environment to create the secret for.
+
+`Value` - (Required) The secret value.
+
 
 ## See Also
 

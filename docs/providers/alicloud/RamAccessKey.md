@@ -2,11 +2,16 @@
 
 Provides a RAM User access key resource.
 
-~> **NOTE:**  You should set the `secret_file` if you want to get the access key.
+~> **NOTE:**  You should set the `SecretFile` if you want to get the access key.
 
 ## Properties
 
-TBC
+`UserName` - (Required, Forces new resource) Name of the RAM user. This name can have a string of 1 to 64 characters, must contain only alphanumeric characters or hyphens, such as "-",".","_", and must not begin with a hyphen.
+
+`SecretFile` - (Optional, Forces new resource) The name of file that can save access key id and access key secret. Strongly suggest you to specified it when you creating access key, otherwise, you wouldn't get its secret ever.
+
+`Status` - (Optional) Status of access key. It must be `Active` or `Inactive`. Default value is `Active`.
+
 
 ## Return Values
 

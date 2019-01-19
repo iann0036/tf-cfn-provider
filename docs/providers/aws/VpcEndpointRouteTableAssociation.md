@@ -4,7 +4,10 @@ Manages a VPC Endpoint Route Table Association
 
 ## Properties
 
-TBC
+`RouteTableId` - (Required) Identifier of the EC2 Route Table to be associated with the VPC Endpoint.
+
+`VpcEndpointId` - (Required) Identifier of the VPC Endpoint with which the EC2 Route Table will be associated.
+
 
 ## Return Values
 

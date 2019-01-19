@@ -8,7 +8,24 @@ At this time you cannot use a Virtual Network with in-line Subnets in conjunctio
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of service to delegate to. Possible values include: `Microsoft.Batch/batchAccounts`, `Microsoft.ContainerInstance/containerGroups`, `Microsoft.HardwareSecurityModules/dedicatedHSMs`, `Microsoft.Logic/integrationServiceEnvironments`, `Microsoft.Netapp/volumes`, `Microsoft.ServiceFabricMesh/networks`, `Microsoft.Sql/managedInstances`, `Microsoft.Sql/servers` or `Microsoft.Web/serverFarms`.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the subnet. Changing this forces a new resource to be created.
+
+`VirtualNetworkName` - (Required) The name of the virtual network to which to attach the subnet. Changing this forces a new resource to be created.
+
+`AddressPrefix` - (Required) The address prefix to use for the subnet.
+
+`NetworkSecurityGroupId` - (Optional / **Deprecated**) The ID of the Network Security Group to associate with the subnet.
+
+`RouteTableId` - (Optional / **Deprecated**) The ID of the Route Table to associate with the subnet.
+
+`ServiceEndpoints` - (Optional) The list of Service endpoints to associate with the subnet. Possible values include: `Microsoft.AzureActiveDirectory`, `Microsoft.AzureCosmosDB`, `Microsoft.EventHub`, `Microsoft.KeyVault`, `Microsoft.ServiceBus`, `Microsoft.Sql` and `Microsoft.Storage`.
+
+`Delegation` - (Optional) One or more `Delegation` blocks as defined below.
+
+`Actions` - (Optional) A list of Actions which should be delegated. Possible values include: `Microsoft.Network/virtualNetworks/subnets/action`.
+
 
 ## Return Values
 

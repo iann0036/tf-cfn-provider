@@ -14,7 +14,12 @@ see the [Vault documentation](https://www.vaultproject.io/docs/auth/aws.html#cro
 
 ## Properties
 
-TBC
+`AccountId` - (Optional) The AWS account ID to configure the STS role for.
+
+`StsRole` - (Optional) The STS role to assume when verifying requests made by EC2 instances in the account specified by `AccountId`.
+
+`Backend` - (Optional) The path the AWS auth backend being configured was mounted at.  Defaults to `aws`.
+
 
 ## See Also
 

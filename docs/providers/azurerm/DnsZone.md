@@ -4,7 +4,18 @@ Enables you to manage DNS zones within Azure DNS. These zones are hosted on Azur
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the DNS Zone. Must be a valid domain name.
+
+`ResourceGroupName` - (Required) Specifies the resource group where the resource exists. Changing this forces a new resource to be created.
+
+`ZoneType` - (Required) Specifies the type of this DNS zone. Possible values are `Public` or `Private` (Defaults to `Public`).
+
+`RegistrationVirtualNetworkIds` - (Optional) A list of Virtual Network ID's that register hostnames in this DNS zone. This field can only be set when `ZoneType` is set to `Private`.
+
+`ResolutionVirtualNetworkIds` - (Optional) A list of Virtual Network ID's that resolve records in this DNS zone. This field can only be set when `ZoneType` is set to `Private`.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

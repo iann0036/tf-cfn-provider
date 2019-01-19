@@ -7,7 +7,18 @@ For more information, see [Volume Groups](https://docs.cloud.oracle.com/iaas/Con
 
 ## Properties
 
-TBC
+`CompartmentId` - (Optional) The OCID of the compartment that will contain the volume group backup. This parameter is optional, by default backup will be created in the same compartment and source volume group.
+
+`DefinedTags` - (Optional) (Updatable) Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
+
+`DisplayName` - (Optional) (Updatable) A user-friendly name for the volume group backup. Does not have to be unique and it's changeable.
+
+`FreeformTags` - (Optional) (Updatable) Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
+
+`Type` - (Optional) The type of backup to create. If omitted, defaults to incremental. * Allowed values are : * FULL * INCREMENTAL.
+
+`VolumeGroupId` - (Required) The OCID of the volume group that needs to be backed up.
+
 
 ## Return Values
 

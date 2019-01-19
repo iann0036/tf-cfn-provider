@@ -37,7 +37,10 @@ To get more information about Route, see:
 
 ## Properties
 
-TBC
+`Project` - (Optional) The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
+
+`NextHopInstanceZone` - (Optional when `NextHopInstance` is specified)  The zone of the instance specified in `NextHopInstance`.  Omit if `NextHopInstance` is specified as a URL.
+
 
 ## Return Values
 

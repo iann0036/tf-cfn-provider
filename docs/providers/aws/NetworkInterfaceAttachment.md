@@ -4,7 +4,12 @@ Attach an Elastic network interface (ENI) resource with EC2 instance.
 
 ## Properties
 
-TBC
+`InstanceId` - (Required) Instance ID to attach.
+
+`NetworkInterfaceId` - (Required) ENI ID to attach.
+
+`DeviceIndex` - (Required) Network interface index (int).
+
 
 ## Return Values
 

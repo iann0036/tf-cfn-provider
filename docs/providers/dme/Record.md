@@ -4,7 +4,16 @@ Provides a DNSMadeEasy record resource.
 
 ## Properties
 
-TBC
+`Domainid` - (String, Required) The domain id to add the record to.
+
+`Name` - (Required) The name of the record `type` - (Required) The type of.
+
+`Value` - (Required) The value of the record; its usage will depend on the `type` (see below).
+
+`Ttl` - (Integer, Optional) The TTL of the record.
+
+`GtdLocation` - (String, Optional) The GTD Location of the record on Global Traffic Director enabled domains; Unless GTD is enabled this should either be omitted or set to "DEFAULT".
+
 
 ## Return Values
 

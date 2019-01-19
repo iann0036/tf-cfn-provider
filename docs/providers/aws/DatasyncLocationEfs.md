@@ -6,7 +6,14 @@ Manages an AWS DataSync EFS Location.
 
 ## Properties
 
-TBC
+`Ec2Config` - (Required) Configuration block containing EC2 configurations for connecting to the EFS File System.
+
+`EfsFileSystemArn` - (Required) Amazon Resource Name (ARN) of EFS File System.
+
+`Subdirectory` - (Optional) Subdirectory to perform actions as source or destination. Default `/`.
+
+`Tags` - (Optional) Key-value pairs of resource tags to assign to the DataSync Location.
+
 
 ## See Also
 

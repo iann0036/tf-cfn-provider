@@ -4,7 +4,24 @@ This resource provides a means to configure static routes in NSX to determine wh
 
 ## Properties
 
-TBC
+`Description` - (Optional) Description of this resource.
+
+`DisplayName` - (Optional) The display name of this resource. Defaults to ID if not set.
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this static route.
+
+`LogicalRouterId` - (Required) Logical router id.
+
+`Network` - (Required) CIDR.
+
+`NextHop` - (Required) List of Next Hops, each with those arguments: * `AdministrativeDistance` - (Optional) Administrative Distance for the next hop IP. * `IpAddress` - (Optional) Next Hop IP. * `LogicalRouterPortId` - (Optional) Reference of logical router port to be used for next hop.
+
+`AdministrativeDistance` - (Optional) Administrative Distance for the next hop IP. * `IpAddress` - (Optional) Next Hop IP. * `LogicalRouterPortId` - (Optional) Reference of logical router port to be used for next hop.
+
+`IpAddress` - (Optional) Next Hop IP. * `LogicalRouterPortId` - (Optional) Reference of logical router port to be used for next hop.
+
+`LogicalRouterPortId` - (Optional) Reference of logical router port to be used for next hop.
+
 
 ## Return Values
 

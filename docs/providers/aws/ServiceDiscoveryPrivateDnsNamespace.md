@@ -4,7 +4,12 @@ Provides a Service Discovery Private DNS Namespace resource.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the namespace.
+
+`Vpc` - (Required) The ID of VPC that you want to associate the namespace with.
+
+`Description` - (Optional) The description that you specify for the namespace when you create it.
+
 
 ## Return Values
 

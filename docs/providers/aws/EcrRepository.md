@@ -8,7 +8,10 @@ in all regions - available regions are listed
 
 ## Properties
 
-TBC
+`Name` - (Required) Name of the repository.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 
@@ -20,7 +23,7 @@ TBC
 
 `RegistryId` - The registry ID where the repository was created.
 
-`RepositoryUrl` - The URL of the repository (in the form `aws_account_id.dkr.ecr.region.amazonaws.com/repositoryName`.
+`RepositoryUrl` - The URL of the repository (in the form `Terraform::AWS::AccountId.dkr.ecr.region.amazonaws.com/repositoryName`.
 
 ## See Also
 

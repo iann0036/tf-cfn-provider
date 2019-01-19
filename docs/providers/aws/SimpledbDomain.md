@@ -4,7 +4,8 @@ Provides a SimpleDB domain resource
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the SimpleDB domain.
+
 
 ## Return Values
 

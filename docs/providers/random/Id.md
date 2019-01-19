@@ -1,6 +1,6 @@
 # Terraform::Random::Id
 
-The resource `random_id` generates random numbers that are intended to be
+The resource `Terraform::Random::Id` generates random numbers that are intended to be
 used as unique identifiers for other resources.
 
 This resource *does* use a cryptographic random number generator in order
@@ -15,7 +15,12 @@ exist concurrently.
 
 ## Properties
 
-TBC
+`ByteLength` - (Required) The number of random bytes to produce. The minimum value is 1, which produces eight bits of randomness.
+
+`Keepers` - (Optional) Arbitrary map of values that, when changed, will trigger a new id to be generated. See [the main provider documentation](../index.html) for more information.
+
+`Prefix` - (Optional) Arbitrary string to prefix the output value with. This string is supplied as-is, meaning it is not guaranteed to be URL-safe or base64 encoded.
+
 
 ## Return Values
 

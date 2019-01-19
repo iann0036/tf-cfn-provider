@@ -4,7 +4,14 @@ Manages a Automation DSC Node Configuration.
 
 ## Properties
 
-TBC
+`Name` - (Required) Specifies the name of the DSC Node Configuration. Changing this forces a new resource to be created.
+
+`ResourceGroupName` - (Required) The name of the resource group in which the DSC Node Configuration is created. Changing this forces a new resource to be created.
+
+`AutomationAccountName` - (Required) The name of the automation account in which the DSC Node Configuration is created. Changing this forces a new resource to be created.
+
+`ContentEmbedded` - (Required) The PowerShell DSC Node Configuration (mof content).
+
 
 ## Return Values
 

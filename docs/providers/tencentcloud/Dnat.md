@@ -4,7 +4,18 @@ Provides a port mapping/forwarding of destination network address port translati
 
 ## Properties
 
-TBC
+`NatId` - (Required, Forces new resource) The ID for the NAT Gateway.
+
+`VpcId` - (Required, Forces new resource) The VPC ID for the NAT Gateway.
+
+`Protocol` - (Required, Forces new resource) The ip protocal, valid value is tcp|udp.
+
+`ElasticIp` - (Required, Forces new resource) The elastic IP of NAT gateway association, must a [Elastic IP](eip.html).
+
+`ElasticPort` - (Required, Forces new resource) The external port, valid value is 1~65535.
+
+`PrivateIp` - (Required, Forces new resource) The internal ip, must a private ip (VPC IP).
+
 
 ## See Also
 

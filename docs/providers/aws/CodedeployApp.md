@@ -4,7 +4,10 @@ Provides a CodeDeploy application to be used as a basis for deployments
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the application.
+
+`ComputePlatform` - (Optional) The compute platform can either be `ECS`, `Lambda`, or `Server`. Default is `Server`.
+
 
 ## See Also
 

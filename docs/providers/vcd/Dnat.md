@@ -5,7 +5,14 @@ and delete destination NATs to map an external IP/port to an internal IP/port.
 
 ## Properties
 
-TBC
+`EdgeGateway` - (Required) The name of the edge gateway on which to apply the DNAT.
+
+`ExternalIp` - (Required) One of the external IPs available on your Edge Gateway.
+
+`Port` - (Required) The port number to map.
+
+`InternalIp` - (Required) The IP of the VM to map to.
+
 
 ## See Also
 

@@ -50,7 +50,6 @@ $ terraform import telefonicaopencloud_vbs_backup_policy_v2.vbs 4779ab1c-7c1a-44
 
 ## Properties
 
-TBC
 
 ## See Also
 

@@ -10,7 +10,14 @@ For more information about console access, see [Accessing the Console](https://d
 
 ## Properties
 
-TBC
+`DefinedTags` - (Optional) Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
+
+`FreeformTags` - (Optional) Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
+
+`InstanceId` - (Required) The OCID of the instance to create the console connection to.
+
+`PublicKey` - (Required) The SSH public key used to authenticate the console connection.
+
 
 ## Return Values
 

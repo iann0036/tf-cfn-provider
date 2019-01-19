@@ -4,7 +4,10 @@
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the policy.
+
+`Policy` - (Required) String containing a Vault policy.
+
 
 ## See Also
 

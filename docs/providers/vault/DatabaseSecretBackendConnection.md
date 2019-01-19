@@ -12,7 +12,34 @@ for more details.
 
 ## Properties
 
-TBC
+`Name` - (Required) A unique name to give the database connection.
+
+`Backend` - (Required) The unique name of the Vault mount to configure.
+
+`VerifyConnection` - (Optional) Whether the connection should be verified on initial configuration or not.
+
+`AllowedRoles` - (Optional) A list of roles that are allowed to use this connection.
+
+`Cassandra` - (Optional) A nested block containing configuration options for Cassandra connections.
+
+`Mongodb` - (Optional) A nested block containing configuration options for MongoDB connections.
+
+`Hana` - (Optional) A nested block containing configuration options for SAP HanaDB connections.
+
+`Mssql` - (Optional) A nested block containing configuration options for MSSQL connections.
+
+`Mysql` - (Optional) A nested block containing configuration options for MySQL connections.
+
+`MysqlRds` - (Optional) A nested block containing configuration options for RDS MySQL connections.
+
+`MysqlAurora` - (Optional) A nested block containing configuration options for Aurora MySQL connections.
+
+`MysqlLegacy` - (Optional) A nested block containing configuration options for legacy MySQL connections.
+
+`Postgresql` - (Optional) A nested block containing configuration options for PostgreSQL connections.
+
+`Oracle` - (Optional) A nested block containing configuration options for Oracle connections.
+
 
 ## See Also
 

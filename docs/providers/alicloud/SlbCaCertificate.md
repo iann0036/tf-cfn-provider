@@ -8,7 +8,10 @@ For information about CA Certificate and how to use it, see [Configure CA Certif
 
 ## Properties
 
-TBC
+`Name` - (Optional) Name of the CA Certificate.
+
+`CaCertificate` - (Required, ForceNew) the content of the CA certificate.
+
 
 ## Return Values
 

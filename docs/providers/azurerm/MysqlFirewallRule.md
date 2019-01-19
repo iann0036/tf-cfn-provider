@@ -4,7 +4,16 @@ Manages a Firewall Rule for a MySQL Server
 
 ## Properties
 
-TBC
+`Name` - (Required) Specifies the name of the MySQL Firewall Rule. Changing this forces a new resource to be created.
+
+`ServerName` - (Required) Specifies the name of the MySQL Server. Changing this forces a new resource to be created.
+
+`ResourceGroupName` - (Required) The name of the resource group in which the MySQL Server exists. Changing this forces a new resource to be created.
+
+`StartIpAddress` - (Required) Specifies the Start IP Address associated with this Firewall Rule. Changing this forces a new resource to be created.
+
+`EndIpAddress` - (Required) Specifies the End IP Address associated with this Firewall Rule. Changing this forces a new resource to be created.
+
 
 ## Return Values
 

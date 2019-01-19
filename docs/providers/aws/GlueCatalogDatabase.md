@@ -4,7 +4,16 @@ Provides a Glue Catalog Database Resource. You can refer to the [Glue Developer 
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the database.
+
+`CatalogId` - (Optional) ID of the Glue Catalog to create the database in. If omitted, this defaults to the AWS Account ID.
+
+`Description` - (Optional) Description of the database.
+
+`LocationUri` - (Optional) The location of the database (for example, an HDFS path).
+
+`Parameters` - (Optional) A list of key-value pairs that define parameters and properties of the database.
+
 
 ## See Also
 

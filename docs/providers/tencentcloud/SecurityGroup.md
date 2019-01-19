@@ -4,7 +4,10 @@ Provides a security group resource.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the security group. Name should be unique in each project, and no more than 60 characters.
+
+`Description` - (Optional) The security group's description, maximum length is 100 characters.
+
 
 ## Return Values
 

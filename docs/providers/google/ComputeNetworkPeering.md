@@ -11,7 +11,14 @@ and
 
 ## Properties
 
-TBC
+`Name` - (Required) Name of the peering.
+
+`Network` - (Required) Resource link of the network to add a peering to.
+
+`PeerNetwork` - (Required) Resource link of the peer network.
+
+`AutoCreateRoutes` - (Optional) If set to `true`, the routes between the two networks will be created and managed automatically. Defaults to `true`.
+
 
 ## Return Values
 

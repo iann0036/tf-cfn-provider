@@ -5,7 +5,12 @@ key. An organization can have multiple SSH keys available.
 
 ## Properties
 
-TBC
+`Name` - (Required) Name to identify the SSH key.
+
+`Organization` - (Required) Name of the organization.
+
+`Key` - (Required) The text of the SSH private key.
+
 
 ## See Also
 

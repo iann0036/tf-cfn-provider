@@ -16,7 +16,8 @@ user.
 
 ## Properties
 
-TBC
+`UserId` - (Required) The OCID of the user.
+
 
 ## Return Values
 

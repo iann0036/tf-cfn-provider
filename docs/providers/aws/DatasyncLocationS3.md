@@ -4,7 +4,14 @@ Manages an S3 Location within AWS DataSync.
 
 ## Properties
 
-TBC
+`S3BucketArn` - (Required) Amazon Resource Name (ARN) of the S3 Bucket.
+
+`S3Config` - (Required) Configuration block containing information for connecting to S3.
+
+`Subdirectory` - (Required) Prefix to perform actions as source or destination.
+
+`Tags` - (Optional) Key-value pairs of resource tags to assign to the DataSync Location.
+
 
 ## See Also
 

@@ -9,7 +9,6 @@ origin access identities, see
 
 ## Properties
 
-TBC
 
 ## See Also
 

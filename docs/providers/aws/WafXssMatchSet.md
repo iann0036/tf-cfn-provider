@@ -4,7 +4,10 @@ Provides a WAF XSS Match Set Resource
 
 ## Properties
 
-TBC
+`Name` - (Required) The name or description of the SizeConstraintSet.
+
+`XssMatchTuples` - (Optional) The parts of web requests that you want to inspect for cross-site scripting attacks.
+
 
 ## Return Values
 

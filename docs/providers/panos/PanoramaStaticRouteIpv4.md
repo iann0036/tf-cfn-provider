@@ -5,7 +5,30 @@ virtual router for either a template or a template stack.
 
 ## Properties
 
-TBC
+`Template` - The template name.
+
+`TemplateStack` - The template stack name.
+
+`Name` - (Required) The static route's name.
+
+`VirtualRouter` - (Required) The virtual router to add the static route to.
+
+`Destination` - (Required) Destination IP address / prefix.
+
+`Interface` - (Optional) Interface to use.
+
+`Type` - (Optional) The next hop type.  Valid values are `ip-address` (the default), `discard`, `next-vr`, or an empty string for `None`.
+
+`NextHop` - (Optional) The value for the `Type` setting.
+
+`AdminDistance` - (Optional) The admin distance.
+
+`Metric` - (Optional, int) Metric value / path cost (default: `10`).
+
+`RouteTable` - (Optional) Target routing table to install the route.  Valid values are `unicast` (the default), `no install`, `multicast`, or `both`.
+
+`BfdProfile` - (Optional, PAN-OS 7.1+) BFD configuration.
+
 
 ## See Also
 

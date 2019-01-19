@@ -4,7 +4,14 @@ Creates a Snapshot of a snapshot.
 
 ## Properties
 
-TBC
+`Description` - (Optional) A description of what the snapshot is.
+
+`Encrypted` - Whether the snapshot is encrypted.
+
+`KmsKeyId` - The ARN for the KMS encryption key.
+
+`Tags` - A mapping of tags for the snapshot.
+
 
 ## Return Values
 

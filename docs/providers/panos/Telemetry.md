@@ -12,7 +12,22 @@ policy, and we encourage you to join the community.
 
 ## Properties
 
-TBC
+`ApplicationReports` - (Bool, optional) Application reports.
+
+`ThreatPreventionReports` - (Bool, optional) Threat reports.
+
+`UrlReports` - (Bool, optional) URL reports.
+
+`FileTypeIdentificationReports` - (Bool, optional) File type identification reports.
+
+`ThreatPreventionData` - (Bool, optional) Threat prevention data.
+
+`ThreatPreventionPacketCaptures` - (Bool, optional) Enable sending packet- captures with threat prevention information. This requires that `ThreatPreventionData` also be enabled.
+
+`ProductUsageStats` - (Bool, optional) Health and performance reports.
+
+`PassiveDnsMonitoring` - (Bool, optional) Passive DNS monitoring.
+
 
 ## See Also
 

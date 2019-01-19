@@ -4,7 +4,6 @@ Configures an SSL persistence profile
 
 ## Properties
 
-TBC
 
 ## See Also
 

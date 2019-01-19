@@ -9,21 +9,28 @@ in conjunction with any Route resources. Doing so will cause
 a conflict of rule settings and will overwrite rules.
 
 ~> **NOTE on `gateway_id` and `nat_gateway_id`:** The AWS API is very forgiving with these two
-attributes and the `aws_route_table` resource can be created with a NAT ID specified as a Gateway ID attribute.
+attributes and the `Terraform::AWS::RouteTable` resource can be created with a NAT ID specified as a Gateway ID attribute.
 This _will_ lead to a permanent diff between your configuration and statefile, as the API returns the correct
-parameters in the returned route table. If you're experiencing constant diffs in your `aws_route_table` resources,
+parameters in the returned route table. If you're experiencing constant diffs in your `Terraform::AWS::RouteTable` resources,
 the first thing to check is whether or not you're specifying a NAT ID instead of a Gateway ID, or vice-versa.
 
-~> **NOTE on `propagating_vgws` and the `aws_vpn_gateway_route_propagation` resource:**
-If the `propagating_vgws` argument is present, it's not supported to _also_
-define route propagations using `aws_vpn_gateway_route_propagation`, since
+~> **NOTE on `PropagatingVgws` and the `Terraform::AWS::VpnGatewayRoutePropagation` resource:**
+If the `PropagatingVgws` argument is present, it's not supported to _also_
+define route propagations using `Terraform::AWS::VpnGatewayRoutePropagation`, since
 this resource will delete any propagating gateways not explicitly listed in
-`propagating_vgws`. Omit this argument when defining route propagation using
+`PropagatingVgws`. Omit this argument when defining route propagation using
 the separate resource.
 
 ## Properties
 
-TBC
+`VpcId` - (Required) The VPC ID.
+
+`Route` - (Optional) A list of route objects. Their keys are documented below.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
+`PropagatingVgws` - (Optional) A list of virtual gateways for propagation.
+
 
 ## Return Values
 

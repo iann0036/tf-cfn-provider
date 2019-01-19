@@ -2,11 +2,14 @@
 
 Provides a DigitalOcean Floating IP to represent a publicly-accessible static IP addresses that can be mapped to one of your Droplets.
 
-~> **NOTE:** Floating IPs can be assigned to a Droplet either directly on the `digitalocean_floating_ip` resource by setting a `droplet_id` or using the `digitalocean_floating_ip_assignment` resource, but the two cannot be used together.
+~> **NOTE:** Floating IPs can be assigned to a Droplet either directly on the `Terraform::DigitalOcean::FloatingIp` resource by setting a `DropletId` or using the `digitaloceanFloatingIpAssignment` resource, but the two cannot be used together.
 
 ## Properties
 
-TBC
+`Region` - (Required) The region that the Floating IP is reserved to.
+
+`DropletId` - (Optional) The ID of Droplet that the Floating IP will be assigned to.
+
 
 ## Return Values
 

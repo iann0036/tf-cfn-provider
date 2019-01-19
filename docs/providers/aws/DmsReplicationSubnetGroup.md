@@ -4,7 +4,14 @@ Provides a DMS (Data Migration Service) replication subnet group resource. DMS r
 
 ## Properties
 
-TBC
+`ReplicationSubnetGroupDescription` - (Required) The description for the subnet group.
+
+`ReplicationSubnetGroupId` - (Required) The name for the replication subnet group. This value is stored as a lowercase string.
+
+`SubnetIds` - (Required) A list of the EC2 subnet IDs for the subnet group.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

@@ -4,7 +4,18 @@ This resource provides a way to configure a networking and security service whic
 
 ## Properties
 
-TBC
+`DisplayName` - (Optional) Display name, defaults to ID if not set.
+
+`Description` - (Optional) Description of this resource.
+
+`DestinationPorts` - (Optional) Set of destination ports.
+
+`SourcePorts` - (Optional) Set of source ports.
+
+`Protocol` - (Required) L4 protocol. Accepted values - 'TCP' or 'UDP'.
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this service.
+
 
 ## Return Values
 

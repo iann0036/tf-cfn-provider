@@ -7,7 +7,14 @@ Provides an OpsWorks RDS DB Instance resource.
 
 ## Properties
 
-TBC
+`StackId` - (Required) The stack to register a db inatance for. Changing this will force a new resource.
+
+`RdsDbInstanceArn` - (Required) The db instance to register for this stack. Changing this will force a new resource.
+
+`DbUser` - (Required) A db username.
+
+`DbPassword` - (Required) A db password.
+
 
 ## Return Values
 

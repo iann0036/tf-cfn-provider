@@ -5,11 +5,14 @@ resource can be used multiple times with the same user for non-overlapping
 groups.
 
 To exclusively manage the users in a group, see the
-[`aws_iam_group_membership` resource][3].
+[`Terraform::AWS::IamGroupMembership` resource][3].
 
 ## Properties
 
-TBC
+`User` - (Required) The name of the [IAM User][2] to add to groups.
+
+`Groups` - (Required) A list of [IAM Groups][1] to add the user to.
+
 
 ## Return Values
 

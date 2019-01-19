@@ -4,7 +4,10 @@ Provides a WAF Regional IPSet Resource for use with Application Load Balancer.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name or description of the IPSet.
+
+`IpSetDescriptor` - (Optional) One or more pairs specifying the IP address type (IPV4 or IPV6) and the IP address range (in CIDR notation) from which web requests originate.
+
 
 ## Return Values
 

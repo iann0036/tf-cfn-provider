@@ -4,7 +4,16 @@ The database resource allows a database to be created on an InfluxDB server.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the retention policy.
+
+`RetentionPolicies` - (Optional) A list of retention policies for specified database.
+
+`Duration` - (Required) The duration for retention policy, format of duration can be found at InfluxDB Documentation.
+
+`Replication` - (Optional) Determines how many copies of data points are stored in a cluster. Not applicable for single node / Open Source version of InfluxDB. Default value of 1.
+
+`Default` - (Optional) Marks current retention policy as default. Default value is false.
+
 
 ## See Also
 

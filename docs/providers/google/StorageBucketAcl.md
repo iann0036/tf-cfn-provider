@@ -7,7 +7,14 @@ and
 
 ## Properties
 
-TBC
+`Bucket` - (Required) The name of the bucket it applies to.
+
+`PredefinedAcl` - (Optional) The [canned GCS ACL](https://cloud.google.com/storage/docs/access-control/lists#predefined-acl) to apply. Must be set if `RoleEntity` is not.
+
+`RoleEntity` - (Optional) List of role/entity pairs in the form `ROLE:entity`. See [GCS Bucket ACL documentation](https://cloud.google.com/storage/docs/json_api/v1/bucketAccessControls)  for more details. Must be set if `PredefinedAcl` is not.
+
+`DefaultAcl` - (Optional) Configure this ACL to be the default ACL.
+
 
 ## See Also
 

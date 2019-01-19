@@ -6,7 +6,10 @@ Provides an SNS topic policy resource
 
 ## Properties
 
-TBC
+`Arn` - (Required) The ARN of the SNS topic.
+
+`Policy` - (Required) The fully-formed AWS policy as JSON. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](/docs/providers/aws/guides/iam-policy-documents.html).
+
 
 ## See Also
 

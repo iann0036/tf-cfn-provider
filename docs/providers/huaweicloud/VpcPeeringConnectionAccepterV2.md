@@ -4,13 +4,12 @@ Provides a resource to manage the accepter's side of a VPC Peering Connection.
 
 When a cross-tenant (requester's tenant differs from the accepter's tenant) VPC Peering Connection is created, a VPC Peering Connection resource is automatically created in the
 accepter's account.
-The requester can use the `huaweicloud_vpc_peering_connection_v2` resource to manage its side of the connection
-and the accepter can use the `huaweicloud_vpc_peering_connection_accepter_v2` resource to "adopt" its side of the
+The requester can use the `Terraform::HuaweiCloud::VpcPeeringConnectionV2` resource to manage its side of the connection
+and the accepter can use the `Terraform::HuaweiCloud::VpcPeeringConnectionAccepterV2` resource to "adopt" its side of the
 connection into management.
 
 ## Properties
 
-TBC
 
 ## Return Values
 

@@ -1,10 +1,15 @@
 # Terraform::OPC::ComputeSecurityIpList
 
-The ``opc_compute_security_ip_list`` resource creates and manages a security IP list in an Oracle Cloud Infrastructure Compute Classic identity domain.
+The ``Terraform::OPC::ComputeSecurityIpList`` resource creates and manages a security IP list in an Oracle Cloud Infrastructure Compute Classic identity domain.
 
 ## Properties
 
-TBC
+`Name` - (Required) The unique (within the identity domain) name of the security IP list.
+
+`IpEntries` - (Required) The IP addresses to include in the list.
+
+`Description` - (Optional) The description of the security ip list.
+
 
 ## See Also
 

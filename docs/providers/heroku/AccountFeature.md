@@ -8,7 +8,10 @@ and remove resource from state.
 
 ## Properties
 
-TBC
+`Name` - (Required) Name of the account feature.
+
+`Enabled` - (Required) Enable or disable the account feature.
+
 
 ## Return Values
 

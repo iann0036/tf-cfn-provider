@@ -4,7 +4,10 @@ Use this resource to create, update or destroy RightScale [SSH keys](http://refe
 
 ## Properties
 
-TBC
+`CloudHref` - (Required) The href of the cloud with the ssh key you want.
+
+`Name` - (Required) SSH Key name.
+
 
 ## Return Values
 

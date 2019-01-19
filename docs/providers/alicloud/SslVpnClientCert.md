@@ -2,12 +2,15 @@
 
 Provides a SSL VPN client cert resource.
 
-~> **NOTE:** Terraform will auto build SSL VPN client certs  while it uses `alicloud_ssl_vpn_client_cert` to build a ssl vpn client certs resource.
+~> **NOTE:** Terraform will auto build SSL VPN client certs  while it uses `Terraform::Alicloud::SslVpnClientCert` to build a ssl vpn client certs resource.
              It depends on VPN instance and SSL VPN Server.
 
 ## Properties
 
-TBC
+`Name` - (Optional) The name of the client certificate.
+
+`SslVpnServerId` - (Required, Forces new resource) The ID of the SSL-VPN server.
+
 
 ## Return Values
 

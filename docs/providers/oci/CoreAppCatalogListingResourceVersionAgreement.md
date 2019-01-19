@@ -1,10 +1,13 @@
 # Terraform::OCI::CoreAppCatalogListingResourceVersionAgreement
 
-The `oci_core_app_catalog_listing_resource_version_agreement` resource creates AppCatalogListingResourceVersionAgreement for a particular resource version of a listing.
+The `Terraform::OCI::CoreAppCatalogListingResourceVersionAgreement` resource creates AppCatalogListingResourceVersionAgreement for a particular resource version of a listing.
 
 ## Properties
 
-TBC
+`ListingId` - (Required) The OCID of the listing.
+
+`ListingResourceVersion` - (Required) Listing Resource Version.
+
 
 ## Return Values
 

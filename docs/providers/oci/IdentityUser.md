@@ -8,7 +8,18 @@ Manages the capabilities of the specified user.
 
 ## Properties
 
-TBC
+`UserId` - (Required) The OCID of the user.
+
+`CanUseApiKeys` - (Optional) (Updatable) Indicates if the user can use API keys.
+
+`CanUseAuthTokens` - (Optional) (Updatable) Indicates if the user can use SWIFT passwords / auth tokens.
+
+`CanUseConsolePassword` - (Optional) (Updatable) Indicates if the user can log in to the console.
+
+`CanUseCustomerSecretKeys` - (Optional) (Updatable) Indicates if the user can use SigV4 symmetric keys.
+
+`CanUseSmtpCredentials` - (Optional) (Updatable) Indicates if the user can use SMTP passwords.
+
 
 ## Return Values
 

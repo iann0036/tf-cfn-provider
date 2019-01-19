@@ -4,31 +4,50 @@ Manages a V1 volume resource within OpenStack.
 
 ## Properties
 
-TBC
+`Region` - (Optional) The region in which to create the volume. If omitted, the `Region` argument of the provider is used. Changing this creates a new volume.
+
+`Size` - (Required) The size of the volume to create (in gigabytes). Changing this creates a new volume.
+
+`Name` - (Optional) A unique name for the volume. Changing this updates the volume's name.
+
+`Description` - (Optional) A description of the volume. Changing this updates the volume's description.
+
+`AvailabilityZone` - (Optional) The availability zone for the volume. Changing this creates a new volume.
+
+`ImageId` - (Optional) The image ID from which to create the volume. Changing this creates a new volume.
+
+`SnapshotId` - (Optional) The snapshot ID from which to create the volume. Changing this creates a new volume.
+
+`SourceVolId` - (Optional) The volume ID from which to create the volume. Changing this creates a new volume.
+
+`Metadata` - (Optional) Metadata key/value pairs to associate with the volume. Changing this updates the existing volume metadata.
+
+`VolumeType` - (Optional) The type of volume to create. Changing this creates a new volume.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Region` - See Argument Reference above.
+`Region` - See Properties above.
 
-`Size` - See Argument Reference above.
+`Size` - See Properties above.
 
-`Name` - See Argument Reference above.
+`Name` - See Properties above.
 
-`Description` - See Argument Reference above.
+`Description` - See Properties above.
 
-`AvailabilityZone` - See Argument Reference above.
+`AvailabilityZone` - See Properties above.
 
-`ImageId` - See Argument Reference above.
+`ImageId` - See Properties above.
 
-`SourceVolId` - See Argument Reference above.
+`SourceVolId` - See Properties above.
 
-`SnapshotId` - See Argument Reference above.
+`SnapshotId` - See Properties above.
 
-`Metadata` - See Argument Reference above.
+`Metadata` - See Properties above.
 
-`VolumeType` - See Argument Reference above.
+`VolumeType` - See Properties above.
 
 `Attachment` - If a volume is attached to an instance, this attribute will.
 

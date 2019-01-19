@@ -6,7 +6,16 @@ constraints for which cookbook versions may be used on its nodes.
 
 ## Properties
 
-TBC
+`Name` - (Required) The unique name to assign to the environment. This name will be used when nodes are created within the environment.
+
+`Description` - (Optional) A human-friendly description of the environment. If not set, a placeholder of "Managed by Terraform" will be set.
+
+`DefaultAttributesJson` - (Optional) String containing a JSON-serialized object containing the default attributes for the environment.
+
+`OverrideAttributesJson` - (Optional) String containing a JSON-serialized object containing the override attributes for the environment.
+
+`CookbookConstraints` - (Optional) Mapping of cookbook names to cookbook version constraints that should apply for this environment.
+
 
 ## See Also
 

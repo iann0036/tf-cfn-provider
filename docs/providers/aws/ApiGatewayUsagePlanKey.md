@@ -4,7 +4,12 @@ Provides an API Gateway Usage Plan Key.
 
 ## Properties
 
-TBC
+`KeyId` - (Required) The identifier of the API key resource.
+
+`KeyType` - (Required) The type of the API key resource. Currently, the valid key type is API_KEY.
+
+`UsagePlanId` - (Required) The Id of the usage plan resource representing to associate the key to.
+
 
 ## Return Values
 

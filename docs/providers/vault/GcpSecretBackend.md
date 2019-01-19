@@ -12,7 +12,16 @@ for more details.
 
 ## Properties
 
-TBC
+`Credentials` - (Optional) The GCP service account credentails in JSON format.
+
+`Path` - (Optional) The unique path this backend should be mounted at. Must not begin or end with a `/`. Defaults to `gcp`.
+
+`Description` - (Optional) A human-friendly description for this backend.
+
+`DefaultLeaseTtlSeconds` - (Optional) The default TTL for credentials issued by this backend. Defaults to '3600'.
+
+`MaxLeaseTtlSeconds` - (Optional) The maximum TTL that can be requested for credentials issued by this backend. Defaults to '86400'.
+
 
 ## See Also
 

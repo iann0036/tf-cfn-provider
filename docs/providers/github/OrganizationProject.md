@@ -4,7 +4,10 @@ This resource allows you to create and manage projects for GitHub organization.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the project.
+
+`Body` - (Optional) The body of the project.
+
 
 ## Return Values
 

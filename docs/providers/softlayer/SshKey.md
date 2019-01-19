@@ -5,7 +5,12 @@ For additional details please refer to [API documentation](http://sldn.softlayer
 
 ## Properties
 
-TBC
+`Name` - (Required) A descriptive name used to identify an SSH key.
+
+`PublicKey` - (Required) The public SSH key.
+
+`Notes` - (Optional) A small note about an SSH key to use at your discretion.
+
 
 ## Return Values
 

@@ -11,7 +11,18 @@ report that it did.
 
 ## Properties
 
-TBC
+`ManagedZone` - (Required) The name of the zone in which this record set will reside.
+
+`Name` - (Required) The DNS name this record set will apply to.
+
+`Rrdatas` - (Required) The string data for the records in this record set whose meaning depends on the DNS type. For TXT record, if the string data contains spaces, add surrounding `\"` if you don't want your string to get split on spaces.
+
+`Ttl` - (Required) The time-to-live of this record set (seconds).
+
+`Type` - (Required) The DNS record set type.
+
+`Project` - (Optional) The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
+
 
 ## See Also
 

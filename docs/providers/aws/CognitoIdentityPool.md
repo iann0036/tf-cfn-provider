@@ -4,7 +4,6 @@ Provides an AWS Cognito Identity Pool.
 
 ## Properties
 
-TBC
 
 ## Return Values
 

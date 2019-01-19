@@ -4,7 +4,6 @@ Manages a LAN on ProfitBricks.
 
 ## Properties
 
-TBC
 
 ## See Also
 

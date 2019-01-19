@@ -4,7 +4,6 @@ Manages IP Failover groups on ProfitBricks.
 
 ## Properties
 
-TBC
 
 ## See Also
 

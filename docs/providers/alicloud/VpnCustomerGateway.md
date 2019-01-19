@@ -2,11 +2,16 @@
 
 Provides a VPN customer gateway resource.
 
-~> **NOTE:** Terraform will auto build vpn customer gateway instance  while it uses `alicloud_vpn_customer_gateway` to build a vpn customer gateway resource.
+~> **NOTE:** Terraform will auto build vpn customer gateway instance  while it uses `Terraform::Alicloud::VpnCustomerGateway` to build a vpn customer gateway resource.
 
 ## Properties
 
-TBC
+`Name` - (Optional) The name of the VPN customer gateway. Defaults to null.
+
+`IpAddress` - (Required, Forces new resource) The IP address of the customer gateway.
+
+`Description` - (Optional) The description of the VPN customer gateway instance.
+
 
 ## Return Values
 

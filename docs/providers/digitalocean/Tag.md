@@ -7,7 +7,8 @@ configuration via their ID or name.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the tag.
+
 
 ## Return Values
 

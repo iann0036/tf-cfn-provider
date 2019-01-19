@@ -6,7 +6,8 @@ Read more about network policies at https://kubernetes.io/docs/concepts/services
 
 ## Properties
 
-TBC
+`Metadata` - (Required) Standard network policy's [metadata](https://github.com/kubernetes/community/blob/master/contributors/devel/api-conventions.md#metadata).
+
 
 ## See Also
 

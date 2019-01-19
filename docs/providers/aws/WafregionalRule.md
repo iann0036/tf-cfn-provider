@@ -4,7 +4,12 @@ Provides an WAF Regional Rule Resource for use with Application Load Balancer.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name or description of the rule.
+
+`MetricName` - (Required) The name or description for the Amazon CloudWatch metric of this rule.
+
+`Predicate` - (Optional) The objects to include in a rule.
+
 
 ## Return Values
 

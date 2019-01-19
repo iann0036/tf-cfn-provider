@@ -6,7 +6,8 @@ Manages the account alias for the AWS Account.
 
 ## Properties
 
-TBC
+`AccountAlias` - (Required) The account alias.
+
 
 ## See Also
 

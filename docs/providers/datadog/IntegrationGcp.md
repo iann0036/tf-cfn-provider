@@ -4,7 +4,18 @@ Provides a Datadog - Google Cloud Platform integration resource. This can be use
 
 ## Properties
 
-TBC
+`ProjectId` - (Required) Your Google Cloud project ID found in your JSON service account key.
+
+`PrivateKeyId` - (Required) Your private key ID found in your JSON service account key.
+
+`PrivateKey` - (Required) Your private key name found in your JSON service account key.
+
+`ClientEmail` - (Required) Your email found in your JSON service account key.
+
+`ClientId` - (Required) Your ID found in your JSON service account key.
+
+`HostFilters` - (Optional) Limit the GCE instances that are pulled into Datadog by using tags. Only hosts that match one of the defined tags are imported into Datadog.
+
 
 ## Return Values
 

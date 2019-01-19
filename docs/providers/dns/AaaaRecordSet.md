@@ -4,19 +4,26 @@ Creates a AAAA type DNS record set.
 
 ## Properties
 
-TBC
+`Zone` - (Required) DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
+
+`Name` - (Optional) The name of the record set. The `Zone` argument will be appended to this value to create the full record path.
+
+`Addresses` - (Required) The IPv6 addresses this record set will point to.
+
+`Ttl` - (Optional) The TTL of the record set. Defaults to `3600`.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Zone` - See Argument Reference above.
+`Zone` - See Properties above.
 
-`Name` - See Argument Reference above.
+`Name` - See Properties above.
 
-`Addresses` - See Argument Reference above.
+`Addresses` - See Properties above.
 
-`Ttl` - See Argument Reference above.
+`Ttl` - See Properties above.
 
 ## See Also
 

@@ -4,7 +4,12 @@ Use this resource to create, update or destroy RightScale [credentials](http://r
 
 ## Properties
 
-TBC
+`Name` - (Required) Name of the credential.
+
+`Value` - (Required) Value of the credential.
+
+`Description` - (Optional) Description of the credential.
+
 
 ## Return Values
 

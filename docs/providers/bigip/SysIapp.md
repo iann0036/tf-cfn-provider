@@ -1,10 +1,13 @@
 # Terraform::BIGIP::SysIapp
 
-`bigip_sys_iapp` resource helps you to deploy Application Services template that can be used to automate and orchestrate Layer 4-7 applications service deployments using F5 Network.
+`Terraform::BIGIP::SysIapp` resource helps you to deploy Application Services template that can be used to automate and orchestrate Layer 4-7 applications service deployments using F5 Network.
 
 ## Properties
 
-TBC
+`Name` -  Name of the iApp.
+
+`Jsonfile` - Refer to the Json file which will be deployed on F5 BIG-IP.
+
 
 ## See Also
 

@@ -29,7 +29,6 @@ To get more information about DefaultObjectAccessControl, see:
 
 ## Properties
 
-TBC
 
 ## See Also
 

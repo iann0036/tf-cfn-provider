@@ -1,6 +1,6 @@
 # Terraform::VSphere::HaVmOverride
 
-The `vsphere_ha_vm_override` resource can be used to add an override for
+The `Terraform::VSphere::HaVmOverride` resource can be used to add an override for
 vSphere HA settings on a cluster for a specific virtual machine. With this
 resource, one can control specific HA settings so that they are different than
 the cluster default, accommodating the needs of that specific virtual machine,
@@ -15,7 +15,6 @@ connections.
 
 ## Properties
 
-TBC
 
 ## See Also
 

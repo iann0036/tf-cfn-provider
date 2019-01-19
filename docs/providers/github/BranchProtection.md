@@ -6,7 +6,18 @@ This resource allows you to configure branch protection for repositories in your
 
 ## Properties
 
-TBC
+`Repository` - (Required) The GitHub repository name.
+
+`Branch` - (Required) The Git branch to protect.
+
+`EnforceAdmins` - (Optional) Boolean, setting this to `true` enforces status checks for repository administrators.
+
+`RequiredStatusChecks` - (Optional) Enforce restrictions for required status checks. See [Required Status Checks](#required-status-checks) below for details.
+
+`RequiredPullRequestReviews` - (Optional) Enforce restrictions for pull request reviews. See [Required Pull Request Reviews](#required-pull-request-reviews) below for details.
+
+`Restrictions` - (Optional) Enforce restrictions for the users and teams that may push to the branch. See [Restrictions](#restrictions) below for details.
+
 
 ## See Also
 

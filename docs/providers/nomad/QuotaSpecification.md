@@ -4,7 +4,6 @@ Manages a quota specification in a Nomad cluster.
 
 ## Properties
 
-TBC
 
 ## See Also
 

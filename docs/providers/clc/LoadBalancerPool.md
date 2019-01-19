@@ -6,7 +6,16 @@ See also [Complete API documentation](https://www.ctl.io/api-docs/v2/#shared-loa
 
 ## Properties
 
-TBC
+`LoadBalancer` - (Required, string) The id of the load balancer.
+
+`DataCenter` - (Required, string) The datacenter location for this pool.
+
+`Port` - (Required, int) Either 80 or 443.
+
+`Method` - (Optional, string) The configured balancing method. Either "roundRobin" (default) or "leastConnection".
+
+`Persistence` - (Optional, string) The configured persistence method. Either "standard" (default) or "sticky".
+
 
 ## See Also
 

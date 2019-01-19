@@ -8,7 +8,6 @@ Manages an ACL token in Nomad.
 
 ## Properties
 
-TBC
 
 ## See Also
 

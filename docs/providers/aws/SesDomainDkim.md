@@ -6,7 +6,8 @@ Domain ownership needs to be confirmed first using [ses_domain_identity Resource
 
 ## Properties
 
-TBC
+`Domain` - (Required) Verified domain name to generate DKIM tokens for.
+
 
 ## Return Values
 

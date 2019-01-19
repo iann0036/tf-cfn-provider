@@ -1,11 +1,22 @@
 # Terraform::RabbitMQ::Permissions
 
-The ``rabbitmq_permissions`` resource creates and manages a user's set of
+The ``Terraform::RabbitMQ::Permissions`` resource creates and manages a user's set of
 permissions.
 
 ## Properties
 
-TBC
+`User` - (Required) The user to apply the permissions to.
+
+`Vhost` - (Required) The vhost to create the resource in.
+
+`Permissions` - (Required) The settings of the permissions. The structure is described below.
+
+`Configure` - (Required) The "configure" ACL.
+
+`Write` - (Required) The "write" ACL.
+
+`Read` - (Required) The "read" ACL.
+
 
 ## See Also
 

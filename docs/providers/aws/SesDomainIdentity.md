@@ -4,7 +4,8 @@ Provides an SES domain identity resource
 
 ## Properties
 
-TBC
+`Domain` - (Required) The domain name to assign to SES.
+
 
 ## Return Values
 

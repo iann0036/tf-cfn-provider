@@ -4,7 +4,24 @@ Provides a CodePipeline Webhook.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the webhook.
+
+`Authentication` - (Required) The type of authentication  to use. One of `IP`, `GITHUB_HMAC`, or `UNAUTHENTICATED`.
+
+`AuthenticationConfiguration` - (Optional) An `auth` block. Required for `IP` and `GITHUB_HMAC`. Auth blocks are documented below.
+
+`TargetAction` - (Required) The name of the action in a pipeline you want to connect to the webhook. The action must be from the source (first) stage of the pipeline.
+
+`TargetPipeline` - (Required) The name of the pipeline.
+
+`SecretToken` - (Optional) The shared secret for the GitHub repository webhook. Set this as `secret` in your `github_repository_webhook`'s `configuration` block. Required for `GITHUB_HMAC`.
+
+`AllowedIpRange` - (Optional) A valid CIDR block for `IP` filtering. Required for `IP`.
+
+`JsonPath` - (Required) The [JSON path](https://github.com/json-path/JsonPath) to filter on.
+
+`MatchEquals` - (Required) The value to match on (e.g. `refs/heads/{Branch}`). See [AWS docs](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_WebhookFilterRule.html) for details.
+
 
 ## Return Values
 

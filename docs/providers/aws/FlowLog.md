@@ -5,7 +5,22 @@ interface, subnet, or VPC. Logs are sent to a CloudWatch Log Group or a S3 Bucke
 
 ## Properties
 
-TBC
+`TrafficType` - (Required) The type of traffic to capture. Valid values: `ACCEPT`,`REJECT`, `ALL`.
+
+`EniId` - (Optional) Elastic Network Interface ID to attach to.
+
+`IamRoleArn` - (Optional) The ARN for the IAM role that's used to post flow logs to a CloudWatch Logs log group.
+
+`LogDestinationType` - (Optional) The type of the logging destination. Valid values: `cloud-watch-logs`, `s3`. Default: `cloud-watch-logs`.
+
+`LogDestination` - (Optional) The ARN of the logging destination.
+
+`LogGroupName` - (Optional) *Deprecated:* Use `LogDestination` instead. The name of the CloudWatch log group.
+
+`SubnetId` - (Optional) Subnet ID to attach to.
+
+`VpcId` - (Optional) VPC ID to attach to.
+
 
 ## Return Values
 

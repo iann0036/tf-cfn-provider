@@ -6,7 +6,10 @@ Adds recipient email addresses to the suppression list for a tenancy.
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) The OCID of the compartment to contain the suppression. Since suppressions are at the customer level, this must be the tenancy OCID.
+
+`EmailAddress` - (Required) The recipient email address of the suppression.
+
 
 ## Return Values
 

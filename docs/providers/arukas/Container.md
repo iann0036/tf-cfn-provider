@@ -6,7 +6,22 @@ For additional details please refer to [API documentation](https://arukas.io/en/
 
 ## Properties
 
-TBC
+`Name` - (Required, string) The name of the container.
+
+`Image` - (Required, string) The ID of the image to back this container.It must be a public image on DockerHub.
+
+`Instances` - (Optional, int) The count of the instance. It must be between `1` and `10`.
+
+`Plan` - (Optional, string) The plan of the Arukas. It must be `free` or `hobby` or `standard-1` or `standard-2`.
+
+`Endpoint` - (Optional,string) The subdomain part of the endpoint assigned by Arukas. If it is not set, Arukas will do automatic assignment.
+
+`Ports` - (Required , block) See [Ports](#ports) below for details.
+
+`Environments` - (Required , block) See [Environments](#environments) below for details.
+
+`Cmd` - (Optional , string) The command of the container.
+
 
 ## Return Values
 

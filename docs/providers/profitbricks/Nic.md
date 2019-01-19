@@ -4,7 +4,6 @@ Manages a NIC on ProfitBricks.
 
 ## Properties
 
-TBC
 
 ## See Also
 

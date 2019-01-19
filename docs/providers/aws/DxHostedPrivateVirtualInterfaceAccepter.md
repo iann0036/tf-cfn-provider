@@ -5,7 +5,14 @@ This resource accepts ownership of a private virtual interface created by anothe
 
 ## Properties
 
-TBC
+`VirtualInterfaceId` - (Required) The ID of the Direct Connect virtual interface to accept.
+
+`DxGatewayId` - (Optional) The ID of the Direct Connect gateway to which to connect the virtual interface.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
+`VpnGatewayId` - (Optional) The ID of the [virtual private gateway](vpn_gateway.html) to which to connect the virtual interface.
+
 
 ## Return Values
 

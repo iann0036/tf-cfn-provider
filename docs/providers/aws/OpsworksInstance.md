@@ -4,7 +4,48 @@ Provides an OpsWorks instance resource.
 
 ## Properties
 
-TBC
+`InstanceType` - (Required) The type of instance to start.
+
+`StackId` - (Required) The id of the stack the instance will belong to.
+
+`LayerIds` - (Required) The ids of the layers the instance will belong to.
+
+`State` - (Optional) The desired state of the instance.  Can be either `"running"` or `"stopped"`.
+
+`InstallUpdatesOnBoot` - (Optional) Controls where to install OS and package updates when the instance boots.  Defaults to `true`.
+
+`AutoScalingType` - (Optional) Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
+
+`AvailabilityZone` - (Optional) Name of the availability zone where instances will be created by default.
+
+`EbsOptimized` - (Optional) If true, the launched EC2 instance will be EBS-optimized.
+
+`Hostname` - (Optional) The instance's host name.
+
+`Architecture` - (Optional) Machine architecture for created instances.  Can be either `"x86_64"` (the default) or `"i386"`.
+
+`AmiId` - (Optional) The AMI to use for the instance.  If an AMI is specified, `Os` must be `"Custom"`.
+
+`Os` - (Optional) Name of operating system that will be installed.
+
+`RootDeviceType` - (Optional) Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`.
+
+`SshKeyName` - (Optional) Name of the SSH keypair that instances will have by default.
+
+`AgentVersion` - (Optional) The AWS OpsWorks agent to install.  Defaults to `"INHERIT"`.
+
+`SubnetId` - (Optional) Subnet ID to attach to.
+
+`Tenancy` - (Optional) Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`.
+
+`VirtualizationType` - (Optional) Keyword to choose what virtualization mode created instances will use. Can be either `"paravirtual"` or `"hvm"`.
+
+`RootBlockDevice` - (Optional) Customize details about the root block device of the instance. See [Block Devices](#block-devices) below for details.
+
+`EbsBlockDevice` - (Optional) Additional EBS block devices to attach to the instance.  See [Block Devices](#block-devices) below for details.
+
+`EphemeralBlockDevice` - (Optional) Customize Ephemeral (also known as "Instance Store") volumes on the instance. See [Block Devices](#block-devices) below for details.
+
 
 ## Return Values
 

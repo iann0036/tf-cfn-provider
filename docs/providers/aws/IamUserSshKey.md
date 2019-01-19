@@ -4,7 +4,14 @@ Uploads an SSH public key and associates it with the specified IAM user.
 
 ## Properties
 
-TBC
+`Username` - (Required) The name of the IAM user to associate the SSH public key with.
+
+`Encoding` - (Required) Specifies the public key encoding format to use in the response. To retrieve the public key in ssh-rsa format, use `SSH`. To retrieve the public key in PEM format, use `PEM`.
+
+`PublicKey` - (Required) The SSH public key. The public key must be encoded in ssh-rsa format or PEM format.
+
+`Status` - (Optional) The status to assign to the SSH public key. Active means the key can be used for authentication with an AWS CodeCommit repository. Inactive means the key cannot be used. Default is `active`.
+
 
 ## Return Values
 

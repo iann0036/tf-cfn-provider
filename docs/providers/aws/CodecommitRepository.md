@@ -8,7 +8,12 @@ in all regions - available regions are listed
 
 ## Properties
 
-TBC
+`RepositoryName` - (Required) The name for the repository. This needs to be less than 100 characters.
+
+`Description` - (Optional) The description of the repository. This needs to be less than 1000 characters.
+
+`DefaultBranch` - (Optional) The default branch of the repository. The branch specified here needs to exist.
+
 
 ## Return Values
 

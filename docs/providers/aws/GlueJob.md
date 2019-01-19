@@ -4,7 +4,8 @@ Provides a Glue Job resource.
 
 ## Properties
 
-TBC
+`SecurityConfiguration` - (Optional) The name of the Security Configuration to be associated with the job.
+
 
 ## Return Values
 

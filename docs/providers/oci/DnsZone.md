@@ -6,7 +6,28 @@ Creates a new zone in the specified compartment.
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) (Updatable) The OCID of the compartment the resource belongs to.
+
+`DefinedTags` - (Optional) (Updatable) Usage of predefined tag keys. These predefined keys are scoped to a namespace. Example: `{"foo-namespace.bar-key": "value"}`.
+
+`ExternalMasters` - (Optional) (Updatable) External master servers for the zone. `externalMasters` becomes a required parameter when the `zoneType` value is `SECONDARY`. * `Address` - (Required) (Updatable) The server's IP address (IPv4 or IPv6). * `Port` - (Optional) (Updatable) The server's port. Port value must be a value of 53, otherwise omit the port value. * `Tsig` - (Optional) (Updatable) * `Algorithm` - (Required) (Updatable) TSIG Algorithms are encoded as domain names, but most consist of only one non-empty label, which is not required to be explicitly absolute. Applicable algorithms include: hmac-sha1, hmac-sha224, hmac-sha256, hmac-sha512. For more information on these algorithms, see [RFC 4635](https://tools.ietf.org/html/rfc4635#section-2). * `Name` - (Required) (Updatable) A domain name identifying the key for a given pair of hosts. * `Secret` - (Required) (Updatable) A base64 string encoding the binary shared secret.
+
+`Address` - (Required) (Updatable) The server's IP address (IPv4 or IPv6). * `Port` - (Optional) (Updatable) The server's port. Port value must be a value of 53, otherwise omit the port value. * `Tsig` - (Optional) (Updatable) * `Algorithm` - (Required) (Updatable) TSIG Algorithms are encoded as domain names, but most consist of only one non-empty label, which is not required to be explicitly absolute. Applicable algorithms include: hmac-sha1, hmac-sha224, hmac-sha256, hmac-sha512. For more information on these algorithms, see [RFC 4635](https://tools.ietf.org/html/rfc4635#section-2). * `Name` - (Required) (Updatable) A domain name identifying the key for a given pair of hosts. * `Secret` - (Required) (Updatable) A base64 string encoding the binary shared secret.
+
+`Port` - (Optional) (Updatable) The server's port. Port value must be a value of 53, otherwise omit the port value. * `Tsig` - (Optional) (Updatable) * `Algorithm` - (Required) (Updatable) TSIG Algorithms are encoded as domain names, but most consist of only one non-empty label, which is not required to be explicitly absolute. Applicable algorithms include: hmac-sha1, hmac-sha224, hmac-sha256, hmac-sha512. For more information on these algorithms, see [RFC 4635](https://tools.ietf.org/html/rfc4635#section-2). * `Name` - (Required) (Updatable) A domain name identifying the key for a given pair of hosts. * `Secret` - (Required) (Updatable) A base64 string encoding the binary shared secret.
+
+`Tsig` - (Optional) (Updatable) * `Algorithm` - (Required) (Updatable) TSIG Algorithms are encoded as domain names, but most consist of only one non-empty label, which is not required to be explicitly absolute. Applicable algorithms include: hmac-sha1, hmac-sha224, hmac-sha256, hmac-sha512. For more information on these algorithms, see [RFC 4635](https://tools.ietf.org/html/rfc4635#section-2). * `Name` - (Required) (Updatable) A domain name identifying the key for a given pair of hosts. * `Secret` - (Required) (Updatable) A base64 string encoding the binary shared secret.
+
+`Algorithm` - (Required) (Updatable) TSIG Algorithms are encoded as domain names, but most consist of only one non-empty label, which is not required to be explicitly absolute. Applicable algorithms include: hmac-sha1, hmac-sha224, hmac-sha256, hmac-sha512. For more information on these algorithms, see [RFC 4635](https://tools.ietf.org/html/rfc4635#section-2). * `Name` - (Required) (Updatable) A domain name identifying the key for a given pair of hosts. * `Secret` - (Required) (Updatable) A base64 string encoding the binary shared secret.
+
+`Name` - (Required) The name of the zone.
+
+`Secret` - (Required) (Updatable) A base64 string encoding the binary shared secret.
+
+`FreeformTags` - (Optional) (Updatable) Simple key-value pair that is applied without any predefined name, type, or scope. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"bar-key": "value"}`.
+
+`ZoneType` - (Required) The type of the zone. Must be either `PRIMARY` or `SECONDARY`.
+
 
 ## Return Values
 

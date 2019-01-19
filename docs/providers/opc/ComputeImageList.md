@@ -1,10 +1,15 @@
 # Terraform::OPC::ComputeImageList
 
-The ``opc_compute_image_list`` resource creates and manages an Image List in an Oracle Cloud Infrastructure Compute Classic identity domain.
+The ``Terraform::OPC::ComputeImageList`` resource creates and manages an Image List in an Oracle Cloud Infrastructure Compute Classic identity domain.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the Image List.
+
+`Description` - (Required) A description of the Image List.
+
+`Default` - (Required) The image list entry to be used, by default, when launching instances using this image list. Defaults to `1`.
+
 
 ## See Also
 

@@ -4,7 +4,10 @@ Provides a WAF Regional Regex Match Set Resource
 
 ## Properties
 
-TBC
+`Name` - (Required) The name or description of the Regex Match Set.
+
+`RegexMatchTuple` - (Required) The regular expression pattern that you want AWS WAF to search for in web requests, the location in requests that you want AWS WAF to search, and other settings. See below.
+
 
 ## Return Values
 

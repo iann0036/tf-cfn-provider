@@ -4,7 +4,12 @@ Provides a Heroku Space resource for managing app permissions for the entire spa
 
 ## Properties
 
-TBC
+`Space` - (Required) The name of the space.
+
+`Email` - (Required) The email of the team member to set permissions for.
+
+`Permissions` - (Required) The permissions to grant the team member for the space. Currently `create_apps` is the only supported permission. If not provided the member will have no permissions to the space. Members with admin role will always have `create_apps` permissions, which cannot be removed.
+
 
 ## See Also
 

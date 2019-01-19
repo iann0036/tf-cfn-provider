@@ -4,7 +4,14 @@ Provides an SSM Maintenance Window Target resource
 
 ## Properties
 
-TBC
+`WindowId` - (Required) The Id of the maintenance window to register the target with.
+
+`ResourceType` - (Required) The type of target being registered with the Maintenance Window. Possible values `INSTANCE`.
+
+`Targets` - (Required) The targets (either instances or tags). Instances are specified using Key=instanceids,Values=instanceid1,instanceid2. Tags are specified using Key=tag name,Values=tag value.
+
+`OwnerInformation` - (Optional) User-provided value that will be included in any CloudWatch events raised while running tasks for these targets in this Maintenance Window.
+
 
 ## Return Values
 

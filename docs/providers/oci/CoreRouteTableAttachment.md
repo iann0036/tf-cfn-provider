@@ -6,7 +6,10 @@ Attaches the specified `route table` to the specified `subnet`.
 
 ## Properties
 
-TBC
+`SubnetId` - (Required) The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the subnet.
+
+`RouteTableId` - (Required) The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the route table.
+
 
 ## Return Values
 

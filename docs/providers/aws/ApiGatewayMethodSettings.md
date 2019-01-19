@@ -4,7 +4,14 @@ Provides an API Gateway Method Settings, e.g. logging or monitoring.
 
 ## Properties
 
-TBC
+`RestApiId` - (Required) The ID of the REST API.
+
+`StageName` - (Required) The name of the stage.
+
+`MethodPath` - (Required) Method path defined as `{resource_path}/{http_method}` for an individual method override, or `*/*` for overriding all methods in the stage.
+
+`Settings` - (Required) The settings block, see below.
+
 
 ## See Also
 

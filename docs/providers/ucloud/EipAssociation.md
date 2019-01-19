@@ -4,7 +4,12 @@ Provides an EIP Association resource for associating Elastic IP to UHost Instanc
 
 ## Properties
 
-TBC
+`EipId` - (Required) The ID of EIP.
+
+`ResourceId` - (Required) The ID of resource with EIP attached.
+
+`ResourceType` - (Required) **Deprecated**, attribute `ResourceType` is deprecated for optimizing parameters.
+
 
 ## See Also
 

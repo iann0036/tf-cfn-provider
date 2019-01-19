@@ -8,7 +8,10 @@ has a different policy assigned, the prior assignment will be silently deleted.
 
 ## Properties
 
-TBC
+`AssetId` - (Required) The OCID of the asset (e.g. a volume) to which to assign the policy.
+
+`PolicyId` - (Required) The OCID of the volume backup policy to assign to an asset.
+
 
 ## Return Values
 

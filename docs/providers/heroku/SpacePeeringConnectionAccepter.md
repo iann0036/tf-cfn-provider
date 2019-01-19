@@ -4,7 +4,10 @@ Provides a resource for accepting VPC peering requests to Heroku Private Spaces.
 
 ## Properties
 
-TBC
+`Space` - (Required) The name of the space.
+
+`VpcPeeringConnectionId` - (Required) The peering connection request ID.
+
 
 ## Return Values
 

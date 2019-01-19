@@ -6,7 +6,16 @@ Provides an AWS Config Delivery Channel.
 
 ## Properties
 
-TBC
+`Name` - (Optional) The name of the delivery channel. Defaults to `default`. Changing it recreates the resource.
+
+`S3BucketName` - (Required) The name of the S3 bucket used to store the configuration history.
+
+`S3KeyPrefix` - (Optional) The prefix for the specified S3 bucket.
+
+`SnsTopicArn` - (Optional) The ARN of the SNS topic that AWS Config delivers notifications to.
+
+`SnapshotDeliveryProperties` - (Optional) Options for how AWS Config delivers configuration snapshots. See below.
+
 
 ## Return Values
 

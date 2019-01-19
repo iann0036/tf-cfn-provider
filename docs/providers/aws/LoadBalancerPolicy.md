@@ -4,7 +4,14 @@ Provides a load balancer policy, which can be attached to an ELB listener or bac
 
 ## Properties
 
-TBC
+`LoadBalancerName` - (Required) The load balancer on which the policy is defined.
+
+`PolicyName` - (Required) The name of the load balancer policy.
+
+`PolicyTypeName` - (Required) The policy type.
+
+`PolicyAttribute` - (Optional) Policy attribute to apply to the policy.
+
 
 ## Return Values
 

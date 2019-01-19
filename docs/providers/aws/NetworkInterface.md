@@ -4,7 +4,26 @@ Provides an Elastic network interface (ENI) resource.
 
 ## Properties
 
-TBC
+`SubnetId` - (Required) Subnet ID to create the ENI in.
+
+`Description` - (Optional) A description for the network interface.
+
+`PrivateIps` - (Optional) List of private IPs to assign to the ENI.
+
+`PrivateIpsCount` - (Optional) Number of private IPs to assign to the ENI.
+
+`SecurityGroups` - (Optional) List of security group IDs to assign to the ENI.
+
+`Attachment` - (Optional) Block to define the attachment of the ENI. Documented below.
+
+`SourceDestCheck` - (Optional) Whether to enable source destination checking for the ENI. Default true.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
+`Instance` - (Required) ID of the instance to attach to.
+
+`DeviceIndex` - (Required) Integer to define the devices index.
+
 
 ## Return Values
 

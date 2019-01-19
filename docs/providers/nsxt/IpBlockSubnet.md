@@ -4,7 +4,16 @@ Provides a resource to configure IP block subnet on NSX-T manager
 
 ## Properties
 
-TBC
+`DisplayName` - (Optional) The display name of this resource. Defaults to ID if not set.
+
+`Description` - (Optional) Description of this resource.
+
+`BlockId` - (Required) Block id for which the subnet is created.
+
+`Size` - (Required) Represents the size or number of IP addresses in the subnet.
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this IP block subnet.
+
 
 ## Return Values
 

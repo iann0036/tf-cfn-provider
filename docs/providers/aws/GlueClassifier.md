@@ -6,7 +6,6 @@ Provides a Glue Classifier resource.
 
 ## Properties
 
-TBC
 
 ## Return Values
 

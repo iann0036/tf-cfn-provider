@@ -1,6 +1,6 @@
 # Terraform::AWS::ElbAttachment
 
-Attaches an EC2 instance to an Elastic Load Balancer (ELB). For attaching resources with Application Load Balancer (ALB) or Network Load Balancer (NLB), see the [`aws_lb_target_group_attachment` resource](/docs/providers/aws/r/lb_target_group_attachment.html).
+Attaches an EC2 instance to an Elastic Load Balancer (ELB). For attaching resources with Application Load Balancer (ALB) or Network Load Balancer (NLB), see the [`Terraform::AWS::LbTargetGroupAttachment` resource](/docs/providers/aws/r/lb_target_group_attachment.html).
 
 ~> **NOTE on ELB Instances and ELB Attachments:** Terraform currently provides
 both a standalone ELB Attachment resource (describing an instance attached to
@@ -11,7 +11,10 @@ conflict and will overwrite attachments.
 
 ## Properties
 
-TBC
+`Elb` - (Required) The name of the ELB.
+
+`Instance` - (Required) Instance ID to place in the ELB pool.
+
 
 ## See Also
 

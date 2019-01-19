@@ -4,7 +4,10 @@ Provides a MediaStore Container Policy.
 
 ## Properties
 
-TBC
+`ContainerName` - (Required) The name of the container.
+
+`Policy` - (Required) The contents of the policy. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](/docs/providers/aws/guides/iam-policy-documents.html).
+
 
 ## See Also
 

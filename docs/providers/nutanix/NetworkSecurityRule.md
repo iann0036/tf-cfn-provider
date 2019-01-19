@@ -4,7 +4,6 @@ Provides a Nutanix network security rule resource to Create a network security r
 
 ## Properties
 
-TBC
 
 ## Return Values
 

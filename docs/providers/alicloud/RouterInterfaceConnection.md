@@ -13,7 +13,16 @@ After that, all of the two router interfaces will be active.
 
 ## Properties
 
-TBC
+`InterfaceId` - (Required, ForceNew) One side router interface ID.
+
+`OppositeInterfaceId` - (Required, ForceNew) Another side router interface ID. It must belong the specified "opposite_interface_owner_id" account.
+
+`OppositeInterfaceOwnerId` - (Optional, ForceNew) Another side router interface account ID. Log on to the Alibaba Cloud console, select User Info > Account Management to check the account ID. Default to [Provider account_id](https://www.terraform.io/docs/providers/alicloud/index.html#account_id).
+
+`OppositeRouterId` - (Optional, ForceNew) Another side router ID. It must belong the specified "opposite_interface_owner_id" account. It is valid when field "opposite_interface_owner_id" is specified.
+
+`OppositeRouterType` - (Optional, ForceNew) Another side router Type. Optional value: VRouter, VBR. It is valid when field "opposite_interface_owner_id" is specified.
+
 
 ## Return Values
 

@@ -20,7 +20,10 @@ It does not have to be unique, and you can change it. Avoid entering confidentia
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) The OCID of the compartment to contain the cross-connect group.
+
+`DisplayName` - (Optional) (Updatable) A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
+
 
 ## Return Values
 

@@ -4,13 +4,16 @@ Provides an AWS Elemental MediaPackage Channel.
 
 ## Properties
 
-TBC
+`ChannelId` - (Required) A unique identifier describing the channel.
+
+`Description` - (Optional) A description of the channel.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Id` - The same as `channel_id`.
+`Id` - The same as `ChannelId`.
 
 `Arn` - The ARN of the channel.
 

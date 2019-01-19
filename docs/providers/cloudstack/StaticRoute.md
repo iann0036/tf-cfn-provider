@@ -4,7 +4,10 @@ Creates a static route for the given private gateway or VPC.
 
 ## Properties
 
-TBC
+`Cidr` - (Required) The CIDR for the static route. Changing this forces a new resource to be created.
+
+`GatewayId` - (Required) The ID of the Private gateway. Changing this forces a new resource to be created.
+
 
 ## Return Values
 

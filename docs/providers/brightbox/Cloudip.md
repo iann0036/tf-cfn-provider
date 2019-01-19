@@ -4,7 +4,12 @@ Provides a Brightbox CloudIP resource.
 
 ## Properties
 
-TBC
+`Target` - (Required) The CloudIP mapping target. This is the interface from a server, or the id of a load balancer or cloud sql resource.
+
+`Name` - (Optional) a label to assign to the CloudIP.
+
+`ReverseDns` - (Optional) The reverse DNS entry for the CloudIP.
+
 
 ## Return Values
 

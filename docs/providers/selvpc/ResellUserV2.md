@@ -4,7 +4,12 @@ Manages a V2 user resource within Resell Selectel VPC.
 
 ## Properties
 
-TBC
+`Name` - (Required) Name of the user. Changing this updates the name of the existing user.
+
+`Password` - (Required) Password of the user. Changing this updates the password of the existing user.
+
+`Enabled` - (Optional) Enabled state of the user. Changing this updates the enabled state of the existing user.
+
 
 ## See Also
 

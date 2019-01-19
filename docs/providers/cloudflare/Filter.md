@@ -4,7 +4,18 @@ Filter expressions that can be referenced across multiple features, e.g. [Firewa
 
 ## Properties
 
-TBC
+`Zone` - (Optional) The DNS zone to which the Filter should be added. Will be resolved to `ZoneId` upon creation.
+
+`ZoneId` - (Optional) The DNS zone to which the Filter should be added.
+
+`Paused` - (Optional) Whether this filter is currently paused. Boolean value.
+
+`Expression` - (Required) The filter expression to be used.
+
+`Description` - (Optional) A note that you can use to describe the purpose of the filter.
+
+`Ref` - (Optional) Short reference tag to quickly select related rules.
+
 
 ## Return Values
 

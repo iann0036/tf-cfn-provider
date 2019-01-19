@@ -4,7 +4,14 @@ Manages a Public IP on 1&1
 
 ## Properties
 
-TBC
+`IpType` - (Required) IP type. Can be `IPV4` or `IPV6`.
+
+`ReverseDns` - (Optional).
+
+`Datacenter` - (Optional) Location of desired 1and1 datacenter. Can be `DE`, `GB`, `US` or `ES`.
+
+`IpAddress` - (Computed) The IP address.
+
 
 ## See Also
 

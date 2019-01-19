@@ -4,7 +4,12 @@ Provides an API Gateway Resource.
 
 ## Properties
 
-TBC
+`RestApiId` - (Required) The ID of the associated REST API.
+
+`ParentId` - (Required) The ID of the parent API resource.
+
+`PathPart` - (Required) The last path segment of this API resource.
+
 
 ## Return Values
 

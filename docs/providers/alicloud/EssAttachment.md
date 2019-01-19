@@ -8,7 +8,12 @@ Attaches several ECS instances to a specified scaling group or remove them from 
 
 ## Properties
 
-TBC
+`ScalingGroupId` - (Required) ID of the scaling group of a scaling configuration.
+
+`InstanceIds` - (Required) ID of the ECS instance to be attached to the scaling group. You can input up to 20 IDs.
+
+`Force` - (Optional) Whether to remove forcibly "AutoCreated" ECS instances in order to release scaling group capacity "MaxSize" for attaching ECS instances. Default to false.
+
 
 ## Return Values
 

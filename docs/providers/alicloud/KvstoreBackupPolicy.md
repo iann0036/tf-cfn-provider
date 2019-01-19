@@ -4,7 +4,12 @@ Provides a backup policy for ApsaraDB Redis / Memcache instance resource.
 
 ## Properties
 
-TBC
+`InstanceId` - (Required) The id of ApsaraDB for Redis or Memcache intance.
+
+`BackupTime` - (Required) Backup time, in the format of HH:mmZ- HH:mm Z.
+
+`BackupPeriod` - (Required) Backup Cycle. Allowed values: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.
+
 
 ## Return Values
 

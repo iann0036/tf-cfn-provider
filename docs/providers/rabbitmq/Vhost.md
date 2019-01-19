@@ -1,10 +1,11 @@
 # Terraform::RabbitMQ::Vhost
 
-The ``rabbitmq_vhost`` resource creates and manages a vhost.
+The ``Terraform::RabbitMQ::Vhost`` resource creates and manages a vhost.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the vhost.
+
 
 ## See Also
 

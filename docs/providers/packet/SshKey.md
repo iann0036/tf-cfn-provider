@@ -7,7 +7,10 @@ device creation.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the SSH key for identification.
+
+`PublicKey` - (Required) The public key. If this is a file, it can be read using the file interpolation function.
+
 
 ## Return Values
 

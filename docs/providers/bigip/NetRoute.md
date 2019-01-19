@@ -1,12 +1,15 @@
 # Terraform::BIGIP::NetRoute
 
-`bigip_net_route` Manages a route configuration
+`Terraform::BIGIP::NetRoute` Manages a route configuration
 
 For resources should be named with their "full path". The full path is the combination of the partition + name of the resource. For example /Common/my-pool.
 
 ## Properties
 
-TBC
+`Name` - (Required) Name of the route.
+
+`Network` - (Optional) Specifies a gateway address for the route.
+
 
 ## See Also
 

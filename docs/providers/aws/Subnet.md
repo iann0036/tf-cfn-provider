@@ -4,7 +4,22 @@ Provides an VPC subnet resource.
 
 ## Properties
 
-TBC
+`AvailabilityZone` - (Optional) The AZ for the subnet.
+
+`AvailabilityZoneId` - (Optional) The AZ ID of the subnet.
+
+`CidrBlock` - (Required) The CIDR block for the subnet.
+
+`Ipv6CidrBlock` - (Optional) The IPv6 network range for the subnet, in CIDR notation. The subnet size must use a /64 prefix length.
+
+`MapPublicIpOnLaunch` -  (Optional) Specify true to indicate that instances launched into the subnet should be assigned a public IP address. Default is `false`.
+
+`AssignIpv6AddressOnCreation` - (Optional) Specify true to indicate that network interfaces created in the specified subnet should be assigned an IPv6 address. Default is `false`.
+
+`VpcId` - (Required) The VPC ID.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

@@ -4,7 +4,10 @@ Provides a SSM resource data sync.
 
 ## Properties
 
-TBC
+`Name` - (Required) Name for the configuration.
+
+`S3Destination` - (Required) Amazon S3 configuration details for the sync.
+
 
 ## See Also
 

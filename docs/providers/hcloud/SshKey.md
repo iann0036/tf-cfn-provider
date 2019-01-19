@@ -4,7 +4,6 @@ Provides a Hetzner Cloud SSH key resource to manage SSH keys for server access.
 
 ## Properties
 
-TBC
 
 ## See Also
 

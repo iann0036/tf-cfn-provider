@@ -4,7 +4,20 @@ Manages an Authorization Rule associated with a Notification Hub within a Notifi
 
 ## Properties
 
-TBC
+`Name` - (Required) The name to use for this Authorization Rule. Changing this forces a new resource to be created.
+
+`NotificationHubName` - (Required) The name of the Notification Hub for which the Authorization Rule should be created. Changing this forces a new resource to be created.
+
+`NamespaceName` - (Required) The name of the Notification Hub Namespace in which the Notification Hub exists. Changing this forces a new resource to be created.
+
+`ResourceGroupName` - (Required) The name of the Resource Group in which the Notification Hub Namespace exists. Changing this forces a new resource to be created.
+
+`Manage` - (Optional) Does this Authorization Rule have Manage access to the Notification Hub? Defaults to `false`.
+
+`Send` - (Optional) Does this Authorization Rule have Send access to the Notification Hub? Defaults to `false`.
+
+`Listen` - (Optional) Does this Authorization Rule have Listen access to the Notification Hub? Defaults to `false`.
+
 
 ## Return Values
 

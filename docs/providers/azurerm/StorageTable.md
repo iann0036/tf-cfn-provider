@@ -4,7 +4,12 @@ Manage an Azure Storage Table.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the storage table. Must be unique within the storage account the table is located.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the storage table. Changing this forces a new resource to be created.
+
+`StorageAccountName` - (Required) Specifies the storage account in which to create the storage table. Changing this forces a new resource to be created.
+
 
 ## Return Values
 

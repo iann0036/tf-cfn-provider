@@ -4,7 +4,8 @@ Provides a Inspector assessment target
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the assessment target.
+
 
 ## Return Values
 

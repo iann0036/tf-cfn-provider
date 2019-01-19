@@ -2,9 +2,9 @@
 
 This resource allows you to add/update/delete a specific interface in a zone.
 
-This resource has some overlap with the `panos_zone`
+This resource has some overlap with the `Terraform::Panos::Zone`
 resource.  If you want to use this resource with the other one, then make
-sure that your `panos_zone` spec does not define the
+sure that your `Terraform::Panos::Zone` spec does not define the
 `interfaces` field.
 
 This is the appropriate resource to use if you have a pre-existing zone
@@ -12,7 +12,14 @@ and don't want Terraform to delete it on `terraform destroy`.
 
 ## Properties
 
-TBC
+`Vsys` - (Optional) The vsys (default: `vsys1`).
+
+`Zone` - (Required) The zone's name.
+
+`Mode` - (Optional) The mode.  Can be `layer3` (default), `layer2`, `virtual-wire`, `tap`, or `external`.
+
+`Interface` - (Required) The interface's name.
+
 
 ## See Also
 

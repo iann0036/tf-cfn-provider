@@ -5,7 +5,10 @@ You can manage all the logs and the related log sources of an application by usi
 
 ## Properties
 
-TBC
+`Name` - (Required, ForceNew) The name of the log project. It is the only in one Alicloud account.
+
+`Description` - (ForceNew) Description of the log project. At present, it is not modified by terraform.
+
 
 ## Return Values
 

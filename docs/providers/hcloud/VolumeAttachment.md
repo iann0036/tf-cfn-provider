@@ -4,7 +4,6 @@ Provides a Hetzner Cloud Volume attachment to attach a Volume to a Hetzner Cloud
 
 ## Properties
 
-TBC
 
 ## See Also
 

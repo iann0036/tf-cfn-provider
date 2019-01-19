@@ -6,7 +6,14 @@ obtained from Keybase.
 
 ## Properties
 
-TBC
+`User` - (Required) The IAM user's name.
+
+`PgpKey` - (Required) Either a base-64 encoded PGP public key, or a keybase username in the form `keybase:username`.
+
+`PasswordResetRequired` - (Optional, default "true") Whether the user should be forced to reset the generated password on first login.
+
+`PasswordLength` - (Optional, default 20) The length of the generated password.
+
 
 ## Return Values
 

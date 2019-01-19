@@ -4,7 +4,10 @@
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the http namespace.
+
+`Description` - (Optional) The description that you specify for the namespace when you create it.
+
 
 ## Return Values
 

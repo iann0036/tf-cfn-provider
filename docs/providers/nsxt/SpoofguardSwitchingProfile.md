@@ -4,7 +4,14 @@ Provides a resource to configure spoofguard switching profile on NSX-T manager
 
 ## Properties
 
-TBC
+`Description` - (Optional) Description of this resource.
+
+`DisplayName` - (Optional) The display name of this resource. Defaults to ID if not set.
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this spoofguard switching profile.
+
+`AddressBindingWhitelistEnabled` - (Optional) A boolean flag indicating whether this profile overrides the default system wide settings for Spoof Guard when assigned to ports.
+
 
 ## Return Values
 

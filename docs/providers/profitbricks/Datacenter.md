@@ -4,7 +4,12 @@ Manages a Virtual Data Center on ProfitBricks.
 
 ## Properties
 
-TBC
+`Name` - (Required)[string] The name of the Virtual Data Center.
+
+`Location` - (Required)[string] The regional location where the Virtual Data Center will be created.
+
+`Description` - (Optional)[string] Description for the Virtual Data Center.
+
 
 ## See Also
 

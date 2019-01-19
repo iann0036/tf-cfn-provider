@@ -14,7 +14,16 @@ and
 
 ## Properties
 
-TBC
+`RoleId` - (Required) The role id to use for this role.
+
+`OrgId` - (Required) The numeric ID of the organization in which you want to create a custom role.
+
+`Title` - (Required) A human-readable title for the role.
+
+`Stage` - (Optional) The current launch stage of the role. Defaults to `GA`. List of possible stages is [here](https://cloud.google.com/iam/reference/rest/v1/organizations.roles#Role.RoleLaunchStage).
+
+`Description` - (Optional) A human-readable description for the role.
+
 
 ## Return Values
 

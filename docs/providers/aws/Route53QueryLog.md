@@ -10,7 +10,10 @@ See [Configuring Logging for DNS Queries](https://docs.aws.amazon.com/Route53/la
 
 ## Properties
 
-TBC
+`CloudwatchLogGroupArn` - (Required) CloudWatch log group ARN to send query logs.
+
+`ZoneId` - (Required) Route53 hosted zone ID to enable query logs.
+
 
 ## Return Values
 

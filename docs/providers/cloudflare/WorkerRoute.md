@@ -1,10 +1,13 @@
 # Terraform::Cloudflare::WorkerRoute
 
-Provides a Cloudflare worker route resource. A route will also require a `cloudflare_worker_script`.
+Provides a Cloudflare worker route resource. A route will also require a `Terraform::Cloudflare::WorkerScript`.
 
 ## Properties
 
-TBC
+`Zone` - (Required) The zone to add the route to.
+
+`Pattern` - (Required) The [route pattern](https://developers.cloudflare.com/workers/api/route-matching/).
+
 
 ## Return Values
 

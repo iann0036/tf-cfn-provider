@@ -4,7 +4,6 @@ cluster management
 
 ## Properties
 
-TBC
 
 ## See Also
 

@@ -4,7 +4,10 @@ Provides a resource to create a VPC Internet Gateway.
 
 ## Properties
 
-TBC
+`VpcId` - (Required) The VPC ID to create in.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

@@ -1,6 +1,6 @@
 # Terraform::Random::Pet
 
-The resource `random_pet` generates random pet names that are intended to be
+The resource `Terraform::Random::Pet` generates random pet names that are intended to be
 used as unique identifiers for other resources.
 
 This resource can be used in conjunction with resources that have
@@ -10,7 +10,14 @@ exist concurrently.
 
 ## Properties
 
-TBC
+`Keepers` - (Optional) Arbitrary map of values that, when changed, will trigger a new id to be generated. See [the main provider documentation](../index.html) for more information.
+
+`Length` - (Optional) The length (in words) of the pet name.
+
+`Prefix` - (Optional) A string to prefix the name with.
+
+`Separator` - (Optional) The character to separate words in the pet name.
+
 
 ## See Also
 

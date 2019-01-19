@@ -5,7 +5,10 @@ Platform folder.
 
 ## Properties
 
-TBC
+`Folder` - (Required) The resource name of the folder the policy is attached to. Its format is folders/{folder_id}.
+
+`PolicyData` - (Required) The `Terraform::Google::IamPolicy` data source that represents the IAM policy that will be applied to the folder. This policy overrides any existing policy applied to the folder.
+
 
 ## Return Values
 

@@ -4,7 +4,10 @@ Provides a VPC DHCP Options Association resource.
 
 ## Properties
 
-TBC
+`VpcId` - (Required) The ID of the VPC to which we would like to associate a DHCP Options Set.
+
+`DhcpOptionsId` - (Required) The ID of the DHCP Options Set to associate to the VPC.
+
 
 ## Return Values
 

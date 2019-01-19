@@ -2,7 +2,7 @@
 
 Provides an Alicloud EIP Association resource for associating Elastic IP to ECS Instance, SLB Instance or Nat Gateway.
 
-~> **NOTE:** `alicloud_eip_association` is useful in scenarios where EIPs are either
+~> **NOTE:** `Terraform::Alicloud::EipAssociation` is useful in scenarios where EIPs are either
  pre-existing or distributed to customers or users and therefore cannot be changed.
 
 ~> **NOTE:** From version 1.7.1, the resource support to associate EIP to SLB Instance or Nat Gateway.
@@ -11,7 +11,10 @@ Provides an Alicloud EIP Association resource for associating Elastic IP to ECS 
 
 ## Properties
 
-TBC
+`AllocationId` - (Required, ForcesNew) The allocation EIP ID.
+
+`InstanceId` - (Required, ForcesNew) The ID of the ECS or SLB instance or Nat Gateway.
+
 
 ## Return Values
 

@@ -4,7 +4,10 @@ Provides a resource which manages Cloudflare account members.
 
 ## Properties
 
-TBC
+`EmailAddress` - (Required) The email address of the user who you wish to manage. Note: Following creation, this field becomes read only via the API and cannot be updated.
+
+`RoleIds` - (Required) Array of account role IDs that you want to assign to a member.
+
 
 ## See Also
 

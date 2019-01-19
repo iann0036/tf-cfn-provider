@@ -1,19 +1,22 @@
 # Terraform::OVH::PubliccloudUser
 
-__DEPRECATED__ use `ovh_cloud_user` instead.
+__DEPRECATED__ use `Terraform::OVH::CloudUser` instead.
 Creates a user in a public cloud project.
 
 ## Properties
 
-TBC
+`ProjectId` - (Required) The id of the public cloud project. If omitted, the `OVH_PROJECT_ID` environment variable is used.
+
+`Description` - A description associated with the user.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`ProjectId` - See Argument Reference above.
+`ProjectId` - See Properties above.
 
-`Description` - See Argument Reference above.
+`Description` - See Properties above.
 
 `Username` - the username generated for the user. This username can be used with.
 

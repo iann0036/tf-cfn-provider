@@ -4,7 +4,18 @@
 
 ## Properties
 
-TBC
+`Path` - (Required) Where the secret backend will be mounted.
+
+`Type` - (Required) Type of the backend, such as "aws".
+
+`Description` - (Optional) Human-friendly description of the mount.
+
+`DefaultLeaseTtlSeconds` - (Optional) Default lease duration for tokens and secrets in seconds.
+
+`MaxLeaseTtlSeconds` - (Optional) Maximum possible lease duration for tokens and secrets in seconds.
+
+`Options` - (Optional) Specifies mount type specific options that are passed to the backend.
+
 
 ## Return Values
 

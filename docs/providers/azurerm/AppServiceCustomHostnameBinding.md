@@ -4,7 +4,12 @@ Manages a Hostname Binding within an App Service.
 
 ## Properties
 
-TBC
+`Hostname` - (Required) Specifies the Custom Hostname to use for the App Service, example `www.example.com`. Changing this forces a new resource to be created.
+
+`AppServiceName` - (Required) The name of the App Service in which to add the Custom Hostname Binding. Changing this forces a new resource to be created.
+
+`ResourceGroupName` - (Required) The name of the resource group in which the App Service exists. Changing this forces a new resource to be created.
+
 
 ## Return Values
 

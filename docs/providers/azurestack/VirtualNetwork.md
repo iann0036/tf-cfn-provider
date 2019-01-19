@@ -9,7 +9,24 @@ At this time you cannot use a Virtual Network with in-line Subnets in conjunctio
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the subnet.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the virtual network.
+
+`AddressSpace` - (Required) The address space that is used the virtual network. You can supply more than one address space. Changing this forces a new resource to be created.
+
+`Location` - (Required) The location/region where the virtual network is created. Changing this forces a new resource to be created.
+
+`DnsServers` - (Optional) List of IP addresses of DNS servers.
+
+`Subnet` - (Optional) Can be specified multiple times to define multiple subnets. Each `Subnet` block supports fields documented below.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
+`AddressPrefix` - (Required) The address prefix to use for the subnet.
+
+`SecurityGroup` - (Optional) The Network Security Group to associate with the subnet. (Referenced by `id`, ie. `Terraform::AzureStack::NetworkSecurityGroup.test.id`).
+
 
 ## Return Values
 

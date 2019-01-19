@@ -7,7 +7,16 @@ Manages a Key Vault Secret.
 
 ## Properties
 
-TBC
+`Name` - (Required) Specifies the name of the Key Vault Secret. Changing this forces a new resource to be created.
+
+`Value` - (Required) Specifies the value of the Key Vault Secret.
+
+`VaultUri` - (Required) Specifies the URI used to access the Key Vault instance, available on the `Terraform::AzureRM::KeyVault` resource.
+
+`ContentType` - (Optional) Specifies the content type for the Key Vault Secret.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

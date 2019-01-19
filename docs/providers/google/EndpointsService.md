@@ -4,7 +4,6 @@ This resource creates and rolls out a Cloud Endpoints service using OpenAPI or g
 
 ## Properties
 
-TBC
 
 ## See Also
 

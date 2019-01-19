@@ -4,7 +4,6 @@ mls instance
 
 ## Properties
 
-TBC
 
 ## See Also
 

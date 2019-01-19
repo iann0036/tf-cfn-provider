@@ -4,7 +4,10 @@ Provides a proxy protocol policy, which allows an ELB to carry a client connecti
 
 ## Properties
 
-TBC
+`LoadBalancer` - (Required) The load balancer to which the policy should be attached.
+
+`InstancePorts` - (Required) List of instance ports to which the policy should be applied. This can be specified if the protocol is SSL or TCP.
+
 
 ## Return Values
 

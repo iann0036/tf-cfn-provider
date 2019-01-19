@@ -11,7 +11,10 @@ used once. Both resources cannot be used for the same team simultaneously.
 
 ## Properties
 
-TBC
+`TeamId` - (Required) ID of the team.
+
+`Usernames` - (Required) Names of the users to add.
+
 
 ## Return Values
 

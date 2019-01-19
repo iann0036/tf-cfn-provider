@@ -4,7 +4,8 @@ Provides an EIP resource.
 
 ## Properties
 
-TBC
+`Name` - (Optional) The eip's name.
+
 
 ## Return Values
 

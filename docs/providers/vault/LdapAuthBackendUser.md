@@ -4,7 +4,14 @@ Provides a resource to create a user in an [LDAP auth backend within Vault](http
 
 ## Properties
 
-TBC
+`Username` - (Required) The LDAP username.
+
+`Policies` - (Optional) Policies which should be granted to user.
+
+`Groups` - (Optional) Override LDAP groups which should be granted to user.
+
+`Backend` - (Optional) Path to the authentication backend.
+
 
 ## See Also
 

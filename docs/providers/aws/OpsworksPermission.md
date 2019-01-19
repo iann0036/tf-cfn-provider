@@ -4,7 +4,16 @@ Provides an OpsWorks permission resource.
 
 ## Properties
 
-TBC
+`AllowSsh` - (Optional) Whether the user is allowed to use SSH to communicate with the instance.
+
+`AllowSudo` - (Optional) Whether the user is allowed to use sudo to elevate privileges.
+
+`UserArn` - (Required) The user's IAM ARN to set permissions for.
+
+`Level` - (Optional) The users permission level. Mus be one of `deny`, `show`, `deploy`, `manage`, `iam_only`.
+
+`StackId` - (Required) The stack to set the permissions for.
+
 
 ## Return Values
 

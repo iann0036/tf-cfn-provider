@@ -6,7 +6,22 @@ particular resource.
 
 ## Properties
 
-TBC
+`ApplicationId` - (Required) The ID of the application the policy is associated with.
+
+`ZoneId` - (Required) The DNS zone to which the access rule should be added.
+
+`Decision` - (Required) The complete URL of the asset you wish to put Cloudflare Access in front of. Can include subdomains or paths. Or both.
+
+`Name` - (Required) Friendly name of the Access Application.
+
+`Precedence` - (Optional) The unique precedence for policies on a single application. Integer.
+
+`Require` - (Optional) A series of access conditions, see below for full list.
+
+`Exclude` - (Optional) A series of access conditions, see below for full list.
+
+`Include` - (Required) A series of access conditions, see below for full list.
+
 
 ## See Also
 

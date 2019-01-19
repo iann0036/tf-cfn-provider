@@ -10,7 +10,8 @@ where the Shared VPC feature is referred to by its former name "XPN".
 
 ## Properties
 
-TBC
+`Project` - (Required) The ID of the project that will serve as a Shared VPC host project.
+
 
 ## See Also
 

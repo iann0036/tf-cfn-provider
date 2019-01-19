@@ -4,7 +4,20 @@ Provides a resource to configure IP discovery switching profile on NSX-T manager
 
 ## Properties
 
-TBC
+`Description` - (Optional) Description of this resource.
+
+`DisplayName` - (Optional) The display name of this resource. Defaults to ID if not set.
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this IP discovery switching profile.
+
+`ArpSnoopingEnabled` - (Optional) A boolean flag iIndicates whether ARP snooping is enabled.
+
+`VmToolsEnabled` - (Optional) A boolean flag iIndicates whether VM tools will be enabled. This option is only supported on ESX where vm-tools is installed.
+
+`DhcpSnoopingEnabled` - (Optional) A boolean flag iIndicates whether DHCP snooping is enabled.
+
+`ArpBindingsLimit` - (Optional) Limit for the amount of ARP bindings.
+
 
 ## Return Values
 

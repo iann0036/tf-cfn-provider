@@ -5,7 +5,14 @@ Provides a resource to manage CA information in an SSH secret backend
 
 ## Properties
 
-TBC
+`Backend` - (Optional) The path where the SSH secret backend is mounted. Defaults to 'ssh'.
+
+`GenerateSigningKey` - (Optional) Whether Vault should generate the signing key pair internally. Defaults to true.
+
+`PublicKey` - (Optional) The public key part the SSH CA key pair; required if generate_signing_key is false.
+
+`PrivateKey` - (Optional) The private key part the SSH CA key pair; required if generate_signing_key is false.
+
 
 ## See Also
 

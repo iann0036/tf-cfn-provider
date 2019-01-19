@@ -4,7 +4,14 @@ An [outgoing webhook](https://www.netlify.com/docs/webhooks/#outgoing-webhooks-a
 
 ## Properties
 
-TBC
+`SiteId` - (Required) - id of the site on netlify.
+
+`Type` - (Required) - type of outgoing webhook, for example slack, email, github commit status, etc.
+
+`Event` - (Required) - when to send the data, for example on deploy create, succeed, fail, etc.
+
+`Data` - (Required) object/hash of data to be sent along with the webhook. this varies depending on the `Type`.
+
 
 ## See Also
 

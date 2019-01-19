@@ -8,7 +8,10 @@ propagation not explicitly listed in its value will be removed.
 
 ## Properties
 
-TBC
+`VpnGatewayId` - The id of the `Terraform::AWS::VpnGateway` to propagate routes from.
+
+`RouteTableId` - The id of the `Terraform::AWS::RouteTable` to propagate routes into.
+
 
 ## See Also
 

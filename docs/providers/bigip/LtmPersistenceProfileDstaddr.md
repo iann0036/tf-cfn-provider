@@ -4,7 +4,6 @@ Configures a cookie persistence profile
 
 ## Properties
 
-TBC
 
 ## See Also
 

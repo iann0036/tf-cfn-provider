@@ -16,7 +16,14 @@ as the VCN. For more information about compartments and access control, see
 
 ## Properties
 
-TBC
+`DisplayName` - (Optional) (Updatable) A user-friendly name. Does not have to be unique. Avoid entering confidential information.
+
+`DrgId` - (Required) The OCID of the DRG.
+
+`RouteTableId` - (Optional) (Updatable) The OCID of the route table the DRG attachment will use.
+
+`VcnId` - (Required) The OCID of the VCN.
+
 
 ## Return Values
 

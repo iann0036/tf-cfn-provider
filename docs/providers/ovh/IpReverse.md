@@ -4,7 +4,12 @@ Provides a OVH IP reverse.
 
 ## Properties
 
-TBC
+`Ip` - (Required) The IP block to which the IP belongs.
+
+`Reverse` - (Required) The value of the reverse.
+
+`Ipreverse` - (Optional) The IP to set the reverse of, default to `Ip` if `Ip` is a /32 (IPv4) or a /128 (IPv6).
+
 
 ## Return Values
 

@@ -5,7 +5,8 @@ For additional details please refer to [API documentation](https://developer.sca
 
 ## Properties
 
-TBC
+`Key` - (Required) public key of the SSH key to be added.
+
 
 ## Return Values
 

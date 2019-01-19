@@ -4,7 +4,6 @@ Provides a Hetzner Cloud Floating IP to represent a publicly-accessible static I
 
 ## Properties
 
-TBC
 
 ## See Also
 

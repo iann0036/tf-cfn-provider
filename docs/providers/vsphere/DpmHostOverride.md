@@ -1,6 +1,6 @@
 # Terraform::VSphere::DpmHostOverride
 
-The `vsphere_dpm_host_override` resource can be used to add a DPM override to a
+The `Terraform::VSphere::DpmHostOverride` resource can be used to add a DPM override to a
 cluster for a particular host. This allows you to control the power management
 settings for individual hosts in the cluster while leaving any unspecified ones
 at the default power management settings.
@@ -17,7 +17,14 @@ connections.
 
 ## Properties
 
-TBC
+`ComputeClusterId` - (Required) The [managed object reference ID][docs-about-morefs] of the cluster to put the override in.  Forces a new resource if changed.
+
+`HostSystemIds` - (Optional) The [managed object ID][docs-about-morefs] of the host to create the override for.
+
+`DpmEnabled` - (Optional) Enable DPM support for this host. Default: `false`.
+
+`DpmAutomationLevel` - (Optional) The automation level for host power operations on this host. Can be one of `manual` or `automated`. Default: `manual`.
+
 
 ## See Also
 

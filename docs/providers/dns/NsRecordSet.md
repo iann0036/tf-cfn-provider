@@ -4,19 +4,26 @@ Creates a NS type DNS record set.
 
 ## Properties
 
-TBC
+`Zone` - (Required) DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
+
+`Name` - (Required) The name of the record set. The `Zone` argument will be appended to this value to create the full record path.
+
+`Nameservers` - (Required) The nameservers this record set will point to.
+
+`Ttl` - (Optional) The TTL of the record set. Defaults to `3600`.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Zone` - See Argument Reference above.
+`Zone` - See Properties above.
 
-`Name` - See Argument Reference above.
+`Name` - See Properties above.
 
-`Nameservers` - See Argument Reference above.
+`Nameservers` - See Properties above.
 
-`Ttl` - See Argument Reference above.
+`Ttl` - See Properties above.
 
 ## See Also
 

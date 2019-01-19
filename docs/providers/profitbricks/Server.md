@@ -4,7 +4,6 @@ Manages a Server on ProfitBricks.
 
 ## Properties
 
-TBC
 
 ## See Also
 

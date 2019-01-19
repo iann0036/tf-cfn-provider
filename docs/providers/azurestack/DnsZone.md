@@ -4,7 +4,12 @@ Enables you to manage DNS zones within Azure DNS. These zones are hosted on Azur
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the DNS Zone. Must be a valid domain name.
+
+`ResourceGroupName` - (Required) Specifies the resource group where the resource exists. Changing this forces a new resource to be created.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

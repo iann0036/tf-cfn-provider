@@ -3,18 +3,21 @@
 Allows management of the entire IAM policy for an existing Google Cloud Platform Billing Account.
 
 ~> **Warning:** Billing accounts have a default user that can be **overwritten**
-by use of this resource. The safest alternative is to use multiple `google_billing_account_iam_binding`
+by use of this resource. The safest alternative is to use multiple `Terraform::Google::BillingAccountIamBinding`
    resources. If you do use this resource, the best way to be sure that you are
    not making dangerous changes is to start by importing your existing policy,
    and examining the diff very closely.
 
 ~> **Note:** This resource __must not__ be used in conjunction with
-   `google_billing_account_iam_member` or `google_billing_account_iam_binding`
+   `Terraform::Google::BillingAccountIamMember` or `googleBillingAccountIamBinding`
    or they will fight over what your policy should be.
 
 ## Properties
 
-TBC
+`BillingAccountId` - (Required) The billing account id.
+
+`PolicyData` - (Required) The `Terraform::Google::IamPolicy` data source that represents the IAM policy that will be applied to the billing account. This policy overrides any existing policy applied to the billing account.
+
 
 ## See Also
 

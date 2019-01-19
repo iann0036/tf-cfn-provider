@@ -8,7 +8,16 @@ For information about Server Certificate and how to use it, see [Configure Serve
 
 ## Properties
 
-TBC
+`Name` - (Optional) Name of the Server Certificate.
+
+`ServerCertificate` - (Optional, ForceNew) the content of the ssl certificate. where `AlicloudCertificateId` is null, it is required, otherwise it is ignored.
+
+`PrivateKey` - (Optional, ForceNew) the content of privat key of the ssl certificate specified by `ServerCertificate`. where `AlicloudCertificateId` is null, it is required, otherwise it is ignored.
+
+`AlicloudCertificateId` - (Optional) an id of server certificate ssued/proxied by alibaba cloud. but it is not supported on the international site of alibaba cloud now.
+
+`AlicloudCertificateName` - (Optional) the name of the certificate specified by `AlicloudCertificateId`.but it is not supported on the international site of alibaba cloud now.
+
 
 ## Return Values
 

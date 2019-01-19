@@ -4,7 +4,8 @@ The dashboard resource allows a dashboard to be created on a Grafana server.
 
 ## Properties
 
-TBC
+`ConfigJson` - (Required) The JSON configuration for the dashboard.
+
 
 ## Return Values
 

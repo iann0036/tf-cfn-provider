@@ -1,10 +1,19 @@
 # Terraform::OPC::ComputeAcl
 
-The ``opc_compute_acl`` resource creates and manages an ACL in an Oracle Cloud Infrastructure Compute Classic identity domain.
+The ``Terraform::OPC::ComputeAcl`` resource creates and manages an ACL in an Oracle Cloud Infrastructure Compute Classic identity domain.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the ACL.
+
+`Enabled` - (Optional) Enables or disables the ACL. Set to true by default.
+
+`Description` - (Optional) A description of the ACL.
+
+`Tags` - (Optional) List of tags that may be applied to the ACL.
+
+`Uri` - The Uniform Resource Identifier for the ACL.
+
 
 ## See Also
 

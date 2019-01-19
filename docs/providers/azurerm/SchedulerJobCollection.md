@@ -6,7 +6,26 @@ Manages a Scheduler Job Collection.
 
 ## Properties
 
-TBC
+`Name` - (Required) Specifies the name of the Scheduler Job Collection. Changing this forces a new resource to be created.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the Scheduler Job Collection. Changing this forces a new resource to be created.
+
+`Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
+`Sku` - (Required) Sets the Job Collection's pricing level's SKU. Possible values include: `Standard`, `Free`, `P10Premium`, `P20Premium`.
+
+`State` - (Optional) Sets Job Collection's state. Possible values include: `Enabled`, `Disabled`, `Suspended`.
+
+`Quota` - (Optional) Configures the Job collection quotas as documented in the `Quota` block below.
+
+`MaxJobCount` - (Optional) Sets the maximum number of jobs in the collection.
+
+`MaxRecurrenceFrequency` - (Required) The maximum frequency of recurrence. Possible values include: `Minute`, `Hour`, `Day`, `Week`, `Month`.
+
+`MaxRecurrenceInterval` - (Optional) The maximum interval between recurrence.
+
 
 ## Return Values
 

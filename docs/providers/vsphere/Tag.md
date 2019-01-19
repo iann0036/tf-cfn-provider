@@ -1,6 +1,6 @@
 # Terraform::VSphere::Tag
 
-The `vsphere_tag` resource can be used to create and manage tags, which allow
+The `Terraform::VSphere::Tag` resource can be used to create and manage tags, which allow
 you to attach metadata to objects in the vSphere inventory to make these
 objects more sortable and searchable.
 
@@ -13,7 +13,12 @@ requires vCenter 6.0 or higher.
 
 ## Properties
 
-TBC
+`Name` - (Required) The display name of the tag. The name must be unique within its category.
+
+`CategoryId` - (Required) The unique identifier of the parent category in which this tag will be created. Forces a new resource if changed.
+
+`Description` - (Optional) A description for the tag.
+
 
 ## See Also
 

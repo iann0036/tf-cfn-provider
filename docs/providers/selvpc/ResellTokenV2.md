@@ -7,7 +7,10 @@ the `X-Auth-Token` value.
 
 ## Properties
 
-TBC
+`ProjectId` - (Optional) An associated Selectel VPC project. Changing this creates a new token.
+
+`AccountName` - (Optional) An associated Selectel VPC account. Changing this creates a new token.
+
 
 ## See Also
 

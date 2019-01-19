@@ -4,7 +4,8 @@ Provides a MediaStore Container.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the container. Must contain alphanumeric characters or underscores.
+
 
 ## Return Values
 

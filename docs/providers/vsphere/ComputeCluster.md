@@ -4,15 +4,15 @@
 hosts in the UI and documentation as _clusters_, _HA clusters_, or _DRS
 clusters_. All of these refer to the same kind of resource (with the latter two
 referring to specific features of clustering). In Terraform, we use
-`vsphere_compute_cluster` to differentiate host clusters from _datastore
+`Terraform::VSphere::ComputeCluster` to differentiate host clusters from _datastore
 clusters_, which are clusters of datastores that can be used to distribute load
 and ensure fault tolerance via distribution of virtual machines. Datastore
 clusters can also be managed through Terraform, via the
-[`vsphere_datastore_cluster` resource][docs-r-vsphere-datastore-cluster].
+[`Terraform::VSphere::DatastoreCluster` resource][docs-r-vsphere-datastore-cluster].
 
 [docs-r-vsphere-datastore-cluster]: /docs/providers/vsphere/r/datastore_cluster.html
 
-The `vsphere_compute_cluster` resource can be used to create and manage
+The `Terraform::VSphere::ComputeCluster` resource can be used to create and manage
 clusters of hosts allowing for resource control of compute resources, load
 balancing through DRS, and high availability through vSphere HA.
 
@@ -30,7 +30,16 @@ connections.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the cluster.
+
+`DatacenterId` - (Required) The [managed object ID][docs-about-morefs] of the datacenter to create the cluster in. Forces a new resource if changed.
+
+`Folder` - (Optional) The relative path to a folder to put this cluster in. This is a path relative to the datacenter you are deploying the cluster to. Example: for the `dc1` datacenter, and a provided `Folder` of `foo/bar`, Terraform will place a cluster named `terraform-compute-cluster-test` in a host folder located at `/dc1/host/foo/bar`, with the final inventory path being `/dc1/host/foo/bar/terraform-datastore-cluster-test`.
+
+`Tags` - (Optional) The IDs of any tags to attach to this resource. See [here][docs-applying-tags] for a reference on how to apply tags.
+
+`CustomAttributes` - (Optional) A map of custom attribute ids to attribute value strings to set for the datastore cluster. See [here][docs-setting-custom-attributes] for a reference on how to set values for custom attributes.
+
 
 ## See Also
 

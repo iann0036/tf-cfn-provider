@@ -5,7 +5,7 @@ Registers a custom domain name for use with AWS API Gateway.
 This resource just establishes ownership of and the TLS settings for
 a particular domain name. An API can be attached to a particular path
 under the registered domain name using
-[the `aws_api_gateway_base_path_mapping` resource](api_gateway_base_path_mapping.html).
+[the `Terraform::AWS::ApiGatewayBasePathMapping` resource](api_gateway_base_path_mapping.html).
 
 API Gateway domains can be defined as either 'edge-optimized' or 'regional'.  In an edge-optimized configuration,
 API Gateway internally creates and manages a CloudFront distribution to route requests on the given hostname. In
@@ -23,7 +23,24 @@ the `regional_domain_name` attribute.
 
 ## Properties
 
-TBC
+`DomainName` - (Required) The fully-qualified domain name to register.
+
+`EndpointConfiguration` - (Optional) Configuration block defining API endpoint information including type. Defined below.
+
+`CertificateArn` - (Optional) The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `CertificateName`, `CertificateBody`, `CertificateChain`, `CertificatePrivateKey`, `RegionalCertificateArn`, and `RegionalCertificateName`.
+
+`RegionalCertificateArn` - (Optional) The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `CertificateArn`, `CertificateName`, `CertificateBody`, `CertificateChain`, and `CertificatePrivateKey`.
+
+`CertificateName` - (Optional) The unique name to use when registering this certificate as an IAM server certificate. Conflicts with `CertificateArn`, `RegionalCertificateArn`, and `RegionalCertificateName`. Required if `CertificateArn` is not set.
+
+`CertificateBody` - (Optional) The certificate issued for the domain name being registered, in PEM format. Only valid for `EDGE` endpoint configuration type. Conflicts with `CertificateArn`, `RegionalCertificateArn`, and `RegionalCertificateName`.
+
+`CertificateChain` - (Optional) The certificate for the CA that issued the certificate, along with any intermediate CA certificates required to create an unbroken chain to a certificate trusted by the intended API clients. Only valid for `EDGE` endpoint configuration type. Conflicts with `CertificateArn`, `RegionalCertificateArn`, and `RegionalCertificateName`.
+
+`CertificatePrivateKey` - (Optional) The private key associated with the domain certificate given in `CertificateBody`. Only valid for `EDGE` endpoint configuration type. Conflicts with `CertificateArn`, `RegionalCertificateArn`, and `RegionalCertificateName`.
+
+`RegionalCertificateName` - (Optional) The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `CertificateArn`, `CertificateName`, `CertificateBody`, `CertificateChain`, and `CertificatePrivateKey`.
+
 
 ## Return Values
 

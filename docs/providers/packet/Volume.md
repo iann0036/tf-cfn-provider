@@ -3,12 +3,27 @@
 Provides a Packet Block Storage Volume resource to allow you to
 manage block volumes on your account.
 Once created by Terraform, they must then be attached and mounted
-using the api and `packet_block_attach` and `packet_block_detach`
+using the api and `Terraform::Packet::BlockAttach` and `packetBlockDetach`
 scripts.
 
 ## Properties
 
-TBC
+`Plan` - (Required) The service plan slug of the volume.
+
+`Facility` - (Required) The facility to create the volume in.
+
+`ProjectId` - (Required) The packet project ID to deploy the volume in.
+
+`Size` - (Required) The size in GB to make the volume.
+
+`BillingCycle` - The billing cycle, defaults to "hourly".
+
+`Description` - Optional description for the volume.
+
+`SnapshotPolicies` - Optional list of snapshot policies.
+
+`Locked` - Lock or unlock the volume.
+
 
 ## Return Values
 

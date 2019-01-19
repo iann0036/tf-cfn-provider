@@ -4,7 +4,6 @@ Provides a resource to create a subnet based on the input parameters. A subnet i
 
 ## Properties
 
-TBC
 
 ## Return Values
 

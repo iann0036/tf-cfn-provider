@@ -5,7 +5,8 @@ Read more about namespaces at [Kubernetes reference](https://kubernetes.io/docs/
 
 ## Properties
 
-TBC
+`Metadata` - (Required) Standard namespace's [metadata](https://github.com/kubernetes/community/blob/e59e666e3464c7d4851136baa8835a311efdfb8e/contributors/devel/api-conventions.md#metadata).
+
 
 ## See Also
 

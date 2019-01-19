@@ -6,7 +6,28 @@ Create an instance pool.
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) The OCID of the compartment containing the instance pool.
+
+`DefinedTags` - (Optional) (Updatable) Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
+
+`DisplayName` - (Optional) (Updatable) The displayName of the vnic. This is also use to match against the Instance Configuration defined secondary vnic. * `SubnetId` - (Required) (Updatable) The subnet OCID for the secondary vnic.
+
+`FreeformTags` - (Optional) (Updatable) Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
+
+`InstanceConfigurationId` - (Required) (Updatable) The OCID of the instance configuration associated to the instance pool.
+
+`PlacementConfigurations` - (Required) (Updatable) The placement configurations for the instance pool. There should be 1 placement configuration for each desired AD. * `AvailabilityDomain` - (Required) (Updatable) The availability domain to place instances. Example: `Uocm:PHX-AD-1` * `PrimarySubnetId` - (Required) (Updatable) The OCID of the primary subnet to place instances. * `SecondaryVnicSubnets` - (Optional) (Updatable) The set of secondary VNIC data for instances in the pool. * `DisplayName` - (Optional) (Updatable) The displayName of the vnic. This is also use to match against the Instance Configuration defined secondary vnic. * `SubnetId` - (Required) (Updatable) The subnet OCID for the secondary vnic.
+
+`AvailabilityDomain` - (Required) (Updatable) The availability domain to place instances. Example: `Uocm:PHX-AD-1` * `PrimarySubnetId` - (Required) (Updatable) The OCID of the primary subnet to place instances. * `SecondaryVnicSubnets` - (Optional) (Updatable) The set of secondary VNIC data for instances in the pool. * `DisplayName` - (Optional) (Updatable) The displayName of the vnic. This is also use to match against the Instance Configuration defined secondary vnic. * `SubnetId` - (Required) (Updatable) The subnet OCID for the secondary vnic.
+
+`PrimarySubnetId` - (Required) (Updatable) The OCID of the primary subnet to place instances. * `SecondaryVnicSubnets` - (Optional) (Updatable) The set of secondary VNIC data for instances in the pool. * `DisplayName` - (Optional) (Updatable) The displayName of the vnic. This is also use to match against the Instance Configuration defined secondary vnic. * `SubnetId` - (Required) (Updatable) The subnet OCID for the secondary vnic.
+
+`SecondaryVnicSubnets` - (Optional) (Updatable) The set of secondary VNIC data for instances in the pool. * `DisplayName` - (Optional) (Updatable) The displayName of the vnic. This is also use to match against the Instance Configuration defined secondary vnic. * `SubnetId` - (Required) (Updatable) The subnet OCID for the secondary vnic.
+
+`SubnetId` - (Required) (Updatable) The subnet OCID for the secondary vnic.
+
+`Size` - (Required) (Updatable) The number of instances that should be in the instance pool.
+
 
 ## Return Values
 

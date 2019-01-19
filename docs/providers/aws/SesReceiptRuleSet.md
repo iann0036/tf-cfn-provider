@@ -4,7 +4,8 @@ Provides an SES receipt rule set resource
 
 ## Properties
 
-TBC
+`RuleSetName` - (Required) The name of the rule set.
+
 
 ## See Also
 

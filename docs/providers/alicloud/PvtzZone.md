@@ -2,11 +2,14 @@
 
 Provides a Private Zone resource.
 
-~> **NOTE:** Terraform will auto Create a Private Zone while it uses `alicloud_pvtz_zone` to build a Private Zone resource.
+~> **NOTE:** Terraform will auto Create a Private Zone while it uses `Terraform::Alicloud::PvtzZone` to build a Private Zone resource.
 
 ## Properties
 
-TBC
+`Name` - (Required, Forces new resource) The name of the Private Zone.
+
+`Remark` - (Optional) The remark of the Private Zone.
+
 
 ## Return Values
 

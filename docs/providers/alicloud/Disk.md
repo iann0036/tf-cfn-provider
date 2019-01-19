@@ -2,11 +2,26 @@
 
 Provides a ECS disk resource.
 
-~> **NOTE:** One of `size` or `snapshot_id` is required when specifying an ECS disk. If all of them be specified, `size` must more than the size of snapshot which `snapshot_id` represents. Currently, `alicloud_disk` doesn't resize disk.
+~> **NOTE:** One of `Size` or `SnapshotId` is required when specifying an ECS disk. If all of them be specified, `Size` must more than the size of snapshot which `SnapshotId` represents. Currently, `Terraform::Alicloud::Disk` doesn't resize disk.
 
 ## Properties
 
-TBC
+`AvailabilityZone` - (Required, Forces new resource) The Zone to create the disk in.
+
+`Name` - (Optional) Name of the ECS disk. This name can have a string of 2 to 128 characters, must contain only alphanumeric characters or hyphens, such as "-",".","_", and must not begin or end with a hyphen, and must not begin with http:// or https://. Default value is null.
+
+`Description` - (Optional) Description of the disk. This description can have a string of 2 to 256 characters, It cannot begin with http:// or https://. Default value is null.
+
+`Category` - (Optional, Forces new resource) Category of the disk. Valid values are `cloud`, `cloud_efficiency` and `cloud_ssd`. Default is `cloud_efficiency`.
+
+`Size` - (Required) The size of the disk in GiBs. When resize the disk, the new size must be greater than the former value, or you would get an error `InvalidDiskSize.TooSmall`.
+
+`SnapshotId` - (Optional) A snapshot to base the disk off of. If the disk size required by snapshot is greater than `Size`, the `Size` will be ignored.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
+`Encrypted` - (Optional) If true, the disk will be encrypted.
+
 
 ## Return Values
 

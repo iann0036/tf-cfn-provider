@@ -5,11 +5,16 @@ resource.
 
 An app release represents a combination of code, config vars and add-ons for an app on Heroku.
 
-~> **NOTE:** This resource requires the slug be uploaded to Heroku using [`heroku_slug`](slug.html) or with external tooling prior to running terraform.
+~> **NOTE:** This resource requires the slug be uploaded to Heroku using [`Terraform::Heroku::Slug`](slug.html) or with external tooling prior to running terraform.
 
 ## Properties
 
-TBC
+`App` - (Required) The name of the application.
+
+`SlugId` - unique identifier of slug.
+
+`Description` - description of changes in this release.
+
 
 ## Return Values
 

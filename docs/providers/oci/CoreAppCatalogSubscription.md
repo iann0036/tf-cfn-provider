@@ -6,7 +6,20 @@ Create a subscription for listing resource version for a compartment. It will ta
 
 ## Properties
 
-TBC
+`CompartmentId` - (Optional) The compartmentID for the subscription.
+
+`EulaLink` - (Optional) EULA link.
+
+`ListingId` - (Optional) The OCID of the listing.
+
+`ListingResourceVersion` - (Optional) Listing resource version.
+
+`OracleTermsOfUseLink` - (Optional) Oracle TOU link.
+
+`Signature` - (Optional) A generated signature for this listing resource version retrieved the agreements API.
+
+`TimeRetrieved` - (Optional) Date and time the agreements were retrieved, in RFC3339 format. Example: `2018-03-20T12:32:53.532Z`.
+
 
 ## Return Values
 

@@ -8,7 +8,12 @@ For information about CEN and how to use it, see [Cross-region interconnection b
 
 ## Properties
 
-TBC
+`InstanceId` - (Required) The ID of the CEN.
+
+`RegionIds` - (Required) List of the two regions to interconnect. Must be two different regions.
+
+`BandwidthLimit` - (Required) The bandwidth configured for the interconnected regions communication.
+
 
 ## See Also
 

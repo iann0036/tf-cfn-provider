@@ -6,7 +6,18 @@ Creates a pre-authenticated request specific to the bucket.
 
 ## Properties
 
-TBC
+`AccessType` - (Required) The operation that can be performed on this resource.
+
+`Bucket` - (Required) The name of the bucket. Avoid entering confidential information. Example: `my-new-bucket1`.
+
+`Name` - (Required) A user-specified name for the pre-authenticated request. Helpful for management purposes.
+
+`Namespace` - (Required) The top-level namespace used for the request.
+
+`Object` - (Optional) The name of object that is being granted access to by the pre-authenticated request. This can be null and if it is, the pre-authenticated request grants access to the entire bucket.
+
+`TimeExpires` - (Required) The expiration date for the pre-authenticated request as per [RFC 3339](https://tools.ietf.org/rfc/rfc3339). After this date the pre-authenticated request will no longer be valid.
+
 
 ## Return Values
 

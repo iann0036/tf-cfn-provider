@@ -5,7 +5,14 @@ and deleted.
 
 ## Properties
 
-TBC
+`Hostname` - (Required) The hostname the notification applies to.
+
+`Command` - (Required) Notification command to use.
+
+`Users` - (Required) List of users to notification.
+
+`Servicename` - (Optional) Service to send notification for.
+
 
 ## See Also
 

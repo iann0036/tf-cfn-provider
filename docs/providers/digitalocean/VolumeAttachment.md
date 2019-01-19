@@ -2,11 +2,14 @@
 
 Manages attaching a Volume to a Droplet.
 
-~> **NOTE:** Volumes can be attached either directly on the `digitalocean_droplet` resource, or using the `digitalocean_volume_attachment` resource - but the two cannot be used together. If both are used against the same Droplet, the volume attachments will constantly drift.
+~> **NOTE:** Volumes can be attached either directly on the `Terraform::DigitalOcean::Droplet` resource, or using the `digitaloceanVolumeAttachment` resource - but the two cannot be used together. If both are used against the same Droplet, the volume attachments will constantly drift.
 
 ## Properties
 
-TBC
+`DropletId` - (Required) ID of the Droplet to attach the volume to.
+
+`VolumeId` - (Required) ID of the Volume to be attached to the Droplet.
+
 
 ## Return Values
 

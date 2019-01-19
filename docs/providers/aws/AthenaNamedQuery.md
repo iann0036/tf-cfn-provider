@@ -4,7 +4,14 @@ Provides an Athena Named Query resource.
 
 ## Properties
 
-TBC
+`Name` - (Required) The plain language name for the query. Maximum length of 128.
+
+`Database` - (Required) The database to which the query belongs.
+
+`Query` - (Required) The text of the query itself. In other words, all query statements. Maximum length of 262144.
+
+`Description` - (Optional) A brief explanation of the query. Maximum length of 1024.
+
 
 ## Return Values
 

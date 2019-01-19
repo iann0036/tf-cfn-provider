@@ -6,7 +6,10 @@ it runs commands.
 
 ## Properties
 
-TBC
+`Path` - (Required) The path within the key store where the key will be stored.
+
+`KeyMaterial` - (Required) The private key material to store, serialized in any way that is accepted by OpenSSH.
+
 
 ## See Also
 

@@ -4,7 +4,6 @@ Manages a set of firewall rules on ProfitBricks.
 
 ## Properties
 
-TBC
 
 ## See Also
 

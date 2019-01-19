@@ -8,7 +8,6 @@ ElastiCache cluster **inside** of a VPC. If you are on EC2 Classic, see the
 
 ## Properties
 
-TBC
 
 ## See Also
 

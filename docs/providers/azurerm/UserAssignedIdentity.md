@@ -4,7 +4,14 @@ Manages a user assigned identity.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the user assigned identity. Changing this forces a new identity to be created.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the user assigned identity.
+
+`Location` - (Required) The location/region where the user assigned identity is created.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

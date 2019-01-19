@@ -6,7 +6,12 @@ Manages a LoadBalancer Backend Address Pool.
 
 ## Properties
 
-TBC
+`Name` - (Required) Specifies the name of the Backend Address Pool.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the resource.
+
+`LoadbalancerId` - (Required) The ID of the LoadBalancer in which to create the Backend Address Pool.
+
 
 ## Return Values
 

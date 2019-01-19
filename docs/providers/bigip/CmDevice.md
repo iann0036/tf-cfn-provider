@@ -1,12 +1,11 @@
 # Terraform::BIGIP::CmDevice
 
-`bigip_cm_device` provides details about a specific bigip
+`Terraform::BIGIP::CmDevice` provides details about a specific bigip
 
 This resource is helpful when configuring the BIG-IP device in cluster or in HA mode.
 
 ## Properties
 
-TBC
 
 ## See Also
 

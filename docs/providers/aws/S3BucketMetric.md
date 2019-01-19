@@ -4,7 +4,16 @@ Provides a S3 bucket [metrics configuration](http://docs.aws.amazon.com/AmazonS3
 
 ## Properties
 
-TBC
+`Bucket` - (Required) The name of the bucket to put metric configuration.
+
+`Name` - (Required) Unique identifier of the metrics configuration for the bucket.
+
+`Filter` - (Optional) [Object filtering](http://docs.aws.amazon.com/AmazonS3/latest/dev/metrics-configurations.html#metrics-configurations-filter) that accepts a prefix, tags, or a logical AND of prefix and tags (documented below).
+
+`Prefix` - (Optional) Object prefix for filtering (singular).
+
+`Tags` - (Optional) Object tags for filtering (up to 10).
+
 
 ## See Also
 

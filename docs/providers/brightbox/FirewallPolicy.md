@@ -4,7 +4,12 @@ Provides a Brightbox Firewall Policy resource.
 
 ## Properties
 
-TBC
+`ServerGroup` - (Optional) The ID of the Server Group the policy will be applied to.
+
+`Name` - (Optional) A label to assign to the Firewall Policy.
+
+`Description` - (Optional) A further description of the Firewall Policy.
+
 
 ## Return Values
 

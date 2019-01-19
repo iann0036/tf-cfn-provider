@@ -4,7 +4,8 @@ Provides a resource to manage GitHub repository collaborator invitations.
 
 ## Properties
 
-TBC
+`InvitationId` - (Required) ID of the invitation to accept.
+
 
 ## See Also
 

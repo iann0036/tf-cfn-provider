@@ -4,7 +4,14 @@ Provides a Rancher Registy resource. This can be used to create registries for r
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the registry.
+
+`Description` - (Optional) A registry description.
+
+`EnvironmentId` - (Required) The ID of the environment to create the registry for.
+
+`ServerAddress` - (Required) The server address for the registry.
+
 
 ## Return Values
 

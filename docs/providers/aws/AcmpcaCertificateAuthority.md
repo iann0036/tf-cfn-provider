@@ -6,7 +6,16 @@ Provides a resource to manage AWS Certificate Manager Private Certificate Author
 
 ## Properties
 
-TBC
+`CertificateAuthorityConfiguration` - (Required) Nested argument containing algorithms and certificate subject information. Defined below.
+
+`Enabled` - (Optional) Whether the certificate authority is enabled or disabled. Defaults to `true`.
+
+`RevocationConfiguration` - (Optional) Nested argument containing revocation configuration. Defined below.
+
+`Tags` - (Optional) Specifies a key-value map of user-defined tags that are attached to the certificate authority.
+
+`Type` - (Optional) The type of the certificate authority. Currently, this must be `SUBORDINATE`.
+
 
 ## See Also
 

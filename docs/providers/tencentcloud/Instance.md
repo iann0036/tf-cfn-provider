@@ -4,7 +4,10 @@ Provides CBS stoarge attachment resource.
 
 ## Properties
 
-TBC
+`StorageId` - (Required, Forces new resource) ID of the storage to be attached.
+
+`InstanceId` - (Required, Forces new resource) ID of the CVM instance to attache to.
+
 
 ## Return Values
 

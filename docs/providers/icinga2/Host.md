@@ -5,7 +5,16 @@ and deleted.
 
 ## Properties
 
-TBC
+`Address` - (Required) The address of the host.
+
+`CheckCommand` - (Required) The name of an existing Icinga2 CheckCommand object that is used to determine if the host is available or not.
+
+`Hostname` - (Required) The hostname of the host.
+
+`Templates` - (Optional) A list of Icinga2 templates to assign to the host.
+
+`Vars` - (Optional) A mapping of variables to assign to the host.
+
 
 ## See Also
 

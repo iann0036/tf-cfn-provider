@@ -4,7 +4,24 @@ An [escalation policy](https://v2.developer.pagerduty.com/v2/page/api-reference#
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the escalation policy.
+
+`Teams` - (Optional) Teams associated with the policy. Account must have the `Teams` ability to use this parameter.
+
+`Description` - (Optional) A human-friendly description of the escalation policy. If not set, a placeholder of "Managed by Terraform" will be set.
+
+`NumLoops` - (Optional) The number of times the escalation policy will repeat after reaching the end of its escalation.
+
+`Rule` - (Required) An Escalation rule block. Escalation rules documented below.
+
+`EscalationDelayInMinutes` - (Required) The number of minutes before an unacknowledged incident escalates away from this rule. * `Targets` - (Required) A target block. Target blocks documented below.
+
+`Targets` - (Required) A target block. Target blocks documented below.
+
+`Type` - (Optional) Can be `user`, `schedule`, `user_reference` or `schedule_reference`. Defaults to `user_reference` * `Id` - (Required) A target ID.
+
+`Id` - (Required) A target ID.
+
 
 ## Return Values
 

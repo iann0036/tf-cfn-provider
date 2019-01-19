@@ -4,7 +4,12 @@ Provides a resource to create a VPC NAT Gateway.
 
 ## Properties
 
-TBC
+`AllocationId` - (Required) The Allocation ID of the Elastic IP address for the gateway.
+
+`SubnetId` - (Required) The Subnet ID of the subnet in which to place the gateway.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

@@ -4,7 +4,10 @@ Manages a V1 DB database resource within OpenStack.
 
 ## Properties
 
-TBC
+`Name` - (Required) A unique name for the resource.
+
+`InstanceId` - (Required) The ID for the database instance.
+
 
 ## Return Values
 
@@ -12,9 +15,9 @@ TBC
 
 `Region` - Openstack region resource is created in.
 
-`Name` - See Argument Reference above.
+`Name` - See Properties above.
 
-`InstanceId` - See Argument Reference above.
+`InstanceId` - See Properties above.
 
 ## See Also
 

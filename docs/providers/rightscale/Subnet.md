@@ -4,7 +4,20 @@ Use this resource to create, update or destroy RightScale [subnets](http://refer
 
 ## Properties
 
-TBC
+`CloudHref` - (Required) Href of cloud you want to create the subnet in.
+
+`NetworkHref` - (Required) Href of network to create subnet in.
+
+`CidrBlock` - (Required) Subnet allocation range in CIDR notation.
+
+`Name` - (Optional) Subnet name.
+
+`Description` - (Optional) Subnet description.
+
+`DatacenterHref` - (Optional) Href of cloud datacenter to assign subnet to.
+
+`RouteTableHref` - (Optional) Sets the default route table for this subnet, useful if you create the route table with a different resource.
+
 
 ## Return Values
 

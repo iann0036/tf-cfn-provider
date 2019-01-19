@@ -14,7 +14,18 @@ block until the new AMI is available for use on new instances.
 
 ## Properties
 
-TBC
+`Name` - (Required) A region-unique name for the AMI.
+
+`SourceAmiId` - (Required) The id of the AMI to copy. This id must be valid in the region given by `SourceAmiRegion`.
+
+`SourceAmiRegion` - (Required) The region from which the AMI will be copied. This may be the same as the AWS provider region in order to create a copy within the same region.
+
+`Encrypted` - (Optional) Specifies whether the destination snapshots of the copied image should be encrypted. Defaults to `false`.
+
+`KmsKeyId` - (Optional) The full ARN of the KMS Key to use when encrypting the snapshots of an image during a copy operation. If not specified, then the default AWS KMS Key will be used.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

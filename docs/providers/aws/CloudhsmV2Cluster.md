@@ -13,7 +13,14 @@ To initialize cluster you have to sign CSR and upload it.
 
 ## Properties
 
-TBC
+`SourceBackupIdentifier` - (Optional) The id of Cloud HSM v2 cluster backup to be restored.
+
+`HsmType` - (Required) The type of HSM module in the cluster. Currently, only hsm1.medium is supported.
+
+`SubnetIds` - (Required) The IDs of subnets in which cluster will operate.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

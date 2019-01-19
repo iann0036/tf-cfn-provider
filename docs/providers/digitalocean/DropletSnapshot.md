@@ -4,7 +4,10 @@ Provides a resource which can be used to create a snapshot from an existing Digi
 
 ## Properties
 
-TBC
+`Name` - (Required) A name for the Droplet snapshot.
+
+`DropletId` - (Required) The ID of the Droplet from which the snapshot will be taken.
+
 
 ## Return Values
 

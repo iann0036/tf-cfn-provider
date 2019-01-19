@@ -17,7 +17,14 @@ for more details.
 
 ## Properties
 
-TBC
+`Path` - (Required) The full logical path at which to write the given data. To write data into the "generic" secret backend mounted in Vault by default, this should be prefixed with `secret/`. Writing to other backends with this resource is possible; consult each backend's documentation to see which endpoints support the `PUT` and `DELETE` methods.
+
+`DataJson` - (Required) String containing a JSON-encoded object that will be written as the secret data at the given path.
+
+`AllowRead` - (Optional, Deprecated) True/false. Set this to true if your vault authentication is able to read the data, this allows the resource to be compared and updated. Defaults to false.
+
+`DisableRead` - (Optional) True/false. Set this to true if your vault authentication is not able to read the data. Setting this to `true` will break drift detection. Defaults to false.
+
 
 ## See Also
 

@@ -4,7 +4,6 @@ Manages a Glue Security Configuration.
 
 ## Properties
 
-TBC
 
 ## Return Values
 

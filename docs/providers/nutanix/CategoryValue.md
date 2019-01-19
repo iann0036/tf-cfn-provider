@@ -4,7 +4,8 @@ Provides a Nutanix Category value resource to Create a category value.
 
 ## Properties
 
-TBC
+`Value` - (Required) The value for the category value.
+
 
 ## Return Values
 

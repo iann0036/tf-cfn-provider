@@ -4,7 +4,16 @@ This resource provides the ability to configure a logical router link port on a 
 
 ## Properties
 
-TBC
+`LogicalRouterId` - (Required) Identifier for logical tier-1 router on which this port is created.
+
+`LinkedLogicalSwitchPortId` - (Required) Identifier for port on logical Tier-0 router to connect to.
+
+`DisplayName` - (Optional) Display name, defaults to ID if not set.
+
+`Description` - (Optional) Description of the resource.
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this port.
+
 
 ## Return Values
 

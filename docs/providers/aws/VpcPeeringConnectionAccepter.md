@@ -5,13 +5,18 @@ Provides a resource to manage the accepter's side of a VPC Peering Connection.
 When a cross-account (requester's AWS account differs from the accepter's AWS account) or an inter-region
 VPC Peering Connection is created, a VPC Peering Connection resource is automatically created in the
 accepter's account.
-The requester can use the `aws_vpc_peering_connection` resource to manage its side of the connection
-and the accepter can use the `aws_vpc_peering_connection_accepter` resource to "adopt" its side of the
+The requester can use the `Terraform::AWS::VpcPeeringConnection` resource to manage its side of the connection
+and the accepter can use the `Terraform::AWS::VpcPeeringConnectionAccepter` resource to "adopt" its side of the
 connection into management.
 
 ## Properties
 
-TBC
+`VpcPeeringConnectionId` - (Required) The VPC Peering Connection ID to manage.
+
+`AutoAccept` - (Optional) Whether or not to accept the peering request. Defaults to `false`.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

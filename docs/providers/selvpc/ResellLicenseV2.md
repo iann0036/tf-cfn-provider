@@ -4,7 +4,12 @@ Manages a V2 license resource within Resell Selectel VPC.
 
 ## Properties
 
-TBC
+`ProjectId` - (Required) An associated Selectel VPC project. Changing this creates a new license.
+
+`Region` - (Required) A region of where the license resides. Changing this creates a new license.
+
+`Type` - (Required) The type of license. Changing this creates a new license.
+
 
 ## Return Values
 

@@ -4,7 +4,10 @@ Attaches a policy to an S3 bucket resource.
 
 ## Properties
 
-TBC
+`Bucket` - (Required) The name of the bucket to which to apply the policy.
+
+`Policy` - (Required) The text of the policy. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](/docs/providers/aws/guides/iam-policy-documents.html).
+
 
 ## See Also
 

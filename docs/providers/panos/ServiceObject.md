@@ -4,7 +4,20 @@ This resource allows you to add/update/delete service objects.
 
 ## Properties
 
-TBC
+`Name` - (Required) The service object's name.
+
+`Vsys` - (Optional) The vsys to put the service object into (default: `vsys1`).
+
+`Description` - (Optional) The service object's description.
+
+`Protocol` - (Required) The service's protocol.  This should be `tcp` or `udp`.
+
+`SourcePort` - (Optional) The source port.  This can be a single port number, range (1-65535), or comma separated (80,8080,443).
+
+`DestinationPort` - (Required) The destination port.  This can be a single port number, range (1-65535), or comma separated (80,8080,443).
+
+`Tags` - (Optional) List of administrative tags.
+
 
 ## See Also
 

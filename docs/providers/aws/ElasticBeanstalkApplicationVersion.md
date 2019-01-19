@@ -13,13 +13,24 @@ when attempting to delete an Application Version while it is still in use by a d
 To work around this you can:
 <ol>
 <li>Create each environment in a separate AWS account</li>
-<li>Create your `aws_elastic_beanstalk_application_version` resources with a unique names in your 
+<li>Create your `Terraform::AWS::ElasticBeanstalkApplicationVersion` resources with a unique names in your 
 Elastic Beanstalk Application. For example &lt;revision&gt;-&lt;environment&gt;.</li>
 </ol>
 
 ## Properties
 
-TBC
+`Name` - (Required) A unique name for the this Application Version.
+
+`Application` - (Required) Name of the Beanstalk Application the version is associated with.
+
+`Description` - (Optional) Short description of the Application Version.
+
+`Bucket` - (Required) S3 bucket that contains the Application Version source bundle.
+
+`Key` - (Required) S3 object that is the Application Version source bundle.
+
+`ForceDelete` - (Optional) On delete, force an Application Version to be deleted when it may be in use by multiple Elastic Beanstalk Environments.
+
 
 ## Return Values
 

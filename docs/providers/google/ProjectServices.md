@@ -14,7 +14,10 @@ For a list of services available, visit the
 
 ## Properties
 
-TBC
+`Project` - (Required) The project ID. Changing this forces Terraform to attempt to disable all previously managed API services in the previous project.
+
+`Services` - (Required) The list of services that are enabled. Supports update.
+
 
 ## See Also
 

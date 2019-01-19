@@ -5,7 +5,12 @@ create and manage notification services on Librato.
 
 ## Properties
 
-TBC
+`Type` - (Required) The type of notificaion.
+
+`Title` - (Required) The alert title.
+
+`Settings` - (Required) a JSON hash of settings specific to the alert type.
+
 
 ## Return Values
 

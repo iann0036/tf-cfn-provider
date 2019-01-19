@@ -9,7 +9,16 @@ Allows creation and management of an App Engine application.
 
 ## Properties
 
-TBC
+`LocationId` - (Required) The [location](https://cloud.google.com/appengine/docs/locations) to serve the app from.
+
+`AuthDomain` - (Optional) The domain to authenticate users with when using App Engine's User API.
+
+`ServingStatus` - (Optional) The serving status of the app.
+
+`FeatureSettings` - (Optional) A block of optional settings to configure specific App Engine features:.
+
+`SplitHealthChecks` - (Optional) Set to false to use the legacy health check instead of the readiness and liveness checks.
+
 
 ## Return Values
 

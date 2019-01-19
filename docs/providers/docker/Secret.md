@@ -4,7 +4,12 @@ Manages the secrets of a Docker service in a swarm.
 
 ## Properties
 
-TBC
+`Name` - (Required, string) The name of the Docker secret.
+
+`Data` - (Required, string) The base64 encoded data of the secret.
+
+`Labels` - (Optional, map of string/string key/value pairs) User-defined key/value metadata.
+
 
 ## See Also
 

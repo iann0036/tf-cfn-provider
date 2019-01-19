@@ -4,7 +4,12 @@ This resource allows you to create and manage projects for GitHub repository.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the project.
+
+`Repository` - (Required) The repository of the project.
+
+`Body` - (Optional) The body of the project.
+
 
 ## Return Values
 

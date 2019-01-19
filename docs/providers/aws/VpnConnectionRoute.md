@@ -4,7 +4,10 @@ Provides a static route between a VPN connection and a customer gateway.
 
 ## Properties
 
-TBC
+`DestinationCidrBlock` - (Required) The CIDR block associated with the local subnet of the customer network.
+
+`VpnConnectionId` - (Required) The ID of the VPN connection.
+
 
 ## See Also
 

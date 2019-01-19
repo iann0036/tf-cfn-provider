@@ -6,7 +6,14 @@ Manages an NFS Location within AWS DataSync.
 
 ## Properties
 
-TBC
+`OnPremConfig` - (Required) Configuration block containing information for connecting to the NFS File System.
+
+`ServerHostname` - (Required) Specifies the IP address or DNS name of the NFS server. The DataSync Agent(s) use this to mount the NFS server.
+
+`Subdirectory` - (Required) Subdirectory to perform actions as source or destination. Should be exported by the NFS server.
+
+`Tags` - (Optional) Key-value pairs of resource tags to assign to the DataSync Location.
+
 
 ## See Also
 

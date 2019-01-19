@@ -4,7 +4,12 @@ Provides a Cognito Resource Server.
 
 ## Properties
 
-TBC
+`Identifier` - (Required) An identifier for the resource server.
+
+`Name` - (Required) A name for the resource server.
+
+`Scope` - (Optional) A list of [Authorization Scope](#authorization_scope).
+
 
 ## See Also
 

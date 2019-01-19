@@ -4,7 +4,16 @@ Use this resource to create, update or destroy RightScale [security groups](http
 
 ## Properties
 
-TBC
+`CloudHref` - (Required) Href of the cloud you want to create the security group in.
+
+`NetworkHref` - (Required) Href of the network to create the security group in.
+
+`Name` - (Required) Security group name.
+
+`Description` - (Optional) Security group description.
+
+`DeploymentHref` - (Optional) Href of the deployment that owns the security group.  If you wish to use a deployment object as top level ownership construct, perhaps allocating the new security group to a single deployment, then provide this href.
+
 
 ## Return Values
 

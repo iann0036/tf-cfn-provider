@@ -6,7 +6,34 @@ Creates a new object or overwrites an existing one.
 
 ## Properties
 
-TBC
+`Bucket` - (Required) The name of the bucket for the source object. * `Object` - (Required) The name of the source object. * `SourceObjectIfMatchEtag` - (Optional) The entity tag to match the source object. * `DestinationObjectIfMatchEtag` - (Optional) The entity tag to match the target object. * `DestinationObjectIfNoneMatchEtag` - (Optional) The entity tag to not match the target object.
+
+`ContentEncoding` - (Optional) The content encoding of the object.
+
+`ContentLanguage` - (Optional) The content language of the object.
+
+`ContentType` - (Optional) The content type of the object.  Defaults to 'application/octet-stream' if not overridden during the PutObject call.
+
+`Content` - (Required) The object to upload to the object store. Cannot be defined if `Source` or `SourceUriDetails` is defined.
+
+`Metadata` - (Optional) Optional user-defined metadata key and value. Note: All specified keys must be in lower case.
+
+`Namespace` - (Required) The top-level namespace of the source object. * `Bucket` - (Required) The name of the bucket for the source object. * `Object` - (Required) The name of the source object. * `SourceObjectIfMatchEtag` - (Optional) The entity tag to match the source object. * `DestinationObjectIfMatchEtag` - (Optional) The entity tag to match the target object. * `DestinationObjectIfNoneMatchEtag` - (Optional) The entity tag to not match the target object.
+
+`Object` - (Required) The name of the source object. * `SourceObjectIfMatchEtag` - (Optional) The entity tag to match the source object. * `DestinationObjectIfMatchEtag` - (Optional) The entity tag to match the target object. * `DestinationObjectIfNoneMatchEtag` - (Optional) The entity tag to not match the target object.
+
+`Source` - (Optional) An absolute path to a file on the local system. Cannot be defined if `Content` or `SourceUriDetails` is defined.
+
+`SourceUriDetails` - (Optional) Details of the source URI of the object in the cloud. Cannot be defined if `Content` or `Source` is defined. Note: To enable object copy, you must authorize the service to manage objects on your behalf. * `Region` - (Required) The region of the source object. * `Namespace` - (Required) The top-level namespace of the source object. * `Bucket` - (Required) The name of the bucket for the source object. * `Object` - (Required) The name of the source object. * `SourceObjectIfMatchEtag` - (Optional) The entity tag to match the source object. * `DestinationObjectIfMatchEtag` - (Optional) The entity tag to match the target object. * `DestinationObjectIfNoneMatchEtag` - (Optional) The entity tag to not match the target object.
+
+`Region` - (Required) The region of the source object. * `Namespace` - (Required) The top-level namespace of the source object. * `Bucket` - (Required) The name of the bucket for the source object. * `Object` - (Required) The name of the source object. * `SourceObjectIfMatchEtag` - (Optional) The entity tag to match the source object. * `DestinationObjectIfMatchEtag` - (Optional) The entity tag to match the target object. * `DestinationObjectIfNoneMatchEtag` - (Optional) The entity tag to not match the target object.
+
+`SourceObjectIfMatchEtag` - (Optional) The entity tag to match the source object. * `DestinationObjectIfMatchEtag` - (Optional) The entity tag to match the target object. * `DestinationObjectIfNoneMatchEtag` - (Optional) The entity tag to not match the target object.
+
+`DestinationObjectIfMatchEtag` - (Optional) The entity tag to match the target object. * `DestinationObjectIfNoneMatchEtag` - (Optional) The entity tag to not match the target object.
+
+`DestinationObjectIfNoneMatchEtag` - (Optional) The entity tag to not match the target object.
+
 
 ## Return Values
 

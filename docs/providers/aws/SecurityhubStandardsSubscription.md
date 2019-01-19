@@ -4,7 +4,8 @@ Subscribes to a Security Hub standard.
 
 ## Properties
 
-TBC
+`StandardsArn` - (Required) The ARN of a standard - see below.
+
 
 ## Return Values
 

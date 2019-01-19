@@ -7,21 +7,30 @@ this resource.
 
 ## Properties
 
-TBC
+`DomainId` - (Optional; Required if `ProjectId` is empty) The domain to assign the role in.
+
+`GroupId` - (Optional; Required if `UserId` is empty) The group to assign the role to.
+
+`ProjectId` - (Optional; Required if `DomainId` is empty) The project to assign the role in.
+
+`UserId` - (Optional; Required if `GroupId` is empty) The user to assign the role to.
+
+`RoleId` - (Required) The role to assign.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`DomainId` - See Argument Reference above.
+`DomainId` - See Properties above.
 
-`ProjectId` - See Argument Reference above.
+`ProjectId` - See Properties above.
 
-`GroupId` - See Argument Reference above.
+`GroupId` - See Properties above.
 
-`UserId` - See Argument Reference above.
+`UserId` - See Properties above.
 
-`RoleId` - See Argument Reference above.
+`RoleId` - See Properties above.
 
 ## See Also
 

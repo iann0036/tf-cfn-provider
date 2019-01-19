@@ -10,7 +10,28 @@ a conflict of rule settings and will overwrite rules.
 
 ## Properties
 
-TBC
+`NetworkAclId` - (Required) The ID of the network ACL.
+
+`RuleNumber` - (Required) The rule number for the entry (for example, 100). ACL entries are processed in ascending order by rule number.
+
+`Egress` - (Optional, bool) Indicates whether this is an egress rule (rule is applied to traffic leaving the subnet). Default `false`.
+
+`Protocol` - (Required) The protocol. A value of -1 means all protocols.
+
+`RuleAction` - (Required) Indicates whether to allow or deny the traffic that matches the rule. Accepted values: `allow` | `deny`.
+
+`CidrBlock` - (Optional) The network range to allow or deny, in CIDR notation (for example 172.16.0.0/24 ).
+
+`Ipv6CidrBlock` - (Optional) The IPv6 CIDR block to allow or deny.
+
+`FromPort` - (Optional) The from port to match.
+
+`ToPort` - (Optional) The to port to match.
+
+`IcmpType` - (Optional) ICMP protocol: The ICMP type. Required if specifying ICMP for the protocol. e.g. -1.
+
+`IcmpCode` - (Optional) ICMP protocol: The ICMP code. Required if specifying ICMP for the protocol. e.g. -1.
+
 
 ## Return Values
 

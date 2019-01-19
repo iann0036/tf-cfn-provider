@@ -7,7 +7,20 @@ you should use resource alicloud_ots_table's new field 'instance_name' and 'tabl
 
 ## Properties
 
-TBC
+`InstanceName` - (Required, ForceNew) The name of the OTS instance in which table will located.
+
+`TableName` - (Required, ForceNew) The table name of the OTS instance. If changed, a new table would be created.
+
+`PrimaryKey` - (Required, Type: List) The property of `TableMeta` which indicates the structure information of a table. It describes the attribute value of primary key. The number of `PrimaryKey` should not be less than one and not be more than four. * `Name` - (Required) Name for primary key. * `Type` - (Required, Type: list) Type for primary key. Only `Integer`, `String` or `Binary` is allowed.
+
+`Name` - (Required) Name for primary key. * `Type` - (Required, Type: list) Type for primary key. Only `Integer`, `String` or `Binary` is allowed.
+
+`Type` - (Required, Type: list) Type for primary key. Only `Integer`, `String` or `Binary` is allowed.
+
+`TimeToLive` - (Required) The retention time of data stored in this table (unit: second). The value maximum is 2147483647 and -1 means never expired.
+
+`MaxVersion` - (Required) The maximum number of versions stored in this table. The valid value is 1-2147483647.
+
 
 ## Return Values
 

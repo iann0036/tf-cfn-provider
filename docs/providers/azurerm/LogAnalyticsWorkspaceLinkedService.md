@@ -4,7 +4,18 @@ Links a Log Analytics (formally Operational Insights) Workspace to another resou
 
 ## Properties
 
-TBC
+`ResourceGroupName` - (Required) The name of the resource group in which the Log Analytics Linked Service is created. Changing this forces a new resource to be created.
+
+`WorkspaceName` - (Required) Name of the Log Analytics Workspace that will contain the linkedServices resource. Changing this forces a new resource to be created.
+
+`LinkedServiceName` - (Optional) Name of the type of linkedServices resource to connect to the Log Analytics Workspace specified in `WorkspaceName`. Currently it defaults to and only supports `automation` as a value. Changing this forces a new resource to be created.
+
+`LinkedServiceProperties` - (Required) A `LinkedServiceProperties` block as defined below.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
+`ResourceId` - (Required) The resource id of the resource that will be linked to the workspace.
+
 
 ## Return Values
 

@@ -4,19 +4,26 @@ Manages a V2 vip resource within OpenTelekomCloud.
 
 ## Properties
 
-TBC
+`NetworkId` - (Required) The ID of the network to attach the vip to. Changing this creates a new vip.
+
+`SubnetId` - (Required) Subnet in which to allocate IP address for this vip. Changing this creates a new vip.
+
+`IpAddress` - (Optional) IP address desired in the subnet for this vip. If you don't specify `IpAddress`, an available IP address from the specified subnet will be allocated to this vip.
+
+`Name` - (Optional) A unique name for the vip.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`NetworkId` - See Argument Reference above.
+`NetworkId` - See Properties above.
 
-`SubnetId` - See Argument Reference above.
+`SubnetId` - See Properties above.
 
-`IpAddress` - See Argument Reference above.
+`IpAddress` - See Properties above.
 
-`Name` - See Argument Reference above.
+`Name` - See Properties above.
 
 `Status` - The status of vip.
 

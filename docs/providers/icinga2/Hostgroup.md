@@ -5,7 +5,10 @@ and deleted.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the hostgroup.
+
+`DisplayName` - (Required) The name of the hostgroup to display in the Icinga2 interface.
+
 
 ## See Also
 

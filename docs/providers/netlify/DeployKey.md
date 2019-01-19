@@ -1,10 +1,9 @@
 # Terraform::Netlify::DeployKey
 
-Creates a new netlify deploy key, typically used by the `netlify_site` resource.
+Creates a new netlify deploy key, typically used by the `Terraform::Netlify::Site` resource.
 
 ## Properties
 
-TBC
 
 ## See Also
 

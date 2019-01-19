@@ -4,7 +4,16 @@ Provides a OVH domain zone record.
 
 ## Properties
 
-TBC
+`Zone` - (Required) The domain to add the record to.
+
+`Subdomain` - (Required) The name of the record.
+
+`Target` - (Required) The value of the record.
+
+`Fieldtype` - (Required) The type of the record.
+
+`Ttl` - (Optional) The TTL of the record.
+
 
 ## Return Values
 

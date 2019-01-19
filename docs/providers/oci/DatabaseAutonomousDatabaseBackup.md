@@ -6,7 +6,10 @@ Creates a new Autonomous Database backup for the specified database based on the
 
 ## Properties
 
-TBC
+`AutonomousDatabaseId` - (Required) The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the Autonomous Database backup.
+
+`DisplayName` - (Required) The user-friendly name for the backup. The name does not have to be unique.
+
 
 ## Return Values
 

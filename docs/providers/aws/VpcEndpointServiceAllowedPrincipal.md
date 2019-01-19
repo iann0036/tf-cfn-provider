@@ -10,7 +10,10 @@ and will overwrite the association.
 
 ## Properties
 
-TBC
+`VpcEndpointServiceId` - (Required) The ID of the VPC endpoint service to allow permission.
+
+`PrincipalArn` - (Required) The ARN of the principal to allow permissions.
+
 
 ## Return Values
 

@@ -6,7 +6,20 @@ Creates a new key.
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) The OCID of the compartment that contains this key.
+
+`DesiredState` - (Optional) (Updatable) Desired state of the key. Possible values : `ENABLED` or `DISABLED`.
+
+`DisplayName` - (Required) (Updatable) A user-friendly name for the key. It does not have to be unique, and it is changeable. Avoid entering confidential information.
+
+`KeyShape` - (Required) * `Algorithm` - (Required) The algorithm used by a key's KeyVersions to encrypt or decrypt. * `Length` - (Required) The length of the key, expressed as an integer. Values of 16, 24, or 32 are supported.
+
+`Algorithm` - (Required) The algorithm used by a key's KeyVersions to encrypt or decrypt. * `Length` - (Required) The length of the key, expressed as an integer. Values of 16, 24, or 32 are supported.
+
+`Length` - (Required) The length of the key, expressed as an integer. Values of 16, 24, or 32 are supported.
+
+`ManagementEndpoint` - (Required) The service endpoint to perform management operations against. Management operations include 'Create,' 'Update,' 'List,' 'Get,' and 'Delete' operations. See Vault Management endpoint.
+
 
 ## Return Values
 

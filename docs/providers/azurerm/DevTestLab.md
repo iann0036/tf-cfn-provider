@@ -4,7 +4,16 @@ Manages a Dev Test Lab.
 
 ## Properties
 
-TBC
+`Name` - (Required) Specifies the name of the Dev Test Lab. Changing this forces a new resource to be created.
+
+`ResourceGroupName` - (Required) The name of the resource group under which the Dev Test Lab resource has to be created. Changing this forces a new resource to be created.
+
+`Location` - (Required) Specifies the supported Azure location where the Dev Test Lab should exist. Changing this forces a new resource to be created.
+
+`StorageType` - (Optional) The type of storage used by the Dev Test Lab. Possible values are `Standard` and `Premium`. Defaults to `Premium`. Changing this forces a new resource to be created.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

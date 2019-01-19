@@ -5,7 +5,8 @@ create and manage spaces on Librato.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the space.
+
 
 ## Return Values
 

@@ -4,7 +4,10 @@ A resource quota provides constraints that limit aggregate resource consumption 
 
 ## Properties
 
-TBC
+`Metadata` - (Required) Standard resource quota's metadata. For more info see [Kubernetes reference](https://github.com/kubernetes/community/blob/e59e666e3464c7d4851136baa8835a311efdfb8e/contributors/devel/api-conventions.md#metadata).
+
+`Spec` - (Optional) Spec defines the desired quota. [Kubernetes reference](https://github.com/kubernetes/community/blob/e59e666e3464c7d4851136baa8835a311efdfb8e/contributors/devel/api-conventions.md#spec-and-status).
+
 
 ## See Also
 

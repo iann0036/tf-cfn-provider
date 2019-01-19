@@ -6,7 +6,10 @@ The project is the basic unit of resource management in Datahub Service and is u
 
 ## Properties
 
-TBC
+`Name` - (Required, ForceNew) The name of the datahub project. Its length is limited to 3-32 and only characters such as letters, digits and '_' are allowed. It is case-insensitive.
+
+`Comment` - (Optional) Comment of the datahub project. It cannot be longer than 255 characters.
+
 
 ## Return Values
 

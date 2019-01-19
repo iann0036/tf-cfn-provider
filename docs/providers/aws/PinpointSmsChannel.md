@@ -4,7 +4,14 @@ Provides a Pinpoint SMS Channel resource.
 
 ## Properties
 
-TBC
+`ApplicationId` - (Required) The application ID.
+
+`Enabled` - (Optional) Whether the channel is enabled or disabled. Defaults to `true`.
+
+`SenderId` - (Optional) Sender identifier of your messages.
+
+`ShortCode` - (Optional) The Short Code registered with the phone provider.
+
 
 ## Return Values
 

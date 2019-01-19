@@ -63,7 +63,6 @@ Subnets can be imported using the `subnet id`, e.g.
 
 ## Properties
 
-TBC
 
 ## See Also
 

@@ -4,7 +4,6 @@ Provides an API Gateway Usage Plan.
 
 ## Properties
 
-TBC
 
 ## Return Values
 

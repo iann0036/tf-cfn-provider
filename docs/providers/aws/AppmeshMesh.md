@@ -4,7 +4,8 @@ Provides an AWS App Mesh service mesh resource.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name to use for the service mesh.
+
 
 ## Return Values
 

@@ -4,7 +4,7 @@ Allows creation and management of a single binding within IAM policy for
 an existing Google Cloud Platform folder.
 
 ~> **Note:** This resource _must not_ be used in conjunction with
-   `google_folder_iam_policy` or they will fight over what your policy
+   `Terraform::Google::FolderIamPolicy` or they will fight over what your policy
    should be.
 
 ~> **Note:** On create, this resource will overwrite members of any existing roles.
@@ -13,7 +13,10 @@ an existing Google Cloud Platform folder.
 
 ## Properties
 
-TBC
+`Folder` - (Required) The resource name of the folder the policy is attached to. Its format is folders/{folder_id}.
+
+`Role` - (Required) The role that should be applied. Only one `Terraform::Google::FolderIamBinding` can be used per role. Note that custom roles must be of the format `[projects|organizations]/{parent-name}/roles/{role-name}`.
+
 
 ## Return Values
 

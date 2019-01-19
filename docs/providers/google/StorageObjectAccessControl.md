@@ -28,7 +28,6 @@ To get more information about ObjectAccessControl, see:
 
 ## Properties
 
-TBC
 
 ## See Also
 

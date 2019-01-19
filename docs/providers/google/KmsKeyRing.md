@@ -13,7 +13,12 @@ from state but **will not delete the resource on the server**.
 
 ## Properties
 
-TBC
+`Name` - (Required) The KeyRing's name. A KeyRing’s name must be unique within a location and match the regular expression `[a-zA-Z0-9_-]{1,63}`.
+
+`Location` - (Required) The Google Cloud Platform location for the KeyRing. A full list of valid locations can be found by running `gcloud kms locations list`.
+
+`Project` - (Optional) The project in which the resource belongs. If it is not provided, the provider project is used.
+
 
 ## Return Values
 

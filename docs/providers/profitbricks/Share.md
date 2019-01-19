@@ -4,7 +4,6 @@ Manages shares and list shares permissions granted to the group members for each
 
 ## Properties
 
-TBC
 
 ## See Also
 

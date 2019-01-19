@@ -28,7 +28,40 @@ Avoid entering confidential information.
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) The OCID of the compartment containing the instance you want to use as the basis for the image.
+
+`DefinedTags` - (Optional) (Updatable) Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
+
+`DisplayName` - (Optional) (Updatable) A user-friendly name for the image. It does not have to be unique, and it's changeable. Avoid entering confidential information.
+
+`FreeformTags` - (Optional) (Updatable) Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
+
+`ImageSourceDetails` - (Optional) Details for creating an image through import * `BucketName` - (Required when source_type=objectStorageTuple) The Object Storage bucket for the image. * `NamespaceName` - (Required when source_type=objectStorageTuple) The Object Storage namespace for the image. * `ObjectName` - (Required when source_type=objectStorageTuple) The Object Storage name for the image. * `SourceImageType` - (Optional) The format of the image to be imported.  Exported Oracle images are QCOW2.  Only monolithic images are supported. Allowed values are: * `QCOW2` * `VMDK` * `SourceType` - (Required) The source type for the image. Use `objectStorageTuple` when specifying the namespace, bucket name, and object name. Use `objectStorageUri` when specifying the Object Storage URL. * `SourceUri` - (Required when source_type=objectStorageUri) The Object Storage URL for the image.
+
+`BucketName` - (Required when source_type=objectStorageTuple) The Object Storage bucket for the image. * `NamespaceName` - (Required when source_type=objectStorageTuple) The Object Storage namespace for the image. * `ObjectName` - (Required when source_type=objectStorageTuple) The Object Storage name for the image. * `SourceImageType` - (Optional) The format of the image to be imported.  Exported Oracle images are QCOW2.  Only monolithic images are supported. Allowed values are: * `QCOW2` * `VMDK` * `SourceType` - (Required) The source type for the image. Use `objectStorageTuple` when specifying the namespace, bucket name, and object name. Use `objectStorageUri` when specifying the Object Storage URL. * `SourceUri` - (Required when source_type=objectStorageUri) The Object Storage URL for the image.
+
+`NamespaceName` - (Required when source_type=objectStorageTuple) The Object Storage namespace for the image. * `ObjectName` - (Required when source_type=objectStorageTuple) The Object Storage name for the image. * `SourceImageType` - (Optional) The format of the image to be imported.  Exported Oracle images are QCOW2.  Only monolithic images are supported. Allowed values are: * `QCOW2` * `VMDK` * `SourceType` - (Required) The source type for the image. Use `objectStorageTuple` when specifying the namespace, bucket name, and object name. Use `objectStorageUri` when specifying the Object Storage URL. * `SourceUri` - (Required when source_type=objectStorageUri) The Object Storage URL for the image.
+
+`ObjectName` - (Required when source_type=objectStorageTuple) The Object Storage name for the image. * `SourceImageType` - (Optional) The format of the image to be imported.  Exported Oracle images are QCOW2.  Only monolithic images are supported. Allowed values are: * `QCOW2` * `VMDK` * `SourceType` - (Required) The source type for the image. Use `objectStorageTuple` when specifying the namespace, bucket name, and object name. Use `objectStorageUri` when specifying the Object Storage URL. * `SourceUri` - (Required when source_type=objectStorageUri) The Object Storage URL for the image.
+
+`SourceImageType` - (Optional) The format of the image to be imported.  Exported Oracle images are QCOW2.  Only monolithic images are supported. Allowed values are: * `QCOW2` * `VMDK` * `SourceType` - (Required) The source type for the image. Use `objectStorageTuple` when specifying the namespace, bucket name, and object name. Use `objectStorageUri` when specifying the Object Storage URL. * `SourceUri` - (Required when source_type=objectStorageUri) The Object Storage URL for the image.
+
+`SourceType` - (Required) The source type for the image. Use `objectStorageTuple` when specifying the namespace, bucket name, and object name. Use `objectStorageUri` when specifying the Object Storage URL. * `SourceUri` - (Required when source_type=objectStorageUri) The Object Storage URL for the image.
+
+`SourceUri` - (Required when source_type=objectStorageUri) The Object Storage URL for the image.
+
+`InstanceId` - (Optional -- required when not specifying `ImageSourceDetails`) The OCID of the instance you want to use as the basis for the image.
+
+`LaunchMode` - (Optional) Specifies the configuration mode for launching virtual machine (VM) instances. The configuration modes are: * `NATIVE` - VM instances launch with iSCSI boot and VFIO devices. The default value for Oracle-provided images. * `EMULATED` - VM instances launch with emulated devices, such as the E1000 network driver and emulated SCSI disk controller. * `PARAVIRTUALIZED` - VM instances launch with paravirtualized devices using virtio drivers. * `CUSTOM` - VM instances launch with custom configuration settings specified in the `LaunchOptions` parameter.
+
+`NATIVE` - VM instances launch with iSCSI boot and VFIO devices. The default value for Oracle-provided images. * `EMULATED` - VM instances launch with emulated devices, such as the E1000 network driver and emulated SCSI disk controller. * `PARAVIRTUALIZED` - VM instances launch with paravirtualized devices using virtio drivers. * `CUSTOM` - VM instances launch with custom configuration settings specified in the `LaunchOptions` parameter.
+
+`EMULATED` - VM instances launch with emulated devices, such as the E1000 network driver and emulated SCSI disk controller. * `PARAVIRTUALIZED` - VM instances launch with paravirtualized devices using virtio drivers. * `CUSTOM` - VM instances launch with custom configuration settings specified in the `LaunchOptions` parameter.
+
+`PARAVIRTUALIZED` - VM instances launch with paravirtualized devices using virtio drivers. * `CUSTOM` - VM instances launch with custom configuration settings specified in the `LaunchOptions` parameter.
+
+`CUSTOM` - VM instances launch with custom configuration settings specified in the `LaunchOptions` parameter.
+
 
 ## Return Values
 

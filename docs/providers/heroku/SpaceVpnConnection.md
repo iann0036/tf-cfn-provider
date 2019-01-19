@@ -4,7 +4,14 @@ Provides a resource for creating a VPN connection between a network and a Heroku
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the VPN connection.
+
+`Space` - (Required) The name of the Heroku Private Space where the VPN connection will be established.
+
+`PublicIp` - (Required) The public IP address of the VPN endpoint on the network where the VPN connection will be established.
+
+`RoutableCidrs` - (Required) A list of IPv4 CIDR blocks used by the network where the VPN connection will be established.
+
 
 ## Return Values
 

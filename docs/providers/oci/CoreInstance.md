@@ -36,7 +36,54 @@ You can later add secondary VNICs to an instance. For more information, see
 
 ## Properties
 
-TBC
+`AvailabilityDomain` - (Required) The availability domain of the instance.  Example: `Uocm:PHX-AD-1`.
+
+`CompartmentId` - (Required) The OCID of the compartment.
+
+`CreateVnicDetails` - (Optional) Details for the primary VNIC, which is automatically created and attached when the instance is launched. * `AssignPublicIp` - (Optional) Whether the VNIC should be assigned a public IP address. Defaults to whether the subnet is public or private. If not set and the VNIC is being created in a private subnet (that is, where `prohibitPublicIpOnVnic` = true in the [Subnet](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/Subnet/)), then no public IP address is assigned. If not set and the subnet is public (`prohibitPublicIpOnVnic` = false), then a public IP address is assigned. If set to true and `prohibitPublicIpOnVnic` = true, an error is returned.
+
+`AssignPublicIp` - (Optional) Whether the VNIC should be assigned a public IP address. Defaults to whether the subnet is public or private. If not set and the VNIC is being created in a private subnet (that is, where `prohibitPublicIpOnVnic` = true in the [Subnet](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/Subnet/)), then no public IP address is assigned. If not set and the subnet is public (`prohibitPublicIpOnVnic` = false), then a public IP address is assigned. If set to true and `prohibitPublicIpOnVnic` = true, an error is returned.
+
+`DefinedTags` - (Optional) (Updatable) Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
+
+`DisplayName` - (Optional) (Updatable) A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.  Example: `My bare metal instance`.
+
+`FreeformTags` - (Optional) (Updatable) Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
+
+`HostnameLabel` - (Optional) Deprecated. Instead use `hostnameLabel` in [CreateVnicDetails](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/CreateVnicDetails/). If you provide both, the values must match.
+
+`PrivateIp` - (Optional) A private IP address of your choice to assign to the VNIC. Must be an available IP address within the subnet's CIDR. If you don't specify a value, Oracle automatically assigns a private IP address from the subnet. This is the VNIC's *primary* private IP address. The value appears in the [Vnic](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/Vnic/) object and also the [PrivateIp](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/PrivateIp/) object returned by [ListPrivateIps](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/PrivateIp/ListPrivateIps) and [GetPrivateIp](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/PrivateIp/GetPrivateIp).  Example: `10.0.3.3` * `SkipSourceDestCheck` - (Optional) Whether the source/destination check is disabled on the VNIC. Defaults to `false`, which means the check is performed. For information about why you would skip the source/destination check, see [Using a Private IP as a Route Target](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/managingroutetables.htm#privateip).  Example: `true` * `SubnetId` - (Required) The OCID of the subnet to create the VNIC in. When launching an instance, use this `subnetId` instead of the deprecated `subnetId` in [LaunchInstanceDetails](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/requests/LaunchInstanceDetails). At least one of them is required; if you provide both, the values must match.
+
+`SkipSourceDestCheck` - (Optional) Whether the source/destination check is disabled on the VNIC. Defaults to `false`, which means the check is performed. For information about why you would skip the source/destination check, see [Using a Private IP as a Route Target](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/managingroutetables.htm#privateip).  Example: `true` * `SubnetId` - (Required) The OCID of the subnet to create the VNIC in. When launching an instance, use this `subnetId` instead of the deprecated `subnetId` in [LaunchInstanceDetails](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/requests/LaunchInstanceDetails). At least one of them is required; if you provide both, the values must match.
+
+`SubnetId` - (Optional) Deprecated. Instead use `subnetId` in [CreateVnicDetails](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/CreateVnicDetails/). At least one of them is required; if you provide both, the values must match.
+
+`ExtendedMetadata` - (Optional) (Updatable) Additional metadata key/value pairs that you provide. They serve the same purpose and functionality as fields in the 'metadata' object.
+
+`FaultDomain` - (Optional) A fault domain is a grouping of hardware and infrastructure within an availability domain. Each availability domain contains three fault domains. Fault domains let you distribute your instances so that they are not on the same physical hardware within a single availability domain. A hardware failure or Compute hardware maintenance that affects one fault domain does not affect instances in other fault domains.
+
+`Image` - (Optional) Deprecated. Use `sourceDetails` with [InstanceSourceViaImageDetails](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/latest/requests/InstanceSourceViaImageDetails) source type instead. If you specify values for both, the values must match.
+
+`IpxeScript` - (Optional) This is an advanced option.
+
+`IsPvEncryptionInTransitEnabled` - (Optional) Whether to enable encryption in transit for the PV boot volume attachment. Defaults to false.
+
+`Metadata` - (Optional) (Updatable) Custom metadata key/value pairs that you provide, such as the SSH public key required to connect to the instance.
+
+`PreserveBootVolume` - (Optional) Specifies whether to delete or preserve the boot volume when terminating an instance. The default value is false. Note: This value only applies to destroy operations initiated by Terraform.
+
+`Shape` - (Required) The shape of an instance. The shape determines the number of CPUs, amount of memory, and other resources allocated to the instance.
+
+`SourceDetails` - (Optional) Details for creating an instance. Use this parameter to specify whether a boot volume or an image should be used to launch a new instance. * `BootVolumeSizeInGbs` - (Applicable when source_type=image) The size of the boot volume in GBs. Minimum value is 50 GB and maximum value is 16384 GB (16TB). * `KmsKeyId` - (Applicable when source_type=image) The OCID of the KMS key to be used as the master encryption key for the boot volume. * `SourceId` - (Required) The OCID of an image or a boot volume to use, depending on the value of `SourceType`. * `SourceType` - (Required) The source type for the instance. Use `Image` when specifying the image OCID. Use `bootVolume` when specifying the boot volume OCID.
+
+`BootVolumeSizeInGbs` - (Applicable when source_type=image) The size of the boot volume in GBs. Minimum value is 50 GB and maximum value is 16384 GB (16TB). * `KmsKeyId` - (Applicable when source_type=image) The OCID of the KMS key to be used as the master encryption key for the boot volume. * `SourceId` - (Required) The OCID of an image or a boot volume to use, depending on the value of `SourceType`. * `SourceType` - (Required) The source type for the instance. Use `Image` when specifying the image OCID. Use `bootVolume` when specifying the boot volume OCID.
+
+`KmsKeyId` - (Applicable when source_type=image) The OCID of the KMS key to be used as the master encryption key for the boot volume. * `SourceId` - (Required) The OCID of an image or a boot volume to use, depending on the value of `SourceType`. * `SourceType` - (Required) The source type for the instance. Use `Image` when specifying the image OCID. Use `bootVolume` when specifying the boot volume OCID.
+
+`SourceId` - (Required) The OCID of an image or a boot volume to use, depending on the value of `SourceType`. * `SourceType` - (Required) The source type for the instance. Use `Image` when specifying the image OCID. Use `bootVolume` when specifying the boot volume OCID.
+
+`SourceType` - (Required) The source type for the instance. Use `Image` when specifying the image OCID. Use `bootVolume` when specifying the boot volume OCID.
+
 
 ## Return Values
 
@@ -44,7 +91,7 @@ TBC
 
 `AvailabilityDomain` - The availability domain the instance is running in.  Example: `Uocm:PHX-AD-1`.
 
-`BootVolumeId` - The OCID of the attached boot volume. If the `source_type` is `bootVolume`, this will be the same OCID as the `source_id`.
+`BootVolumeId` - The OCID of the attached boot volume. If the `SourceType` is `bootVolume`, this will be the same OCID as the `SourceId`.
 
 `CompartmentId` - The OCID of the compartment that contains the instance.
 
@@ -104,7 +151,7 @@ TBC
 
 `PreserveBootVolume` - Specifies whether to delete or preserve the boot volume when terminating an instance. The default value is false. Note: This value only applies to destroy operations initiated by Terraform.
 
-`PrivateIp` - The private IP address of instance VNIC. To set the private IP address, use the `private_ip` argument in create_vnic_details.
+`PrivateIp` - The private IP address of instance VNIC. To set the private IP address, use the `PrivateIp` argument in create_vnic_details.
 
 `PublicIp` - The public IP address of instance VNIC (if enabled).
 
@@ -114,13 +161,13 @@ TBC
 
 `SourceDetails` - Details for creating an instance.
 
-`BootVolumeSizeInGbs` - The size of the boot volume in GBs. Minimum value is 50 GB and maximum value is 16384 GB (16TB). This should only be specified when `source_type` is `image`.
+`BootVolumeSizeInGbs` - The size of the boot volume in GBs. Minimum value is 50 GB and maximum value is 16384 GB (16TB). This should only be specified when `SourceType` is `Image`.
 
 `KmsKeyId` - The OCID of the KMS key to be used as the master encryption key for the boot volume.
 
-`SourceId` - The OCID of an image or a boot volume to use, depending on the value of `source_type`.
+`SourceId` - The OCID of an image or a boot volume to use, depending on the value of `SourceType`.
 
-`SourceType` - The source type for the instance. Use `image` when specifying the image OCID. Use `bootVolume` when specifying the boot volume OCID.
+`SourceType` - The source type for the instance. Use `Image` when specifying the image OCID. Use `bootVolume` when specifying the boot volume OCID.
 
 `State` - The current state of the instance.
 

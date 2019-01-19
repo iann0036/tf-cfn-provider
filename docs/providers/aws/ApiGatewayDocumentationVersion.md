@@ -4,7 +4,12 @@ Provides a resource to manage an API Gateway Documentation Version.
 
 ## Properties
 
-TBC
+`Version` - (Required) The version identifier of the API documentation snapshot.
+
+`RestApiId` - (Required) The ID of the associated Rest API.
+
+`Description` - (Optional) The description of the API documentation version.
+
 
 ## See Also
 

@@ -15,7 +15,16 @@ otherwise it will create.
 
 ## Properties
 
-TBC
+`Repository` - (Required) The GitHub repository.
+
+`Name` - (Required) The name of the label.
+
+`Color` - (Required) A 6 character hex code, **without the leading #**, identifying the color of the label.
+
+`Description` - (Optional) A short description of the label.
+
+`Url` - (Computed) The URL to the issue label.
+
 
 ## See Also
 

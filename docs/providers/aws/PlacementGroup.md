@@ -5,7 +5,10 @@ in [AWS Docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-grou
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the placement group.
+
+`Strategy` - (Required) The placement strategy.
+
 
 ## Return Values
 

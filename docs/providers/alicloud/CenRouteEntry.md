@@ -6,7 +6,12 @@ For information about CEN route entries publishment and how to use it, see [Mana
 
 ## Properties
 
-TBC
+`InstanceId` - (Required) The ID of the CEN.
+
+`RouteTableId` - (Required) The route table of the attached VBR or VPC.
+
+`CidrBlock` - (Required) The destination CIDR block of the route entry to publish.
+
 
 ## Return Values
 

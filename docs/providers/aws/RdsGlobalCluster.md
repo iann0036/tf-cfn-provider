@@ -8,7 +8,16 @@ More information about Aurora global databases can be found in the [Aurora User 
 
 ## Properties
 
-TBC
+`DatabaseName` - (Optional) Name for an automatically created database on cluster creation.
+
+`DeletionProtection` - (Optional) If the Global Cluster should have deletion protection enabled. The database can't be deleted when this value is set to `true`. The default is `false`.
+
+`Engine` - (Optional) Name of the database engine to be used for this DB cluster. Valid values: `aurora`. Defaults to `aurora`.
+
+`EngineVersion` - (Optional) Engine version of the Aurora global database.
+
+`StorageEncrypted` - (Optional) Specifies whether the DB cluster is encrypted. The default is `false`.
+
 
 ## See Also
 

@@ -4,7 +4,12 @@ Creates and manages an AWS IoT Thing.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the thing.
+
+`Attributes` - (Optional) Map of attributes of the thing.
+
+`ThingTypeName` - (Optional) The thing type name.
+
 
 ## Return Values
 

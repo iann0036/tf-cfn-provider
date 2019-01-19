@@ -5,7 +5,10 @@ For additional details please refer to [API documentation](https://developer.sca
 
 ## Properties
 
-TBC
+`Server` - (Optional) ID of server to associate IP with.
+
+`Reverse` - (Deprecated) Please us the scaleway_ip_reverse_dns resource instead.
+
 
 ## Return Values
 

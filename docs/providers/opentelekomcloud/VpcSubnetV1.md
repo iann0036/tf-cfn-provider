@@ -63,7 +63,6 @@ $ terraform import opentelekomcloud_vpc_subnet_v1 4779ab1c-7c1a-44b1-a02e-93dfc3
 
 ## Properties
 
-TBC
 
 ## See Also
 

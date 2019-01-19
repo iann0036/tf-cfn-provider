@@ -4,7 +4,10 @@ This resource provides the Configuration resource in Oracle Cloud Infrastructure
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) ID of the root compartment (tenancy).
+
+`RetentionPeriodDays` - (Optional) (Updatable) The retention period days.
+
 
 ## Return Values
 

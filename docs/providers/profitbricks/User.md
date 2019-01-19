@@ -4,7 +4,6 @@ Manages users and list users and groups associated with that user.
 
 ## Properties
 
-TBC
 
 ## See Also
 

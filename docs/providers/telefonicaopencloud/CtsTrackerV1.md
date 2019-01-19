@@ -4,7 +4,10 @@ Allows you to collect, store, and query cloud resource operation records.
 
 ## Properties
 
-TBC
+`BucketName` - (Required) The OBS bucket name for a tracker.
+
+`FilePrefixName` - (Optional) The prefix of a log that needs to be stored in an OBS bucket.
+
 
 ## Return Values
 

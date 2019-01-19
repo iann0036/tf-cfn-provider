@@ -5,7 +5,24 @@ Note your provider will need to be configured with admin-level access for this r
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the user.
+
+`Username` - (Required) The username of the user.
+
+`Password` - (Required) The password of the user.
+
+`Email` - (Required) The e-mail address of the user.
+
+`IsAdmin` - (Optional) Boolean, defaults to false.  Whether to enable administrative priviledges for the user.
+
+`ProjectsLimit` - (Optional) Integer, defaults to 0.  Number of projects user can create.
+
+`CanCreateGroup` - (Optional) Boolean, defaults to false. Whether to allow the user to create groups.
+
+`SkipConfirmation` - (Optional) Boolean, defaults to true. Whether to skip confirmation.
+
+`IsExternal` - (Optional) Boolean, defaults to false. Whether a user has access only to some internal or private projects. External users can only access projects to which they are explicitly granted access.
+
 
 ## Return Values
 

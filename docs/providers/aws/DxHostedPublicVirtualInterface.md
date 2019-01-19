@@ -5,7 +5,26 @@ A hosted virtual interface is a virtual interface that is owned by another AWS a
 
 ## Properties
 
-TBC
+`AddressFamily` - (Required) The address family for the BGP peer. `ipv4 ` or `ipv6`.
+
+`BgpAsn` - (Required) The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
+
+`ConnectionId` - (Required) The ID of the Direct Connect connection (or LAG) on which to create the virtual interface.
+
+`Name` - (Required) The name for the virtual interface.
+
+`OwnerAccountId` - (Required) The AWS account that will own the new virtual interface.
+
+`RouteFilterPrefixes` - (Required) A list of routes to be advertised to the AWS network in this region.
+
+`Vlan` - (Required) The VLAN ID.
+
+`AmazonAddress` - (Optional) The IPv4 CIDR address to use to send traffic to Amazon. Required for IPv4 BGP peers.
+
+`BgpAuthKey` - (Optional) The authentication key for BGP configuration.
+
+`CustomerAddress` - (Optional) The IPv4 CIDR destination address to which Amazon should send traffic. Required for IPv4 BGP peers.
+
 
 ## Return Values
 

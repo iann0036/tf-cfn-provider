@@ -4,7 +4,16 @@ Manages an Azure Relay Namespace.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the SKU to use. At this time the only supported value is `Standard`.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the Azure Relay Namespace.
+
+`Location` - (Required) Specifies the supported Azure location where the Azure Relay Namespace exists. Changing this forces a new resource to be created.
+
+`Sku` - (Required) A `Sku` block as defined below.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

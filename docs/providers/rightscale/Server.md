@@ -4,7 +4,20 @@ Use this resource to create, update or destroy RightScale [servers](http://refer
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the server.
+
+`DeploymentHref` - (Required) The href of the deployment the server will be placed in.
+
+`Instance` - (Required) See [rightscale_instance](https://github.com/terraform-providers/terraform-provider-rightscale/blob/master/website/docs/r/cm_instance.markdown).
+
+`CloudHref` - (Required) The Href of the cloud the server will be launched in.
+
+`Description` - (Optional) A description of the server.
+
+`Optimized` - (Optional) A flag indicating whether instances of this server should be optimized for high-performance volumes.
+
+`Tags` - (Optional) Any tags you want attached to the server and any instances created from this server object.
+
 
 ## Return Values
 

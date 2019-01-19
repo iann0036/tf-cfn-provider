@@ -1,10 +1,15 @@
 # Terraform::AWS::DbSnapshot
 
-Manages a RDS database instance snapshot. For managing RDS database cluster snapshots, see the [`aws_db_cluster_snapshot` resource](/docs/providers/aws/r/db_cluster_snapshot.html).
+Manages a RDS database instance snapshot. For managing RDS database cluster snapshots, see the [`Terraform::AWS::DbClusterSnapshot` resource](/docs/providers/aws/r/db_cluster_snapshot.html).
 
 ## Properties
 
-TBC
+`DbInstanceIdentifier` - (Required) The DB Instance Identifier from which to take the snapshot.
+
+`DbSnapshotIdentifier` - (Required) The Identifier for the snapshot.
+
+`Tags` - (Optional) Key-value mapping of resource tags.
+
 
 ## Return Values
 

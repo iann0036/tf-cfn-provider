@@ -6,12 +6,15 @@ Provides a top level resource to manage IAM Group membership for IAM Users. For
 more information on managing IAM Groups or IAM Users, see [IAM Groups][1] or
 [IAM Users][2]
 
-~> **Note:** `aws_iam_group_membership` will conflict with itself if used more than once with the same group. To non-exclusively manage the users in a group, see the
-[`aws_iam_user_group_membership` resource][3].
+~> **Note:** `Terraform::AWS::IamGroupMembership` will conflict with itself if used more than once with the same group. To non-exclusively manage the users in a group, see the
+[`Terraform::AWS::IamUserGroupMembership` resource][3].
 
 ## Properties
 
-TBC
+`Name` - (Required) The name to identify the Group Membership.
+
+`Users` - (Required) A list of IAM User names to associate with the Group.
+
 
 ## Return Values
 

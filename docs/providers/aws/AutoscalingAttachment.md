@@ -11,7 +11,12 @@ conflict and will overwrite attachments.
 
 ## Properties
 
-TBC
+`AutoscalingGroupName` - (Required) Name of ASG to associate with the ELB.
+
+`Elb` - (Optional) The name of the ELB.
+
+`AlbTargetGroupArn` - (Optional) The ARN of an ALB Target Group.
+
 
 ## See Also
 

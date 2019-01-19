@@ -17,7 +17,10 @@ you have. Also confirm you're working in the correct compartment.
 
 ## Properties
 
-TBC
+`KeyValue` - (Required) The public key.  Must be an RSA key in PEM format.
+
+`UserId` - (Required) The OCID of the user.
+
 
 ## Return Values
 

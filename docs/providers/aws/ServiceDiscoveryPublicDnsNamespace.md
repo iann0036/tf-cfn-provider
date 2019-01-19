@@ -4,7 +4,10 @@ Provides a Service Discovery Public DNS Namespace resource.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the namespace.
+
+`Description` - (Optional) The description that you specify for the namespace when you create it.
+
 
 ## Return Values
 

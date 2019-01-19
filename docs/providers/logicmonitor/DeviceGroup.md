@@ -4,7 +4,18 @@ Provides a LogicMonitor device group resource. This can be used to create and ma
 
 ## Properties
 
-TBC
+`Name` - (Required) Name of device group.
+
+`Description` - (Optional) Description of device group.
+
+`ParentId` - (Optional) The id of the parent group for this device group (the root device group has an Id of 1).
+
+`AppliesTo` - (Optional) The Applies to custom query for this group. Setting this field will make this a dynamic group.
+
+`DisableAlerting` - (Optional) Indicates whether alerting is disabled (true) or enabled (false) for this device group.
+
+`Properties` - (Optional) The properties associated with this device group. Any string value pair will work (see example).
+
 
 ## See Also
 

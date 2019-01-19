@@ -4,7 +4,8 @@ Provides a DAX Parameter Group resource.
 
 ## Properties
 
-TBC
+`Description` - (Optional, ForceNew) A description of the parameter group.
+
 
 ## Return Values
 

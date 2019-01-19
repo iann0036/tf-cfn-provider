@@ -4,7 +4,8 @@ Provides a Glue Connection resource.
 
 ## Properties
 
-TBC
+`PhysicalConnectionRequirements` - (Optional) A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
+
 
 ## Return Values
 

@@ -6,11 +6,16 @@ For a list of services available, visit the
 [API library page](https://console.cloud.google.com/apis/library) or run `gcloud services list`.
 
 ~> **Note:** This resource _must not_ be used in conjunction with
-   `google_project_services` or they will fight over which services should be enabled.
+   `Terraform::Google::ProjectServices` or they will fight over which services should be enabled.
 
 ## Properties
 
-TBC
+`Service` - (Required) The service to enable.
+
+`Project` - (Optional) The project ID. If not provided, the provider project is used.
+
+`DisableOnDestroy` - (Optional) If true, disable the service when the terraform resource is destroyed.  Defaults to true.  May be useful in the event that a project is long-lived but the infrastructure running in that project changes frequently.
+
 
 ## See Also
 

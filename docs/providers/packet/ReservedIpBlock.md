@@ -10,11 +10,16 @@ The IPv6 and private IPv4 blocks can't be created, only imported.
 
 It is only possible to create public IPv4 blocks, with masks from /24 (256 addresses) to /32 (1 address).
 
-Once IP block is allocated or imported, an address from it can be assigned to device with the `packet_ip_attachment` resource.
+Once IP block is allocated or imported, an address from it can be assigned to device with the `Terraform::Packet::IpAttachment` resource.
 
 ## Properties
 
-TBC
+`Facility` - (Required) The facility where to allocate the address block.
+
+`ProjectId` - (Required) The packet project ID where to allocate the address block.
+
+`Quantity` - (Required) The number of allocated /32 addresses, a power of 2.
+
 
 ## Return Values
 

@@ -4,7 +4,6 @@ Provides a resource to create a route.
 
 ## Properties
 
-TBC
 
 ## Return Values
 

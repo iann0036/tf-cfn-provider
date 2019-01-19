@@ -1,6 +1,6 @@
 # Terraform::VSphere::VirtualMachine
 
-The `vsphere_virtual_machine` resource can be used to manage the complex
+The `Terraform::VSphere::VirtualMachine` resource can be used to manage the complex
 lifecycle of a virtual machine. It supports management of disk, network
 interface, and CDROM devices, creation from scratch or cloning from template,
 and migration through both host and storage vMotion.
@@ -12,7 +12,6 @@ page][vmware-docs-vm-management].
 
 ## Properties
 
-TBC
 
 ## See Also
 

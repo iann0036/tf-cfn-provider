@@ -1,10 +1,15 @@
 # Terraform::Cloudflare::WorkerScript
 
-Provides a Cloudflare worker script resource. In order for a script to be active, you'll also need to setup a `cloudflare_worker_route`.
+Provides a Cloudflare worker script resource. In order for a script to be active, you'll also need to setup a `Terraform::Cloudflare::WorkerRoute`.
 
 ## Properties
 
-TBC
+`Zone` - (Required for single-script accounts) The zone for the script.
+
+`Name` - (Required for multi-script accounts) The name for the script.
+
+`Content` - (Required) The script content.
+
 
 ## Return Values
 

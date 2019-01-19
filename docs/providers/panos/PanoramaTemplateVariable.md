@@ -7,7 +7,16 @@ Template variables are available in PAN-OS 8.1+.
 
 ## Properties
 
-TBC
+`Template` - The template name.
+
+`TemplateStack` - The template stack name.
+
+`Name` - (Required) The template's name.  This must start with a dollar sign ($).
+
+`Type` - (Optional) The variable type.  Valid values are `ip-netmask` (default), `ip-range`, `fqdn`, `group-id`, or `interface`.
+
+`Value` - (Required) The variable value.
+
 
 ## See Also
 

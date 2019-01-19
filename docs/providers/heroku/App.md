@@ -5,7 +5,24 @@ create and manage applications on Heroku.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the application. In Heroku, this is also the unique ID, so it must be unique and have a minimum of 3 characters.
+
+`Region` - (Required) The region that the app should be deployed in.
+
+`Stack` - (Optional) The application stack is what platform to run the application in.
+
+`Buildpacks` - (Optional) Buildpack names or URLs for the application. Buildpacks configured externally won't be altered if this is not present.
+
+`ConfigVars` - (Optional) Configuration variables for the application. The config variables in this map are not the final set of configuration variables, but rather variables you want present. That is, other configuration variables set externally won't be removed by Terraform if they aren't present in this list.
+
+`Space` - (Optional) The name of a private space to create the app in.
+
+`InternalRouting` - (Optional) If true, the application will be routable only internally in a private space. This option is only available for apps that also specify `Space`.
+
+`Organization` - (Optional) A block that can be specified once to define organization settings for this app. The fields for this block are documented below.
+
+`Acm` - (Optional) The flag representing Automated Certificate Management for the app.
+
 
 ## Return Values
 

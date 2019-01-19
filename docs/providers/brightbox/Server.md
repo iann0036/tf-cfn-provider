@@ -6,7 +6,14 @@ modify, and delete Servers. Servers also support
 
 ## Properties
 
-TBC
+`Image` - (Required) The Server image ID.
+
+`Name` - (Optional) The Server name.
+
+`Type` - (Optional) The handle of the server type required (`1gb.ssd`, etc).
+
+`Zone` - (Optional) The handle of the zone required (`gb1-a`, `gb1-b`).
+
 
 ## Return Values
 

@@ -4,7 +4,6 @@ Manages a Glue Trigger resource.
 
 ## Properties
 
-TBC
 
 ## Return Values
 

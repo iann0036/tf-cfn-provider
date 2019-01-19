@@ -4,7 +4,14 @@ Provides an AWS App Mesh virtual router resource.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name to use for the virtual router.
+
+`MeshName` - (Required) The name of the service mesh in which to create the virtual router.
+
+`Spec` - (Required) The virtual router specification to apply.
+
+`ServiceNames` - (Required) The service mesh service names to associate with the virtual router.
+
 
 ## Return Values
 

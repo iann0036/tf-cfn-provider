@@ -5,7 +5,16 @@ that can apply across multiple nodes that perform the same function.
 
 ## Properties
 
-TBC
+`Name` - (Required) The unique name to assign to the role.
+
+`Description` - (Optional) A human-friendly description of the role. If not set, a placeholder of "Managed by Terraform" will be set.
+
+`DefaultAttributesJson` - (Optional) String containing a JSON-serialized object containing the default attributes for the role.
+
+`OverrideAttributesJson` - (Optional) String containing a JSON-serialized object containing the override attributes for the role.
+
+`RunList` - (Optional) List of strings to set as the [run list](https://docs.chef.io/run_lists.html) for any nodes that belong to this role.
+
 
 ## See Also
 

@@ -4,7 +4,10 @@ Provides a WAF Regional Regex Pattern Set Resource
 
 ## Properties
 
-TBC
+`Name` - (Required) The name or description of the Regex Pattern Set.
+
+`RegexPatternStrings` - (Optional) A list of regular expression (regex) patterns that you want AWS WAF to search for, such as `B[a@]dB[o0]t`.
+
 
 ## Return Values
 

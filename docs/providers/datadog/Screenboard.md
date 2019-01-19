@@ -4,7 +4,6 @@ Provides a Datadog screenboard resource. This can be used to create and manage D
 
 ## Properties
 
-TBC
 
 ## See Also
 

@@ -4,7 +4,20 @@ Provides a resource to configure lb source ip persistence profile on NSX-T manag
 
 ## Properties
 
-TBC
+`Description` - (Optional) Description of this resource.
+
+`DisplayName` - (Optional) The display name of this resource. Defaults to ID if not set.
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this lb source ip persistence profile.
+
+`PersistenceShared` - (Optional) A boolean flag which reflects whether the cookie persistence is private or shared.
+
+`HaPersistenceMirroring` - (Optional) A boolean flag which reflects whether persistence entries will be synchronized to the HA peer.
+
+`Timeout` - (Optional) Persistence expiration time in seconds, counted from the time all the connections are completed. Defaults to 300 seconds.
+
+`PurgeWhenFull` - (Optional) A boolean flag which reflects whether entries will be purged when the persistence table is full. Defaults to true.
+
 
 ## Return Values
 

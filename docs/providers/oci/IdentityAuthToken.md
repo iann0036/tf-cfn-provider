@@ -15,7 +15,10 @@ tenancy can use this operation to create an auth token for any user, including t
 
 ## Properties
 
-TBC
+`Description` - (Required) (Updatable) The description you assign to the auth token during creation. Does not have to be unique, and it's changeable.
+
+`UserId` - (Required) The OCID of the user.
+
 
 ## Return Values
 

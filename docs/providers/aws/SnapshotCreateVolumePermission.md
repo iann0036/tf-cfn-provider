@@ -4,13 +4,16 @@ Adds permission to create volumes off of a given EBS Snapshot.
 
 ## Properties
 
-TBC
+`SnapshotId` - (required) A snapshot ID * `AccountId` - (required) An AWS Account ID to add create volume permissions.
+
+`AccountId` - (required) An AWS Account ID to add create volume permissions.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Id` - A combination of "`snapshot_id`-`account_id`".
+`Id` - A combination of "`SnapshotId`-`AccountId`".
 
 ## See Also
 

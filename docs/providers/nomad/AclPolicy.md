@@ -4,7 +4,6 @@ Manages an ACL policy registered in Nomad.
 
 ## Properties
 
-TBC
 
 ## See Also
 

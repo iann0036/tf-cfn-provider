@@ -18,7 +18,18 @@ accidental destruction.
 
 ## Properties
 
-TBC
+`Name` - (Required) The CryptoKey's name. A CryptoKey’s name must be unique within a location and match the regular expression `[a-zA-Z0-9_-]{1,63}`.
+
+`KeyRing` - (Required) The id of the Google Cloud Platform KeyRing to which the key shall belong.
+
+`RotationPeriod` - (Optional) Every time this period passes, generate a new CryptoKeyVersion and set it as the primary. The first rotation will take place after the specified period. The rotation period has the format of a decimal number with up to 9 fractional digits, followed by the letter s (seconds). It must be greater than a day (ie, 86400).
+
+`VersionTemplate` - (Optional) A template describing settings for new crypto key versions. Structure is documented below.
+
+`Algorithm` - (Required)  The algorithm to use when creating a version based on this template. See the [algorithm reference](https://cloud.google.com/kms/docs/reference/rest/v1/CryptoKeyVersionAlgorithm) for possible inputs.
+
+`ProtectionLevel` - (Optional) The protection level to use when creating a version based on this template. One of `SOFTWARE`, or `HSM`.
+
 
 ## Return Values
 

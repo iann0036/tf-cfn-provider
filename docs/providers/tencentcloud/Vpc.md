@@ -4,7 +4,10 @@ Provides an VPC resource.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name for the VPC.
+
+`CidrBlock` - (Required) The CIDR block for the VPC.
+
 
 ## Return Values
 

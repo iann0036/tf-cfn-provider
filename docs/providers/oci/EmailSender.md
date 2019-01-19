@@ -6,7 +6,10 @@ Creates a sender for a tenancy in a given compartment.
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) The OCID of the compartment that contains the sender.
+
+`EmailAddress` - (Required) The email address of the sender.
+
 
 ## Return Values
 

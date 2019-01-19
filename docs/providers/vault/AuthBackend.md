@@ -4,7 +4,20 @@
 
 ## Properties
 
-TBC
+`Type` - (Required) The name of the auth method type.
+
+`Path` - (Optional) The path to mount the auth method — this defaults to the name of the type.
+
+`Description` - (Optional) A description of the auth method.
+
+`DefaultLeaseTtlSeconds` - (Optional) The default lease duration in seconds.
+
+`MaxLeaseTtlSeconds` - (Optional) The maximum lease duration in seconds.
+
+`ListingVisibility` - (Optional) Speficies whether to show this mount in the UI-specific listing endpoint.
+
+`Local` - (Optional) Specifies if the auth method is local only.
+
 
 ## Return Values
 

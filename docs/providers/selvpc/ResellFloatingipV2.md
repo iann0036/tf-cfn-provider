@@ -4,7 +4,10 @@ Manages a V2 floatingip resource within Resell Selectel VPC.
 
 ## Properties
 
-TBC
+`ProjectId` - (Required) An associated Selectel VPC project. Changing this creates a new floating IP.
+
+`Region` - (Required) A region of where the floating IP resides. Changing this creates a new floating IP.
+
 
 ## Return Values
 

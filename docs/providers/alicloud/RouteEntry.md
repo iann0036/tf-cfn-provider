@@ -4,7 +4,16 @@ Provides a route entry resource. A route entry represents a route item of one VP
 
 ## Properties
 
-TBC
+`RouterId` - (Deprecated) This argument has beeb deprecated. Please use other arguments to launch a custom route entry.
+
+`RouteTableId` - (Required, Forces new resource) The ID of the route table.
+
+`DestinationCidrblock` - (Required, Forces new resource) The RouteEntry's target network segment.
+
+`NexthopType` - (Required, Forces new resource) The next hop type. Available values: - `Instance` (Default): Route the traffic destined for the destination CIDR block to an ECS instance in the VPC. - `RouterInterface`: Route the traffic destined for the destination CIDR block to a router interface. - `VpnGateway`: Route the traffic destined for the destination CIDR block to a VPN Gateway. - `HaVip`: Route the traffic destined for the destination CIDR block to an HAVIP. - `NetworkInterface`: Route the traffic destined for the destination CIDR block to an NetworkInterface.
+
+`NexthopId` - (Required, Forces new resource) The route entry's next hop. ECS instance ID or VPC router interface ID.
+
 
 ## Return Values
 

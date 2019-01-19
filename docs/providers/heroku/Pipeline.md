@@ -5,12 +5,13 @@ resource.
 
 A pipeline is a group of Heroku apps that share the same codebase. Once a
 pipeline is created, and apps are added to different stages using
-[`heroku_pipeline_coupling`](./pipeline_coupling.html), you can promote app
+[`Terraform::Heroku::PipelineCoupling`](./pipeline_coupling.html), you can promote app
 slugs to the next stage.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the pipeline.
+
 
 ## Return Values
 

@@ -4,7 +4,6 @@ A Lien represents an encumbrance on the actions that can be performed on a resou
 
 ## Properties
 
-TBC
 
 ## See Also
 

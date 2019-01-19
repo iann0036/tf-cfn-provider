@@ -6,7 +6,14 @@ information.
 
 ## Properties
 
-TBC
+`RoleName` - (Required) The name of the role to create the SecretID for.
+
+`Metadata` - (Optional) A JSON-encoded string containing metadata in key-value pairs to be set on tokens issued with this SecretID.
+
+`CidrList` - (Optional) If set, specifies blocks of IP addresses which can perform the login operation using this SecretID.
+
+`SecretId` - (Optional) The SecretID to be created. If set, uses "Push" mode.  Defaults to Vault auto-generating SecretIDs.
+
 
 ## Return Values
 

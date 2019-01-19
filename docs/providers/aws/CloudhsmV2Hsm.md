@@ -4,7 +4,14 @@ Creates an HSM module in Amazon CloudHSM v2 cluster.
 
 ## Properties
 
-TBC
+`ClusterId` - (Required) The ID of Cloud HSM v2 cluster to which HSM will be added.
+
+`SubnetId` - (Optional) The ID of subnet in which HSM module will be located.
+
+`AvailabilityZone` - (Optional) The IDs of AZ in which HSM module will be located. Do not use together with subnet_id.
+
+`IpAddress` - (Optional) The IP address of HSM module. Must be within the CIDR of selected subnet.
+
 
 ## Return Values
 

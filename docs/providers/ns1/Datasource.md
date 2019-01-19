@@ -4,7 +4,12 @@ Provides a NS1 Data Source resource. This can be used to create, modify, and del
 
 ## Properties
 
-TBC
+`Name` - (Required) The free form name of the data source.
+
+`Sourcetype` - (Required) The data sources type, listed in API endpoint https://api.nsone.net/v1/data/sourcetypes.
+
+`Config` - (Optional) The data source configuration, determined by its type.
+
 
 ## See Also
 

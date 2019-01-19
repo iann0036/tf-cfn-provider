@@ -4,7 +4,8 @@ Provides a DAX Subnet Group resource.
 
 ## Properties
 
-TBC
+`Description` - (Optional) A description of the subnet group.
+
 
 ## Return Values
 

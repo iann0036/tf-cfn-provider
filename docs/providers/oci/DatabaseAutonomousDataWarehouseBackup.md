@@ -6,7 +6,10 @@ Creates a new Autonomous Data Warehouse backup for the specified database based 
 
 ## Properties
 
-TBC
+`AutonomousDataWarehouseId` - (Required) The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the Autonomous Data Warehouse backup.
+
+`DisplayName` - (Required) The user-friendly name for the backup. The name does not have to be unique.
+
 
 ## Return Values
 

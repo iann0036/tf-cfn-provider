@@ -4,7 +4,20 @@ This resource provides a means to define a centralized service port on a logical
 
 ## Properties
 
-TBC
+`LogicalRouterId` - (Required) Identifier for logical Tier-0 or Tier-1 router on which this port is created.
+
+`LinkedLogicalSwitchPortId` - (Required) Identifier for port on logical switch to connect to.
+
+`IpAddress` - (Required) Logical router port subnet (ip_address / prefix length).
+
+`UrpfMode` - (Optional) Unicast Reverse Path Forwarding mode. Accepted values are "NONE" and "STRICT" which is the default value.
+
+`DisplayName` - (Optional) Display name, defaults to ID if not set.
+
+`Description` - (Optional) Description of the resource.
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this port.
+
 
 ## Return Values
 

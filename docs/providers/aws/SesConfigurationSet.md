@@ -4,7 +4,8 @@ Provides an SES configuration set resource
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the configuration set.
+
 
 ## See Also
 

@@ -4,7 +4,10 @@ Provides a DigitalOcean domain resource.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the domain.
+
+`IpAddress` - (Optional) The IP address of the domain. If specified, this IP is used to created an initial A record for the domain.
+
 
 ## Return Values
 

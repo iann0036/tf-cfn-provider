@@ -4,7 +4,8 @@ Provides a Inspector resource group
 
 ## Properties
 
-TBC
+`Tags` - (Required) The tags on your EC2 Instance.
+
 
 ## Return Values
 

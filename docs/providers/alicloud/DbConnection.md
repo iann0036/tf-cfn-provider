@@ -7,7 +7,12 @@ Provides an RDS connection resource to allocate an Internet connection string fo
 
 ## Properties
 
-TBC
+`InstanceId` - (Required) The Id of instance that can run database.
+
+`ConnectionPrefix` - (Optional) Prefix of an Internet connection string. It must be checked for uniqueness. It may consist of lowercase letters, numbers, and underlines, and must start with a letter and have no more than 30 characters. Default to <instance_id> + 'tf'.
+
+`Port` - (Optional) Internet connection port. Valid value: [3001-3999]. Default to 3306.
+
 
 ## Return Values
 

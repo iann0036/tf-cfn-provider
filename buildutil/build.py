@@ -103,6 +103,12 @@ def tf_to_cfn_str(obj):
     return re.sub(r'(?:^|_)(\w)', lambda x: x.group(1).upper(), obj)
 
 
+def tf_type_to_cfn_type(tf_name, provider_name):
+    split_provider_name = tf_name.split("_")
+    split_provider_name.pop(0)
+    cfn_provider_name = CASE_MAP[provider_name][0]
+    return "Terraform::" + cfn_provider_name + "::" + tf_to_cfn_str("_".join(split_provider_name))
+
 def check_call(args, cwd):
     proc = subprocess.Popen(args,
         stdout=subprocess.PIPE,
@@ -226,7 +232,8 @@ def process_file(provider_name, file_contents, provider_readme_items):
     resource_type = ""
     description = ""
     example = ""
-    arguments = ""
+    arguments = {}
+    argument_lines = []
     attributes = {}
 
     lines = file_contents.split("\n")
@@ -247,7 +254,7 @@ def process_file(provider_name, file_contents, provider_readme_items):
         elif section == "example":
             example += line + "\n"
         elif section == "arguments":
-            arguments += line + "\n"
+            argument_lines.append(line)
         elif section == "attributes":
             if line.strip().startswith("* "):
                 startpos = line.strip().find("`")
@@ -260,32 +267,60 @@ def process_file(provider_name, file_contents, provider_readme_items):
                             attribute_description += "."
                         attributes[attribute_name] = attribute_description
     
+    # process arguments
+    argument_names = []
+    for line_number, line in enumerate(argument_lines):
+        if line.strip().startswith("* "):
+            startpos = line.strip().find("`")
+            endpos = line.strip().find("`", startpos+1)
+            if startpos != -1 and endpos != -1:
+                argument_name = line.strip()[startpos+1:endpos]
+                argument_names.append(argument_name)
+                if line.strip()[endpos+1:].strip().startswith("- ") or line.strip()[endpos+1:].strip().startswith("= "):
+                    argument_description = line.strip()[endpos+1:].strip()[2:]
+
+                    # concat lines in newlines for description of attribute
+                    line_num_iterator = 1
+                    while len(argument_lines) > line_number+line_num_iterator and (argument_lines[line_number+line_num_iterator].strip() != "" and not argument_lines[line_number+line_num_iterator].startswith("* ") and not argument_lines[line_number+line_num_iterator].startswith("#")):
+                        argument_description += " " + argument_lines[line_number+line_num_iterator].strip()
+                        line_num_iterator += 1
+
+                    if argument_description[-1] != ".":
+                        argument_description += "."
+                    arguments[argument_name] = argument_description
+
     if resource_type != "":
         split_provider_name = resource_type.split("_")
         split_provider_name.pop(0)
-        cfn_provider_name = provider_name
         if provider_name in CASE_MAP:
-            cfn_provider_name = CASE_MAP[provider_name][0]
-            cfn_type = "Terraform::" + cfn_provider_name + "::" + tf_to_cfn_str("_".join(split_provider_name))
+            cfn_type = tf_type_to_cfn_type(resource_type, provider_name)
             provider_readme_items.append("* [{cfn_type}]({type_stub}.md)".format(
                 cfn_type=cfn_type,
                 provider_name=provider_name,
                 type_stub=tf_to_cfn_str("_".join(split_provider_name))
             ))
+        else:
+            return
         
-        #print("!!!! Resource Type")
-        #print(resource_type)
-        #print("!!!! Description")
         description = description.strip()
-        #print(description)
+        
+        # TODO
         #print("!!!! Example")
         #print(example)
         #print("!!!! Arguments")
         #print(arguments)
         #print("!!!! Attributes")
         #pprint.pprint(attributes)
-        #print("\n-----\n")
 
+        # properties
+        properties = ""
+        for arg in arguments:
+            properties += "`{ret}` - {desc}\n\n".format(
+                ret=tf_to_cfn_str(arg),
+                desc=arguments[arg]
+            )
+
+        # return values
         return_values = ""
         if attributes:
             return_values = "## Return Values\n\n### Fn::GetAtt\n\n"
@@ -294,19 +329,29 @@ def process_file(provider_name, file_contents, provider_readme_items):
                     ret=tf_to_cfn_str(attr),
                     desc=attributes[attr]
                 )
+        return_values = return_values.replace("Argument Reference","Properties")
+
+        # output
+        output = "# {cfn_type}\n\n{description}\n\n## Properties\n\n{properties}\n{return_values}## See Also\n\n* [{provider_name}_{split_provider_name_joined}](https://www.terraform.io/docs/providers/{provider_name}/r/{split_provider_name_joined}.html) in the _Terraform Provider Documentation_".format(
+            properties=properties,
+            provider_name=provider_name,
+            split_provider_name_joined="_".join(split_provider_name),
+            cfn_type=cfn_type,
+            description=description,
+            return_values=return_values
+        )
+
+        for argument_name in argument_names:
+            output = output.replace("`{}`".format(argument_name), "`{}`".format(tf_to_cfn_str(argument_name)))
         
+        output = re.sub(r"(\`%s\_.+\`)" % provider_name, lambda x: "`" + tf_type_to_cfn_type(x.group(1), provider_name), output) # TODO - why only one backtick used?!?
+
         try:
             os.makedirs("../docs/providers/{}/".format(provider_name))
         except:
             pass
         with open("../docs/providers/{}/{}.md".format(provider_name, tf_to_cfn_str("_".join(split_provider_name))), 'w') as resource_readme:
-            resource_readme.write("# {cfn_type}\n\n{description}\n\n## Properties\n\nTBC\n\n{return_values}## See Also\n\n* [{provider_name}_{split_provider_name_joined}](https://www.terraform.io/docs/providers/{provider_name}/r/{split_provider_name_joined}.html) in the _Terraform Provider Documentation_".format(
-                provider_name=provider_name,
-                split_provider_name_joined="_".join(split_provider_name),
-                cfn_type=cfn_type,
-                description=description,
-                return_values=return_values
-            ))
+            resource_readme.write(output)
 
 
 page = 1

@@ -6,7 +6,10 @@ Provides a resource to manage a DynamoDB Global Table. These are layered on top 
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the global table. Must match underlying DynamoDB Table names in all regions.
+
+`Replica` - (Required) Underlying DynamoDB Table. At least 1 replica must be defined. See below.
+
 
 ## Return Values
 

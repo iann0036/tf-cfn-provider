@@ -3,14 +3,19 @@
 This resource allows you to add/update/delete an interface in a Panorama
 virtual router template.
 
-This resource has some overlap with the `panos_panorama_virtual_router`
+This resource has some overlap with the `Terraform::Panos::PanoramaVirtualRouter`
 resource.  If you want to use this resource with the other one, then make
-sure that your `panos_panorama_virtual_router` spec does not define the
+sure that your `Terraform::Panos::PanoramaVirtualRouter` spec does not define the
 `interfaces` field.
 
 ## Properties
 
-TBC
+`Template` - (Required) The template name.
+
+`VirtualRouter` - (Required) The virtual router's name.
+
+`Interface` - (Required) The interface to import into the virtual router.
+
 
 ## See Also
 

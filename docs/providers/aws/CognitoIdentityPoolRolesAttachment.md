@@ -4,7 +4,6 @@ Provides an AWS Cognito Identity Pool Roles Attachment.
 
 ## Properties
 
-TBC
 
 ## Return Values
 

@@ -4,7 +4,14 @@ A kms key can help user to protect data security in the transmission process.
 
 ## Properties
 
-TBC
+`Description` - (Optional) The description of the key as viewed in Alicloud console. Default to "From Terraform".
+
+`KeyUsage` - (Optional) Specifies the usage of CMK. Currently, default to 'ENCRYPT/DECRYPT', indicating that CMK is used for encryption and decryption.
+
+`DeletionWindowInDays` - (Optional) Duration in days after which the key is deleted after destruction of the resource, must be between 7 and 30 days. Defaults to 30 days.
+
+`IsEnabled` - (Optional) Specifies whether the key is enabled. Defaults to true.
+
 
 ## Return Values
 

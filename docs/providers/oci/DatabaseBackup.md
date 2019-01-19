@@ -6,7 +6,10 @@ Creates a new backup in the specified database based on the request parameters y
 
 ## Properties
 
-TBC
+`DatabaseId` - (Required) The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the database.
+
+`DisplayName` - (Required) The user-friendly name for the backup. The name does not have to be unique.
+
 
 ## Return Values
 

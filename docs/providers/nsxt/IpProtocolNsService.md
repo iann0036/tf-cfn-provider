@@ -4,7 +4,14 @@ This resource provides a way to configure a networking and security service whic
 
 ## Properties
 
-TBC
+`DisplayName` - (Optional) Display name, defaults to ID if not set.
+
+`Description` - (Optional) Description.
+
+`Protocol` - (Required) IP protocol number (0-255).
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this service.
+
 
 ## Return Values
 

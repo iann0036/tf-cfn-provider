@@ -4,7 +4,12 @@ Provides a NS1 Data Feed resource. This can be used to create, modify, and delet
 
 ## Properties
 
-TBC
+`SourceId` - (Required) The data source id that this feed is connected to.
+
+`Name` - (Required) The free form name of the data feed.
+
+`Config` - (Optional) The feeds configuration matching the specification in 'feed\_config' from /data/sourcetypes.
+
 
 ## See Also
 

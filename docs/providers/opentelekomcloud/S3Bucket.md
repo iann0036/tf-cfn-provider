@@ -4,7 +4,60 @@ Provides a S3 bucket resource.
 
 ## Properties
 
-TBC
+`Bucket` - (Required) The ARN of the S3 bucket where you want Amazon S3 to store replicas of the object identified by the rule.
+
+`BucketPrefix` - (Optional, Forces new resource) Creates a unique bucket name beginning with the specified prefix. Conflicts with `Bucket`.
+
+`Acl` - (Optional) The [canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl) to apply. Defaults to "private".
+
+`Policy` - (Optional) A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html) JSON document. Note that if the policy document is not specific enough (but still valid), Terraform may view the policy as constantly changing in a `terraform plan`. In this case, please make sure you use the verbose/specific version of the policy.
+
+`Tags` - (Optional) A mapping of tags to assign to the bucket.
+
+`ForceDestroy` - (Optional, Default:false ) A boolean that indicates all objects should be deleted from the bucket so that the bucket can be destroyed without error. These objects are *not* recoverable.
+
+`Website` - (Optional) A website object (documented below).
+
+`CorsRule` - (Optional) A rule of [Cross-Origin Resource Sharing](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html) (documented below).
+
+`Versioning` - (Optional) A state of [versioning](https://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html) (documented below).
+
+`Logging` - (Optional) A settings of [bucket logging](https://docs.aws.amazon.com/AmazonS3/latest/UG/ManagingBucketLogging.html) (documented below).
+
+`LifecycleRule` - (Optional) A configuration of [object lifecycle management](http://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html) (documented below).
+
+`Region` - (Optional) If specified, the AWS region this bucket should reside in. Otherwise, the region used by the callee.
+
+`IndexDocument` - (Required, unless using `RedirectAllRequestsTo`) Amazon S3 returns this index document when requests are made to the root domain or any of the subfolders.
+
+`ErrorDocument` - (Optional) An absolute path to the document to return in case of a 4XX error.
+
+`RedirectAllRequestsTo` - (Optional) A hostname to redirect all website requests for this bucket to. Hostname can optionally be prefixed with a protocol (`http://` or `https://`) to use when redirecting requests. The default is the protocol that is used in the original request.
+
+`RoutingRules` - (Optional) A json array containing [routing rules](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules.html) describing redirect behavior and when redirects are applied.
+
+`Enabled` - (Required) Specifies lifecycle rule status.
+
+`MfaDelete` - (Optional) Enable MFA delete for either `Change the versioning state of your bucket` or `Permanently delete an object version`. Default is `false`.
+
+`TargetBucket` - (Required) The name of the bucket that will receive the log objects.
+
+`TargetPrefix` - (Optional) To specify a key prefix for log objects.
+
+`Id` - (Optional) Unique identifier for the rule.
+
+`Prefix` - (Required) Object keyname prefix identifying one or more objects to which the rule applies. Set as an empty string to replicate the whole bucket.
+
+`Expiration` - (Optional) Specifies a period in the object's expire (documented below).
+
+`NoncurrentVersionExpiration` - (Optional) Specifies when noncurrent object versions expire (documented below).
+
+`Destination` - (Required) Specifies the destination for the rule (documented below).
+
+`Status` - (Required) The status of the rule. Either `Enabled` or `Disabled`. The rule is ignored if status is not Enabled.
+
+`StorageClass` - (Optional) The class of storage used to store the object.
+
 
 ## Return Values
 

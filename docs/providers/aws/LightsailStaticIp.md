@@ -6,7 +6,8 @@ Allocates a static IP address.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name for the allocated static IP.
+
 
 ## Return Values
 

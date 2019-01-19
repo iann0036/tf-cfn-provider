@@ -2,11 +2,86 @@
 
 Manages an App Service (within an App Service Plan).
 
--> **Note:** When using Slots - the `app_settings`, `connection_string` and `site_config` blocks on the `azurerm_app_service` resource will be overwritten when promoting a Slot using the `azurerm_app_service_active_slot` resource.
+-> **Note:** When using Slots - the `AppSettings`, `ConnectionString` and `SiteConfig` blocks on the `Terraform::AzureRM::AppService` resource will be overwritten when promoting a Slot using the `azurermAppServiceActiveSlot` resource.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the Connection String.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the App Service.
+
+`Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+
+`AppServicePlanId` - (Required) The ID of the App Service Plan within which to create this App Service. Changing this forces a new resource to be created.
+
+`AppSettings` - (Optional) A key-value pair of App Settings.
+
+`ConnectionString` - (Optional) An `ConnectionString` block as defined below.
+
+`ClientAffinityEnabled` - (Optional) Should the App Service send session affinity cookies, which route client requests in the same session to the same instance?.
+
+`Enabled` - (Optional) Is the App Service Enabled? Changing this forces a new resource to be created.
+
+`HttpsOnly` - (Optional) Can the App Service only be accessed via HTTPS? Defaults to `false`.
+
+`SiteConfig` - (Optional) A `SiteConfig` block as defined below.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
+`Identity` - (Optional) A Managed Service Identity block as defined below.
+
+`Type` - (Required) Specifies the identity type of the App Service. At this time the only allowed value is `SystemAssigned`.
+
+`Value` - (Required) The value for the Connection String.
+
+`AlwaysOn` - (Optional) Should the app be loaded at all times? Defaults to `false`.
+
+`AppCommandLine` - (Optional) App command line to launch, e.g. `/sbin/myserver -b 0.0.0.0`.
+
+`DefaultDocuments` - (Optional) The ordering of default documents to load, if an address isn't specified.
+
+`DotnetFrameworkVersion` - (Optional) The version of the .net framework's CLR used in this App Service. Possible values are `v2.0` (which will use the latest version of the .net framework for the .net CLR v2 - currently `.net 3.5`) and `v4.0` (which corresponds to the latest version of the .net CLR v4 - which at the time of writing is `.net 4.7.1`). [For more information on which .net CLR version to use based on the .net framework you're targeting - please see this table](https://en.wikipedia.org/wiki/.NET_Framework_version_history#Overview). Defaults to `v4.0`.
+
+`Http2Enabled` - (Optional) Is HTTP2 Enabled on this App Service? Defaults to `false`.
+
+`FtpsState` - (Optional) State of FTP / FTPS service for this AppService. Possible values include: `AllAllowed`, `FtpsOnly` and `Disabled`.
+
+`IpRestriction` - (Optional) One or more `IpRestriction` blocks as defined below.
+
+`JavaVersion` - (Optional) The version of Java to use. If specified `JavaContainer` and `JavaContainerVersion` must also be specified. Possible values are `1.7` and `1.8`.
+
+`JavaContainer` - (Optional) The Java Container to use. If specified `JavaVersion` and `JavaContainerVersion` must also be specified. Possible values are `JETTY` and `TOMCAT`.
+
+`JavaContainerVersion` - (Optional) The version of the Java Container to use. If specified `JavaVersion` and `JavaContainer` must also be specified.
+
+`LocalMysqlEnabled` - (Optional) Is "MySQL In App" Enabled? This runs a local MySQL instance with your app and shares resources from the App Service plan.
+
+`LinuxFxVersion` - (Optional) Linux App Framework and version for the AppService, e.g. `DOCKER|(golang:latest)`.
+
+`ManagedPipelineMode` - (Optional) The Managed Pipeline Mode. Possible values are `Integrated` and `Classic`. Defaults to `Integrated`.
+
+`MinTlsVersion` - (Optional) The minimum supported TLS version for the app service. Possible values are `1.0`, `1.1`, and `1.2`. Defaults to `1.2` for new app services.
+
+`PhpVersion` - (Optional) The version of PHP to use in this App Service. Possible values are `5.5`, `5.6`, `7.0`, `7.1` and `7.2`.
+
+`PythonVersion` - (Optional) The version of Python to use in this App Service. Possible values are `2.7` and `3.4`.
+
+`RemoteDebuggingEnabled` - (Optional) Is Remote Debugging Enabled? Defaults to `false`.
+
+`RemoteDebuggingVersion` - (Optional) Which version of Visual Studio should the Remote Debugger be compatible with? Possible values are `VS2012`, `VS2013`, `VS2015` and `VS2017`.
+
+`ScmType` - (Optional) The type of Source Control enabled for this App Service. Possible values include `None` and `LocalGit`. Defaults to `None`.
+
+`Use32BitWorkerProcess` - (Optional) Should the App Service run in 32 bit mode, rather than 64 bit mode?.
+
+`VirtualNetworkName` - (Optional) The name of the Virtual Network which this App Service should be attached to.
+
+`WebsocketsEnabled` - (Optional) Should WebSockets be enabled?.
+
+`IpAddress` - (Required) The IP Address used for this IP Restriction.
+
+`SubnetMask` - (Optional) The Subnet mask used for this IP Restriction. Defaults to `255.255.255.255`.
+
 
 ## Return Values
 
@@ -20,11 +95,11 @@ TBC
 
 `PossibleOutboundIpAddresses` - A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
 
-`SourceControl` - A `source_control` block as defined below, which contains the Source Control information when `scm_type` is set to `LocalGit`.
+`SourceControl` - A `source_control` block as defined below, which contains the Source Control information when `ScmType` is set to `LocalGit`.
 
 `SiteCredential` - A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
 
-`Identity` - An `identity` block as defined below, which contains the Managed Service Identity information for this App Service.
+`Identity` - An `Identity` block as defined below, which contains the Managed Service Identity information for this App Service.
 
 `PrincipalId` - The Principal ID for the Service Principal associated with the Managed Service Identity of this App Service.
 

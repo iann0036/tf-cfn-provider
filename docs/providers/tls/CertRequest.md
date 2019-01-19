@@ -18,7 +18,16 @@ resource form.
 
 ## Properties
 
-TBC
+`KeyAlgorithm` - (Required) The name of the algorithm for the key provided in `PrivateKeyPem`.
+
+`PrivateKeyPem` - (Required) PEM-encoded private key data. This can be read from a separate file using the ``file`` interpolation function. Only an irreversable secure hash of the private key will be stored in the Terraform state.
+
+`Subject` - (Required) The subject for which a certificate is being requested. This is a nested configuration block whose structure is described below.
+
+`DnsNames` - (Optional) List of DNS names for which a certificate is being requested.
+
+`IpAddresses` - (Optional) List of IP addresses for which a certificate is being requested.
+
 
 ## Return Values
 

@@ -73,7 +73,12 @@ resource "aws_transfer_ssh_key" "foo" {
 
 ## Properties
 
-TBC
+`ServerId` - (Requirement) The Server ID of the Transfer Server (e.g. `s-12345678`).
+
+`UserName` - (Requirement) The name of the user account that is assigned to one or more servers.
+
+`Body` - (Requirement) The public key portion of an SSH key pair.
+
 
 ## See Also
 

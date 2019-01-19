@@ -4,7 +4,12 @@ Provides a resource to allow users to manage Virtual Networks in their projects.
 
 ## Properties
 
-TBC
+`ProjectId` - (Required) ID of parent project.
+
+`Facility` - (Required) Facility where to create the VLAN.
+
+`Description` - Description string.
+
 
 ## Return Values
 

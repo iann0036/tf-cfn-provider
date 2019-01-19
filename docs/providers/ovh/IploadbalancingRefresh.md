@@ -4,15 +4,18 @@ Applies changes from other ovh_iploadbalancing_* resourcesto the production conf
 
 ## Properties
 
-TBC
+`ServiceName` - (Required) The internal name of your IP load balancing.
+
+`Keepers` - List of values traccked to trigger refresh, used also to form implicit dependencies.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`ServiceName` - See Argument Reference above.
+`ServiceName` - See Properties above.
 
-`Keepers` - See Argument Reference above.
+`Keepers` - See Properties above.
 
 ## See Also
 

@@ -8,7 +8,8 @@ Manages a Service Principal associated with an Application within Azure Active D
 
 ## Properties
 
-TBC
+`ApplicationId` - (Required) The ID of the Azure AD Application for which to create a Service Principal.
+
 
 ## Return Values
 

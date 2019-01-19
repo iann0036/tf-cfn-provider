@@ -4,7 +4,6 @@ Manages a Glue Crawler. More information can be found in the [AWS Glue Developer
 
 ## Properties
 
-TBC
 
 ## Return Values
 

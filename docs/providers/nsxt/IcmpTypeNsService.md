@@ -4,7 +4,18 @@ This resource provides a way to configure a networking and security service whic
 
 ## Properties
 
-TBC
+`DisplayName` - (Optional) Display name, defaults to ID if not set.
+
+`Description` - (Optional) Description.
+
+`Protocol` - (Required) Version of ICMP protocol ICMPv4 or ICMPv6.
+
+`IcmpType` - (Optional) ICMP message type.
+
+`IcmpCode` - (Optional) ICMP message code.
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this service.
+
 
 ## Return Values
 

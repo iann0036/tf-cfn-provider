@@ -4,7 +4,14 @@ This resource provides the ability to configure a logical router link port on a 
 
 ## Properties
 
-TBC
+`LogicalRouterId` - (Required) Identifier for logical Tier0 router on which this port is created.
+
+`DisplayName` - (Optional) Display name, defaults to ID if not set.
+
+`Description` - (Optional) Description of the resource.
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this port.
+
 
 ## Return Values
 

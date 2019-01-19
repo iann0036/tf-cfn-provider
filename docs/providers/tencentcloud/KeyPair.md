@@ -4,7 +4,10 @@ Provides a key pair resource.
 
 ## Properties
 
-TBC
+`KeyName` - (Force new resource) The key pair's name. It is the only in one TencentCloud account.
+
+`PublicKey` - (Force new resource) You can import an existing public key and using TencentCloud key pair to manage it.
+
 
 ## Return Values
 

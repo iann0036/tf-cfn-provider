@@ -5,7 +5,18 @@ used to define rules for returning multiple A or AAAA records for a given owner 
 
 ## Properties
 
-TBC
+`Zone` - (Required) The domain to add the record to.
+
+`Name` - (Required) The name of the record.
+
+`Rdata` - (Required) list ip addresses.
+
+`Order` - (Optional) Ordering rule, one of FIXED, RANDOM or ROUND_ROBIN. Default: 'ROUND_ROBIN'.
+
+`Description` - (Optional) Description of the Resource Distribution pool. Valid values are strings less than 256 characters.
+
+`Ttl` - (Optional) The TTL of the pool in seconds. Default: `3600`.
+
 
 ## Return Values
 

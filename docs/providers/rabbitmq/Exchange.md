@@ -1,10 +1,23 @@
 # Terraform::RabbitMQ::Exchange
 
-The ``rabbitmq_exchange`` resource creates and manages an exchange.
+The ``Terraform::RabbitMQ::Exchange`` resource creates and manages an exchange.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the exchange.
+
+`Vhost` - (Required) The vhost to create the resource in.
+
+`Settings` - (Required) The settings of the exchange. The structure is described below.
+
+`Type` - (Required) The type of exchange.
+
+`Durable` - (Optional) Whether the exchange survives server restarts. Defaults to `false`.
+
+`AutoDelete` - (Optional) Whether the exchange will self-delete when all queues have finished using it.
+
+`Arguments` - (Optional) Additional key/value settings for the exchange.
+
 
 ## See Also
 

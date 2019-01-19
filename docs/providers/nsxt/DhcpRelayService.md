@@ -7,7 +7,14 @@ Currently the DHCP relay is not supported for logical routers link ports on Tier
 
 ## Properties
 
-TBC
+`Description` - (Optional) Description of this resource.
+
+`DisplayName` - (Optional) The display name of this resource. Defaults to ID if not set.
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this dhcp_relay_service.
+
+`DhcpRelayProfileId` - (Required) DHCP relay profile referenced by the DHCP relay service.
+
 
 ## Return Values
 

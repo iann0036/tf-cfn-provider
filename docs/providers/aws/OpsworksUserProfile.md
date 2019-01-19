@@ -4,13 +4,20 @@ Provides an OpsWorks User Profile resource.
 
 ## Properties
 
-TBC
+`UserArn` - (Required) The user's IAM ARN.
+
+`AllowSelfManagement` - (Optional) Whether users can specify their own SSH public key through the My Settings page.
+
+`SshUsername` - (Required) The ssh username, with witch this user wants to log in.
+
+`SshPublicKey` - (Optional) The users public key.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Id` - Same value as `user_arn`.
+`Id` - Same value as `UserArn`.
 
 ## See Also
 

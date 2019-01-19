@@ -8,7 +8,24 @@ in the official AWS docs.
 
 ## Properties
 
-TBC
+`AllowUsersToChangePassword` - (Optional) Whether to allow users to change their own password.
+
+`HardExpiry` - (Optional) Whether users are prevented from setting a new password after their password has expired (i.e. require administrator reset).
+
+`MaxPasswordAge` - (Optional) The number of days that an user password is valid.
+
+`MinimumPasswordLength` - (Optional) Minimum length to require for user passwords.
+
+`PasswordReusePrevention` - (Optional) The number of previous passwords that users are prevented from reusing.
+
+`RequireLowercaseCharacters` - (Optional) Whether to require lowercase characters for user passwords.
+
+`RequireNumbers` - (Optional) Whether to require numbers for user passwords.
+
+`RequireSymbols` - (Optional) Whether to require symbols for user passwords.
+
+`RequireUppercaseCharacters` - (Optional) Whether to require uppercase characters for user passwords.
+
 
 ## Return Values
 

@@ -4,7 +4,10 @@ Provides a WAF Regional XSS Match Set Resource for use with Application Load Bal
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the set.
+
+`XssMatchTuple` - (Optional) The parts of web requests that you want to inspect for cross-site scripting attacks.
+
 
 ## Return Values
 

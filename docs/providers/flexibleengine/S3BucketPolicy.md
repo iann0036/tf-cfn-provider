@@ -4,7 +4,10 @@ Attaches a policy to an S3 bucket resource.
 
 ## Properties
 
-TBC
+`Bucket` - (Required) The name of the bucket to which to apply the policy.
+
+`Policy` - (Required) The text of the policy.
+
 
 ## See Also
 

@@ -8,7 +8,7 @@ destroyed. **This is an advanced resource**, and has special caveats to be aware
 of when using it. Please read this document in its entirety before using this
 resource.
 
-The `aws_default_security_group` behaves differently from normal resources, in that
+The `Terraform::AWS::DefaultSecurityGroup` behaves differently from normal resources, in that
 Terraform does not _create_ this resource, but instead "adopts" it
 into management. We can do this because these default security groups cannot be
 destroyed, and are created with a known set of default ingress/egress rules.
@@ -21,14 +21,21 @@ configuration are created.
 This resource treats its inline rules as absolute; only the rules defined
 inline are created, and any additions/removals external to this resource will
 result in diff shown. For these reasons, this resource is incompatible with the
-`aws_security_group_rule` resource.
+`Terraform::AWS::SecurityGroupRule` resource.
 
 For more information about Default Security Groups, see the AWS Documentation on
 [Default Security Groups][aws-default-security-groups].
 
 ## Properties
 
-TBC
+`Ingress` - (Optional) Can be specified multiple times for each ingress rule. Each ingress block supports fields documented below.
+
+`Egress` - (Optional, VPC only) Can be specified multiple times for each egress rule. Each egress block supports fields documented below.
+
+`VpcId` - (Optional, Forces new resource) The VPC ID. **Note that changing the `VpcId` will _not_ restore any default security group rules that were modified, added, or removed.** It will be left in its current state.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

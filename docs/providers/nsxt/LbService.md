@@ -11,7 +11,22 @@ depends_on clause to lb service.
 
 ## Properties
 
-TBC
+`Description` - (Optional) Description of this resource.
+
+`DisplayName` - (Optional) The display name of this resource. Defaults to ID if not set.
+
+`Tag` - (Optional) A list of scope + tag pairs to associate with this lb service.
+
+`LogicalRouterId` - (Required) Tier1 logical router this service is attached to. Note that this router needs to have edge cluster configured, and have an uplink port or CSP (centralized service port).
+
+`Enabled` - (Optional) whether the load balancer service is enabled.
+
+`ErrorLogLevel` - (Optional) Load balancer engine writes information about encountered issues of different severity levels to the error log. This setting is used to define the severity level of the error log.
+
+`Size` - (Required) Size of load balancer service. Accepted values are SMALL/MEDIUM/LARGE.
+
+`VirtualServerIds` - (Optional) Virtual servers associated with this Load Balancer.
+
 
 ## Return Values
 

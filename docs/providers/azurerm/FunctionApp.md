@@ -4,7 +4,46 @@ Manages a Function App.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the Connection String.
+
+`ResourceGroupName` - (Required) The name of the resource group in which to create the Function App.
+
+`Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+
+`AppServicePlanId` - (Required) The ID of the App Service Plan within which to create this Function App. Changing this forces a new resource to be created.
+
+`StorageConnectionString` - (Required) The connection string of the backend storage account which will be used by this Function App (such as the dashboard, logs).
+
+`AppSettings` - (Optional) A key-value pair of App Settings.
+
+`EnableBuiltinLogging` - (Optional) Should the built-in logging of this Function App be enabled? Defaults to `true`.
+
+`ConnectionString` - (Optional) An `ConnectionString` block as defined below.
+
+`ClientAffinityEnabled` - (Optional) Should the Function App send session affinity cookies, which route client requests in the same session to the same instance?.
+
+`Enabled` - (Optional) Is the Function App enabled?.
+
+`HttpsOnly` - (Optional) Can the Function App only be accessed via HTTPS? Defaults to `false`.
+
+`Version` - (Optional) The runtime version associated with the Function App. Defaults to `~1`.
+
+`SiteConfig` - (Optional) A `SiteConfig` object as defined below.
+
+`Identity` - (Optional) An `Identity` block as defined below.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
+`Type` - (Required) Specifies the identity type of the App Service. At this time the only allowed value is `SystemAssigned`.
+
+`Value` - (Required) The value for the Connection String.
+
+`AlwaysOn` - (Optional) Should the Function App be loaded at all times? Defaults to `false`.
+
+`Use32BitWorkerProcess` - (Optional) Should the Function App run in 32 bit mode, rather than 64 bit mode? Defaults to `true`.
+
+`WebsocketsEnabled` - (Optional) Should WebSockets be enabled?.
+
 
 ## Return Values
 
@@ -16,7 +55,7 @@ TBC
 
 `OutboundIpAddresses` - A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`.
 
-`Identity` - An `identity` block as defined below, which contains the Managed Service Identity information for this App Service.
+`Identity` - An `Identity` block as defined below, which contains the Managed Service Identity information for this App Service.
 
 `SiteCredential` - A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
 

@@ -4,7 +4,14 @@ Creates a new Amazon Redshift subnet group. You must provide a list of one or mo
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the Redshift Subnet group.
+
+`Description` - (Optional) The description of the Redshift Subnet group. Defaults to "Managed by Terraform".
+
+`SubnetIds` - (Required) An array of VPC subnet IDs.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

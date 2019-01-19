@@ -6,7 +6,16 @@ Creates a new remote peering connection (RPC) for the specified DRG.
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) The OCID of the compartment to contain the RPC.
+
+`DisplayName` - (Optional) (Updatable) A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
+
+`DrgId` - (Required) The OCID of the DRG the RPC belongs to.
+
+`PeerId` - (Optional) The OCID of the RPC you want to peer with.
+
+`PeerRegionName` - (Optional) The name of the region that contains the RPC you want to peer with.  Example: `us-ashburn-1`.
+
 
 ## Return Values
 

@@ -4,7 +4,8 @@ Provides a resource to designate the active SES receipt rule set
 
 ## Properties
 
-TBC
+`RuleSetName` - (Required) The name of the rule set.
+
 
 ## See Also
 

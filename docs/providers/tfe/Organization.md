@@ -4,7 +4,16 @@ Manages organizations.
 
 ## Properties
 
-TBC
+`Name` - (Required) Name of the organization.
+
+`Email` - (Required) Admin email address.
+
+`SessionTimeoutMinutes` - (Optional) Session timeout after inactivity. Defaults to `20160`.
+
+`SessionRememberMinutes` - (Optional) Session expiration. Defaults to `20160`.
+
+`CollaboratorAuthPolicy` - (Optional) Authentication policy (`password` or `two_factor_mandatory`). Defaults to `password`.
+
 
 ## Return Values
 

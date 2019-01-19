@@ -5,7 +5,18 @@ For more information, see [Automate Deployment with StackScripts](https://www.li
 
 ## Properties
 
-TBC
+`Label` - (Required) The StackScript's label is for display purposes only.
+
+`Script` - (Required) The script to execute when provisioning a new Linode with this StackScript.
+
+`Description` - (Required) A description for the StackScript.
+
+`RevNote` - (Optional) This field allows you to add notes for the set of revisions made to this StackScript.
+
+`IsPublic` - (Optional) This determines whether other users can use your StackScript. Once a StackScript is made public, it cannot be made private. *Changing `IsPublic` forces the creation of a new StackScript*.
+
+`Images` - (Optional) An array of Image IDs representing the Images that this StackScript is compatible for deploying with.
+
 
 ## See Also
 

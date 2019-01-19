@@ -4,7 +4,12 @@ A Hedvig Mount mounts a vdisk resource with a particular controller. It can then
 
 ## Properties
 
-TBC
+`Cluster` - (Required) The name of the cluster hosting the Mount.
+
+`Vdisk` - (Required) The name of the vdisk the Mount is on.
+
+`Controller` - (Required) The fully qualified domain name for the controller that the Mount is to attach to.
+
 
 ## See Also
 

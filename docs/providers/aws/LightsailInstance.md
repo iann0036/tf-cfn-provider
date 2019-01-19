@@ -8,7 +8,18 @@ for more information.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the Lightsail Instance.
+
+`AvailabilityZone` - (Required) The Availability Zone in which to create your instance (see list below).
+
+`BlueprintId` - (Required) The ID for a virtual private server image (see list below).
+
+`BundleId` - (Required) The bundle of specification information (see list below).
+
+`KeyPairName` - (Required) The name of your key pair. Created in the Lightsail console (cannot use `Terraform::AWS::KeyPair` at this time).
+
+`UserData` - (Optional) launch script to configure server with additional user data.
+
 
 ## Return Values
 

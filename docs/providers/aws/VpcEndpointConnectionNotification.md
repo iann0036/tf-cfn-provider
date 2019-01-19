@@ -5,7 +5,14 @@ Connection notifications notify subscribers of VPC Endpoint events.
 
 ## Properties
 
-TBC
+`VpcEndpointServiceId` - (Optional) The ID of the VPC Endpoint Service to receive notifications for.
+
+`VpcEndpointId` - (Optional) The ID of the VPC Endpoint to receive notifications for.
+
+`ConnectionNotificationArn` - (Required) The ARN of the SNS topic for the notifications.
+
+`ConnectionEvents` - (Required) One or more endpoint [events](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpcEndpointConnectionNotification.html#API_CreateVpcEndpointConnectionNotification_RequestParameters) for which to receive notifications.
+
 
 ## Return Values
 

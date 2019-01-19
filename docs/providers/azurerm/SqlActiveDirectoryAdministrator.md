@@ -4,7 +4,16 @@ Allows you to set a user or group as the AD administrator for an Azure SQL serve
 
 ## Properties
 
-TBC
+`ServerName` - (Required) The name of the SQL Server on which to set the administrator. Changing this forces a new resource to be created.
+
+`ResourceGroupName` - (Required) The name of the resource group for the SQL server. Changing this forces a new resource to be created.
+
+`Login` - (Required) The login name of the principal to set as the server administrator.
+
+`ObjectId` - (Required) The ID of the principal to set as the server administrator.
+
+`TenantId` - (Required) The Azure Tenant ID.
+
 
 ## Return Values
 

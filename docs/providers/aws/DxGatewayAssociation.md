@@ -4,7 +4,10 @@ Associates a Direct Connect Gateway with a VGW.
 
 ## Properties
 
-TBC
+`DxGatewayId` - (Required) The ID of the Direct Connect Gateway.
+
+`VpnGatewayId` - (Required) The ID of the VGW with which to associate the gateway.
+
 
 ## See Also
 

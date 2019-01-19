@@ -4,7 +4,10 @@ Allows setting policy to an Elasticsearch domain while referencing domain attrib
 
 ## Properties
 
-TBC
+`DomainName` - (Required) Name of the domain.
+
+`AccessPolicies` - (Optional) IAM policy document specifying the access policies for the domain.
+
 
 ## See Also
 

@@ -4,7 +4,14 @@ Manages an API Gateway Request Validator.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the request validator.
+
+`RestApiId` - (Required) The ID of the associated Rest API.
+
+`ValidateRequestBody` - (Optional) Boolean whether to validate request body. Defaults to `false`.
+
+`ValidateRequestParameters` - (Optional) Boolean whether to validate request parameters. Defaults to `false`.
+
 
 ## See Also
 

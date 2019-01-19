@@ -6,7 +6,18 @@ Creates a Google Cloud Bigtable table inside an instance. For more information s
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the table.
+
+`InstanceName` - (Required) The name of the Bigtable instance.
+
+`SplitKeys` - (Optional) A list of predefined keys to split the table on.
+
+`ColumnFamily` - (Optional) A group of columns within a table which share a common configuration. This can be specified multiple times. Structure is documented below.
+
+`Project` - (Optional) The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
+
+`Family` - (Optional) The name of the column family.
+
 
 ## See Also
 

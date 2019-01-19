@@ -6,7 +6,10 @@ Provides a resource to create an association between a WAF Regional WebACL and A
 
 ## Properties
 
-TBC
+`WebAclId` - (Required) The ID of the WAF Regional WebACL to create an association.
+
+`ResourceArn` - (Required) Application Load Balancer ARN to associate with.
+
 
 ## Return Values
 

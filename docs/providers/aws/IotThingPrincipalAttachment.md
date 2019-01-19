@@ -4,7 +4,10 @@ Attaches Principal to AWS IoT Thing.
 
 ## Properties
 
-TBC
+`Principal` - (Required) The AWS IoT Certificate ARN or Amazon Cognito Identity ID.
+
+`Thing` - (Required) The name of the thing.
+
 
 ## See Also
 

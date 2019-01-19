@@ -4,7 +4,6 @@ Manages snapshots on ProfitBricks.
 
 ## Properties
 
-TBC
 
 ## See Also
 

@@ -4,7 +4,10 @@ Manages teams.
 
 ## Properties
 
-TBC
+`Name` - (Required) Name of the team.
+
+`Organization` - (Required) Name of the organization.
+
 
 ## See Also
 

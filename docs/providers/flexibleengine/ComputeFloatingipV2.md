@@ -7,15 +7,18 @@ but only networking floating IPs can be used with load balancers.
 
 ## Properties
 
-TBC
+`Region` - (Optional) The region in which to obtain the V2 Compute client. A Compute client is needed to create a floating IP that can be used with a compute instance. If omitted, the `Region` argument of the provider is used. Changing this creates a new floating IP (which may or may not have a different address).
+
+`Pool` - (Required) The name of the pool from which to obtain the floating IP. Changing this creates a new floating IP.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Region` - See Argument Reference above.
+`Region` - See Properties above.
 
-`Pool` - See Argument Reference above.
+`Pool` - See Properties above.
 
 `Address` - The actual floating IP address itself.
 

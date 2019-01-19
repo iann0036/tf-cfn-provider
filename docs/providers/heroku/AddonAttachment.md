@@ -4,7 +4,12 @@ Attaches a Heroku Addon Resource to an additional Heroku App.
 
 ## Properties
 
-TBC
+`AppId` - (Required) The ID of the Heroku App to attach to.
+
+`AddonId` - (Required) The ID of the existing Heroku Addon to attach.
+
+`Name` - (Optional) A friendly name for the Heroku Addon Attachment.
+
 
 ## Return Values
 

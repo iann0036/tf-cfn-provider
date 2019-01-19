@@ -5,7 +5,12 @@ and deleted.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the Service object.
+
+`CheckCommand` - (Required) The name of an existing Icinga2 CheckCommand object that is used to determine if the service is available on the host.
+
+`Hostname` - (Required) The host to check the service's status on.
+
 
 ## See Also
 

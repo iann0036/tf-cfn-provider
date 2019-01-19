@@ -4,7 +4,16 @@ Registers an on-premises server or virtual machine with Amazon EC2 so that it ca
 
 ## Properties
 
-TBC
+`Name` - (Optional) The default name of the registered managed instance.
+
+`Description` - (Optional) The description of the resource that you want to register.
+
+`ExpirationDate` - (Optional) A timestamp in [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8) by which this activation request should expire. The default value is 24 hours from resource creation time.
+
+`IamRole` - (Required) The IAM Role to attach to the managed instance.
+
+`RegistrationLimit` - (Optional) The maximum number of managed instances you want to register. The default value is 1 instance.
+
 
 ## Return Values
 

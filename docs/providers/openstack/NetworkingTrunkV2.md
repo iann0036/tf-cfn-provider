@@ -4,23 +4,38 @@ Manages a networking V2 trunk resource within OpenStack.
 
 ## Properties
 
-TBC
+`Region` - (Optional) The region in which to obtain the V2 networking client. A networking client is needed to create a trunk. If omitted, the `Region` argument of the provider is used. Changing this creates a new trunk.
+
+`Name` - (Optional) A unique name for the port. Changing this updates the `Name` of an existing port.
+
+`PortId` - (Required) The ID of the port to be made a subport of the trunk.
+
+`AdminStateUp` - (Optional) Administrative up/down status for the trunk (must be "true" or "false" if provided). Changing this updates the `AdminStateUp` of an existing trunk.
+
+`TenantId` - (Optional) The owner of the Trunk. Required if admin wants to create a trunk on behalf of another tenant. Changing this creates a new trunk.
+
+`SubPort` - (Optional) The set of ports that will be made subports of the trunk. The structure of each subport is described below.
+
+`SegmentationType` - (Required) The segmenation tecnology to use, e.g., "vlan".
+
+`SegmentationId` - (Required) The numeric id of the subport segment.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Region` - See Argument Reference above.
+`Region` - See Properties above.
 
-`Name` - See Argument Reference above.
+`Name` - See Properties above.
 
-`PortId` - See Argument Reference above.
+`PortId` - See Properties above.
 
-`AdminStateUp` - See Argument Reference above.
+`AdminStateUp` - See Properties above.
 
-`TenantId` - See Argument Reference above.
+`TenantId` - See Properties above.
 
-`SubPort` - See Argument Reference above.
+`SubPort` - See Properties above.
 
 ## See Also
 

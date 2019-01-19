@@ -5,7 +5,10 @@ This resource accepts ownership of a public virtual interface created by another
 
 ## Properties
 
-TBC
+`VirtualInterfaceId` - (Required) The ID of the Direct Connect virtual interface to accept.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
+
 
 ## Return Values
 

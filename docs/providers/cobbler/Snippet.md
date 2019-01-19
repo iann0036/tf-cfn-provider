@@ -4,7 +4,10 @@ Manages a Snippet within Cobbler.
 
 ## Properties
 
-TBC
+`Body` - (Required) The body of the snippet.
+
+`Name` - (Required) The name of the snippet. This must be the full path, including `/var/lib/cobbler/snippets`.
+
 
 ## See Also
 

@@ -2,7 +2,7 @@
 
 Provides an AutoScaling Scaling Policy resource.
 
-~> **NOTE:** You may want to omit `desired_capacity` attribute from attached `aws_autoscaling_group`
+~> **NOTE:** You may want to omit `desired_capacity` attribute from attached `Terraform::AWS::AutoscalingGroup`
 when using autoscaling policies. It's good practice to pick either
 [manual](https://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/as-manual-scaling.html)
 or [dynamic](https://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/as-scale-based-on-demand.html)
@@ -10,7 +10,38 @@ or [dynamic](https://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/as-sc
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the policy.
+
+`AutoscalingGroupName` - (Required) The name of the autoscaling group.
+
+`AdjustmentType` - (Optional) Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
+
+`PolicyType` - (Optional) The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling.".
+
+`EstimatedInstanceWarmup` - (Optional) The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
+
+`Cooldown` - (Optional) The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
+
+`ScalingAdjustment` - (Required) The number of members by which to scale, when the adjustment bounds are breached. A positive value scales up. A negative value scales down.
+
+`MetricAggregationType` - (Optional) The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
+
+`StepAdjustments` - (Optional) A set of adjustments that manage group scaling. These have the following structure:.
+
+`MetricIntervalLowerBound` - (Optional) The lower bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS will treat this bound as infinity.
+
+`MetricIntervalUpperBound` - (Optional) The upper bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS will treat this bound as infinity. The upper bound must be greater than the lower bound.
+
+`TargetTrackingConfiguration` - (Optional) A target tracking policy. These have the following structure:.
+
+`PredefinedMetricSpecification` - (Optional) A predefined metric. Conflicts with `CustomizedMetricSpecification`.
+
+`CustomizedMetricSpecification` - (Optional) A customized metric. Conflicts with `PredefinedMetricSpecification`.
+
+`TargetValue` - (Required) The target value for the metric.
+
+`DisableScaleIn` - (Optional, Default: false) Indicates whether scale in by the target tracking policy is disabled.
+
 
 ## See Also
 

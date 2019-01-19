@@ -6,7 +6,22 @@ Attaches the specified storage volume to the specified instance.
 
 ## Properties
 
-TBC
+`AttachmentType` - (Required) The type of volume. The only supported value are "iscsi" and "paravirtualized".
+
+`Device` - (Optional) The device name.
+
+`DisplayName` - (Optional) A user-friendly name. Does not have to be unique, and it cannot be changed. Avoid entering confidential information.
+
+`InstanceId` - (Required) The OCID of the instance.
+
+`IsPvEncryptionInTransitEnabled` - (Applicable when attachment_type=paravirtualized) Whether to enable encryption in transit for the PV data volume attachment. Defaults to false.
+
+`IsReadOnly` - (Optional) Whether the attachment was created in read-only mode.
+
+`UseChap` - (Applicable when attachment_type=iscsi) Whether to use CHAP authentication for the volume attachment. Defaults to false.
+
+`VolumeId` - (Required) The OCID of the volume.
+
 
 ## Return Values
 

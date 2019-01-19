@@ -4,7 +4,14 @@ Provides an RDS account privilege resource and used to grant several database so
 
 ## Properties
 
-TBC
+`InstanceId` - (Required) The Id of instance in which account belongs.
+
+`AccountName` - (Required) A specified account name.
+
+`Privilege` - The privilege of one account access database. Valid values: ["ReadOnly", "ReadWrite"]. Default to "ReadOnly".
+
+`DbNames` - (Optional) List of specified database name.
+
 
 ## Return Values
 

@@ -4,7 +4,16 @@ Provides a Pinpoint SMS Channel resource.
 
 ## Properties
 
-TBC
+`ApplicationId` - (Required) The application ID.
+
+`Enabled` - (Optional) Whether the channel is enabled or disabled. Defaults to `true`.
+
+`FromAddress` - (Required) The email address used to send emails from.
+
+`Identity` - (Required) The ARN of an identity verified with SES.
+
+`RoleArn` - (Required) The ARN of an IAM Role used to submit events to Mobile Analytics' event ingestion service.
+
 
 ## Return Values
 

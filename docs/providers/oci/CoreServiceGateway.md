@@ -14,7 +14,20 @@ It does not have to be unique, and you can change it. Avoid entering confidentia
 
 ## Properties
 
-TBC
+`CompartmentId` - (Required) The [OCID] (https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm)  of the compartment to contain the service gateway.
+
+`DefinedTags` - (Optional) (Updatable) Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
+
+`DisplayName` - (Optional) (Updatable) A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
+
+`FreeformTags` - (Optional) (Updatable) Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
+
+`Services` - (Required) (Updatable) List of the service OCIDs. These are the services that will be enabled on the service gateway. This list can be empty. * `ServiceId` - (Required) (Updatable) The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the service.
+
+`ServiceId` - (Required) (Updatable) The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the service.
+
+`VcnId` - (Required) The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the VCN.
+
 
 ## Return Values
 

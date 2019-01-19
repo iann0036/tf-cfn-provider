@@ -6,7 +6,10 @@ This allows volumes to be attached to servers.
 
 ## Properties
 
-TBC
+`Server` - (Required) id of the server.
+
+`Volume` - (Required) id of the volume to be attached.
+
 
 ## Return Values
 

@@ -4,7 +4,16 @@ Provides a Datadog timeboard resource. This can be used to create and manage Dat
 
 ## Properties
 
-TBC
+`Title` - (Required) The name of the dashboard.
+
+`Description` - (Required) A description of the dashboard's content.
+
+`ReadOnly` - (Optional) The read-only status of the timeboard. Default is false.
+
+`Graph` - (Required) Nested block describing a graph definition. The structure of this block is described below. Multiple graph blocks are allowed within a datadog_timeboard resource.
+
+`TemplateVariable` - (Optional) Nested block describing a template variable. The structure of this block is described below. Multiple template_variable blocks are allowed within a datadog_timeboard resource.
+
 
 ## Return Values
 

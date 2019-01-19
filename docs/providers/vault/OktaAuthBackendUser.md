@@ -5,7 +5,14 @@ Provides a resource to create a user in an
 
 ## Properties
 
-TBC
+`Path` - (Required) The path where the Okta auth backend is mounted.
+
+`Username` - (Required Optional) Name of the user within Okta.
+
+`Groups` - (Optional) List of Okta groups to associate with this user.
+
+`Policies` - (Optional) List of Vault policies to associate with this user.
+
 
 ## See Also
 

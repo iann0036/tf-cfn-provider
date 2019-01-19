@@ -1,12 +1,15 @@
 # Terraform::Triton::Snapshot
 
-The `triton_snapshot` resource represents a snapshot of a Triton machine.
+The `Terraform::Triton::Snapshot` resource represents a snapshot of a Triton machine.
 Snapshots are not usable with other instances; they are a point-in-time snapshot of the current instance.
 Snapshots can also only be taken of instances that are not of brand `kvm`.
 
 ## Properties
 
-TBC
+`Name` - (string, Required) The name for the snapshot.
+
+`MachineId` - (string, Required) The ID of the machine of which to take a snapshot.
+
 
 ## See Also
 

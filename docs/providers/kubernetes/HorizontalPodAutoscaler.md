@@ -4,7 +4,10 @@ Horizontal Pod Autoscaler automatically scales the number of pods in a replicati
 
 ## Properties
 
-TBC
+`Metadata` - (Required) Standard horizontal pod autoscaler's metadata. For more info see [Kubernetes reference](https://github.com/kubernetes/community/blob/e59e666e3464c7d4851136baa8835a311efdfb8e/contributors/devel/api-conventions.md#metadata).
+
+`Spec` - (Required) Behaviour of the autoscaler. For more info see [Kubernetes reference](https://github.com/kubernetes/community/blob/e59e666e3464c7d4851136baa8835a311efdfb8e/contributors/devel/api-conventions.md#spec-and-status).
+
 
 ## See Also
 

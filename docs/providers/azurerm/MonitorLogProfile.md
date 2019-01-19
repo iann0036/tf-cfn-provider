@@ -6,7 +6,22 @@ Manages a [Log Profile](https://docs.microsoft.com/en-us/azure/monitoring-and-di
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the Log Profile. Changing this forces a new resource to be created.
+
+`Categories` - (Required) List of categories of the logs.
+
+`Locations` - (Required) List of regions for which Activity Log events are stored or streamed.
+
+`StorageAccountId` - (Optional) The resource ID of the storage account in which the Activity Log is stored. At least one of `StorageAccountId` or `ServicebusRuleId` must be set.
+
+`ServicebusRuleId` - (Optional) The service bus (or event hub) rule ID of the service bus (or event hub) namespace in which the Activity Log is streamed to. At least one of `StorageAccountId` or `ServicebusRuleId` must be set.
+
+`RetentionPolicy` - (Required) A `RetentionPolicy` block as documented below. A retention policy for how long Activity Logs are retained in the storage account.
+
+`Enabled` - (Required) A boolean value to indicate whether the retention policy is enabled.
+
+`Days` - (Optional) The number of days for the retention policy. Defaults to 0.
+
 
 ## Return Values
 

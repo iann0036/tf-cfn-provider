@@ -6,7 +6,10 @@ Read more at [Kubernetes reference](https://kubernetes.io/docs/concepts/workload
 
 ## Properties
 
-TBC
+`Metadata` - (Required) Standard pod's metadata. For more info see [Kubernetes reference](https://github.com/kubernetes/community/blob/e59e666e3464c7d4851136baa8835a311efdfb8e/contributors/devel/api-conventions.md#metadata).
+
+`Spec` - (Required) Spec of the pod owned by the cluster.
+
 
 ## See Also
 

@@ -16,7 +16,10 @@ tenancy can use this operation to create a secret key for any user, including th
 
 ## Properties
 
-TBC
+`DisplayName` - (Required) (Updatable) The name you assign to the secret key during creation. Does not have to be unique, and it's changeable.
+
+`UserId` - (Required) The OCID of the user.
+
 
 ## Return Values
 

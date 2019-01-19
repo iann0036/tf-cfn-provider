@@ -4,7 +4,14 @@ Provides a resource to create a Service Catalog Portfolio.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the portfolio.
+
+`Description` - (Required) Description of the portfolio.
+
+`ProviderName` - (Required) Name of the person or organization who owns the portfolio.
+
+`Tags` - (Optional) Tags to apply to the connection.
+
 
 ## Return Values
 

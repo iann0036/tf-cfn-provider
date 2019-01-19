@@ -4,19 +4,26 @@ Creates a TXT type DNS record set.
 
 ## Properties
 
-TBC
+`Zone` - (Required) DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
+
+`Name` - (Optional) The name of the record set. The `Zone` argument will be appended to this value to create the full record path.
+
+`Txt` - (Required) The text records this record set will be set to.
+
+`Ttl` - (Optional) The TTL of the record set. Defaults to `3600`.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Zone` - See Argument Reference above.
+`Zone` - See Properties above.
 
-`Name` - See Argument Reference above.
+`Name` - See Properties above.
 
-`Txt` - See Argument Reference above.
+`Txt` - See Properties above.
 
-`Ttl` - See Argument Reference above.
+`Ttl` - See Properties above.
 
 ## See Also
 

@@ -14,7 +14,6 @@ want to wait, you need to use the `retain_on_delete` flag.
 
 ## Properties
 
-TBC
 
 ## See Also
 

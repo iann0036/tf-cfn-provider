@@ -4,7 +4,16 @@ Provides a resource to manage organization resource in Packet.
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the Organization.
+
+`Description` - Description string.
+
+`Website` - Website link.
+
+`Twitter` - Twitter handle.
+
+`Logo` - Logo URL.
+
 
 ## Return Values
 

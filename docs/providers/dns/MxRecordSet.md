@@ -4,19 +4,30 @@ Creates an MX type DNS record set.
 
 ## Properties
 
-TBC
+`Zone` - (Required) DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
+
+`Name` - (Optional) The name of the record set. The `Zone` argument will be appended to this value to create the full record path.
+
+`Mx` - (Required) Can be specified multiple times for each MX record. Each block supports fields documented below.
+
+`Ttl` - (Optional) The TTL of the record set. Defaults to `3600`.
+
+`Preference` - (Required) The preference for the record.
+
+`Exchange` - (Required) The FQDN of the mail exchange, include the trailing dot.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Zone` - See Argument Reference above.
+`Zone` - See Properties above.
 
-`Name` - See Argument Reference above.
+`Name` - See Properties above.
 
-`Mx` - See Argument Reference above.
+`Mx` - See Properties above.
 
-`Ttl` - See Argument Reference above.
+`Ttl` - See Properties above.
 
 ## See Also
 

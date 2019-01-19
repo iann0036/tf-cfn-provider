@@ -4,7 +4,12 @@ Provides an SES receipt filter resource
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the filter.
+
+`Cidr` - (Required) The IP address or address range to filter, in CIDR notation.
+
+`Policy` - (Required) Block or Allow.
+
 
 ## See Also
 

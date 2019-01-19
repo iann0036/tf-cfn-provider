@@ -6,7 +6,10 @@ For more info see [Kubernetes reference](https://kubernetes.io/docs/concepts/sto
 
 ## Properties
 
-TBC
+`Metadata` - (Required) Standard persistent volume's metadata. For more info see [Kubernetes reference](https://github.com/kubernetes/community/blob/e59e666e3464c7d4851136baa8835a311efdfb8e/contributors/devel/api-conventions.md#metadata).
+
+`Spec` - (Required) Spec of the persistent volume owned by the cluster. See below.
+
 
 ## See Also
 

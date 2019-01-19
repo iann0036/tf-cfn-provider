@@ -13,7 +13,14 @@ Further documentation on GitHub repository deploy keys:
 
 ## Properties
 
-TBC
+`Key` - (Required) A ssh key.
+
+`ReadOnly` - (Required) A boolean qualifying the key to be either read only or read/write.
+
+`Repository` - (Required) Name of the GitHub repository.
+
+`Title` - (Required) A title.
+
 
 ## See Also
 

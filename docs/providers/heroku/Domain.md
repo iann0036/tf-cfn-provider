@@ -5,7 +5,10 @@ create and manage applications on Heroku.
 
 ## Properties
 
-TBC
+`Hostname` - (Required) The hostname to serve requests from.
+
+`App` - (Required) The Heroku app to link to.
+
 
 ## Return Values
 

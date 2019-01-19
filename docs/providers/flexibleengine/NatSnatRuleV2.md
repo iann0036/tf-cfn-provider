@@ -4,19 +4,26 @@ Manages a V2 snat rule resource within FlexibleEngine Nat
 
 ## Properties
 
-TBC
+`Region` - (Optional) The region in which to obtain the V2 nat client. If omitted, the `Region` argument of the provider is used. Changing this creates a new snat rule.
+
+`NatGatewayId` - (Required) ID of the nat gateway this snat rule belongs to. Changing this creates a new snat rule.
+
+`NetworkId` - (Required) ID of the network this snat rule connects to. Changing this creates a new snat rule.
+
+`FloatingIpId` - (Required) ID of the floating ip this snat rule connets to. Changing this creates a new snat rule.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Region` - See Argument Reference above.
+`Region` - See Properties above.
 
-`NatGatewayId` - See Argument Reference above.
+`NatGatewayId` - See Properties above.
 
-`NetworkId` - See Argument Reference above.
+`NetworkId` - See Properties above.
 
-`FloatingIpId` - See Argument Reference above.
+`FloatingIpId` - See Properties above.
 
 ## See Also
 

@@ -4,23 +4,34 @@ Manages a V2 certificate resource within FlexibleEngine.
 
 ## Properties
 
-TBC
+`Region` - (Optional) The region in which to obtain the V2 Networking client. A Networking client is needed to create an LB certificate. If omitted, the `Region` argument of the provider is used. Changing this creates a new LB certificate.
+
+`Name` - (Optional) Human-readable name for the Certificate. Does not have to be unique.
+
+`Description` - (Optional) Human-readable description for the Certificate.
+
+`Domain` - (Optional) The domain of the Certificate.
+
+`PrivateKey` - (Required) The private encrypted key of the Certificate, PEM format.
+
+`Certificate` - (Required) The public encrypted key of the Certificate, PEM format.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Region` - See Argument Reference above.
+`Region` - See Properties above.
 
-`Name` - See Argument Reference above.
+`Name` - See Properties above.
 
-`Description` - See Argument Reference above.
+`Description` - See Properties above.
 
-`Domain` - See Argument Reference above.
+`Domain` - See Properties above.
 
-`PrivateKey` - See Argument Reference above.
+`PrivateKey` - See Properties above.
 
-`Certificate` - See Argument Reference above.
+`Certificate` - See Properties above.
 
 `UpdateTime` - Indicates the update time.
 

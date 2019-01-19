@@ -9,7 +9,22 @@ modify, and delete devices.
 
 ## Properties
 
-TBC
+`Hostname` - (Required) The device name.
+
+`ProjectId` - (Required) The id of the project in which to create the device.
+
+`OperatingSystem` - (Required) The operating system slug. To find the slug, or visit [Operating Systems API docs](https://www.packet.net/developers/api/#operatingsystems), set your API auth token in the top of the page and see JSON from the API response.
+
+`Facility` - (Required) The facility in which to create the device. To find the facility code, visit [Facilities API docs](https://www.packet.net/developers/api/#facilities), set your API auth token in the top of the page and see JSON from the API response.
+
+`Plan` - (Required) The device plan slug. To find the plan slug, visit [Device plans API docs](https://www.packet.net/developers/api/#plans), set your auth token in the top of the page and see JSON from the API response.
+
+`BillingCycle` - (Required) monthly or hourly.
+
+`Tags` - Tags attached to the device.
+
+`Description` - Description string for the device.
+
 
 ## Return Values
 

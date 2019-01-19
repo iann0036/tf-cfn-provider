@@ -51,7 +51,6 @@ $ terraform import flexibleengine_vbs_backup_policy_v2.vbs 4779ab1c-7c1a-44b1-a0
 
 ## Properties
 
-TBC
 
 ## See Also
 

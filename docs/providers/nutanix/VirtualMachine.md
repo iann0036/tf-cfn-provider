@@ -4,7 +4,6 @@ Provides a Nutanix Virtual Machine resource to Create a virtual machine.
 
 ## Properties
 
-TBC
 
 ## Return Values
 

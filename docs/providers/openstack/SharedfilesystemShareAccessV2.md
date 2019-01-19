@@ -4,7 +4,14 @@ Use this resource to control the share access lists.
 
 ## Properties
 
-TBC
+`ShareId` - (Required) The UUID of the share to which you are granted access.
+
+`AccessType` - (Required) The access rule type. Can either be an ip, user or cert.
+
+`AccessTo` - (Required) The value that defines the access. Can either be an IP address or a username verified by configured Security Service of the Share Network.
+
+`AccessLevel` - (Required) The access level to the share. Can either be rw or ro.
+
 
 ## Return Values
 
@@ -12,13 +19,13 @@ TBC
 
 `Id` - The unique ID for the Share Access.
 
-`ShareId` - See Argument Reference above.
+`ShareId` - See Properties above.
 
-`AccessType` - See Argument Reference above.
+`AccessType` - See Properties above.
 
-`AccessTo` - See Argument Reference above.
+`AccessTo` - See Properties above.
 
-`AccessLevel` - See Argument Reference above.
+`AccessLevel` - See Properties above.
 
 ## See Also
 

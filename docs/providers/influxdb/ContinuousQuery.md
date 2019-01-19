@@ -4,7 +4,12 @@ The continuous_query resource allows a continuous query to be created on an Infl
 
 ## Properties
 
-TBC
+`Name` - (Required) The name for the continuous_query. This must be unique on the InfluxDB server.
+
+`Database` - (Required) The database for the continuous_query. This must be an existing influxdb database.
+
+`Query` - (Required) The query for the continuous_query.
+
 
 ## See Also
 

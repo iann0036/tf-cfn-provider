@@ -4,7 +4,12 @@ Creates a Snapshot of an EBS Volume.
 
 ## Properties
 
-TBC
+`VolumeId` - (Required) The Volume ID of which to make a snapshot.
+
+`Description` - (Optional) A description of what the snapshot is.
+
+`Tags` - (Optional) A mapping of tags to assign to the snapshot.
+
 
 ## Return Values
 

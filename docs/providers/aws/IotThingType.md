@@ -4,7 +4,14 @@ Creates and manages an AWS IoT Thing Type.
 
 ## Properties
 
-TBC
+`Name` - (Required, Forces New Resource) The name of the thing type.
+
+`Description` - (Optional, Forces New Resource) The description of the thing type.
+
+`Deprecated` - (Optional, Defaults to false) Whether the thing type is deprecated. If true, no new things could be associated with this type.
+
+`SearchableAttributes` - (Optional, Forces New Resource) A list of searchable thing attribute names.
+
 
 ## Return Values
 

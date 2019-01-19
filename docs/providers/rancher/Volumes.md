@@ -4,7 +4,14 @@ Provides a Rancher Volume resource. This can be used to create volumes for ranch
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the volume.
+
+`Description` - (Optional) A description of the volume.
+
+`EnvironmentId` - (Required) The ID of the environment to create the volume for.
+
+`Driver` - (Required) The volume driver.
+
 
 ## See Also
 

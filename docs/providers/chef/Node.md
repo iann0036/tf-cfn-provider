@@ -11,7 +11,20 @@ Chef server.
 
 ## Properties
 
-TBC
+`Name` - (Required) The unique name to assign to the node.
+
+`EnvironmentName` - (Optional) the nodes environment name (default: _default).
+
+`AutomaticAttributesJson` - (Optional) String containing a JSON-serialized object containing the automatic attributes for the node.
+
+`NormalAttributesJson` - (Optional) String containing a JSON-serialized object containing the normal attributes for the node.
+
+`DefaultAttributesJson` - (Optional) String containing a JSON-serialized object containing the default attributes for the node.
+
+`OverrideAttributesJson` - (Optional) String containing a JSON-serialized object containing the override attributes for the node.
+
+`RunList` - (Optional) List of strings to set as the [run list](https://docs.chef.io/run_lists.html) for the node.
+
 
 ## See Also
 

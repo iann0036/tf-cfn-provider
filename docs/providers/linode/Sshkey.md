@@ -5,7 +5,10 @@ For more information, see the [Linode APIv4 docs](https://developers.linode.com/
 
 ## Properties
 
-TBC
+`Label` - A label for the SSH Key.
+
+`SshKey` - The public SSH Key, which is used to authenticate to the root user of the Linodes you deploy.
+
 
 ## See Also
 

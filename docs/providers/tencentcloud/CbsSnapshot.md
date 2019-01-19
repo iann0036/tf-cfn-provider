@@ -4,7 +4,10 @@ Provides a snapshot resource.
 
 ## Properties
 
-TBC
+`StorageId` - (Required) Source Storage to create this snapshot.
+
+`SnapshotName` - (Optional) The name of the snapshot. This snapshot_name can have a string of 1 to 64 characters. It is supported to modify `SnapshotName` after the snapshot is created.
+
 
 ## Return Values
 

@@ -4,7 +4,8 @@ Subscribes to a Security Hub product.
 
 ## Properties
 
-TBC
+`ProductArn` - (Required) The ARN of the product that generates findings that you want to import into Security Hub - see below.
+
 
 ## Return Values
 

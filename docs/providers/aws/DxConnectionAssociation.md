@@ -4,7 +4,10 @@ Associates a Direct Connect Connection with a LAG.
 
 ## Properties
 
-TBC
+`ConnectionId` - (Required) The ID of the connection.
+
+`LagId` - (Required) The ID of the LAG with which to associate the connection.
+
 
 ## See Also
 

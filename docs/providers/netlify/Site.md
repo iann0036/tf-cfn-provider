@@ -4,7 +4,14 @@ Primary settings for the Netlify site - should contain the bulk of your configur
 
 ## Properties
 
-TBC
+`Name` - (Required) - name of your site on netlify.
+
+`Repo` - (Required) See [Repository](#repo).
+
+`CustomDomain` - (Optional) - a custom domain name, must be configured using a cname in accordance with [netlify's docs](https://www.netlify.com/docs/custom-domains).
+
+`DeployUrl` - (Optional).
+
 
 ## See Also
 

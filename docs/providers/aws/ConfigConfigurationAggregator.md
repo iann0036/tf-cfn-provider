@@ -4,7 +4,12 @@ Manages an AWS Config Configuration Aggregator
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the configuration aggregator.
+
+`AccountAggregationSource` - (Optional) The account(s) to aggregate config data from as documented below.
+
+`OrganizationAggregationSource` - (Optional) The organization to aggregate config data from as documented below.
+
 
 ## Return Values
 

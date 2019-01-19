@@ -4,7 +4,6 @@ Provides an Hetzner Cloud server resource. This can be used to create, modify, a
 
 ## Properties
 
-TBC
 
 ## See Also
 

@@ -4,25 +4,40 @@ Manages a V1 DB configuration resource within OpenStack.
 
 ## Properties
 
-TBC
+`Region` - (Required) The region in which to create the db instance. Changing this creates a new instance.
+
+`Name` - (Optional) Configuration parameter name. Changing this creates a new resource.
+
+`Description` - (Optional) Description of the resource.
+
+`Datastore` - (Required) An array of database engine type and version. The datastore object structure is documented below. Changing this creates resource.
+
+`Configuration` - (Optional) An array of configuration parameter name and value. Can be specified multiple times. The configuration object structure is documented below.
+
+`Type` - (Required) Database engine type to be used with this configuration. Changing this creates a new resource.
+
+`Version` - (Required) Version of database engine type to be used with this configuration. Changing this creates a new resource.
+
+`Value` - (Optional) Configuration parameter value. Changing this creates a new resource.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Region` - See Argument Reference above.
+`Region` - See Properties above.
 
-`Name` - See Argument Reference above.
+`Name` - See Properties above.
 
-`Description` - See Argument Reference above.
+`Description` - See Properties above.
 
-`Datastore/type` - See Argument Reference above.
+`Datastore/type` - See Properties above.
 
-`Datastore/version` - See Argument Reference above.
+`Datastore/version` - See Properties above.
 
-`Configuration/name` - See Argument Reference above.
+`Configuration/name` - See Properties above.
 
-`Configuration/value` - See Argument Reference above.
+`Configuration/value` - See Properties above.
 
 ## See Also
 

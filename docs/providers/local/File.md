@@ -10,7 +10,12 @@ applied by many different users or within automation systems.
 
 ## Properties
 
-TBC
+`Content` - (Optional) The content of file to create. Conflicts with `SensitiveContent`.
+
+`SensitiveContent` - (Optional) The content of file to create. Will not be displayed in diffs. Conflicts with `Content`.
+
+`Filename` - (Required) The path of the file to create.
+
 
 ## See Also
 

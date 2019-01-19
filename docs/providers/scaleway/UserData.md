@@ -5,7 +5,12 @@ For additional details please refer to [API documentation](https://developer.sca
 
 ## Properties
 
-TBC
+`Server` - (Required) ID of server to associate the user data with.
+
+`Key` - (Required) The key of the user data object.
+
+`Value` - (Required) The value of the user data object.
+
 
 ## See Also
 

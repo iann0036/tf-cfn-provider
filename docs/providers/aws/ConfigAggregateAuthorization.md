@@ -4,7 +4,10 @@ Manages an AWS Config Aggregate Authorization
 
 ## Properties
 
-TBC
+`AccountId` - (Required) Account ID.
+
+`Region` - (Required) Region.
+
 
 ## Return Values
 

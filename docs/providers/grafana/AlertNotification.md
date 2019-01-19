@@ -4,7 +4,14 @@ The alert notification resource allows an alert notification channel to be creat
 
 ## Properties
 
-TBC
+`Name` - (Required) The name of the alert notification channel.
+
+`Type` - (Required) The type of the alert notification channel.
+
+`IsDefault` - (Optional) Is this the default channel for all your alerts.
+
+`Settings` - (Optional) Additional settings, for full reference lookup [Grafana HTTP API documentation](http://docs.grafana.org/http_api/alerting).
+
 
 ## Return Values
 
