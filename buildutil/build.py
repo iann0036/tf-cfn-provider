@@ -197,6 +197,10 @@ def iterate_resources(provider_name):
                     else:
                         i+=1
                 argument_text = ".".join(sentences)
+            
+            # replace tf references
+            if provider_name in ['aws']:
+                argument_text = re.sub(r"(\`%s\_.+\`)" % provider_name, lambda x: "`" + tf_type_to_cfn_type(x.group(1), provider_name), argument_text) # TODO - why only one backtick used?!?
 
             has_required_arguments = False
             if "required" in argument_text.lower():
