@@ -186,7 +186,7 @@ def iterate_resources(provider_name):
                 sentences = argument_text.split(".")
                 i = 0
                 while len(sentences) > i:
-                    if ("environment variable" in sentences[i] or "environmental variable" in sentences[i]):
+                    if ("environment variable" in sentences[i] or "environmental variable" in sentences[i] or "Can be sourced from" in sentences[i]):
                         del sentences[i]
                     else:
                         i+=1

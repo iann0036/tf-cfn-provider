@@ -115,3 +115,7 @@ Below is the list of supported providers. Click through to see provider resource
 * [VMware vCloud Director](docs/providers/vcd/README.md)
 * [VMware vSphere](docs/providers/vsphere/README.md)
 * [Vault](docs/providers/vault/README.md)
+
+## Acknowledgements
+
+This project would not be possible without the work from the Terraform providers and the Terraform core product.
