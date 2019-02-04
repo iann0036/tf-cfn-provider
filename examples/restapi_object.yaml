@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: ""
+
+Transform:
+- "Terraform"
+
+Resources:
+
+    myRestObject:
+        Type: "Terraform::RestAPI::Object"
+        Properties:
+            Path: "/json"
+
+Outputs:
+
+    Output:
+        Description: ""
+        Value: !GetAtt "myRestObject.ApiData"
