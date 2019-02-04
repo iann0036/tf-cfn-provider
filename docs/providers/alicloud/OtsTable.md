@@ -12,8 +12,11 @@ you should use resource alicloud_ots_table's new field 'instance_name' and 'tabl
 `TableName` - (Required, ForceNew) The table name of the OTS instance. If changed, a new table would be created.
 
 `PrimaryKey` - (Required, Type: List) The property of `TableMeta` which indicates the structure information of a table. It describes the attribute value of primary key. The number of `PrimaryKey` should not be less than one and not be more than four.
+* `Name` - (Required) Name for primary key.
+* `Type` - (Required, Type: list) Type for primary key. Only `Integer`, `String` or `Binary` is allowed.
 
 `Name` - (Required) Name for primary key.
+* `Type` - (Required, Type: list) Type for primary key. Only `Integer`, `String` or `Binary` is allowed.
 
 `Type` - (Required, Type: list) Type for primary key. Only `Integer`, `String` or `Binary` is allowed.
 

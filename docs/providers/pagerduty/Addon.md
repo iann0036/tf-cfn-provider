@@ -5,6 +5,7 @@ With [add-ons](https://v2.developer.pagerduty.com/v2/page/api-reference#!/Add-on
 ## Properties
 
 `Name` - (Required) The name of the add-on.
+* `Src` - (Required) The source URL to display in a frame in the PagerDuty UI. `HTTPS` is required.
 
 `Src` - (Required) The source URL to display in a frame in the PagerDuty UI. `HTTPS` is required.
 

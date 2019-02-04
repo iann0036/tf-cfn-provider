@@ -17,6 +17,7 @@ one or the other.
 ## Properties
 
 `SecurityGroupId` - (Required) The ID of the security group.
+* `NetworkInterfaceId` - (Required) The ID of the network interface to attach to.
 
 `NetworkInterfaceId` - (Required) The ID of the network interface to attach to.
 

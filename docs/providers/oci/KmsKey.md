@@ -12,9 +12,12 @@ Creates a new key.
 
 `DisplayName` - (Required) (Updatable) A user-friendly name for the key. It does not have to be unique, and it is changeable. Avoid entering confidential information.
 
-`KeyShape` - (Required).
+`KeyShape` - (Required)
+* `Algorithm` - (Required) The algorithm used by a key's KeyVersions to encrypt or decrypt.
+* `Length` - (Required) The length of the key, expressed as an integer. Values of 16, 24, or 32 are supported.
 
 `Algorithm` - (Required) The algorithm used by a key's KeyVersions to encrypt or decrypt.
+* `Length` - (Required) The length of the key, expressed as an integer. Values of 16, 24, or 32 are supported.
 
 `Length` - (Required) The length of the key, expressed as an integer. Values of 16, 24, or 32 are supported.
 

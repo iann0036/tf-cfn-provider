@@ -22,8 +22,11 @@ After the backup is fully uploaded to the cloud, it goes into an AVAILABLE state
 `VolumeId` - (Required) The OCID of the volume that needs to be backed up.
 
 `SourceDetails` - (Optional) Details of the volume backup source in the cloud.
+* `Region` - The region of the volume backup source.
+* `VolumeBackupId` - The OCID of the source volume backup.
 
 `Region` - The region of the volume backup source.
+* `VolumeBackupId` - The OCID of the source volume backup.
 
 `VolumeBackupId` - The OCID of the source volume backup.
 

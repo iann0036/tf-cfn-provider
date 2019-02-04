@@ -26,8 +26,11 @@ description. It does not have to be unique, and you can change it. Avoid enterin
 `SizeInGbs` - (Optional) (Updatable) The size of the volume in GBs.
 
 `SourceDetails` - (Required) Specifies the boot volume source details for a new boot volume. The volume source is either another boot volume in the same availability domain or a boot volume backup. This is a mandatory field for a boot volume.
+* `Id` - (Required) The OCID of the boot volume or boot volume backup.
+* `Type` - (Required) The type can be one of these values: `bootVolume`, `bootVolumeBackup`.
 
 `Id` - (Required) The OCID of the boot volume or boot volume backup.
+* `Type` - (Required) The type can be one of these values: `bootVolume`, `bootVolumeBackup`.
 
 `Type` - (Required) The type can be one of these values: `bootVolume`, `bootVolumeBackup`.
 

@@ -18,10 +18,12 @@ If not set, a placeholder of "Managed by Terraform" will be set.
 ### Rule Properties
 
 `EscalationDelayInMinutes` - (Required) The number of minutes before an unacknowledged incident escalates away from this rule.
+* `Targets` - (Required) A target block. Target blocks documented below.
 
 `Targets` - (Required) A target block. Target blocks documented below.
 
-`Type` - (Optional) Can be `user`, `schedule`, `user_reference` or `schedule_reference`. Defaults to `user_reference`.
+`Type` - (Optional) Can be `user`, `schedule`, `user_reference` or `schedule_reference`. Defaults to `user_reference`
+* `Id` - (Required) A target ID.
 
 `Id` - (Required) A target ID.
 

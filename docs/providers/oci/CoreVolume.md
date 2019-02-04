@@ -38,8 +38,11 @@ description. It does not have to be unique, and you can change it. Avoid enterin
 `SizeInMbs` - (Optional) The size of the volume in MBs. The value must be a multiple of 1024. This field is deprecated. Use `SizeInGbs` instead.
 
 `SourceDetails` - (Optional) Specifies the volume source details for a new Block volume. The volume source is either another Block volume in the same availability domain or a Block volume backup. This is an optional field. If not specified or set to null, the new Block volume will be empty. When specified, the new Block volume will contain data from the source volume or backup.
+* `Id` - (Required) The OCID of the volume or volume backup.
+* `Type` - (Required) The type can be one of these values: `volume`, `volumeBackup`.
 
 `Id` - (Required) The OCID of the volume or volume backup.
+* `Type` - (Required) The type can be one of these values: `volume`, `volumeBackup`.
 
 `Type` - (Required) The type can be one of these values: `volume`, `volumeBackup`.
 

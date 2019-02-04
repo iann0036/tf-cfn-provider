@@ -86,9 +86,12 @@ It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in
 `NodeCidrMask` - (Optional, Force new resource) The network mask used on pods for each node, ranging from `24` to `28`.
 Larger this number is, less pods can be allocated on each node. Default value is `24`, means you can allocate 256 pods on each node.
 
-`LogConfig` - (Optional, Force new resource) A list of one element containing information about the associated log store. It contains the following attributes:.
+`LogConfig` - (Optional, Force new resource) A list of one element containing information about the associated log store. It contains the following attributes:
+* `Type` - Type of collecting logs, only `SLS` are supported currently.
+* `Project` - Log Service project name, cluster logs will output to this project.
 
 `Type` - Type of collecting logs, only `SLS` are supported currently.
+* `Project` - Log Service project name, cluster logs will output to this project.
 
 `Project` - Log Service project name, cluster logs will output to this project.
 

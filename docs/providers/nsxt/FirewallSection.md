@@ -16,35 +16,155 @@ This resource provides a way to configure a firewall section on the NSX manager.
 
 `Stateful` - (Required) Stateful or Stateless nature of firewall section is enforced on all rules inside the section. Layer3 sections can be stateful or stateless. Layer2 sections can only be stateless.
 
-`Rule` - (Optional) A list of rules to be applied in this section. each rule has the following arguments:.
+`Rule` - (Optional) A list of rules to be applied in this section. each rule has the following arguments:
+* `DisplayName` - (Optional) The display name of this rule. Defaults to ID if not set.
+* `Description` - (Optional) Description of this rule.
+* `Action` - (Required) Action enforced on the packets which matches the firewall rule. [Allowed values: "ALLOW", "DROP", "REJECT"]
+* `AppliedTo` - (Optional) List of objects where rule will be enforced. The section level field overrides this one. Null will be treated as any. [Supported target types: "LogicalPort", "LogicalSwitch", "NSGroup"]
+* `Destination` - (Optional) List of the destinations. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `DestinationsExcluded` - (Optional) When this boolean flag is set to true, the rule destinations will be negated.
+* `Direction` - (Optional) Rule direction in case of stateless firewall rules. This will only considered if section level parameter is set to stateless. Default to IN_OUT if not specified. [Allowed values: "IN", "OUT", "IN_OUT"]
+* `Disabled` - (Optional) Flag to disable rule. Disabled will only be persisted but never provisioned/realized.
+* `IpProtocol` - (Optional) Type of IP packet that should be matched while enforcing the rule. [allowed values: "IPV4", "IPV6", "IPV4_IPV6"]
+* `Logged` - (Optional) Flag to enable packet logging. Default is disabled.
+* `Notes` - (Optional) User notes specific to the rule.
+* `RuleTag` - (Optional) User level field which will be printed in CLI and packet logs.
+* `Service` - (Optional) List of the services. Null will be treated as any. [Allowed target types: "NSService", "NSServiceGroup"]
+* `Source` - (Optional) List of sources. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `SourcesExcluded` - (Optional) When this boolean flag is set to true, the rule sources will be negated.
 
 `DisplayName` - (Optional) The display name of this rule. Defaults to ID if not set.
+* `Description` - (Optional) Description of this rule.
+* `Action` - (Required) Action enforced on the packets which matches the firewall rule. [Allowed values: "ALLOW", "DROP", "REJECT"]
+* `AppliedTo` - (Optional) List of objects where rule will be enforced. The section level field overrides this one. Null will be treated as any. [Supported target types: "LogicalPort", "LogicalSwitch", "NSGroup"]
+* `Destination` - (Optional) List of the destinations. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `DestinationsExcluded` - (Optional) When this boolean flag is set to true, the rule destinations will be negated.
+* `Direction` - (Optional) Rule direction in case of stateless firewall rules. This will only considered if section level parameter is set to stateless. Default to IN_OUT if not specified. [Allowed values: "IN", "OUT", "IN_OUT"]
+* `Disabled` - (Optional) Flag to disable rule. Disabled will only be persisted but never provisioned/realized.
+* `IpProtocol` - (Optional) Type of IP packet that should be matched while enforcing the rule. [allowed values: "IPV4", "IPV6", "IPV4_IPV6"]
+* `Logged` - (Optional) Flag to enable packet logging. Default is disabled.
+* `Notes` - (Optional) User notes specific to the rule.
+* `RuleTag` - (Optional) User level field which will be printed in CLI and packet logs.
+* `Service` - (Optional) List of the services. Null will be treated as any. [Allowed target types: "NSService", "NSServiceGroup"]
+* `Source` - (Optional) List of sources. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `SourcesExcluded` - (Optional) When this boolean flag is set to true, the rule sources will be negated.
 
 `Description` - (Optional) Description of this rule.
+* `Action` - (Required) Action enforced on the packets which matches the firewall rule. [Allowed values: "ALLOW", "DROP", "REJECT"]
+* `AppliedTo` - (Optional) List of objects where rule will be enforced. The section level field overrides this one. Null will be treated as any. [Supported target types: "LogicalPort", "LogicalSwitch", "NSGroup"]
+* `Destination` - (Optional) List of the destinations. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `DestinationsExcluded` - (Optional) When this boolean flag is set to true, the rule destinations will be negated.
+* `Direction` - (Optional) Rule direction in case of stateless firewall rules. This will only considered if section level parameter is set to stateless. Default to IN_OUT if not specified. [Allowed values: "IN", "OUT", "IN_OUT"]
+* `Disabled` - (Optional) Flag to disable rule. Disabled will only be persisted but never provisioned/realized.
+* `IpProtocol` - (Optional) Type of IP packet that should be matched while enforcing the rule. [allowed values: "IPV4", "IPV6", "IPV4_IPV6"]
+* `Logged` - (Optional) Flag to enable packet logging. Default is disabled.
+* `Notes` - (Optional) User notes specific to the rule.
+* `RuleTag` - (Optional) User level field which will be printed in CLI and packet logs.
+* `Service` - (Optional) List of the services. Null will be treated as any. [Allowed target types: "NSService", "NSServiceGroup"]
+* `Source` - (Optional) List of sources. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `SourcesExcluded` - (Optional) When this boolean flag is set to true, the rule sources will be negated.
 
-`Action` - (Required) Action enforced on the packets which matches the firewall rule. [Allowed values: "ALLOW", "DROP", "REJECT"].
+`Action` - (Required) Action enforced on the packets which matches the firewall rule. [Allowed values: "ALLOW", "DROP", "REJECT"]
+* `AppliedTo` - (Optional) List of objects where rule will be enforced. The section level field overrides this one. Null will be treated as any. [Supported target types: "LogicalPort", "LogicalSwitch", "NSGroup"]
+* `Destination` - (Optional) List of the destinations. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `DestinationsExcluded` - (Optional) When this boolean flag is set to true, the rule destinations will be negated.
+* `Direction` - (Optional) Rule direction in case of stateless firewall rules. This will only considered if section level parameter is set to stateless. Default to IN_OUT if not specified. [Allowed values: "IN", "OUT", "IN_OUT"]
+* `Disabled` - (Optional) Flag to disable rule. Disabled will only be persisted but never provisioned/realized.
+* `IpProtocol` - (Optional) Type of IP packet that should be matched while enforcing the rule. [allowed values: "IPV4", "IPV6", "IPV4_IPV6"]
+* `Logged` - (Optional) Flag to enable packet logging. Default is disabled.
+* `Notes` - (Optional) User notes specific to the rule.
+* `RuleTag` - (Optional) User level field which will be printed in CLI and packet logs.
+* `Service` - (Optional) List of the services. Null will be treated as any. [Allowed target types: "NSService", "NSServiceGroup"]
+* `Source` - (Optional) List of sources. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `SourcesExcluded` - (Optional) When this boolean flag is set to true, the rule sources will be negated.
 
-`AppliedTo` - (Optional) List of objects where rule will be enforced. The section level field overrides this one. Null will be treated as any. [Supported target types: "LogicalPort", "LogicalSwitch", "NSGroup"].
+`AppliedTo` - (Optional) List of objects where rule will be enforced. The section level field overrides this one. Null will be treated as any. [Supported target types: "LogicalPort", "LogicalSwitch", "NSGroup"]
+* `Destination` - (Optional) List of the destinations. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `DestinationsExcluded` - (Optional) When this boolean flag is set to true, the rule destinations will be negated.
+* `Direction` - (Optional) Rule direction in case of stateless firewall rules. This will only considered if section level parameter is set to stateless. Default to IN_OUT if not specified. [Allowed values: "IN", "OUT", "IN_OUT"]
+* `Disabled` - (Optional) Flag to disable rule. Disabled will only be persisted but never provisioned/realized.
+* `IpProtocol` - (Optional) Type of IP packet that should be matched while enforcing the rule. [allowed values: "IPV4", "IPV6", "IPV4_IPV6"]
+* `Logged` - (Optional) Flag to enable packet logging. Default is disabled.
+* `Notes` - (Optional) User notes specific to the rule.
+* `RuleTag` - (Optional) User level field which will be printed in CLI and packet logs.
+* `Service` - (Optional) List of the services. Null will be treated as any. [Allowed target types: "NSService", "NSServiceGroup"]
+* `Source` - (Optional) List of sources. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `SourcesExcluded` - (Optional) When this boolean flag is set to true, the rule sources will be negated.
 
-`Destination` - (Optional) List of the destinations. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)].
+`Destination` - (Optional) List of the destinations. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `DestinationsExcluded` - (Optional) When this boolean flag is set to true, the rule destinations will be negated.
+* `Direction` - (Optional) Rule direction in case of stateless firewall rules. This will only considered if section level parameter is set to stateless. Default to IN_OUT if not specified. [Allowed values: "IN", "OUT", "IN_OUT"]
+* `Disabled` - (Optional) Flag to disable rule. Disabled will only be persisted but never provisioned/realized.
+* `IpProtocol` - (Optional) Type of IP packet that should be matched while enforcing the rule. [allowed values: "IPV4", "IPV6", "IPV4_IPV6"]
+* `Logged` - (Optional) Flag to enable packet logging. Default is disabled.
+* `Notes` - (Optional) User notes specific to the rule.
+* `RuleTag` - (Optional) User level field which will be printed in CLI and packet logs.
+* `Service` - (Optional) List of the services. Null will be treated as any. [Allowed target types: "NSService", "NSServiceGroup"]
+* `Source` - (Optional) List of sources. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `SourcesExcluded` - (Optional) When this boolean flag is set to true, the rule sources will be negated.
 
 `DestinationsExcluded` - (Optional) When this boolean flag is set to true, the rule destinations will be negated.
+* `Direction` - (Optional) Rule direction in case of stateless firewall rules. This will only considered if section level parameter is set to stateless. Default to IN_OUT if not specified. [Allowed values: "IN", "OUT", "IN_OUT"]
+* `Disabled` - (Optional) Flag to disable rule. Disabled will only be persisted but never provisioned/realized.
+* `IpProtocol` - (Optional) Type of IP packet that should be matched while enforcing the rule. [allowed values: "IPV4", "IPV6", "IPV4_IPV6"]
+* `Logged` - (Optional) Flag to enable packet logging. Default is disabled.
+* `Notes` - (Optional) User notes specific to the rule.
+* `RuleTag` - (Optional) User level field which will be printed in CLI and packet logs.
+* `Service` - (Optional) List of the services. Null will be treated as any. [Allowed target types: "NSService", "NSServiceGroup"]
+* `Source` - (Optional) List of sources. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `SourcesExcluded` - (Optional) When this boolean flag is set to true, the rule sources will be negated.
 
-`Direction` - (Optional) Rule direction in case of stateless firewall rules. This will only considered if section level parameter is set to stateless. Default to IN_OUT if not specified. [Allowed values: "IN", "OUT", "IN_OUT"].
+`Direction` - (Optional) Rule direction in case of stateless firewall rules. This will only considered if section level parameter is set to stateless. Default to IN_OUT if not specified. [Allowed values: "IN", "OUT", "IN_OUT"]
+* `Disabled` - (Optional) Flag to disable rule. Disabled will only be persisted but never provisioned/realized.
+* `IpProtocol` - (Optional) Type of IP packet that should be matched while enforcing the rule. [allowed values: "IPV4", "IPV6", "IPV4_IPV6"]
+* `Logged` - (Optional) Flag to enable packet logging. Default is disabled.
+* `Notes` - (Optional) User notes specific to the rule.
+* `RuleTag` - (Optional) User level field which will be printed in CLI and packet logs.
+* `Service` - (Optional) List of the services. Null will be treated as any. [Allowed target types: "NSService", "NSServiceGroup"]
+* `Source` - (Optional) List of sources. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `SourcesExcluded` - (Optional) When this boolean flag is set to true, the rule sources will be negated.
 
 `Disabled` - (Optional) Flag to disable rule. Disabled will only be persisted but never provisioned/realized.
+* `IpProtocol` - (Optional) Type of IP packet that should be matched while enforcing the rule. [allowed values: "IPV4", "IPV6", "IPV4_IPV6"]
+* `Logged` - (Optional) Flag to enable packet logging. Default is disabled.
+* `Notes` - (Optional) User notes specific to the rule.
+* `RuleTag` - (Optional) User level field which will be printed in CLI and packet logs.
+* `Service` - (Optional) List of the services. Null will be treated as any. [Allowed target types: "NSService", "NSServiceGroup"]
+* `Source` - (Optional) List of sources. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `SourcesExcluded` - (Optional) When this boolean flag is set to true, the rule sources will be negated.
 
-`IpProtocol` - (Optional) Type of IP packet that should be matched while enforcing the rule. [allowed values: "IPV4", "IPV6", "IPV4_IPV6"].
+`IpProtocol` - (Optional) Type of IP packet that should be matched while enforcing the rule. [allowed values: "IPV4", "IPV6", "IPV4_IPV6"]
+* `Logged` - (Optional) Flag to enable packet logging. Default is disabled.
+* `Notes` - (Optional) User notes specific to the rule.
+* `RuleTag` - (Optional) User level field which will be printed in CLI and packet logs.
+* `Service` - (Optional) List of the services. Null will be treated as any. [Allowed target types: "NSService", "NSServiceGroup"]
+* `Source` - (Optional) List of sources. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `SourcesExcluded` - (Optional) When this boolean flag is set to true, the rule sources will be negated.
 
 `Logged` - (Optional) Flag to enable packet logging. Default is disabled.
+* `Notes` - (Optional) User notes specific to the rule.
+* `RuleTag` - (Optional) User level field which will be printed in CLI and packet logs.
+* `Service` - (Optional) List of the services. Null will be treated as any. [Allowed target types: "NSService", "NSServiceGroup"]
+* `Source` - (Optional) List of sources. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `SourcesExcluded` - (Optional) When this boolean flag is set to true, the rule sources will be negated.
 
 `Notes` - (Optional) User notes specific to the rule.
+* `RuleTag` - (Optional) User level field which will be printed in CLI and packet logs.
+* `Service` - (Optional) List of the services. Null will be treated as any. [Allowed target types: "NSService", "NSServiceGroup"]
+* `Source` - (Optional) List of sources. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `SourcesExcluded` - (Optional) When this boolean flag is set to true, the rule sources will be negated.
 
 `RuleTag` - (Optional) User level field which will be printed in CLI and packet logs.
+* `Service` - (Optional) List of the services. Null will be treated as any. [Allowed target types: "NSService", "NSServiceGroup"]
+* `Source` - (Optional) List of sources. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `SourcesExcluded` - (Optional) When this boolean flag is set to true, the rule sources will be negated.
 
-`Service` - (Optional) List of the services. Null will be treated as any. [Allowed target types: "NSService", "NSServiceGroup"].
+`Service` - (Optional) List of the services. Null will be treated as any. [Allowed target types: "NSService", "NSServiceGroup"]
+* `Source` - (Optional) List of sources. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `SourcesExcluded` - (Optional) When this boolean flag is set to true, the rule sources will be negated.
 
-`Source` - (Optional) List of sources. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)].
+`Source` - (Optional) List of sources. Null will be treated as any. [Allowed target types: "IPSet", "LogicalPort", "LogicalSwitch", "NSGroup", "MACSet" (depending on the section type)]
+* `SourcesExcluded` - (Optional) When this boolean flag is set to true, the rule sources will be negated.
 
 `SourcesExcluded` - (Optional) When this boolean flag is set to true, the rule sources will be negated.
 

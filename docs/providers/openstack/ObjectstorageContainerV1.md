@@ -38,6 +38,7 @@ updates the MIME type.
 ### Versioning Properties
 
 `Type` - (Required) Versioning type which can be `versions` or `history` according to [Openstack documentation](https://docs.openstack.org/swift/latest/overview_object_versioning.html).
+* `Location` - (Required) Container in which versions will be stored.
 
 `Location` - (Required) Container in which versions will be stored.
 

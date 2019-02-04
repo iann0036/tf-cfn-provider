@@ -55,9 +55,12 @@ Note: Must be a sublist of `AvailabilityZones` and `Orientation` value must not 
 
 `InstanceTypesPreferredSpot` - (Optional) Prioritize a subset of spot instance types. Must be a subset of the selected spot instance types.
 
-`InstanceTypesWeights` - (Optional) List of weights per instance type for weighted groups. Each object in the list should have the following attributes:.
+`InstanceTypesWeights` - (Optional) List of weights per instance type for weighted groups. Each object in the list should have the following attributes:
+* `Weight` - (Required) Weight per instance type (Integer).
+* `InstanceType` - (Required) Name of instance type (String).
 
 `Weight` - (Required) Weight per instance type (Integer).
+* `InstanceType` - (Required) Name of instance type (String).
 
 `InstanceType` - (Required) Name of instance type (String).
 
@@ -89,9 +92,12 @@ Note: Must be a sublist of `AvailabilityZones` and `Orientation` value must not 
 
 `ElasticIps` - (Optional) A list of [AWS Elastic IP](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) allocation IDs to associate to the group instances.
 
-`RevertToSpot` - (Optional) Hold settings for strategy correction – replacing On-Demand for Spot instances. Supported Values: `"never"`, `"always"`, `"timeWindow"`.
+`RevertToSpot` - (Optional) Hold settings for strategy correction – replacing On-Demand for Spot instances. Supported Values: `"never"`, `"always"`, `"timeWindow"`
+* `PerformAt` - (Required) In the event of a fallback to On-Demand instances, select the time period to revert back to Spot. Supported Arguments – always (default), timeWindow, never. For timeWindow or never to be valid the group must have availabilityOriented OR persistence defined.
+* `TimeWindows` - (Optional) Specify a list of time windows for to execute revertToSpot strategy. Time window format: `ddd:hh:mm-ddd:hh:mm`. Example: `Mon:03:00-Wed:02:30`.
 
 `PerformAt` - (Required) In the event of a fallback to On-Demand instances, select the time period to revert back to Spot. Supported Arguments – always (default), timeWindow, never. For timeWindow or never to be valid the group must have availabilityOriented OR persistence defined.
+* `TimeWindows` - (Optional) Specify a list of time windows for to execute revertToSpot strategy. Time window format: `ddd:hh:mm-ddd:hh:mm`. Example: `Mon:03:00-Wed:02:30`.
 
 `TimeWindows` - (Optional) Specify a list of time windows for to execute revertToSpot strategy. Time window format: `ddd:hh:mm-ddd:hh:mm`. Example: `Mon:03:00-Wed:02:30`.
 

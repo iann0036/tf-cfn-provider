@@ -41,7 +41,11 @@ string values are supported: `READER`, `WRITER`, `OWNER`.
 access to.
 
 `SpecialGroup` - (Optional) A special group to grant access to.
-Possible values include:.
+Possible values include:
+* `ProjectOwners`: Owners of the enclosing project.
+* `ProjectReaders`: Readers of the enclosing project.
+* `ProjectWriters`: Writers of the enclosing project.
+* `AllAuthenticatedUsers`: All authenticated BigQuery users.
 
 `UserByEmail` - (Optional) An email address of a user to grant access to.
 

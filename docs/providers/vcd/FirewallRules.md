@@ -7,7 +7,7 @@ modify, and delete firewall settings and rules.
 
 `EdgeGateway` - (Required) The name of the edge gateway on which to apply the Firewall Rules.
 
-`DefaultAction` - (Required) Either "allow" or "deny". Specifies what to do should none of the rules match.
+`DefaultAction` - (Required) Either "allow" or "drop". Specifies what to do should none of the rules match.
 
 `Rule` - (Optional) Configures a firewall rule; see [Rules](#rules) below for details.
 

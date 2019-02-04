@@ -5,6 +5,7 @@
 ## Properties
 
 `PolicyId` - (Required) The ID of the policy.
+* `ChannelId` - (Required) The ID of the channel.
 
 `ChannelId` - (Required) The ID of the channel.
 

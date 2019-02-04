@@ -13,9 +13,12 @@ should be attached.
 should be applied. This must be an active listener on the load
 balancer.
 
-`Attribute` - (Optional) An SSL Negotiation policy attribute. Each has two properties:.
+`Attribute` - (Optional) An SSL Negotiation policy attribute. Each has two properties:
+* `Name` - The name of the attribute
+* `Value` - The value of the attribute.
 
-`Name` - The name of the attribute.
+`Name` - The name of the attribute
+* `Value` - The value of the attribute.
 
 `Value` - The value of the attribute.
 

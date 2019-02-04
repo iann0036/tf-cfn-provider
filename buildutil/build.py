@@ -286,7 +286,7 @@ def process_file(provider_name, file_contents, provider_readme_items):
 
                     # concat lines in newlines for description of attribute
                     line_num_iterator = 1
-                    while len(argument_lines) > line_number+line_num_iterator and (argument_lines[line_number+line_num_iterator].strip() != "" and not argument_lines[line_number+line_num_iterator].strip().startswith("* ") and not argument_lines[line_number+line_num_iterator].strip().startswith("#")):
+                    while len(argument_lines) > line_number+line_num_iterator and (argument_lines[line_number+line_num_iterator].strip() != "" and not argument_lines[line_number+line_num_iterator].startswith("* ") and not argument_lines[line_number+line_num_iterator].startswith("#")):
                         argument_description += "\n" + argument_lines[line_number+line_num_iterator].strip()
                         line_num_iterator += 1
 

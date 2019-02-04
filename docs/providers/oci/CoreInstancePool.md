@@ -17,14 +17,29 @@ Create an instance pool.
 `InstanceConfigurationId` - (Required) (Updatable) The OCID of the instance configuration associated to the instance pool.
 
 `PlacementConfigurations` - (Required) (Updatable) The placement configurations for the instance pool. There should be 1 placement configuration for each desired AD.
+* `AvailabilityDomain` - (Required) (Updatable) The availability domain to place instances. Example: `Uocm:PHX-AD-1`
+* `PrimarySubnetId` - (Required) (Updatable) The OCID of the primary subnet to place instances.
+* `SecondaryVnicSubnets` - (Optional) (Updatable) The set of secondary VNIC data for instances in the pool.
+* `DisplayName` - (Optional) (Updatable) The displayName of the vnic. This is also use to match against the Instance Configuration defined secondary vnic.
+* `SubnetId` - (Required) (Updatable) The subnet OCID for the secondary vnic.
 
-`AvailabilityDomain` - (Required) (Updatable) The availability domain to place instances. Example: `Uocm:PHX-AD-1`.
+`AvailabilityDomain` - (Required) (Updatable) The availability domain to place instances. Example: `Uocm:PHX-AD-1`
+* `PrimarySubnetId` - (Required) (Updatable) The OCID of the primary subnet to place instances.
+* `SecondaryVnicSubnets` - (Optional) (Updatable) The set of secondary VNIC data for instances in the pool.
+* `DisplayName` - (Optional) (Updatable) The displayName of the vnic. This is also use to match against the Instance Configuration defined secondary vnic.
+* `SubnetId` - (Required) (Updatable) The subnet OCID for the secondary vnic.
 
 `PrimarySubnetId` - (Required) (Updatable) The OCID of the primary subnet to place instances.
+* `SecondaryVnicSubnets` - (Optional) (Updatable) The set of secondary VNIC data for instances in the pool.
+* `DisplayName` - (Optional) (Updatable) The displayName of the vnic. This is also use to match against the Instance Configuration defined secondary vnic.
+* `SubnetId` - (Required) (Updatable) The subnet OCID for the secondary vnic.
 
 `SecondaryVnicSubnets` - (Optional) (Updatable) The set of secondary VNIC data for instances in the pool.
+* `DisplayName` - (Optional) (Updatable) The displayName of the vnic. This is also use to match against the Instance Configuration defined secondary vnic.
+* `SubnetId` - (Required) (Updatable) The subnet OCID for the secondary vnic.
 
 `DisplayName` - (Optional) (Updatable) The displayName of the vnic. This is also use to match against the Instance Configuration defined secondary vnic.
+* `SubnetId` - (Required) (Updatable) The subnet OCID for the secondary vnic.
 
 `SubnetId` - (Required) (Updatable) The subnet OCID for the secondary vnic.
 

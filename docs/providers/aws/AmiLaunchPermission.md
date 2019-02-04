@@ -5,6 +5,7 @@ Adds launch permission to Amazon Machine Image (AMI) from another AWS account.
 ## Properties
 
 `ImageId` - (required) A region-unique name for the AMI.
+* `AccountId` - (required) An AWS Account ID to add launch permissions.
 
 `AccountId` - (required) An AWS Account ID to add launch permissions.
 

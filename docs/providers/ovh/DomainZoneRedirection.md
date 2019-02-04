@@ -10,7 +10,10 @@ Provides a OVH domain zone redirection.
 
 `Target` - (Required) The value of the redirection.
 
-`Type` - (Required) The type of the redirection, with values:.
+`Type` - (Required) The type of the redirection, with values:
+* `Visible` -> Redirection by http code 302
+* `VisiblePermanent` -> Redirection by http code 301
+* `Invisible` -> Redirection by html frame.
 
 `Description` - (Optional) A description of this redirection.
 

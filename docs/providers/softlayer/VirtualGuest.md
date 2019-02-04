@@ -33,7 +33,8 @@ and deleted. For additional details please refer to [API documentation](http://s
 
 `BackendVlanId` - (Optional, int) Specifies the network VLAN which is to be used for the back end interface of the computing instance.
 
-`Disks` - (Optional, array) Block device and disk image settings for the computing instance.
+`Disks` - (Optional, array) Block device and disk image settings for the computing instance
+* *Default*: The smallest available capacity for the primary disk will be used. If an image template is specified the disk capacity will be be provided by the template.
 
 `UserData` - (Optional, string) Arbitrary data to be made available to the computing instance.
 

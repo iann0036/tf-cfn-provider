@@ -5,14 +5,29 @@ A [contact method](https://v2.developer.pagerduty.com/v2/page/api-reference#!/Us
 ## Properties
 
 `UserId` - (Required) The ID of the user.
+* `Type` - (Required) The contact method type. May be (`email_contact_method`, `phone_contact_method`, `sms_contact_method`, `push_notification_contact_method`).
+* `SendShortEmail` - (Optional) Send an abbreviated email message instead of the standard email output.
+* `CountryCode` - (Optional) The 1-to-3 digit country calling code. Required when using `phone_contact_method` or `sms_contact_method`.
+* `Label` - (Required) The label (e.g., "Work", "Mobile", etc.).
+* `Address` - (Required) The "address" to deliver to: `email`, `phone number`, etc., depending on the type.
 
 `Type` - (Required) The contact method type. May be (`email_contact_method`, `phone_contact_method`, `sms_contact_method`, `push_notification_contact_method`).
+* `SendShortEmail` - (Optional) Send an abbreviated email message instead of the standard email output.
+* `CountryCode` - (Optional) The 1-to-3 digit country calling code. Required when using `phone_contact_method` or `sms_contact_method`.
+* `Label` - (Required) The label (e.g., "Work", "Mobile", etc.).
+* `Address` - (Required) The "address" to deliver to: `email`, `phone number`, etc., depending on the type.
 
 `SendShortEmail` - (Optional) Send an abbreviated email message instead of the standard email output.
+* `CountryCode` - (Optional) The 1-to-3 digit country calling code. Required when using `phone_contact_method` or `sms_contact_method`.
+* `Label` - (Required) The label (e.g., "Work", "Mobile", etc.).
+* `Address` - (Required) The "address" to deliver to: `email`, `phone number`, etc., depending on the type.
 
 `CountryCode` - (Optional) The 1-to-3 digit country calling code. Required when using `phone_contact_method` or `sms_contact_method`.
+* `Label` - (Required) The label (e.g., "Work", "Mobile", etc.).
+* `Address` - (Required) The "address" to deliver to: `email`, `phone number`, etc., depending on the type.
 
 `Label` - (Required) The label (e.g., "Work", "Mobile", etc.).
+* `Address` - (Required) The "address" to deliver to: `email`, `phone number`, etc., depending on the type.
 
 `Address` - (Required) The "address" to deliver to: `email`, `phone number`, etc., depending on the type.
 

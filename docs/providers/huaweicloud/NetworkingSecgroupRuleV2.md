@@ -18,6 +18,27 @@ or __egress__. Changing this creates a new security group rule.
 or __IPv6__. Changing this creates a new security group rule.
 
 `Protocol` - (Optional) The layer 4 protocol type, valid values are following. Changing this creates a new security group rule. This is required if you want to specify a port range.
+* __tcp__
+* __udp__
+* __icmp__
+* __ah__
+* __dccp__
+* __egp__
+* __esp__
+* __gre__
+* __igmp__
+* __ipv6-encap__
+* __ipv6-frag__
+* __ipv6-icmp__
+* __ipv6-nonxt__
+* __ipv6-opts__
+* __ipv6-route__
+* __ospf__
+* __pgm__
+* __rsvp__
+* __sctp__
+* __udplite__
+* __vrrp__.
 
 `PortRangeMin` - (Optional) The lower part of the allowed port range, valid
 integer value needs to be between 1 and 65535. Changing this creates a new

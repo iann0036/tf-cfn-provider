@@ -23,6 +23,7 @@ It does not have to be unique, and you can change it. Avoid entering confidentia
 `FreeformTags` - (Optional) (Updatable) Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
 
 `Services` - (Required) (Updatable) List of the service OCIDs. These are the services that will be enabled on the service gateway. This list can be empty.
+* `ServiceId` - (Required) (Updatable) The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the service.
 
 `ServiceId` - (Required) (Updatable) The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the service.
 

@@ -16,13 +16,23 @@ Changing this forces a new resource to be created.
 `StorageAccountType` - (Required) The type of storage to use for the managed disk.
 Allowable values are `Standard_LRS`, `Premium_LRS`, `StandardSSD_LRS` or `UltraSSD_LRS`.
 
-`CreateOption` - (Required) The method to use when creating the managed disk. Possible values include:.
+`CreateOption` - (Required) The method to use when creating the managed disk. Possible values include:
+* `Import` - Import a VHD file in to the managed disk (VHD specified with `SourceUri`).
+* `Empty` - Create an empty managed disk.
+* `Copy` - Copy an existing managed disk or snapshot (specified with `SourceResourceId`).
+* `FromImage` - Copy a Platform Image (specified with `ImageReferenceId`).
 
 `Import` - Import a VHD file in to the managed disk (VHD specified with `SourceUri`).
+* `Empty` - Create an empty managed disk.
+* `Copy` - Copy an existing managed disk or snapshot (specified with `SourceResourceId`).
+* `FromImage` - Copy a Platform Image (specified with `ImageReferenceId`).
 
 `Empty` - Create an empty managed disk.
+* `Copy` - Copy an existing managed disk or snapshot (specified with `SourceResourceId`).
+* `FromImage` - Copy a Platform Image (specified with `ImageReferenceId`).
 
 `Copy` - Copy an existing managed disk or snapshot (specified with `SourceResourceId`).
+* `FromImage` - Copy a Platform Image (specified with `ImageReferenceId`).
 
 `FromImage` - Copy a Platform Image (specified with `ImageReferenceId`).
 

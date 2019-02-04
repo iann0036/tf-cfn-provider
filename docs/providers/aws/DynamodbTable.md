@@ -19,15 +19,21 @@ within a region.
 
 `ReadCapacity` - (Optional) The number of read units for this table. If the `BillingMode` is `PROVISIONED`, this field is required.
 
-`Attribute` - (Required) List of nested attribute definitions. Only required for `HashKey` and `RangeKey` attributes. Each attribute has two properties:.
+`Attribute` - (Required) List of nested attribute definitions. Only required for `HashKey` and `RangeKey` attributes. Each attribute has two properties:
+* `Name` - (Required) The name of the attribute
+* `Type` - (Required) Attribute type, which must be a scalar type: `S`, `N`, or `B` for (S)tring, (N)umber or (B)inary data.
 
-`Name` - (Required) The name of the attribute.
+`Name` - (Required) The name of the attribute
+* `Type` - (Required) Attribute type, which must be a scalar type: `S`, `N`, or `B` for (S)tring, (N)umber or (B)inary data.
 
 `Type` - (Required) Attribute type, which must be a scalar type: `S`, `N`, or `B` for (S)tring, (N)umber or (B)inary data.
 
-`Ttl` - (Optional) Defines ttl, has two properties, and can only be specified once:.
+`Ttl` - (Optional) Defines ttl, has two properties, and can only be specified once:
+* `Enabled` - (Required) Indicates whether ttl is enabled (true) or disabled (false).
+* `AttributeName` - (Required) The name of the table attribute to store the TTL timestamp in.
 
 `Enabled` - (Required) Indicates whether ttl is enabled (true) or disabled (false).
+* `AttributeName` - (Required) The name of the table attribute to store the TTL timestamp in.
 
 `AttributeName` - (Required) The name of the table attribute to store the TTL timestamp in.
 

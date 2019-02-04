@@ -7,6 +7,8 @@ The account must have the `teams` ability to use the following resource.
 ## Properties
 
 `Name` - (Required) The name of the group.
+* `Description` - (Optional) A human-friendly description of the team.
+If not set, a placeholder of "Managed by Terraform" will be set.
 
 `Description` - (Optional) A human-friendly description of the team.
 If not set, a placeholder of "Managed by Terraform" will be set.

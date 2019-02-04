@@ -16,6 +16,9 @@ For more information, see [Volume Groups](https://docs.cloud.oracle.com/iaas/Con
 `FreeformTags` - (Optional) (Updatable) Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
 
 `Type` - (Optional) The type of backup to create. If omitted, defaults to incremental.
+* Allowed values are :
+* FULL
+* INCREMENTAL.
 
 `VolumeGroupId` - (Required) The OCID of the volume group that needs to be backed up.
 

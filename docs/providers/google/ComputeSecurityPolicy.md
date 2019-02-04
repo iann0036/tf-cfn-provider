@@ -19,7 +19,9 @@ security policy, a default rule with action "allow" will be added. Structure is 
 
 ### Rule Properties
 
-`Action` - (Required) Action to take when `Match` matches the request. Valid values:.
+`Action` - (Required) Action to take when `Match` matches the request. Valid values:
+* "allow" : allow access to target
+* "deny(status)" : deny access to target, returns the  HTTP response code specified (valid values are 403, 404 and 502).
 
 `Priority` - (Required) An unique positive integer indicating the priority of evaluation for a rule.
 Rules are evaluated from highest priority (lowest numerically) to lowest priority (highest numerically) in order.
@@ -37,7 +39,8 @@ Stackdriver logs for requests that trigger a preview action are annotated as suc
 `Config` - (Required) The configuration options available when specifying `VersionedExpr`.
 Structure is documented below.
 
-`VersionedExpr` - (Required) Predefined rule expression. Available options:.
+`VersionedExpr` - (Required) Predefined rule expression. Available options:
+* SRC_IPS_V1: Must specify the corresponding `SrcIpRanges` field in `Config`.
 
 ### Config Properties
 

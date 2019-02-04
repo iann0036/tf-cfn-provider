@@ -14,11 +14,17 @@ This resource provides a means to configure static routes in NSX to determine wh
 
 `Network` - (Required) CIDR.
 
-`NextHop` - (Required) List of Next Hops, each with those arguments:.
+`NextHop` - (Required) List of Next Hops, each with those arguments:
+* `AdministrativeDistance` - (Optional) Administrative Distance for the next hop IP.
+* `IpAddress` - (Optional) Next Hop IP.
+* `LogicalRouterPortId` - (Optional) Reference of logical router port to be used for next hop.
 
 `AdministrativeDistance` - (Optional) Administrative Distance for the next hop IP.
+* `IpAddress` - (Optional) Next Hop IP.
+* `LogicalRouterPortId` - (Optional) Reference of logical router port to be used for next hop.
 
 `IpAddress` - (Optional) Next Hop IP.
+* `LogicalRouterPortId` - (Optional) Reference of logical router port to be used for next hop.
 
 `LogicalRouterPortId` - (Optional) Reference of logical router port to be used for next hop.
 

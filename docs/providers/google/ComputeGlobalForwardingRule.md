@@ -24,7 +24,12 @@ resource, use the `address` property instead of the `self_link` property.).
 
 `PortRange` - (Optional) A range e.g. "1024-2048" or a single port "1024"
 (defaults to all ports!).
-Some types of forwarding targets have constraints on the acceptable ports:.
+Some types of forwarding targets have constraints on the acceptable ports:
+* Target HTTP proxy: 80, 8080
+* Target HTTPS proxy: 443
+* Target TCP proxy: 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995, 1883, 5222
+* Target SSL proxy: 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995, 1883, 5222
+* Target VPN gateway: 500, 4500.
 
 `Project` - (Optional) The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.

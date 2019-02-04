@@ -103,14 +103,40 @@ However, because of changing instance charge type has CPU core count quota limit
 - Deactive: Disable security enhancement strategy, it works on all images.
 
 `DataDisks` - (Optional, Force New, Available 1.23.1+) The list of data disks created with instance.
+* `Name` - (Optional, Force New) The name of the data disk.
+* `Size` - (Required, Force New) The size of the data disk.
+- cloud：[5, 2000]
+- cloud_efficiency：[20, 32768]
+- cloud_ssd：[20, 32768]
+- ephemeral_ssd：[5, 800]
+* `Category` - (Optional, Force New) The category of the disk:
+- `Cloud`: The general cloud disk.
+- `CloudEfficiency`: The efficiency cloud disk.
+- `CloudSsd`: The SSD cloud disk.
+- `EphemeralSsd`: The local SSD disk.
 
 `Name` - (Optional, Force New) The name of the data disk.
+* `Size` - (Required, Force New) The size of the data disk.
+- cloud：[5, 2000]
+- cloud_efficiency：[20, 32768]
+- cloud_ssd：[20, 32768]
+- ephemeral_ssd：[5, 800]
+* `Category` - (Optional, Force New) The category of the disk:
+- `Cloud`: The general cloud disk.
+- `CloudEfficiency`: The efficiency cloud disk.
+- `CloudSsd`: The SSD cloud disk.
+- `EphemeralSsd`: The local SSD disk.
 
 `Size` - (Required, Force New) The size of the data disk.
 - cloud：[5, 2000]
 - cloud_efficiency：[20, 32768]
 - cloud_ssd：[20, 32768]
-- ephemeral_ssd：[5, 800].
+- ephemeral_ssd：[5, 800]
+* `Category` - (Optional, Force New) The category of the disk:
+- `Cloud`: The general cloud disk.
+- `CloudEfficiency`: The efficiency cloud disk.
+- `CloudSsd`: The SSD cloud disk.
+- `EphemeralSsd`: The local SSD disk.
 
 `Category` - (Optional, Force New) The category of the disk:
 - `Cloud`: The general cloud disk.
@@ -119,6 +145,7 @@ However, because of changing instance charge type has CPU core count quota limit
 - `EphemeralSsd`: The local SSD disk.
 
 `SnapshotId` - (Optional, Force New) The snapshot ID used to initialize the data disk. If the size specified by snapshot is greater that the size of the disk, use the size specified by snapshot as the size of the data disk.
+* `DeleteWithInstance` - (Optional, Force New) Delete this data disk when the instance is destroyed. It only works on cloud, cloud_efficiency and cloud_ssd disk. If the category of this data disk was ephemeral_ssd, please don't set this param.
 
 `DeleteWithInstance` - (Optional, Force New) Delete this data disk when the instance is destroyed. It only works on cloud, cloud_efficiency and cloud_ssd disk. If the category of this data disk was ephemeral_ssd, please don't set this param.
 

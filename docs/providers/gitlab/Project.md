@@ -29,8 +29,13 @@ Valid values are `private`, `internal`, `public`.
 Repositories are created as private by default.
 
 `SharedWithGroups` - (Optional) Enable sharing the project with a list of groups (maps).
+* `GroupId` - (Required) Group id of the group you want to share the project with.
+* `GroupAccessLevel` - (Optional) Group's sharing permissions. See [group members permission][group_members_permissions] for more info.
+Valid values are `guest`, `reporter`, `developer`, `master`.
 
 `GroupId` - (Required) Group id of the group you want to share the project with.
+* `GroupAccessLevel` - (Optional) Group's sharing permissions. See [group members permission][group_members_permissions] for more info.
+Valid values are `guest`, `reporter`, `developer`, `master`.
 
 `GroupAccessLevel` - (Optional) Group's sharing permissions. See [group members permission][group_members_permissions] for more info.
 Valid values are `guest`, `reporter`, `developer`, `master`.

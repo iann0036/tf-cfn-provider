@@ -5,8 +5,11 @@
 ## Properties
 
 `Name` - (Required) The name of the channel.
+* `Type` - (Required) The type of channel.  One of: `campfire`, `email`, `hipchat`, `opsgenie`, `pagerduty`, `slack`, `victorops`, or `webhook`.
+* `Configuration` - (Required) A map of key / value pairs with channel type specific values.
 
 `Type` - (Required) The type of channel.  One of: `campfire`, `email`, `hipchat`, `opsgenie`, `pagerduty`, `slack`, `victorops`, or `webhook`.
+* `Configuration` - (Required) A map of key / value pairs with channel type specific values.
 
 `Configuration` - (Required) A map of key / value pairs with channel type specific values.
 
