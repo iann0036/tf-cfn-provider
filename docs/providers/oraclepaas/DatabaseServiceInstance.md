@@ -20,11 +20,14 @@ The `Terraform::OraclePaaS::DatabaseServiceInstance` resource creates and manage
 
 `DatabaseConfiguration` - (Required) Specifies the details on how to configure the database. Database configuration is documented below.
 
-`DefaultAccessRules` - (Optional) Specifies the details on which default access rules are enable or disabled. Default Access Rules are configured below.
+`DefaultAccessRules` - (Optional) Specifies the details on which default access rules are enable or disabled. Default Access Rules
+are configured below.
 
-`DesiredState` - (Optional) Specifies the desired state of the service instance. Allowed values are `start`, `stop`, and `restart`.
+`DesiredState` - (Optional) Specifies the desired state of the service instance. Allowed values are `start`, `stop`,
+and `restart`.
 
-`InstantiateFromBackup` - (Optional) Specify if the service instance's database should, after the instance is created, be replaced by a database stored in an existing cloud backup that was created using Oracle Database Backup Cloud Service. Instantiate from Backup is documented below.
+`InstantiateFromBackup` - (Optional) Specify if the service instance's database should, after the instance is created, be replaced by a database
+stored in an existing cloud backup that was created using Oracle Database Backup Cloud Service. Instantiate from Backup is documented below.
 
 `IpNetwork` - (Optional) This attribute is only applicable to accounts where regions are supported. The three-part name of an IP network to which the service instance is added. For example: /Compute-identity_domain/user/object.
 
@@ -32,11 +35,13 @@ The `Terraform::OraclePaaS::DatabaseServiceInstance` resource creates and manage
 
 `Backups` - (Optional) Provides Cloud Storage information for how to implement service instance backups. Backups is documented below.
 
-`BringYourOwnLicense` - (Optional) Specify if you want to use an existing perpetual license to Oracle Database to establish the right to use Oracle Database on the new instance. Default value is `false`.
+`BringYourOwnLicense` - (Optional) Specify if you want to use an existing perpetual license to Oracle Database to establish the right to use Oracle Database on the new instance.
+Default value is `false`.
 
 `Description` - (Optional) A description of the Service Instance.
 
-`HighPerformanceStorage` - (Optional) Specifies whether the service instance will be provisioned with high performance storage. Default value is `false`.
+`HighPerformanceStorage` - (Optional) Specifies whether the service instance will be provisioned with high performance storage.
+Default value is `false`.
 
 `HybridDisasteryRecovery` - (Optional) Provides information about an Oracle Hybrid Disaster Recovery configuration. Hybrid Disaster Recovery is documented below.
 
@@ -44,7 +49,8 @@ The `Terraform::OraclePaaS::DatabaseServiceInstance` resource creates and manage
 
 `Region` - (Optional) Specifies the location where the service instance is provisioned (only for accounts where regions are supported).
 
-`Standby` - (Optional) Specifies the configuration details of the standby database. This is only applicable in Oracle Cloud Infrastructure Regions. `FailoverDatabase` and `DisasterRecovery` inside the `DatabaseConfiguration` block must be set to `true`. Standby is documented below.
+`Standby` - (Optional) Specifies the configuration details of the standby database. This is only applicable in Oracle Cloud Infrastructure Regions. `FailoverDatabase` and
+`DisasterRecovery` inside the `DatabaseConfiguration` block must be set to `true`. Standby is documented below.
 
 `Subnet` - (Optional) Name of the subnet within the region where the Oracle Database Cloud Service instance is to be provisioned.
 
@@ -64,13 +70,17 @@ The `Terraform::OraclePaaS::DatabaseServiceInstance` resource creates and manage
 
 `DataStorageVolumeSize` - (Optional) The size (in GB) for the data storage volume.
 
-`DisasterRecovery` - (Optional) Specify if an Oracle Data Guard configuration is created using the Disaster Recovery option or the High Availability option. Default value is `false`.
+`DisasterRecovery` - (Optional) Specify if an Oracle Data Guard configuration is created using the Disaster Recovery option or the High Availability option.
+Default value is `false`.
 
-`FailoverDatabase` - (Optional) Specify if an Oracle Data Guard configuration comprising a primary database and a standby database is created. Default value is `false`.
+`FailoverDatabase` - (Optional) Specify if an Oracle Data Guard configuration comprising a primary database and a standby database is created.
+Default value is `false`.
 
-`GoldenGate` - (Optional) Specify if the database should be configured for use as the replication database of an Oracle GoldenGate Cloud Service instance. You cannot set `goldenGate` to `true` if either `IsRac` or `failoverDatabase` is set to `true`. Default value is `false`.
+`GoldenGate` - (Optional) Specify if the database should be configured for use as the replication database of an Oracle GoldenGate Cloud Service instance.
+You cannot set `goldenGate` to `true` if either `IsRac` or `failoverDatabase` is set to `true`. Default value is `false`.
 
-`IsRac` - (Optional) Specify if a cluster database using Oracle Real Application Clusters should be configured. Default value is `false`.
+`IsRac` - (Optional) Specify if a cluster database using Oracle Real Application Clusters should be configured.
+Default value is `false`.
 
 `NationalCharacterSet` - (Optional) National Character Set for the Database Cloud Service instance. Valid values are `AL16UTF16` and `UTF8`.
 
@@ -122,13 +132,16 @@ The `Terraform::OraclePaaS::DatabaseServiceInstance` resource creates and manage
 
 `DecryptionKey` - (Optional) Password used to create the existing, password-encrypted cloud backup. This password is used to decrypt the backup. Specify either `ibkup_decryption_key` or `ibkup_wallet_file_content` for decrypting the backup.
 
-`OnPremise` - (Optional) Specify if the existing cloud backup being used to replace the database is from an on-premises database or another Database Cloud Service instance. The default value is false.
+`OnPremise` - (Optional) Specify if the existing cloud backup being used to replace the database is from an on-premises database or another Database Cloud Service instance.
+The default value is false.
 
-`ServiceId` - (Optional) Oracle Database Cloud Service instance name from which the database of new Oracle Database Cloud Service instance should be created. This value is required if `OnPremise` is set to true.
+`ServiceId` - (Optional) Oracle Database Cloud Service instance name from which the database of new Oracle Database Cloud Service instance should be created. This value is required if
+`OnPremise` is set to true.
 
 `WalletFileContent` - (Optional) String containing the xsd:base64Binary representation of the cloud backup's wallet file. This wallet is used to decrypt the backup. Specify either `ibkup_decryption_key` or `ibkup_wallet_file_content` for decrypting the backup.
 
-`CloudStorageContainer` - (Required) Name of the Oracle Storage Cloud Service container used to provide storage for your service instance backups. Use the following format to specify the container name: `<storageservicename>-<storageidentitydomain>/<containername>`.
+`CloudStorageContainer` - (Required) Name of the Oracle Storage Cloud Service container used to provide storage for your service instance backups.
+Use the following format to specify the container name: `<storageservicename>-<storageidentitydomain>/<containername>`.
 
 `CloudStorageUsername` - (Required) Username for the Oracle Storage Cloud Service administrator.
 
@@ -136,7 +149,8 @@ The `Terraform::OraclePaaS::DatabaseServiceInstance` resource creates and manage
 
 `CreateIfMissing` - (Optional) Specify if the given cloud_storage_container is to be created if it does not already exist. Default value is `false`.
 
-`CloudStorageContainer` - (Required) Name of the Oracle Storage Cloud Service container where the backup from on-premise instance is stored. Use the following format to specify the container name: `<storageservicename>-<storageidentitydomain>/<containername>`.
+`CloudStorageContainer` - (Required) Name of the Oracle Storage Cloud Service container where the backup from on-premise instance is stored.
+Use the following format to specify the container name: `<storageservicename>-<storageidentitydomain>/<containername>`.
 
 `CloudStorageUsername` - (Required) Username for the Oracle Storage Cloud Service administrator.
 

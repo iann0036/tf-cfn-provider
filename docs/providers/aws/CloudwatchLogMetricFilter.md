@@ -6,11 +6,13 @@ Provides a CloudWatch Log Metric Filter resource.
 
 `Name` - (Required) A name for the metric filter.
 
-`Pattern` - (Required) A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html) for extracting metric data out of ingested log events.
+`Pattern` - (Required) A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
+for extracting metric data out of ingested log events.
 
 `LogGroupName` - (Required) The name of the log group to associate the metric filter with.
 
-`MetricTransformation` - (Required) A block defining collection of information needed to define how metric data gets emitted. See below.
+`MetricTransformation` - (Required) A block defining collection of information
+needed to define how metric data gets emitted. See below.
 
 ### MetricTransformation Properties
 

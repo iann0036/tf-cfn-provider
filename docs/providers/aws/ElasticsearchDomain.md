@@ -8,7 +8,10 @@ Manages an AWS Elasticsearch Domain.
 
 `AccessPolicies` - (Optional) IAM policy document specifying the access policies for the domain.
 
-`AdvancedOptions` - (Optional) Key-value string pairs to specify advanced configuration options. Note that the values for these configuration options must be strings (wrapped in quotes) or they may be wrong and cause a perpetual diff, causing Terraform to want to recreate your Elasticsearch domain on every apply.
+`AdvancedOptions` - (Optional) Key-value string pairs to specify advanced configuration options.
+Note that the values for these configuration options must be strings (wrapped in quotes) or they
+may be wrong and cause a perpetual diff, causing Terraform to want to recreate your Elasticsearch
+domain on every apply.
 
 `EbsOptions` - (Optional) EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
 
@@ -32,9 +35,11 @@ Manages an AWS Elasticsearch Domain.
 
 `VolumeType` - (Optional) The type of EBS volumes attached to data nodes.
 
-`VolumeSize` - The size of EBS volumes attached to data nodes (in GB). **Required** if `EbsEnabled` is set to `true`.
+`VolumeSize` - The size of EBS volumes attached to data nodes (in GB).
+**Required** if `EbsEnabled` is set to `true`.
 
-`Iops` - (Optional) The baseline input/output (I/O) performance of EBS volumes attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type.
+`Iops` - (Optional) The baseline input/output (I/O) performance of EBS volumes
+attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type.
 
 `Enabled` - (Required) Whether to enable encryption at rest. If the `EncryptAtRest` block is not provided then this defaults to `false`.
 
@@ -58,7 +63,8 @@ Manages an AWS Elasticsearch Domain.
 
 `SubnetIds` - (Required) List of VPC Subnet IDs for the Elasticsearch domain endpoints to be created in.
 
-`AutomatedSnapshotStartHour` - (Required) Hour during which the service takes an automated daily snapshot of the indices in the domain.
+`AutomatedSnapshotStartHour` - (Required) Hour during which the service takes an automated daily
+snapshot of the indices in the domain.
 
 `LogType` - (Required) A type of Elasticsearch log. Valid values: INDEX_SLOW_LOGS, SEARCH_SLOW_LOGS, ES_APPLICATION_LOGS.
 

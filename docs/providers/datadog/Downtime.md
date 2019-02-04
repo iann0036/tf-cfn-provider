@@ -18,15 +18,15 @@ Provides a Datadog downtime resource. This can be used to create and manage Data
 
 `EndDate` - (Optional) String representing date and time to end the downtime in RFC3339 format.
 
-`Recurrence` - (Optional) A dictionary to configure the downtime to be recurring. * `Type` - days, weeks, months, or years * `Period` - How often to repeat as an integer. For example to repeat every 3 days, select a type of days and a period of 3. * `WeekDays` - (Optional) A list of week days to repeat on. Choose from: Mon, Tue, Wed, Thu, Fri, Sat or Sun. Only applicable when type is weeks. First letter must be capitalized. * `UntilOccurrences` - (Optional) How many times the downtime will be rescheduled. `UntilOccurrences` and `UntilDate` are mutually exclusive. * `UntilDate` - (Optional) The date at which the recurrence should end as a POSIX timestamp. `UntilOccurrences` and `UntilDate` are mutually exclusive.
+`Recurrence` - (Optional) A dictionary to configure the downtime to be recurring.
 
-`Type` - days, weeks, months, or years * `Period` - How often to repeat as an integer. For example to repeat every 3 days, select a type of days and a period of 3. * `WeekDays` - (Optional) A list of week days to repeat on. Choose from: Mon, Tue, Wed, Thu, Fri, Sat or Sun. Only applicable when type is weeks. First letter must be capitalized. * `UntilOccurrences` - (Optional) How many times the downtime will be rescheduled. `UntilOccurrences` and `UntilDate` are mutually exclusive. * `UntilDate` - (Optional) The date at which the recurrence should end as a POSIX timestamp. `UntilOccurrences` and `UntilDate` are mutually exclusive.
+`Type` - days, weeks, months, or years.
 
-`Period` - How often to repeat as an integer. For example to repeat every 3 days, select a type of days and a period of 3. * `WeekDays` - (Optional) A list of week days to repeat on. Choose from: Mon, Tue, Wed, Thu, Fri, Sat or Sun. Only applicable when type is weeks. First letter must be capitalized. * `UntilOccurrences` - (Optional) How many times the downtime will be rescheduled. `UntilOccurrences` and `UntilDate` are mutually exclusive. * `UntilDate` - (Optional) The date at which the recurrence should end as a POSIX timestamp. `UntilOccurrences` and `UntilDate` are mutually exclusive.
+`Period` - How often to repeat as an integer. For example to repeat every 3 days, select a type of days and a period of 3.
 
-`WeekDays` - (Optional) A list of week days to repeat on. Choose from: Mon, Tue, Wed, Thu, Fri, Sat or Sun. Only applicable when type is weeks. First letter must be capitalized. * `UntilOccurrences` - (Optional) How many times the downtime will be rescheduled. `UntilOccurrences` and `UntilDate` are mutually exclusive. * `UntilDate` - (Optional) The date at which the recurrence should end as a POSIX timestamp. `UntilOccurrences` and `UntilDate` are mutually exclusive.
+`WeekDays` - (Optional) A list of week days to repeat on. Choose from: Mon, Tue, Wed, Thu, Fri, Sat or Sun. Only applicable when type is weeks. First letter must be capitalized.
 
-`UntilOccurrences` - (Optional) How many times the downtime will be rescheduled. `UntilOccurrences` and `UntilDate` are mutually exclusive. * `UntilDate` - (Optional) The date at which the recurrence should end as a POSIX timestamp. `UntilOccurrences` and `UntilDate` are mutually exclusive.
+`UntilOccurrences` - (Optional) How many times the downtime will be rescheduled. `UntilOccurrences` and `UntilDate` are mutually exclusive.
 
 `UntilDate` - (Optional) The date at which the recurrence should end as a POSIX timestamp. `UntilOccurrences` and `UntilDate` are mutually exclusive.
 

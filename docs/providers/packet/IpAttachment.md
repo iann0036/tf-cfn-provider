@@ -15,7 +15,8 @@ Device and reserved block must be in the same facility.
 
 `DeviceId` - (Required) ID of device to which to assign the subnet.
 
-`CidrNotation` - (Required) CIDR notation of subnet from block reserved in the same project and facility as the device.
+`CidrNotation` - (Required) CIDR notation of subnet from block reserved in the same
+project and facility as the device.
 
 
 ## Return Values

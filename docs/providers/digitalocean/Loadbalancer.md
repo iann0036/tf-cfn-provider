@@ -9,15 +9,22 @@ modify, and delete Load Balancers.
 
 `Region` - (Required) The region to start in.
 
-`Algorithm` - (Optional) The load balancing algorithm used to determine which backend Droplet will be selected by a client. It must be either `round_robin` or `least_connections`. The default value is `round_robin`.
+`Algorithm` - (Optional) The load balancing algorithm used to determine
+which backend Droplet will be selected by a client. It must be either `round_robin`
+or `least_connections`. The default value is `round_robin`.
 
-`ForwardingRule` - (Required) A list of `ForwardingRule` to be assigned to the Load Balancer. The `ForwardingRule` block is documented below.
+`ForwardingRule` - (Required) A list of `ForwardingRule` to be assigned to the
+Load Balancer. The `ForwardingRule` block is documented below.
 
-`Healthcheck` - (Optional) A `Healthcheck` block to be assigned to the Load Balancer. The `Healthcheck` block is documented below. Only 1 healthcheck is allowed.
+`Healthcheck` - (Optional) A `Healthcheck` block to be assigned to the
+Load Balancer. The `Healthcheck` block is documented below. Only 1 healthcheck is allowed.
 
-`StickySessions` - (Optional) A `StickySessions` block to be assigned to the Load Balancer. The `StickySessions` block is documented below. Only 1 sticky_sessions block is allowed.
+`StickySessions` - (Optional) A `StickySessions` block to be assigned to the
+Load Balancer. The `StickySessions` block is documented below. Only 1 sticky_sessions block is allowed.
 
-`RedirectHttpToHttps` - (Optional) A boolean value indicating whether HTTP requests to the Load Balancer on port 80 will be redirected to HTTPS on port 443. Default value is `false`.
+`RedirectHttpToHttps` - (Optional) A boolean value indicating whether
+HTTP requests to the Load Balancer on port 80 will be redirected to HTTPS on port 443.
+Default value is `false`.
 
 ### ForwardingRule Properties
 

@@ -8,7 +8,8 @@ Provides an ApsaraDB Redis / Memcache instance resource. A DB instance is an iso
 
 `Password` - (Optional) The password of the DB instance. The password is a string of 8 to 30 characters and must contain uppercase letters, lowercase letters, and numbers.
 
-`InstanceClass` - (Required) Type of the applied ApsaraDB for Redis instance. For more information, see [Instance type table](https://www.alibabacloud.com/help/doc-detail/61135.htm).
+`InstanceClass` - (Required) Type of the applied ApsaraDB for Redis instance.
+For more information, see [Instance type table](https://www.alibabacloud.com/help/doc-detail/61135.htm).
 
 `AvailabilityZone` - (Optional) The Zone to launch the DB instance.
 

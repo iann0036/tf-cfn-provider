@@ -18,7 +18,9 @@ for an example of enabling notifications by granting the correct IAM permission.
 
 `PayloadFormat` - (Required) The desired content of the Payload. One of `"JSON_API_V1"` or `"NONE"`.
 
-`Topic` - (Required) The Cloud PubSub topic to which this subscription publishes. Expects either the topic name, assumed to belong to the default GCP provider project, or the project-level name, i.e. `projects/my-gcp-project/topics/my-topic` or `my-topic`.
+`Topic` - (Required) The Cloud PubSub topic to which this subscription publishes. Expects either the
+topic name, assumed to belong to the default GCP provider project, or the project-level name,
+i.e. `projects/my-gcp-project/topics/my-topic` or `my-topic`.
 
 `CustomAttributes` - (Optional)  A set of key/value attribute pairs to attach to each Cloud PubSub message published for this notification subscription.
 

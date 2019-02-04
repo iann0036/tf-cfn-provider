@@ -24,13 +24,20 @@ those keys were created outside of Terraform.
 
 ## Properties
 
-`Datacenter` - (Optional) The datacenter to use. This overrides the datacenter in the provider setup and the agent's default datacenter.
+`Datacenter` - (Optional) The datacenter to use. This overrides the
+datacenter in the provider setup and the agent's default datacenter.
 
-`Token` - (Optional) The ACL token to use. This overrides the token that the agent provides by default.
+`Token` - (Optional) The ACL token to use. This overrides the
+token that the agent provides by default.
 
-`PathPrefix` - (Required) Specifies the common prefix shared by all keys that will be managed by this resource instance. In most cases this will end with a slash, to manage a "folder" of keys.
+`PathPrefix` - (Required) Specifies the common prefix shared by all keys
+that will be managed by this resource instance. In most cases this will
+end with a slash, to manage a "folder" of keys.
 
-`Subkeys` - (Required) A mapping from subkey name (which will be appended to the given `PathPrefix`) to the value that should be stored at that key. Use slashes, as shown in the above example, to create "sub-folders" under the given path prefix.
+`Subkeys` - (Required) A mapping from subkey name (which will be appended
+to the given `PathPrefix`) to the value that should be stored at that key.
+Use slashes, as shown in the above example, to create "sub-folders" under
+the given path prefix.
 
 
 ## Return Values

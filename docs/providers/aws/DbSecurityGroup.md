@@ -21,7 +21,8 @@ attribute instead.
 
 `SecurityGroupId` - The ID of the security group to authorize.
 
-`SecurityGroupOwnerId` - The owner Id of the security group provided by `SecurityGroupName`.
+`SecurityGroupOwnerId` - The owner Id of the security group provided
+by `SecurityGroupName`.
 
 
 ## Return Values

@@ -14,13 +14,16 @@ for workspaces that the policy set is attached to.
 
 `Description` - (Optional) A description of the policy set's purpose.
 
-`Global` - (Optional) Whether or not policies in this set will apply to all workspaces. Defaults to `false`. This value _must not_ be provided if `WorkspaceExternalIds` are provided.
+`Global` - (Optional) Whether or not policies in this set will apply to
+all workspaces. Defaults to `false`. This value _must not_ be provided if
+`WorkspaceExternalIds` are provided.
 
 `Organization` - (Required) Name of the organization.
 
 `PolicyIds` - (Required) A list of Sentinel policy IDs.
 
-`WorkspaceExternalIds` - (Optional) A list of workspace external IDs. If the policy set is `Global`, this value _must not_ be provided.
+`WorkspaceExternalIds` - (Optional) A list of workspace external IDs. If
+the policy set is `Global`, this value _must not_ be provided.
 
 
 ## Return Values

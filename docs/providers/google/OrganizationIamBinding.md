@@ -15,7 +15,9 @@ an existing Google Cloud Platform Organization.
 
 `OrgId` - (Required) The numeric ID of the organization in which you want to create a custom role.
 
-`Role` - (Required) The role that should be applied. Only one `Terraform::Google::OrganizationIamBinding` can be used per role. Note that custom roles must be of the format `[projects|organizations]/{parent-name}/roles/{role-name}`.
+`Role` - (Required) The role that should be applied. Only one
+`Terraform::Google::OrganizationIamBinding` can be used per role. Note that custom roles must be of the format
+`[projects|organizations]/{parent-name}/roles/{role-name}`.
 
 `Members` - (Required) A list of users that the role should apply to. For more details on format and restrictions see https://cloud.google.com/billing/reference/rest/v1/Policy#Binding.
 

@@ -12,13 +12,16 @@ Provides a CloudWatch Metric Alarm resource.
 
 `EvaluationPeriods` - (Required) The number of periods over which data is compared to the specified threshold.
 
-`MetricName` - (Required) The name for the alarm's associated metric. See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
+`MetricName` - (Required) The name for the alarm's associated metric.
+See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
 
-`Namespace` - (Required) The namespace for the alarm's associated metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html). See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
+`Namespace` - (Required) The namespace for the alarm's associated metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
+See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
 
 `Period` - (Required) The period in seconds over which the specified `Statistic` is applied.
 
-`Statistic` - (Optional) The statistic to apply to the alarm's associated metric. Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`.
+`Statistic` - (Optional) The statistic to apply to the alarm's associated metric.
+Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`.
 
 `Threshold` - (Required) The value against which the specified statistic is compared.
 
@@ -42,7 +45,12 @@ Provides a CloudWatch Metric Alarm resource.
 
 `TreatMissingData` - (Optional) Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
 
-`EvaluateLowSampleCountPercentiles` - (Optional) Used only for alarms based on percentiles. If you specify `ignore`, the alarm state will not change during periods with too few data points to be statistically significant. If you specify `evaluate` or omit this parameter, the alarm will always be evaluated and possibly change state no matter how many data points are available. The following values are supported: `ignore`, and `evaluate`.
+`EvaluateLowSampleCountPercentiles` - (Optional) Used only for alarms
+based on percentiles. If you specify `ignore`, the alarm state will not
+change during periods with too few data points to be statistically significant.
+If you specify `evaluate` or omit this parameter, the alarm will always be
+evaluated and possibly change state no matter how many data points are available.
+The following values are supported: `ignore`, and `evaluate`.
 
 
 ## Return Values

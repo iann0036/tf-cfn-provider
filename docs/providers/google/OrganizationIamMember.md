@@ -11,7 +11,8 @@ the IAM policy for an existing Google Cloud Platform Organization.
 
 `OrgId` - (Required) The numeric ID of the organization in which you want to create a custom role.
 
-`Role` - (Required) The role that should be applied. Note that custom roles must be of the format `[projects|organizations]/{parent-name}/roles/{role-name}`.
+`Role` - (Required) The role that should be applied. Note that custom roles must be of the format
+`[projects|organizations]/{parent-name}/roles/{role-name}`.
 
 `Member` - (Required) The user that the role should apply to. For more details on format and restrictions see https://cloud.google.com/billing/reference/rest/v1/Policy#Binding.
 

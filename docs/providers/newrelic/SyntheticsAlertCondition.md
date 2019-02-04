@@ -4,13 +4,13 @@
 
 ## Properties
 
-`PolicyId` - (Required) The ID of the policy where this condition should be used. * `Name` - (Required) The title of this condition. * `MonitorId` - (Required) The ID of the Synthetics monitor to be referenced in the alert condition. * `RunbookUrl` - (Optional) Runbook URL to display in notifications. * `Enabled` - (Optional) Set whether to enable the alert condition. Defaults to `true`.
+`PolicyId` - (Required) The ID of the policy where this condition should be used.
 
-`Name` - (Required) The title of this condition. * `MonitorId` - (Required) The ID of the Synthetics monitor to be referenced in the alert condition. * `RunbookUrl` - (Optional) Runbook URL to display in notifications. * `Enabled` - (Optional) Set whether to enable the alert condition. Defaults to `true`.
+`Name` - (Required) The title of this condition.
 
-`MonitorId` - (Required) The ID of the Synthetics monitor to be referenced in the alert condition. * `RunbookUrl` - (Optional) Runbook URL to display in notifications. * `Enabled` - (Optional) Set whether to enable the alert condition. Defaults to `true`.
+`MonitorId` - (Required) The ID of the Synthetics monitor to be referenced in the alert condition.
 
-`RunbookUrl` - (Optional) Runbook URL to display in notifications. * `Enabled` - (Optional) Set whether to enable the alert condition. Defaults to `true`.
+`RunbookUrl` - (Optional) Runbook URL to display in notifications.
 
 `Enabled` - (Optional) Set whether to enable the alert condition. Defaults to `true`.
 

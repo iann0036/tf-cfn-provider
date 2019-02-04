@@ -50,6 +50,9 @@ Manages a Function App.
 
 `WebsocketsEnabled` - (Optional) Should WebSockets be enabled?.
 
+`LinuxFxVersion` - (Optional) Linux App Framework and version for the AppService, e.g. `DOCKER|(golang:latest)`.
+---.
+
 ### Identity Properties
 
 `Type` - (Required) Specifies the identity type of the App Service. At this time the only allowed value is `SystemAssigned`.
@@ -68,6 +71,8 @@ Manages a Function App.
 `Identity` - An `Identity` block as defined below, which contains the Managed Service Identity information for this App Service.
 
 `SiteCredential` - A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
+
+`Kind` - The Function App kind - such as `functionapp,linux,container`.
 
 `PrincipalId` - The Principal ID for the Service Principal associated with the Managed Service Identity of this App Service.
 

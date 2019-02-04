@@ -4,13 +4,13 @@ An [extension](https://v2.developer.pagerduty.com/v2/page/api-reference#!/Extens
 
 ## Properties
 
-`Name` - (Optional) The name of the service extension. * `EndpointUrl` - (Optional) The url of the extension. * `ExtensionSchema` - (Required) This is the schema for this extension. * `ExtensionObjects` - (Required) This is the objects for which the extension applies (An array of service ids). * `Config` - (Optional) The configuration of the service extension as string containing plain JSON-encoded data.
+`Name` - (Optional) The name of the service extension.
 
-`EndpointUrl` - (Optional) The url of the extension. * `ExtensionSchema` - (Required) This is the schema for this extension. * `ExtensionObjects` - (Required) This is the objects for which the extension applies (An array of service ids). * `Config` - (Optional) The configuration of the service extension as string containing plain JSON-encoded data.
+`EndpointUrl` - (Optional) The url of the extension.
 
-`ExtensionSchema` - (Required) This is the schema for this extension. * `ExtensionObjects` - (Required) This is the objects for which the extension applies (An array of service ids). * `Config` - (Optional) The configuration of the service extension as string containing plain JSON-encoded data.
+`ExtensionSchema` - (Required) This is the schema for this extension.
 
-`ExtensionObjects` - (Required) This is the objects for which the extension applies (An array of service ids). * `Config` - (Optional) The configuration of the service extension as string containing plain JSON-encoded data.
+`ExtensionObjects` - (Required) This is the objects for which the extension applies (An array of service ids).
 
 `Config` - (Optional) The configuration of the service extension as string containing plain JSON-encoded data.
 

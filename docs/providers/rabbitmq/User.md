@@ -9,9 +9,11 @@ The ``Terraform::RabbitMQ::User`` resource creates and manages a user.
 
 `Name` - (Required) The name of the user.
 
-`Password` - (Required) The password of the user. The value of this argument is plain-text so make sure to secure where this is defined.
+`Password` - (Required) The password of the user. The value of this argument
+is plain-text so make sure to secure where this is defined.
 
-`Tags` - (Optional) Which permission model to apply to the user. Valid options are: management, policymaker, monitoring, and administrator.
+`Tags` - (Optional) Which permission model to apply to the user. Valid
+options are: management, policymaker, monitoring, and administrator.
 
 
 ## See Also

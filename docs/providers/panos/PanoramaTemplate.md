@@ -26,7 +26,9 @@ stack is still present in PAN-OS 8.1.
 
 `Serial` - (Required) The serial number of the firewall.
 
-`VsysList` - (Optional) A subset of all available vsys on the firewall that should be in this template.  If the firewall is a virtual firewall, then this parameter should just be omitted.
+`VsysList` - (Optional) A subset of all available vsys on the firewall
+that should be in this template.  If the firewall is a virtual firewall,
+then this parameter should just be omitted.
 
 
 ## See Also

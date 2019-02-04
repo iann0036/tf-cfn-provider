@@ -6,9 +6,11 @@ Creates a topic in Google's pubsub queueing system. For more information see
 
 ## Properties
 
-`Name` - (Required) A unique name for the pubsub topic. Changing this forces a new resource to be created.
+`Name` - (Required) A unique name for the pubsub topic.
+Changing this forces a new resource to be created.
 
-`Project` - (Optional) The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
+`Project` - (Optional) The ID of the project in which the resource belongs. If it
+is not provided, the provider project is used.
 
 
 ## See Also

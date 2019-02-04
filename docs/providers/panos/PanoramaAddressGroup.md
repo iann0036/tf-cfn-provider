@@ -10,9 +10,11 @@ group.
 
 `Name` - (Required) The address group's name.
 
-`DeviceGroup` - (Optional) The device group to put the address group into (default: `shared`).
+`DeviceGroup` - (Optional) The device group to put the address group into
+(default: `shared`).
 
-`StaticAddresses` - (Optional) The address objects to include in this statically defined address group.
+`StaticAddresses` - (Optional) The address objects to include in this
+statically defined address group.
 
 `DynamicMatch` - (Optional) The IP tags to include in this DAG.
 

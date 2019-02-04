@@ -26,11 +26,10 @@ Provides a S3 bucket object resource.
 
 `WebsiteRedirect` - (Optional) Specifies a target URL for [website redirect](http://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html).
 
-`Etag` - (Optional) Used to trigger updates. The only meaningful value is `${md5(file("path/to/file"))}`. This attribute is not compatible with `kms_key_id`.
+`Etag` - (Optional) Used to trigger updates. The only meaningful value is `${md5(file("path/to/file"))}`.
+This attribute is not compatible with `kms_key_id`.
 
 `ServerSideEncryption` - (Optional) Specifies server-side encryption of the object in S3. Valid values are "`AES256`" and "`aws:kms`".
-
-`Tags` - (Optional) A mapping of tags to assign to the object.
 
 
 ## Return Values

@@ -17,7 +17,9 @@ into management.
 
 `EnableDnsHostnames` - (Optional) A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
 
-`EnableClassiclink` - (Optional) A boolean flag to enable/disable ClassicLink for the VPC. Only valid in regions and accounts that support EC2 Classic. See the [ClassicLink documentation][1] for more information. Defaults false.
+`EnableClassiclink` - (Optional) A boolean flag to enable/disable ClassicLink
+for the VPC. Only valid in regions and accounts that support EC2 Classic.
+See the [ClassicLink documentation][1] for more information. Defaults false.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 

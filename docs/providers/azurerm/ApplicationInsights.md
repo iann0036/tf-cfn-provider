@@ -4,9 +4,11 @@ Manage an Application Insights component.
 
 ## Properties
 
-`Name` - (Required) Specifies the name of the Application Insights component. Changing this forces a new resource to be created.
+`Name` - (Required) Specifies the name of the Application Insights component. Changing this forces a
+new resource to be created.
 
-`ResourceGroupName` - (Required) The name of the resource group in which to create the Application Insights component.
+`ResourceGroupName` - (Required) The name of the resource group in which to
+create the Application Insights component.
 
 `Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
 

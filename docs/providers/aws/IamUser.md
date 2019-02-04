@@ -10,7 +10,9 @@ Provides an IAM user.
 
 `PermissionsBoundary` - (Optional) The ARN of the policy that is used to set the permissions boundary for the user.
 
-`ForceDestroy` - (Optional, default false) When destroying this user, destroy even if it has non-Terraform-managed IAM access keys, login profile or MFA devices. Without `ForceDestroy` a user with non-Terraform-managed access keys and login profile will fail to be destroyed.
+`ForceDestroy` - (Optional, default false) When destroying this user, destroy even if it
+has non-Terraform-managed IAM access keys, login profile or MFA devices. Without `ForceDestroy`
+a user with non-Terraform-managed access keys and login profile will fail to be destroyed.
 
 `Tags` - Key-value mapping of tags for the IAM user.
 

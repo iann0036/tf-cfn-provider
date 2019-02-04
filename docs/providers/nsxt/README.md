@@ -27,6 +27,9 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 * `retry_on_status_codes` - (Optional) A list of HTTP status codes to retry on.
   By default, the provider will retry on HTTP error 429 (too many requests),
   essentially retrying on throttled connections.
+* `remote_auth` - (Optional) Would trigger remote authorization instead of basic
+  authorization. This is required for users based on vIDM authentication.
+  The default for this flag is false.
 
 
 ## Supported Resources

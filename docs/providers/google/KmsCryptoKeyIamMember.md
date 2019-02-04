@@ -12,9 +12,13 @@ the IAM policy for an existing Google Cloud KMS crypto key.
 
 `Member` - (Required) The user that the role should apply to. For more details on format and restrictions see https://cloud.google.com/billing/reference/rest/v1/Policy#Binding.
 
-`Role` - (Required) The role that should be applied. Note that custom roles must be of the format `[projects|organizations]/{parent-name}/roles/{role-name}`.
+`Role` - (Required) The role that should be applied. Note that custom roles must be of the format
+`[projects|organizations]/{parent-name}/roles/{role-name}`.
 
-`CryptoKeyId` - (Required) The key ring ID, in the form `{project_id}/{location_name}/{key_ring_name}/{crypto_key_name}` or `{location_name}/{key_ring_name}/{crypto_key_name}`. In the second form, the provider's project setting will be used as a fallback.
+`CryptoKeyId` - (Required) The key ring ID, in the form
+`{project_id}/{location_name}/{key_ring_name}/{crypto_key_name}` or
+`{location_name}/{key_ring_name}/{crypto_key_name}`. In the second form,
+the provider's project setting will be used as a fallback.
 
 
 ## Return Values

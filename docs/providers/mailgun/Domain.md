@@ -9,9 +9,12 @@ create and manage applications on Mailgun.
 
 `SmtpPassword` - (Required) Password for SMTP authentication.
 
-`SpamAction` - (Optional) `disabled` or `tag` Disable, no spam filtering will occur for inbound messages. Tag, messages will be tagged with a spam header.
+`SpamAction` - (Optional) `disabled` or `tag` Disable, no spam
+filtering will occur for inbound messages. Tag, messages
+will be tagged with a spam header.
 
-`Wildcard` - (Optional) Boolean that determines whether the domain will accept email for sub-domains.
+`Wildcard` - (Optional) Boolean that determines whether
+the domain will accept email for sub-domains.
 
 
 ## Return Values

@@ -9,19 +9,24 @@ Currently, defining health checks is not supported.
 
 ## Properties
 
-`Address` - (Required) The address of the node being added to, or referenced in the catalog.
+`Address` - (Required) The address of the node being added to,
+or referenced in the catalog.
 
-`Node` - (Required) The name of the node being added to, or referenced in the catalog.
+`Node` - (Required) The name of the node being added to, or
+referenced in the catalog.
 
-`Service` - (Optional) A service to optionally associated with the node. Supported values are documented below.
+`Service` - (Optional) A service to optionally associated with
+the node. Supported values are documented below.
 
-`Datacenter` - (Optional) The datacenter to use. This overrides the datacenter in the provider setup and the agent's default datacenter.
+`Datacenter` - (Optional) The datacenter to use. This overrides the
+datacenter in the provider setup and the agent's default datacenter.
 
 `Token` - (Optional) ACL token.
 
 ### Service Properties
 
-`Address` - (Optional) The address of the service. Defaults to the node address.
+`Address` - (Optional) The address of the service. Defaults to the
+node address.
 
 `Id` - (Optional) The ID of the service. Defaults to the `Name`.
 
@@ -29,7 +34,8 @@ Currently, defining health checks is not supported.
 
 `Port` - (Optional) The port of the service.
 
-`Tags` - (Optional) A list of values that are opaque to Consul, but can be used to distinguish between services or nodes.
+`Tags` - (Optional) A list of values that are opaque to Consul,
+but can be used to distinguish between services or nodes.
 
 
 ## Return Values

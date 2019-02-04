@@ -4,11 +4,14 @@ Manage a custom virtual machine image that can be used to create virtual machine
 
 ## Properties
 
-`Name` - (Required) Specifies the name of the image. Changing this forces a new resource to be created.
+`Name` - (Required) Specifies the name of the image. Changing this forces a
+new resource to be created.
 
-`ResourceGroupName` - (Required) The name of the resource group in which to create the image. Changing this forces a new resource to be created.
+`ResourceGroupName` - (Required) The name of the resource group in which to create
+the image. Changing this forces a new resource to be created.
 
-`Location` - (Required) Specified the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+`Location` - (Required) Specified the supported Azure location where the resource exists.
+Changing this forces a new resource to be created.
 
 `SourceVirtualMachineId` - (Optional) The Virtual Machine ID from which to create the image.
 

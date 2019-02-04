@@ -12,12 +12,14 @@ Read more at [Kubernetes reference](https://kubernetes.io/docs/admin/service-acc
 
 `Secret` - (Optional) A list of secrets allowed to be used by pods running using this Service Account. For more info see [Kubernetes reference](http://kubernetes.io/docs/user-guide/secrets).
 
+`AutomountServiceAccountToken` - (Optional) Boolean, `true` to enable automatic mounting of the service account token.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`DefaultSecretName` - Name of the default secret the is created & managed by the service.
+`DefaultSecretName` - Name of the default secret, containing service account token, created & managed by the service.
 
 ## See Also
 

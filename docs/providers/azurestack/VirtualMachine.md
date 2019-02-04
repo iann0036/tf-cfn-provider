@@ -4,9 +4,11 @@ Manages a virtual machine.
 
 ## Properties
 
-`Name` - (Required) Specifies the name of the virtual machine resource. Changing this forces a new resource to be created.
+`Name` - (Required) Specifies the name of the virtual machine resource. Changing this forces a
+new resource to be created.
 
-`ResourceGroupName` - (Required) The name of the resource group in which to create the virtual machine.
+`ResourceGroupName` - (Required) The name of the resource group in which to
+create the virtual machine.
 
 `Location` - (Required) Specifies the supported Azure Stack Region where the resource exists. Changing this forces a new resource to be created.
 
@@ -52,7 +54,8 @@ Manages a virtual machine.
 
 ### StorageImageReference Properties
 
-`Id` - (Optional) Specifies the ID of the (custom) image to use to create the virtual machine, for example:.
+`Id` - (Optional) Specifies the ID of the (custom) image to use to create the virtual
+machine, for example:.
 
 `Publisher` - (Required, when not using image resource) Specifies the publisher of the image used to create the virtual machine. Changing this forces a new resource to be created.
 

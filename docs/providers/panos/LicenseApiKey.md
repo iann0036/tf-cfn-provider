@@ -14,7 +14,8 @@ PAN-OS firewall, it is recommended that `RetainKey` be set to `true`.
 
 `Key` - (Required) The licensing API key.
 
-`RetainKey` - (Optional) Set to `true` to retain the licensing API key even after the deletion of this resource (recommended).
+`RetainKey` - (Optional) Set to `true` to retain the licensing API key
+even after the deletion of this resource (recommended).
 
 
 ## See Also

@@ -4,15 +4,18 @@ Provides a resource to create a new launch configuration, used for autoscaling g
 
 ## Properties
 
-`Name` - (Optional) The name of the launch configuration. If you leave this blank, Terraform will auto-generate a unique name.
+`Name` - (Optional) The name of the launch configuration. If you leave
+this blank, Terraform will auto-generate a unique name.
 
-`NamePrefix` - (Optional) Creates a unique name beginning with the specified prefix. Conflicts with `Name`.
+`NamePrefix` - (Optional) Creates a unique name beginning with the specified
+prefix. Conflicts with `Name`.
 
 `ImageId` - (Required) The EC2 image ID to launch.
 
 `InstanceType` - (Required) The size of instance to launch.
 
-`IamInstanceProfile` - (Optional) The name attribute of the IAM instance profile to associate with launched instances.
+`IamInstanceProfile` - (Optional) The name attribute of the IAM instance profile to associate
+with launched instances.
 
 `KeyName` - (Optional) The key name that should be used for the instance.
 
@@ -32,15 +35,20 @@ Provides a resource to create a new launch configuration, used for autoscaling g
 
 `EbsOptimized` - (Optional) If true, the launched EC2 instance will be EBS-optimized.
 
-`RootBlockDevice` - (Optional) Customize details about the root block device of the instance. See [Block Devices](#block-devices) below for details.
+`RootBlockDevice` - (Optional) Customize details about the root block
+device of the instance. See [Block Devices](#block-devices) below for details.
 
-`EbsBlockDevice` - (Optional) Additional EBS block devices to attach to the instance.  See [Block Devices](#block-devices) below for details.
+`EbsBlockDevice` - (Optional) Additional EBS block devices to attach to the
+instance.  See [Block Devices](#block-devices) below for details.
 
-`EphemeralBlockDevice` - (Optional) Customize Ephemeral (also known as "Instance Store") volumes on the instance. See [Block Devices](#block-devices) below for details.
+`EphemeralBlockDevice` - (Optional) Customize Ephemeral (also known as
+"Instance Store") volumes on the instance. See [Block Devices](#block-devices) below for details.
 
 `SpotPrice` - (Optional; Default: On-demand price) The maximum price to use for reserving spot instances.
 
-`PlacementTenancy` - (Optional) The tenancy of the instance. Valid values are `"default"` or `"dedicated"`, see [AWS's Create Launch Configuration](http://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_CreateLaunchConfiguration.html) for more details.
+`PlacementTenancy` - (Optional) The tenancy of the instance. Valid values are
+`"default"` or `"dedicated"`, see [AWS's Create Launch Configuration](http://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_CreateLaunchConfiguration.html)
+for more details.
 
 
 ## Return Values

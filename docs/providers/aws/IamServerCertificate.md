@@ -16,11 +16,16 @@ Certificates][2] in AWS Documentation.
 
 ## Properties
 
-`Name` - (Optional) The name of the Server Certificate. Do not include the path in this value. If omitted, Terraform will assign a random, unique name.
+`Name` - (Optional) The name of the Server Certificate. Do not include the
+path in this value. If omitted, Terraform will assign a random, unique name.
 
-`NamePrefix` - (Optional) Creates a unique name beginning with the specified prefix. Conflicts with `Name`.
+`NamePrefix` - (Optional) Creates a unique name beginning with the specified
+prefix. Conflicts with `Name`.
 
-`Path` - (Optional) The IAM path for the server certificate.  If it is not included, it defaults to a slash (/). If this certificate is for use with AWS CloudFront, the path must be in format `/cloudfront/your_path_here`. See [IAM Identifiers][1] for more details on IAM Paths.
+`Path` - (Optional) The IAM path for the server certificate.  If it is not
+included, it defaults to a slash (/). If this certificate is for use with
+AWS CloudFront, the path must be in format `/cloudfront/your_path_here`.
+See [IAM Identifiers][1] for more details on IAM Paths.
 
 
 ## Return Values

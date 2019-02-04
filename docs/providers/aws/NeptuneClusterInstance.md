@@ -7,7 +7,8 @@ meta-parameter to make multiple instances and join them all to the same Neptune 
 
 ## Properties
 
-`ApplyImmediately` - (Optional) Specifies whether any instance modifications are applied immediately, or during the next maintenance window. Default is`false`.
+`ApplyImmediately` - (Optional) Specifies whether any instance modifications
+are applied immediately, or during the next maintenance window. Default is`false`.
 
 `AutoMinorVersionUpgrade` - (Optional) Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is `true`.
 
@@ -33,7 +34,8 @@ meta-parameter to make multiple instances and join them all to the same Neptune 
 
 `PreferredBackupWindow` - (Optional) The daily time range during which automated backups are created if automated backups are enabled. Eg: "04:00-09:00".
 
-`PreferredMaintenanceWindow` - (Optional) The window to perform maintenance in. Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
+`PreferredMaintenanceWindow` - (Optional) The window to perform maintenance in.
+Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
 
 `PromotionTier` - (Optional) Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
 

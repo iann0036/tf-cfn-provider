@@ -8,11 +8,15 @@ One workaround for this is to use a unique Resource Group for each ARM Template 
 
 ## Properties
 
-`Name` - (Required) Specifies the name of the template deployment. Changing this forces a new resource to be created.
+`Name` - (Required) Specifies the name of the template deployment. Changing this forces a
+new resource to be created.
 
-`ResourceGroupName` - (Required) The name of the resource group in which to create the template deployment.
+`ResourceGroupName` - (Required) The name of the resource group in which to
+create the template deployment.
 
-`DeploymentMode` - (Required) Specifies the mode that is used to deploy resources. This value could be either `Incremental` or `Complete`. Note that you will almost *always* want this to be set to `Incremental` otherwise the deployment will destroy all infrastructure not specified within the template, and Terraform will not be aware of this.
+`DeploymentMode` - (Required) Specifies the mode that is used to deploy resources. This value could be either `Incremental` or `Complete`.
+Note that you will almost *always* want this to be set to `Incremental` otherwise the deployment will destroy all infrastructure not
+specified within the template, and Terraform will not be aware of this.
 
 `TemplateBody` - (Optional) Specifies the JSON definition for the template.
 

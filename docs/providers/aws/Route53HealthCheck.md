@@ -4,7 +4,8 @@ Provides a Route53 health check.
 
 ## Properties
 
-`ReferenceName` - (Optional) This is a reference name used in Caller Reference (helpful for identifying single health_check set amongst others).
+`ReferenceName` - (Optional) This is a reference name used in Caller Reference
+(helpful for identifying single health_check set amongst others).
 
 `Fqdn` - (Optional) The fully qualified domain name of the endpoint to be checked.
 

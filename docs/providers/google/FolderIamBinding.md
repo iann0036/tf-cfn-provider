@@ -15,7 +15,9 @@ an existing Google Cloud Platform folder.
 
 `Folder` - (Required) The resource name of the folder the policy is attached to. Its format is folders/{folder_id}.
 
-`Role` - (Required) The role that should be applied. Only one `Terraform::Google::FolderIamBinding` can be used per role. Note that custom roles must be of the format `[projects|organizations]/{parent-name}/roles/{role-name}`.
+`Role` - (Required) The role that should be applied. Only one
+`Terraform::Google::FolderIamBinding` can be used per role. Note that custom roles must be of the format
+`[projects|organizations]/{parent-name}/roles/{role-name}`.
 
 
 ## Return Values

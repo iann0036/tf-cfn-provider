@@ -12,13 +12,19 @@ For an overview on vSphere networking concepts, see [this page][ref-vsphere-net-
 
 ## Properties
 
-`Name` - (Required) The name of the port group.  Forces a new resource if changed.
+`Name` - (Required) The name of the port group.  Forces a new resource if
+changed.
 
-`HostSystemId` - (Required) The [managed object ID][docs-about-morefs] of the host to set the port group up on. Forces a new resource if changed.
+`HostSystemId` - (Required) The [managed object ID][docs-about-morefs] of
+the host to set the port group up on. Forces a new resource if changed.
 
-`VirtualSwitchName` - (Required) The name of the virtual switch to bind this port group to. Forces a new resource if changed.
+`VirtualSwitchName` - (Required) The name of the virtual switch to bind
+this port group to. Forces a new resource if changed.
 
-`VlanId` - (Optional) The VLAN ID/trunk mode for this port group.  An ID of `0` denotes no tagging, an ID of `1`-`4094` tags with the specific ID, and an ID of `4095` enables trunk mode, allowing the guest to manage its own tagging. Default: `0`.
+`VlanId` - (Optional) The VLAN ID/trunk mode for this port group.  An ID of
+`0` denotes no tagging, an ID of `1`-`4094` tags with the specific ID, and an
+ID of `4095` enables trunk mode, allowing the guest to manage its own
+tagging. Default: `0`.
 
 
 ## See Also

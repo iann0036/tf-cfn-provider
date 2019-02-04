@@ -13,7 +13,8 @@ Note your provider will need to be configured with admin-level access for this r
 
 `Email` - (Required) The e-mail address of the user.
 
-`IsAdmin` - (Optional) Boolean, defaults to false.  Whether to enable administrative priviledges for the user.
+`IsAdmin` - (Optional) Boolean, defaults to false.  Whether to enable administrative priviledges
+for the user.
 
 `ProjectsLimit` - (Optional) Integer, defaults to 0.  Number of projects user can create.
 

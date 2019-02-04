@@ -15,7 +15,7 @@ Manages the association between a Network Interface and a Application Gateway's 
 
 ### Fn::GetAtt
 
-`Id` - The (Terraform specific) ID of the Association between the Network Interface and the Load Balancers Backend Address Pool.
+`Id` - The (Terraform specific) ID of the Association between the Network Interface and the Application Gateway Backend Address Pool.
 
 ## See Also
 

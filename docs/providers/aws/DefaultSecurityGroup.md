@@ -28,11 +28,15 @@ For more information about Default Security Groups, see the AWS Documentation on
 
 ## Properties
 
-`Ingress` - (Optional) Can be specified multiple times for each ingress rule. Each ingress block supports fields documented below.
+`Ingress` - (Optional) Can be specified multiple times for each
+ingress rule. Each ingress block supports fields documented below.
 
-`Egress` - (Optional, VPC only) Can be specified multiple times for each egress rule. Each egress block supports fields documented below.
+`Egress` - (Optional, VPC only) Can be specified multiple times for each
+egress rule. Each egress block supports fields documented below.
 
-`VpcId` - (Optional, Forces new resource) The VPC ID. **Note that changing the `VpcId` will _not_ restore any default security group rules that were modified, added, or removed.** It will be left in its current state.
+`VpcId` - (Optional, Forces new resource) The VPC ID. **Note that changing
+the `VpcId` will _not_ restore any default security group rules that were
+modified, added, or removed.** It will be left in its current state.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 

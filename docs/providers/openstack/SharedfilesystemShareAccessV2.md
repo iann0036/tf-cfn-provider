@@ -4,13 +4,18 @@ Use this resource to control the share access lists.
 
 ## Properties
 
+`Region` - The region in which to obtain the V2 Shared File System client.
+A Shared File System client is needed to create a share access. Changing this
+creates a new share access.
+
 `ShareId` - (Required) The UUID of the share to which you are granted access.
 
 `AccessType` - (Required) The access rule type. Can either be an ip, user or cert.
 
-`AccessTo` - (Required) The value that defines the access. Can either be an IP address or a username verified by configured Security Service of the Share Network.
+`AccessTo` - (Required) The value that defines the access. Can either be an IP
+address or a username verified by configured Security Service of the Share Network.
 
-`AccessLevel` - (Required) The access level to the share. Can either be rw or ro.
+`AccessLevel` - (Required) The access level to the share. Can either be `rw` or `ro`.
 
 
 ## Return Values
@@ -18,6 +23,8 @@ Use this resource to control the share access lists.
 ### Fn::GetAtt
 
 `Id` - The unique ID for the Share Access.
+
+`Region` - See Properties above.
 
 `ShareId` - See Properties above.
 

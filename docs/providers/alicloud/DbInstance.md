@@ -16,7 +16,12 @@ databases.
 
 `DbInstanceStorage` - (Deprecated) It has been deprecated from version 1.5.0 and use 'instance_storage' to replace.
 
-`InstanceStorage` - (Required) User-defined DB instance storage space. Value range: - [5, 2000] for MySQL/PostgreSQL/PPAS HA dual node edition; - [20,1000] for MySQL 5.7 basic single node edition; - [10, 2000] for SQL Server 2008R2; - [20,2000] for SQL Server 2012 basic single node edition Increase progressively at a rate of 5 GB. For details, see [Instance type table](https://www.alibabacloud.com/help/doc-detail/26312.htm).
+`InstanceStorage` - (Required) User-defined DB instance storage space. Value range:
+- [5, 2000] for MySQL/PostgreSQL/PPAS HA dual node edition;
+- [20,1000] for MySQL 5.7 basic single node edition;
+- [10, 2000] for SQL Server 2008R2;
+- [20,2000] for SQL Server 2012 basic single node edition
+Increase progressively at a rate of 5 GB. For details, see [Instance type table](https://www.alibabacloud.com/help/doc-detail/26312.htm).
 
 `InstanceName` - (Optional) The name of DB instance. It a string of 2 to 256 characters.
 
@@ -24,7 +29,9 @@ databases.
 
 `Period` - (Optional) The duration that you will buy DB instance (in month). It is valid when instance_charge_type is `PrePaid`. Valid values: [1~9], 12, 24, 36. Default to 1.
 
-`ZoneId` - (Optional) The Zone to launch the DB instance. From version 1.8.1, it supports multiple zone. If it is a multi-zone and `VswitchId` is specified, the vswitch must in the one of them. The multiple zone ID can be retrieved by setting `multi` to "true" in the data source `Terraform::Alicloud::Zones`.
+`ZoneId` - (Optional) The Zone to launch the DB instance. From version 1.8.1, it supports multiple zone.
+If it is a multi-zone and `VswitchId` is specified, the vswitch must in the one of them.
+The multiple zone ID can be retrieved by setting `multi` to "true" in the data source `Terraform::Alicloud::Zones`.
 
 `MultiAz` - (Optional) It has been deprecated from version 1.8.1, and `ZoneId` can support multiple zone.
 

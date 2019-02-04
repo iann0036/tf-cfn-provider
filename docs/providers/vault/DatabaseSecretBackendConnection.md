@@ -16,9 +16,11 @@ for more details.
 
 `Backend` - (Required) The unique name of the Vault mount to configure.
 
-`VerifyConnection` - (Optional) Whether the connection should be verified on initial configuration or not.
+`VerifyConnection` - (Optional) Whether the connection should be verified on
+initial configuration or not.
 
-`AllowedRoles` - (Optional) A list of roles that are allowed to use this connection.
+`AllowedRoles` - (Optional) A list of roles that are allowed to use this
+connection.
 
 `Cassandra` - (Optional) A nested block containing configuration options for Cassandra connections.
 

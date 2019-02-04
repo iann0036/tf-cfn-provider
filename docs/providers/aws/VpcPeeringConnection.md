@@ -16,7 +16,8 @@ connection and use the `Terraform::AWS::VpcPeeringConnectionAccepter` resource t
 
 ## Properties
 
-`PeerOwnerId` - (Optional) The AWS account ID of the owner of the peer VPC. Defaults to the account ID the [AWS provider][1] is currently connected to.
+`PeerOwnerId` - (Optional) The AWS account ID of the owner of the peer VPC.
+Defaults to the account ID the [AWS provider][1] is currently connected to.
 
 `PeerVpcId` - (Required) The ID of the VPC with which you are creating the VPC Peering Connection.
 
@@ -24,7 +25,8 @@ connection and use the `Terraform::AWS::VpcPeeringConnectionAccepter` resource t
 
 `AutoAccept` - (Optional) Accept the peering (both VPCs need to be in the same AWS account).
 
-`PeerRegion` - (Optional) The region of the accepter VPC of the [VPC Peering Connection]. `AutoAccept` must be `false`, and use the `Terraform::AWS::VpcPeeringConnectionAccepter` to manage the accepter side.
+`PeerRegion` - (Optional) The region of the accepter VPC of the [VPC Peering Connection]. `AutoAccept` must be `false`,
+and use the `Terraform::AWS::VpcPeeringConnectionAccepter` to manage the accepter side.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 

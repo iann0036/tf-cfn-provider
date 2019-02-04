@@ -33,7 +33,7 @@ Creates a new Autonomous Data Warehouse.
 
 `ConnectionStrings` - The connection string used to connect to the Data Warehouse. The username for the Service Console is ADMIN. Use the password you entered when creating the Autonomous Data Warehouse for the password value.
 
-`AllConnectionStrings` - All connection strings to use to connect to the Data Warehouse.
+`AllConnectionStrings` - Returns all connection strings that can be used to connect to the Autonomous Data Warehouse. For more information, please see [Predefined Database Service Names for Autonomous Transaction Processing](https://docs.oracle.com/en/cloud/paas/atp-cloud/atpug/connect-predefined.html#GUID-9747539B-FD46-44F1-8FF8-F5AC650F15BE).
 
 `High` - The High database service provides the highest level of resources to each SQL statement resulting in the highest performance, but supports the fewest number of concurrent SQL statements.
 

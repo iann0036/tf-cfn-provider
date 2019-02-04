@@ -33,9 +33,12 @@ after creating cluster successfully, and you can put them into the specified loc
 
 `KeyName` - (Required, Force new resource) The keypair of ssh login cluster node, you have to create it first.
 
-`PodCidr` - (Required, Force new resource) The CIDR block for the pod network. It will be allocated automatically when `VswitchIds` is not specified. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation. Maximum number of hosts allowed in the cluster: 256. Refer to [Plan Kubernetes CIDR blocks under VPC](https://www.alibabacloud.com/help/doc-detail/64530.htm).
+`PodCidr` - (Required, Force new resource) The CIDR block for the pod network. It will be allocated automatically when `VswitchIds` is not specified.
+It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
+Maximum number of hosts allowed in the cluster: 256. Refer to [Plan Kubernetes CIDR blocks under VPC](https://www.alibabacloud.com/help/doc-detail/64530.htm).
 
-`ServiceCidr` - (Required, Force new resource) The CIDR block for the service network.  It will be allocated automatically when `vswitch_id` is not specified. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
+`ServiceCidr` - (Required, Force new resource) The CIDR block for the service network.  It will be allocated automatically when `vswitch_id` is not specified.
+It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
 
 `InstallCloudMonitor` - (Force new resource) Whether to install cloud monitor for the kubernetes' node.
 
@@ -50,6 +53,7 @@ after creating cluster successfully, and you can put them into the specified loc
 `WorkerNumbers` - The worker node number of the kubernetes cluster. Default to [3]. It is limited up to 50 and if you want to enlarge it, please apply white list or contact with us.
 
 `WorkerInstanceTypes` - (Required, Force new resource) The instance type of worker node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+You can get the available kubetnetes master node instance types by [datasource instance_types](https://www.terraform.io/docs/providers/alicloud/d/instance_types.html#kubernetes_node_role).
 
 `WorkerInstanceChargeType` - (Optional, Force new resource) Worker payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
 

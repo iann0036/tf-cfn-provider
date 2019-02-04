@@ -10,19 +10,24 @@ Provides a CloudFormation Stack resource.
 
 `TemplateUrl` - (Optional) Location of a file containing the template body (max size: 460,800 bytes).
 
-`Capabilities` - (Optional) A list of capabilities. Valid values: `CAPABILITY_IAM` or `CAPABILITY_NAMED_IAM`.
+`Capabilities` - (Optional) A list of capabilities.
+Valid values: `CAPABILITY_IAM` or `CAPABILITY_NAMED_IAM`.
 
-`DisableRollback` - (Optional) Set to true to disable rollback of the stack if stack creation failed. Conflicts with `OnFailure`.
+`DisableRollback` - (Optional) Set to true to disable rollback of the stack if stack creation failed.
+Conflicts with `OnFailure`.
 
 `NotificationArns` - (Optional) A list of SNS topic ARNs to publish stack related events.
 
-`OnFailure` - (Optional) Action to be taken if stack creation fails. This must be one of: `DO_NOTHING`, `ROLLBACK`, or `DELETE`. Conflicts with `DisableRollback`.
+`OnFailure` - (Optional) Action to be taken if stack creation fails. This must be
+one of: `DO_NOTHING`, `ROLLBACK`, or `DELETE`. Conflicts with `DisableRollback`.
 
 `Parameters` - (Optional) A map of Parameter structures that specify input parameters for the stack.
 
-`PolicyBody` - (Optional) Structure containing the stack policy body. Conflicts w/ `PolicyUrl`.
+`PolicyBody` - (Optional) Structure containing the stack policy body.
+Conflicts w/ `PolicyUrl`.
 
-`PolicyUrl` - (Optional) Location of a file containing the stack policy. Conflicts w/ `PolicyBody`.
+`PolicyUrl` - (Optional) Location of a file containing the stack policy.
+Conflicts w/ `PolicyBody`.
 
 `Tags` - (Optional) A list of tags to associate with this stack.
 

@@ -9,7 +9,9 @@ into management.
 
 ## Properties
 
-`MapPublicIpOnLaunch` -  (Optional) Specify true to indicate that instances launched into the subnet should be assigned a public IP address.
+`MapPublicIpOnLaunch` -  (Optional) Specify true to indicate
+that instances launched into the subnet should be assigned
+a public IP address.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 

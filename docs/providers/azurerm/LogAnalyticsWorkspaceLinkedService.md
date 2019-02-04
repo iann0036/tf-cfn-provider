@@ -2,6 +2,8 @@
 
 Links a Log Analytics (formally Operational Insights) Workspace to another resource. The (currently) only linkable service is an Azure Automation Account.
 
+~> **NOTE:** This resource has been deprecated in favour of the `Terraform::AzureRM::LogAnalyticsLinkedService` resource and will be removed in the next major version of the AzureRM Provider. The new resource shares the same fields as this one, and information on migrating across [can be found in this guide](../guides/migrating-between-renamed-resources.html).
+
 ## Properties
 
 `ResourceGroupName` - (Required) The name of the resource group in which the Log Analytics Linked Service is created. Changing this forces a new resource to be created.
@@ -10,13 +12,15 @@ Links a Log Analytics (formally Operational Insights) Workspace to another resou
 
 `LinkedServiceName` - (Optional) Name of the type of linkedServices resource to connect to the Log Analytics Workspace specified in `WorkspaceName`. Currently it defaults to and only supports `automation` as a value. Changing this forces a new resource to be created.
 
-`LinkedServiceProperties` - (Required) A `LinkedServiceProperties` block as defined below.
+`ResourceId` - (Optional) The ID of the Resource that will be linked to the workspace.
+
+`LinkedServiceProperties` - (Optional **Deprecated**) A `LinkedServiceProperties` block as defined below.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
 ### LinkedServiceProperties Properties
 
-`ResourceId` - (Required) The resource id of the resource that will be linked to the workspace.
+`ResourceId` - (Optional  **Deprecated**) The resource id of the resource that will be linked to the workspace. This field has been deprecated in favour of the top-level `ResourceId` field and will be removed in v2.0 of the AzureRM Provider.
 
 
 ## Return Values

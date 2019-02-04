@@ -18,11 +18,21 @@ Provides a HTTP Method for an API Gateway Resource.
 
 `ApiKeyRequired` - (Optional) Specify if the method requires an API key.
 
-`RequestModels` - (Optional) A map of the API models used for the request's content type where key is the content type (e.g. `application/json`) and value is either `Error`, `Empty` (built-in models) or `Terraform::AWS::ApiGatewayModel`'s `name`.
+`RequestModels` - (Optional) A map of the API models used for the request's content type
+where key is the content type (e.g. `application/json`)
+and value is either `Error`, `Empty` (built-in models) or `Terraform::AWS::ApiGatewayModel`'s `name`.
 
 `RequestValidatorId` - (Optional) The ID of a `Terraform::AWS::ApiGatewayRequestValidator`.
 
-`RequestParameters` - (Optional) A map of request query string parameters and headers that should be passed to the integration. For example: ```hcl request_parameters = { "method.request.header.X-Some-Header"         = true "method.request.querystring.some-query-param" = true } ``` would define that the header `X-Some-Header` and the query string `some-query-param` must be provided on the request, or.
+`RequestParameters` - (Optional) A map of request query string parameters and headers that should be passed to the integration.
+For example:
+```hcl
+request_parameters = {
+"method.request.header.X-Some-Header"         = true
+"method.request.querystring.some-query-param" = true
+}
+```
+would define that the header `X-Some-Header` and the query string `some-query-param` must be provided on the request, or.
 
 `RequestParametersInJson` - **Deprecated**, use `RequestParameters` instead.
 

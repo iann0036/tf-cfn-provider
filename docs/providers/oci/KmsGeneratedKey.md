@@ -14,9 +14,9 @@ Generates a key that you can use to encrypt or decrypt data.
 
 `KeyId` - (Required) The OCID of the master encryption key to encrypt the generated data encryption key with.
 
-`KeyShape` - (Required) * `Algorithm` - (Required) The algorithm used by a key's KeyVersions to encrypt or decrypt. * `Length` - (Required) The length of the key, expressed as an integer. Values of 16, 24, or 32 are supported.
+`KeyShape` - (Required).
 
-`Algorithm` - (Required) The algorithm used by a key's KeyVersions to encrypt or decrypt. * `Length` - (Required) The length of the key, expressed as an integer. Values of 16, 24, or 32 are supported.
+`Algorithm` - (Required) The algorithm used by a key's KeyVersions to encrypt or decrypt.
 
 `Length` - (Required) The length of the key, expressed as an integer. Values of 16, 24, or 32 are supported.
 

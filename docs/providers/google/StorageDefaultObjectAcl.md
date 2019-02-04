@@ -18,7 +18,9 @@ to control individual role entity pairs.
 
 `Bucket` - (Required) The name of the bucket it applies to.
 
-`RoleEntity` - (Optional) List of role/entity pairs in the form `ROLE:entity`. See [GCS Object ACL documentation](https://cloud.google.com/storage/docs/json_api/v1/objectAccessControls) for more details. Omitting the field is the same as providing an empty list.
+`RoleEntity` - (Optional) List of role/entity pairs in the form `ROLE:entity`.
+See [GCS Object ACL documentation](https://cloud.google.com/storage/docs/json_api/v1/objectAccessControls) for more details.
+Omitting the field is the same as providing an empty list.
 
 
 ## See Also

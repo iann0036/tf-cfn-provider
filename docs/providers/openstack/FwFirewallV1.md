@@ -4,21 +4,35 @@ Manages a v1 firewall resource within OpenStack.
 
 ## Properties
 
-`Region` - (Optional) The region in which to obtain the v1 networking client. A networking client is needed to create a firewall. If omitted, the `Region` argument of the provider is used. Changing this creates a new firewall.
+`Region` - (Optional) The region in which to obtain the v1 networking client.
+A networking client is needed to create a firewall. If omitted, the
+`Region` argument of the provider is used. Changing this creates a new
+firewall.
 
-`PolicyId` - (Required) The policy resource id for the firewall. Changing this updates the `PolicyId` of an existing firewall.
+`PolicyId` - (Required) The policy resource id for the firewall. Changing
+this updates the `PolicyId` of an existing firewall.
 
-`Name` - (Optional) A name for the firewall. Changing this updates the `Name` of an existing firewall.
+`Name` - (Optional) A name for the firewall. Changing this
+updates the `Name` of an existing firewall.
 
-`Description` - (Required) A description for the firewall. Changing this updates the `Description` of an existing firewall.
+`Description` - (Required) A description for the firewall. Changing this
+updates the `Description` of an existing firewall.
 
-`AdminStateUp` - (Optional) Administrative up/down status for the firewall (must be "true" or "false" if provided - defaults to "true"). Changing this updates the `AdminStateUp` of an existing firewall.
+`AdminStateUp` - (Optional) Administrative up/down status for the firewall
+(must be "true" or "false" if provided - defaults to "true").
+Changing this updates the `AdminStateUp` of an existing firewall.
 
-`TenantId` - (Optional) The owner of the floating IP. Required if admin wants to create a firewall for another tenant. Changing this creates a new firewall.
+`TenantId` - (Optional) The owner of the floating IP. Required if admin wants
+to create a firewall for another tenant. Changing this creates a new
+firewall.
 
-`AssociatedRouters` - (Optional) Router(s) to associate this firewall instance with. Must be a list of strings. Changing this updates the associated routers of an existing firewall. Conflicts with `NoRouters`.
+`AssociatedRouters` - (Optional) Router(s) to associate this firewall instance
+with. Must be a list of strings. Changing this updates the associated routers
+of an existing firewall. Conflicts with `NoRouters`.
 
-`NoRouters` - (Optional) Should this firewall not be associated with any routers (must be "true" or "false" if provide - defaults to "false"). Conflicts with `AssociatedRouters`.
+`NoRouters` - (Optional) Should this firewall not be associated with any routers
+(must be "true" or "false" if provide - defaults to "false").
+Conflicts with `AssociatedRouters`.
 
 `ValueSpecs` - (Optional) Map of additional options.
 

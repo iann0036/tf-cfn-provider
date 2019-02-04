@@ -14,7 +14,8 @@ Provides an API Gateway Stage.
 
 `CacheClusterEnabled` - (Optional) Specifies whether a cache cluster is enabled for the stage.
 
-`CacheClusterSize` - (Optional) The size of the cache cluster for the stage, if enabled. Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `237`.
+`CacheClusterSize` - (Optional) The size of the cache cluster for the stage, if enabled.
+Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `237`.
 
 `ClientCertificateId` - (Optional) The identifier of a client certificate for the stage.
 

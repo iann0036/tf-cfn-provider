@@ -10,7 +10,8 @@ Provides an OpsWorks stack resource.
 
 `ServiceRoleArn` - (Required) The ARN of an IAM role that the OpsWorks service will act as.
 
-`DefaultInstanceProfileArn` - (Required) The ARN of an IAM Instance Profile that created instances will have by default.
+`DefaultInstanceProfileArn` - (Required) The ARN of an IAM Instance Profile that created instances
+will have by default.
 
 `AgentVersion` - (Optional) If set to `"LATEST"`, OpsWorks will automatically install the latest version.
 
@@ -18,13 +19,15 @@ Provides an OpsWorks stack resource.
 
 `Color` - (Optional) Color to paint next to the stack's resources in the OpsWorks console.
 
-`DefaultAvailabilityZone` - (Optional) Name of the availability zone where instances will be created by default. This is required unless you set `VpcId`.
+`DefaultAvailabilityZone` - (Optional) Name of the availability zone where instances will be created
+by default. This is required unless you set `VpcId`.
 
 `ConfigurationManagerName` - (Optional) Name of the configuration manager to use. Defaults to "Chef".
 
 `ConfigurationManagerVersion` - (Optional) Version of the configuration manager to use. Defaults to "11.4".
 
-`CustomCookbooksSource` - (Optional) When `UseCustomCookbooks` is set, provide this sub-object as described below.
+`CustomCookbooksSource` - (Optional) When `UseCustomCookbooks` is set, provide this sub-object as
+described below.
 
 `CustomJson` - (Optional) User defined JSON passed to "Chef". Use a "here doc" for multiline JSON.
 
@@ -34,17 +37,21 @@ Provides an OpsWorks stack resource.
 
 `DefaultSshKeyName` - (Optional) Name of the SSH keypair that instances will have by default.
 
-`DefaultSubnetId` - (Optional) Id of the subnet in which instances will be created by default. Mandatory if `VpcId` is set, and forbidden if it isn't.
+`DefaultSubnetId` - (Optional) Id of the subnet in which instances will be created by default. Mandatory
+if `VpcId` is set, and forbidden if it isn't.
 
-`HostnameTheme` - (Optional) Keyword representing the naming scheme that will be used for instance hostnames within this stack.
+`HostnameTheme` - (Optional) Keyword representing the naming scheme that will be used for instance hostnames
+within this stack.
 
 `ManageBerkshelf` - (Optional) Boolean value controlling whether Opsworks will run Berkshelf for this stack.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
-`UseCustomCookbooks` - (Optional) Boolean value controlling whether the custom cookbook settings are enabled.
+`UseCustomCookbooks` - (Optional) Boolean value controlling whether the custom cookbook settings are
+enabled.
 
-`UseOpsworksSecurityGroups` - (Optional) Boolean value controlling whether the standard OpsWorks security groups apply to created instances.
+`UseOpsworksSecurityGroups` - (Optional) Boolean value controlling whether the standard OpsWorks
+security groups apply to created instances.
 
 `VpcId` - (Optional) The id of the VPC that this stack belongs to.
 

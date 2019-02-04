@@ -20,7 +20,8 @@ role entity pairs.
 
 `PredefinedAcl` - (Optional) The "canned" [predefined ACL](https://cloud.google.com/storage/docs/access-control#predefined-acl) to apply. Must be set if `RoleEntity` is not.
 
-`RoleEntity` - (Optional) List of role/entity pairs in the form `ROLE:entity`. See [GCS Object ACL documentation](https://cloud.google.com/storage/docs/json_api/v1/objectAccessControls) for more details. Must be set if `PredefinedAcl` is not.
+`RoleEntity` - (Optional) List of role/entity pairs in the form `ROLE:entity`. See [GCS Object ACL documentation](https://cloud.google.com/storage/docs/json_api/v1/objectAccessControls) for more details.
+Must be set if `PredefinedAcl` is not.
 
 
 ## See Also

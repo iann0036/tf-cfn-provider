@@ -6,7 +6,8 @@ Provides a resource for managing the main routing table of a VPC.
 
 `VpcId` - (Required) The ID of the VPC whose main route table should be set.
 
-`RouteTableId` - (Required) The ID of the Route Table to set as the new main route table for the target VPC.
+`RouteTableId` - (Required) The ID of the Route Table to set as the new
+main route table for the target VPC.
 
 
 ## Return Values

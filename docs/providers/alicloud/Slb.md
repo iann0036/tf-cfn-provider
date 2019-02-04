@@ -12,19 +12,26 @@ For more details about guaranteed-performance instance, see [Guaranteed-performa
 
 ## Properties
 
-`Name` - (Optional) The name of the SLB. This name must be unique within your AliCloud account, can have a maximum of 80 characters, must contain only alphanumeric characters or hyphens, such as "-","/",".","_", and must not begin or end with a hyphen. If not specified, Terraform will autogenerate a name beginning with `tf-lb`.
+`Name` - (Optional) The name of the SLB. This name must be unique within your AliCloud account, can have a maximum of 80 characters,
+must contain only alphanumeric characters or hyphens, such as "-","/",".","_", and must not begin or end with a hyphen. If not specified,
+Terraform will autogenerate a name beginning with `tf-lb`.
 
 `Internet` - (Optional, Forces New Resource) If true, the SLB addressType will be internet, false will be intranet, Default is false. If load balancer launched in VPC, this value must be "false".
 
-`InternetChargeType` - (Optional, Forces New Resource) Valid values are `PayByBandwidth`, `PayByTraffic`. If this value is "PayByBandwidth", then argument "internet" must be "true". Default is "PayByTraffic". If load balancer launched in VPC, this value must be "PayByTraffic". Before version 1.10.1, the valid values are "paybybandwidth" and "paybytraffic".
+`InternetChargeType` - (Optional, Forces New Resource) Valid
+values are `PayByBandwidth`, `PayByTraffic`. If this value is "PayByBandwidth", then argument "internet" must be "true". Default is "PayByTraffic". If load balancer launched in VPC, this value must be "PayByTraffic".
+Before version 1.10.1, the valid values are "paybybandwidth" and "paybytraffic".
 
-`Bandwidth` - (Optional) Valid value is between 1 and 1000, If argument "internet_charge_type" is "paybytraffic", then this value will be ignore.
+`Bandwidth` - (Optional) Valid
+value is between 1 and 1000, If argument "internet_charge_type" is "paybytraffic", then this value will be ignore.
 
 `Listener` - (Deprecated) The field has been deprecated from terraform-alicloud-provider [version 1.3.0](https://github.com/alibaba/terraform-provider/releases/tag/V1.3.0), and use resource `Terraform::Alicloud::SlbListener` to replace.
 
 `VswitchId` - (Required for a VPC SLB, Forces New Resource) The VSwitch ID to launch in.
 
-`Specification` - (Optional) The specification of the Server Load Balancer instance. Default to empty string indicating it is "Shared-Performance" instance. Launching "[Performance-guaranteed](https://www.alibabacloud.com/help/doc-detail/27657.htm)" instance, it is must be specified and it valid values are: "slb.s1.small", "slb.s2.small", "slb.s2.medium", "slb.s3.small", "slb.s3.medium" and "slb.s3.large".
+`Specification` - (Optional) The specification of the Server Load Balancer instance. Default to empty string indicating it is "Shared-Performance" instance.
+Launching "[Performance-guaranteed](https://www.alibabacloud.com/help/doc-detail/27657.htm)" instance, it is must be specified and it valid values are: "slb.s1.small", "slb.s2.small", "slb.s2.medium",
+"slb.s3.small", "slb.s3.medium" and "slb.s3.large".
 
 `Tags` - (Optional) A mapping of tags to assign to the resource. The `Tags` can have a maximum of 10 tag for every load balancer instance.
 

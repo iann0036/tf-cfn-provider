@@ -16,9 +16,11 @@ block until the new AMI is available for use on new instances.
 
 `Name` - (Required) A region-unique name for the AMI.
 
-`SourceAmiId` - (Required) The id of the AMI to copy. This id must be valid in the region given by `SourceAmiRegion`.
+`SourceAmiId` - (Required) The id of the AMI to copy. This id must be valid in the region
+given by `SourceAmiRegion`.
 
-`SourceAmiRegion` - (Required) The region from which the AMI will be copied. This may be the same as the AWS provider region in order to create a copy within the same region.
+`SourceAmiRegion` - (Required) The region from which the AMI will be copied. This may be the
+same as the AWS provider region in order to create a copy within the same region.
 
 `Encrypted` - (Optional) Specifies whether the destination snapshots of the copied image should be encrypted. Defaults to `false`.
 

@@ -17,13 +17,19 @@ connections.
 
 ## Properties
 
-`ComputeClusterId` - (Required) The [managed object reference ID][docs-about-morefs] of the cluster to put the override in.  Forces a new resource if changed.
+`ComputeClusterId` - (Required) The [managed object reference
+ID][docs-about-morefs] of the cluster to put the override in.  Forces a new
+resource if changed.
 
-`HostSystemIds` - (Optional) The [managed object ID][docs-about-morefs] of the host to create the override for.
+`HostSystemIds` - (Optional) The [managed object ID][docs-about-morefs] of
+the host to create the override for.
 
-`DpmEnabled` - (Optional) Enable DPM support for this host. Default: `false`.
+`DpmEnabled` - (Optional) Enable DPM support for this host. Default:
+`false`.
 
-`DpmAutomationLevel` - (Optional) The automation level for host power operations on this host. Can be one of `manual` or `automated`. Default: `manual`.
+`DpmAutomationLevel` - (Optional) The automation level for host power
+operations on this host. Can be one of `manual` or `automated`. Default:
+`manual`.
 
 
 ## See Also

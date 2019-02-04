@@ -7,15 +7,19 @@ Provides a Redshift Cluster Resource.
 
 ## Properties
 
-`ClusterIdentifier` - (Required) The Cluster Identifier. Must be a lower case string.
+`ClusterIdentifier` - (Required) The Cluster Identifier. Must be a lower case
+string.
 
-`DatabaseName` - (Optional) The name of the first database to be created when the cluster is created. If you do not provide a name, Amazon Redshift will create a default database called `dev`.
+`DatabaseName` - (Optional) The name of the first database to be created when the cluster is created.
+If you do not provide a name, Amazon Redshift will create a default database called `dev`.
 
 `NodeType` - (Required) The node type to be provisioned for the cluster.
 
 `ClusterType` - (Optional) The cluster type to use. Either `single-node` or `multi-node`.
 
-`MasterPassword` - (Required unless a `SnapshotIdentifier` is provided) Password for the master DB user. Note that this may show up in logs, and it will be stored in the state file. Password must contain at least 8 chars and contain at least one uppercase letter, one lowercase letter, and one number.
+`MasterPassword` - (Required unless a `SnapshotIdentifier` is provided) Password for the master DB user.
+Note that this may show up in logs, and it will be stored in the state file. Password must contain at least 8 chars and
+contain at least one uppercase letter, one lowercase letter, and one number.
 
 `MasterUsername` - (Required unless a `SnapshotIdentifier` is provided) Username for the master DB user.
 
@@ -27,15 +31,18 @@ Provides a Redshift Cluster Resource.
 
 `AvailabilityZone` - (Optional) The EC2 Availability Zone (AZ) in which you want Amazon Redshift to provision the cluster. For example, if you have several EC2 instances running in a specific Availability Zone, then you might want the cluster to be provisioned in the same zone in order to decrease network latency.
 
-`PreferredMaintenanceWindow` - (Optional) The weekly time range (in UTC) during which automated cluster maintenance can occur. Format: ddd:hh24:mi-ddd:hh24:mi.
+`PreferredMaintenanceWindow` - (Optional) The weekly time range (in UTC) during which automated cluster maintenance can occur.
+Format: ddd:hh24:mi-ddd:hh24:mi.
 
 `ClusterParameterGroupName` - (Optional) The name of the parameter group to be associated with this cluster.
 
 `AutomatedSnapshotRetentionPeriod` - (Optional) The number of days that automated snapshots are retained. If the value is 0, automated snapshots are disabled. Even if automated snapshots are disabled, you can still create manual snapshots when you want with create-cluster-snapshot. Default is 1.
 
-`Port` - (Optional) The port number on which the cluster accepts incoming connections. The cluster is accessible only via the JDBC and ODBC connection strings. Part of the connection string requires the port on which the cluster will listen for incoming connections. Default port is 5439.
+`Port` - (Optional) The port number on which the cluster accepts incoming connections.
+The cluster is accessible only via the JDBC and ODBC connection strings. Part of the connection string requires the port on which the cluster will listen for incoming connections. Default port is 5439.
 
-`ClusterVersion` - (Optional) The version of the Amazon Redshift engine software that you want to deploy on the cluster. The version selected runs on all the nodes in the cluster.
+`ClusterVersion` - (Optional) The version of the Amazon Redshift engine software that you want to deploy on the cluster.
+The version selected runs on all the nodes in the cluster.
 
 `AllowVersionUpgrade` - (Optional) If true , major version upgrades can be applied during the maintenance window to the Amazon Redshift engine that is running on the cluster. Default is true.
 

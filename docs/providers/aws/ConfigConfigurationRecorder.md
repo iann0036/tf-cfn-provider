@@ -8,7 +8,9 @@ Provides an AWS Config Configuration Recorder. Please note that this resource **
 
 `Name` - (Optional) The name of the recorder. Defaults to `default`. Changing it recreates the resource.
 
-`RoleArn` - (Required) Amazon Resource Name (ARN) of the IAM role. used to make read or write requests to the delivery channel and to describe the AWS resources associated with the account. See [AWS Docs](http://docs.aws.amazon.com/config/latest/developerguide/iamrole-permissions.html) for more details.
+`RoleArn` - (Required) Amazon Resource Name (ARN) of the IAM role.
+used to make read or write requests to the delivery channel and to describe the AWS resources associated with the account.
+See [AWS Docs](http://docs.aws.amazon.com/config/latest/developerguide/iamrole-permissions.html) for more details.
 
 `RecordingGroup` - (Optional) Recording group - see below.
 

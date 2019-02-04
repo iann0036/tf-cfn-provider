@@ -4,7 +4,7 @@ Provides an SSM Parameter resource.
 
 ## Properties
 
-`Name` - (Required) The name of the parameter.
+`Name` - (Required) The name of the parameter. If the name contains a path (e.g. any forward slashes (`/`)), it must be fully qualified with a leading forward slash (`/`). For additional requirements and constraints, see the [AWS SSM User Guide](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-parameter-name-constraints.html).
 
 `Type` - (Required) The type of the parameter. Valid types are `String`, `StringList` and `SecureString`.
 

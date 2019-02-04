@@ -10,7 +10,8 @@ Creates a Google Bigtable instance. For more information see
 
 `Cluster` - (Required) A block of cluster configuration options. This can be specified 1 or 2 times. See structure below.
 
-`Project` - (Optional) The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
+`Project` - (Optional) The ID of the project in which the resource belongs. If it
+is not provided, the provider project is used.
 
 `InstanceType` - (Optional) The instance type to create. One of `"DEVELOPMENT"` or `"PRODUCTION"`. Defaults to `"PRODUCTION"`.
 

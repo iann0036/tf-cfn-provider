@@ -14,7 +14,8 @@ key/value pairs within the project metadata rather than the entire set, then use
 
 `Metadata` - (Required) A series of key value pairs.
 
-`Project` - (Optional) The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
+`Project` - (Optional) The ID of the project in which the resource belongs. If it
+is not provided, the provider project is used.
 
 
 ## See Also

@@ -15,7 +15,8 @@ a conflict of rule settings and will overwrite rules.
 
 `SubnetIds` - (Optional) A list of Subnet IDs to apply the ACL to.
 
-`SubnetId` - (Optional, Deprecated) The ID of the associated Subnet. This attribute is deprecated, please use the `SubnetIds` attribute instead.
+`SubnetId` - (Optional, Deprecated) The ID of the associated Subnet. This
+attribute is deprecated, please use the `SubnetIds` attribute instead.
 
 `Ingress` - (Optional) Specifies an ingress rule. Parameters defined below.
 
@@ -33,9 +34,11 @@ a conflict of rule settings and will overwrite rules.
 
 `Action` - (Required) The action to take.
 
-`Protocol` - (Required) The protocol to match. If using the -1 'all' protocol, you must specify a from and to port of 0.
+`Protocol` - (Required) The protocol to match. If using the -1 'all'
+protocol, you must specify a from and to port of 0.
 
-`CidrBlock` - (Optional) The CIDR block to match. This must be a valid network mask.
+`CidrBlock` - (Optional) The CIDR block to match. This must be a
+valid network mask.
 
 `Ipv6CidrBlock` - (Optional) The IPv6 CIDR block.
 

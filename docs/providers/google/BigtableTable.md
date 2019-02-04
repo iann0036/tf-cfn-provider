@@ -14,7 +14,8 @@ Creates a Google Cloud Bigtable table inside an instance. For more information s
 
 `ColumnFamily` - (Optional) A group of columns within a table which share a common configuration. This can be specified multiple times. Structure is documented below.
 
-`Project` - (Optional) The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
+`Project` - (Optional) The ID of the project in which the resource belongs. If it
+is not provided, the provider project is used.
 
 ### ColumnFamily Properties
 

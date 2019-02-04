@@ -12,13 +12,16 @@ This resource allows you to add/update/delete vlan interfaces.
 
 `NetflowProfile` - (Optional) The netflow profile.
 
-`StaticIps` - (Optional) List of static IPv4 addresses to set for this data interface.
+`StaticIps` - (Optional) List of static IPv4 addresses to set for this data
+interface.
 
 `EnableDhcp` - (Optional) Set to `true` to enable DHCP on this interface.
 
-`CreateDhcpDefaultRoute` - (Optional) Set to `true` to create a DHCP default route.
+`CreateDhcpDefaultRoute` - (Optional) Set to `true` to create a DHCP
+default route.
 
-`DhcpDefaultRouteMetric` - (Optional) The metric for the DHCP default route.
+`DhcpDefaultRouteMetric` - (Optional) The metric for the DHCP default
+route.
 
 `ManagementProfile` - (Optional) The management profile.
 

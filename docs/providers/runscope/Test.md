@@ -9,7 +9,8 @@ a collection of [test steps](step.html) and an
 
 `Name` - (String, Required) The name of this test.
 
-`Description` - (String, Optional) Human-readable description of the new test. is being created for.
+`Description` - (String, Optional) Human-readable description of the new test.
+is being created for.
 
 
 ## Return Values

@@ -6,7 +6,8 @@ to prepare volumes that can be shared across containers.
 
 ## Properties
 
-`Name` - (Optional, string) The name of the Docker volume (generated if not provided).
+`Name` - (Optional, string) The name of the Docker volume (generated if not
+provided).
 
 `Labels` - (Optional, map of string/string key/value pairs) User-defined key/value metadata.
 

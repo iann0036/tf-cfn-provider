@@ -6,9 +6,11 @@ Manage an Azure Storage File Share.
 
 `Name` - (Required) The name of the share. Must be unique within the storage account where the share is located.
 
-`ResourceGroupName` - (Required) The name of the resource group in which to create the share. Changing this forces a new resource to be created.
+`ResourceGroupName` - (Required) The name of the resource group in which to
+create the share. Changing this forces a new resource to be created.
 
-`StorageAccountName` - (Required) Specifies the storage account in which to create the share. Changing this forces a new resource to be created.
+`StorageAccountName` - (Required) Specifies the storage account in which to create the share.
+Changing this forces a new resource to be created.
 
 `Quota` - (Optional) The maximum size of the share, in gigabytes. Must be greater than 0, and less than or equal to 5 TB (5120 GB). Default is 5120.
 

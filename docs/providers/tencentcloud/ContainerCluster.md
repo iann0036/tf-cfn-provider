@@ -34,7 +34,7 @@ Provides a Container Cluster resource.
 
 `ClusterCidr` - (Required) The CIDR which the cluster is going to use.
 
-`ClusterDesc` - (Optional) The descirption of the cluster.
+`ClusterDesc` - (Optional) The description of the cluster.
 
 `CvmType` - (Optional) The type of node needed by cvm.
 

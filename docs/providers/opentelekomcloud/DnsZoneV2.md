@@ -4,13 +4,18 @@ Manages a DNS zone in the OpenTelekomCloud DNS Service.
 
 ## Properties
 
-`Region` - (Optional) The region in which to obtain the V2 Compute client. Keypairs are associated with accounts, but a Compute client is needed to create one. If omitted, the `Region` argument of the provider is used. Changing this creates a new DNS zone.
+`Region` - (Optional) The region in which to obtain the V2 Compute client.
+Keypairs are associated with accounts, but a Compute client is needed to
+create one. If omitted, the `Region` argument of the provider is used.
+Changing this creates a new DNS zone.
 
-`Name` - (Required) The name of the zone. Note the `.` at the end of the name. Changing this creates a new DNS zone.
+`Name` - (Required) The name of the zone. Note the `.` at the end of the name.
+Changing this creates a new DNS zone.
 
 `Email` - (Optional) The email contact for the zone record.
 
-`Type` - (Optional) The type of zone. Can either be `public` or `private`. Changing this creates a new zone.
+`Type` - (Optional) The type of zone. Can either be `public` or `private`.
+Changing this creates a new zone.
 
 `Ttl` - (Optional) The time to live (TTL) of the zone.
 
@@ -18,7 +23,8 @@ Manages a DNS zone in the OpenTelekomCloud DNS Service.
 
 `Masters` - (Optional) An array of master DNS servers.
 
-`ValueSpecs` - (Optional) Map of additional options. Changing this creates a new zone.
+`ValueSpecs` - (Optional) Map of additional options. Changing this creates a
+new zone.
 
 
 ## Return Values

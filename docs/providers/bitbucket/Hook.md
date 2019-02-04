@@ -6,7 +6,8 @@ This allows you to manage your webhooks on a repository.
 
 ## Properties
 
-`Owner` - (Required) The owner of this repository. Can be you or any team you have write access to.
+`Owner` - (Required) The owner of this repository. Can be you or any team you
+have write access to.
 
 `Repository` - (Required) The name of the repository.
 

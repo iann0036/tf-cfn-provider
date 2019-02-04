@@ -18,23 +18,23 @@ Creates a backend server group (farm) to be used by loadbalancing frontend(s)
 
 `Zone` - (Required) Zone where the farm will be defined (ie. `GRA`, `BHS` also supports `ALL`).
 
-`Probe` - define a backend healthcheck probe * `Type` - (Required) Valid values : `http`, `internal`, `mysql`, `oko`, `pgsql`, `smtp`, `tcp` * `Interval` - probe interval, Value between 30 and 3600 seconds, default 30 * `Match` - What to mach `Pattern` against (`contains`, `default`, `internal`, `matches`, `status`) * `Port` - Port for backends to recieve traffic on. * `Negate` - Negate probe result * `Pattern` - Pattern to match against `Match` * `ForceSsl` - Force use of SSL (TLS) * `Url` - URL for HTTP probe type. * `Method` - HTTP probe method (`GET`, `HEAD`, `OPTIONS`, `internal`).
+`Probe` - define a backend healthcheck probe.
 
-`Type` - (Required) Valid values : `http`, `internal`, `mysql`, `oko`, `pgsql`, `smtp`, `tcp` * `Interval` - probe interval, Value between 30 and 3600 seconds, default 30 * `Match` - What to mach `Pattern` against (`contains`, `default`, `internal`, `matches`, `status`) * `Port` - Port for backends to recieve traffic on. * `Negate` - Negate probe result * `Pattern` - Pattern to match against `Match` * `ForceSsl` - Force use of SSL (TLS) * `Url` - URL for HTTP probe type. * `Method` - HTTP probe method (`GET`, `HEAD`, `OPTIONS`, `internal`).
+`Type` - (Required) Valid values : `http`, `internal`, `mysql`, `oko`, `pgsql`, `smtp`, `tcp`.
 
-`Interval` - probe interval, Value between 30 and 3600 seconds, default 30 * `Match` - What to mach `Pattern` against (`contains`, `default`, `internal`, `matches`, `status`) * `Port` - Port for backends to recieve traffic on. * `Negate` - Negate probe result * `Pattern` - Pattern to match against `Match` * `ForceSsl` - Force use of SSL (TLS) * `Url` - URL for HTTP probe type. * `Method` - HTTP probe method (`GET`, `HEAD`, `OPTIONS`, `internal`).
+`Interval` - probe interval, Value between 30 and 3600 seconds, default 30.
 
-`Match` - What to mach `Pattern` against (`contains`, `default`, `internal`, `matches`, `status`) * `Port` - Port for backends to recieve traffic on. * `Negate` - Negate probe result * `Pattern` - Pattern to match against `Match` * `ForceSsl` - Force use of SSL (TLS) * `Url` - URL for HTTP probe type. * `Method` - HTTP probe method (`GET`, `HEAD`, `OPTIONS`, `internal`).
+`Match` - What to mach `Pattern` against (`contains`, `default`, `internal`, `matches`, `status`).
 
-`Port` - Port for backends to recieve traffic on. * `Negate` - Negate probe result * `Pattern` - Pattern to match against `Match` * `ForceSsl` - Force use of SSL (TLS) * `Url` - URL for HTTP probe type. * `Method` - HTTP probe method (`GET`, `HEAD`, `OPTIONS`, `internal`).
+`Port` - Port for backends to recieve traffic on.
 
-`Negate` - Negate probe result * `Pattern` - Pattern to match against `Match` * `ForceSsl` - Force use of SSL (TLS) * `Url` - URL for HTTP probe type. * `Method` - HTTP probe method (`GET`, `HEAD`, `OPTIONS`, `internal`).
+`Negate` - Negate probe result.
 
-`Pattern` - Pattern to match against `Match` * `ForceSsl` - Force use of SSL (TLS) * `Url` - URL for HTTP probe type. * `Method` - HTTP probe method (`GET`, `HEAD`, `OPTIONS`, `internal`).
+`Pattern` - Pattern to match against `Match`.
 
-`ForceSsl` - Force use of SSL (TLS) * `Url` - URL for HTTP probe type. * `Method` - HTTP probe method (`GET`, `HEAD`, `OPTIONS`, `internal`).
+`ForceSsl` - Force use of SSL (TLS).
 
-`Url` - URL for HTTP probe type. * `Method` - HTTP probe method (`GET`, `HEAD`, `OPTIONS`, `internal`).
+`Url` - URL for HTTP probe type.
 
 `Method` - HTTP probe method (`GET`, `HEAD`, `OPTIONS`, `internal`).
 

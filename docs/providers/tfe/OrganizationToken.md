@@ -7,7 +7,9 @@ can be used to act as the organization service account.
 
 `Organization` - (Required) Name of the organization.
 
-`ForceRegenerate` - (Optional) If set to `true`, a new token will be generated even if a token already exists. This will invalidate the existing token!.
+`ForceRegenerate` - (Optional) If set to `true`, a new token will be
+generated even if a token already exists. This will invalidate the existing
+token!.
 
 
 ## Return Values

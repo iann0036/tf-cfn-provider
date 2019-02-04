@@ -16,7 +16,10 @@ and require vCenter.
 
 `Name` - (Required) The name of the custom attribute.
 
-`ManagedObjectType` - (Optional) The object type that this attribute may be applied to. If not set, the custom attribute may be applied to any object type. For a full list, click [here](#managed-object-types). Forces a new resource if changed.
+`ManagedObjectType` - (Optional) The object type that this attribute may be
+applied to. If not set, the custom attribute may be applied to any object
+type. For a full list, click [here](#managed-object-types). Forces a new
+resource if changed.
 
 
 ## See Also

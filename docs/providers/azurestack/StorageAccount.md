@@ -4,19 +4,27 @@ Manages an Azure Storage Account.
 
 ## Properties
 
-`Name` - (Required) Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
+`Name` - (Required) Specifies the name of the storage account. Changing this forces a
+new resource to be created. This must be unique across the entire Azure service,
+not just within the resource group.
 
-`ResourceGroupName` - (Required) The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
+`ResourceGroupName` - (Required) The name of the resource group in which to
+create the storage account. Changing this forces a new resource to be created.
 
-`Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+`Location` - (Required) Specifies the supported Azure location where the
+resource exists. Changing this forces a new resource to be created.
 
-`AccountKind` - (Optional) Defines the Kind of account. Valid option is `Storage`. . Changing this forces a new resource to be created. Defaults to `Storage` currently as per [Azure Stack Storage Differences](https://docs.microsoft.com/en-us/azure/azure-stack/user/azure-stack-acs-differences).
+`AccountKind` - (Optional) Defines the Kind of account. Valid option is `Storage`.
+. Changing this forces a new resource to be created.
+Defaults to `Storage` currently as per [Azure Stack Storage Differences](https://docs.microsoft.com/en-us/azure/azure-stack/user/azure-stack-acs-differences).
 
 `AccountTier` - (Required) Defines the Tier to use for this storage account. Valid options are `Standard` and `Premium`. Changing this forces a new resource to be created - **`Can be provisioned, but no performance limit or guarantee.`**.
 
 `AccountReplicationType` - (Required) Defines the type of replication to use for this storage account. Valid option is `LRS` currently as per [Azure Stack Storage Differences](https://docs.microsoft.com/en-us/azure/azure-stack/user/azure-stack-acs-differences).
 
-`AccessTier` - (Required for `BlobStorage` accounts) Defines the access tier for `BlobStorage` accounts. Valid options are `Hot` and `Cold`, defaults to `Hot`. - **`Currently Not Supported on Azure Stack`**.
+`AccessTier` - (Required for `BlobStorage` accounts) Defines the access tier
+for `BlobStorage` accounts. Valid options are `Hot` and `Cold`, defaults to
+`Hot`. - **`Currently Not Supported on Azure Stack`**.
 
 `AccountEncryptionSource` - (Optional) The Encryption Source for this Storage Account. Possible values are `Microsoft.Keyvault` and `Microsoft.Storage`. Defaults to `Microsoft.Storage`.
 

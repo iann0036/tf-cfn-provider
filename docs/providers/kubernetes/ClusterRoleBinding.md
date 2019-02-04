@@ -8,7 +8,7 @@ A ClusterRoleBinding may be used to grant permission at the cluster level and in
 
 `RoleRef` - (Required) The ClusterRole to bind Subjects to. For more info see [Kubernetes reference](https://kubernetes.io/docs/admin/authorization/rbac/#rolebinding-and-clusterrolebinding).
 
-`Subject` - (Required) The Users, Groups, or ServiceAccounts to grand permissions to. For more info see [Kubernetes reference](https://kubernetes.io/docs/admin/authorization/rbac/#referring-to-subjects).
+`Subject` - (Required) The Users, Groups, or ServiceAccounts to grant permissions to. For more info see [Kubernetes reference](https://kubernetes.io/docs/admin/authorization/rbac/#referring-to-subjects).
 
 
 ## See Also

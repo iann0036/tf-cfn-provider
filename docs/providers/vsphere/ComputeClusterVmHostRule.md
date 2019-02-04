@@ -26,19 +26,28 @@ connections.
 
 ## Properties
 
-`ComputeClusterId` - (Required) The [managed object reference ID][docs-about-morefs] of the cluster to put the group in.  Forces a new resource if changed.
+`ComputeClusterId` - (Required) The [managed object reference
+ID][docs-about-morefs] of the cluster to put the group in.  Forces a new
+resource if changed.
 
-`Name` - (Required) The name of the rule. This must be unique in the cluster.
+`Name` - (Required) The name of the rule. This must be unique in the
+cluster.
 
-`VmGroupName` - (Required) The name of the virtual machine group to use with this rule.
+`VmGroupName` - (Required) The name of the virtual machine group to use
+with this rule.
 
-`AffinityHostGroupName` - (Optional) When this field is used, the virtual machines defined in [`VmGroupName`](#vm_group_name) will be run on the hosts defined in this host group.
+`AffinityHostGroupName` - (Optional) When this field is used, the virtual
+machines defined in [`VmGroupName`](#vm_group_name) will be run on the
+hosts defined in this host group.
 
-`AntiAffinityHostGroupName` - (Optional) When this field is used, the virtual machines defined in [`VmGroupName`](#vm_group_name) will _not_ be run on the hosts defined in this host group.
+`AntiAffinityHostGroupName` - (Optional) When this field is used, the
+virtual machines defined in [`VmGroupName`](#vm_group_name) will _not_ be
+run on the hosts defined in this host group.
 
 `Enabled` - (Optional) Enable this rule in the cluster. Default: `true`.
 
-`Mandatory` - (Optional) When this value is `true`, prevents any virtual machine operations that may violate this rule. Default: `false`.
+`Mandatory` - (Optional) When this value is `true`, prevents any virtual
+machine operations that may violate this rule. Default: `false`.
 
 
 ## See Also

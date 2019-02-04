@@ -8,7 +8,9 @@ Creates a backend server group (frontend) to be used by loadbalancing frontend(s
 
 `DisplayName` - Human readable name for your frontend, this field is for you.
 
-`Port` - Port(s) attached to your frontend. Supports single port (numerical value), range (2 dash-delimited increasing ports) and comma-separated list of 'single port' and/or 'range'. Each port must be in the [1;49151] range.
+`Port` - Port(s) attached to your frontend. Supports single port (numerical value),
+range (2 dash-delimited increasing ports) and comma-separated list of 'single port'
+and/or 'range'. Each port must be in the [1;49151] range.
 
 `Zone` - (Required) Zone where the frontend will be defined (ie. `gra`, `bhs` also supports `all`).
 

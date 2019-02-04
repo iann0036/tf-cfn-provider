@@ -4,7 +4,9 @@ Manages a DMS group in the TelefonicaOpenCloud DMS Service.
 
 ## Properties
 
-`Name` - (Required) Indicates the unique name of a group. A string of 1 to 64 characters that contain a-z, A-Z, 0-9, hyphens (-), and underscores (_). The name cannot be modified once specified.
+`Name` - (Required) Indicates the unique name of a group. A string of 1 to 64
+characters that contain a-z, A-Z, 0-9, hyphens (-), and underscores (_).
+The name cannot be modified once specified.
 
 `QueueId` - (Required) Indicates the ID of a specified queue.
 

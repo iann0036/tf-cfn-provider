@@ -13,13 +13,17 @@ page][ref-vsphere-net-concepts].
 
 ## Properties
 
-`Name` - (Required) The name of the virtual switch. Forces a new resource if changed.
+`Name` - (Required) The name of the virtual switch. Forces a new resource if
+changed.
 
-`HostSystemId` - (Required) The [managed object ID][docs-about-morefs] of the host to set the virtual switch up on. Forces a new resource if changed.
+`HostSystemId` - (Required) The [managed object ID][docs-about-morefs] of
+the host to set the virtual switch up on. Forces a new resource if changed.
 
-`Mtu` - (Optional) The maximum transmission unit (MTU) for the virtual switch. Default: `1500`.
+`Mtu` - (Optional) The maximum transmission unit (MTU) for the virtual
+switch. Default: `1500`.
 
-`NumberOfPorts` - (Optional) The number of ports to create with this virtual switch. Default: `128`.
+`NumberOfPorts` - (Optional) The number of ports to create with this
+virtual switch. Default: `128`.
 
 
 ## See Also

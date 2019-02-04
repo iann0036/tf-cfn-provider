@@ -7,15 +7,25 @@ but only compute floating IPs can be used with compute instances.
 
 ## Properties
 
-`Region` - (Optional) The region in which to obtain the V2 Networking client. A Networking client is needed to create a floating IP that can be used with another networking resource, such as a load balancer. If omitted, the `Region` argument of the provider is used. Changing this creates a new floating IP (which may or may not have a different address).
+`Region` - (Optional) The region in which to obtain the V2 Networking client.
+A Networking client is needed to create a floating IP that can be used with
+another networking resource, such as a load balancer. If omitted, the
+`Region` argument of the provider is used. Changing this creates a new
+floating IP (which may or may not have a different address).
 
-`Pool` - (Required) The name of the pool from which to obtain the floating IP. Changing this creates a new floating IP.
+`Pool` - (Required) The name of the pool from which to obtain the floating
+IP. Changing this creates a new floating IP.
 
-`PortId` - (Optional) ID of an existing port with at least one IP address to associate with this floating IP.
+`PortId` - (Optional) ID of an existing port with at least one IP address to
+associate with this floating IP.
 
-`TenantId` - (Optional) The target tenant ID in which to allocate the floating IP, if you specify this together with a port_id, make sure the target port belongs to the same tenant. Changing this creates a new floating IP (which may or may not have a different address).
+`TenantId` - (Optional) The target tenant ID in which to allocate the floating
+IP, if you specify this together with a port_id, make sure the target port
+belongs to the same tenant. Changing this creates a new floating IP (which
+may or may not have a different address).
 
-`FixedIp` - Fixed IP of the port to associate with this floating IP. Required if the port has multiple fixed IPs.
+`FixedIp` - Fixed IP of the port to associate with this floating IP. Required if
+the port has multiple fixed IPs.
 
 `ValueSpecs` - (Optional) Map of additional options.
 

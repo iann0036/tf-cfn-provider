@@ -4,45 +4,82 @@ Manages a DCS instance in the telefonicaopencloud DCS Service.
 
 ## Properties
 
-`Name` - (Required) Indicates the name of an instance. An instance name starts with a letter, consists of 4 to 64 characters, and supports only letters, digits, and hyphens (-).
+`Name` - (Required) Indicates the name of an instance. An instance name starts with a letter,
+consists of 4 to 64 characters, and supports only letters, digits, and hyphens (-).
 
-`Description` - (Optional) Indicates the description of an instance. It is a character string containing not more than 1024 characters.
+`Description` - (Optional) Indicates the description of an instance. It is a character
+string containing not more than 1024 characters.
 
 `Engine` - (Optional) Indicates a message engine. Options: rabbitmq and kafka.
 
 `EngineVersion` - (Optional) Indicates the version of a message engine.
 
-`Capacity` - (Required) Indicates the Cache capacity. Unit: GB. For a DCS Redis or Memcached instance in single-node or master/standby mode, the cache capacity can be 2 GB, 4 GB, 8 GB, 16 GB, 32 GB, or 64 GB. For a DCS Redis instance in cluster mode, the cache capacity can be 64, 128, 256, 512, or 1024 GB.
+`Capacity` - (Required) Indicates the Cache capacity. Unit: GB.
+For a DCS Redis or Memcached instance in single-node or master/standby mode, the cache
+capacity can be 2 GB, 4 GB, 8 GB, 16 GB, 32 GB, or 64 GB.
+For a DCS Redis instance in cluster mode, the cache capacity can be 64, 128, 256, 512,
+or 1024 GB.
 
-`PartitionNum` - (Optional) This parameter is mandatory when a Kafka instance is created. Indicates the maximum number of topics in a Kafka instance. When specification is 300 MB: 900 When specification is 600 MB: 1800 When specification is 1200 MB: 1800.
+`PartitionNum` - (Optional) This parameter is mandatory when a Kafka instance is created.
+Indicates the maximum number of topics in a Kafka instance.
+When specification is 300 MB: 900
+When specification is 600 MB: 1800
+When specification is 1200 MB: 1800.
 
-`AccessUser` - (Optional) Username used for accessing a DCS instance after password authentication. A username starts with a letter, consists of 1 to 64 characters, and supports only letters, digits, and hyphens (-).
+`AccessUser` - (Optional) Username used for accessing a DCS instance after password
+authentication. A username starts with a letter, consists of 1 to 64 characters,
+and supports only letters, digits, and hyphens (-).
 
-`Password` - (Optional) Password of a DCS instance. The password of a DCS Redis instance must meet the following complexity requirements:.
+`Password` - (Optional) Password of a DCS instance.
+The password of a DCS Redis instance must meet the following complexity requirements:.
 
-`VpcId` - (Required) Tenant's VPC ID. For details on how to create VPCs, see the Virtual Private Cloud API Reference.
+`VpcId` - (Required) Tenant's VPC ID. For details on how to create VPCs, see the
+Virtual Private Cloud API Reference.
 
-`SecurityGroupId` - (Required) Tenant's security group ID. For details on how to create security groups, see the Virtual Private Cloud API Reference.
+`SecurityGroupId` - (Required) Tenant's security group ID. For details on how to
+create security groups, see the Virtual Private Cloud API Reference.
 
-`SubnetId` - (Required) Subnet ID. For details on how to create subnets, see the Virtual Private Cloud API Reference.
+`SubnetId` - (Required) Subnet ID. For details on how to create subnets, see the
+Virtual Private Cloud API Reference.
 
-`AvailableZones` - (Required) IDs of the AZs where cache nodes reside. For details on how to query AZs, see Querying AZ Information.
+`AvailableZones` - (Required) IDs of the AZs where cache nodes reside. For details
+on how to query AZs, see Querying AZ Information.
 
 `ProductId` - (Required) Product ID used to differentiate DCS instance types.
 
-`MaintainBegin` - (Optional) Indicates the time at which a maintenance time window starts. Format: HH:mm:ss. The start time and end time of a maintenance time window must indicate the time segment of a supported maintenance time window. For details, see section Querying Maintenance Time Windows. The start time must be set to 22:00, 02:00, 06:00, 10:00, 14:00, or 18:00. Parameters maintain_begin and maintain_end must be set in pairs. If parameter maintain_begin is left blank, parameter maintain_end is also blank. In this case, the system automatically allocates the default start time 02:00.
+`MaintainBegin` - (Optional) Indicates the time at which a maintenance time window starts.
+Format: HH:mm:ss.
+The start time and end time of a maintenance time window must indicate the time segment of
+a supported maintenance time window. For details, see section Querying Maintenance Time Windows.
+The start time must be set to 22:00, 02:00, 06:00, 10:00, 14:00, or 18:00.
+Parameters maintain_begin and maintain_end must be set in pairs. If parameter maintain_begin
+is left blank, parameter maintain_end is also blank. In this case, the system automatically
+allocates the default start time 02:00.
 
-`MaintainEnd` - (Optional) Indicates the time at which a maintenance time window ends. Format: HH:mm:ss. The start time and end time of a maintenance time window must indicate the time segment of a supported maintenance time window. For details, see section Querying Maintenance Time Windows. The end time is four hours later than the start time. For example, if the start time is 22:00, the end time is 02:00. Parameters maintain_begin and maintain_end must be set in pairs. If parameter maintain_end is left blank, parameter maintain_begin is also blank. In this case, the system automatically allocates the default end time 06:00.
+`MaintainEnd` - (Optional) Indicates the time at which a maintenance time window ends.
+Format: HH:mm:ss.
+The start time and end time of a maintenance time window must indicate the time segment of
+a supported maintenance time window. For details, see section Querying Maintenance Time Windows.
+The end time is four hours later than the start time. For example, if the start time is 22:00,
+the end time is 02:00.
+Parameters maintain_begin and maintain_end must be set in pairs. If parameter maintain_end is left
+blank, parameter maintain_begin is also blank. In this case, the system automatically allocates
+the default end time 06:00.
 
 `SaveDays` - (Optional) Retention time. Unit: day. Range: 1–7.
 
-`BackupType` - (Optional) Backup type. Options: auto: automatic backup. manual: manual backup.
+`BackupType` - (Optional) Backup type. Options:
+auto: automatic backup.
+manual: manual backup.
 
-`BeginAt` - (Optional) Time at which backup starts. "00:00-01:00" indicates that backup starts at 00:00:00.
+`BeginAt` - (Optional) Time at which backup starts. "00:00-01:00" indicates that backup
+starts at 00:00:00.
 
-`PeriodType` - (Optional) Interval at which backup is performed. Currently, only weekly backup is supported.
+`PeriodType` - (Optional) Interval at which backup is performed. Currently, only weekly
+backup is supported.
 
-`BackupAt` - (Optional) Day in a week on which backup starts. Range: 1–7. Where: 1 indicates Monday; 7 indicates Sunday.
+`BackupAt` - (Optional) Day in a week on which backup starts. Range: 1–7. Where: 1
+indicates Monday; 7 indicates Sunday.
 
 
 ## Return Values

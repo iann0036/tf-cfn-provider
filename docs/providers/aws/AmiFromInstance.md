@@ -24,7 +24,10 @@ to produce a fresh snapshot.
 
 `SourceInstanceId` - (Required) The id of the instance to use as the basis of the AMI.
 
-`SnapshotWithoutReboot` - (Optional) Boolean that overrides the behavior of stopping the instance before snapshotting. This is risky since it may cause a snapshot of an inconsistent filesystem state, but can be used to avoid downtime if the user otherwise guarantees that no filesystem writes will be underway at the time of snapshot.
+`SnapshotWithoutReboot` - (Optional) Boolean that overrides the behavior of stopping
+the instance before snapshotting. This is risky since it may cause a snapshot of an
+inconsistent filesystem state, but can be used to avoid downtime if the user otherwise
+guarantees that no filesystem writes will be underway at the time of snapshot.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 

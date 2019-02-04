@@ -113,6 +113,8 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 * [Terraform::FlexibleEngine::FwRuleV2](FwRuleV2.md)
 * [Terraform::FlexibleEngine::ImagesImageV2](ImagesImageV2.md)
 * [Terraform::FlexibleEngine::LbCertificateV2](LbCertificateV2.md)
+* [Terraform::FlexibleEngine::LbL7policyV2](LbL7policyV2.md)
+* [Terraform::FlexibleEngine::LbL7ruleV2](LbL7ruleV2.md)
 * [Terraform::FlexibleEngine::LbListenerV2](LbListenerV2.md)
 * [Terraform::FlexibleEngine::LbLoadbalancerV2](LbLoadbalancerV2.md)
 * [Terraform::FlexibleEngine::LbMemberV2](LbMemberV2.md)

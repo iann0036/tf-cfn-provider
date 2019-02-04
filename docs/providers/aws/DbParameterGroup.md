@@ -25,7 +25,9 @@ Provides an RDS DB parameter group resource .Documentation of the available para
 
 `Value` - (Required) The value of the DB parameter.
 
-`ApplyMethod` - (Optional) "immediate" (default), or "pending-reboot". Some engines can't apply some parameters without a reboot, and you will need to specify "pending-reboot" here.
+`ApplyMethod` - (Optional) "immediate" (default), or "pending-reboot". Some
+engines can't apply some parameters without a reboot, and you will need to
+specify "pending-reboot" here.
 
 
 ## Return Values

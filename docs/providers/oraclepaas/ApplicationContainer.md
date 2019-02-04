@@ -6,13 +6,17 @@ The `Terraform::OraclePaaS::ApplicationContainer` resource creates and manages a
 
 `Name` - (Required) The name of the Application Container.
 
-`ManifestFile` - (Optional) The json manifest file containing the attributes related to launching an application. Use either `ManifestFile` or `manifest_attributes` when specifying launch information.
+`ManifestFile` - (Optional) The json manifest file containing the attributes related to launching an application. Use either `ManifestFile` or `manifest_attributes` when specifying
+launch information.
 
-`Manifest` - (Optional) The manifest attributes related to launching an application. Use either `ManifestFile` or `Manifest` when specifying launch information. Manifest attributes is documented below.
+`Manifest` - (Optional) The manifest attributes related to launching an application. Use either `ManifestFile` or `Manifest` when specifying
+launch information. Manifest attributes is documented below.
 
-`DeploymentFile` - (Optional) The json deployment file containing the attributes related to deploying an application. Use either `DeploymentFile` or `deployment_attributes` when specifying deployment information.
+`DeploymentFile` - (Optional) The json deployment file containing the attributes related to deploying an application. Use either `DeploymentFile` or `deployment_attributes` when specifying
+deployment information.
 
-`Deployment` - (Optional) The deployment attributes related to deploying an application. Use either `DeploymentFile` or `Deployment` when specifying deployment information. Deployment attributes is documented below.
+`Deployment` - (Optional) The deployment attributes related to deploying an application. Use either `DeploymentFile` or `Deployment` when specifying
+deployment information. Deployment attributes is documented below.
 
 `ArchiveUrl` - (Optional) Location of the application archive file in Oracle Storage Cloud Service, in the format app-name/file-name.
 

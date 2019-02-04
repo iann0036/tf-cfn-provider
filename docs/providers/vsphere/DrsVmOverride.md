@@ -17,13 +17,19 @@ connections.
 
 ## Properties
 
-`ComputeClusterId` - (Required) The [managed object reference ID][docs-about-morefs] of the cluster to put the override in.  Forces a new resource if changed.
+`ComputeClusterId` - (Required) The [managed object reference
+ID][docs-about-morefs] of the cluster to put the override in.  Forces a new
+resource if changed.
 
-`VirtualMachineId` - (Required) The UUID of the virtual machine to create the override for.  Forces a new resource if changed.
+`VirtualMachineId` - (Required) The UUID of the virtual machine to create
+the override for.  Forces a new resource if changed.
 
-`DrsEnabled` - (Optional) Overrides the default DRS setting for this virtual machine. Can be either `true` or `false`. Default: `false`.
+`DrsEnabled` - (Optional) Overrides the default DRS setting for this virtual
+machine. Can be either `true` or `false`. Default: `false`.
 
-`DrsAutomationLevel` - (Optional) Overrides the automation level for this virtual machine in the cluster. Can be one of `manual`, `partiallyAutomated`, or `fullyAutomated`. Default: `manual`.
+`DrsAutomationLevel` - (Optional) Overrides the automation level for this virtual
+machine in the cluster. Can be one of `manual`, `partiallyAutomated`, or
+`fullyAutomated`. Default: `manual`.
 
 
 ## See Also

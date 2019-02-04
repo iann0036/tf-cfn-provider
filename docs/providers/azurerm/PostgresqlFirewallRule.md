@@ -4,7 +4,8 @@ Manages a Firewall Rule for a PostgreSQL Server
 
 ## Properties
 
-`Name` - (Required) Specifies the name of the PostgreSQL Firewall Rule. Changing this forces a new resource to be created.
+`Name` - (Required) Specifies the name of the PostgreSQL Firewall Rule. Changing this forces a
+new resource to be created.
 
 `ServerName` - (Required) Specifies the name of the PostgreSQL Server. Changing this forces a new resource to be created.
 

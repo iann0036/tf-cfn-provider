@@ -9,9 +9,13 @@ data bag itself, use the ``Terraform::Chef::DataBag`` resource.
 
 ## Properties
 
-`DataBagName` - (Required) The name of the data bag into which this item will be placed.
+`DataBagName` - (Required) The name of the data bag into which this item
+will be placed.
 
-`ContentJson` - (Required) A string containing a JSON object that will be the content of the item. Must at minimum contain a property called "id" that is unique within the data bag, which will become the identifier of the created item.
+`ContentJson` - (Required) A string containing a JSON object that will be
+the content of the item. Must at minimum contain a property called "id"
+that is unique within the data bag, which will become the identifier of
+the created item.
 
 
 ## Return Values

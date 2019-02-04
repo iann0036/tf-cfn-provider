@@ -4,9 +4,11 @@ Attach an existing public cloud project to an existing VRack.
 
 ## Properties
 
-`VrackId` - (Required) The id of the vrack. If omitted, the `OVH_VRACK_ID` environment variable is used.
+`VrackId` - (Required) The id of the vrack. If omitted, the `OVH_VRACK_ID`
+environment variable is used.
 
-`ProjectId` - (Required) The id of the public cloud project. If omitted, the `OVH_PROJECT_ID` environment variable is used.
+`ProjectId` - (Required) The id of the public cloud project. If omitted,
+the `OVH_PROJECT_ID` environment variable is used.
 
 
 ## Return Values

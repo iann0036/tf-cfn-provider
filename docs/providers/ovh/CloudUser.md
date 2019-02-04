@@ -4,7 +4,8 @@ Creates a user in a public cloud project.
 
 ## Properties
 
-`ProjectId` - (Required) The id of the public cloud project. If omitted, the `OVH_PROJECT_ID` environment variable is used.
+`ProjectId` - (Required) The id of the public cloud project. If omitted,
+the `OVH_PROJECT_ID` environment variable is used.
 
 `Description` - A description associated with the user.
 

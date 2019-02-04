@@ -48,5 +48,6 @@ It's also possible to use multiple Provider blocks within a single Terraform con
 ## Supported Resources
 
 * [Terraform::AzureAD::Application](Application.md)
+* [Terraform::AzureAD::Group](Group.md)
 * [Terraform::AzureAD::ServicePrincipalPassword](ServicePrincipalPassword.md)
 * [Terraform::AzureAD::ServicePrincipal](ServicePrincipal.md)

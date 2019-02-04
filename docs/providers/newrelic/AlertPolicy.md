@@ -4,7 +4,7 @@
 
 ## Properties
 
-`Name` - (Required) The name of the policy. * `IncidentPreference` - (Optional) The rollup strategy for the policy.  Options include: `PER_POLICY`, `PER_CONDITION`, or `PER_CONDITION_AND_TARGET`.  The default is `PER_POLICY`.
+`Name` - (Required) The name of the policy.
 
 `IncidentPreference` - (Optional) The rollup strategy for the policy.  Options include: `PER_POLICY`, `PER_CONDITION`, or `PER_CONDITION_AND_TARGET`.  The default is `PER_POLICY`.
 

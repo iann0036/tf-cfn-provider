@@ -10,51 +10,71 @@ on their documentation site for guidance.
 
 ## Properties
 
+`Activate` - (Optional) Conditionally prevents the Service from being activated. The apply step will continue to create a new draft version but will not activate it if this is set to false. Default true.
+
 `Name` - (Required) The unique name for the Service to create.
 
-`Domain` - (Required) A set of Domain names to serve as entry points for your Service. Defined below.
+`Domain` - (Required) A set of Domain names to serve as entry points for your
+Service. Defined below.
 
-`Backend` - (Optional) A set of Backends to service requests from your Domains. Defined below. Backends must be defined in this argument, or defined in the `Vcl` argument below.
+`Backend` - (Optional) A set of Backends to service requests from your Domains.
+Defined below. Backends must be defined in this argument, or defined in the
+`Vcl` argument below.
 
-`Condition` - (Optional) A set of conditions to add logic to any basic configuration object in this service. Defined below.
+`Condition` - (Optional) A set of conditions to add logic to any basic
+configuration object in this service. Defined below.
 
 `CacheSetting` - (Optional) A set of Cache Settings, allowing you to override.
 
-`Director` - (Optional) A director to allow more control over balancing traffic over backends. when an item is not to be cached based on an above `Condition`. Defined below.
+`Director` - (Optional) A director to allow more control over balancing traffic over backends.
+when an item is not to be cached based on an above `Condition`. Defined below.
 
-`Gzip` - (Required) A set of gzip rules to control automatic gzipping of content. Defined below.
+`Gzip` - (Required) A set of gzip rules to control automatic gzipping of
+content. Defined below.
 
-`Header` - (Optional) A set of Headers to manipulate for each request. Defined below.
+`Header` - (Optional) A set of Headers to manipulate for each request. Defined
+below.
 
 `Healthcheck` - (Optional) Automated healthchecks on the cache that can change how fastly interacts with the cache based on its health.
 
 `DefaultHost` - (Optional) The default hostname.
 
-`DefaultTtl` - (Optional) The default Time-to-live (TTL) for requests.
+`DefaultTtl` - (Optional) The default Time-to-live (TTL) for
+requests.
 
-`ForceDestroy` - (Optional) Services that are active cannot be destroyed. In order to destroy the Service, set `ForceDestroy` to `true`. Default `false`.
+`ForceDestroy` - (Optional) Services that are active cannot be destroyed. In
+order to destroy the Service, set `ForceDestroy` to `true`. Default `false`.
 
 `RequestSetting` - (Optional) A set of Request modifiers. Defined below.
 
-`S3logging` - (Optional) A set of S3 Buckets to send streaming logs too. Defined below.
+`S3logging` - (Optional) A set of S3 Buckets to send streaming logs too.
+Defined below.
 
-`Papertrail` - (Optional) A Papertrail endpoint to send streaming logs too. Defined below.
+`Papertrail` - (Optional) A Papertrail endpoint to send streaming logs too.
+Defined below.
 
-`Sumologic` - (Optional) A Sumologic endpoint to send streaming logs too. Defined below.
+`Sumologic` - (Optional) A Sumologic endpoint to send streaming logs too.
+Defined below.
 
-`Gcslogging` - (Optional) A gcs endpoint to send streaming logs too. Defined below.
+`Gcslogging` - (Optional) A gcs endpoint to send streaming logs too.
+Defined below.
 
-`Bigquerylogging` - (Optional) A BigQuery endpoint to send streaming logs too. Defined below.
+`Bigquerylogging` - (Optional) A BigQuery endpoint to send streaming logs too.
+Defined below.
 
-`Syslog` - (Optional) A syslog endpoint to send streaming logs too. Defined below.
+`Syslog` - (Optional) A syslog endpoint to send streaming logs too.
+Defined below.
 
-`Logentries` - (Optional) A logentries endpoint to send streaming logs too. Defined below.
+`Logentries` - (Optional) A logentries endpoint to send streaming logs too.
+Defined below.
 
 `ResponseObject` - (Optional) Allows you to create synthetic responses that exist entirely on the varnish machine. Useful for creating error or maintenance pages that exists outside the scope of your datacenter. Best when used with Condition objects.
 
 `Snippet` - (Optional) A set of custom, "regular" (non-dynamic) VCL Snippet configuration blocks.  Defined below.
 
-`Vcl` - (Optional) A set of custom VCL configuration blocks. The ability to upload custom VCL code is not enabled by default for new Fastly accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uploading-custom-vcl) for details).
+`Vcl` - (Optional) A set of custom VCL configuration blocks. The
+ability to upload custom VCL code is not enabled by default for new Fastly
+accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uploading-custom-vcl) for details).
 
 ### Domain Properties
 
@@ -68,17 +88,21 @@ on their documentation site for guidance.
 
 `Address` - (Required, string) An IPv4, hostname, or IPv6 address for the Backend.
 
-`AutoLoadbalance` - (Optional, boolean) Denotes if this Backend should be included in the pool of backends that requests are load balanced against. Default `true`.
+`AutoLoadbalance` - (Optional, boolean) Denotes if this Backend should be
+included in the pool of backends that requests are load balanced against.
+Default `true`.
 
 `BetweenBytesTimeout` - (Optional) How long to wait between bytes in milliseconds. Default `10000`.
 
-`ConnectTimeout` - (Optional) How long to wait for a timeout in milliseconds. Default `1000`.
+`ConnectTimeout` - (Optional) How long to wait for a timeout in milliseconds.
+Default `1000`.
 
 `ErrorThreshold` - (Optional) Number of errors to allow before the Backend is marked as down. Default `0`.
 
 `FirstByteTimeout` - (Optional) How long to wait for the first bytes in milliseconds. Default `15000`.
 
-`MaxConn` - (Optional) Maximum number of connections for this Backend. Default `200`.
+`MaxConn` - (Optional) Maximum number of connections for this Backend.
+Default `200`.
 
 `Port` - (Optional) The port number on which the Backend responds. Default `80`.
 
@@ -116,9 +140,11 @@ on their documentation site for guidance.
 
 `Statement` - (Required) The statement used to determine if the condition is met.
 
-`Type` - (Required) Type of condition, either `REQUEST` (req), `RESPONSE` (req, resp), or `CACHE` (req, beresp).
+`Type` - (Required) Type of condition, either `REQUEST` (req), `RESPONSE`
+(req, resp), or `CACHE` (req, beresp).
 
-`Priority` - (Optional) A number used to determine the order in which multiple conditions execute. Lower numbers execute first. Default `10`.
+`Priority` - (Optional) A number used to determine the order in which multiple
+conditions execute. Lower numbers execute first. Default `10`.
 
 ### Director Properties
 
@@ -142,7 +168,8 @@ on their documentation site for guidance.
 
 `Name` - (Required) Unique name for this Cache Setting.
 
-`Action` - (Optional) One of `cache`, `pass`, or `restart`, as defined on Fastly's documentation under ["Caching action descriptions"](https://docs.fastly.com/guides/performance-tuning/controlling-caching#caching-action-descriptions).
+`Action` - (Optional) One of `cache`, `pass`, or `restart`, as defined
+on Fastly's documentation under ["Caching action descriptions"](https://docs.fastly.com/guides/performance-tuning/controlling-caching#caching-action-descriptions).
 
 `CacheCondition` - (Optional) Name of already defined `Condition` used to test whether this settings object should be used. This `Condition` must be of type `CACHE`.
 
@@ -154,15 +181,19 @@ on their documentation site for guidance.
 
 `Name` - (Required) A unique name.
 
-`ContentTypes` - (Optional) The content-type for each type of content you wish to have dynamically gzip'ed. Example: `["text/html", "text/css"]`.
+`ContentTypes` - (Optional) The content-type for each type of content you wish to
+have dynamically gzip'ed. Example: `["text/html", "text/css"]`.
 
-`Extensions` - (Optional) File extensions for each file type to dynamically gzip. Example: `["css", "js"]`.
+`Extensions` - (Optional) File extensions for each file type to dynamically
+gzip. Example: `["css", "js"]`.
 
-`CacheCondition` - (Optional) Name of already defined `Condition` controlling when this gzip configuration applies. This `Condition` must be of type `CACHE`. For detailed information about Conditionals, see [Fastly's Documentation on Conditionals][fastly-conditionals].
+`CacheCondition` - (Optional) Name of already defined `Condition` controlling when this gzip configuration applies. This `Condition` must be of type `CACHE`. For detailed information about Conditionals,
+see [Fastly's Documentation on Conditionals][fastly-conditionals].
 
 `Name` - (Required) Unique name for this header attribute.
 
-`Action` - (Required) The Header manipulation action to take; must be one of `set`, `append`, `delete`, `Regex`, or `regex_repeat`.
+`Action` - (Required) The Header manipulation action to take; must be one of
+`set`, `append`, `delete`, `Regex`, or `regex_repeat`.
 
 `Type` - (Required) The Request type on which to apply the selected Action; must be one of `request`, `fetch`, `cache` or `Response`.
 
@@ -170,7 +201,8 @@ on their documentation site for guidance.
 
 `IgnoreIfSet` - (Optional) Do not add the header if it is already present. (Only applies to the `set` action.). Default `false`.
 
-`Source` - (Optional) Variable to be used as a source for the header content. (Does not apply to the `delete` action.).
+`Source` - (Optional) Variable to be used as a source for the header
+content. (Does not apply to the `delete` action.).
 
 `Regex` - (Optional) Regular expression to use (Only applies to the `Regex` and `regex_repeat` actions.).
 
@@ -182,7 +214,8 @@ on their documentation site for guidance.
 
 `CacheCondition` - (Optional) Name of already defined `Condition` to apply. This `Condition` must be of type `CACHE`.
 
-`ResponseCondition` - (Optional) Name of already defined `Condition` to apply. This `Condition` must be of type `RESPONSE`. For detailed information about Conditionals, see [Fastly's Documentation on Conditionals][fastly-conditionals].
+`ResponseCondition` - (Optional) Name of already defined `Condition` to apply. This `Condition` must be of type `RESPONSE`. For detailed information about Conditionals,
+see [Fastly's Documentation on Conditionals][fastly-conditionals].
 
 ### Healthcheck Properties
 
@@ -212,25 +245,34 @@ on their documentation site for guidance.
 
 `Name` - (Required) The domain for this request setting.
 
-`RequestCondition` - (Optional) Name of already defined `Condition` to determine if this request setting should be applied.
+`RequestCondition` - (Optional) Name of already defined `Condition` to
+determine if this request setting should be applied.
 
-`MaxStaleAge` - (Optional) How old an object is allowed to be to serve `stale-if-error` or `stale-while-revalidate`, in seconds.
+`MaxStaleAge` - (Optional) How old an object is allowed to be to serve
+`stale-if-error` or `stale-while-revalidate`, in seconds.
 
-`ForceMiss` - (Optional) Force a cache miss for the request. If specified, can be `true` or `false`.
+`ForceMiss` - (Optional) Force a cache miss for the request. If specified,
+can be `true` or `false`.
 
 `ForceSsl` - (Optional) Forces the request to use SSL (Redirects a non-SSL request to SSL).
 
-`Action` - (Optional) Allows you to terminate request handling and immediately perform an action. When set it can be `lookup` or `pass` (Ignore the cache completely).
+`Action` - (Optional) Allows you to terminate request handling and immediately
+perform an action. When set it can be `lookup` or `pass` (Ignore the cache completely).
 
-`BypassBusyWait` - (Optional) Disable collapsed forwarding, so you don't wait for other objects to origin.
+`BypassBusyWait` - (Optional) Disable collapsed forwarding, so you don't wait
+for other objects to origin.
 
-`HashKeys` - (Optional) Comma separated list of varnish request object fields that should be in the hash key.
+`HashKeys` - (Optional) Comma separated list of varnish request object fields
+that should be in the hash key.
 
-`Xff` - (Optional) X-Forwarded-For, should be `clear`, `leave`, `append`, `append_all`, or `overwrite`. Default `append`.
+`Xff` - (Optional) X-Forwarded-For, should be `clear`, `leave`, `append`,
+`append_all`, or `overwrite`. Default `append`.
 
-`TimerSupport` - (Optional) Injects the X-Timer info into the request for viewing origin fetch durations.
+`TimerSupport` - (Optional) Injects the X-Timer info into the request for
+viewing origin fetch durations.
 
-`GeoHeaders` - (Optional) Injects Fastly-Geo-Country, Fastly-Geo-City, and Fastly-Geo-Region into the request headers.
+`GeoHeaders` - (Optional) Injects Fastly-Geo-Country, Fastly-Geo-City, and
+Fastly-Geo-Region into the request headers.
 
 `DefaultHost` - (Optional) Sets the host header.
 
@@ -240,17 +282,28 @@ on their documentation site for guidance.
 
 `BucketName` - (Optional) An optional comment about the Domain.
 
-`S3AccessKey` - (Required) AWS Access Key of an account with the required permissions to post logs. It is **strongly** recommended you create a separate IAM user with permissions to only operate on this Bucket. This key will be not be encrypted. You can provide this key via an environment variable, `FASTLY_S3_ACCESS_KEY`.
+`S3AccessKey` - (Required) AWS Access Key of an account with the required
+permissions to post logs. It is **strongly** recommended you create a separate
+IAM user with permissions to only operate on this Bucket. This key will be
+not be encrypted. You can provide this key via an environment variable, `FASTLY_S3_ACCESS_KEY`.
 
-`S3SecretKey` - (Required) AWS Secret Key of an account with the required permissions to post logs. It is **strongly** recommended you create a separate IAM user with permissions to only operate on this Bucket. This secret will be not be encrypted. You can provide this secret via an environment variable, `FASTLY_S3_SECRET_KEY`.
+`S3SecretKey` - (Required) AWS Secret Key of an account with the required
+permissions to post logs. It is **strongly** recommended you create a separate
+IAM user with permissions to only operate on this Bucket. This secret will be
+not be encrypted. You can provide this secret via an environment variable, `FASTLY_S3_SECRET_KEY`.
 
-`Path` - (Optional) Path to store the files. Must end with a trailing slash. If this field is left empty, the files will be saved in the bucket's root path.
+`Path` - (Optional) Path to store the files. Must end with a trailing slash.
+If this field is left empty, the files will be saved in the bucket's root path.
 
-`Domain` - (Optional) If you created the S3 bucket outside of `us-east-1`, then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws.com`.
+`Domain` - (Optional) If you created the S3 bucket outside of `us-east-1`,
+then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws.com`.
 
-`Period` - (Optional) How frequently the logs should be transferred, in seconds. Default `3600`.
+`Period` - (Optional) How frequently the logs should be transferred, in
+seconds. Default `3600`.
 
-`GzipLevel` - (Optional) Level of GZIP compression, from `0-9`. `0` is no compression. `1` is fastest and least compressed, `9` is slowest and most compressed. Default `0`.
+`GzipLevel` - (Optional) Level of GZIP compression, from `0-9`. `0` is no
+compression. `1` is fastest and least compressed, `9` is slowest and most
+compressed. Default `0`.
 
 `Format` - (Optional) Apache-style string or VCL variables to use for log formatting. Defaults to Apache Common Log format (`%h %l %u %t %r %>s`).
 
@@ -262,7 +315,8 @@ on their documentation site for guidance.
 
 `Redundancy` - (Optional) The S3 redundancy level. Should be formatted; one of: `standard`, `reduced_redundancy` or null. Default `null`.
 
-`ResponseCondition` - (Optional) Name of already defined `Condition` to apply. This `Condition` must be of type `RESPONSE`. For detailed information about Conditionals, see [Fastly's Documentation on Conditionals][fastly-conditionals].
+`ResponseCondition` - (Optional) Name of already defined `Condition` to apply. This `Condition` must be of type `RESPONSE`. For detailed information about Conditionals,
+see [Fastly's Documentation on Conditionals][fastly-conditionals].
 
 `Placement` - (Optional) Where in the generated VCL the logging call should be placed; one of: `none` or `waf_debug`.
 
@@ -276,7 +330,8 @@ on their documentation site for guidance.
 
 `Format` - (Optional) Apache-style string or VCL variables to use for log formatting. Defaults to Apache Common Log format (`%h %l %u %t %r %>s`).
 
-`ResponseCondition` - (Optional) Name of already defined `Condition` to apply. This `Condition` must be of type `RESPONSE`. For detailed information about Conditionals, see [Fastly's Documentation on Conditionals][fastly-conditionals].
+`ResponseCondition` - (Optional) Name of already defined `Condition` to apply. This `Condition` must be of type `RESPONSE`. For detailed information about Conditionals,
+see [Fastly's Documentation on Conditionals][fastly-conditionals].
 
 `Placement` - (Optional) Where in the generated VCL the logging call should be placed; one of: `none` or `waf_debug`.
 
@@ -306,11 +361,15 @@ on their documentation site for guidance.
 
 `SecretKey` - (Required) The secret key associated with the target gcs bucket on your account. You may optionally provide this secret via an environment variable, `FASTLY_GCS_SECRET_KEY`. A typical format for the key is PEM format, containing actual newline characters where required.
 
-`Path` - (Optional) Path to store the files. Must end with a trailing slash. If this field is left empty, the files will be saved in the bucket's root path.
+`Path` - (Optional) Path to store the files. Must end with a trailing slash.
+If this field is left empty, the files will be saved in the bucket's root path.
 
-`Period` - (Optional) How frequently the logs should be transferred, in seconds. Default `3600`.
+`Period` - (Optional) How frequently the logs should be transferred, in
+seconds. Default `3600`.
 
-`GzipLevel` - (Optional) Level of GZIP compression, from `0-9`. `0` is no compression. `1` is fastest and least compressed, `9` is slowest and most compressed. Default `0`.
+`GzipLevel` - (Optional) Level of GZIP compression, from `0-9`. `0` is no
+compression. `1` is fastest and least compressed, `9` is slowest and most
+compressed. Default `0`.
 
 `Format` - (Optional) Apache-style string or VCL variables to use for log formatting. Defaults to Apache Common Log format (`%h %l %u %t %r %>s`).
 
@@ -362,7 +421,8 @@ on their documentation site for guidance.
 
 `TlsCaCert` - (Optional) A secure certificate to authenticate the server with.
 
-`ResponseCondition` - (Optional) Name of already defined `Condition` to apply. This `Condition` must be of type `RESPONSE`. For detailed information about Conditionals, see [Fastly's Documentation on Conditionals][fastly-conditionals].
+`ResponseCondition` - (Optional) Name of already defined `Condition` to apply. This `Condition` must be of type `RESPONSE`. For detailed information about Conditionals,
+see [Fastly's Documentation on Conditionals][fastly-conditionals].
 
 `MessageType` - (Optional) How the message should be formatted; one of: `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
 
@@ -400,7 +460,8 @@ on their documentation site for guidance.
 
 `RequestCondition` - (Optional) Name of already defined `Condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `Condition` must be of type `REQUEST`.
 
-`CacheCondition` - (Optional) Name of already defined `Condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `Condition` must be of type `CACHE`. For detailed information about Conditionals, see [Fastly's Documentation on Conditionals][fastly-conditionals].
+`CacheCondition` - (Optional) Name of already defined `Condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `Condition` must be of type `CACHE`. For detailed information about Conditionals,
+see [Fastly's Documentation on Conditionals][fastly-conditionals].
 
 ### Snippet Properties
 
@@ -416,24 +477,10 @@ on their documentation site for guidance.
 
 `Content` - (Required) The custom VCL code to upload.
 
-`Main` - (Optional) If `true`, use this block as the main configuration. If `false`, use this block as an includable library. Only a single VCL block can be marked as the main block. Default is `false`.
+`Main` - (Optional) If `true`, use this block as the main configuration. If
+`false`, use this block as an includable library. Only a single VCL block can be
+marked as the main block. Default is `false`.
 
-
-## Return Values
-
-### Fn::GetAtt
-
-`Id` - The ID of the Service.
-
-`ActiveVersion` - The currently active version of your Fastly.
-
-`Director` - Set of Directors. See above for details.
-
-`ResponseObject` - Set of Response Object configurations. See above for details.
-
-`DefaultTtl` - Default TTL.
-
-`ForceDestroy` - Force the destruction of the Service on delete.
 
 ## See Also
 

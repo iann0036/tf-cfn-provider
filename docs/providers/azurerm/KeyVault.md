@@ -36,7 +36,7 @@ Manages a Key Vault.
 
 `ApplicationId` - (Optional) The object ID of an Application in Azure Active Directory.
 
-`CertificatePermissions` - (Optional) List of certificate permissions, must be one or more from the following: `create`, `delete`, `deleteissuers`, `get`, `getissuers`, `import`, `list`, `listissuers`, `managecontacts`, `manageissuers`, `purge`, `recover`, `setissuers` and `update`.
+`CertificatePermissions` - (Optional) List of certificate permissions, must be one or more from the following: `backup`, `create`, `delete`, `deleteissuers`, `get`, `getissuers`, `import`, `list`, `listissuers`, `managecontacts`, `manageissuers`, `purge`, `recover`, `restore`, `setissuers` and `update`.
 
 `KeyPermissions` - (Required) List of key permissions, must be one or more from the following: `backup`, `create`, `decrypt`, `delete`, `encrypt`, `get`, `import`, `list`, `purge`, `recover`, `restore`, `sign`, `unwrapKey`, `update`, `verify` and `wrapKey`.
 
@@ -54,7 +54,7 @@ Manages a Key Vault.
 
 ### Sku Properties
 
-`Name` - (Required) The Name of the SKU used for this Key Vault. Possible values are `Standard` and `Premium`.
+`Name` - (Required) The Name of the SKU used for this Key Vault. Possible values are `standard` and `premium`.
 
 
 ## Return Values

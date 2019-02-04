@@ -9,17 +9,24 @@ Environments are often things such as `development`, `integration`, or
 
 ## Properties
 
-`Name` - (Required) A unique name for this Environment. This name is used in the application URL.
+`Name` - (Required) A unique name for this Environment. This name is used
+in the application URL.
 
-`CnamePrefix` - (Optional) Prefix to use for the fully qualified DNS name of the Environment.
+`CnamePrefix` - (Optional) Prefix to use for the fully qualified DNS name of
+the Environment.
 
 `Description` - (Optional) Short description of the Environment.
 
-`Tier` - (Optional) Elastic Beanstalk Environment tier. Valid values are `Worker` or `WebServer`. If tier is left blank `WebServer` will be used.
+`Tier` - (Optional) Elastic Beanstalk Environment tier. Valid values are `Worker`
+or `WebServer`. If tier is left blank `WebServer` will be used.
 
-`WaitForReadyTimeout` - (Default: `20m`) The maximum [duration](https://golang.org/pkg/time/#ParseDuration) that Terraform should wait for an Elastic Beanstalk Environment to be in a ready state before timing out.
+`WaitForReadyTimeout` - (Default: `20m`) The maximum
+[duration](https://golang.org/pkg/time/#ParseDuration) that Terraform should
+wait for an Elastic Beanstalk Environment to be in a ready state before timing
+out.
 
-`VersionLabel` - (Optional) The name of the Elastic Beanstalk Application Version to use in deployment.
+`VersionLabel` - (Optional) The name of the Elastic Beanstalk Application Version
+to use in deployment.
 
 
 ## Return Values

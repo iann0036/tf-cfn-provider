@@ -8,25 +8,41 @@ Manages a V2 Image resource within HuaweiCloud IMS.
 
 `DiskFormat` - (Required) The disk format. Must be one of "qcow2", "vhd".
 
-`LocalFilePath` - (Optional) This is the filepath of the raw image file that will be uploaded to Glance. Conflicts with `ImageSourceUrl`.
+`LocalFilePath` - (Optional) This is the filepath of the raw image file
+that will be uploaded to Glance. Conflicts with `ImageSourceUrl`.
 
-`ImageCachePath` - (Optional) This is the directory where the images will be downloaded. Images will be stored with a filename corresponding to the url's md5 hash. Defaults to "$HOME/.terraform/image_cache".
+`ImageCachePath` - (Optional) This is the directory where the images will
+be downloaded. Images will be stored with a filename corresponding to
+the url's md5 hash. Defaults to "$HOME/.terraform/image_cache".
 
-`ImageSourceUrl` - (Optional) This is the url of the raw image that will be downloaded in the `ImageCachePath` before being uploaded to Glance. Glance is able to download image from internet but the `golangsdk` library does not yet provide a way to do so. Conflicts with `LocalFilePath`.
+`ImageSourceUrl` - (Optional) This is the url of the raw image that will
+be downloaded in the `ImageCachePath` before being uploaded to Glance.
+Glance is able to download image from internet but the `golangsdk` library
+does not yet provide a way to do so.
+Conflicts with `LocalFilePath`.
 
-`MinDiskGb` - (Optional) Amount of disk space (in GB) required to boot image. Defaults to 0.
+`MinDiskGb` - (Optional) Amount of disk space (in GB) required to boot image.
+Defaults to 0.
 
-`MinRamMb` - (Optional) Amount of ram (in MB) required to boot image. Defauts to 0.
+`MinRamMb` - (Optional) Amount of ram (in MB) required to boot image.
+Defauts to 0.
 
 `Name` - (Required) The name of the image.
 
-`Protected` - (Optional) If true, image will not be deletable. Defaults to false.
+`Protected` - (Optional) If true, image will not be deletable.
+Defaults to false.
 
-`Region` - (Optional) The region in which to obtain the V2 Glance client. A Glance client is needed to create an Image that can be used with a compute instance. If omitted, the `Region` argument of the provider is used. Changing this creates a new Image.
+`Region` - (Optional) The region in which to obtain the V2 Glance client.
+A Glance client is needed to create an Image that can be used with
+a compute instance. If omitted, the `Region` argument of the provider
+is used. Changing this creates a new Image.
 
-`Tags` - (Optional) The tags of the image. It must be a list of strings. At this time, it is not possible to delete all tags of an image.
+`Tags` - (Optional) The tags of the image. It must be a list of strings.
+At this time, it is not possible to delete all tags of an image.
 
-`Visibility` - (Optional) The visibility of the image. Must be "private". The ability to set the visibility depends upon the configuration of the HuaweiCloud cloud.
+`Visibility` - (Optional) The visibility of the image. Must be "private".
+The ability to set the visibility depends upon the configuration of
+the HuaweiCloud cloud.
 
 
 ## Return Values

@@ -26,13 +26,21 @@ or [dynamic](https://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/as-sc
 
 `MetricAggregationType` - (Optional) The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
 
-`StepAdjustments` - (Optional) A set of adjustments that manage group scaling. These have the following structure:.
+`StepAdjustments` - (Optional) A set of adjustments that manage
+group scaling. These have the following structure:.
 
-`ScalingAdjustment` - (Required) The number of members by which to scale, when the adjustment bounds are breached. A positive value scales up. A negative value scales down.
+`ScalingAdjustment` - (Required) The number of members by which to
+scale, when the adjustment bounds are breached. A positive value scales
+up. A negative value scales down.
 
-`MetricIntervalLowerBound` - (Optional) The lower bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS will treat this bound as infinity.
+`MetricIntervalLowerBound` - (Optional) The lower bound for the
+difference between the alarm threshold and the CloudWatch metric.
+Without a value, AWS will treat this bound as infinity.
 
-`MetricIntervalUpperBound` - (Optional) The upper bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS will treat this bound as infinity. The upper bound must be greater than the lower bound.
+`MetricIntervalUpperBound` - (Optional) The upper bound for the
+difference between the alarm threshold and the CloudWatch metric.
+Without a value, AWS will treat this bound as infinity. The upper bound
+must be greater than the lower bound.
 
 `TargetTrackingConfiguration` - (Optional) A target tracking policy. These have the following structure:.
 

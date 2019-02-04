@@ -15,19 +15,27 @@ the old location.
 
 ## Properties
 
-`SourceFile` - (Required) The path to the file being uploaded from the Terraform host to vSphere or copied within vSphere. Forces a new resource if changed.
+`SourceFile` - (Required) The path to the file being uploaded from the
+Terraform host to vSphere or copied within vSphere. Forces a new resource if
+changed.
 
-`DestinationFile` - (Required) The path to where the file should be uploaded or copied to on vSphere.
+`DestinationFile` - (Required) The path to where the file should be uploaded
+or copied to on vSphere.
 
-`SourceDatacenter` - (Optional) The name of a datacenter in which the file will be copied from. Forces a new resource if changed.
+`SourceDatacenter` - (Optional) The name of a datacenter in which the file
+will be copied from. Forces a new resource if changed.
 
-`Datacenter` - (Optional) The name of a datacenter in which the file will be uploaded to.
+`Datacenter` - (Optional) The name of a datacenter in which the file will be
+uploaded to.
 
-`SourceDatastore` - (Optional) The name of the datastore in which file will be copied from. Forces a new resource if changed.
+`SourceDatastore` - (Optional) The name of the datastore in which file will
+be copied from. Forces a new resource if changed.
 
-`Datastore` - (Required) The name of the datastore in which to upload the file to.
+`Datastore` - (Required) The name of the datastore in which to upload the
+file to.
 
-`CreateDirectories` - (Optional) Create directories in `DestinationFile` path parameter if any missing for copy operation.
+`CreateDirectories` - (Optional) Create directories in `DestinationFile`
+path parameter if any missing for copy operation.
 
 
 ## See Also

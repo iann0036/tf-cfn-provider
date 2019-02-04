@@ -17,7 +17,9 @@ enforced during runs.
 
 `Policy` - (Required) The actual policy itself.
 
-`EnforceMode` - (Required) The enforcement level of the policy. Valid values are `advisory`, `hard-mandatory` and `soft-mandatory`. Defaults to `soft-mandatory`.
+`EnforceMode` - (Required) The enforcement level of the policy. Valid
+values are `advisory`, `hard-mandatory` and `soft-mandatory`. Defaults
+to `soft-mandatory`.
 
 
 ## Return Values

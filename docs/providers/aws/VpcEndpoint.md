@@ -27,7 +27,8 @@ Doing so will cause a conflict of associations and will overwrite the associatio
 
 `SecurityGroupIds` - (Optional) The ID of one or more security groups to associate with the network interface. Required for endpoints of type `Interface`.
 
-`PrivateDnsEnabled` - (Optional; AWS services and AWS Marketplace partner services only) Whether or not to associate a private hosted zone with the specified VPC. Applicable for endpoints of type `Interface`. Defaults to `false`.
+`PrivateDnsEnabled` - (Optional; AWS services and AWS Marketplace partner services only) Whether or not to associate a private hosted zone with the specified VPC. Applicable for endpoints of type `Interface`.
+Defaults to `false`.
 
 
 ## Return Values

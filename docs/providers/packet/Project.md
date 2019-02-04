@@ -11,6 +11,12 @@ in your projects.
 
 `OrganizationId` - The UUID of Organization under which you want to create the project. If you leave it out, the project will be create under your the default Organization of your account.
 
+`Asn` - Autonomous System Numer for local BGP deployment.
+
+`Md5` - (Optional) Password for BGP session in plaintext (not a checksum).
+
+`DeploymentType` - `private` or `public`, the `private` is likely to be usable immediately, the `public` will need to be review by Packet engineers.
+
 
 ## Return Values
 
@@ -25,6 +31,10 @@ in your projects.
 `Created` - The timestamp for when the Project was created.
 
 `Updated` - The timestamp for the last time the Project was updated.
+
+`Status` - status of BGP configuration in the project.
+
+`MaxPrefix` - The maximum number of route filters allowed per server.
 
 ## See Also
 

@@ -4,7 +4,8 @@ Manages an Application Insights API key.
 
 ## Properties
 
-`Name` - (Required) Specifies the name of the Application Insights API key. Changing this forces a new resource to be created.
+`Name` - (Required) Specifies the name of the Application Insights API key. Changing this forces a
+new resource to be created.
 
 `ApplicationInsightsId` - (Required) The ID of the Application Insights component on which the API key operates. Changing this forces a new resource to be created.
 

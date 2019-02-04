@@ -4,15 +4,24 @@ Manages a V2 Neutron network resource within FlexibleEngine.
 
 ## Properties
 
-`Region` - (Optional) The region in which to obtain the V2 Networking client. A Networking client is needed to create a Neutron network. If omitted, the `Region` argument of the provider is used. Changing this creates a new network.
+`Region` - (Optional) The region in which to obtain the V2 Networking client.
+A Networking client is needed to create a Neutron network. If omitted, the
+`Region` argument of the provider is used. Changing this creates a new
+network.
 
-`Name` - (Optional) The name of the network. Changing this updates the name of the existing network.
+`Name` - (Optional) The name of the network. Changing this updates the name of
+the existing network.
 
-`Shared` - (Optional)  Specifies whether the network resource can be accessed by any tenant or not. Changing this updates the sharing capabalities of the existing network.
+`Shared` - (Optional)  Specifies whether the network resource can be accessed
+by any tenant or not. Changing this updates the sharing capabalities of the
+existing network.
 
-`TenantId` - (Optional) The owner of the network. Required if admin wants to create a network for another tenant. Changing this creates a new network.
+`TenantId` - (Optional) The owner of the network. Required if admin wants to
+create a network for another tenant. Changing this creates a new network.
 
-`AdminStateUp` - (Optional) The administrative state of the network. Acceptable values are "true" and "false". Changing this value updates the state of the existing network.
+`AdminStateUp` - (Optional) The administrative state of the network.
+Acceptable values are "true" and "false". Changing this value updates the
+state of the existing network.
 
 `Segments` - (Optional) An array of one or more provider segment objects.
 

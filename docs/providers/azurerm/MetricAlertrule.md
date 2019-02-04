@@ -2,6 +2,8 @@
 
 Manages a [metric-based alert rule](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-quick-resource-metric-alert-portal) in Azure Monitor.
 
+~> **NOTE:** This resource has been deprecated in favour of the `Terraform::AzureRM::MonitorMetricAlertrule` resource and will be removed in the next major version of the AzureRM Provider. The new resource shares the same fields as this one, and information on migrating across [can be found in this guide](../guides/migrating-between-renamed-resources.html).
+
 ## Properties
 
 `Name` - (Required) Specifies the name of the alert rule. Changing this forces a new resource to be created.

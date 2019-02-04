@@ -14,7 +14,8 @@ Creates a new Amazon Redshift security group. You use security groups to control
 
 `SecurityGroupName` - The name of the security group to authorize.
 
-`SecurityGroupOwnerId` - The owner Id of the security group provided by `SecurityGroupName`.
+`SecurityGroupOwnerId` - The owner Id of the security group provided
+by `SecurityGroupName`.
 
 
 ## Return Values

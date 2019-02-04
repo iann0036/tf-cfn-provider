@@ -4,9 +4,11 @@ Manage a CDN Profile to create a collection of CDN Endpoints.
 
 ## Properties
 
-`Name` - (Required) Specifies the name of the CDN Profile. Changing this forces a new resource to be created.
+`Name` - (Required) Specifies the name of the CDN Profile. Changing this forces a
+new resource to be created.
 
-`ResourceGroupName` - (Required) The name of the resource group in which to create the CDN Profile.
+`ResourceGroupName` - (Required) The name of the resource group in which to
+create the CDN Profile.
 
 `Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
 

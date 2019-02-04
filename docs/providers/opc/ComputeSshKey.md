@@ -8,7 +8,8 @@ The ``Terraform::OPC::ComputeSshKey`` resource creates and manages an SSH key in
 
 `Key` - (Required) The SSH key itself.
 
-`Enabled` - (Optional) Whether or not the key is enabled. This is useful if you want to temporarily disable an SSH key, without removing it entirely from your Terraform resource definition. Defaults to `true`.
+`Enabled` - (Optional) Whether or not the key is enabled. This is useful if you want to temporarily disable an SSH key,
+without removing it entirely from your Terraform resource definition. Defaults to `true`.
 
 
 ## See Also

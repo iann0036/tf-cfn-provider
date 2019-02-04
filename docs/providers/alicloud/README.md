@@ -8,12 +8,16 @@ To configure this resource, you may optionally create an AWS Secrets Manager sec
 
 * `secret_key` - This is the Alicloud secret key.
 
-* `region` - This is the Alicloud region.
-
 * `security_token` - Alicloud [Security Token Service](https://www.alibabacloud.com/help/doc-detail/66222.html).
+
+* `ecs_role_name` - "The RAM Role Name attached on a ECS instance for API operations. You can retrieve this from the 'Access Control' section of the Alibaba Cloud console.",
+
+* `region` - This is the Alicloud region.
 
 * `account_id` - (Optional) Alibaba Cloud Account ID. It is used by the Function Compute service and to connect router interfaces.
   If not provided, the provider will attempt to retrieve it automatically with [STS GetCallerIdentity](https://www.alibabacloud.com/help/doc-detail/43767.htm).
+
+* `endpoints` - (Optional) An `endpoints` block (documented below) to support custom endpoints.
 
 Nested `endpoints` block supports the following:
 
@@ -105,6 +109,7 @@ Nested `endpoints` block supports the following:
 * [Terraform::Alicloud::DrdsInstance](DrdsInstance.md)
 * [Terraform::Alicloud::EipAssociation](EipAssociation.md)
 * [Terraform::Alicloud::Eip](Eip.md)
+* [Terraform::Alicloud::ElasticsearchInstance](ElasticsearchInstance.md)
 * [Terraform::Alicloud::EssAlarm](EssAlarm.md)
 * [Terraform::Alicloud::EssAttachment](EssAttachment.md)
 * [Terraform::Alicloud::EssLifecycleHook](EssLifecycleHook.md)
@@ -127,6 +132,8 @@ Nested `endpoints` block supports the following:
 * [Terraform::Alicloud::LogProject](LogProject.md)
 * [Terraform::Alicloud::LogStoreIndex](LogStoreIndex.md)
 * [Terraform::Alicloud::LogStore](LogStore.md)
+* [Terraform::Alicloud::LogtailAttachment](LogtailAttachment.md)
+* [Terraform::Alicloud::LogtailConfig](LogtailConfig.md)
 * [Terraform::Alicloud::MnsQueue](MnsQueue.md)
 * [Terraform::Alicloud::MnsTopicSubscription](MnsTopicSubscription.md)
 * [Terraform::Alicloud::MnsTopic](MnsTopic.md)

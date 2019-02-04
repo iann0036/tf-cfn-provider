@@ -18,15 +18,15 @@ Provides a resource to configure lb cookie persistence profile on NSX-T manager
 
 `CookieGarble` - (Optional) A boolean flag which reflects whether the cookie value (server IP and port) would be encrypted or in plain text.
 
-`InsertModeParams` - (Optional) Additional parameters for the INSERT cookie mode: * `CookieDomain` - (Optional) HTTP cookie domain (for INSERT mode only). * `CookiePath` - (Optional) HTTP cookie path (for INSERT mode only). * `CookieExpiryType` - (Optional) Type of cookie expiration timing (for INSERT mode only). Accepted values: SESSION_COOKIE_TIME for session cookie time setting and PERSISTENCE_COOKIE_TIME for persistence cookie time setting. * `MaxIdleTime` - (Required if cookie_expiry_type is set) Maximum interval the cookie is valid for from the last time it was seen in a request. * `MaxLifeTime` - (Required for INSERT mode with SESSION_COOKIE_TIME expiration) Maximum interval the cookie is valid for from the first time the cookie was seen in a request.
+`InsertModeParams` - (Optional) Additional parameters for the INSERT cookie mode:.
 
-`CookieDomain` - (Optional) HTTP cookie domain (for INSERT mode only). * `CookiePath` - (Optional) HTTP cookie path (for INSERT mode only). * `CookieExpiryType` - (Optional) Type of cookie expiration timing (for INSERT mode only). Accepted values: SESSION_COOKIE_TIME for session cookie time setting and PERSISTENCE_COOKIE_TIME for persistence cookie time setting. * `MaxIdleTime` - (Required if cookie_expiry_type is set) Maximum interval the cookie is valid for from the last time it was seen in a request. * `MaxLifeTime` - (Required for INSERT mode with SESSION_COOKIE_TIME expiration) Maximum interval the cookie is valid for from the first time the cookie was seen in a request.
+`CookieDomain` - (Optional) HTTP cookie domain (for INSERT mode only).
 
-`CookiePath` - (Optional) HTTP cookie path (for INSERT mode only). * `CookieExpiryType` - (Optional) Type of cookie expiration timing (for INSERT mode only). Accepted values: SESSION_COOKIE_TIME for session cookie time setting and PERSISTENCE_COOKIE_TIME for persistence cookie time setting. * `MaxIdleTime` - (Required if cookie_expiry_type is set) Maximum interval the cookie is valid for from the last time it was seen in a request. * `MaxLifeTime` - (Required for INSERT mode with SESSION_COOKIE_TIME expiration) Maximum interval the cookie is valid for from the first time the cookie was seen in a request.
+`CookiePath` - (Optional) HTTP cookie path (for INSERT mode only).
 
-`CookieExpiryType` - (Optional) Type of cookie expiration timing (for INSERT mode only). Accepted values: SESSION_COOKIE_TIME for session cookie time setting and PERSISTENCE_COOKIE_TIME for persistence cookie time setting. * `MaxIdleTime` - (Required if cookie_expiry_type is set) Maximum interval the cookie is valid for from the last time it was seen in a request. * `MaxLifeTime` - (Required for INSERT mode with SESSION_COOKIE_TIME expiration) Maximum interval the cookie is valid for from the first time the cookie was seen in a request.
+`CookieExpiryType` - (Optional) Type of cookie expiration timing (for INSERT mode only). Accepted values: SESSION_COOKIE_TIME for session cookie time setting and PERSISTENCE_COOKIE_TIME for persistence cookie time setting.
 
-`MaxIdleTime` - (Required if cookie_expiry_type is set) Maximum interval the cookie is valid for from the last time it was seen in a request. * `MaxLifeTime` - (Required for INSERT mode with SESSION_COOKIE_TIME expiration) Maximum interval the cookie is valid for from the first time the cookie was seen in a request.
+`MaxIdleTime` - (Required if cookie_expiry_type is set) Maximum interval the cookie is valid for from the last time it was seen in a request.
 
 `MaxLifeTime` - (Required for INSERT mode with SESSION_COOKIE_TIME expiration) Maximum interval the cookie is valid for from the first time the cookie was seen in a request.
 

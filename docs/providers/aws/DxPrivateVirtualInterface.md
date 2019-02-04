@@ -16,7 +16,8 @@ Provides a Direct Connect private virtual interface resource.
 
 `AmazonAddress` - (Optional) The IPv4 CIDR address to use to send traffic to Amazon. Required for IPv4 BGP peers.
 
-`Mtu` - (Optional) The maximum transmission unit (MTU) is the size, in bytes, of the largest permissible packet that can be passed over the connection. The MTU of a virtual private interface can be either `1500` or `9001` (jumbo frames). Default is `1500`.
+`Mtu` - (Optional) The maximum transmission unit (MTU) is the size, in bytes, of the largest permissible packet that can be passed over the connection.
+The MTU of a virtual private interface can be either `1500` or `9001` (jumbo frames). Default is `1500`.
 
 `BgpAuthKey` - (Optional) The authentication key for BGP configuration.
 

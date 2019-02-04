@@ -7,7 +7,8 @@ a parent auto key IPSec tunnel.
 
 `Name` - (Required) The object's name.
 
-`IpsecTunnel` - (Required) The auto key IPSec tunnel to attach this proxy ID to.
+`IpsecTunnel` - (Required) The auto key IPSec tunnel to attach this
+proxy ID to.
 
 `Local` - (Optional) IP subnet or IP address represents local network.
 

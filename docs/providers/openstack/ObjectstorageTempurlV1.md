@@ -16,11 +16,15 @@ a new ID and URL.
 
 `Object` - (Required) The object name the tempurl is for.
 
-`Ttl` - (Required) The TTL, in seconds, for the URL. For how long it should be valid.
+`Ttl` - (Required) The TTL, in seconds, for the URL. For how long it should
+be valid.
 
-`Method` - (Optional) The method allowed when accessing this URL. Valid values are `GET`, and `POST`. Default is `GET`.
+`Method` - (Optional) The method allowed when accessing this URL.
+Valid values are `GET`, and `POST`. Default is `GET`.
 
-`Regenerate` - (Optional) Whether to automatically regenerate the URL when it has expired. If set to true, this will create a new resource with a new ID and new URL. Defaults to false.
+`Regenerate` - (Optional) Whether to automatically regenerate the URL when
+it has expired. If set to true, this will create a new resource with a new
+ID and new URL. Defaults to false.
 
 
 ## Return Values

@@ -4,13 +4,19 @@ Manage an Azure Storage Account.
 
 ## Properties
 
-`Name` - (Required) Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
+`Name` - (Required) Specifies the name of the storage account. Changing this forces a
+new resource to be created. This must be unique across the entire Azure service,
+not just within the resource group.
 
-`ResourceGroupName` - (Required) The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
+`ResourceGroupName` - (Required) The name of the resource group in which to
+create the storage account. Changing this forces a new resource to be created.
 
-`Location` - (Required) Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+`Location` - (Required) Specifies the supported Azure location where the
+resource exists. Changing this forces a new resource to be created.
 
-`AccountKind` - (Optional) Defines the Kind of account. Valid options are `Storage`, `StorageV2` and `BlobStorage`. Changing this forces a new resource to be created. Defaults to `Storage`.
+`AccountKind` - (Optional) Defines the Kind of account. Valid options are `Storage`,
+`StorageV2` and `BlobStorage`. Changing this forces a new resource to be created.
+Defaults to `Storage`.
 
 `AccountTier` - (Required) Defines the Tier to use for this storage account. Valid options are `Standard` and `Premium`. Changing this forces a new resource to be created.
 
@@ -22,7 +28,8 @@ Manage an Azure Storage Account.
 
 `EnableFileEncryption` - (Optional) Boolean flag which controls if Encryption Services are enabled for File storage, see [here](https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/) for more information. Defaults to `true`.
 
-`EnableHttpsTrafficOnly` - (Optional) Boolean flag which forces HTTPS if enabled, see [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/) for more information.
+`EnableHttpsTrafficOnly` - (Optional) Boolean flag which forces HTTPS if enabled, see [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
+for more information.
 
 `AccountEncryptionSource` - (Optional) The Encryption Source for this Storage Account. Possible values are `Microsoft.Keyvault` and `Microsoft.Storage`. Defaults to `Microsoft.Storage`.
 
@@ -42,7 +49,8 @@ Manage an Azure Storage Account.
 
 ### NetworkRules Properties
 
-`Bypass` - (Optional)  Specifies whether traffic is bypassed for Logging/Metrics/AzureServices. Valid options are any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
+`Bypass` - (Optional)  Specifies whether traffic is bypassed for Logging/Metrics/AzureServices. Valid options are
+any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
 
 `IpRules` - (Optional) List of IP or IP ranges in CIDR Format. Only IPV4 addresses are allowed.
 

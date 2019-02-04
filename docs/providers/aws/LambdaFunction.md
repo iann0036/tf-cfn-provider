@@ -46,9 +46,16 @@ For information about Lambda and how to use it, see [What is AWS Lambda?][1]
 
 `Tags` - (Optional) A mapping of tags to assign to the object.
 
-`TargetArn` - (Required) The ARN of an SNS topic or SQS queue to notify when an invocation fails. If this option is used, the function's IAM role must be granted suitable access to write to the target object, which means allowing either the `sns:Publish` or `sqs:SendMessage` action on this ARN, depending on which service is targeted.
+`TargetArn` - (Required) The ARN of an SNS topic or SQS queue to notify when an invocation fails. If this
+option is used, the function's IAM role must be granted suitable access to write to the target object,
+which means allowing either the `sns:Publish` or `sqs:SendMessage` action on this ARN, depending on
+which service is targeted.
 
-`Mode` - (Required) Can be either `PassThrough` or `Active`. If PassThrough, Lambda will only trace the request from an upstream service if it contains a tracing header with "sampled=1". If Active, Lambda will respect any tracing header it receives from an upstream service. If no tracing header is received, Lambda will call X-Ray for a tracing decision.
+`Mode` - (Required) Can be either `PassThrough` or `Active`. If PassThrough, Lambda will only trace
+the request from an upstream service if it contains a tracing header with
+"sampled=1". If Active, Lambda will respect any tracing header it receives
+from an upstream service. If no tracing header is received, Lambda will call
+X-Ray for a tracing decision.
 
 `SubnetIds` - (Required) A list of subnet IDs associated with the Lambda function.
 

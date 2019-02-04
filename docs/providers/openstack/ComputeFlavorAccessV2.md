@@ -9,11 +9,14 @@ this resource.
 
 ## Properties
 
-`Region` - (Optional) The region in which to obtain the V2 Compute client. If omitted, the `Region` argument of the provider is used. Changing this creates a new flavor access.
+`Region` - (Optional) The region in which to obtain the V2 Compute client.
+If omitted, the `Region` argument of the provider is used.
+Changing this creates a new flavor access.
 
 `FlavorId` - (Required) The UUID of flavor to use. Changing this creates a new flavor access.
 
-`TenantId` - (Required) The UUID of tenant which is allowed to use the flavor. Changing this creates a new flavor access.
+`TenantId` - (Required) The UUID of tenant which is allowed to use the flavor.
+Changing this creates a new flavor access.
 
 
 ## Return Values

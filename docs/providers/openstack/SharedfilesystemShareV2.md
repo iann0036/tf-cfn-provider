@@ -4,25 +4,41 @@ Use this resource to configure a share.
 
 ## Properties
 
-`Name` - (Optional) The name of the share. Changing this updates the name of the existing share.
+`Region` - The region in which to obtain the V2 Shared File System client.
+A Shared File System client is needed to create a share. Changing this
+creates a new share.
 
-`Description` - (Optional) The human-readable description for the share. Changing this updates the description of the existing share.
+`Name` - (Optional) The name of the share. Changing this updates the name
+of the existing share.
 
-`ShareProto` - (Required) The share protocol - can either be NFS, CIFS, CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
+`Description` - (Optional) The human-readable description for the share.
+Changing this updates the description of the existing share.
 
-`Size` - (Required) The share size, in GBs. The requested share size cannot be greater than the allowed GB quota. Changing this resizes the existing share.
+`ShareProto` - (Required) The share protocol - can either be NFS, CIFS,
+CEPHFS, GLUSTERFS, HDFS or MAPRFS. Changing this creates a new share.
 
-`ShareType` - (Optional) The share type name. If you omit this parameter, the default share type is used.
+`Size` - (Required) The share size, in GBs. The requested share size cannot be greater
+than the allowed GB quota. Changing this resizes the existing share.
 
-`SnapshotId` - (Optional) The UUID of the share's base snapshot. Changing this creates a new share.
+`ShareType` - (Optional) The share type name. If you omit this parameter, the default
+share type is used.
 
-`IsPublic` - (Optional) The level of visibility for the share. Set to true to make share public. Set to false to make it private. Default value is false. Changing this updates the existing share.
+`SnapshotId` - (Optional) The UUID of the share's base snapshot. Changing this creates
+a new share.
 
-`Metadata` - (Optional) One or more metadata key and value pairs as a dictionary of strings.
+`IsPublic` - (Optional) The level of visibility for the share. Set to true to make
+share public. Set to false to make it private. Default value is false. Changing this
+updates the existing share.
 
-`ShareNetworkId` - (Optional) The UUID of a share network where the share server exists or will be created. If `ShareNetworkId` is not set and you provide a `SnapshotId`, the share_network_id value from the snapshot is used. Changing this creates a new share.
+`Metadata` - (Optional) One or more metadata key and value pairs as a dictionary of
+strings.
 
-`AvailabilityZone` - (Optional) The share availability zone. Changing this creates a new share.
+`ShareNetworkId` - (Optional) The UUID of a share network where the share server exists
+or will be created. If `ShareNetworkId` is not set and you provide a `SnapshotId`,
+the share_network_id value from the snapshot is used. Changing this creates a new share.
+
+`AvailabilityZone` - (Optional) The share availability zone. Changing this creates a
+new share.
 
 
 ## Return Values
@@ -31,7 +47,7 @@ Use this resource to configure a share.
 
 `Id` - The unique ID for the Share.
 
-`Region` - The region in which to obtain the V2 Shared File System client.
+`Region` - See Properties above.
 
 `ProjectId` - The owner of the Share.
 

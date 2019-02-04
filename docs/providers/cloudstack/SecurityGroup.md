@@ -4,11 +4,14 @@ Creates a security group.
 
 ## Properties
 
-`Name` - (Required) The name of the security group. Changing this forces a new resource to be created.
+`Name` - (Required) The name of the security group. Changing this forces a
+new resource to be created.
 
-`Description` - (Optional) The description of the security group. Changing this forces a new resource to be created.
+`Description` - (Optional) The description of the security group. Changing
+this forces a new resource to be created.
 
-`Project` - (Optional) The name or ID of the project to create this security group in. Changing this forces a new resource to be created.
+`Project` - (Optional) The name or ID of the project to create this security
+group in. Changing this forces a new resource to be created.
 
 
 ## Return Values

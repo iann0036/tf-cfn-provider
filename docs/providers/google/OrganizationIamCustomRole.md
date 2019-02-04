@@ -20,7 +20,9 @@ and
 
 `Title` - (Required) A human-readable title for the role.
 
-`Stage` - (Optional) The current launch stage of the role. Defaults to `GA`. List of possible stages is [here](https://cloud.google.com/iam/reference/rest/v1/organizations.roles#Role.RoleLaunchStage).
+`Stage` - (Optional) The current launch stage of the role.
+Defaults to `GA`.
+List of possible stages is [here](https://cloud.google.com/iam/reference/rest/v1/organizations.roles#Role.RoleLaunchStage).
 
 `Description` - (Optional) A human-readable description for the role.
 

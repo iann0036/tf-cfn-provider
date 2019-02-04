@@ -20,15 +20,15 @@ which is currently in use (eg, by [`Terraform::AWS::LbListener`](lb_listener.htm
 
 ## Properties
 
-`DomainName` - (Required) A domain name for which the certificate should be issued * `SubjectAlternativeNames` - (Optional) A list of domains that should be SANs in the issued certificate * `ValidationMethod` - (Required) Which method to use for validation. `DNS` or `EMAIL` are valid, `NONE` can be used for certificates that were imported into ACM and then into Terraform.
+`DomainName` - (Required) A domain name for which the certificate should be issued.
 
-`SubjectAlternativeNames` - (Optional) A list of domains that should be SANs in the issued certificate * `ValidationMethod` - (Required) Which method to use for validation. `DNS` or `EMAIL` are valid, `NONE` can be used for certificates that were imported into ACM and then into Terraform.
+`SubjectAlternativeNames` - (Optional) A list of domains that should be SANs in the issued certificate.
 
 `ValidationMethod` - (Required) Which method to use for validation. `DNS` or `EMAIL` are valid, `NONE` can be used for certificates that were imported into ACM and then into Terraform.
 
-`PrivateKey` - (Required) The certificate's PEM-formatted private key * `CertificateBody` - (Required) The certificate's PEM-formatted public key * `CertificateChain` - (Optional) The certificate's PEM-formatted chain.
+`PrivateKey` - (Required) The certificate's PEM-formatted private key.
 
-`CertificateBody` - (Required) The certificate's PEM-formatted public key * `CertificateChain` - (Optional) The certificate's PEM-formatted chain.
+`CertificateBody` - (Required) The certificate's PEM-formatted public key.
 
 `CertificateChain` - (Optional) The certificate's PEM-formatted chain.
 

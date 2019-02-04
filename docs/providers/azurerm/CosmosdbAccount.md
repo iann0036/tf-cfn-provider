@@ -24,7 +24,7 @@ Manages a CosmosDB (formally DocumentDB) Account.
 
 `EnableAutomaticFailover` - (Optional) Enable automatic fail over for this Cosmos DB account.
 
-`Capabilities` - (Optional) Enable capabilities for this Cosmos DB account.
+`Capabilities` - (Optional) The capabilities which should be enabled for this Cosmos DB account. Possible values are `EnableAggregationPipeline`, `EnableCassandra`, `EnableGremlin`, `EnableTable`, `MongoDBv3.4`, and `mongoEnableDocLevelTTL`.
 
 `IsVirtualNetworkFilterEnabled` - (Optional) Enables virtual network filtering for this Cosmos DB account.
 

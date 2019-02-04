@@ -29,11 +29,14 @@ for both templates and template stacks.
 
 `UseridService` - (Optional) Allow User ID service.
 
-`UseridSyslogListenerSsl` - (Optional) Allow User ID syslog listener for SSL.
+`UseridSyslogListenerSsl` - (Optional) Allow User ID syslog listener
+for SSL.
 
-`UseridSyslogListenerUdp` - (Optional) Allow User ID syslog listener for UDP.
+`UseridSyslogListenerUdp` - (Optional) Allow User ID syslog listener
+for UDP.
 
-`PermittedIps` - (Optional) The list of permitted IP addresses or address ranges for this management profile.
+`PermittedIps` - (Optional) The list of permitted IP addresses or address
+ranges for this management profile.
 
 
 ## See Also

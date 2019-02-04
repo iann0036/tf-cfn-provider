@@ -22,7 +22,8 @@ Further documentation on GitHub collaborators:
 
 `Username` - (Required) The user to add to the repository as a collaborator.
 
-`Permission` - (Optional) The permission of the outside collaborator for the repository. Must be one of `pull`, `push`, or `admin`. Defaults to `push`.
+`Permission` - (Optional) The permission of the outside collaborator for the repository.
+Must be one of `pull`, `push`, or `admin`. Defaults to `push`.
 
 
 ## See Also

@@ -17,13 +17,13 @@ To start the app from a successful build, use a [Formation resource](formation.h
 
 `Buildpacks` - List of buildpack GitHub URLs.
 
-`Source` - (Required) A block that specifies the source code to build & release: * `Checksum` - Hash of the source archive for verifying its integrity, auto-generated when `source.path` is set, `SHA256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` * `Path` - (Required unless `source.url` is set) Local path to the source directory or tarball archive for the app * `Url` - (Required unless `source.path` is set) `https` location of the source archive for the app * `Version` - Use to track what version of your source originated this build. If you are creating builds from git-versioned source code, for example, the commit hash, or release tag would be a good value to use for the version parameter.
+`Source` - (Required) A block that specifies the source code to build & release:.
 
-`Checksum` - Hash of the source archive for verifying its integrity, auto-generated when `source.path` is set, `SHA256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` * `Path` - (Required unless `source.url` is set) Local path to the source directory or tarball archive for the app * `Url` - (Required unless `source.path` is set) `https` location of the source archive for the app * `Version` - Use to track what version of your source originated this build. If you are creating builds from git-versioned source code, for example, the commit hash, or release tag would be a good value to use for the version parameter.
+`Checksum` - Hash of the source archive for verifying its integrity, auto-generated when `source.path` is set, `SHA256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`.
 
-`Path` - (Required unless `source.url` is set) Local path to the source directory or tarball archive for the app * `Url` - (Required unless `source.path` is set) `https` location of the source archive for the app * `Version` - Use to track what version of your source originated this build. If you are creating builds from git-versioned source code, for example, the commit hash, or release tag would be a good value to use for the version parameter.
+`Path` - (Required unless `source.url` is set) Local path to the source directory or tarball archive for the app.
 
-`Url` - (Required unless `source.path` is set) `https` location of the source archive for the app * `Version` - Use to track what version of your source originated this build. If you are creating builds from git-versioned source code, for example, the commit hash, or release tag would be a good value to use for the version parameter.
+`Url` - (Required unless `source.path` is set) `https` location of the source archive for the app.
 
 `Version` - Use to track what version of your source originated this build. If you are creating builds from git-versioned source code, for example, the commit hash, or release tag would be a good value to use for the version parameter.
 

@@ -6,13 +6,16 @@ Manage an Azure Storage Blob.
 
 `Name` - (Required) The name of the storage blob. Must be unique within the storage container the blob is located.
 
-`ResourceGroupName` - (Required) The name of the resource group in which to create the storage container. Changing this forces a new resource to be created.
+`ResourceGroupName` - (Required) The name of the resource group in which to
+create the storage container. Changing this forces a new resource to be created.
 
-`StorageAccountName` - (Required) Specifies the storage account in which to create the storage container. Changing this forces a new resource to be created.
+`StorageAccountName` - (Required) Specifies the storage account in which to create the storage container.
+Changing this forces a new resource to be created.
 
 `StorageContainerName` - (Required) The name of the storage container in which this blob should be created.
 
-`Type` - (Optional) The type of the storage blob to be created. One of either `block` or `page`. When not copying from an existing blob, this becomes required.
+`Type` - (Optional) The type of the storage blob to be created. One of either `block` or `page`. When not copying from an existing blob,
+this becomes required.
 
 `Size` - (Optional) Used only for `page` blobs to specify the size in bytes of the blob to be created. Must be a multiple of 512. Defaults to 0.
 
@@ -20,7 +23,8 @@ Manage an Azure Storage Blob.
 
 `Source` - (Optional) An absolute path to a file on the local system. Cannot be defined if `SourceUri` is defined.
 
-`SourceUri` - (Optional) The URI of an existing blob, or a file in the Azure File service, to use as the source contents for the blob to be created. Changing this forces a new resource to be created. Cannot be defined if `Source` is defined.
+`SourceUri` - (Optional) The URI of an existing blob, or a file in the Azure File service, to use as the source contents
+for the blob to be created. Changing this forces a new resource to be created. Cannot be defined if `Source` is defined.
 
 `Parallelism` - (Optional) The number of workers per CPU core to run for concurrent uploads. Defaults to `8`.
 

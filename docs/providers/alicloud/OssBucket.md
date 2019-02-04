@@ -10,17 +10,17 @@ Provides a resource to create a oss bucket and set its attribution.
 
 `Acl` - (Optional) The [canned ACL](https://www.alibabacloud.com/help/doc-detail/31898.htm) to apply. Defaults to "private".
 
-`CoreRule` - (Optional) A rule of [Cross-Origin Resource Sharing](https://www.alibabacloud.com/help/doc-detail/31903.htm) (documented below). The items of core rule are no more than 10 for every OSS bucket.
+`CorsRule` - (Optional) A list rules of [Cross-Origin Resource Sharing](https://www.alibabacloud.com/help/doc-detail/31903.htm) (documented below). The items of cors rule are no more than 10 for every OSS bucket.
 
-`Website` - (Optional) A website object(documented below).
+`Website` - (Optional) A list website objects(documented below). The items of website are no more than 1 for every OSS bucket.
 
-`Logging` - (Optional) A Settings of [bucket logging](https://www.alibabacloud.com/help/doc-detail/31900.htm) (documented below).
+`Logging` - (Optional) A list settings of [bucket logging](https://www.alibabacloud.com/help/doc-detail/31900.htm) (documented below). The items of logging are no more than 1 for every OSS bucket.
 
 `LoggingIsenable` - (Optional) The flag of using logging enable container. Defaults true.
 
-`RefererConfig` - (Optional) The configuration of [referer](https://www.alibabacloud.com/help/doc-detail/31901.htm) (documented below).
+`RefererConfig` - (Optional) A list configurations of [referer](https://www.alibabacloud.com/help/doc-detail/31901.htm) (documented below). The items of referer_config are no more than 1 for every OSS bucket.
 
-`LifecycleRule` - (Optional) A configuration of [object lifecycle management](https://www.alibabacloud.com/help/doc-detail/31904.htm) (documented below).
+`LifecycleRule` - (Optional) A list configurations of [object lifecycle management](https://www.alibabacloud.com/help/doc-detail/31904.htm) (documented below). The items of rules are no more than 1000 for every OSS bucket.
 
 
 ## Return Values

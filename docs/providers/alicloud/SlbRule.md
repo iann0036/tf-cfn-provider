@@ -21,9 +21,13 @@ You can add forwarding rules to a listener to forward requests based on the doma
 
 `FrontendPort` - (Required, ForceNew) The listener frontend port which is used to launch the new forwarding rule. Valid range: [1-65535].
 
-`Domain` - (Optional, ForceNew) Domain name of the forwarding rule. It can contain letters a-z, numbers 0-9, hyphens (-), and periods (.), and wildcard characters. The following two domain name formats are supported: - Standard domain name: www.test.com - Wildcard domain name: *.test.com. wildcard (*) must be the first character in the format of (*.).
+`Domain` - (Optional, ForceNew) Domain name of the forwarding rule. It can contain letters a-z, numbers 0-9, hyphens (-), and periods (.),
+and wildcard characters. The following two domain name formats are supported:
+- Standard domain name: www.test.com
+- Wildcard domain name: *.test.com. wildcard (*) must be the first character in the format of (*.).
 
-`Url` - (Optional, ForceNew) Domain of the forwarding rule. It must be 2-80 characters in length. Only letters a-z, numbers 0-9, and characters '-' '/' '?' '%' '#' and '&' are allowed. URLs must be started with the character '/', but cannot be '/' alone.
+`Url` - (Optional, ForceNew) Domain of the forwarding rule. It must be 2-80 characters in length. Only letters a-z, numbers 0-9,
+and characters '-' '/' '?' '%' '#' and '&' are allowed. URLs must be started with the character '/', but cannot be '/' alone.
 
 `ServerGroupId` - (Required) ID of a virtual server group that will be forwarded.
 

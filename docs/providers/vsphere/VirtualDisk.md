@@ -10,19 +10,29 @@ block with the [`attach`][docs-vsphere-virtual-machine-disk-attach] parameter.
 
 ## Properties
 
-`VmdkPath` - (Required) The path, including filename, of the virtual disk to be created.  This needs to end in `.vmdk`.
+`VmdkPath` - (Required) The path, including filename, of the virtual disk to
+be created.  This needs to end in `.vmdk`.
 
-`Datastore` - (Required) The name of the datastore in which to create the disk.
+`Datastore` - (Required) The name of the datastore in which to create the
+disk.
 
 `Size` - (Required) Size of the disk (in GB).
 
-`Datacenter` - (Optional) The name of the datacenter in which to create the disk. Can be omitted when when ESXi or if there is only one datacenter in your infrastructure.
+`Datacenter` - (Optional) The name of the datacenter in which to create the
+disk. Can be omitted when when ESXi or if there is only one datacenter in
+your infrastructure.
 
-`Type` - (Optional) The type of disk to create. Can be one of `eagerZeroedThick`, `lazy`, or `thin`. Default: `eagerZeroedThick`. For information on what each kind of disk provisioning policy means, click [here][docs-vmware-vm-disk-provisioning].
+`Type` - (Optional) The type of disk to create. Can be one of
+`eagerZeroedThick`, `lazy`, or `thin`. Default: `eagerZeroedThick`. For
+information on what each kind of disk provisioning policy means, click
+[here][docs-vmware-vm-disk-provisioning].
 
-`AdapterType` - (Optional) The adapter type for this virtual disk. Can be one of `ide`, `lsiLogic`, or `busLogic`.  Default: `lsiLogic`.
+`AdapterType` - (Optional) The adapter type for this virtual disk. Can be
+one of `ide`, `lsiLogic`, or `busLogic`.  Default: `lsiLogic`.
 
-`CreateDirectories` - (Optional) Tells the resource to create any directories that are a part of the `VmdkPath` parameter if they are missing. Default: `false`.
+`CreateDirectories` - (Optional) Tells the resource to create any
+directories that are a part of the `VmdkPath` parameter if they are missing.
+Default: `false`.
 
 
 ## See Also

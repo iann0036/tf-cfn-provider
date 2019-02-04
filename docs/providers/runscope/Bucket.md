@@ -8,7 +8,8 @@ organize your requests and tests.
 
 `Name` - (String, Required) The name of this bucket.
 
-`TeamUuid` - (String, Required) Unique identifier for the team this bucket is being created for.
+`TeamUuid` - (String, Required) Unique identifier for the team this bucket
+is being created for.
 
 
 ## Return Values

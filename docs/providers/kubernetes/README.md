@@ -23,7 +23,9 @@ To configure this resource, you may optionally create an AWS Secrets Manager sec
 ## Supported Resources
 
 * [Terraform::Kubernetes::ClusterRoleBinding](ClusterRoleBinding.md)
+* [Terraform::Kubernetes::ClusterRole](ClusterRole.md)
 * [Terraform::Kubernetes::ConfigMap](ConfigMap.md)
+* [Terraform::Kubernetes::Daemonset](Daemonset.md)
 * [Terraform::Kubernetes::Deployment](Deployment.md)
 * [Terraform::Kubernetes::HorizontalPodAutoscaler](HorizontalPodAutoscaler.md)
 * [Terraform::Kubernetes::LimitRange](LimitRange.md)

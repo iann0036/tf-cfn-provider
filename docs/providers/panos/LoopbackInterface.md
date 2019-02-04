@@ -12,7 +12,8 @@ This resource allows you to add/update/delete loopback interfaces.
 
 `NetflowProfile` - (Optional) The netflow profile.
 
-`StaticIps` - (Optional) List of static IPv4 addresses to set for this data interface.
+`StaticIps` - (Optional) List of static IPv4 addresses to set for this data
+interface.
 
 `ManagementProfile` - (Optional) The management profile.
 

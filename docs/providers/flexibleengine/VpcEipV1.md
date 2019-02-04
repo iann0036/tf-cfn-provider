@@ -4,7 +4,8 @@ Manages a V1 EIP resource within FlexibleEngine VPC.
 
 ## Properties
 
-`Region` - (Optional) The region in which to create the eip. If omitted, the `Region` argument of the provider is used. Changing this creates a new eip.
+`Region` - (Optional) The region in which to create the eip. If omitted,
+the `Region` argument of the provider is used. Changing this creates a new eip.
 
 `Publicip` - (Required) The elastic IP address object.
 
@@ -12,21 +13,28 @@ Manages a V1 EIP resource within FlexibleEngine VPC.
 
 ### Publicip Properties
 
-`Type` - (Required) The value must be a type supported by the system. Only `5_bgp` supported now. Changing this creates a new eip.
+`Type` - (Required) The value must be a type supported by the system. Only
+`5_bgp` supported now. Changing this creates a new eip.
 
-`IpAddress` - (Optional) The value must be a valid IP address in the available IP address segment. Changing this creates a new eip.
+`IpAddress` - (Optional) The value must be a valid IP address in the available
+IP address segment. Changing this creates a new eip.
 
-`PortId` - (Optional) The port id which this eip will associate with. If the value is "" or this not specified, the eip will be in unbind state.
+`PortId` - (Optional) The port id which this eip will associate with. If the value
+is "" or this not specified, the eip will be in unbind state.
 
 ### Bandwidth Properties
 
-`Name` - (Required) The bandwidth name, which is a string of 1 to 64 characters that contain letters, digits, underscores (_), and hyphens (-).
+`Name` - (Required) The bandwidth name, which is a string of 1 to 64 characters
+that contain letters, digits, underscores (_), and hyphens (-).
 
 `Size` - (Required) The bandwidth size. The value ranges from 1 to 300 Mbit/s.
 
-`ShareType` - (Required) Whether the bandwidth is shared or exclusive. Changing this creates a new eip.
+`ShareType` - (Required) Whether the bandwidth is shared or exclusive. Changing
+this creates a new eip.
 
-`ChargeMode` - (Optional) This is a reserved field. If the system supports charging by traffic and this field is specified, then you are charged by traffic for elastic IP addresses. Changing this creates a new eip.
+`ChargeMode` - (Optional) This is a reserved field. If the system supports charging
+by traffic and this field is specified, then you are charged by traffic for elastic
+IP addresses. Changing this creates a new eip.
 
 
 ## Return Values

@@ -6,9 +6,13 @@ Provides a Batch Job Queue resource.
 
 `Name` - (Required) Specifies the name of the job queue.
 
-`ComputeEnvironments` - (Required) Specifies the set of compute environments mapped to a job queue and their order.  The position of the compute environments in the list will dictate the order. You can associate up to 3 compute environments with a job queue.
+`ComputeEnvironments` - (Required) Specifies the set of compute environments
+mapped to a job queue and their order.  The position of the compute environments
+in the list will dictate the order. You can associate up to 3 compute environments
+with a job queue.
 
-`Priority` - (Required) The priority of the job queue. Job queues with a higher priority are evaluated first when associated with the same compute environment.
+`Priority` - (Required) The priority of the job queue. Job queues with a higher priority
+are evaluated first when associated with the same compute environment.
 
 `State` - (Required) The state of the job queue. Must be one of: `ENABLED` or `DISABLED`.
 

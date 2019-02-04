@@ -24,11 +24,15 @@ connections.
 
 ## Properties
 
-`Name` - (Required) The name of the VM group. This must be unique in the cluster. Forces a new resource if changed.
+`Name` - (Required) The name of the VM group. This must be unique in the
+cluster. Forces a new resource if changed.
 
-`ComputeClusterId` - (Required) The [managed object reference ID][docs-about-morefs] of the cluster to put the group in.  Forces a new resource if changed.
+`ComputeClusterId` - (Required) The [managed object reference
+ID][docs-about-morefs] of the cluster to put the group in.  Forces a new
+resource if changed.
 
-`VirtualMachineIds` - (Required) The UUIDs of the virtual machines in this group.
+`VirtualMachineIds` - (Required) The UUIDs of the virtual machines in this
+group.
 
 
 ## See Also

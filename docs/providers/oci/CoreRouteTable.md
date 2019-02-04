@@ -30,13 +30,13 @@ For more information on configuring a VCN's default route table, see [Managing D
 
 `FreeformTags` - (Optional) (Updatable) Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
 
-`RouteRules` - (Required) (Updatable) The collection of rules used for routing destination IPs to network devices. * `CidrBlock` - (Optional) (Updatable) Deprecated. Instead use `Destination` and `destinationType`. Requests that include both `CidrBlock` and `Destination` will be rejected.
+`RouteRules` - (Required) (Updatable) The collection of rules used for routing destination IPs to network devices.
 
 `CidrBlock` - (Optional) (Updatable) Deprecated. Instead use `Destination` and `destinationType`. Requests that include both `CidrBlock` and `Destination` will be rejected.
 
 `Destination` - (Optional) (Updatable) Conceptually, this is the range of IP addresses used for matching when routing traffic. Required if you provide a `destinationType`.
 
-`DestinationType` - (Optional) (Updatable) Type of destination for the rule. Required if you provide a `Destination`. * `CIDRBLOCK`: If the rule's `Destination` is an IP address range in CIDR notation. * `SERVICECIDRBLOCK`: If the rule's `Destination` is the `CidrBlock` value for a [Service](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/Service/) (the rule is for traffic destined for a particular service through a service gateway). * `NetworkEntityId` - (Required) (Updatable) The OCID for the route rule's target. For information about the type of targets you can specify, see [Route Tables](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/managingroutetables.htm).
+`DestinationType` - (Optional) (Updatable) Type of destination for the rule. Required if you provide a `Destination`.
 
 `NetworkEntityId` - (Required) (Updatable) The OCID for the route rule's target. For information about the type of targets you can specify, see [Route Tables](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/managingroutetables.htm).
 

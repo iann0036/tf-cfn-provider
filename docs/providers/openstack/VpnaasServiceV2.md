@@ -4,15 +4,22 @@ Manages a V2 Neutron VPN service resource within OpenStack.
 
 ## Properties
 
-`Region` - (Optional) The region in which to obtain the V2 Networking client. A Networking client is needed to create a VPN service. If omitted, the `Region` argument of the provider is used. Changing this creates a new service.
+`Region` - (Optional) The region in which to obtain the V2 Networking client.
+A Networking client is needed to create a VPN service. If omitted, the
+`Region` argument of the provider is used. Changing this creates a new
+service.
 
-`Name` - (Optional) The name of the service. Changing this updates the name of the existing service.
+`Name` - (Optional) The name of the service. Changing this updates the name of
+the existing service.
 
-`TenantId` - (Optional) The owner of the service. Required if admin wants to create a service for another project. Changing this creates a new service.
+`TenantId` - (Optional) The owner of the service. Required if admin wants to
+create a service for another project. Changing this creates a new service.
 
-`Description` - (Optional) The human-readable description for the service. Changing this updates the description of the existing service.
+`Description` - (Optional) The human-readable description for the service.
+Changing this updates the description of the existing service.
 
-`AdminStateUp` - (Optional) The administrative state of the resource. Can either be up(true) or down(false). Changing this updates the administrative state of the existing service.
+`AdminStateUp` - (Optional) The administrative state of the resource. Can either be up(true) or down(false).
+Changing this updates the administrative state of the existing service.
 
 `SubnetId` - (Optional) SubnetID is the ID of the subnet. Default is null.
 

@@ -193,7 +193,9 @@ Manage a virtual machine scale set.
 
 `Caching` - (Optional) Specifies the caching requirements. Possible values include: `None` (default), `ReadOnly`, `ReadWrite`.
 
-`Image` - (Optional) Specifies the blob uri for user image. A virtual machine scale set creates an os disk in the same container as the user image. Updating the osDisk image causes the existing disk to be deleted and a new one created with the new image. If the VM scale set is in Manual upgrade mode then the virtual machines are not updated until they have manualUpgrade applied to them. When setting this field `OsType` needs to be specified. Cannot be used when `VhdContainers`, `ManagedDiskType` or `StorageProfileImageReference` are specified.
+`Image` - (Optional) Specifies the blob uri for user image. A virtual machine scale set creates an os disk in the same container as the user image.
+Updating the osDisk image causes the existing disk to be deleted and a new one created with the new image. If the VM scale set is in Manual upgrade mode then the virtual machines are not updated until they have manualUpgrade applied to them.
+When setting this field `OsType` needs to be specified. Cannot be used when `VhdContainers`, `ManagedDiskType` or `StorageProfileImageReference` are specified.
 
 `OsType` - (Optional) Specifies the operating system Type, valid values are windows, linux.
 
@@ -211,7 +213,8 @@ Manage a virtual machine scale set.
 
 ### StorageProfileImageReference Properties
 
-`Id` - (Optional) Specifies the ID of the (custom) image to use to create the virtual machine scale set, as in the [example below](#example-of-storage_profile_image_reference-with-id).
+`Id` - (Optional) Specifies the ID of the (custom) image to use to create the virtual
+machine scale set, as in the [example below](#example-of-storage_profile_image_reference-with-id).
 
 `Publisher` - (Optional) Specifies the publisher of the image used to create the virtual machines.
 

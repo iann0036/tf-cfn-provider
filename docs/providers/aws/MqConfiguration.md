@@ -6,7 +6,9 @@ For more information on Amazon MQ, see [Amazon MQ documentation](https://docs.aw
 
 ## Properties
 
-`Data` - (Required) The broker configuration in XML format. See [official docs](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-broker-configuration-parameters.html) for supported parameters and format of the XML.
+`Data` - (Required) The broker configuration in XML format.
+See [official docs](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-broker-configuration-parameters.html)
+for supported parameters and format of the XML.
 
 `Description` - (Optional) The description of the configuration.
 
@@ -15,6 +17,8 @@ For more information on Amazon MQ, see [Amazon MQ documentation](https://docs.aw
 `EngineVersion` - (Required) The version of the broker engine.
 
 `Name` - (Required) The name of the configuration.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
 
 
 ## Return Values

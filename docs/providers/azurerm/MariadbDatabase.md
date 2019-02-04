@@ -4,7 +4,8 @@ Manages a MariaDB Database within a MariaDB Server
 
 ## Properties
 
-`Name` - (Required) Specifies the name of the MariaDB Database, which needs [to be a valid MariaDB identifier](https://mariadb.com/kb/en/library/identifier-names/). Changing this forces a new resource to be created.
+`Name` - (Required) Specifies the name of the MariaDB Database, which needs [to be a valid MariaDB identifier](https://mariadb.com/kb/en/library/identifier-names/). Changing this forces a
+new resource to be created.
 
 `ServerName` - (Required) Specifies the name of the MariaDB Server. Changing this forces a new resource to be created.
 

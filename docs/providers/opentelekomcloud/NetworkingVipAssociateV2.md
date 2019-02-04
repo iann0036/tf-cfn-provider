@@ -4,9 +4,11 @@ Manages a V2 vip associate resource within OpenTelekomCloud.
 
 ## Properties
 
-`VipId` - (Required) The ID of vip to attach the port to. Changing this creates a new vip associate.
+`VipId` - (Required) The ID of vip to attach the port to.
+Changing this creates a new vip associate.
 
-`PortIds` - (Required) An array of one or more IDs of the ports to attach the vip to. Changing this creates a new vip associate.
+`PortIds` - (Required) An array of one or more IDs of the ports to attach the vip to.
+Changing this creates a new vip associate.
 
 
 ## Return Values

@@ -34,17 +34,21 @@ the Profile Setting is set to `None`.
 
 ## Properties
 
-`DeviceGroup` - (Optional) The device group to put the security policy into (default: `shared`).
+`DeviceGroup` - (Optional) The device group to put the security policy into
+(default: `shared`).
 
-`Rulebase` - (Optional) The rulebase.  This can be `pre-rulebase` (default), `post-rulebase`, or `Rulebase`.
+`Rulebase` - (Optional) The rulebase.  This can be `pre-rulebase` (default),
+`post-rulebase`, or `Rulebase`.
 
-`Rule` - The security rule definition (see below).  The security rule ordering will match how they appear in the terraform plan file.
+`Rule` - The security rule definition (see below).  The security rule
+ordering will match how they appear in the terraform plan file.
 
 ### Rule Properties
 
 `Name` - (Required) The security rule name.
 
-`Type` - (Optional) Rule type.  This can be `universal` (default), `interzone`, or `intrazone`.
+`Type` - (Optional) Rule type.  This can be `universal` (default),
+`interzone`, or `intrazone`.
 
 `Description` - (Optional) The description.
 
@@ -72,7 +76,8 @@ the Profile Setting is set to `None`.
 
 `Categories` - (Required) List of categories.
 
-`Action` - (Optional) Action for the matched traffic.  This can be `allow` (default), `deny`, `drop`, `reset-client`, `reset-server`, or `reset-both`.
+`Action` - (Optional) Action for the matched traffic.  This can be `allow`
+(default), `deny`, `drop`, `reset-client`, `reset-server`, or `reset-both`.
 
 `LogSetting` - (Optional) Log forwarding profile.
 
@@ -86,33 +91,45 @@ the Profile Setting is set to `None`.
 
 `IcmpUnreachable` - (Optional) Set to `true` to enable ICMP unreachable.
 
-`DisableServerResponseInspection` - (Optional) Set to `true` to disable server response inspection.
+`DisableServerResponseInspection` - (Optional) Set to `true` to disable
+server response inspection.
 
 `Group` - (Optional) Profile Setting: `Group` - The group profile name.
 
 `Virus` - (Optional) Profile Setting: `Profiles` - The antivirus setting.
 
-`Spyware` - (Optional) Profile Setting: `Profiles` - The anti-spyware setting.
+`Spyware` - (Optional) Profile Setting: `Profiles` - The anti-spyware
+setting.
 
-`Vulnerability` - (Optional) Profile Setting: `Profiles` - The Vulnerability Protection setting.
+`Vulnerability` - (Optional) Profile Setting: `Profiles` - The Vulnerability
+Protection setting.
 
-`UrlFiltering` - (Optional) Profile Setting: `Profiles` - The URL filtering setting.
+`UrlFiltering` - (Optional) Profile Setting: `Profiles` - The URL filtering
+setting.
 
-`FileBlocking` - (Optional) Profile Setting: `Profiles` - The file blocking setting.
+`FileBlocking` - (Optional) Profile Setting: `Profiles` - The file blocking
+setting.
 
-`WildfireAnalysis` - (Optional) Profile Setting: `Profiles` - The WildFire Analysis setting.
+`WildfireAnalysis` - (Optional) Profile Setting: `Profiles` - The WildFire
+Analysis setting.
 
-`DataFiltering` - (Optional) Profile Setting: `Profiles` - The Data Filtering setting.
+`DataFiltering` - (Optional) Profile Setting: `Profiles` - The Data
+Filtering setting.
 
-`Target` - (Optional) A target definition (see below).  If there are no target sections, then the rule will apply to every vsys of every device in the device group.
+`Target` - (Optional) A target definition (see below).  If there are no
+target sections, then the rule will apply to every vsys of every device
+in the device group.
 
-`NegateTarget` - (Optional, bool) Instead of applying the rule for the given serial numbers, apply it to everything except them.
+`NegateTarget` - (Optional, bool) Instead of applying the rule for the
+given serial numbers, apply it to everything except them.
 
 ### Target Properties
 
 `Serial` - (Required) The serial number of the firewall.
 
-`VsysList` - (Optional) A subset of all available vsys on the firewall that should be in this device group.  If the firewall is a virtual firewall, then this parameter should just be omitted.
+`VsysList` - (Optional) A subset of all available vsys on the firewall
+that should be in this device group.  If the firewall is a virtual firewall,
+then this parameter should just be omitted.
 
 
 ## See Also

@@ -14,7 +14,11 @@ This resource will help you to manager a Swarm Cluster.
 
 `NodeNumber` - The ECS node number of the container cluster. Its value choices are 1~50, and default to 1.
 
-`CidrBlock` - (Required, Force new resource) The CIDR block for the Container. It can not be same as the CIDR used by the VPC. Valid value: - 192.168.0.0/16 - 172.19-30.0.0/16 - 10.0.0.0/16.
+`CidrBlock` - (Required, Force new resource) The CIDR block for the Container. It can not be same as the CIDR used by the VPC.
+Valid value:
+- 192.168.0.0/16
+- 172.19-30.0.0/16
+- 10.0.0.0/16.
 
 `ImageId` - (Force new resource) The image ID of ECS instance node used. Default to System automate allocated.
 

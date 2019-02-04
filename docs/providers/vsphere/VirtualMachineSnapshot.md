@@ -31,13 +31,19 @@ limitation of virtual machine snapshots, see [here][ext-vm-snap-limitations].
 
 `Description` - (Required) A description for the snapshot.
 
-`Memory` - (Required) If set to `true`, a dump of the internal state of the virtual machine is included in the snapshot.
+`Memory` - (Required) If set to `true`, a dump of the internal state of the
+virtual machine is included in the snapshot.
 
-`Quiesce` - (Required) If set to `true`, and the virtual machine is powered on when the snapshot is taken, VMware Tools is used to quiesce the file system in the virtual machine.
+`Quiesce` - (Required) If set to `true`, and the virtual machine is powered
+on when the snapshot is taken, VMware Tools is used to quiesce the file
+system in the virtual machine.
 
-`RemoveChildren` - (Optional) If set to `true`, the entire snapshot subtree is removed when this resource is destroyed.
+`RemoveChildren` - (Optional) If set to `true`, the entire snapshot subtree
+is removed when this resource is destroyed.
 
-`Consolidate` - (Optional) If set to `true`, the delta disks involved in this snapshot will be consolidated into the parent when this resource is destroyed.
+`Consolidate` - (Optional) If set to `true`, the delta disks involved in this
+snapshot will be consolidated into the parent when this resource is
+destroyed.
 
 
 ## See Also

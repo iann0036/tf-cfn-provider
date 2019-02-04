@@ -14,7 +14,9 @@ Provides an HTTP Method Response for an API Gateway Resource.
 
 `ResponseModels` - (Optional) A map of the API models used for the response's content type.
 
-`ResponseParameters` - (Optional) A map of response parameters that can be sent to the caller. For example: `response_parameters = { "method.response.header.X-Some-Header" = true }` would define that the header `X-Some-Header` can be provided on the response.
+`ResponseParameters` - (Optional) A map of response parameters that can be sent to the caller.
+For example: `response_parameters = { "method.response.header.X-Some-Header" = true }`
+would define that the header `X-Some-Header` can be provided on the response.
 
 `ResponseParametersInJson` - **Deprecated**, use `ResponseParameters` instead.
 

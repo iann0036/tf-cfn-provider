@@ -16,13 +16,15 @@ a conflict of rule settings and will overwrite rules.
 
 ## Properties
 
-`Type` - (Required) The type of rule being created. Valid options are `ingress` (inbound) or `egress` (outbound).
+`Type` - (Required) The type of rule being created. Valid options are `ingress` (inbound)
+or `egress` (outbound).
 
 `CidrBlocks` - (Optional) List of CIDR blocks. Cannot be specified with `SourceSecurityGroupId`.
 
 `Ipv6CidrBlocks` - (Optional) List of IPv6 CIDR blocks.
 
-`PrefixListIds` - (Optional) List of prefix list IDs (for allowing access to VPC endpoints). Only valid with `egress`.
+`PrefixListIds` - (Optional) List of prefix list IDs (for allowing access to VPC endpoints).
+Only valid with `egress`.
 
 `FromPort` - (Required) The start port (or ICMP type number if protocol is "icmp").
 
@@ -30,9 +32,11 @@ a conflict of rule settings and will overwrite rules.
 
 `SecurityGroupId` - (Required) The security group to apply this rule to.
 
-`SourceSecurityGroupId` - (Optional) The security group id to allow access to/from, depending on the `Type`. Cannot be specified with `CidrBlocks`.
+`SourceSecurityGroupId` - (Optional) The security group id to allow access to/from,
+depending on the `Type`. Cannot be specified with `CidrBlocks`.
 
-`Self` - (Optional) If true, the security group itself will be added as a source to this ingress rule.
+`Self` - (Optional) If true, the security group itself will be added as
+a source to this ingress rule.
 
 `ToPort` - (Required) The end port (or ICMP code if protocol is "icmp").
 

@@ -11,11 +11,14 @@ This resource is specifically to create a compute instance from a given
 
 ## Properties
 
-`Name` - (Required) A unique name for the resource, required by GCE. Changing this forces a new resource to be created.
+`Name` - (Required) A unique name for the resource, required by GCE.
+Changing this forces a new resource to be created.
 
-`SourceInstanceTemplate` - (Required) Name or self link of an instance template to create the instance based on.
+`SourceInstanceTemplate` - (Required) Name or self link of an instance
+template to create the instance based on.
 
-`Zone` - (Optional) The zone that the machine should be created in. If not set, the provider zone is used.
+`Zone` - (Optional) The zone that the machine should be created in. If not
+set, the provider zone is used.
 
 
 ## See Also

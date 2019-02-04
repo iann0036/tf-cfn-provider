@@ -14,7 +14,12 @@ The topic is the basic unit of Datahub data source and is used to define one kin
 
 `RecordType` - (Optional) The type of this topic. Its value must be one of {BLOB, TUPLE}. For BLOB topic, data will be organized as binary and encoded by BASE64. For TUPLE topic, data has fixed schema. The default value is "TUPLE" with a schema {STRING}.
 
-`RecordSchema` - (Optional) Schema of this topic, required only for TUPLE topic. Supported data types (case-insensitive) are: - BIGINT - STRING - BOOLEAN - DOUBLE - TIMESTAMP.
+`RecordSchema` - (Optional) Schema of this topic, required only for TUPLE topic. Supported data types (case-insensitive) are:
+- BIGINT
+- STRING
+- BOOLEAN
+- DOUBLE
+- TIMESTAMP.
 
 `Comment` - (Optional) Comment of the datahub topic. It cannot be longer than 255 characters.
 

@@ -42,7 +42,8 @@ See [ECS Services section in AWS developer guide](https://docs.aws.amazon.com/Am
 
 `LoadBalancer` - (Optional) A load balancer block. Load balancers documented below.
 
-`PlacementConstraints` - (Optional) rules that are taken into consideration during task placement. Maximum number of `PlacementConstraints` is `10`. Defined below.
+`PlacementConstraints` - (Optional) rules that are taken into consideration during task placement. Maximum number of
+`PlacementConstraints` is `10`. Defined below.
 
 `NetworkConfiguration` - (Optional) The network configuration for the service. This parameter is required for task definitions that use the `awsvpc` network mode to receive their own Elastic Network Interface, and it is not supported for other network modes.
 

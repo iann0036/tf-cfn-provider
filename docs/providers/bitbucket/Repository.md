@@ -7,13 +7,15 @@ private, how to fork the repository and other options.
 
 ## Properties
 
-`Owner` - (Required) The owner of this repository. Can be you or any team you have write access to.
+`Owner` - (Required) The owner of this repository. Can be you or any team you
+have write access to.
 
 `Name` - (Required) The name of the repository.
 
 `Slug` - (Optional) The slug of the repository.
 
-`Scm` - (Optional) What SCM you want to use. Valid options are hg or git. Defaults to git.
+`Scm` - (Optional) What SCM you want to use. Valid options are hg or git.
+Defaults to git.
 
 `IsPrivate` - (Optional) If this should be private or not. Defaults to `true`.
 
@@ -25,9 +27,11 @@ private, how to fork the repository and other options.
 
 `HasWiki` - (Optional) If this should have wiki turned on or not.
 
-`ProjectKey` - (Optional) If you want to have this repo associated with a project.
+`ProjectKey` - (Optional) If you want to have this repo associated with a
+project.
 
-`ForkPolicy` - (Optional) What the fork policy should be. Defaults to allow_forks.
+`ForkPolicy` - (Optional) What the fork policy should be. Defaults to
+allow_forks.
 
 `Description` - (Optional) What the description of the repo is.
 

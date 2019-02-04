@@ -50,7 +50,9 @@ Provides a ESS scaling configuration resource.
 
 `InstanceIds` - (Deprecated) It has been deprecated from version 1.6.0. New resource `Terraform::Alicloud::EssAttachment` replaces it.
 
-`Tags` - (Optional) A mapping of tags to assign to the resource. It will be applied for ECS instances finally. - Key: It can be up to 64 characters in length. It cannot begin with "aliyun", "http://", or "https://". It cannot be a null string. - Value: It can be up to 128 characters in length. It cannot begin with "aliyun", "http://", or "https://" It can be a null string.
+`Tags` - (Optional) A mapping of tags to assign to the resource. It will be applied for ECS instances finally.
+- Key: It can be up to 64 characters in length. It cannot begin with "aliyun", "http://", or "https://". It cannot be a null string.
+- Value: It can be up to 128 characters in length. It cannot begin with "aliyun", "http://", or "https://" It can be a null string.
 
 
 ## Return Values

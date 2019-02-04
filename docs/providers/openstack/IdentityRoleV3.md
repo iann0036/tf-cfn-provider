@@ -11,7 +11,9 @@ this resource.
 
 `DomainId` - (Optional) The domain the role belongs to.
 
-`Region` - (Optional) The region in which to obtain the V3 Keystone client. If omitted, the `Region` argument of the provider is used. Changing this creates a new Role.
+`Region` - (Optional) The region in which to obtain the V3 Keystone client.
+If omitted, the `Region` argument of the provider is used. Changing this
+creates a new Role.
 
 
 ## Return Values

@@ -11,6 +11,10 @@ and delete source NATs to allow vApps to send external traffic.
 
 `InternalIp` - (Required) The IP or IP Range of the VM(s) to map from.
 
+`Org` - (Optional; *v2.0+*) The name of organization to use, optional if defined at provider level. Useful when connected as sysadmin working across different organisations.
+
+`Vdc` - (Optional; *v2.0+*) The name of VDC to use, optional if defined at provider level.
+
 
 ## See Also
 

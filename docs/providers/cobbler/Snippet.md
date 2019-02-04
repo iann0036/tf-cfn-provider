@@ -6,7 +6,8 @@ Manages a Snippet within Cobbler.
 
 `Body` - (Required) The body of the snippet.
 
-`Name` - (Required) The name of the snippet. This must be the full path, including `/var/lib/cobbler/snippets`.
+`Name` - (Required) The name of the snippet. This must be the full
+path, including `/var/lib/cobbler/snippets`.
 
 
 ## See Also

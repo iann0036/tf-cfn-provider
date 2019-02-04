@@ -44,7 +44,7 @@ Manages a Network Interface located in a Virtual Network, usually attached to a 
 
 `LoadBalancerInboundNatRulesIds` - (Optional / **Deprecated**) List of Load Balancer Inbound Nat Rules IDs involving this NIC.
 
-`ApplicationSecurityGroupIds` - (Optional) List of Application Security Group IDs which should be attached to this NIC.
+`ApplicationSecurityGroupIds` - (Optional / **Deprecated**) List of Application Security Group IDs which should be attached to this NIC.
 
 `Primary` - (Optional) Is this the Primary Network Interface? If set to `true` this should be the first `IpConfiguration` in the array.
 

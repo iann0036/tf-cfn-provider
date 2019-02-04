@@ -10,7 +10,7 @@ Manages a Databricks Workspace
 
 `Location` - (Required) Specifies the supported Azure location where the resource has to be created. Changing this forces a new resource to be created.
 
-`Sku` - (Required) The `Sku` to use for the Databricks Workspace. Possible values are `Standard` or `Premium`. Changing this forces a new resource to be created.
+`Sku` - (Required) The `Sku` to use for the Databricks Workspace. Possible values are `standard` or `premium`. Changing this forces a new resource to be created.
 
 `ManagedResourceGroupName` - (Optional) The name of the resource group where Azure should place the managed Databricks resources. Changing this forces a new resource to be created.
 

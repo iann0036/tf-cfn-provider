@@ -6,11 +6,15 @@ Provides a load balancer cookie stickiness policy, which allows an ELB to contro
 
 `Name` - (Required) The name of the stickiness policy.
 
-`LoadBalancer` - (Required) The load balancer to which the policy should be attached.
+`LoadBalancer` - (Required) The load balancer to which the policy
+should be attached.
 
-`LbPort` - (Required) The load balancer port to which the policy should be applied. This must be an active listener on the load balancer.
+`LbPort` - (Required) The load balancer port to which the policy
+should be applied. This must be an active listener on the load
+balancer.
 
-`CookieExpirationPeriod` - (Optional) The time period after which the session cookie should be considered stale, expressed in seconds.
+`CookieExpirationPeriod` - (Optional) The time period after which
+the session cookie should be considered stale, expressed in seconds.
 
 
 ## Return Values

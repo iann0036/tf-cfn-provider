@@ -18,9 +18,14 @@ requires vCenter 6.0 or higher.
 
 `Name` - (Required) The name of the category.
 
-`Cardinality` - (Required) The number of tags that can be assigned from this category to a single object at once. Can be one of `SINGLE` (object can only be assigned one tag in this category), to `MULTIPLE` (object can be assigned multiple tags in this category). Forces a new resource if changed.
+`Cardinality` - (Required) The number of tags that can be assigned from this
+category to a single object at once. Can be one of `SINGLE` (object can only
+be assigned one tag in this category), to `MULTIPLE` (object can be assigned
+multiple tags in this category). Forces a new resource if changed.
 
-`AssociableTypes` - (Required) A list object types that this category is valid to be assigned to. For a full list, click [here](#associable-object-types).
+`AssociableTypes` - (Required) A list object types that this category is
+valid to be assigned to. For a full list, click
+[here](#associable-object-types).
 
 `Description` - (Optional) A description for the category.
 

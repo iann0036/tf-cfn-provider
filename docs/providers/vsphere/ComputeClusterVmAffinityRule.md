@@ -29,15 +29,19 @@ connections.
 
 ## Properties
 
-`ComputeClusterId` - (Required) The [managed object reference ID][docs-about-morefs] of the cluster to put the group in.  Forces a new resource if changed.
+`ComputeClusterId` - (Required) The [managed object reference
+ID][docs-about-morefs] of the cluster to put the group in.  Forces a new
+resource if changed.
 
 `Name` - (Required) The name of the rule. This must be unique in the cluster.
 
-`VirtualMachineIds` - (Required) The UUIDs of the virtual machines to run on the same host together.
+`VirtualMachineIds` - (Required) The UUIDs of the virtual machines to run
+on the same host together.
 
 `Enabled` - (Optional) Enable this rule in the cluster. Default: `true`.
 
-`Mandatory` - (Optional) When this value is `true`, prevents any virtual machine operations that may violate this rule. Default: `false`.
+`Mandatory` - (Optional) When this value is `true`, prevents any virtual
+machine operations that may violate this rule. Default: `false`.
 
 
 ## See Also

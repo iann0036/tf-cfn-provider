@@ -8,27 +8,44 @@ queries in your Consul cluster using Terraform.
 
 ## Properties
 
-`Datacenter` - (Optional) The datacenter to use. This overrides the datacenter in the provider setup and the agent's default datacenter.
+`Datacenter` - (Optional) The datacenter to use. This overrides the
+datacenter in the provider setup and the agent's default datacenter.
 
-`Token` - (Optional) The ACL token to use when saving the prepared query. This overrides the token that the agent provides by default.
+`Token` - (Optional) The ACL token to use when saving the prepared query.
+This overrides the token that the agent provides by default.
 
-`StoredToken` - (Optional) The ACL token to store with the prepared query. This token will be used by default whenever the query is executed.
+`StoredToken` - (Optional) The ACL token to store with the prepared
+query. This token will be used by default whenever the query is executed.
 
-`Name` - (Required) The name of the prepared query. Used to identify the prepared query during requests. Can be specified as an empty string to configure the query as a catch-all.
+`Name` - (Required) The name of the prepared query. Used to identify
+the prepared query during requests. Can be specified as an empty string
+to configure the query as a catch-all.
 
 `Service` - (Required) The name of the service to query.
 
-`Session` - (Optional) The name of the Consul session to tie this query's lifetime to.  This is an advanced parameter that should not be used without a complete understanding of Consul sessions and the implications of their use (it is recommended to leave this blank in nearly all cases).  If this parameter is omitted the query will not expire.
+`Session` - (Optional) The name of the Consul session to tie this query's
+lifetime to.  This is an advanced parameter that should not be used without a
+complete understanding of Consul sessions and the implications of their use
+(it is recommended to leave this blank in nearly all cases).  If this
+parameter is omitted the query will not expire.
 
-`Tags` - (Optional) The list of required and/or disallowed tags.  If a tag is in this list it must be present.  If the tag is preceded with a "!" then it is disallowed.
+`Tags` - (Optional) The list of required and/or disallowed tags.  If a tag is
+in this list it must be present.  If the tag is preceded with a "!" then it is
+disallowed.
 
-`OnlyPassing` - (Optional) When `true`, the prepared query will only return nodes with passing health checks in the result.
+`OnlyPassing` - (Optional) When `true`, the prepared query will only
+return nodes with passing health checks in the result.
 
-`Near` - (Optional) Allows specifying the name of a node to sort results near using Consul's distance sorting and network coordinates. The magic `_agent` value can be used to always sort nearest the node servicing the request.
+`Near` - (Optional) Allows specifying the name of a node to sort results
+near using Consul's distance sorting and network coordinates. The magic
+`_agent` value can be used to always sort nearest the node servicing the
+request.
 
-`Failover` - (Optional) Options for controlling behavior when no healthy nodes are available in the local DC.
+`Failover` - (Optional) Options for controlling behavior when no healthy
+nodes are available in the local DC.
 
-`NearestN` - (Optional) Return results from this many datacenters, sorted in ascending order of estimated RTT.
+`NearestN` - (Optional) Return results from this many datacenters,
+sorted in ascending order of estimated RTT.
 
 `Datacenters` - (Optional) Remote datacenters to return results from.
 
@@ -36,11 +53,14 @@ queries in your Consul cluster using Terraform.
 
 `Ttl` - (Optional) The TTL to send when returning DNS results.
 
-`Template` - (Optional) Query templating options. This is used to make a single prepared query respond to many different requests.
+`Template` - (Optional) Query templating options. This is used to make a
+single prepared query respond to many different requests.
 
-`Type` - (Required) The type of template matching to perform. Currently only `name_prefix_match` is supported.
+`Type` - (Required) The type of template matching to perform. Currently
+only `name_prefix_match` is supported.
 
-`Regexp` - (Required) The regular expression to match with. When using `name_prefix_match`, this regex is applied against the query name.
+`Regexp` - (Required) The regular expression to match with. When using
+`name_prefix_match`, this regex is applied against the query name.
 
 
 ## Return Values

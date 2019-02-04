@@ -8,7 +8,8 @@ information.
 
 `RoleId` - (Required) The ID of the role to log in with.
 
-`SecretId` - (Optional) The secret ID of the role to log in with. Required unless `bind_secret_id` is set to false on the role.
+`SecretId` - (Optional) The secret ID of the role to log in with. Required
+unless `bind_secret_id` is set to false on the role.
 
 `Backend` - The unique path of the Vault backend to log in with.
 

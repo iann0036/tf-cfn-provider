@@ -6,13 +6,15 @@ a PostgreSQL database.
 
 ## Properties
 
-`Name` - (Required) The name of the schema. Must be unique in the PostgreSQL database instance where it is configured.
+`Name` - (Required) The name of the schema. Must be unique in the PostgreSQL
+database instance where it is configured.
 
 `Owner` - (Optional) The ROLE who owns the schema.
 
 `IfNotExists` - (Optional) When true, use the existing schema if it exists. (Default: true).
 
-`Policy` - (Optional) Can be specified multiple times for each policy.  Each policy block supports fields documented below.
+`Policy` - (Optional) Can be specified multiple times for each policy.  Each
+policy block supports fields documented below.
 
 ### Policy Properties
 

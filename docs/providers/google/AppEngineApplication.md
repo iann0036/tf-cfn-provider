@@ -9,7 +9,8 @@ Allows creation and management of an App Engine application.
 
 ## Properties
 
-`LocationId` - (Required) The [location](https://cloud.google.com/appengine/docs/locations) to serve the app from.
+`LocationId` - (Required) The [location](https://cloud.google.com/appengine/docs/locations)
+to serve the app from.
 
 `AuthDomain` - (Optional) The domain to authenticate users with when using App Engine's User API.
 
@@ -19,7 +20,8 @@ Allows creation and management of an App Engine application.
 
 ### FeatureSettings Properties
 
-`SplitHealthChecks` - (Optional) Set to false to use the legacy health check instead of the readiness and liveness checks.
+`SplitHealthChecks` - (Optional) Set to false to use the legacy health check instead of the readiness
+and liveness checks.
 
 
 ## Return Values

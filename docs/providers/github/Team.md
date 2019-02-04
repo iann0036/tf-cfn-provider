@@ -11,7 +11,8 @@ a new team will be created. When destroyed, that team will be removed.
 
 `Description` - (Optional) A description of the team.
 
-`Privacy` - (Optional) The level of privacy for the team. Must be one of `secret` or `closed`. Defaults to `secret`.
+`Privacy` - (Optional) The level of privacy for the team. Must be one of `secret` or `closed`.
+Defaults to `secret`.
 
 `ParentTeamId` - (Optional) The ID of the parent team, if this is a nested team.
 

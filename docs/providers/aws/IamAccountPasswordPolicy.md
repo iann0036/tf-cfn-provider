@@ -10,7 +10,8 @@ in the official AWS docs.
 
 `AllowUsersToChangePassword` - (Optional) Whether to allow users to change their own password.
 
-`HardExpiry` - (Optional) Whether users are prevented from setting a new password after their password has expired (i.e. require administrator reset).
+`HardExpiry` - (Optional) Whether users are prevented from setting a new password after their password has expired
+(i.e. require administrator reset).
 
 `MaxPasswordAge` - (Optional) The number of days that an user password is valid.
 

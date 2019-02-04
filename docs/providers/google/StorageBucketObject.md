@@ -11,13 +11,16 @@ and
 
 `Bucket` - (Required) The name of the containing bucket.
 
-`Name` - (Required) The name of the object.
+`Name` - (Required) The name of the object. If you're interpolating the name of this object, see `output_name` instead.
 
-`Content` - (Optional) Data as `string` to be uploaded. Must be defined if `Source` is not.
+`Content` - (Optional) Data as `string` to be uploaded. Must be defined if
+`Source` is not.
 
-`Source` - (Optional) A path to the data you want to upload. Must be defined if `Content` is not.
+`Source` - (Optional) A path to the data you want to upload. Must be defined
+if `Content` is not.
 
-`CacheControl` - (Optional) [Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2) directive to specify caching behavior of object data. If omitted and object is accessible to all anonymous users, the default will be public, max-age=3600.
+`CacheControl` - (Optional) [Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2)
+directive to specify caching behavior of object data. If omitted and object is accessible to all anonymous users, the default will be public, max-age=3600.
 
 `ContentDisposition` - (Optional) [Content-Disposition](https://tools.ietf.org/html/rfc6266) of the object data.
 
@@ -27,7 +30,9 @@ and
 
 `ContentType` - (Optional) [Content-Type](https://tools.ietf.org/html/rfc7231#section-3.1.1.5) of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
 
-`StorageClass` - (Optional) The [StorageClass](https://cloud.google.com/storage/docs/storage-classes) of the new bucket object. Supported values include: `MULTI_REGIONAL`, `REGIONAL`, `NEARLINE`, `COLDLINE`. If not provided, this defaults to the bucket's default storage class or to a [standard](https://cloud.google.com/storage/docs/storage-classes#standard) class.
+`StorageClass` - (Optional) The [StorageClass](https://cloud.google.com/storage/docs/storage-classes) of the new bucket object.
+Supported values include: `MULTI_REGIONAL`, `REGIONAL`, `NEARLINE`, `COLDLINE`. If not provided, this defaults to the bucket's default
+storage class or to a [standard](https://cloud.google.com/storage/docs/storage-classes#standard) class.
 
 
 ## Return Values
@@ -39,6 +44,8 @@ and
 `Md5hash` - (Computed) Base 64 MD5 hash of the uploaded data.
 
 `SelfLink` - (Computed) A url reference to this object.
+
+`OutputName` - (Computed) The name of the object. Use this field in interpolations with `Terraform::Google::StorageObjectAcl` to recreate.
 
 ## See Also
 

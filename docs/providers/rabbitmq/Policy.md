@@ -9,7 +9,8 @@ and queues.
 
 `Vhost` - (Required) The vhost to create the resource in.
 
-`Policy` - (Required) The settings of the policy. The structure is described below.
+`Policy` - (Required) The settings of the policy. The structure is
+described below.
 
 ### Policy Properties
 
@@ -19,7 +20,8 @@ and queues.
 
 `ApplyTo` - (Required) Can either be "exchanges", "queues", or "all".
 
-`Definition` - (Required) Key/value pairs of the policy definition. See the RabbitMQ documentation for definition references and examples.
+`Definition` - (Required) Key/value pairs of the policy definition. See the
+RabbitMQ documentation for definition references and examples.
 
 
 ## See Also

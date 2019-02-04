@@ -4,11 +4,16 @@ Manages a V2 keypair resource within HuaweiCloud.
 
 ## Properties
 
-`Region` - (Optional) The region in which to obtain the V2 Compute client. Keypairs are associated with accounts, but a Compute client is needed to create one. If omitted, the `Region` argument of the provider is used. Changing this creates a new keypair.
+`Region` - (Optional) The region in which to obtain the V2 Compute client.
+Keypairs are associated with accounts, but a Compute client is needed to
+create one. If omitted, the `Region` argument of the provider is used.
+Changing this creates a new keypair.
 
-`Name` - (Required) A unique name for the keypair. Changing this creates a new keypair.
+`Name` - (Required) A unique name for the keypair. Changing this creates a new
+keypair.
 
-`PublicKey` - (Required) A pregenerated OpenSSH-formatted public key. Changing this creates a new keypair.
+`PublicKey` - (Required) A pregenerated OpenSSH-formatted public key.
+Changing this creates a new keypair.
 
 `ValueSpecs` - (Optional) Map of additional options.
 

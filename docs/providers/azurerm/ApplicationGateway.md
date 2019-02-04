@@ -32,11 +32,15 @@ Manages an Application Gateway.
 
 `Probe` - (Optional) One or more `Probe` blocks as defined below.
 
+`SslCertificate` - (Optional) One or more `SslCertificate` blocks as defined below.
+
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
 `UrlPathMap` - (Optional) One or more `UrlPathMap` blocks as defined below.
 
 `WafConfiguration` - (Optional) A `WafConfiguration` block as defined below.
+
+`CustomErrorConfiguration` - (Optional) One or more `CustomErrorConfiguration` blocks as defined below.
 
 ### AuthenticationCertificate Properties
 
@@ -50,9 +54,13 @@ Manages an Application Gateway.
 
 `Name` - (Required) The name of the Backend Address Pool.
 
-`FqdnList` - (Optional) A list of FQDN's which should be part of the Backend Address Pool.
+`Fqdns` - (Optional) A list of FQDN's which should be part of the Backend Address Pool.
 
-`IpAddressList` - (Optional) A list of IP Addresses which should be part of the Backend Address Pool.
+`FqdnList` - (Optional **Deprecated**) A list of FQDN's which should be part of the Backend Address Pool. This field has been deprecated in favour of `Fqdns` and will be removed in v2.0 of the AzureRM Provider.
+
+`IpAddresses` - (Optional) A list of IP Addresses which should be part of the Backend Address Pool.
+
+`IpAddressList` - (Optional **Deprecated**) A list of IP Addresses which should be part of the Backend Address Pool. This field has been deprecated in favour of `IpAddresses` and will be removed in v2.0 of the AzureRM Provider.
 
 ### BackendHttpSettings Properties
 
@@ -112,6 +120,8 @@ Manages an Application Gateway.
 
 `SslCertificateName` - (Optional) The name of the associated SSL Certificate which should be used for this HTTP Listener.
 
+`CustomErrorConfiguration` - (Optional) One or more `CustomErrorConfiguration` blocks as defined below.
+
 `Body` - (Optional) A snippet from the Response Body which must be present in the Response. Defaults to `*`.
 
 `StatusCode` - (Optional) A list of allowed status codes for this Health Probe.
@@ -168,6 +178,14 @@ Manages an Application Gateway.
 
 `Capacity` - (Required) The Capacity of the SKU to use for this Application Gateway - which must be between 1 and 10.
 
+### SslCertificate Properties
+
+`Name` - (Required) The Name of the SSL certificate that is unique within this Application Gateway.
+
+`Data` - (Required) PFX certificate.
+
+`Password` - (Required) Password for the pfx file specified in data.
+
 ### UrlPathMap Properties
 
 `Name` - (Required) The Name of the URL Path Map.
@@ -190,12 +208,18 @@ Manages an Application Gateway.
 
 `FileUploadLimitMb` - (Optional) The File Upload Limit in MB. Accepted values are in the range `1`MB to `500`MB. Defaults to `100`MB.
 
+### CustomErrorConfiguration Properties
+
+`StatusCode` - (Required) Status code of the application gateway customer error. Possible values are `HttpStatus403` and `HttpStatus502`.
+
+`CustomErrorPageUrl` - (Required) Error page URL of the application gateway customer error.
+
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Id` - The ID of the URL Path Map.
+`Id` - The ID of the Custom Error Configuration.
 
 `AuthenticationCertificate` - A list of `AuthenticationCertificate` blocks as defined below.
 
@@ -209,15 +233,19 @@ Manages an Application Gateway.
 
 `GatewayIpConfiguration` - A list of `GatewayIpConfiguration` blocks as defined below.
 
+`Http2Enabled` - (Optional) Is HTTP2 enabled on the application gateway resource? Defaults to `false`.
+
 `HttpListener` - A list of `HttpListener` blocks as defined below.
 
 `Probe` - A `Probe` block as defined below.
 
 `RequestRoutingRule` - A list of `RequestRoutingRule` blocks as defined below.
 
-`SslCertificate` - A list of `ssl_certificate` blocks as defined below.
+`SslCertificate` - A list of `SslCertificate` blocks as defined below.
 
 `UrlPathMap` - A list of `UrlPathMap` blocks as defined below.
+
+`CustomErrorConfiguration` - A list of `CustomErrorConfiguration` blocks as defined below.
 
 `ProbeId` - The ID of the associated Probe.
 

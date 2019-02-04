@@ -10,11 +10,11 @@ Provides a Target Group resource for use with Load Balancer resources.
 
 `NamePrefix` - (Optional, Forces new resource) Creates a unique name beginning with the specified prefix. Conflicts with `Name`. Cannot be longer than 6 characters.
 
-`Port` - (Optional) The port on which targets receive traffic, unless overridden when registering a specific target. Required when `TargetType` is `instance` or `ip`. Does not apply when `TargetType` is `lambda`.
+`Port` - (Optional, Forces new resource) The port on which targets receive traffic, unless overridden when registering a specific target. Required when `TargetType` is `instance` or `ip`. Does not apply when `TargetType` is `lambda`.
 
-`Protocol` - (Optional) The protocol to use for routing traffic to the targets. Should be one of "TCP", "HTTP" or "HTTPS". Required when `TargetType` is `instance` or `ip`. Does not apply when `TargetType` is `lambda`.
+`Protocol` - (Optional, Forces new resource) The protocol to use for routing traffic to the targets. Should be one of "TCP", "TLS", "HTTP" or "HTTPS". Required when `TargetType` is `instance` or `ip`. Does not apply when `TargetType` is `lambda`.
 
-`VpcId` - (Optional) The identifier of the VPC in which to create the target group. Required when `TargetType` is `instance` or `ip`. Does not apply when `TargetType` is `lambda`.
+`VpcId` - (Optional, Forces new resource) The identifier of the VPC in which to create the target group. Required when `TargetType` is `instance` or `ip`. Does not apply when `TargetType` is `lambda`.
 
 `DeregistrationDelay` - (Optional) The amount time for Elastic Load Balancing to wait before changing the state of a deregistering target from draining to unused. The range is 0-3600 seconds. The default value is 300 seconds.
 
@@ -26,7 +26,12 @@ Provides a Target Group resource for use with Load Balancer resources.
 
 `HealthCheck` - (Optional) A Health Check block. Health Check blocks are documented below.
 
-`TargetType` - (Optional) The type of target that you must specify when registering targets with this target group. The possible values are `instance` (targets are specified by instance ID) or `ip` (targets are specified by IP address) or `lambda` (targets are specified by lambda arn). The default is `instance`. Note that you can't specify targets for a target group using both instance IDs and IP addresses. If the target type is `ip`, specify IP addresses from the subnets of the virtual private cloud (VPC) for the target group, the RFC 1918 range (10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16), and the RFC 6598 range (100.64.0.0/10). You can't specify publicly routable IP addresses.
+`TargetType` - (Optional, Forces new resource) The type of target that you must specify when registering targets with this target group.
+The possible values are `instance` (targets are specified by instance ID) or `ip` (targets are specified by IP address) or `lambda` (targets are specified by lambda arn).
+The default is `instance`. Note that you can't specify targets for a target group using both instance IDs and IP addresses.
+If the target type is `ip`, specify IP addresses from the subnets of the virtual private cloud (VPC) for the target group,
+the RFC 1918 range (10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16), and the RFC 6598 range (100.64.0.0/10).
+You can't specify publicly routable IP addresses.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 

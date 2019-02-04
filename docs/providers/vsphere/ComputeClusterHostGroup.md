@@ -22,11 +22,15 @@ connections.
 
 ## Properties
 
-`Name` - (Required) The name of the host group. This must be unique in the cluster. Forces a new resource if changed.
+`Name` - (Required) The name of the host group. This must be unique in the
+cluster. Forces a new resource if changed.
 
-`ComputeClusterId` - (Required) The [managed object reference ID][docs-about-morefs] of the cluster to put the group in.  Forces a new resource if changed.
+`ComputeClusterId` - (Required) The [managed object reference
+ID][docs-about-morefs] of the cluster to put the group in.  Forces a new
+resource if changed.
 
-`HostSystemIds` - (Optional) The [managed object IDs][docs-about-morefs] of the hosts to put in the cluster.
+`HostSystemIds` - (Optional) The [managed object IDs][docs-about-morefs] of
+the hosts to put in the cluster.
 
 
 ## See Also

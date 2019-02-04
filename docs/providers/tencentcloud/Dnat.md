@@ -8,7 +8,7 @@ Provides a port mapping/forwarding of destination network address port translati
 
 `VpcId` - (Required, Forces new resource) The VPC ID for the NAT Gateway.
 
-`Protocol` - (Required, Forces new resource) The ip protocal, valid value is tcp|udp.
+`Protocol` - (Required, Forces new resource) The ip protocol, valid value is tcp|udp.
 
 `ElasticIp` - (Required, Forces new resource) The elastic IP of NAT gateway association, must a [Elastic IP](eip.html).
 

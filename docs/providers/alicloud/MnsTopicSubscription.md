@@ -14,7 +14,10 @@ Provides a MNS topic subscription resource.
 
 `NotifyContentFormat` - (Optional, ForceNew) The NotifyContentFormat attribute of Subscription. This attribute specifies the content format of the messages pushed to users. the attribute has two value SIMPLIFIED or XML.Default value to SIMPLIFIED .
 
-`Endpoint` - (Required, ForceNew) The endpoint has three format. Available values format: - HTTP Format: http://xxx.com/xxx - Queue Format: acs:mns:{REGION}:{AccountID}:queues/{QueueName} - Email Format: mail:directmail:{MailAddress}.
+`Endpoint` - (Required, ForceNew) The endpoint has three format. Available values format:
+- HTTP Format: http://xxx.com/xxx
+- Queue Format: acs:mns:{REGION}:{AccountID}:queues/{QueueName}
+- Email Format: mail:directmail:{MailAddress}.
 
 `FilterTag` - (Optional, ForceNew) The length should be shorter than 16.
 

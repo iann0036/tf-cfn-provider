@@ -30,27 +30,33 @@ for more information.
 
 `DeletionProtection` - (Optional) If the DB instance should have deletion protection enabled. The database can't be deleted when this value is set to `true`. The default is `false`.
 
-`MasterPassword` - (Required unless a `SnapshotIdentifier` is provided) Password for the master DB user. Note that this may show up in logs, and it will be stored in the state file. Please refer to the [RDS Naming Constraints][5].
+`MasterPassword` - (Required unless a `SnapshotIdentifier` is provided) Password for the master DB user. Note that this may
+show up in logs, and it will be stored in the state file. Please refer to the [RDS Naming Constraints][5].
 
 `MasterUsername` - (Required unless a `SnapshotIdentifier` is provided) Username for the master DB user. Please refer to the [RDS Naming Constraints][5].
 
-`FinalSnapshotIdentifier` - (Optional) The name of your final DB snapshot when this DB cluster is deleted. If omitted, no final snapshot will be made.
+`FinalSnapshotIdentifier` - (Optional) The name of your final DB snapshot
+when this DB cluster is deleted. If omitted, no final snapshot will be
+made.
 
 `SkipFinalSnapshot` - (Optional) Determines whether a final DB snapshot is created before the DB cluster is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB cluster is deleted, using the value from `FinalSnapshotIdentifier`. Default is `false`.
 
-`AvailabilityZones` - (Optional) A list of EC2 Availability Zones that instances in the DB cluster can be created in.
+`AvailabilityZones` - (Optional) A list of EC2 Availability Zones that
+instances in the DB cluster can be created in.
 
 `BacktrackWindow` - (Optional) The target backtrack window, in seconds. Only available for `aurora` engine currently. To disable backtracking, set this value to `0`. Defaults to `0`. Must be between `0` and `259200` (72 hours).
 
 `BackupRetentionPeriod` - (Optional) The days to retain backups for. Default `1`.
 
-`PreferredBackupWindow` - (Optional) The daily time range during which automated backups are created if automated backups are enabled using the BackupRetentionPeriod parameter.Time in UTC Default: A 30-minute window selected at random from an 8-hour block of time per region. e.g. 04:00-09:00.
+`PreferredBackupWindow` - (Optional) The daily time range during which automated backups are created if automated backups are enabled using the BackupRetentionPeriod parameter.Time in UTC
+Default: A 30-minute window selected at random from an 8-hour block of time per region. e.g. 04:00-09:00.
 
 `PreferredMaintenanceWindow` - (Optional) The weekly time range during which system maintenance can occur, in (UTC) e.g. wed:04:00-wed:04:30.
 
 `Port` - (Optional) The port on which the DB accepts connections.
 
-`VpcSecurityGroupIds` - (Optional) List of VPC security groups to associate with the Cluster.
+`VpcSecurityGroupIds` - (Optional) List of VPC security groups to associate
+with the Cluster.
 
 `SnapshotIdentifier` - (Optional) Specifies whether or not to create this cluster from a snapshot. You can use either the name or ARN when specifying a DB cluster snapshot, or the ARN when specifying a DB snapshot.
 
@@ -58,7 +64,9 @@ for more information.
 
 `ReplicationSourceIdentifier` - (Optional) ARN of a source DB cluster or DB instance if this DB cluster is to be created as a Read Replica.
 
-`ApplyImmediately` - (Optional) Specifies whether any cluster modifications are applied immediately, or during the next maintenance window. Default is `false`. See [Amazon RDS Documentation for more information.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBInstance.Modifying.html).
+`ApplyImmediately` - (Optional) Specifies whether any cluster modifications
+are applied immediately, or during the next maintenance window. Default is
+`false`. See [Amazon RDS Documentation for more information.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBInstance.Modifying.html).
 
 `DbSubnetGroupName` - (Optional) A DB subnet group to associate with this DB instance. **NOTE:** This must match the `DbSubnetGroupName` specified on every [`Terraform::AWS::RdsClusterInstance`](/docs/providers/aws/r/rds_cluster_instance.html) in the cluster.
 
@@ -78,7 +86,8 @@ for more information.
 
 `SourceRegion` - (Optional) The source region for an encrypted replica DB cluster.
 
-`EnabledCloudwatchLogsExports` - (Optional) List of log types to export to cloudwatch. If omitted, no logs will be exported. The following log types are supported: `audit`, `error`, `general`, `slowquery`.
+`EnabledCloudwatchLogsExports` - (Optional) List of log types to export to cloudwatch. If omitted, no logs will be exported.
+The following log types are supported: `audit`, `error`, `general`, `slowquery`.
 
 `ScalingConfiguration` - (Optional) Nested attribute with scaling properties. Only valid when `EngineMode` is set to `serverless`. More details below.
 

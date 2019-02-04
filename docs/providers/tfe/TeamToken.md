@@ -6,7 +6,9 @@ Generates a new team token and overrides existing token if one exists.
 
 `TeamId` - (Required) ID of the team.
 
-`ForceRegenerate` - (Optional) If set to `true`, a new token will be generated even if a token already exists. This will invalidate the existing token!.
+`ForceRegenerate` - (Optional) If set to `true`, a new token will be
+generated even if a token already exists. This will invalidate the existing
+token!.
 
 
 ## Return Values

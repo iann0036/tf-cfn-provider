@@ -24,9 +24,13 @@ Care is required when using this resource, to avoid disclosing the password.
 
 ### AuthPlugin Properties
 
-`AWSAuthenticationPlugin` - Allows the use of IAM authentication with [Amazon Aurora][ref-amazon-aurora]. For more details on how to use IAM auth with Aurora, see [here][ref-aurora-using-iam].
+`AWSAuthenticationPlugin` - Allows the use of IAM authentication with [Amazon
+Aurora][ref-amazon-aurora]. For more details on how to use IAM auth with
+Aurora, see [here][ref-aurora-using-iam].
 
-`MysqlNoLogin` - Uses the MySQL No-Login Authentication Plugin. The No-Login Authentication Plugin must be active in MySQL. For more information, see [here][ref-mysql-no-login].
+`MysqlNoLogin` - Uses the MySQL No-Login Authentication Plugin. The
+No-Login Authentication Plugin must be active in MySQL. For more information,
+see [here][ref-mysql-no-login].
 
 
 ## Return Values

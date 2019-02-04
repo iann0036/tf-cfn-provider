@@ -4,11 +4,13 @@ Manages a Redis Cache.
 
 ## Properties
 
-`Name` - (Required) The name of the Redis instance. Changing this forces a new resource to be created.
+`Name` - (Required) The name of the Redis instance. Changing this forces a
+new resource to be created.
 
 `Location` - (Required) The location of the resource group.
 
-`ResourceGroupName` - (Required) The name of the resource group in which to create the Redis instance.
+`ResourceGroupName` - (Required) The name of the resource group in which to
+create the Redis instance.
 
 `Capacity` - (Required) The size of the Redis cache to deploy. Valid values for a SKU `Family` of C (Basic/Standard) are `0, 1, 2, 3, 4, 5, 6`, and for P (Premium) `Family` are `1, 2, 3, 4`.
 

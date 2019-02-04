@@ -2,6 +2,8 @@
 
 Manages an AutoScale Setting which can be applied to Virtual Machine Scale Sets, App Services and other scalable resources.
 
+~> **NOTE:** This resource has been deprecated in favour of the `Terraform::AzureRM::MonitorAutoscaleSetting` resource and will be removed in the next major version of the AzureRM Provider. The new resource shares the same fields as this one, and information on migrating across [can be found in this guide](../guides/migrating-between-renamed-resources.html).
+
 ## Properties
 
 `Name` - (Required) The name of the AutoScale Setting. Changing this forces a new resource to be created.
@@ -48,7 +50,7 @@ Manages an AutoScale Setting which can be applied to Virtual Machine Scale Sets,
 
 ### MetricTrigger Properties
 
-`MetricName` - (Required) The name of the metric that defines what the rule monitors, such as `Percentage CPU`.
+`MetricName` - (Required) The name of the metric that defines what the rule monitors, such as `Percentage CPU` for `Virtual Machine Scale Sets` and `CpuPercentage` for `App Service Plan`.
 
 `MetricResourceId` - (Required) The ID of the Resource which the Rule monitors.
 

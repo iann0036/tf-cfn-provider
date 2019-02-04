@@ -22,7 +22,8 @@ Manages a System within Cobbler.
 
 `Ipv6DefaultDevice` - (Optional) IPv6 default device.
 
-`KernelOptions` - (Optional) Kernel options. ex: selinux=permissive.
+`KernelOptions` - (Optional) Kernel options.
+ex: selinux=permissive.
 
 `KernelOptionsPost` - (Optional) Kernel options (post install).
 
@@ -34,11 +35,14 @@ Manages a System within Cobbler.
 
 `LdapType` - (Optional) LDAP management type.
 
-`MgmtClasses` - (Optional) Management classes for external config management.
+`MgmtClasses` - (Optional) Management classes for external config
+management.
 
-`MgmtParameters` - (Optional) Parameters which will be handed to your management application. Must be a valid YAML dictionary.
+`MgmtParameters` - (Optional) Parameters which will be handed to
+your management application. Must be a valid YAML dictionary.
 
-`MonitEnabled` - (Optional) Configure monit on this machine at next config update.
+`MonitEnabled` - (Optional) Configure monit on this machine at
+next config update.
 
 `NameServersSearch` - (Optional) Name servers search path.
 
@@ -46,13 +50,15 @@ Manages a System within Cobbler.
 
 `Name` - (Required) The name of the system.
 
-`NetbootEnabled` - (Optional) (re)Install this machine at next boot.
+`NetbootEnabled` - (Optional) (re)Install this machine at next
+boot.
 
 `Owners` - (Optional) Owners list for authz_ownership.
 
 `PowerAddress` - (Optional) Power management address.
 
-`PowerId` - (Optional) Usually a plug number or blade name if power type requires it.
+`PowerId` - (Optional) Usually a plug number or blade name if
+power type requires it.
 
 `PowerPass` - (Optional) Power management password.
 
@@ -68,17 +74,21 @@ Manages a System within Cobbler.
 
 `RedhatManagementServer` - (Optional) Red Hat management server.
 
-`Status` - (Optional) System status (development, testing, acceptance, production).
+`Status` - (Optional) System status (development, testing,
+acceptance, production).
 
-`TemplateFiles` - (Optional) File mappings for built-in configuration management.
+`TemplateFiles` - (Optional) File mappings for built-in
+configuration management.
 
-`TemplateRemoteKickstarts` - (Optional) template remote kickstarts.
+`TemplateRemoteKickstarts` - (Optional) template remote
+kickstarts.
 
 `VirtAutoBoot` - (Optional) Auto boot the VM.
 
 `VirtCpus` - (Optional) Number of virtual CPUs in the VM.
 
-`VirtDiskDriver` - (Optional) The on-disk format for the virtualization disk.
+`VirtDiskDriver` - (Optional) The on-disk format for the
+virtualization disk.
 
 `VirtFileSize` - (Optional) Virt file size.
 
@@ -88,7 +98,8 @@ Manages a System within Cobbler.
 
 `VirtRam` - (Optional) The amount of RAM for the VM.
 
-`VirtType` - (Optional) Virtualization technology to use: xenpv, xenfv, qemu, kvm, vmware, openvz.
+`VirtType` - (Optional) Virtualization technology to use: xenpv,
+xenfv, qemu, kvm, vmware, openvz.
 
 ### Interface Properties
 
@@ -106,7 +117,8 @@ Manages a System within Cobbler.
 
 `Gateway` - (Optional) Per-interface gateway.
 
-`InterfaceType` - (Optional) The type of interface: na, master, slave, bond, bond_slave, bridge, bridge_slave, bonded_bridge_slave.
+`InterfaceType` - (Optional) The type of interface: na, master,
+slave, bond, bond_slave, bridge, bridge_slave, bonded_bridge_slave.
 
 `InterfaceMaster` - (Optional) The master interface when slave.
 
@@ -116,17 +128,21 @@ Manages a System within Cobbler.
 
 `Ipv6Mtu` - (Optional) The MTU of the IPv6 address.
 
-`Ipv6StaticRoutes` - (Optional) Static routes for the IPv6 interface.
+`Ipv6StaticRoutes` - (Optional) Static routes for the IPv6
+interface.
 
-`Ipv6DefaultGateway` - (Optional) The default gateawy for the IPv6 address / interface.
+`Ipv6DefaultGateway` - (Optional) The default gateawy for the
+IPv6 address / interface.
 
 `MacAddress` - (Optional) The MAC address of the interface.
 
-`Management` - (Optional) Whether this interface is a management interface.
+`Management` - (Optional) Whether this interface is a management
+interface.
 
 `Netmask` - (Optional) The IPv4 netmask of the interface.
 
-`Static` - (Optional) Whether the interface should be static or DHCP.
+`Static` - (Optional) Whether the interface should be static or
+DHCP.
 
 `StaticRoutes` - (Optional) Static routes for the interface.
 

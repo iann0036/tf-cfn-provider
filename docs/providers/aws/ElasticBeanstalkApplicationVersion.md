@@ -29,7 +29,8 @@ Elastic Beanstalk Application. For example &lt;revision&gt;-&lt;environment&gt;.
 
 `Key` - (Required) S3 object that is the Application Version source bundle.
 
-`ForceDelete` - (Optional) On delete, force an Application Version to be deleted when it may be in use by multiple Elastic Beanstalk Environments.
+`ForceDelete` - (Optional) On delete, force an Application Version to be deleted when it may be in use
+by multiple Elastic Beanstalk Environments.
 
 
 ## Return Values

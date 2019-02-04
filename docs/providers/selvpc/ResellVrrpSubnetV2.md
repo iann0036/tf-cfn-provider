@@ -4,15 +4,20 @@ Manages a V2 VRRP subnet resource within Resell Selectel VPC.
 
 ## Properties
 
-`ProjectId` - (Required) An associated Selectel VPC project. Changing this creates a new VRRP subnet.
+`ProjectId` - (Required) An associated Selectel VPC project. Changing this
+creates a new VRRP subnet.
 
-`MasterRegion` - (Required) A master region of where the VRRP subnet resides. Changing this creates a new VRRP subnet.
+`MasterRegion` - (Required) A master region of where the VRRP subnet resides.
+Changing this creates a new VRRP subnet.
 
-`SlaveRegion` - (Required) A slave region of where the VRRP subnet resides. Changing this creates a new VRRP subnet.
+`SlaveRegion` - (Required) A slave region of where the VRRP subnet resides.
+Changing this creates a new VRRP subnet.
 
-`PrefixLength` - (Optional) A prefix length of the VRRP subnet. Defaults to 29. Changing this creates a new VRRP subnet.
+`PrefixLength` - (Optional) A prefix length of the VRRP subnet. Defaults to 29.
+Changing this creates a new VRRP subnet.
 
-`IpVersion` - (Optional) A version of the IP protocol of the VRRP subnet. Defaults to "ipv4". Changing this creates a new VRRP subnet.
+`IpVersion` - (Optional) A version of the IP protocol of the VRRP subnet.
+Defaults to "ipv4". Changing this creates a new VRRP subnet.
 
 
 ## Return Values

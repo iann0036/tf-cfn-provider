@@ -8,15 +8,20 @@ Provides a Spotinst AWS group resource.
 
 `Description` - (Optional) The group description.
 
-`Product` - (Required) Operation system type. Valid values: `"Linux/UNIX"`, `"SUSE Linux"`, `"Windows"`. For EC2 Classic instances:  `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VPC)"`, `"Windows (Amazon VPC)"`.
+`Product` - (Required) Operation system type. Valid values: `"Linux/UNIX"`, `"SUSE Linux"`, `"Windows"`.
+For EC2 Classic instances:  `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VPC)"`, `"Windows (Amazon VPC)"`.
 
-`AvailabilityZones` - (Optional) List of Strings of availability zones. Note: When this parameter is set, `SubnetIds` should be left unused.
+`AvailabilityZones` - (Optional) List of Strings of availability zones.
+Note: When this parameter is set, `SubnetIds` should be left unused.
 
-`SubnetIds` - (Optional) List of Strings of subnet identifiers. Note: When this parameter is set, `AvailabilityZones` should be left unused.
+`SubnetIds` - (Optional) List of Strings of subnet identifiers.
+Note: When this parameter is set, `AvailabilityZones` should be left unused.
 
-`Region` - (Optional) The AWS region your group will be created in. Note: This parameter is required if you specify subnets (through subnet_ids). This parameter is optional if you specify Availability Zones (through availability_zones).
+`Region` - (Optional) The AWS region your group will be created in.
+Note: This parameter is required if you specify subnets (through subnet_ids). This parameter is optional if you specify Availability Zones (through availability_zones).
 
-`PreferredAvailabilityZones` - The AZs to prioritize when launching Spot instances. If no markets are available in the Preferred AZs, Spot instances are launched in the non-preferred AZs. Note: Must be a sublist of `AvailabilityZones` and `Orientation` value must not be `"equalAzDistribution"`.
+`PreferredAvailabilityZones` - The AZs to prioritize when launching Spot instances. If no markets are available in the Preferred AZs, Spot instances are launched in the non-preferred AZs.
+Note: Must be a sublist of `AvailabilityZones` and `Orientation` value must not be `"equalAzDistribution"`.
 
 `MaxSize` - (Optional; Required if using scaling policies) The maximum number of instances the group should have at any time.
 
@@ -50,9 +55,9 @@ Provides a Spotinst AWS group resource.
 
 `InstanceTypesPreferredSpot` - (Optional) Prioritize a subset of spot instance types. Must be a subset of the selected spot instance types.
 
-`InstanceTypesWeights` - (Optional) List of weights per instance type for weighted groups. Each object in the list should have the following attributes: * `Weight` - (Required) Weight per instance type (Integer). * `InstanceType` - (Required) Name of instance type (String).
+`InstanceTypesWeights` - (Optional) List of weights per instance type for weighted groups. Each object in the list should have the following attributes:.
 
-`Weight` - (Required) Weight per instance type (Integer). * `InstanceType` - (Required) Name of instance type (String).
+`Weight` - (Required) Weight per instance type (Integer).
 
 `InstanceType` - (Required) Name of instance type (String).
 
@@ -60,9 +65,9 @@ Provides a Spotinst AWS group resource.
 
 `FallbackToOndemand` - (Required) In a case of no Spot instances available, Elastigroup will launch on-demand instances instead.
 
-`WaitForCapacity` - (Optional) Minimum number of instances in a 'HEALTHY' status that is required before continuing. Cannot exceed `DesiredCapacity`.
+`WaitForCapacity` - (Optional) Minimum number of instances in a 'HEALTHY' status that is required before continuing. This is ignored when updating with blue/green deployment. Cannot exceed `DesiredCapacity`.
 
-`WaitForCapacityTimeout` - (Optional) Time (seconds) to wait for instances to report a 'HEALTHY' status. Useful for plans with multiple dependencies that take some time to initialize. Leave undefined or set to `0` to indicate no wait.
+`WaitForCapacityTimeout` - (Optional) Time (seconds) to wait for instances to report a 'HEALTHY' status. Useful for plans with multiple dependencies that take some time to initialize. Leave undefined or set to `0` to indicate no wait. This is ignored when updating with blue/green deployment.
 
 `Orientation` - (Required, Default: `"balanced"`) Select a prediction strategy. Valid values: `"balanced"`, `"costOriented"`, `"equalAzDistribution"`, `"availabilityOriented"`.
 
@@ -84,9 +89,9 @@ Provides a Spotinst AWS group resource.
 
 `ElasticIps` - (Optional) A list of [AWS Elastic IP](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) allocation IDs to associate to the group instances.
 
-`RevertToSpot` - (Optional) Hold settings for strategy correction – replacing On-Demand for Spot instances. Supported Values: `"never"`, `"always"`, `"timeWindow"` * `PerformAt` - (Required) In the event of a fallback to On-Demand instances, select the time period to revert back to Spot. Supported Arguments – always (default), timeWindow, never. For timeWindow or never to be valid the group must have availabilityOriented OR persistence defined. * `TimeWindows` - (Optional) Specify a list of time windows for to execute revertToSpot strategy. Time window format: `ddd:hh:mm-ddd:hh:mm`. Example: `Mon:03:00-Wed:02:30`.
+`RevertToSpot` - (Optional) Hold settings for strategy correction – replacing On-Demand for Spot instances. Supported Values: `"never"`, `"always"`, `"timeWindow"`.
 
-`PerformAt` - (Required) In the event of a fallback to On-Demand instances, select the time period to revert back to Spot. Supported Arguments – always (default), timeWindow, never. For timeWindow or never to be valid the group must have availabilityOriented OR persistence defined. * `TimeWindows` - (Optional) Specify a list of time windows for to execute revertToSpot strategy. Time window format: `ddd:hh:mm-ddd:hh:mm`. Example: `Mon:03:00-Wed:02:30`.
+`PerformAt` - (Required) In the event of a fallback to On-Demand instances, select the time period to revert back to Spot. Supported Arguments – always (default), timeWindow, never. For timeWindow or never to be valid the group must have availabilityOriented OR persistence defined.
 
 `TimeWindows` - (Optional) Specify a list of time windows for to execute revertToSpot strategy. Time window format: `ddd:hh:mm-ddd:hh:mm`. Example: `Mon:03:00-Wed:02:30`.
 

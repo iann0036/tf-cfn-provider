@@ -4,17 +4,17 @@
 
 ## Properties
 
-`PolicyId` - (Required) The ID of the policy where this condition should be used. * `Name` - (Required) The title of the condition * `RunbookUrl` - (Optional) Runbook URL to display in notifications. * `Enabled` - (Optional) Set whether to enable the alert condition. Defaults to `true`. * `Term` - (Required) A list of terms for this condition. See [Terms](#terms) below for details. * `Nrql` - (Required) A NRQL query. See [NRQL](#nrql) below for details. * `ValueFunction` - (Optional) Possible values are `single_value`, `sum`.
+`PolicyId` - (Required) The ID of the policy where this condition should be used.
 
-`Name` - (Required) The title of the condition * `RunbookUrl` - (Optional) Runbook URL to display in notifications. * `Enabled` - (Optional) Set whether to enable the alert condition. Defaults to `true`. * `Term` - (Required) A list of terms for this condition. See [Terms](#terms) below for details. * `Nrql` - (Required) A NRQL query. See [NRQL](#nrql) below for details. * `ValueFunction` - (Optional) Possible values are `single_value`, `sum`.
+`Name` - (Required) The title of the condition.
 
-`RunbookUrl` - (Optional) Runbook URL to display in notifications. * `Enabled` - (Optional) Set whether to enable the alert condition. Defaults to `true`. * `Term` - (Required) A list of terms for this condition. See [Terms](#terms) below for details. * `Nrql` - (Required) A NRQL query. See [NRQL](#nrql) below for details. * `ValueFunction` - (Optional) Possible values are `single_value`, `sum`.
+`RunbookUrl` - (Optional) Runbook URL to display in notifications.
 
-`Enabled` - (Optional) Set whether to enable the alert condition. Defaults to `true`. * `Term` - (Required) A list of terms for this condition. See [Terms](#terms) below for details. * `Nrql` - (Required) A NRQL query. See [NRQL](#nrql) below for details. * `ValueFunction` - (Optional) Possible values are `single_value`, `sum`.
+`Enabled` - (Optional) Set whether to enable the alert condition. Defaults to `true`.
 
-`Term` - (Required) A list of terms for this condition. See [Terms](#terms) below for details. * `Nrql` - (Required) A NRQL query. See [NRQL](#nrql) below for details. * `ValueFunction` - (Optional) Possible values are `single_value`, `sum`.
+`Term` - (Required) A list of terms for this condition. See [Terms](#terms) below for details.
 
-`Nrql` - (Required) A NRQL query. See [NRQL](#nrql) below for details. * `ValueFunction` - (Optional) Possible values are `single_value`, `sum`.
+`Nrql` - (Required) A NRQL query. See [NRQL](#nrql) below for details.
 
 `ValueFunction` - (Optional) Possible values are `single_value`, `sum`.
 

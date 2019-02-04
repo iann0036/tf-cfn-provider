@@ -8,7 +8,9 @@ for use with services needed a unique string identifier.
 
 ## Properties
 
-`Keepers` - (Optional) Arbitrary map of values that, when changed, will trigger a new uuid to be generated. See [the main provider documentation](../index.html) for more information.
+`Keepers` - (Optional) Arbitrary map of values that, when changed, will
+trigger a new uuid to be generated. See
+[the main provider documentation](../index.html) for more information.
 
 
 ## Return Values

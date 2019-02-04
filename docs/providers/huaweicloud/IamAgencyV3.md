@@ -4,15 +4,19 @@ Manages an agency resource within huawei cloud.
 
 ## Properties
 
-`Name` - (Required) The name of agency. The name is a string of 1 to 64 characters.
+`Name` - (Required) The name of agency. The name is a string of 1 to 64
+characters.
 
-`Description` - (Optional) Provides supplementary information about the agency. The value is a string of 0 to 255 characters.
+`Description` - (Optional) Provides supplementary information about the
+agency. The value is a string of 0 to 255 characters.
 
 `DelegatedDomainName` - (Required) The name of delegated domain.
 
-`ProjectRole` - (Optional) An array of roles and projects which are used to grant permissions to agency on project. The structure is documented below.
+`ProjectRole` - (Optional) An array of roles and projects which are used to
+grant permissions to agency on project. The structure is documented below.
 
-`DomainRoles` - (optional) An array of role names which stand for the permissionis to be granted to agency on domain.
+`DomainRoles` - (optional) An array of role names which stand for the
+permissionis to be granted to agency on domain.
 
 ### ProjectRole Properties
 

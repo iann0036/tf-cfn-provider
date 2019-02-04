@@ -13,6 +13,7 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 ## Supported Resources
 
+* [Terraform::SelVPC::ResellCrossregionSubnetV2](ResellCrossregionSubnetV2.md)
 * [Terraform::SelVPC::ResellFloatingipV2](ResellFloatingipV2.md)
 * [Terraform::SelVPC::ResellKeypairV2](ResellKeypairV2.md)
 * [Terraform::SelVPC::ResellLicenseV2](ResellLicenseV2.md)

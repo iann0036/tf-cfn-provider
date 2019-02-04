@@ -6,7 +6,9 @@ Provides a Load Balancer resource.
 
 ## Properties
 
-`Name` - (Optional) The name of the LB. This name must be unique within your AWS account, can have a maximum of 32 characters, must contain only alphanumeric characters or hyphens, and must not begin or end with a hyphen. If not specified, Terraform will autogenerate a name beginning with `tf-lb`.
+`Name` - (Optional) The name of the LB. This name must be unique within your AWS account, can have a maximum of 32 characters,
+must contain only alphanumeric characters or hyphens, and must not begin or end with a hyphen. If not specified,
+Terraform will autogenerate a name beginning with `tf-lb`.
 
 `NamePrefix` - (Optional) Creates a unique name beginning with the specified prefix. Conflicts with `Name`.
 
@@ -18,15 +20,19 @@ Provides a Load Balancer resource.
 
 `AccessLogs` - (Optional) An Access Logs block. Access Logs documented below. Only valid for Load Balancers of type `application`.
 
-`Subnets` - (Optional) A list of subnet IDs to attach to the LB. Subnets cannot be updated for Load Balancers of type `network`. Changing this value for load balancers of type `network` will force a recreation of the resource.
+`Subnets` - (Optional) A list of subnet IDs to attach to the LB. Subnets
+cannot be updated for Load Balancers of type `network`. Changing this value
+for load balancers of type `network` will force a recreation of the resource.
 
 `SubnetMapping` - (Optional) A subnet mapping block as documented below.
 
 `IdleTimeout` - (Optional) The time in seconds that the connection is allowed to be idle. Only valid for Load Balancers of type `application`. Default: 60.
 
-`EnableDeletionProtection` - (Optional) If true, deletion of the load balancer will be disabled via the AWS API. This will prevent Terraform from deleting the load balancer. Defaults to `false`.
+`EnableDeletionProtection` - (Optional) If true, deletion of the load balancer will be disabled via
+the AWS API. This will prevent Terraform from deleting the load balancer. Defaults to `false`.
 
-`EnableCrossZoneLoadBalancing` - (Optional) If true, cross-zone load balancing of the load balancer will be enabled. This is a `network` load balancer feature. Defaults to `false`.
+`EnableCrossZoneLoadBalancing` - (Optional) If true, cross-zone load balancing of the load balancer will be enabled.
+This is a `network` load balancer feature. Defaults to `false`.
 
 `EnableHttp2` - (Optional) Indicates whether HTTP/2 is enabled in `application` load balancers. Defaults to `true`.
 

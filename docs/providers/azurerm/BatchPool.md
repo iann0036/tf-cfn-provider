@@ -18,6 +18,8 @@ Manages an Azure Batch pool.
 
 `DisplayName` - (Optional) Specifies the display name of the Batch pool.
 
+`MaxTasksPerNode` - (Optional) Specifies the maximum number of tasks that can run concurrently on a single compute node in the pool. Defaults to `1`.
+
 `FixedScale` - (Optional) A `FixedScale` block that describes the scale settings when using fixed scale.
 
 `AutoScale` - (Optional) A `AutoScale` block that describes the scale settings when using auto scale.

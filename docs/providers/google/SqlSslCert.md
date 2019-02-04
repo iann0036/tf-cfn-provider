@@ -7,9 +7,11 @@ Creates a new Google SQL SSL Cert on a Google SQL Instance. For more information
 
 ## Properties
 
-`Instance` - (Required) The name of the Cloud SQL instance. Changing this forces a new resource to be created.
+`Instance` - (Required) The name of the Cloud SQL instance. Changing this
+forces a new resource to be created.
 
-`CommonName` - (Required) The common name to be used in the certificate to identify the client. Constrained to [a-zA-Z.-_ ]+. Changing this forces a new resource to be created.
+`CommonName` - (Required) The common name to be used in the certificate to identify the
+client. Constrained to [a-zA-Z.-_ ]+. Changing this forces a new resource to be created.
 
 
 ## Return Values

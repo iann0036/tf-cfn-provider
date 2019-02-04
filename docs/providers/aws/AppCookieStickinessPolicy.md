@@ -6,9 +6,12 @@ Provides an application cookie stickiness policy, which allows an ELB to wed its
 
 `Name` - (Required) The name of the stickiness policy.
 
-`LoadBalancer` - (Required) The name of load balancer to which the policy should be attached.
+`LoadBalancer` - (Required) The name of load balancer to which the policy
+should be attached.
 
-`LbPort` - (Required) The load balancer port to which the policy should be applied. This must be an active listener on the load balancer.
+`LbPort` - (Required) The load balancer port to which the policy
+should be applied. This must be an active listener on the load
+balancer.
 
 `CookieName` - (Required) The application cookie whose lifetime the ELB's cookie should follow.
 

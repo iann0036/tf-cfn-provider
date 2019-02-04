@@ -12,7 +12,8 @@ Provides an IAM role.
 
 `ForceDetachPolicies` - (Optional) Specifies to force detaching any policies the role has before destroying it. Defaults to `false`.
 
-`Path` - (Optional) The path to the role. See [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) for more information.
+`Path` - (Optional) The path to the role.
+See [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) for more information.
 
 `Description` - (Optional) The description of the role.
 

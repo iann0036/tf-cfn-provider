@@ -10,17 +10,22 @@ registered on nodes that have a running Consul agent.
 
 ## Properties
 
-`SourceName` - (Required, string) The name of the source service for the intention. This service does not have to exist.
+`SourceName` - (Required, string) The name of the source service for the intention. This
+service does not have to exist.
 
-`DestinationName` - (Required, string) The name of the destination service for the intention. This service does not have to exist.
+`DestinationName` - (Required, string) The name of the destination service for the intention. This
+service does not have to exist.
 
 `Action` - (Required, string) The intention action. Must be one of `allow` or `deny`.
 
-`Meta` - (Optional, map) Key/value pairs that are opaque to Consul and are associated with the intention.
+`Meta` - (Optional, map) Key/value pairs that are opaque to Consul and are associated
+with the intention.
 
-`Description` - (Optional, string) Optional description that can be used by Consul tooling, but is not used internally.
+`Description` - (Optional, string) Optional description that can be used by Consul
+tooling, but is not used internally.
 
-`Datacenter` - (Optional) The datacenter to use. This overrides the datacenter in the provider setup and the agent's default datacenter.
+`Datacenter` - (Optional) The datacenter to use. This overrides the datacenter in the
+provider setup and the agent's default datacenter.
 
 
 ## Return Values

@@ -39,10 +39,12 @@ you must specify three items in `VswitchIds`, `MasterInstanceTypes` and `WorkerI
 `MasterInstanceType` - (Deprecated from version 1.16.0)(Required, Force new resource) The instance type of master node.
 
 `MasterInstanceTypes` - (Required, Force new resource) The instance type of master node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+You can get the available kubetnetes master node instance types by [datasource instance_types](https://www.terraform.io/docs/providers/alicloud/d/instance_types.html#kubernetes_node_role).
 
 `WorkerInstanceType` - (Deprecated from version 1.16.0)(Required, Force new resource) The instance type of worker node.
 
 `WorkerInstanceTypes` - (Required, Force new resource) The instance type of worker node. Specify one type for single AZ Cluster, three types for MultiAZ Cluster.
+You can get the available kubetnetes master node instance types by [datasource instance_types](https://www.terraform.io/docs/providers/alicloud/d/instance_types.html#kubernetes_node_role).
 
 `WorkerNumber` - The worker node number of the kubernetes cluster. Default to 3. It is limited up to 50 and if you want to enlarge it, please apply white list or contact with us.
 
@@ -50,11 +52,16 @@ you must specify three items in `VswitchIds`, `MasterInstanceTypes` and `WorkerI
 
 `KeyName` - (Required, Force new resource) The keypair of ssh login cluster node, you have to create it first.
 
+`UserCa` - (Optional, Force new resource) The path of customized CA cert, you can use this CA to sign client certs to connect your cluster.
+
 `ClusterNetworkType` - (Required, Force new resource) The network that cluster uses, use `flannel` or `terway`.
 
-`PodCidr` - (Required, Force new resource) The CIDR block for the pod network. It will be allocated automatically when `VswitchIds` is not specified. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation. Maximum number of hosts allowed in the cluster: 256. Refer to [Plan Kubernetes CIDR blocks under VPC](https://www.alibabacloud.com/help/doc-detail/64530.htm).
+`PodCidr` - (Required, Force new resource) The CIDR block for the pod network. It will be allocated automatically when `VswitchIds` is not specified.
+It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
+Maximum number of hosts allowed in the cluster: 256. Refer to [Plan Kubernetes CIDR blocks under VPC](https://www.alibabacloud.com/help/doc-detail/64530.htm).
 
-`ServiceCidr` - (Required, Force new resource) The CIDR block for the service network.  It will be allocated automatically when `VswitchId` is not specified. It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
+`ServiceCidr` - (Required, Force new resource) The CIDR block for the service network.  It will be allocated automatically when `VswitchId` is not specified.
+It cannot be duplicated with the VPC CIDR and CIDR used by Kubernetes cluster in VPC, cannot be modified after creation.
 
 `MasterInstanceChargeType` - (Optional, Force new resource) Master payment type. `PrePaid` or `PostPaid`, defaults to `PostPaid`.
 
@@ -76,11 +83,12 @@ you must specify three items in `VswitchIds`, `MasterInstanceTypes` and `WorkerI
 
 `WorkerAutoRenewPeriod` - (Optional) Worker payment auto-renew period. When period unit is `Month`, it can be one of {“1”, “2”, “3”, “6”, “12”}.  When period unit is `Week`, it can be one of {“1”, “2”, “3”}.
 
-`NodeCidrMask` - (Optional, Force new resource) The network mask used on pods for each node, ranging from `24` to `28`. Larger this number is, less pods can be allocated on each node. Default value is `24`, means you can allocate 256 pods on each node.
+`NodeCidrMask` - (Optional, Force new resource) The network mask used on pods for each node, ranging from `24` to `28`.
+Larger this number is, less pods can be allocated on each node. Default value is `24`, means you can allocate 256 pods on each node.
 
-`LogConfig` - (Optional, Force new resource) A list of one element containing information about the associated log store. It contains the following attributes: * `Type` - Type of collecting logs, only `SLS` are supported currently. * `Project` - Log Service project name, cluster logs will output to this project.
+`LogConfig` - (Optional, Force new resource) A list of one element containing information about the associated log store. It contains the following attributes:.
 
-`Type` - Type of collecting logs, only `SLS` are supported currently. * `Project` - Log Service project name, cluster logs will output to this project.
+`Type` - Type of collecting logs, only `SLS` are supported currently.
 
 `Project` - Log Service project name, cluster logs will output to this project.
 

@@ -6,7 +6,8 @@ Manages a Kickstart File within Cobbler.
 
 `Body` - (Required) The body of the kickstart file.
 
-`Name` - (Required) The name of the kickstart file. This must be the full path, including `/var/lib/cobbler/kickstarts`.
+`Name` - (Required) The name of the kickstart file. This must be
+the full path, including `/var/lib/cobbler/kickstarts`.
 
 
 ## See Also

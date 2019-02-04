@@ -8,9 +8,11 @@ Provides an Elastic File System (EFS) mount target.
 
 `SubnetId` - (Required) The ID of the subnet to add the mount target in.
 
-`IpAddress` - (Optional) The address (within the address range of the specified subnet) at which the file system may be mounted via the mount target.
+`IpAddress` - (Optional) The address (within the address range of the specified subnet) at
+which the file system may be mounted via the mount target.
 
-`SecurityGroups` - (Optional) A list of up to 5 VPC security group IDs (that must be for the same VPC as subnet specified) in effect for the mount target.
+`SecurityGroups` - (Optional) A list of up to 5 VPC security group IDs (that must
+be for the same VPC as subnet specified) in effect for the mount target.
 
 
 ## Return Values

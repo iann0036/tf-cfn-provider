@@ -4,7 +4,7 @@ Adds permission to create volumes off of a given EBS Snapshot.
 
 ## Properties
 
-`SnapshotId` - (required) A snapshot ID * `AccountId` - (required) An AWS Account ID to add create volume permissions.
+`SnapshotId` - (required) A snapshot ID.
 
 `AccountId` - (required) An AWS Account ID to add create volume permissions.
 

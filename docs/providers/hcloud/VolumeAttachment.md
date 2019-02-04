@@ -4,9 +4,12 @@ Provides a Hetzner Cloud Volume attachment to attach a Volume to a Hetzner Cloud
 
 ## Properties
 
-`VolumeId` - (Required, int) ID of the Volume. - `ServerId` - (Required, int) Server to attach the Volume to. - `Automount` - (Optional, bool) Automount the volume upon attaching it.
+`VolumeId` - (Required, int) ID of the Volume.
+- `ServerId` - (Required, int) Server to attach the Volume to.
+- `Automount` - (Optional, bool) Automount the volume upon attaching it.
 
-`ServerId` - (Required, int) Server to attach the Volume to. - `Automount` - (Optional, bool) Automount the volume upon attaching it.
+`ServerId` - (Required, int) Server to attach the Volume to.
+- `Automount` - (Optional, bool) Automount the volume upon attaching it.
 
 `Automount` - (Optional, bool) Automount the volume upon attaching it.
 

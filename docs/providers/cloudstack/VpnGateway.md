@@ -4,7 +4,8 @@ Creates a site to site VPN local gateway.
 
 ## Properties
 
-`VpcId` - (Required) The ID of the VPC for which to create the VPN Gateway. Changing this forces a new resource to be created.
+`VpcId` - (Required) The ID of the VPC for which to create the VPN Gateway.
+Changing this forces a new resource to be created.
 
 
 ## Return Values

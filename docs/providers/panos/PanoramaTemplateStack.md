@@ -16,7 +16,9 @@ the template stack.
 
 `Description` - (Optional) The stack's description.
 
-`DefaultVsys` - (Optional) The default virtual system template configuration pushed to firewalls with a single virtual system.  **Note** - you can only set this if there is at least one template in this stack.
+`DefaultVsys` - (Optional) The default virtual system template configuration
+pushed to firewalls with a single virtual system.  **Note** - you can only
+set this if there is at least one template in this stack.
 
 `Templates` - (Optional) List of templates in this stack.
 

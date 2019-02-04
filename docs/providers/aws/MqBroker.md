@@ -19,7 +19,8 @@ brief downtime as the broker reboots.
 
 ## Properties
 
-`ApplyImmediately` - (Optional) Specifies whether any broker modifications are applied immediately, or during the next maintenance window. Default is `false`.
+`ApplyImmediately` - (Optional) Specifies whether any broker modifications
+are applied immediately, or during the next maintenance window. Default is `false`.
 
 `AutoMinorVersionUpgrade` - (Optional) Enables automatic upgrades to new minor versions for brokers, as Apache releases the versions.
 
@@ -46,6 +47,8 @@ brief downtime as the broker reboots.
 `Logs` - (Optional) Logging configuration of the broker. See below.
 
 `User` - (Optional) The list of all ActiveMQ usernames for the specified broker. See below.
+
+`Tags` - (Optional) A mapping of tags to assign to the resource.
 
 
 ## Return Values

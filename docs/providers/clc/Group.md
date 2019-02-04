@@ -12,7 +12,8 @@ See also [Complete API documentation](https://www.ctl.io/api-docs/v2/#groups).
 
 `ParentGroupId` - (Computed) The ID of the parent group.
 
-`LocationId` - (Required, string) The datacenter location of both parent group and this group. Examples: "WA1", "VA1".
+`LocationId` - (Required, string) The datacenter location of both parent group and this group.
+Examples: "WA1", "VA1".
 
 `Description` - (Optional, string) Description for server group (visible in control portal only).
 

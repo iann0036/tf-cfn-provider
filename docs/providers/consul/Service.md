@@ -14,13 +14,16 @@ not recommended to use this resource.
 
 `Node` - (Required, string) The name of the node the to register the service on.
 
-`Address` - (Optional, string) The address of the service. Defaults to the address of the node.
+`Address` - (Optional, string) The address of the service. Defaults to the
+address of the node.
 
 `Port` - (Optional, int) The port of the service.
 
-`Tags` - (Optional, set of strings) A list of values that are opaque to Consul, but can be used to distinguish between services or nodes.
+`Tags` - (Optional, set of strings) A list of values that are opaque to Consul,
+but can be used to distinguish between services or nodes.
 
-`Datacenter` - (Optional) The datacenter to use. This overrides the datacenter in the provider setup and the agent's default datacenter.
+`Datacenter` - (Optional) The datacenter to use. This overrides the datacenter in the
+provider setup and the agent's default datacenter.
 
 
 ## Return Values

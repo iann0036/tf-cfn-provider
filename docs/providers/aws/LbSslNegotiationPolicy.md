@@ -6,13 +6,16 @@ Provides a load balancer SSL negotiation policy, which allows an ELB to control 
 
 `Name` - (Required) The name of the SSL negotiation policy.
 
-`LoadBalancer` - (Required) The load balancer to which the policy should be attached.
+`LoadBalancer` - (Required) The load balancer to which the policy
+should be attached.
 
-`LbPort` - (Required) The load balancer port to which the policy should be applied. This must be an active listener on the load balancer.
+`LbPort` - (Required) The load balancer port to which the policy
+should be applied. This must be an active listener on the load
+balancer.
 
-`Attribute` - (Optional) An SSL Negotiation policy attribute. Each has two properties: * `Name` - The name of the attribute * `Value` - The value of the attribute.
+`Attribute` - (Optional) An SSL Negotiation policy attribute. Each has two properties:.
 
-`Name` - The name of the attribute * `Value` - The value of the attribute.
+`Name` - The name of the attribute.
 
 `Value` - The value of the attribute.
 

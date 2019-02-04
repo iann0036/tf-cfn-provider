@@ -6,23 +6,32 @@ Manages a DWS cluster resource within FlexibleEngine
 
 `AvailabilityZone` - (Optional) AZ in a cluster.
 
-`Name` - (Required) Cluster name, which must be unique and contains 4 to 64 characters, which consist of letters, digits, hyphens (-), or underscores (_) only and must start with a letter.
+`Name` - (Required) Cluster name, which must be unique and contains 4 to 64
+characters, which consist of letters, digits, hyphens (-), or underscores
+(_) only and must start with a letter.
 
 `NodeType` - (Required) Node type.
 
-`NumberOfNode` - (Required) Number of nodes in a cluster. The value ranges from 3 to 32.
+`NumberOfNode` - (Required) Number of nodes in a cluster. The value ranges
+from 3 to 32.
 
-`Port` - (Optional) Service port of a cluster (8000 to 10000). The default value is 8000.
+`Port` - (Optional) Service port of a cluster (8000 to 10000). The default
+value is 8000.
 
-`PublicIp` - (Optional) Public IP address. If the value is not specified, public connection is not used by default.
+`PublicIp` - (Optional) Public IP address. If the value is not specified,
+public connection is not used by default.
 
-`SecurityGroupId` - (Required) ID of a security group. The ID is used for configuring cluster network.
+`SecurityGroupId` - (Required) ID of a security group. The ID is used for
+configuring cluster network.
 
-`SubnetId` - (Required) Subnet ID, which is used for configuring cluster network.
+`SubnetId` - (Required) Subnet ID, which is used for configuring cluster
+network.
 
-`UserName` - (Required) Administrator username for logging in to a data warehouse cluster The administrator username must:.
+`UserName` - (Required) Administrator username for logging in to a data
+warehouse cluster The administrator username must:.
 
-`UserPwd` - (Required) Administrator password for logging in to a data warehouse cluster.
+`UserPwd` - (Required) Administrator password for logging in to a data
+warehouse cluster.
 
 `VpcId` - (Required) VPC ID, which is used for configuring cluster network.
 
@@ -30,7 +39,8 @@ Manages a DWS cluster resource within FlexibleEngine
 
 `EipId` - (Optional) EIP ID.
 
-`PublicBindType` - (Optional) Binding type of an EIP. The value can be either of the following:.
+`PublicBindType` - (Optional) Binding type of an EIP. The value can be
+either of the following:.
 
 
 ## Return Values

@@ -13,15 +13,27 @@ page][ref-vsphere-datastore-clusters].
 
 ## Properties
 
-`DatastoreClusterId` - (Required) The [managed object reference ID][docs-about-morefs] of the datastore cluster to put the override in. Forces a new resource if changed.
+`DatastoreClusterId` - (Required) The [managed object reference
+ID][docs-about-morefs] of the datastore cluster to put the override in.
+Forces a new resource if changed.
 
-`VirtualMachineId` - (Required) The UUID of the virtual machine to create the override for.  Forces a new resource if changed.
+`VirtualMachineId` - (Required) The UUID of the virtual machine to create
+the override for.  Forces a new resource if changed.
 
-`SdrsEnabled` - (Optional) Overrides the default Storage DRS setting for this virtual machine. When not specified, the datastore cluster setting is used.
+`SdrsEnabled` - (Optional) Overrides the default Storage DRS setting for
+this virtual machine. When not specified, the datastore cluster setting is
+used.
 
-`SdrsAutomationLevel` - (Optional) Overrides any Storage DRS automation levels for this virtual machine. Can be one of `automated` or `manual`. When not specified, the datastore cluster's settings are used according to the [specific SDRS subsystem][tf-vsphere-datastore-cluster-sdrs-levels].
+`SdrsAutomationLevel` - (Optional) Overrides any Storage DRS automation
+levels for this virtual machine. Can be one of `automated` or `manual`. When
+not specified, the datastore cluster's settings are used according to the
+[specific SDRS subsystem][tf-vsphere-datastore-cluster-sdrs-levels].
 
-`SdrsIntraVmAffinity` - (Optional) Overrides the intra-VM affinity setting for this virtual machine. When `true`, all disks for this virtual machine will be kept on the same datastore. When `false`, Storage DRS may locate individual disks on different datastores if it helps satisfy cluster requirements. When not specified, the datastore cluster's settings are used.
+`SdrsIntraVmAffinity` - (Optional) Overrides the intra-VM affinity setting
+for this virtual machine. When `true`, all disks for this virtual machine
+will be kept on the same datastore. When `false`, Storage DRS may locate
+individual disks on different datastores if it helps satisfy cluster
+requirements. When not specified, the datastore cluster's settings are used.
 
 
 ## See Also

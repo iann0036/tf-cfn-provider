@@ -16,7 +16,8 @@ Provides a VPN gateway resource.
 
 `Period` - (Optional) The filed is only required while the InstanceChargeType is prepaid.
 
-`Bandwidth` - (Required) The value should be 10, 100, 200, 500, 1000 if the user is postpaid, otherwise it can be 5, 10, 20, 50, 100, 200, 500, 1000. It can't be changed by terraform.
+`Bandwidth` - (Required) The value should be 10, 100, 200, 500, 1000 if the user is postpaid, otherwise it can be 5, 10, 20, 50, 100, 200, 500, 1000.
+It can't be changed by terraform.
 
 `EnableIpsec` - (Optional) Enable or Disable IPSec VPN. At least one type of VPN should be enabled.
 

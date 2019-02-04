@@ -9,7 +9,8 @@ permissions.
 
 `Vhost` - (Required) The vhost to create the resource in.
 
-`Permissions` - (Required) The settings of the permissions. The structure is described below.
+`Permissions` - (Required) The settings of the permissions. The structure is
+described below.
 
 ### Permissions Properties
 

@@ -16,9 +16,11 @@ Associates an S3 resource with Amazon Macie for monitoring and data classificati
 
 ### ClassificationType Properties
 
-`Continuous` - (Optional) A string value indicating that Macie perform a one-time classification of all of the existing objects in the bucket. The only valid value is the default value, `FULL`.
+`Continuous` - (Optional) A string value indicating that Macie perform a one-time classification of all of the existing objects in the bucket.
+The only valid value is the default value, `FULL`.
 
-`OneTime` - (Optional) A string value indicating whether or not Macie performs a one-time classification of all of the existing objects in the bucket. Valid values are `NONE` and `FULL`. Defaults to `NONE` indicating that Macie only classifies objects that are added after the association was created.
+`OneTime` - (Optional) A string value indicating whether or not Macie performs a one-time classification of all of the existing objects in the bucket.
+Valid values are `NONE` and `FULL`. Defaults to `NONE` indicating that Macie only classifies objects that are added after the association was created.
 
 
 ## Return Values

@@ -8,15 +8,18 @@ The ``Terraform::RabbitMQ::Exchange`` resource creates and manages an exchange.
 
 `Vhost` - (Required) The vhost to create the resource in.
 
-`Settings` - (Required) The settings of the exchange. The structure is described below.
+`Settings` - (Required) The settings of the exchange. The structure is
+described below.
 
 ### Settings Properties
 
 `Type` - (Required) The type of exchange.
 
-`Durable` - (Optional) Whether the exchange survives server restarts. Defaults to `false`.
+`Durable` - (Optional) Whether the exchange survives server restarts.
+Defaults to `false`.
 
-`AutoDelete` - (Optional) Whether the exchange will self-delete when all queues have finished using it.
+`AutoDelete` - (Optional) Whether the exchange will self-delete when all
+queues have finished using it.
 
 `Arguments` - (Optional) Additional key/value settings for the exchange.
 

@@ -7,21 +7,35 @@ but only compute floating IPs can be used with compute instances.
 
 ## Properties
 
-`Region` - (Optional) The region in which to obtain the V2 Networking client. A Networking client is needed to create a floating IP that can be used with another networking resource, such as a load balancer. If omitted, the `Region` argument of the provider is used. Changing this creates a new floating IP (which may or may not have a different address).
+`Region` - (Optional) The region in which to obtain the V2 Networking client.
+A Networking client is needed to create a floating IP that can be used with
+another networking resource, such as a load balancer. If omitted, the
+`Region` argument of the provider is used. Changing this creates a new
+floating IP (which may or may not have a different address).
 
 `Description` - (Optional) Human-readable description for the floating IP.
 
-`Pool` - (Required) The name of the pool from which to obtain the floating IP. Changing this creates a new floating IP.
+`Pool` - (Required) The name of the pool from which to obtain the floating
+IP. Changing this creates a new floating IP.
 
-`PortId` - (Optional) ID of an existing port with at least one IP address to associate with this floating IP.
+`PortId` - (Optional) ID of an existing port with at least one IP address to
+associate with this floating IP.
 
-`TenantId` - (Optional) The target tenant ID in which to allocate the floating IP, if you specify this together with a port_id, make sure the target port belongs to the same tenant. Changing this creates a new floating IP (which may or may not have a different address).
+`TenantId` - (Optional) The target tenant ID in which to allocate the floating
+IP, if you specify this together with a port_id, make sure the target port
+belongs to the same tenant. Changing this creates a new floating IP (which
+may or may not have a different address).
 
-`Address` - (Optional) The actual/specific floating IP to obtain. By default, non-admin users are not able to specify a floating IP, so you must either be an admin user or have had a custom policy or role applied to your OpenStack user or project.
+`Address` - (Optional) The actual/specific floating IP to obtain. By default,
+non-admin users are not able to specify a floating IP, so you must either be
+an admin user or have had a custom policy or role applied to your OpenStack
+user or project.
 
-`FixedIp` - Fixed IP of the port to associate with this floating IP. Required if the port has multiple fixed IPs.
+`FixedIp` - Fixed IP of the port to associate with this floating IP. Required if
+the port has multiple fixed IPs.
 
-`SubnetId` - (Optional) The subnet ID of the floating IP pool. Specify this if the floating IP network has multiple subnets.
+`SubnetId` - (Optional) The subnet ID of the floating IP pool. Specify this if
+the floating IP network has multiple subnets.
 
 `ValueSpecs` - (Optional) Map of additional options.
 

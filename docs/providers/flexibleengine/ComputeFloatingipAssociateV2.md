@@ -5,7 +5,10 @@ Associate a floating IP to an instance. This can be used instead of the
 
 ## Properties
 
-`Region` - (Optional) The region in which to obtain the V2 Compute client. Keypairs are associated with accounts, but a Compute client is needed to create one. If omitted, the `Region` argument of the provider is used. Changing this creates a new floatingip_associate.
+`Region` - (Optional) The region in which to obtain the V2 Compute client.
+Keypairs are associated with accounts, but a Compute client is needed to
+create one. If omitted, the `Region` argument of the provider is used.
+Changing this creates a new floatingip_associate.
 
 `FloatingIp` - (Required) The floating IP to associate.
 

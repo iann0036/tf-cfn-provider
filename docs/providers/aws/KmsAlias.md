@@ -8,7 +8,8 @@ the [account limits](http://docs.aws.amazon.com/kms/latest/developerguide/limits
 
 `Name` - (Optional) The display name of the alias. The name must start with the word "alias" followed by a forward slash (alias/).
 
-`NamePrefix` - (Optional) Creates an unique alias beginning with the specified prefix. The name must start with the word "alias" followed by a forward slash (alias/).  Conflicts with `Name`.
+`NamePrefix` - (Optional) Creates an unique alias beginning with the specified prefix.
+The name must start with the word "alias" followed by a forward slash (alias/).  Conflicts with `Name`.
 
 `TargetKeyId` - (Required) Identifier for the key for which the alias is for, can be either an ARN or key_id.
 

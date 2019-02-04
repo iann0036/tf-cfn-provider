@@ -9,25 +9,36 @@ and run automated tasks.
 
 ## Properties
 
-`Name` - (Required) The name of the virtual machine extension peering. Changing this forces a new resource to be created.
+`Name` - (Required) The name of the virtual machine extension peering. Changing
+this forces a new resource to be created.
 
-`Location` - (Required) The location where the extension is created. Changing this forces a new resource to be created.
+`Location` - (Required) The location where the extension is created. Changing
+this forces a new resource to be created.
 
-`ResourceGroupName` - (Required) The name of the resource group in which to create the virtual network. Changing this forces a new resource to be created.
+`ResourceGroupName` - (Required) The name of the resource group in which to
+create the virtual network. Changing this forces a new resource to be
+created.
 
-`VirtualMachineName` - (Required) The name of the virtual machine. Changing this forces a new resource to be created.
+`VirtualMachineName` - (Required) The name of the virtual machine. Changing
+this forces a new resource to be created.
 
-`Publisher` - (Required) The publisher of the extension, available publishers can be found by using the Azure CLI.
+`Publisher` - (Required) The publisher of the extension, available publishers
+can be found by using the Azure CLI.
 
-`Type` - (Required) The type of extension, available types for a publisher can be found using the Azure CLI.
+`Type` - (Required) The type of extension, available types for a publisher can
+be found using the Azure CLI.
 
-`TypeHandlerVersion` - (Required) Specifies the version of the extension to use, available versions can be found using the Azure CLI.
+`TypeHandlerVersion` - (Required) Specifies the version of the extension to
+use, available versions can be found using the Azure CLI.
 
-`AutoUpgradeMinorVersion` - (Optional) Specifies if the platform deploys the latest minor version update to the `TypeHandlerVersion` specified.
+`AutoUpgradeMinorVersion` - (Optional) Specifies if the platform deploys
+the latest minor version update to the `TypeHandlerVersion` specified.
 
-`Settings` - (Required) The settings passed to the extension, these are specified as a JSON object in a string.
+`Settings` - (Required) The settings passed to the extension, these are
+specified as a JSON object in a string.
 
-`ProtectedSettings` - (Optional) The protected_settings passed to the extension, like settings, these are specified as a JSON object in a string.
+`ProtectedSettings` - (Optional) The protected_settings passed to the
+extension, like settings, these are specified as a JSON object in a string.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 

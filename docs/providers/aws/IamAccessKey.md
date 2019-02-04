@@ -6,7 +6,8 @@ Provides an IAM access key. This is a set of credentials that allow API requests
 
 `User` - (Required) The IAM user to associate with this access key.
 
-`PgpKey` - (Optional) Either a base-64 encoded PGP public key, or a keybase username in the form `keybase:some_person_that_exists`.
+`PgpKey` - (Optional) Either a base-64 encoded PGP public key, or a
+keybase username in the form `keybase:some_person_that_exists`.
 
 
 ## Return Values

@@ -8,9 +8,12 @@ Provides a CloudWatch Event Rule resource.
 
 `NamePrefix` - (Optional) The rule's name. Conflicts with `Name`.
 
-`ScheduleExpression` - (Required, if `EventPattern` isn't specified) The scheduling expression. For example, `cron(0 20 * * ? *)` or `rate(5 minutes)`.
+`ScheduleExpression` - (Required, if `EventPattern` isn't specified) The scheduling expression.
+For example, `cron(0 20 * * ? *)` or `rate(5 minutes)`.
 
-`EventPattern` - (Required, if `ScheduleExpression` isn't specified) Event pattern described a JSON object. See full documentation of [CloudWatch Events and Event Patterns](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CloudWatchEventsandEventPatterns.html) for details.
+`EventPattern` - (Required, if `ScheduleExpression` isn't specified) Event pattern
+described a JSON object.
+See full documentation of [CloudWatch Events and Event Patterns](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CloudWatchEventsandEventPatterns.html) for details.
 
 `Description` - (Optional) The description of the rule.
 

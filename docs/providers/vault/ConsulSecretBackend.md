@@ -23,7 +23,8 @@ for more details.
 
 `DefaultLeaseTtlSeconds` - (Optional) The default TTL for credentials issued by this backend.
 
-`MaxLeaseTtlSeconds` - (Optional) The maximum TTL that can be requested for credentials issued by this backend.
+`MaxLeaseTtlSeconds` - (Optional) The maximum TTL that can be requested
+for credentials issued by this backend.
 
 
 ## See Also

@@ -13,9 +13,11 @@ requires vCenter 6.0 or higher.
 
 ## Properties
 
-`Name` - (Required) The display name of the tag. The name must be unique within its category.
+`Name` - (Required) The display name of the tag. The name must be unique
+within its category.
 
-`CategoryId` - (Required) The unique identifier of the parent category in which this tag will be created. Forces a new resource if changed.
+`CategoryId` - (Required) The unique identifier of the parent category in
+which this tag will be created. Forces a new resource if changed.
 
 `Description` - (Optional) A description for the tag.
 

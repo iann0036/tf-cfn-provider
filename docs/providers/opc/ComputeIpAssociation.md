@@ -7,7 +7,9 @@ an Oracle Cloud Infrastructure Compute Classic identity domain, for the Shared N
 
 `Vcable` - (Required) The vcable of the instance to associate the IP address with.
 
-`ParentPool` - (Required) The pool from which to take an IP address. To associate a specific reserved IP address, use the prefix `ipreservation:` followed by the name of the IP reservation. To allocate an IP address from a pool, use the prefix `ippool:`, e.g. `ippool:/oracle/public/ippool`.
+`ParentPool` - (Required) The pool from which to take an IP address. To associate a specific reserved IP address, use
+the prefix `ipreservation:` followed by the name of the IP reservation. To allocate an IP address from a pool, use the
+prefix `ippool:`, e.g. `ippool:/oracle/public/ippool`.
 
 
 ## See Also

@@ -10,7 +10,7 @@ Provides a CBS resource.
 
 `StorageSize` - (Required) Size of the storage (GB). The value range is 10GB - 4,000GB (HDD cloud storages), 500GB - 4,000GB (Premium cloud storages), 100GB - 4,000GB (SSD cloud storages). The increment is 10GB. **NOTE**,  `StorageSize` do not support modification.
 
-`Period` - (Required) The tenancy (time unit is month) of the perpaid storage, the legal values are [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 24, 36, 48, 60]. **NOTE**, `Period` do not support modification.
+`Period` - (Required) The tenancy (time unit is month) of the prepaid storage, the legal values are [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 24, 36, 48, 60]. **NOTE**, `Period` do not support modification.
 
 `AvailabilityZone` - (Required) The available zone that the CBS instance locates at. **NOTE**, `AvailabilityZone` do not support modification.
 

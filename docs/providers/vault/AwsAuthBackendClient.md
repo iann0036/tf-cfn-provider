@@ -18,19 +18,27 @@ for more details.
 
 ## Properties
 
-`Backend` - (Optional) The path the AWS auth backend being configured was mounted at.  Defaults to `aws`.
+`Backend` - (Optional) The path the AWS auth backend being configured was
+mounted at.  Defaults to `aws`.
 
-`AccessKey` - (Optional) The AWS access key that Vault should use for the auth backend.
+`AccessKey` - (Optional) The AWS access key that Vault should use for the
+auth backend.
 
-`SecretKey` - (Optional) The AWS secret key that Vault should use for the auth backend.
+`SecretKey` - (Optional) The AWS secret key that Vault should use for the
+auth backend.
 
-`Ec2Endpoint` - (Optional) Override the URL Vault uses when making EC2 API calls.
+`Ec2Endpoint` - (Optional) Override the URL Vault uses when making EC2 API
+calls.
 
-`IamEndpoint` - (Optional) Override the URL Vault uses when making IAM API calls.
+`IamEndpoint` - (Optional) Override the URL Vault uses when making IAM API
+calls.
 
-`StsEndpoint` - (Optional) Override the URL Vault uses when making STS API calls.
+`StsEndpoint` - (Optional) Override the URL Vault uses when making STS API
+calls.
 
-`IamServerIdHeaderValue` - (Optional) The value to require in the `X-Vault-AWS-IAM-Server-ID` header as part of `GetCallerIdentity` requests that are used in the IAM auth method.
+`IamServerIdHeaderValue` - (Optional) The value to require in the
+`X-Vault-AWS-IAM-Server-ID` header as part of `GetCallerIdentity` requests
+that are used in the IAM auth method.
 
 
 ## See Also

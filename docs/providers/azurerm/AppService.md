@@ -24,6 +24,8 @@ Manages an App Service (within an App Service Plan).
 
 `HttpsOnly` - (Optional) Can the App Service only be accessed via HTTPS? Defaults to `false`.
 
+`ClientCertEnabled` - (Optional) Does the App Service require client certificates for incoming requests? Defaults to `false`.
+
 `SiteConfig` - (Optional) A `SiteConfig` block as defined below.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.

@@ -4,9 +4,14 @@ Creates and manages service account key-pairs, which allow the user to establish
 
 ## Properties
 
-`ServiceAccountId` - (Required) The Service account id of the Key Pair. This can be a string in the format `{ACCOUNT}` or `projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}`, where `{ACCOUNT}` is the email address or unique id of the service account. If the `{ACCOUNT}` syntax is used, the project will be inferred from the account.
+`ServiceAccountId` - (Required) The Service account id of the Key Pair. This can be a string in the format
+`{ACCOUNT}` or `projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}`, where `{ACCOUNT}` is the email address or
+unique id of the service account. If the `{ACCOUNT}` syntax is used, the project will be inferred from the account.
 
-`KeyAlgorithm` - (Optional) The algorithm used to generate the key. KEY_ALG_RSA_2048 is the default algorithm. Valid values are listed at [ServiceAccountPrivateKeyType](https://cloud.google.com/iam/reference/rest/v1/projects.serviceAccounts.keys#ServiceAccountKeyAlgorithm) (only used on create).
+`KeyAlgorithm` - (Optional) The algorithm used to generate the key. KEY_ALG_RSA_2048 is the default algorithm.
+Valid values are listed at
+[ServiceAccountPrivateKeyType](https://cloud.google.com/iam/reference/rest/v1/projects.serviceAccounts.keys#ServiceAccountKeyAlgorithm)
+(only used on create).
 
 
 ## Return Values

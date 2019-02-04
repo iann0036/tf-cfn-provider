@@ -13,11 +13,13 @@ use a [Shared Environment](https://www.runscope.com/docs/api-testing/environment
 
 `BucketId` - (Required) The id of the bucket to associate this environment with.
 
-`TestId` - (Optional) The id of the test to associate this environment with. If given, creates a test specific environment, otherwise creates a shared environment.
+`TestId` - (Optional) The id of the test to associate this environment with.
+If given, creates a test specific environment, otherwise creates a shared environment.
 
 `Name` - (Required) The name of environment.
 
-`Script` - (Optional) The [script](https://www.runscope.com/docs/api-testing/scripts#initial-script) to to run to setup the environment.
+`Script` - (Optional) The [script](https://www.runscope.com/docs/api-testing/scripts#initial-script)
+to to run to setup the environment.
 
 `PreserveCookies` - (Optional) If this is set to true, tests using this enviornment will manage cookies between steps.
 
@@ -27,7 +29,8 @@ use a [Shared Environment](https://www.runscope.com/docs/api-testing/environment
 
 `Regions` - (Optional) A list of [Runscope regions](https://www.runscope.com/docs/regions) to execute test runs in when using this environment.
 
-`RemoteAgents` - (Optional) A list of [Remote Agents](https://www.runscope.com/docs/api/agents) to execute test runs in when using this environment. Remote Agents documented below.
+`RemoteAgents` - (Optional) A list of [Remote Agents](https://www.runscope.com/docs/api/agents) to execute test runs in when using this environment.
+Remote Agents documented below.
 
 ### RemoteAgents Properties
 

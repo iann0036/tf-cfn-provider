@@ -18,15 +18,15 @@ Provides a resource to configure logical DHCP server on NSX-T manager
 
 `DnsNameServers` - (Optional) DNS IPs.
 
-`DhcpOption121` - (Optional) DHCP classless static routes. * `Network` - (Required) Destination in cidr format. * `NextHop` - (Required) IP address of next hop.
+`DhcpOption121` - (Optional) DHCP classless static routes.
 
-`Network` - (Required) Destination in cidr format. * `NextHop` - (Required) IP address of next hop.
+`Network` - (Required) Destination in cidr format.
 
 `NextHop` - (Required) IP address of next hop.
 
-`DhcpGenericOption` - (Optional) Generic DHCP options. * `Code` - (Required) DHCP option code. Valid values are from 0 to 255. * `Values` - (Required) List of DHCP option values.
+`DhcpGenericOption` - (Optional) Generic DHCP options.
 
-`Code` - (Required) DHCP option code. Valid values are from 0 to 255. * `Values` - (Required) List of DHCP option values.
+`Code` - (Required) DHCP option code. Valid values are from 0 to 255.
 
 `Values` - (Required) List of DHCP option values.
 

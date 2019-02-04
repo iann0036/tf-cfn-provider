@@ -6,79 +6,182 @@ Manages resource cluster within OpenTelekomCloud MRS.
 
 `BillingType` - (Required) The value is 12, indicating on-demand payment.
 
-`Region` - (Required) Cluster region information. Obtain the value from Regions and Endpoints.
+`Region` - (Required) Cluster region information. Obtain the value from
+Regions and Endpoints.
 
 `MasterNodeNum` - (Required) Number of Master nodes The value is 2.
 
-`MasterNodeSize` - (Required) Best match based on several years of commissioning experience. MRS supports specifications of hosts, and host specifications are determined by CPUs, memory, and disks space. Master nodes support h1.2xlarge.linux.mrs h1.4xlarge.linux.mrs, h1.8xlarge.linux.mrs, s1.4xlarge.linux.mrs, and s1.8xlarge.linux.mrs. Core nodes of a streaming cluster support all specifications c2.2xlarge.linux.mrs, c2.4xlarge.linux.mrs, s1.xlarge.linux.mrs, s1.4xlarge.linux.mrs, s1.8xlarge.linux.mrs, d1.xlarge.linux.mrs, d1.2xlarge.linux.mrs, d1.4xlarge.linux.mrs, d1.8xlarge.linux.mrs, h1.2xlarge.linux.mrs, h1.4xlarge.linux.mrs and h1.8xlarge.linux.mrs. Task nodes support c2.2xlarge.linux.mrs, c2.4xlarge.linux.mrs, s1.xlarge.linux.mrs, s1.4xlarge.linux.mrs, s1.8xlarge.linux.mrs, h1.2xlarge.linux.mrs, h1.4xlarge.linux.mrs, and h1.8xlarge.linux.mrs.
+`MasterNodeSize` - (Required) Best match based on several years of commissioning
+experience. MRS supports specifications of hosts, and host specifications are
+determined by CPUs, memory, and disks space. Master nodes support h1.2xlarge.linux.mrs
+h1.4xlarge.linux.mrs, h1.8xlarge.linux.mrs, s1.4xlarge.linux.mrs,
+and s1.8xlarge.linux.mrs. Core nodes of a streaming cluster support all specifications
+c2.2xlarge.linux.mrs, c2.4xlarge.linux.mrs, s1.xlarge.linux.mrs, s1.4xlarge.linux.mrs,
+s1.8xlarge.linux.mrs, d1.xlarge.linux.mrs, d1.2xlarge.linux.mrs, d1.4xlarge.linux.mrs,
+d1.8xlarge.linux.mrs, h1.2xlarge.linux.mrs, h1.4xlarge.linux.mrs and h1.8xlarge.linux.mrs.
+Task nodes support c2.2xlarge.linux.mrs, c2.4xlarge.linux.mrs, s1.xlarge.linux.mrs,
+s1.4xlarge.linux.mrs, s1.8xlarge.linux.mrs, h1.2xlarge.linux.mrs, h1.4xlarge.linux.mrs,
+and h1.8xlarge.linux.mrs.
 
-`CoreNodeNum` - (Required) Number of Core nodes Value range: 1 to 500 A maximum of 500 Core nodes are supported by default. If more than 500 Core nodes are required, contact technical support engineers or invoke background APIs to modify the database.
+`CoreNodeNum` - (Required) Number of Core nodes Value range: 1 to 500 A
+maximum of 500 Core nodes are supported by default. If more than 500 Core nodes
+are required, contact technical support engineers or invoke background APIs
+to modify the database.
 
-`CoreNodeSize` - (Required) Instance specification of a Core node Configuration method of this parameter is identical to that of master_node_size.
+`CoreNodeSize` - (Required) Instance specification of a Core node Configuration
+method of this parameter is identical to that of master_node_size.
 
-`AvailableZoneId` - (Required) ID of an available zone. Obtain the value from Regions and Endpoints.
+`AvailableZoneId` - (Required) ID of an available zone. Obtain the value
+from Regions and Endpoints.
 
-`ClusterName` - (Required) Cluster name, which is globally unique and contains only 1 to 64 letters, digits, hyphens (-), and underscores (_).
+`ClusterName` - (Required) Cluster name, which is globally unique and contains
+only 1 to 64 letters, digits, hyphens (-), and underscores (_).
 
-`VpcId` - (Required) ID of the VPC where the subnet locates Obtain the VPC ID from the management console as follows: Register an account and log in to the management console. Click Virtual Private Cloud and select Virtual Private Cloud from the left list. On the Virtual Private Cloud page, obtain the VPC ID from the list.
+`VpcId` - (Required) ID of the VPC where the subnet locates Obtain the VPC
+ID from the management console as follows: Register an account and log in to
+the management console. Click Virtual Private Cloud and select Virtual Private
+Cloud from the left list. On the Virtual Private Cloud page, obtain the VPC
+ID from the list.
 
-`SubnetId` - (Required) Subnet ID Obtain the subnet ID from the management console as follows: Register an account and log in to the management console. Click Virtual Private Cloud and select Virtual Private Cloud from the left list. On the Virtual Private Cloud page, obtain the subnet ID from the list.
+`SubnetId` - (Required) Subnet ID Obtain the subnet ID from the management
+console as follows: Register an account and log in to the management console.
+Click Virtual Private Cloud and select Virtual Private Cloud from the left list.
+On the Virtual Private Cloud page, obtain the subnet ID from the list.
 
-`ClusterVersion` - (Optional) Version of the clusters Currently, MRS 1.2, MRS 1.3.0, MRS 1.5.0, MRS 1.6.0 and MRS 1.6.3 are supported. The latest version of MRS is used by default. Currently, the latest version is MRS 1.6.3.
+`ClusterVersion` - (Optional) Version of the clusters Currently, MRS 1.2, MRS 1.3.0,
+MRS 1.5.0, MRS 1.6.0 and MRS 1.6.3 are supported. The latest version of MRS is used
+by default. Currently, the latest version is MRS 1.6.3.
 
-`ClusterType` - (Optional) Type of clusters 0: analysis cluster 1: streaming cluster The default value is 0.
+`ClusterType` - (Optional) Type of clusters 0: analysis cluster 1: streaming
+cluster The default value is 0.
 
-`VolumeType` - (Required) Type of disks SATA and SSD are supported. SATA: common I/O SSD: super high-speed I/O.
+`VolumeType` - (Required) Type of disks SATA and SSD are supported. SATA:
+common I/O SSD: super high-speed I/O.
 
-`VolumeSize` - (Required) Data disk storage space of a Core node Users can add disks to expand storage capacity when creating a cluster. There are the following scenarios: Separation of data storage and computing: Data is stored in the OBS system. Costs of clusters are relatively low but computing performance is poor. The clusters can be deleted at any time. It is recommended when data computing is not frequently performed. Integration of data storage and computing: Data is stored in the HDFS system. Costs of clusters are relatively high but computing performance is good. The clusters cannot be deleted in a short term. It is recommended when data computing is frequently performed. Value range: 100 GB to 32000 GB.
+`VolumeSize` - (Required) Data disk storage space of a Core node Users can
+add disks to expand storage capacity when creating a cluster. There are the
+following scenarios: Separation of data storage and computing: Data is stored
+in the OBS system. Costs of clusters are relatively low but computing performance
+is poor. The clusters can be deleted at any time. It is recommended when data
+computing is not frequently performed. Integration of data storage and computing:
+Data is stored in the HDFS system. Costs of clusters are relatively high but
+computing performance is good. The clusters cannot be deleted in a short term.
+It is recommended when data computing is frequently performed. Value range:
+100 GB to 32000 GB.
 
-`NodePublicCertName` - (Required) Name of a key pair You can use a key to log in to the Master node in the cluster.
+`NodePublicCertName` - (Required) Name of a key pair You can use a key
+to log in to the Master node in the cluster.
 
-`SafeMode` - (Required) MRS cluster running mode 0: common mode The value indicates that the Kerberos authentication is disabled. Users can use all functions provided by the cluster. 1: safe mode The value indicates that the Kerberos authentication is enabled. Common users cannot use the file management or job management functions of an MRS cluster and cannot view cluster resource usage or the job records of Hadoop and Spark. To use these functions, the users must obtain the relevant permissions from the MRS Manager administrator. The request has the cluster_admin_secret parameter only when safe_mode is set to 1.
+`SafeMode` - (Required) MRS cluster running mode 0: common mode The value
+indicates that the Kerberos authentication is disabled. Users can use all functions
+provided by the cluster. 1: safe mode The value indicates that the Kerberos
+authentication is enabled. Common users cannot use the file management or job
+management functions of an MRS cluster and cannot view cluster resource usage
+or the job records of Hadoop and Spark. To use these functions, the users must
+obtain the relevant permissions from the MRS Manager administrator. The request
+has the cluster_admin_secret parameter only when safe_mode is set to 1.
 
-`ClusterAdminSecret` - (Optional) Indicates the password of the MRS Manager administrator. The password for MRS 1.5.0: Must contain 6 to 32 characters. Must contain at least two types of the following: Lowercase letters Uppercase letters Digits Special characters of `~!@#$%^&*()-_=+\|[{}];:'",<.>/? Spaces Must be different from the username. Must be different from the username written in reverse order. The password for MRS 1.3.0: Must contain 8 to 64 characters. Must contain at least four types of the following: Lowercase letters Uppercase letters Digits Special characters of `~!@#$%^&*()-_=+\|[{}];:'",<.>/? Spaces Must be different from the username. Must be different from the username written in reverse order. This parameter needs to be configured only when safe_mode is set to 1.
+`ClusterAdminSecret` - (Optional) Indicates the password of the MRS Manager
+administrator. The password for MRS 1.5.0: Must contain 6 to 32 characters.
+Must contain at least two types of the following: Lowercase letters Uppercase
+letters Digits Special characters of `~!@#$%^&*()-_=+\|[{}];:'",<.>/? Spaces
+Must be different from the username. Must be different from the username written
+in reverse order. The password for MRS 1.3.0: Must contain 8 to 64 characters.
+Must contain at least four types of the following: Lowercase letters Uppercase
+letters Digits Special characters of `~!@#$%^&*()-_=+\|[{}];:'",<.>/? Spaces
+Must be different from the username. Must be different from the username written
+in reverse order. This parameter needs to be configured only when safe_mode
+is set to 1.
 
-`LogCollection` - (Optional) Indicates whether logs are collected when cluster installation fails. 0: not collected 1: collected The default value is 0. If log_collection is set to 1, OBS buckets will be created to collect the MRS logs. These buckets will be charged.
+`LogCollection` - (Optional) Indicates whether logs are collected when cluster
+installation fails. 0: not collected 1: collected The default value is 0. If
+log_collection is set to 1, OBS buckets will be created to collect the MRS logs.
+These buckets will be charged.
 
 `ComponentList` - (Required) Service component list.
 
-`AddJobs` - (Optional) You can submit a job when you create a cluster to save time and use MRS easily. Only one job can be added.
+`AddJobs` - (Optional) You can submit a job when you create a cluster to
+save time and use MRS easily. Only one job can be added.
 
 ### ComponentList Properties
 
-`ComponentName` - (Required) Component name Currently, Hadoop, Spark, HBase, Hive, Hue, Loader, Flume, Kafka and Storm are supported. Loader and Flume are not supported by MRS 1.3.0. Kafka and Storm are not supported by MRS 1.2.
+`ComponentName` - (Required) Component name Currently, Hadoop, Spark, HBase,
+Hive, Hue, Loader, Flume, Kafka and Storm are supported. Loader and Flume are
+not supported by MRS 1.3.0. Kafka and Storm are not supported by MRS 1.2.
 
-`ComponentId` - Component ID Component IDs supported by MRS 1.5.0 include: MRS 1.5.0_001: Hadoop MRS 1.5.0_002: Spark MRS 1.5.0_003: HBase MRS 1.5.0_004: Hive MRS 1.5.0_005: Hue MRS 1.5.0_006: Kafka MRS 1.5.0_007: Storm MRS 1.5.0_008: Loader MRS 1.5.0_009: Flume Component IDs supported by MRS 1.3.0 include: MRS 1.3.0_001: Hadoop MRS 1.3.0_002: Spark MRS 1.3.0_003: HBase MRS 1.3.0_004: Hive MRS 1.3.0_005: Hue MRS 1.3.0_006: Kafka MRS 1.3.0_007: Storm For example, the component ID of Hadoop is MRS 1.5.0_001, or MRS 1.3.0_001.
+`ComponentId` - Component ID Component IDs supported by MRS 1.5.0 include:
+MRS 1.5.0_001: Hadoop MRS 1.5.0_002: Spark MRS 1.5.0_003: HBase MRS 1.5.0_004:
+Hive MRS 1.5.0_005: Hue MRS 1.5.0_006: Kafka MRS 1.5.0_007: Storm MRS 1.5.0_008:
+Loader MRS 1.5.0_009: Flume Component IDs supported by MRS 1.3.0 include: MRS
+1.3.0_001: Hadoop MRS 1.3.0_002: Spark MRS 1.3.0_003: HBase MRS 1.3.0_004: Hive
+MRS 1.3.0_005: Hue MRS 1.3.0_006: Kafka MRS 1.3.0_007: Storm For example, the
+component ID of Hadoop is MRS 1.5.0_001, or MRS 1.3.0_001.
 
-`ComponentName` - Component name Currently, Hadoop, Spark, HBase, Hive, Hue, Loader, Flume, Kafka and Storm are supported. Loader and Flume are not supported by MRS 1.3.0.
+`ComponentName` - Component name Currently, Hadoop, Spark, HBase, Hive, Hue,
+Loader, Flume, Kafka and Storm are supported. Loader and Flume are not supported
+by MRS 1.3.0.
 
-`ComponentVersion` - Component version MRS 1.5.0 supports the following component version: Component version of an analysis cluster: Hadoop: 2.7.2 Spark: 2.1.0 HBase: 1.0.2 Hive: 1.2.1 Hue: 3.11.0 Loader: 2.0.0 Component version of a streaming cluster: Kafka: 0.10.0.0 Storm: 1.0.2 Flume: 1.6.0 MRS 1.3.0 supports the following component version: Component version of an analysis cluster: Hadoop: 2.7.2 Spark: 1.5.1 HBase: 1.0.2 Hive: 1.2.1 Hue: 3.11.0 Component version of a streaming cluster: Kafka: 0.10.0.0 Storm: 1.0.2.
+`ComponentVersion` - Component version MRS 1.5.0 supports the following component
+version: Component version of an analysis cluster: Hadoop: 2.7.2 Spark: 2.1.0
+HBase: 1.0.2 Hive: 1.2.1 Hue: 3.11.0 Loader: 2.0.0 Component version of a streaming
+cluster: Kafka: 0.10.0.0 Storm: 1.0.2 Flume: 1.6.0 MRS 1.3.0 supports the following
+component version: Component version of an analysis cluster: Hadoop: 2.7.2 Spark:
+1.5.1 HBase: 1.0.2 Hive: 1.2.1 Hue: 3.11.0 Component version of a streaming
+cluster: Kafka: 0.10.0.0 Storm: 1.0.2.
 
 `ComponentDesc` - Component description.
 
-`JobType` - (Required) Job type 1: MapReduce 2: Spark 3: Hive Script 4: HiveQL (not supported currently) 5: DistCp, importing and exporting data (not supported in this API currently). 6: Spark Script 7: Spark SQL, submitting Spark SQL statements (not supported in this API currently). NOTE: Spark and Hive jobs can be added to only clusters including Spark and Hive components.
+`JobType` - (Required) Job type 1: MapReduce 2: Spark 3: Hive Script 4: HiveQL
+(not supported currently) 5: DistCp, importing and exporting data (not supported
+in this API currently). 6: Spark Script 7: Spark SQL, submitting Spark SQL statements
+(not supported in this API currently). NOTE: Spark and Hive jobs can be added
+to only clusters including Spark and Hive components.
 
-`JobName` - (Required) Job name It contains only 1 to 64 letters, digits, hyphens (-), and underscores (_). NOTE: Identical job names are allowed but not recommended.
+`JobName` - (Required) Job name It contains only 1 to 64 letters, digits,
+hyphens (-), and underscores (_). NOTE: Identical job names are allowed but
+not recommended.
 
-`JarPath` - (Required) Path of the .jar file or .sql file for program execution The parameter must meet the following requirements: Contains a maximum of 1023 characters, excluding special characters such as ;|&><'$. The address cannot be empty or full of spaces. Starts with / or s3a://. Spark Script must end with .sql; while MapReduce and Spark Jar must end with .jar. sql and jar are case-insensitive.
+`JarPath` - (Required) Path of the .jar file or .sql file for program execution
+The parameter must meet the following requirements: Contains a maximum of 1023
+characters, excluding special characters such as ;|&><'$. The address cannot
+be empty or full of spaces. Starts with / or s3a://. Spark Script must end with
+.sql; while MapReduce and Spark Jar must end with .jar. sql and jar are case-insensitive.
 
-`Arguments` - (Optional) Key parameter for program execution The parameter is specified by the function of the user's program. MRS is only responsible for loading the parameter. The parameter contains a maximum of 2047 characters, excluding special characters such as ;|&>'<$, and can be empty.
+`Arguments` - (Optional) Key parameter for program execution The parameter
+is specified by the function of the user's program. MRS is only responsible
+for loading the parameter. The parameter contains a maximum of 2047 characters,
+excluding special characters such as ;|&>'<$, and can be empty.
 
-`Input` - (Optional) Path for inputting data, which must start with / or s3a://. A correct OBS path is required. The parameter contains a maximum of 1023 characters, excluding special characters such as ;|&>'<$, and can be empty.
+`Input` - (Optional) Path for inputting data, which must start with / or s3a://.
+A correct OBS path is required. The parameter contains a maximum of 1023 characters,
+excluding special characters such as ;|&>'<$, and can be empty.
 
-`Output` - (Optional) Path for outputting data, which must start with / or s3a://. A correct OBS path is required. If the path does not exist, the system automatically creates it. The parameter contains a maximum of 1023 characters, excluding special characters such as ;|&>'<$, and can be empty.
+`Output` - (Optional) Path for outputting data, which must start with / or
+s3a://. A correct OBS path is required. If the path does not exist, the system
+automatically creates it. The parameter contains a maximum of 1023 characters,
+excluding special characters such as ;|&>'<$, and can be empty.
 
-`JobLog` - (Optional) Path for storing job logs that record job running status. This path must start with / or s3a://. A correct OBS path is required. The parameter contains a maximum of 1023 characters, excluding special characters such as ;|&>'<$, and can be empty.
+`JobLog` - (Optional) Path for storing job logs that record job running status.
+This path must start with / or s3a://. A correct OBS path is required. The parameter
+contains a maximum of 1023 characters, excluding special characters such as
+;|&>'<$, and can be empty.
 
-`ShutdownCluster` - (Optional) Whether to delete the cluster after the jobs are complete true: Yes false: No.
+`ShutdownCluster` - (Optional) Whether to delete the cluster after the jobs
+are complete true: Yes false: No.
 
 `FileAction` - (Optional) Data import and export import export.
 
-`SubmitJobOnceClusterRun` - (Required) true: A job is submitted when a cluster is created. false: A job is submitted separately. The parameter is set to true in this example.
+`SubmitJobOnceClusterRun` - (Required) true: A job is submitted when a
+cluster is created. false: A job is submitted separately. The parameter is set
+to true in this example.
 
 `Hql` - (Optional) HiveQL statement.
 
-`HiveScriptPath` - (Optional) SQL program path This parameter is needed by Spark Script and Hive Script jobs only and must meet the following requirements: Contains a maximum of 1023 characters, excluding special characters such as ;|&><'$. The address cannot be empty or full of spaces. Starts with / or s3a://. Ends with .sql. sql is case-insensitive.
+`HiveScriptPath` - (Optional) SQL program path This parameter is needed
+by Spark Script and Hive Script jobs only and must meet the following requirements:
+Contains a maximum of 1023 characters, excluding special characters such as
+;|&><'$. The address cannot be empty or full of spaces. Starts with / or s3a://.
+Ends with .sql. sql is case-insensitive.
 
 
 ## Return Values

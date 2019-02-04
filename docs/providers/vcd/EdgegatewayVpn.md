@@ -29,6 +29,10 @@ modify, and delete VPN settings and rules.
 
 `PeerSubnets` - (Required) - List of Peer Subnets see [Peer Subnets](#peersubnets) below for details.
 
+`Org` - (Optional; *v2.0+*) The name of organization to use, optional if defined at provider level. Useful when connected as sysadmin working across different organisations.
+
+`Vdc` - (Optional; *v2.0+*) The name of VDC to use, optional if defined at provider level.
+
 
 ## See Also
 

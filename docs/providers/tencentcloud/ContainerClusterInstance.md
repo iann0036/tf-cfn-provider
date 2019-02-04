@@ -65,7 +65,7 @@ Provides a Container Cluster Instance resource.
 
 `WanIp` - Describe the wan ip of the node.
 
-`LanIp` - Descirbe the lan ip of the node.
+`LanIp` - Describe the lan ip of the node.
 
 ## See Also
 

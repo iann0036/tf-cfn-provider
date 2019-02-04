@@ -18,7 +18,8 @@ Provides a Route53 record resource.
 
 `HealthCheckId` - (Optional) The health check the record should be associated with.
 
-`Alias` - (Optional) An alias block. Conflicts with `Ttl` & `Records`. Alias record documented below.
+`Alias` - (Optional) An alias block. Conflicts with `Ttl` & `Records`.
+Alias record documented below.
 
 `FailoverRoutingPolicy` - (Optional) A block indicating the routing behavior when associated health check fails. Conflicts with any other routing policy. Documented below.
 

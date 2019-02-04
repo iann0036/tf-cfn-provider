@@ -10,9 +10,9 @@ Create a new node pool.
 
 `CompartmentId` - (Required) The OCID of the compartment in which the node pool exists.
 
-`InitialNodeLabels` - (Optional) (Updatable) A list of key/value pairs to add to nodes after they join the Kubernetes cluster. * `Key` - (Optional) (Updatable) The key of the pair. * `Value` - (Optional) (Updatable) The value of the pair.
+`InitialNodeLabels` - (Optional) (Updatable) A list of key/value pairs to add to nodes after they join the Kubernetes cluster.
 
-`Key` - (Optional) (Updatable) The key of the pair. * `Value` - (Optional) (Updatable) The value of the pair.
+`Key` - (Optional) (Updatable) The key of the pair.
 
 `Value` - (Optional) (Updatable) The value of the pair.
 

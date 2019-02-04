@@ -33,17 +33,22 @@ the Profile Setting is set to `None`.
 
 ## Properties
 
-`Vsys` - (Optional) The vsys to put the security policy into (default: `vsys1`).
+`Vsys` - (Optional) The vsys to put the security policy into (default:
+`vsys1`).
 
-`Rulebase` - (Optional, Deprecated) The rulebase.  For firewalls, there is only the `Rulebase` value (default), but on Panorama, there is also `pre-rulebase` and `post-rulebase`.
+`Rulebase` - (Optional, Deprecated) The rulebase.  For firewalls, there is only the
+`Rulebase` value (default), but on Panorama, there is also `pre-rulebase`
+and `post-rulebase`.
 
-`Rule` - A security rule definition (see below).  The security rule ordering will match how they appear in the terraform plan file.
+`Rule` - A security rule definition (see below).  The security rule
+ordering will match how they appear in the terraform plan file.
 
 ### Rule Properties
 
 `Name` - (Required) The security rule name.
 
-`Type` - (Optional) Rule type.  This can be `universal` (default), `interzone`, or `intrazone`.
+`Type` - (Optional) Rule type.  This can be `universal` (default),
+`interzone`, or `intrazone`.
 
 `Description` - (Optional) The description.
 
@@ -71,7 +76,8 @@ the Profile Setting is set to `None`.
 
 `Categories` - (Required) List of categories.
 
-`Action` - (Optional) Action for the matched traffic.  This can be `allow` (default), `deny`, `drop`, `reset-client`, `reset-server`, or `reset-both`.
+`Action` - (Optional) Action for the matched traffic.  This can be `allow`
+(default), `deny`, `drop`, `reset-client`, `reset-server`, or `reset-both`.
 
 `LogSetting` - (Optional) Log forwarding profile.
 
@@ -85,23 +91,30 @@ the Profile Setting is set to `None`.
 
 `IcmpUnreachable` - (Optional) Set to `true` to enable ICMP unreachable.
 
-`DisableServerResponseInspection` - (Optional) Set to `true` to disable server response inspection.
+`DisableServerResponseInspection` - (Optional) Set to `true` to disable
+server response inspection.
 
 `Group` - (Optional) Profile Setting: `Group` - The group profile name.
 
 `Virus` - (Optional) Profile Setting: `Profiles` - The antivirus setting.
 
-`Spyware` - (Optional) Profile Setting: `Profiles` - The anti-spyware setting.
+`Spyware` - (Optional) Profile Setting: `Profiles` - The anti-spyware
+setting.
 
-`Vulnerability` - (Optional) Profile Setting: `Profiles` - The Vulnerability Protection setting.
+`Vulnerability` - (Optional) Profile Setting: `Profiles` - The Vulnerability
+Protection setting.
 
-`UrlFiltering` - (Optional) Profile Setting: `Profiles` - The URL filtering setting.
+`UrlFiltering` - (Optional) Profile Setting: `Profiles` - The URL filtering
+setting.
 
-`FileBlocking` - (Optional) Profile Setting: `Profiles` - The file blocking setting.
+`FileBlocking` - (Optional) Profile Setting: `Profiles` - The file blocking
+setting.
 
-`WildfireAnalysis` - (Optional) Profile Setting: `Profiles` - The WildFire Analysis setting.
+`WildfireAnalysis` - (Optional) Profile Setting: `Profiles` - The WildFire
+Analysis setting.
 
-`DataFiltering` - (Optional) Profile Setting: `Profiles` - The Data Filtering setting.
+`DataFiltering` - (Optional) Profile Setting: `Profiles` - The Data
+Filtering setting.
 
 
 ## See Also

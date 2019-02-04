@@ -4,37 +4,53 @@ Manages a V1 AS Policy resource within HuaweiCloud.
 
 ## Properties
 
-`Region` - (Optional) The region in which to create the AS policy. If omitted, the `Region` argument of the provider is used. Changing this creates a new AS policy.
+`Region` - (Optional) The region in which to create the AS policy. If
+omitted, the `Region` argument of the provider is used. Changing this
+creates a new AS policy.
 
-`ScalingPolicyName` - (Required) The name of the AS policy. The name can contain letters, digits, underscores(_), and hyphens(-),and cannot exceed 64 characters.
+`ScalingPolicyName` - (Required) The name of the AS policy. The name can contain letters,
+digits, underscores(_), and hyphens(-),and cannot exceed 64 characters.
 
 `ScalingGroupId` - (Required) The AS group ID. Changing this creates a new AS policy.
 
-`ScalingPolicyType` - (Required) The AS policy type. The values can be `ALARM`, `SCHEDULED`, and `RECURRENCE`.
+`ScalingPolicyType` - (Required) The AS policy type. The values can be `ALARM`, `SCHEDULED`,
+and `RECURRENCE`.
 
-`AlarmId` - (Optional) The alarm rule ID. This argument is mandatory when `ScalingPolicyType` is set to `ALARM`.
+`AlarmId` - (Optional) The alarm rule ID. This argument is mandatory
+when `ScalingPolicyType` is set to `ALARM`.
 
-`ScheduledPolicy` - (Optional) The periodic or scheduled AS policy. This argument is mandatory when `ScalingPolicyType` is set to `SCHEDULED` or `RECURRENCE`. The scheduled_policy structure is documented below.
+`ScheduledPolicy` - (Optional) The periodic or scheduled AS policy. This argument is mandatory
+when `ScalingPolicyType` is set to `SCHEDULED` or `RECURRENCE`. The scheduled_policy structure
+is documented below.
 
-`ScalingPolicyAction` - (Optional) The action of the AS policy. The scaling_policy_action structure is documented below.
+`ScalingPolicyAction` - (Optional) The action of the AS policy. The scaling_policy_action
+structure is documented below.
 
 `CoolDownTime` - (Optional) The cooling duration (in seconds), and is 900 by default.
 
 ### ScheduledPolicy Properties
 
-`LaunchTime` - (Required) The time when the scaling action is triggered. If `ScalingPolicyType` is set to `SCHEDULED`, the time format is YYYY-MM-DDThh:mmZ. If `ScalingPolicyType` is set to `RECURRENCE`, the time format is hh:mm.
+`LaunchTime` - (Required) The time when the scaling action is triggered. If `ScalingPolicyType`
+is set to `SCHEDULED`, the time format is YYYY-MM-DDThh:mmZ. If `ScalingPolicyType` is set to
+`RECURRENCE`, the time format is hh:mm.
 
-`RecurrenceType` - (Optional) The periodic triggering type. This argument is mandatory when `ScalingPolicyType` is set to `RECURRENCE`. The options include `Daily`, `Weekly`, and `Monthly`.
+`RecurrenceType` - (Optional) The periodic triggering type. This argument is mandatory when
+`ScalingPolicyType` is set to `RECURRENCE`. The options include `Daily`, `Weekly`, and `Monthly`.
 
 `RecurrenceValue` - (Optional) The frequency at which scaling actions are triggered.
 
-`StartTime` - (Optional) The start time of the scaling action triggered periodically. The time format complies with UTC. The current time is used by default. The time format is YYYY-MM-DDThh:mmZ.
+`StartTime` - (Optional) The start time of the scaling action triggered periodically.
+The time format complies with UTC. The current time is used by default. The time
+format is YYYY-MM-DDThh:mmZ.
 
-`EndTime` - (Optional) The end time of the scaling action triggered periodically. The time format complies with UTC. This argument is mandatory when `ScalingPolicyType` is set to `RECURRENCE`. The time format is YYYY-MM-DDThh:mmZ.
+`EndTime` - (Optional) The end time of the scaling action triggered periodically.
+The time format complies with UTC. This argument is mandatory when `ScalingPolicyType`
+is set to `RECURRENCE`. The time format is YYYY-MM-DDThh:mmZ.
 
 ### ScalingPolicyAction Properties
 
-`Operation` - (Optional) The operation to be performed. The options include `ADD` (default), `REMOVE`, and `SET`.
+`Operation` - (Optional) The operation to be performed. The options include `ADD` (default), `REMOVE`,
+and `SET`.
 
 `InstanceNumber` - (Optional) The number of instances to be operated. The default number is 1.
 

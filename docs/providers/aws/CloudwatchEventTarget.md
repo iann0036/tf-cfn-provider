@@ -12,7 +12,8 @@ Provides a CloudWatch Event Target resource.
 
 `Input` - (Optional) Valid JSON text passed to the target.
 
-`InputPath` - (Optional) The value of the [JSONPath](http://goessner.net/articles/JsonPath/) that is used for extracting part of the matched event when passing it to the target.
+`InputPath` - (Optional) The value of the [JSONPath](http://goessner.net/articles/JsonPath/)
+that is used for extracting part of the matched event when passing it to the target.
 
 `RoleArn` - (Optional) The Amazon Resource Name (ARN) of the IAM role to be used for this target when the rule is triggered. Required if `EcsTarget` is used.
 

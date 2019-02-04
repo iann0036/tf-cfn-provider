@@ -14,7 +14,8 @@ to the downstream stages.
 
 `Pipeline` - (Required) The ID of the pipeline to add this app to.
 
-`Stage` - (Required) The stage to couple this app to. Must be one of `review`, `development`, `staging`, or `production`.
+`Stage` - (Required) The stage to couple this app to. Must be one of
+`review`, `development`, `staging`, or `production`.
 
 
 ## Return Values

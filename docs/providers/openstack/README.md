@@ -21,6 +21,19 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 * `user_id` - (Optional) The User ID to login with.
 
+* `application_credential_id` - (Optional) (Identity v3 only) The ID of an
+    application credential to authenticate with. An
+    `application_credential_secret` has to bet set along with this parameter.
+
+* `application_credential_name` - (Optional) (Identity v3 only) The name of an
+    application credential to authenticate with. Conflicts with the
+    `application_credential_name`, requires `user_id`, or `user_name` and
+    `user_domain_name` (or `user_domain_id`) to be set.
+
+* `application_credential_secret` - (Optional) (Identity v3 only) The secret of an
+    application credential to authenticate with. Required by
+    `application_credential_id` or `application_credential_name`.
+
 * `tenant_id` - (Optional) The ID of the Tenant (Identity v2) or Project
   (Identity v3) to login with.
 
@@ -129,9 +142,11 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 * [Terraform::OpenStack::LbPoolV1](LbPoolV1.md)
 * [Terraform::OpenStack::LbPoolV2](LbPoolV2.md)
 * [Terraform::OpenStack::LbVipV1](LbVipV1.md)
+* [Terraform::OpenStack::NetworkingAddressscopeV2](NetworkingAddressscopeV2.md)
 * [Terraform::OpenStack::NetworkingFloatingipAssociateV2](NetworkingFloatingipAssociateV2.md)
 * [Terraform::OpenStack::NetworkingFloatingipV2](NetworkingFloatingipV2.md)
 * [Terraform::OpenStack::NetworkingNetworkV2](NetworkingNetworkV2.md)
+* [Terraform::OpenStack::NetworkingPortSecgroupAssociateV2](NetworkingPortSecgroupAssociateV2.md)
 * [Terraform::OpenStack::NetworkingPortV2](NetworkingPortV2.md)
 * [Terraform::OpenStack::NetworkingRouterInterfaceV2](NetworkingRouterInterfaceV2.md)
 * [Terraform::OpenStack::NetworkingRouterRouteV2](NetworkingRouterRouteV2.md)

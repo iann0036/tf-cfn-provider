@@ -6,9 +6,11 @@ Snapshots can also only be taken of instances that are not of brand `kvm`.
 
 ## Properties
 
-`Name` - (string, Required) The name for the snapshot.
+`Name` - (string, Required)
+The name for the snapshot.
 
-`MachineId` - (string, Required) The ID of the machine of which to take a snapshot.
+`MachineId` - (string, Required)
+The ID of the machine of which to take a snapshot.
 
 
 ## See Also

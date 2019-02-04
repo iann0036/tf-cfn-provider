@@ -15,11 +15,16 @@ exist concurrently.
 
 ## Properties
 
-`ByteLength` - (Required) The number of random bytes to produce. The minimum value is 1, which produces eight bits of randomness.
+`ByteLength` - (Required) The number of random bytes to produce. The
+minimum value is 1, which produces eight bits of randomness.
 
-`Keepers` - (Optional) Arbitrary map of values that, when changed, will trigger a new id to be generated. See [the main provider documentation](../index.html) for more information.
+`Keepers` - (Optional) Arbitrary map of values that, when changed, will
+trigger a new id to be generated. See
+[the main provider documentation](../index.html) for more information.
 
-`Prefix` - (Optional) Arbitrary string to prefix the output value with. This string is supplied as-is, meaning it is not guaranteed to be URL-safe or base64 encoded.
+`Prefix` - (Optional) Arbitrary string to prefix the output value with. This
+string is supplied as-is, meaning it is not guaranteed to be URL-safe or
+base64 encoded.
 
 
 ## Return Values

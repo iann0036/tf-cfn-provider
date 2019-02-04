@@ -13,7 +13,9 @@ exist concurrently.
 
 `Max` - (int) The maximum inclusive value of the range.
 
-`Keepers` - (Optional) Arbitrary map of values that, when changed, will trigger a new id to be generated. See [the main provider documentation](../index.html) for more information.
+`Keepers` - (Optional) Arbitrary map of values that, when changed, will
+trigger a new id to be generated. See
+[the main provider documentation](../index.html) for more information.
 
 `Seed` - (Optional) A custom seed to always produce the same value.
 

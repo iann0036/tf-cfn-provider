@@ -8,7 +8,8 @@ Provides a Glacier Vault Resource. You can refer to the [Glacier Developer Guide
 
 `Name` - (Required) The name of the Vault. Names can be between 1 and 255 characters long and the valid characters are a-z, A-Z, 0-9, '_' (underscore), '-' (hyphen), and '.' (period).
 
-`AccessPolicy` - (Optional) The policy document. This is a JSON formatted string. The heredoc syntax or `file` function is helpful here. Use the [Glacier Developer Guide](https://docs.aws.amazon.com/amazonglacier/latest/dev/vault-access-policy.html) for more information on Glacier Vault Policy.
+`AccessPolicy` - (Optional) The policy document. This is a JSON formatted string.
+The heredoc syntax or `file` function is helpful here. Use the [Glacier Developer Guide](https://docs.aws.amazon.com/amazonglacier/latest/dev/vault-access-policy.html) for more information on Glacier Vault Policy.
 
 `Notification` - (Optional) The notifications for the Vault. Fields documented below.
 

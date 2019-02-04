@@ -13,11 +13,21 @@ granted to the credentials used with terraform.
 
 `OrgId` - (Required) The numeric ID of the organization to be exported to the sink.
 
-`Destination` - (Required) The destination of the sink (or, in other words, where logs are written to). Can be a Cloud Storage bucket, a PubSub topic, or a BigQuery dataset. Examples: ``` "storage.googleapis.com/[GCS_BUCKET]" "bigquery.googleapis.com/projects/[PROJECT_ID]/datasets/[DATASET]" "pubsub.googleapis.com/projects/[PROJECT_ID]/topics/[TOPIC_ID]" ``` The writer associated with the sink must have access to write to the above resource.
+`Destination` - (Required) The destination of the sink (or, in other words, where logs are written to). Can be a
+Cloud Storage bucket, a PubSub topic, or a BigQuery dataset. Examples:
+```
+"storage.googleapis.com/[GCS_BUCKET]"
+"bigquery.googleapis.com/projects/[PROJECT_ID]/datasets/[DATASET]"
+"pubsub.googleapis.com/projects/[PROJECT_ID]/topics/[TOPIC_ID]"
+```
+The writer associated with the sink must have access to write to the above resource.
 
-`Filter` - (Optional) The filter to apply when exporting logs. Only log entries that match the filter are exported. See [Advanced Log Filters](https://cloud.google.com/logging/docs/view/advanced_filters) for information on how to write a filter.
+`Filter` - (Optional) The filter to apply when exporting logs. Only log entries that match the filter are exported.
+See [Advanced Log Filters](https://cloud.google.com/logging/docs/view/advanced_filters) for information on how to
+write a filter.
 
-`IncludeChildren` - (Optional) Whether or not to include children organizations in the sink export. If true, logs associated with child projects are also exported; otherwise only logs relating to the provided organization are included.
+`IncludeChildren` - (Optional) Whether or not to include children organizations in the sink export. If true, logs
+associated with child projects are also exported; otherwise only logs relating to the provided organization are included.
 
 
 ## Return Values

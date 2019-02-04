@@ -16,11 +16,14 @@ and
 
 `Name` - (Required) The name of the bucket.
 
-`ForceDestroy` - (Optional, Default: false) When deleting a bucket, this boolean option will delete all contained objects. If you try to delete a bucket that contains objects, Terraform will fail that run.
+`ForceDestroy` - (Optional, Default: false) When deleting a bucket, this
+boolean option will delete all contained objects. If you try to delete a
+bucket that contains objects, Terraform will fail that run.
 
 `Location` - (Optional, Default: 'US') The [GCS location](https://cloud.google.com/storage/docs/bucket-locations).
 
-`Project` - (Optional) The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
+`Project` - (Optional) The ID of the project in which the resource belongs. If it
+is not provided, the provider project is used.
 
 `StorageClass` - (Optional) The [Storage Class](https://cloud.google.com/storage/docs/storage-classes) of the new bucket. Supported values include: `MULTI_REGIONAL`, `REGIONAL`, `NEARLINE`, `COLDLINE`.
 
@@ -70,9 +73,11 @@ and
 
 ### Website Properties
 
-`MainPageSuffix` - (Optional) Behaves as the bucket's directory index where missing objects are treated as potential directories.
+`MainPageSuffix` - (Optional) Behaves as the bucket's directory index where
+missing objects are treated as potential directories.
 
-`NotFoundPage` - (Optional) The custom object to return when a requested resource is not found.
+`NotFoundPage` - (Optional) The custom object to return when a requested
+resource is not found.
 
 ### Cors Properties
 
@@ -88,7 +93,8 @@ and
 
 `LogBucket` - (Required) The bucket that will receive log objects.
 
-`LogObjectPrefix` - (Optional, Computed) The object prefix for log objects. If it's not provided, by default GCS sets this to this bucket's name.
+`LogObjectPrefix` - (Optional, Computed) The object prefix for log objects. If it's not provided,
+by default GCS sets this to this bucket's name.
 
 
 ## Return Values

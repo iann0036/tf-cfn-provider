@@ -11,7 +11,8 @@ Represents a single `ingress` or `egress` group rule, which can be added to exte
 
 `IpProtocol` - (Required) The protocol. Can be `tcp`, `udp`, `icmp`, `gre` or `all`.
 
-`PortRange` - (Required) The range of port numbers relevant to the IP protocol. Default to "-1/-1". When the protocol is tcp or udp, each side port number range from 1 to 65535 and '-1/-1' will be invalid. For example, `1/200` means that the range of the port numbers is 1-200. Other protocols' 'port_range' can only be "-1/-1", and other values will be invalid.
+`PortRange` - (Required) The range of port numbers relevant to the IP protocol. Default to "-1/-1". When the protocol is tcp or udp, each side port number range from 1 to 65535 and '-1/-1' will be invalid.
+For example, `1/200` means that the range of the port numbers is 1-200. Other protocols' 'port_range' can only be "-1/-1", and other values will be invalid.
 
 `SecurityGroupId` - (Required) The security group to apply this rule to.
 

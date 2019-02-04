@@ -10,9 +10,9 @@ Provides a Load Balancer Listener resource.
 
 `Port` - (Required) The port on which the load balancer is listening.
 
-`Protocol` - (Optional) The protocol for connections from clients to the load balancer. Valid values are `TCP`, `HTTP` and `HTTPS`. Defaults to `HTTP`.
+`Protocol` - (Optional) The protocol for connections from clients to the load balancer. Valid values are `TCP`, `TLS`, `HTTP` and `HTTPS`. Defaults to `HTTP`.
 
-`SslPolicy` - (Optional) The name of the SSL Policy for the listener. Required if `Protocol` is `HTTPS`.
+`SslPolicy` - (Optional) The name of the SSL Policy for the listener. Required if `Protocol` is `HTTPS` or `TLS`.
 
 `CertificateArn` - (Optional) The ARN of the default SSL server certificate. Exactly one certificate is required if the protocol is HTTPS. For adding additional SSL certificates, see the [`Terraform::AWS::LbListenerCertificate` resource](/docs/providers/aws/r/lb_listener_certificate.html).
 

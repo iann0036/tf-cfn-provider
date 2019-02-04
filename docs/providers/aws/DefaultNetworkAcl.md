@@ -27,9 +27,11 @@ For more information about Network ACLs, see the AWS Documentation on
 
 ## Properties
 
-`DefaultNetworkAclId` - (Required) The Network ACL ID to manage. This attribute is exported from `Terraform::AWS::Vpc`, or manually found via the AWS Console.
+`DefaultNetworkAclId` - (Required) The Network ACL ID to manage. This
+attribute is exported from `Terraform::AWS::Vpc`, or manually found via the AWS Console.
 
-`SubnetIds` - (Optional) A list of Subnet IDs to apply the ACL to. See the notes below on managing Subnets in the Default Network ACL.
+`SubnetIds` - (Optional) A list of Subnet IDs to apply the ACL to. See the
+notes below on managing Subnets in the Default Network ACL.
 
 `Ingress` - (Optional) Specifies an ingress rule. Parameters defined below.
 
@@ -47,9 +49,11 @@ For more information about Network ACLs, see the AWS Documentation on
 
 `Action` - (Required) The action to take.
 
-`Protocol` - (Required) The protocol to match. If using the -1 'all' protocol, you must specify a from and to port of 0.
+`Protocol` - (Required) The protocol to match. If using the -1 'all'
+protocol, you must specify a from and to port of 0.
 
-`CidrBlock` - (Optional) The CIDR block to match. This must be a valid network mask.
+`CidrBlock` - (Optional) The CIDR block to match. This must be a
+valid network mask.
 
 `Ipv6CidrBlock` - (Optional) The IPv6 CIDR block.
 

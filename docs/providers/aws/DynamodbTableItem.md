@@ -13,7 +13,8 @@ Provides a DynamoDB table item resource
 
 `RangeKey` - (Optional) Range key to use for lookups and identification of the item. Required if there is range key defined in the table.
 
-`Item` - (Required) JSON representation of a map of attribute name/value pairs, one for each attribute. Only the primary key attributes are required; you can optionally provide other attribute name-value pairs for the item.
+`Item` - (Required) JSON representation of a map of attribute name/value pairs, one for each attribute.
+Only the primary key attributes are required; you can optionally provide other attribute name-value pairs for the item.
 
 
 ## See Also

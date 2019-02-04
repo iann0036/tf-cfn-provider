@@ -11,9 +11,13 @@ using this resource will cause the firewall to be temporarily inaccessible.
 
 `AuthCodes` - (Required) The list of auth codes to install.
 
-`Delicense` - (Optional, bool) Leave as `true` if you want to delicense the firewall when this resource is removed, otherwise set to `false` to prevent firewall delicensing.  Delicensing requires that the licensing API key has been installed.
+`Delicense` - (Optional, bool) Leave as `true` if you want to delicense
+the firewall when this resource is removed, otherwise set to `false` to
+prevent firewall delicensing.  Delicensing requires that the licensing
+API key has been installed.
 
-`Mode` - (Optional) For `Delicense` of `true`, the type of delicensing to perform.  Right now, only `auto` is supported (no manual delicensing).
+`Mode` - (Optional) For `Delicense` of `true`, the type of delicensing to
+perform.  Right now, only `auto` is supported (no manual delicensing).
 
 
 ## See Also

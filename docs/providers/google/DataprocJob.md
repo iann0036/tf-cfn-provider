@@ -7,15 +7,24 @@ Manages a job resource within a Dataproc cluster within GCE. For more informatio
 
 ## Properties
 
-`Placement.clusterName` - (Required) The name of the cluster where the job will be submitted.
+`Placement.clusterName` - (Required) The name of the cluster where the job
+will be submitted.
 
-`XxxConfig` - (Required) Exactly one of the specific job types to run on the cluster should be specified. If you want to submit multiple jobs, this will currently require the definition of multiple `Terraform::Google::DataprocJob` resources as shown in the example above, or by setting the `count` attribute. The following job configs are supported:.
+`XxxConfig` - (Required) Exactly one of the specific job types to run on the
+cluster should be specified. If you want to submit multiple jobs, this will
+currently require the definition of multiple `Terraform::Google::DataprocJob` resources
+as shown in the example above, or by setting the `count` attribute.
+The following job configs are supported:.
 
-`Project` - (Optional) The project in which the `cluster` can be found and jobs subsequently run against. If it is not provided, the provider project is used.
+`Project` - (Optional) The project in which the `cluster` can be found and jobs
+subsequently run against. If it is not provided, the provider project is used.
 
-`Region` - (Optional) The Cloud Dataproc region. This essentially determines which clusters are available for this job to be submitted to. If not specified, defaults to `global`.
+`Region` - (Optional) The Cloud Dataproc region. This essentially determines which clusters are available
+for this job to be submitted to. If not specified, defaults to `global`.
 
-`ForceDelete` - (Optional) By default, you can only delete inactive jobs within Dataproc. Setting this to true, and calling destroy, will ensure that the job is first cancelled before issuing the delete.
+`ForceDelete` - (Optional) By default, you can only delete inactive jobs within
+Dataproc. Setting this to true, and calling destroy, will ensure that the
+job is first cancelled before issuing the delete.
 
 `Labels` - (Optional) The list of labels (key/value pairs) to add to the job.
 
@@ -37,9 +46,11 @@ Manages a job resource within a Dataproc cluster within GCE. For more informatio
 
 `LoggingConfig.driverLogLevels` - (Optional) The per-package log levels for the driver. This may include 'root' package name to configure rootLogger. Examples: 'com.google = FATAL', 'root = INFO', 'org.apache = DEBUG'.
 
-`MainClass` - (Optional) The class containing the main method of the driver. Must be in a provided jar or jar that is already on the classpath. Conflicts with `MainJarFileUri`.
+`MainClass` - (Optional) The class containing the main method of the driver. Must be in a
+provided jar or jar that is already on the classpath. Conflicts with `MainJarFileUri`.
 
-`MainJarFileUri` - (Optional) The HCFS URI of jar file containing the driver jar. Conflicts with `MainClass`.
+`MainJarFileUri` - (Optional) The HCFS URI of jar file containing
+the driver jar. Conflicts with `MainClass`.
 
 `Args` - (Optional) The arguments to pass to the driver.
 
@@ -69,9 +80,11 @@ Manages a job resource within a Dataproc cluster within GCE. For more informatio
 
 `LoggingConfig.driverLogLevels` - (Optional) The per-package log levels for the driver. This may include 'root' package name to configure rootLogger. Examples: 'com.google = FATAL', 'root = INFO', 'org.apache = DEBUG'.
 
-`QueryList` - (Optional) The list of Hive queries or statements to execute as part of the job. Conflicts with `QueryFileUri`.
+`QueryList` - (Optional) The list of Hive queries or statements to execute as part of the job.
+Conflicts with `QueryFileUri`.
 
-`QueryFileUri` - (Optional) HCFS URI of file containing Hive script to execute as the job. Conflicts with `QueryList`.
+`QueryFileUri` - (Optional) HCFS URI of file containing Hive script to execute as the job.
+Conflicts with `QueryList`.
 
 `ContinueOnFailure` - (Optional) Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries. Defaults to false.
 
@@ -81,9 +94,11 @@ Manages a job resource within a Dataproc cluster within GCE. For more informatio
 
 `JarFileUris` - (Optional) HCFS URIs of jar files to add to the CLASSPATH of the Hive server and Hadoop MapReduce (MR) tasks. Can contain Hive SerDes and UDFs.
 
-`QueryList` - (Optional) The list of Hive queries or statements to execute as part of the job. Conflicts with `QueryFileUri`.
+`QueryList` - (Optional) The list of Hive queries or statements to execute as part of the job.
+Conflicts with `QueryFileUri`.
 
-`QueryFileUri` - (Optional) HCFS URI of file containing Hive script to execute as the job. Conflicts with `QueryList`.
+`QueryFileUri` - (Optional) HCFS URI of file containing Hive script to execute as the job.
+Conflicts with `QueryList`.
 
 `ContinueOnFailure` - (Optional) Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries. Defaults to false.
 
@@ -95,9 +110,11 @@ Manages a job resource within a Dataproc cluster within GCE. For more informatio
 
 `LoggingConfig.driverLogLevels` - (Optional) The per-package log levels for the driver. This may include 'root' package name to configure rootLogger. Examples: 'com.google = FATAL', 'root = INFO', 'org.apache = DEBUG'.
 
-`QueryList` - (Optional) The list of SQL queries or statements to execute as part of the job. Conflicts with `QueryFileUri`.
+`QueryList` - (Optional) The list of SQL queries or statements to execute as part of the job.
+Conflicts with `QueryFileUri`.
 
-`QueryFileUri` - (Optional) The HCFS URI of the script that contains SQL queries. Conflicts with `QueryList`.
+`QueryFileUri` - (Optional) The HCFS URI of the script that contains SQL queries.
+Conflicts with `QueryList`.
 
 `ScriptVariables` - (Optional) Mapping of query variable names to values (equivalent to the Spark SQL command: `SET name="value";`).
 

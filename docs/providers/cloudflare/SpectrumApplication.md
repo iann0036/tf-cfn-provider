@@ -20,7 +20,7 @@ Provides a Cloudflare Spectrum Application. You can extend the power of Cloudfla
 
 `ProxyProtocol` - (Optional) Enables Proxy Protocol v1 to the origin. Defaults to `false`.
 
-`Type` - (Requried) The type of DNS record associated with the application. Valid values: `CNAME`.
+`Type` - (Required) The type of DNS record associated with the application. Valid values: `CNAME`.
 
 `Name` - (Required) The name of the DNS record associated with the application.i.e. `ssh.example.com`.
 

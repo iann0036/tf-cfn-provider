@@ -19,15 +19,28 @@ connections.
 
 `Name` - (Required) The name of the datastore cluster.
 
-`DatacenterId` - (Required) The [managed object ID][docs-about-morefs] of the datacenter to create the datastore cluster in. Forces a new resource if changed.
+`DatacenterId` - (Required) The [managed object ID][docs-about-morefs] of
+the datacenter to create the datastore cluster in. Forces a new resource if
+changed.
 
-`Folder` - (Optional) The relative path to a folder to put this datastore cluster in.  This is a path relative to the datacenter you are deploying the datastore to.  Example: for the `dc1` datacenter, and a provided `Folder` of `foo/bar`, Terraform will place a datastore cluster named `terraform-datastore-cluster-test` in a datastore folder located at `/dc1/datastore/foo/bar`, with the final inventory path being `/dc1/datastore/foo/bar/terraform-datastore-cluster-test`.
+`Folder` - (Optional) The relative path to a folder to put this datastore
+cluster in.  This is a path relative to the datacenter you are deploying the
+datastore to.  Example: for the `dc1` datacenter, and a provided `Folder` of
+`foo/bar`, Terraform will place a datastore cluster named
+`terraform-datastore-cluster-test` in a datastore folder located at
+`/dc1/datastore/foo/bar`, with the final inventory path being
+`/dc1/datastore/foo/bar/terraform-datastore-cluster-test`.
 
-`SdrsEnabled` - (Optional) Enable Storage DRS for this datastore cluster. Default: `false`.
+`SdrsEnabled` - (Optional) Enable Storage DRS for this datastore cluster.
+Default: `false`.
 
-`Tags` - (Optional) The IDs of any tags to attach to this resource. See [here][docs-applying-tags] for a reference on how to apply tags.
+`Tags` - (Optional) The IDs of any tags to attach to this resource. See
+[here][docs-applying-tags] for a reference on how to apply tags.
 
-`CustomAttributes` - (Optional) A map of custom attribute ids to attribute value strings to set for the datastore cluster. See [here][docs-setting-custom-attributes] for a reference on how to set values for custom attributes.
+`CustomAttributes` - (Optional) A map of custom attribute ids to attribute
+value strings to set for the datastore cluster. See
+[here][docs-setting-custom-attributes] for a reference on how to set values
+for custom attributes.
 
 
 ## See Also

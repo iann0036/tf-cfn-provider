@@ -10,7 +10,8 @@ Provides an Application AutoScaling ScalableTarget resource. To manage policies 
 
 `ResourceId` - (Required) The resource type and unique identifier string for the resource associated with the scaling policy. Documentation can be found in the `ResourceId` parameter at: [AWS Application Auto Scaling API Reference](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters).
 
-`RoleArn` - (Optional) The ARN of the IAM role that allows Application AutoScaling to modify your scalable target on your behalf.
+`RoleArn` - (Optional) The ARN of the IAM role that allows Application
+AutoScaling to modify your scalable target on your behalf.
 
 `ScalableDimension` - (Required) The scalable dimension of the scalable target. Documentation can be found in the `ScalableDimension` parameter at: [AWS Application Auto Scaling API Reference](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters).
 

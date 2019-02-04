@@ -8,7 +8,8 @@ Manages an ExpressRoute Circuit Peering.
 
 `ExpressRouteCircuitName` - (Required) The name of the ExpressRoute Circuit in which to create the Peering.
 
-`ResourceGroupName` - (Required) The name of the resource group in which to create the Express Route Circuit Peering. Changing this forces a new resource to be created.
+`ResourceGroupName` - (Required) The name of the resource group in which to
+create the Express Route Circuit Peering. Changing this forces a new resource to be created.
 
 `PrimaryPeerAddressPrefix` - (Optional) A `/30` subnet for the primary link.
 

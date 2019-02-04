@@ -4,7 +4,7 @@ A [team membership](https://v2.developer.pagerduty.com/v2/page/api-reference#!/T
 
 ## Properties
 
-`UserId` - (Required) The ID of the user to add to the team. * `TeamId` - (Required) The ID of the team in which the user will belong.
+`UserId` - (Required) The ID of the user to add to the team.
 
 `TeamId` - (Required) The ID of the team in which the user will belong.
 

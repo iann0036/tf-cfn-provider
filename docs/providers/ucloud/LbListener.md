@@ -16,7 +16,9 @@ Provides a Load Balancer Listener resource.
 
 `IdleTimeout` - (Optional) Amount of time in seconds to wait for the response for in between two sessions if `ListenType` is `request_proxy`, range: 0-86400. (Default: `60`). Amount of time in seconds to wait for one session if `ListenType` is `packets_transmit`, range: 60-900. The session will be closed as soon as no response if it is `0`.
 
-`Method` - (Optional) The load balance method in which the listener is. Possible values are: `roundrobin`, `source`, `ConsistentHash`, `source_port` , `consistent_hash_port`, `weight_roundrobin` and `leastconn`. (Default: `roundrobin`). - The `ConsistentHash`, `source_port` , `consistent_hash_port`, `roundrobin`, `source` and `weight_roundrobin` are valid if `ListenType` is `packets_transmit`. - The `Roundrobin`, `Source` and `WeightRoundrobin` and `Leastconn` are vaild if `ListenType` is `request_proxy`.
+`Method` - (Optional) The load balance method in which the listener is. Possible values are: `roundrobin`, `source`, `ConsistentHash`, `source_port` , `consistent_hash_port`, `weight_roundrobin` and `leastconn`. (Default: `roundrobin`).
+- The `ConsistentHash`, `source_port` , `consistent_hash_port`, `roundrobin`, `source` and `weight_roundrobin` are valid if `ListenType` is `packets_transmit`.
+- The `Roundrobin`, `Source` and `WeightRoundrobin` and `Leastconn` are vaild if `ListenType` is `request_proxy`.
 
 `Persistence` - (Optional) Indicate whether the persistence session is enabled, it is invaild if `PersistenceType` is `none`, an auto-generated string will be exported if `PersistenceType` is `server_insert`, a custom string will be exported if `PersistenceType` is `user_defined`.
 

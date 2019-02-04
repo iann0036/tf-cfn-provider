@@ -1,27 +1,26 @@
 # Terraform::Google::SpannerInstance
 
-Creates and manages a Google Spanner Instance. For more information, see the [official documentation](https://cloud.google.com/spanner/), or the [JSON API](https://cloud.google.com/spanner/docs/reference/rest/v1/projects.instances).
+An isolated set of Cloud Spanner resources on which databases can be
+hosted.
+
+
+To get more information about Instance, see:
+
+* [API documentation](https://cloud.google.com/spanner/docs/reference/rest/v1/projects.instances)
+* How-to Guides
+    * [Official Documentation](https://cloud.google.com/spanner/)
+
+<div class = "oics-button" style="float: right; margin: 0 0 -15px">
+  <a href="https://console.cloud.google.com/cloudshell/open?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2Fterraform-google-modules%2Fdocs-examples.git&cloudshell_working_dir=spanner_instance_basic&cloudshell_image=gcr.io%2Fgraphite-cloud-shell-images%2Fterraform%3Alatest&open_in_editor=main.tf&cloudshell_print=.%2Fmotd&cloudshell_tutorial=.%2Ftutorial.md" target="_blank">
+    <img alt="Open in Cloud Shell" src="//gstatic.com/cloudssh/images/open-btn.svg" style="max-height: 44px; margin: 32px auto; max-width: 100%;">
+  </a>
+</div>
 
 ## Properties
 
-`Config` - (Required) The name of the instance's configuration (similar but not quite the same as a region) which defines defines the geographic placement and replication of your databases in this instance. It determines where your data is stored. Values are typically of the form `regional-europe-west1` , `us-central` etc. In order to obtain a valid list please consult the [Configuration section of the docs](https://cloud.google.com/spanner/docs/instances).
+`Project` - (Optional) The ID of the project in which the resource belongs.
+If it is not provided, the provider project is used.
 
-`DisplayName` - (Required) The descriptive name for this instance as it appears in UIs. Can be updated, however should be kept globally unique to avoid confusion.
-
-`Name` - (Optional, Computed) The unique name (ID) of the instance. If the name is left blank, Terraform will randomly generate one when the instance is first created.
-
-`NumNodes` - (Optional, Computed) The number of nodes allocated to this instance. Defaults to `1`. This can be updated after creation.
-
-`Project` - (Optional) The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
-
-`Labels` - (Optional) A mapping (key/value pairs) of labels to assign to the instance.
-
-
-## Return Values
-
-### Fn::GetAtt
-
-`State` - The current state of the instance.
 
 ## See Also
 

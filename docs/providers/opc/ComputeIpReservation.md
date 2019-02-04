@@ -4,7 +4,9 @@ The ``Terraform::OPC::ComputeIpReservation`` resource creates and manages an IP 
 
 ## Properties
 
-`Permanent` - (Required) Whether the IP address remains reserved even when it is no longer associated with an instance (if true), or may be returned to the pool and replaced with a different IP address when an instance is restarted, or deleted and recreated (if false).
+`Permanent` - (Required) Whether the IP address remains reserved even when it is no longer associated with an instance
+(if true), or may be returned to the pool and replaced with a different IP address when an instance is restarted, or
+deleted and recreated (if false).
 
 `ParentPool` - (Optional) The pool from which to allocate the IP address. Defaults to `/oracle/public/ippool`, and is currently the only acceptable input.
 

@@ -16,7 +16,9 @@ by use of this resource. The safest alternative is to use multiple `Terraform::G
 
 `BillingAccountId` - (Required) The billing account id.
 
-`PolicyData` - (Required) The `Terraform::Google::IamPolicy` data source that represents the IAM policy that will be applied to the billing account. This policy overrides any existing policy applied to the billing account.
+`PolicyData` - (Required) The `Terraform::Google::IamPolicy` data source that represents
+the IAM policy that will be applied to the billing account. This policy overrides any existing
+policy applied to the billing account.
 
 
 ## See Also

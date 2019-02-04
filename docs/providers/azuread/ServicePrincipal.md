@@ -8,6 +8,8 @@ Manages a Service Principal associated with an Application within Azure Active D
 
 `ApplicationId` - (Required) The ID of the Azure AD Application for which to create a Service Principal.
 
+`Tags` - (Optional) A list of tags to apply to the Service Principal.
+
 
 ## Return Values
 

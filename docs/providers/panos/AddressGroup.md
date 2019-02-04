@@ -10,9 +10,11 @@ group.
 
 `Name` - (Required) The address group's name.
 
-`Vsys` - (Optional) The vsys to put the address group into (default: `vsys1`).
+`Vsys` - (Optional) The vsys to put the address group into (default:
+`vsys1`).
 
-`StaticAddresses` - (Optional) The address objects to include in this statically defined address group.
+`StaticAddresses` - (Optional) The address objects to include in this
+statically defined address group.
 
 `DynamicMatch` - (Optional) The IP tags to include in this DAG.
 

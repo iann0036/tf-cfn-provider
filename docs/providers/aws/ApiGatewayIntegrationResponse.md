@@ -15,11 +15,15 @@ you might need to add an explicit `depends_on` for clean runs.
 
 `StatusCode` - (Required) The HTTP status code.
 
-`SelectionPattern` - (Optional) Specifies the regular expression pattern used to choose an integration response based on the response from the backend. Setting this to `-` makes the integration the default one. If the backend is an `AWS` Lambda function, the AWS Lambda function error header is matched. For all other `HTTP` and `AWS` backends, the HTTP status code is matched.
+`SelectionPattern` - (Optional) Specifies the regular expression pattern used to choose
+an integration response based on the response from the backend. Setting this to `-` makes the integration the default one.
+If the backend is an `AWS` Lambda function, the AWS Lambda function error header is matched.
+For all other `HTTP` and `AWS` backends, the HTTP status code is matched.
 
 `ResponseTemplates` - (Optional) A map specifying the templates used to transform the integration response body.
 
-`ResponseParameters` - (Optional) A map of response parameters that can be read from the backend response. For example: `response_parameters = { "method.response.header.X-Some-Header" = "integration.response.header.X-Some-Other-Header" }`,.
+`ResponseParameters` - (Optional) A map of response parameters that can be read from the backend response.
+For example: `response_parameters = { "method.response.header.X-Some-Header" = "integration.response.header.X-Some-Other-Header" }`,.
 
 `ResponseParametersInJson` - **Deprecated**, use `ResponseParameters` instead.
 

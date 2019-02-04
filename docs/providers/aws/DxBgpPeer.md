@@ -10,11 +10,13 @@ Provides a Direct Connect BGP peer resource.
 
 `VirtualInterfaceId` - (Required) The ID of the Direct Connect virtual interface on which to create the BGP peer.
 
-`AmazonAddress` - (Optional) The IPv4 CIDR address to use to send traffic to Amazon. Required for IPv4 BGP peers on public virtual interfaces.
+`AmazonAddress` - (Optional) The IPv4 CIDR address to use to send traffic to Amazon.
+Required for IPv4 BGP peers on public virtual interfaces.
 
 `BgpAuthKey` - (Optional) The authentication key for BGP configuration.
 
-`CustomerAddress` - (Optional) The IPv4 CIDR destination address to which Amazon should send traffic. Required for IPv4 BGP peers on public virtual interfaces.
+`CustomerAddress` - (Optional) The IPv4 CIDR destination address to which Amazon should send traffic.
+Required for IPv4 BGP peers on public virtual interfaces.
 
 
 ## Return Values

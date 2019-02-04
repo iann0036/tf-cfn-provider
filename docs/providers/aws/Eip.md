@@ -14,7 +14,9 @@ Provides an Elastic IP resource.
 
 `NetworkInterface` - (Optional) Network interface ID to associate with.
 
-`AssociateWithPrivateIp` - (Optional) A user specified primary or secondary private IP address to associate with the Elastic IP address. If no private IP address is specified, the Elastic IP address is associated with the primary private IP address.
+`AssociateWithPrivateIp` - (Optional) A user specified primary or secondary private IP address to
+associate with the Elastic IP address. If no private IP address is specified,
+the Elastic IP address is associated with the primary private IP address.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 

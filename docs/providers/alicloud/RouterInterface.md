@@ -30,7 +30,8 @@ Provides a VPC router interface resource aim to build a connection between two V
 
 `OppositeInterfaceOwnerId` - (Deprecated) It has been deprecated from version 1.11.0. Use resource alicloud_router_interface_connection's 'opposite_interface_id' instead.
 
-`Name` - (Optional) Name of the router interface. Length must be 2-80 characters long. Only Chinese characters, English letters, numbers, period (.), underline (_), or dash (-) are permitted. If it is not specified, the default value is interface ID. The name cannot start with http:// and https://.
+`Name` - (Optional) Name of the router interface. Length must be 2-80 characters long. Only Chinese characters, English letters, numbers, period (.), underline (_), or dash (-) are permitted.
+If it is not specified, the default value is interface ID. The name cannot start with http:// and https://.
 
 `Description` - (Optional) Description of the router interface. It can be 2-256 characters long or left blank. It cannot start with http:// and https://.
 

@@ -12,7 +12,9 @@ Provides an RDS account resource and used to manage databases. A RDS instance su
 
 `Description` - (Optional) Database description. It cannot begin with https://. It must start with a Chinese character or English letter. It can include Chinese and English characters, underlines (_), hyphens (-), and numbers. The length may be 2-256 characters.
 
-`Type` - Privilege type of account. - Normal: Common privilege. - Super: High privilege.
+`Type` - Privilege type of account.
+- Normal: Common privilege.
+- Super: High privilege.
 
 
 ## Return Values

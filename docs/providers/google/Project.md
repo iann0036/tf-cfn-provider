@@ -34,17 +34,35 @@ Terraform. Only newly added projects are affected.
 
 `ProjectId` - (Required) The project ID. Changing this forces a new project to be created.
 
-`OrgId` - (Optional) The numeric ID of the organization this project belongs to. Changing this forces a new project to be created.  Only one of `OrgId` or `FolderId` may be specified. If the `OrgId` is specified then the project is created at the top level. Changing this forces the project to be migrated to the newly specified organization.
+`OrgId` - (Optional) The numeric ID of the organization this project belongs to.
+Changing this forces a new project to be created.  Only one of
+`OrgId` or `FolderId` may be specified. If the `OrgId` is
+specified then the project is created at the top level. Changing
+this forces the project to be migrated to the newly specified
+organization.
 
-`FolderId` - (Optional) The numeric ID of the folder this project should be created under. Only one of `OrgId` or `FolderId` may be specified. If the `FolderId` is specified, then the project is created under the specified folder. Changing this forces the project to be migrated to the newly specified folder.
+`FolderId` - (Optional) The numeric ID of the folder this project should be
+created under. Only one of `OrgId` or `FolderId` may be
+specified. If the `FolderId` is specified, then the project is
+created under the specified folder. Changing this forces the
+project to be migrated to the newly specified folder.
 
-`BillingAccount` - (Optional) The alphanumeric ID of the billing account this project belongs to. The user or service account performing this operation with Terraform must have Billing Account Administrator privileges (`roles/billing.admin`) in the organization. See [Google Cloud Billing API Access Control](https://cloud.google.com/billing/v1/how-tos/access-control) for more details.
+`BillingAccount` - (Optional) The alphanumeric ID of the billing account this project
+belongs to. The user or service account performing this operation with Terraform
+must have Billing Account Administrator privileges (`roles/billing.admin`) in
+the organization. See [Google Cloud Billing API Access Control](https://cloud.google.com/billing/v1/how-tos/access-control)
+for more details.
 
-`SkipDelete` - (Optional) If true, the Terraform resource can be deleted without deleting the Project via the Google API.
+`SkipDelete` - (Optional) If true, the Terraform resource can be deleted
+without deleting the Project via the Google API.
 
 `Labels` - (Optional) A set of key/value label pairs to assign to the project.
 
-`AutoCreateNetwork` - (Optional) Create the 'default' network automatically.  Default true. Note: this might be more accurately described as "Delete Default Network", since the network is created automatically then deleted before project creation returns, but we choose this name to match the GCP Console UI. Setting this field to false will enable the Compute Engine API which is required to delete the network.
+`AutoCreateNetwork` - (Optional) Create the 'default' network automatically.  Default true.
+Note: this might be more accurately described as "Delete Default Network", since the network
+is created automatically then deleted before project creation returns, but we choose this
+name to match the GCP Console UI. Setting this field to false will enable the Compute Engine
+API which is required to delete the network.
 
 
 ## Return Values

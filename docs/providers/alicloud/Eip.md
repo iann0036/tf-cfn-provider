@@ -19,7 +19,8 @@ Your account is international if you can use it to login in [International Web C
 
 `InstanceChargeType` - (Optional, ForceNew) Elastic IP instance charge type. Valid values are "PrePaid" and "PostPaid". Default to "PostPaid".
 
-`Period` - (Optional, ForceNew) The duration that you will buy the resource, in month. It is valid when `InstanceChargeType` is `PrePaid`. Default to 1. Valid values: [1-9, 12, 24, 36]. At present, the provider does not support modify "period" and you can do that via web console.
+`Period` - (Optional, ForceNew) The duration that you will buy the resource, in month. It is valid when `InstanceChargeType` is `PrePaid`.
+Default to 1. Valid values: [1-9, 12, 24, 36]. At present, the provider does not support modify "period" and you can do that via web console.
 
 
 ## Return Values

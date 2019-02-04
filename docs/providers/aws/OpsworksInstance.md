@@ -16,7 +16,8 @@ Provides an OpsWorks instance resource.
 
 `AutoScalingType` - (Optional) Creates load-based or time-based instances.  If set, can be either: `"load"` or `"timer"`.
 
-`AvailabilityZone` - (Optional) Name of the availability zone where instances will be created by default.
+`AvailabilityZone` - (Optional) Name of the availability zone where instances will be created
+by default.
 
 `EbsOptimized` - (Optional) If true, the launched EC2 instance will be EBS-optimized.
 
@@ -38,13 +39,17 @@ Provides an OpsWorks instance resource.
 
 `Tenancy` - (Optional) Instance tenancy to use. Can be one of `"default"`, `"dedicated"` or `"host"`.
 
-`VirtualizationType` - (Optional) Keyword to choose what virtualization mode created instances will use. Can be either `"paravirtual"` or `"hvm"`.
+`VirtualizationType` - (Optional) Keyword to choose what virtualization mode created instances
+will use. Can be either `"paravirtual"` or `"hvm"`.
 
-`RootBlockDevice` - (Optional) Customize details about the root block device of the instance. See [Block Devices](#block-devices) below for details.
+`RootBlockDevice` - (Optional) Customize details about the root block
+device of the instance. See [Block Devices](#block-devices) below for details.
 
-`EbsBlockDevice` - (Optional) Additional EBS block devices to attach to the instance.  See [Block Devices](#block-devices) below for details.
+`EbsBlockDevice` - (Optional) Additional EBS block devices to attach to the
+instance.  See [Block Devices](#block-devices) below for details.
 
-`EphemeralBlockDevice` - (Optional) Customize Ephemeral (also known as "Instance Store") volumes on the instance. See [Block Devices](#block-devices) below for details.
+`EphemeralBlockDevice` - (Optional) Customize Ephemeral (also known as
+"Instance Store") volumes on the instance. See [Block Devices](#block-devices) below for details.
 
 
 ## Return Values

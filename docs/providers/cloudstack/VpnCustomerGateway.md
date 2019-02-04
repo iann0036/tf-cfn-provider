@@ -18,11 +18,14 @@ Creates a site to site VPN local customer gateway.
 
 `Dpd` - (Optional) If DPD is enabled for the related VPN connection (defaults false).
 
-`EspLifetime` - (Optional) The ESP lifetime of phase 2 VPN connection to this VPN Customer Gateway in seconds (defaults 86400).
+`EspLifetime` - (Optional) The ESP lifetime of phase 2 VPN connection to this
+VPN Customer Gateway in seconds (defaults 86400).
 
-`IkeLifetime` - (Optional) The IKE lifetime of phase 2 VPN connection to this VPN Customer Gateway in seconds (defaults 86400).
+`IkeLifetime` - (Optional) The IKE lifetime of phase 2 VPN connection to this
+VPN Customer Gateway in seconds (defaults 86400).
 
-`Project` - (Optional) The name or ID of the project to create this VPN Customer Gateway in. Changing this forces a new resource to be created.
+`Project` - (Optional) The name or ID of the project to create this VPN Customer
+Gateway in. Changing this forces a new resource to be created.
 
 
 ## Return Values

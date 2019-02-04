@@ -4,7 +4,8 @@ Associate a team to permissions on a workspace.
 
 ## Properties
 
-`Access` - (Required) Type of access to grant. Valid values are `admin`, `read`, `plan`, or `write`.
+`Access` - (Required) Type of access to grant. Valid values are `admin`,
+`read`, `plan`, or `write`.
 
 `TeamId` - (Required) ID of the team to add to the workspace.
 

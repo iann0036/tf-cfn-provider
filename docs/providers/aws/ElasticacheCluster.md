@@ -15,13 +15,21 @@ See the AWS Docs on [Modifying an ElastiCache Cache Cluster][2] for more informa
 
 `ReplicationGroupId` - (Optional) The ID of the replication group to which this cluster should belong. If this parameter is specified, the cluster is added to the specified replication group as a read replica; otherwise, the cluster is a standalone primary that is not part of any replication group.
 
-`ApplyImmediately` - (Optional) Specifies whether any database modifications are applied immediately, or during the next maintenance window. Default is `false`. See [Amazon ElastiCache Documentation for more information.][1] (Available since v0.6.0).
+`ApplyImmediately` - (Optional) Specifies whether any database modifications
+are applied immediately, or during the next maintenance window. Default is
+`false`. See [Amazon ElastiCache Documentation for more information.][1]
+(Available since v0.6.0).
 
 `SnapshotName` - (Optional) The name of a snapshot from which to restore data into the new node group.  Changing the `SnapshotName` forces a new resource.
 
-`SnapshotWindow` - (Optional, Redis only) The daily time range (in UTC) during which ElastiCache will begin taking a daily snapshot of your cache cluster. Example: 05:00-09:00.
+`SnapshotWindow` - (Optional, Redis only) The daily time range (in UTC) during which ElastiCache will
+begin taking a daily snapshot of your cache cluster. Example: 05:00-09:00.
 
-`SnapshotRetentionLimit` - (Optional, Redis only) The number of days for which ElastiCache will retain automatic cache cluster snapshots before deleting them. For example, if you set SnapshotRetentionLimit to 5, then a snapshot that was taken today will be retained for 5 days before being deleted. If the value of SnapshotRetentionLimit is set to zero (0), backups are turned off. Please note that setting a `SnapshotRetentionLimit` is not supported on cache.t1.micro or cache.t2.* cache nodes.
+`SnapshotRetentionLimit` - (Optional, Redis only) The number of days for which ElastiCache will
+retain automatic cache cluster snapshots before deleting them. For example, if you set
+SnapshotRetentionLimit to 5, then a snapshot that was taken today will be retained for 5 days
+before being deleted. If the value of SnapshotRetentionLimit is set to zero (0), backups are turned off.
+Please note that setting a `SnapshotRetentionLimit` is not supported on cache.t1.micro or cache.t2.* cache nodes.
 
 `AzMode` - (Optional, Memcached only) Specifies whether the nodes in this Memcached node group are created in a single Availability Zone or created across multiple Availability Zones in the cluster's region. Valid values for this parameter are `single-az` or `cross-az`, default is `single-az`. If you want to choose `cross-az`, `NumCacheNodes` must be greater than `1`.
 

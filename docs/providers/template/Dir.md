@@ -19,7 +19,9 @@ routinely applied by many different users or within automation systems.
 
 `DestinationDir` - (Required) Path to the directory where the templated files will be written.
 
-`Vars` - (Optional) Variables for interpolation within the template. Note that variables must all be primitives. Direct references to lists or maps will cause a validation error.
+`Vars` - (Optional) Variables for interpolation within the template. Note
+that variables must all be primitives. Direct references to lists or maps
+will cause a validation error.
 
 
 ## See Also

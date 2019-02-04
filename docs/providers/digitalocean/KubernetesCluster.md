@@ -12,13 +12,23 @@ Provides a DigitalOcean Kubernetes cluster resource. This can be used to create,
 
 `Version` - (Required) The slug identifier for the version of Kubernetes used for the cluster.
 
-`NodePool` - (Required) A block representing the cluster's default node pool. Additional node pools may be added to the cluster using the `Terraform::DigitalOcean::KubernetesNodePool` resource. The following arguments may be specified: - `Name` - (Required) A name for the node pool. - `Size` - (Required) The slug identifier for the type of Droplet to be used as workers in the node pool. - `NodeCount` - (Required) The number of Droplet instances in the node pool. - `Tags` - (Optional) A list of tag names to be applied to the Kubernetes cluster.
+`NodePool` - (Required) A block representing the cluster's default node pool. Additional node pools may be added to the cluster using the `Terraform::DigitalOcean::KubernetesNodePool` resource. The following arguments may be specified:
+- `Name` - (Required) A name for the node pool.
+- `Size` - (Required) The slug identifier for the type of Droplet to be used as workers in the node pool.
+- `NodeCount` - (Required) The number of Droplet instances in the node pool.
+- `Tags` - (Optional) A list of tag names to be applied to the Kubernetes cluster.
 
-`Name` - (Required) A name for the node pool. - `Size` - (Required) The slug identifier for the type of Droplet to be used as workers in the node pool. - `NodeCount` - (Required) The number of Droplet instances in the node pool. - `Tags` - (Optional) A list of tag names to be applied to the Kubernetes cluster.
+`Name` - (Required) A name for the node pool.
+- `Size` - (Required) The slug identifier for the type of Droplet to be used as workers in the node pool.
+- `NodeCount` - (Required) The number of Droplet instances in the node pool.
+- `Tags` - (Optional) A list of tag names to be applied to the Kubernetes cluster.
 
-`Size` - (Required) The slug identifier for the type of Droplet to be used as workers in the node pool. - `NodeCount` - (Required) The number of Droplet instances in the node pool. - `Tags` - (Optional) A list of tag names to be applied to the Kubernetes cluster.
+`Size` - (Required) The slug identifier for the type of Droplet to be used as workers in the node pool.
+- `NodeCount` - (Required) The number of Droplet instances in the node pool.
+- `Tags` - (Optional) A list of tag names to be applied to the Kubernetes cluster.
 
-`NodeCount` - (Required) The number of Droplet instances in the node pool. - `Tags` - (Optional) A list of tag names to be applied to the Kubernetes cluster.
+`NodeCount` - (Required) The number of Droplet instances in the node pool.
+- `Tags` - (Optional) A list of tag names to be applied to the Kubernetes cluster.
 
 `Tags` - (Optional) A list of tag names to be applied to the Kubernetes cluster.
 

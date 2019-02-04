@@ -4,7 +4,8 @@ Provides support for setting up default reviewers for your repository.
 
 ## Properties
 
-`Owner` - (Required) The owner of this repository. Can be you or any team you have write access to.
+`Owner` - (Required) The owner of this repository. Can be you or any team you
+have write access to.
 
 `Repository` - (Required) The name of the repository.
 

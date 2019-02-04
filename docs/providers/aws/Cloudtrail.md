@@ -12,23 +12,31 @@ Provides a CloudTrail resource.
 
 `S3BucketName` - (Required) Specifies the name of the S3 bucket designated for publishing log files.
 
-`S3KeyPrefix` - (Optional) Specifies the S3 key prefix that precedes the name of the bucket you have designated for log file delivery.
+`S3KeyPrefix` - (Optional) Specifies the S3 key prefix that precedes
+the name of the bucket you have designated for log file delivery.
 
-`CloudWatchLogsRoleArn` - (Optional) Specifies the role for the CloudWatch Logs endpoint to assume to write to a user’s log group.
+`CloudWatchLogsRoleArn` - (Optional) Specifies the role for the CloudWatch Logs
+endpoint to assume to write to a user’s log group.
 
-`CloudWatchLogsGroupArn` - (Optional) Specifies a log group name using an Amazon Resource Name (ARN), that represents the log group to which CloudTrail logs will be delivered.
+`CloudWatchLogsGroupArn` - (Optional) Specifies a log group name using an Amazon Resource Name (ARN),
+that represents the log group to which CloudTrail logs will be delivered.
 
-`EnableLogging` - (Optional) Enables logging for the trail. Defaults to `true`. Setting this to `false` will pause logging.
+`EnableLogging` - (Optional) Enables logging for the trail. Defaults to `true`.
+Setting this to `false` will pause logging.
 
-`IncludeGlobalServiceEvents` - (Optional) Specifies whether the trail is publishing events from global services such as IAM to the log files. Defaults to `true`.
+`IncludeGlobalServiceEvents` - (Optional) Specifies whether the trail is publishing events
+from global services such as IAM to the log files. Defaults to `true`.
 
-`IsMultiRegionTrail` - (Optional) Specifies whether the trail is created in the current region or in all regions. Defaults to `false`.
+`IsMultiRegionTrail` - (Optional) Specifies whether the trail is created in the current
+region or in all regions. Defaults to `false`.
 
 `IsOrganizationTrail` - (Optional) Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
 
-`SnsTopicName` - (Optional) Specifies the name of the Amazon SNS topic defined for notification of log file delivery.
+`SnsTopicName` - (Optional) Specifies the name of the Amazon SNS topic
+defined for notification of log file delivery.
 
-`EnableLogFileValidation` - (Optional) Specifies whether log file integrity validation is enabled. Defaults to `false`.
+`EnableLogFileValidation` - (Optional) Specifies whether log file integrity validation is enabled.
+Defaults to `false`.
 
 `KmsKeyId` - (Optional) Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
 

@@ -6,7 +6,8 @@ The `Terraform::OPC::ComputeStorageVolumeAttachment` resource creates and manage
 
 `Instance` - (Required) The name of the instance the volume will be attached to.
 
-`StorageVolume` - (Required) The name of the storage volume that will be attached to the instance.
+`StorageVolume` - (Required) The name of the storage volume that will be attached to the
+instance.
 
 `Index` - (Required) The index on the instance that the storage volume will be attached to.
 

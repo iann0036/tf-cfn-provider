@@ -19,7 +19,8 @@ in Panorama and don't want Terraform to delete it on `terraform destroy`.
 
 `Zone` - (Required) The zone's name.
 
-`Mode` - (Optional) The mode.  Can be `layer3` (default), `layer2`, `virtual-wire`, `tap`, or `external`.
+`Mode` - (Optional) The mode.  Can be `layer3` (default), `layer2`,
+`virtual-wire`, `tap`, or `external`.
 
 `Interface` - (Required) The interface's name.
 

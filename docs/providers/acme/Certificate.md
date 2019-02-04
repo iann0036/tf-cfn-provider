@@ -9,13 +9,22 @@ a different server than a certificate would normally be placed on, the
 
 ## Properties
 
-`CommonName` - The certificate's common name, the primary domain that the certificate will be recognized for. Required when not specifying a CSR.
+`CommonName` - The certificate's common name, the primary domain that the
+certificate will be recognized for. Required when not specifying a CSR.
 
-`SubjectAlternativeNames` - The certificate's subject alternative names, domains that this certificate will also be recognized for. Only valid when not specifying a CSR.
+`SubjectAlternativeNames` - The certificate's subject alternative names,
+domains that this certificate will also be recognized for. Only valid when not
+specifying a CSR.
 
-`KeyType` - The key type for the certificate's private key. Can be one of: `P256` and `P384` (for ECDSA keys of respective length) or `2048`, `4096`, and `8192` (for RSA keys of respective length). Required when not specifying a CSR. The default is `2048` (RSA key of 2048 bits).
+`KeyType` - The key type for the certificate's private key. Can be one of:
+`P256` and `P384` (for ECDSA keys of respective length) or `2048`, `4096`, and
+`8192` (for RSA keys of respective length). Required when not specifying a
+CSR. The default is `2048` (RSA key of 2048 bits).
 
-`CertificateRequestPem` - A pre-created certificate request, such as one from [`tls_cert_request`][tls-cert-request], or one from an external source, in PEM format.  Either this, or the in-resource request options (`CommonName`, `KeyType`, and optionally `SubjectAlternativeNames`) need to be specified.
+`CertificateRequestPem` - A pre-created certificate request, such as one
+from [`tls_cert_request`][tls-cert-request], or one from an external source,
+in PEM format.  Either this, or the in-resource request options (`CommonName`,
+`KeyType`, and optionally `SubjectAlternativeNames`) need to be specified.
 
 
 ## See Also

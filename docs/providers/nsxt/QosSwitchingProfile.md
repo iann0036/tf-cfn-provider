@@ -16,33 +16,33 @@ Provides a resource to configure Qos switching profile on NSX-T manager
 
 `DscpPriority` - (Optional) DSCP Priority (0-63).
 
-`IngressRateShaper` - (Optional) Ingress rate shaper configuration: * `Enabled` - (Optional) Whether this rate shaper is enabled. * `AverageBwMbps` - (Optional) Average Bandwidth in MBPS. * `PeakBwMbps` - (Optional) Peak Bandwidth in MBPS. * `BurstSize` - (Optional) Burst size in bytes.
+`IngressRateShaper` - (Optional) Ingress rate shaper configuration:.
 
-`Enabled` - (Optional) Whether this rate shaper is enabled. * `AverageBwMbps` - (Optional) Average Bandwidth in MBPS. * `PeakBwMbps` - (Optional) Peak Bandwidth in MBPS. * `BurstSize` - (Optional) Burst size in bytes.
+`Enabled` - (Optional) Whether this rate shaper is enabled.
 
-`AverageBwMbps` - (Optional) Average Bandwidth in MBPS. * `PeakBwMbps` - (Optional) Peak Bandwidth in MBPS. * `BurstSize` - (Optional) Burst size in bytes.
+`AverageBwMbps` - (Optional) Average Bandwidth in MBPS.
 
-`PeakBwMbps` - (Optional) Peak Bandwidth in MBPS. * `BurstSize` - (Optional) Burst size in bytes.
-
-`BurstSize` - (Optional) Burst size in bytes.
-
-`EgressRateShaper` - (Optional) Egress rate shaper configuration: * `Enabled` - (Optional) Whether this rate shaper is enabled. * `AverageBwMbps` - (Optional) Average Bandwidth in MBPS. * `PeakBwMbps` - (Optional) Peak Bandwidth in MBPS. * `BurstSize` - (Optional) Burst size in bytes.
-
-`Enabled` - (Optional) Whether this rate shaper is enabled. * `AverageBwMbps` - (Optional) Average Bandwidth in MBPS. * `PeakBwMbps` - (Optional) Peak Bandwidth in MBPS. * `BurstSize` - (Optional) Burst size in bytes.
-
-`AverageBwMbps` - (Optional) Average Bandwidth in MBPS. * `PeakBwMbps` - (Optional) Peak Bandwidth in MBPS. * `BurstSize` - (Optional) Burst size in bytes.
-
-`PeakBwMbps` - (Optional) Peak Bandwidth in MBPS. * `BurstSize` - (Optional) Burst size in bytes.
+`PeakBwMbps` - (Optional) Peak Bandwidth in MBPS.
 
 `BurstSize` - (Optional) Burst size in bytes.
 
-`IngressBroadcastRateShaper` - (Optional) Ingress rate shaper configuration: * `Enabled` - (Optional) Whether this rate shaper is enabled. * `AverageBwKbps` - (Optional) Average Bandwidth in KBPS. * `PeakBwKbps` - (Optional) Peak Bandwidth in KBPS. * `BurstSize` - (Optional) Burst size in bytes.
+`EgressRateShaper` - (Optional) Egress rate shaper configuration:.
 
-`Enabled` - (Optional) Whether this rate shaper is enabled. * `AverageBwKbps` - (Optional) Average Bandwidth in KBPS. * `PeakBwKbps` - (Optional) Peak Bandwidth in KBPS. * `BurstSize` - (Optional) Burst size in bytes.
+`Enabled` - (Optional) Whether this rate shaper is enabled.
 
-`AverageBwKbps` - (Optional) Average Bandwidth in KBPS. * `PeakBwKbps` - (Optional) Peak Bandwidth in KBPS. * `BurstSize` - (Optional) Burst size in bytes.
+`AverageBwMbps` - (Optional) Average Bandwidth in MBPS.
 
-`PeakBwKbps` - (Optional) Peak Bandwidth in KBPS. * `BurstSize` - (Optional) Burst size in bytes.
+`PeakBwMbps` - (Optional) Peak Bandwidth in MBPS.
+
+`BurstSize` - (Optional) Burst size in bytes.
+
+`IngressBroadcastRateShaper` - (Optional) Ingress rate shaper configuration:.
+
+`Enabled` - (Optional) Whether this rate shaper is enabled.
+
+`AverageBwKbps` - (Optional) Average Bandwidth in KBPS.
+
+`PeakBwKbps` - (Optional) Peak Bandwidth in KBPS.
 
 `BurstSize` - (Optional) Burst size in bytes.
 

@@ -4,21 +4,25 @@ Manage a managed disk.
 
 ## Properties
 
-`Name` - (Required) Specifies the name of the managed disk. Changing this forces a new resource to be created.
+`Name` - (Required) Specifies the name of the managed disk. Changing this forces a
+new resource to be created.
 
-`ResourceGroupName` - (Required) The name of the resource group in which to create the managed disk.
+`ResourceGroupName` - (Required) The name of the resource group in which to create
+the managed disk.
 
-`Location` - (Required) Specified the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+`Location` - (Required) Specified the supported Azure location where the resource exists.
+Changing this forces a new resource to be created.
 
-`StorageAccountType` - (Required) The type of storage to use for the managed disk. Allowable values are `Standard_LRS`, `Premium_LRS`, `StandardSSD_LRS` or `UltraSSD_LRS`.
+`StorageAccountType` - (Required) The type of storage to use for the managed disk.
+Allowable values are `Standard_LRS`, `Premium_LRS`, `StandardSSD_LRS` or `UltraSSD_LRS`.
 
-`CreateOption` - (Required) The method to use when creating the managed disk. Possible values include: * `Import` - Import a VHD file in to the managed disk (VHD specified with `SourceUri`). * `Empty` - Create an empty managed disk. * `Copy` - Copy an existing managed disk or snapshot (specified with `SourceResourceId`). * `FromImage` - Copy a Platform Image (specified with `ImageReferenceId`).
+`CreateOption` - (Required) The method to use when creating the managed disk. Possible values include:.
 
-`Import` - Import a VHD file in to the managed disk (VHD specified with `SourceUri`). * `Empty` - Create an empty managed disk. * `Copy` - Copy an existing managed disk or snapshot (specified with `SourceResourceId`). * `FromImage` - Copy a Platform Image (specified with `ImageReferenceId`).
+`Import` - Import a VHD file in to the managed disk (VHD specified with `SourceUri`).
 
-`Empty` - Create an empty managed disk. * `Copy` - Copy an existing managed disk or snapshot (specified with `SourceResourceId`). * `FromImage` - Copy a Platform Image (specified with `ImageReferenceId`).
+`Empty` - Create an empty managed disk.
 
-`Copy` - Copy an existing managed disk or snapshot (specified with `SourceResourceId`). * `FromImage` - Copy a Platform Image (specified with `ImageReferenceId`).
+`Copy` - Copy an existing managed disk or snapshot (specified with `SourceResourceId`).
 
 `FromImage` - Copy a Platform Image (specified with `ImageReferenceId`).
 
@@ -28,9 +32,11 @@ Manage a managed disk.
 
 `ImageReferenceId` - (Optional) ID of an existing platform/marketplace disk image to copy when `CreateOption` is `FromImage`.
 
-`OsType` - (Optional) Specify a value when the source of an `Import` or `Copy` operation targets a source that contains an operating system. Valid values are `Linux` or `Windows`.
+`OsType` - (Optional) Specify a value when the source of an `Import` or `Copy`
+operation targets a source that contains an operating system. Valid values are `Linux` or `Windows`.
 
-`DiskSizeGb` - (Optional, Required for a new managed disk) Specifies the size of the managed disk to create in gigabytes. If `CreateOption` is `Copy` or `FromImage`, then the value must be equal to or greater than the source's size.
+`DiskSizeGb` - (Optional, Required for a new managed disk) Specifies the size of the managed disk to create in gigabytes.
+If `CreateOption` is `Copy` or `FromImage`, then the value must be equal to or greater than the source's size.
 
 `EncryptionSettings` - (Optional) an `EncryptionSettings` block as defined below.
 

@@ -6,7 +6,7 @@ Adds a listener to a load balancer.
 
 ## Properties
 
-`ConnectionConfiguration` - (Optional) (Updatable) * `IdleTimeoutInSeconds` - (Required) (Updatable) The maximum idle time, in seconds, allowed between two successive receive or two successive send operations between the client and backend servers. A send operation does not reset the timer for receive operations. A receive operation does not reset the timer for send operations.
+`ConnectionConfiguration` - (Optional) (Updatable).
 
 `IdleTimeoutInSeconds` - (Required) (Updatable) The maximum idle time, in seconds, allowed between two successive receive or two successive send operations between the client and backend servers. A send operation does not reset the timer for receive operations. A receive operation does not reset the timer for send operations.
 
@@ -26,11 +26,11 @@ Adds a listener to a load balancer.
 
 `RuleSetNames` - (Optional) (Updatable) The names of the [rule sets](https://docs.cloud.oracle.com/iaas/api/#/en/loadbalancer/20170115/RuleSet/) to apply to the listener.  Example: ["example_rule_set"].
 
-`SslConfiguration` - (Optional) (Updatable) * `CertificateName` - (Required) (Updatable) A friendly name for the certificate bundle. It must be unique and it cannot be changed. Valid certificate bundle names include only alphanumeric characters, dashes, and underscores. Certificate bundle names cannot contain spaces. Avoid entering confidential information.  Example: `example_certificate_bundle` * `VerifyDepth` - (Optional) (Updatable) The maximum depth for peer certificate chain verification.  Example: `3` * `VerifyPeerCertificate` - (Optional) (Updatable) Whether the load balancer listener should verify peer certificates.  Example: `true`.
+`SslConfiguration` - (Optional) (Updatable).
 
-`CertificateName` - (Required) (Updatable) A friendly name for the certificate bundle. It must be unique and it cannot be changed. Valid certificate bundle names include only alphanumeric characters, dashes, and underscores. Certificate bundle names cannot contain spaces. Avoid entering confidential information.  Example: `example_certificate_bundle` * `VerifyDepth` - (Optional) (Updatable) The maximum depth for peer certificate chain verification.  Example: `3` * `VerifyPeerCertificate` - (Optional) (Updatable) Whether the load balancer listener should verify peer certificates.  Example: `true`.
+`CertificateName` - (Required) (Updatable) A friendly name for the certificate bundle. It must be unique and it cannot be changed. Valid certificate bundle names include only alphanumeric characters, dashes, and underscores. Certificate bundle names cannot contain spaces. Avoid entering confidential information.  Example: `example_certificate_bundle`.
 
-`VerifyDepth` - (Optional) (Updatable) The maximum depth for peer certificate chain verification.  Example: `3` * `VerifyPeerCertificate` - (Optional) (Updatable) Whether the load balancer listener should verify peer certificates.  Example: `true`.
+`VerifyDepth` - (Optional) (Updatable) The maximum depth for peer certificate chain verification.  Example: `3`.
 
 `VerifyPeerCertificate` - (Optional) (Updatable) Whether the load balancer listener should verify peer certificates.  Example: `true`.
 

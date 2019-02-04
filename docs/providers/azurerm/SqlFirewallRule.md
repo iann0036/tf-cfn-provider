@@ -6,7 +6,8 @@ Allows you to manage an Azure SQL Firewall Rule
 
 `Name` - (Required) The name of the firewall rule.
 
-`ResourceGroupName` - (Required) The name of the resource group in which to create the sql server.
+`ResourceGroupName` - (Required) The name of the resource group in which to
+create the sql server.
 
 `ServerName` - (Required) The name of the SQL Server on which to create the Firewall Rule.
 

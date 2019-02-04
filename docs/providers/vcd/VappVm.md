@@ -3,7 +3,7 @@
 Provides a vCloud Director VM resource. This can be used to create,
 modify, and delete VMs within a vApp.
 
-~> **Note:** There is known bug with this implementation, that to use the vcd_vapp_vm resource, you must set the paralellism parameter to 1. [We are working on this.](https://github.com/terraform-providers/terraform-provider-vcd/issues/27)
+~> **Note:** To make sure resources are created in the right order and both plan apply and destroy succeeds, use the `depends_on` clause (see example below)
 
 ## Properties
 
@@ -19,9 +19,21 @@ modify, and delete VMs within a vApp.
 
 `Cpus` - (Optional) The number of virtual CPUs to allocate to the vApp.
 
-`Ip` - (Optional) The IP to assign to this vApp. Must be an IP address or one of dhcp, allocated or none. If given the address must be within the `static_ip_pool` set for the network. If left blank, and the network has `dhcp_pool` set with at least one available IP then this will be set with DHCP.
+`NetworkName` - (Optional) Name of the network this VM should connect to.
 
-`PowerOn` - (Optional) A boolean value stating if this vApp should be powered on. Default to `true`.
+`Ip` - (Optional) The IP to assign to this vApp. Must be an IP address or
+one of dhcp, allocated or none. If given the address must be within the
+`static_ip_pool` set for the network. If left blank, and the network has
+`dhcp_pool` set with at least one available IP then this will be set with
+DHCP.
+
+`PowerOn` - (Optional) A boolean value stating if this vApp should be powered on. Default is `true`.
+
+`AcceptAllEulas` - (Optional; *v2.0+*) Automatically accept EULA if OVA has it. Default is `true`.
+
+`Org` - (Optional; *v2.0+*) The name of organization to use, optional if defined at provider level. Useful when connected as sysadmin working across different organisations.
+
+`Vdc` - (Optional; *v2.0+*) The name of VDC to use, optional if defined at provider level.
 
 
 ## See Also

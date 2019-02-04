@@ -5,21 +5,31 @@ Creates a subnet in a private network of a public cloud project.
 
 ## Properties
 
-`ProjectId` - (Required) The id of the public cloud project. If omitted, the `OVH_PROJECT_ID` environment variable is used. Changing this forces a new resource to be created.
+`ProjectId` - (Required) The id of the public cloud project. If omitted,
+the `OVH_PROJECT_ID` environment variable is used.
+Changing this forces a new resource to be created.
 
-`NetworkId` - (Required) The id of the network. Changing this forces a new resource to be created.
+`NetworkId` - (Required) The id of the network.
+Changing this forces a new resource to be created.
 
-`Dhcp` - (Optional) Enable DHCP. Changing this forces a new resource to be created. Defaults to false. _.
+`Dhcp` - (Optional) Enable DHCP.
+Changing this forces a new resource to be created. Defaults to false.
+_.
 
-`Start` - (Required) First ip for this region. Changing this value recreates the subnet.
+`Start` - (Required) First ip for this region.
+Changing this value recreates the subnet.
 
-`End` - (Required) Last ip for this region. Changing this value recreates the subnet.
+`End` - (Required) Last ip for this region.
+Changing this value recreates the subnet.
 
-`Network` - (Required) Global network in CIDR format. Changing this value recreates the subnet.
+`Network` - (Required) Global network in CIDR format.
+Changing this value recreates the subnet.
 
-`Region` - The region in which the network subnet will be created. Ex.: "GRA1". Changing this value recreates the resource.
+`Region` - The region in which the network subnet will be created.
+Ex.: "GRA1". Changing this value recreates the resource.
 
-`NoGateway` - Set to true if you don't want to set a default gateway IP. Changing this value recreates the resource. Defaults to false.
+`NoGateway` - Set to true if you don't want to set a default gateway IP.
+Changing this value recreates the resource. Defaults to false.
 
 
 ## Return Values

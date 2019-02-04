@@ -12,7 +12,8 @@ Provides a cluster resource (CCE).
 
 `FlavorId` - (Required) Cluster specifications. Changing this parameter will create a new cluster resource.
 
-`ClusterVersion` - (Optional) For the cluster version, possible values are v1.7.3-r10 or v1.9.2-r1.
+`ClusterVersion` - (Optional) For the cluster version, possible values are v1.9.2-r2 or v1.11.3-r1. Changing this parameter will create a new cluster resource.
+[OTC-API](https://docs.otc.t-systems.com/en-us/api2/cce/cce_02_0236.html).
 
 `ClusterType` - (Required) Cluster Type, Changing this parameter will create a new cluster resource.
 

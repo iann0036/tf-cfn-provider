@@ -12,7 +12,8 @@ documentation](https://docs.gitlab.com/ce/user/project/integrations/webhooks.htm
 
 `Token` - (Optional) A token to present when invoking the hook.
 
-`EnableSslVerification` - (Optional) Enable ssl verification when invoking the hook.
+`EnableSslVerification` - (Optional) Enable ssl verification when invoking
+the hook.
 
 `PushEvents` - (Optional) Invoke the hook for push events.
 

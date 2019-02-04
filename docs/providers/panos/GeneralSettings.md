@@ -26,23 +26,31 @@ destroy` does not remove config from the firewall.
 
 `NtpPrimaryAddress` - Primary NTP server.
 
-`NtpPrimaryAuthType` - Primary NTP auth type.  This can be `none`, `autokey`, or `symmetric-key`.
+`NtpPrimaryAuthType` - Primary NTP auth type.  This can be `none`,
+`autokey`, or `symmetric-key`.
 
 `NtpPrimaryKeyId` - Primary NTP `symmetric-key` key ID.
 
-`NtpPrimaryAlgorithm` - Primary NTP `symmetric-key` algorithm.  This can be `sha1` or `md5`.
+`NtpPrimaryAlgorithm` - Primary NTP `symmetric-key` algorithm.  This can be
+`sha1` or `md5`.
 
-`NtpPrimaryAuthKey` - Primary NTP `symmetric-key` auth key.  This is the SHA1 hash if the algorithm is `sha1`, or the md5sum if the algorithm is `md5`.
+`NtpPrimaryAuthKey` - Primary NTP `symmetric-key` auth key.  This is the
+SHA1 hash if the algorithm is `sha1`, or the md5sum if the algorithm is
+`md5`.
 
 `NtpSecondaryAddress` - Secondary NTP server.
 
-`NtpSecondaryAuthType` - Secondary NTP auth type.  This can be `none`, `autokey`, or `symmetric-key`.
+`NtpSecondaryAuthType` - Secondary NTP auth type.  This can be `none`,
+`autokey`, or `symmetric-key`.
 
 `NtpSecondaryKeyId` - Secondary NTP `symmetric-key` key ID.
 
-`NtpSecondaryAlgorithm` - Secondary NTP `symmetric-key` algorithm.  This can be `sha1` or `md5`.
+`NtpSecondaryAlgorithm` - Secondary NTP `symmetric-key` algorithm.  This
+can be `sha1` or `md5`.
 
-`NtpSecondaryAuthKey` - Secondary NTP `symmetric-key` auth key.  This is the SHA1 hash if the algorithm is `sha1`, or the md5sum if the algorithm is `md5`.
+`NtpSecondaryAuthKey` - Secondary NTP `symmetric-key` auth key.  This is
+the SHA1 hash if the algorithm is `sha1`, or the md5sum if the algorithm is
+`md5`.
 
 
 ## See Also

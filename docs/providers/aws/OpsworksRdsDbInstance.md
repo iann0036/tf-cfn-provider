@@ -7,7 +7,7 @@ Provides an OpsWorks RDS DB Instance resource.
 
 ## Properties
 
-`StackId` - (Required) The stack to register a db inatance for. Changing this will force a new resource.
+`StackId` - (Required) The stack to register a db instance for. Changing this will force a new resource.
 
 `RdsDbInstanceArn` - (Required) The db instance to register for this stack. Changing this will force a new resource.
 

@@ -7,7 +7,8 @@ For more details, see the [Amazon Kinesis Documentation][1].
 
 ## Properties
 
-`Name` - (Required) A name to identify the stream. This is unique to the AWS account and region the Stream is created in.
+`Name` - (Required) A name to identify the stream. This is unique to the
+AWS account and region the Stream is created in.
 
 `RetentionPeriod` - (Optional) Length of time data records are accessible after they are added to the stream. The maximum value of a stream's retention period is 168 hours. Minimum value is 24. Default is 24.
 

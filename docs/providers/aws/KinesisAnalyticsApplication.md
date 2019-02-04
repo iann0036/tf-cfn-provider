@@ -13,13 +13,15 @@ For more details, see the [Amazon Kinesis Analytics Documentation][1].
 
 `Description` - (Optional) Description of the application.
 
-`CloudwatchLoggingOptions` - (Optional) The CloudWatch log stream options to monitor application errors. See [CloudWatch Logging Options](#cloudwatch-logging-options) below for more details.
+`CloudwatchLoggingOptions` - (Optional) The CloudWatch log stream options to monitor application errors.
+See [CloudWatch Logging Options](#cloudwatch-logging-options) below for more details.
 
 `Inputs` - (Optional) Input configuration of the application. See [Inputs](#inputs) below for more details.
 
 `Outputs` - (Optional) Output destination configuration of the application. See [Outputs](#outputs) below for more details.
 
-`ReferenceDataSources` - (Optional) An S3 Reference Data Source for the application. See [Reference Data Sources](#reference-data-sources) below for more details.
+`ReferenceDataSources` - (Optional) An S3 Reference Data Source for the application.
+See [Reference Data Sources](#reference-data-sources) below for more details.
 
 
 ## Return Values

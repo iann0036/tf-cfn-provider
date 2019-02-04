@@ -17,7 +17,8 @@ and
 
 `PeerNetwork` - (Required) Resource link of the peer network.
 
-`AutoCreateRoutes` - (Optional) If set to `true`, the routes between the two networks will be created and managed automatically. Defaults to `true`.
+`AutoCreateRoutes` - (Optional) If set to `true`, the routes between the two networks will
+be created and managed automatically. Defaults to `true`.
 
 
 ## Return Values

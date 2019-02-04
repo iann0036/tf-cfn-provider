@@ -6,7 +6,8 @@ Creates a device registry in Google's Cloud IoT Core platform. For more informat
 
 ## Properties
 
-`Name` - (Required) A unique name for the resource, required by device registry. Changing this forces a new resource to be created.
+`Name` - (Required) A unique name for the resource, required by device registry.
+Changing this forces a new resource to be created.
 
 `Project` - (Optional) The project in which the resource belongs. If it is not provided, the provider project is used.
 

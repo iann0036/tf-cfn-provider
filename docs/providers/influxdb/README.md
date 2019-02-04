@@ -11,10 +11,10 @@ To configure this resource, you may optionally create an AWS Secrets Manager sec
 
 * ``password`` - (Optional) The password to use when making requests.
 
-* ``ssl_skip_verify`` - (Optional) If HTTPS enabled on server, and TLS/SSL
+* ``skip_ssl_verify`` - (Optional) If HTTPS enabled on server, and TLS/SSL
   certificate is, say, self-signed, can set to true to bypass what this client
   considers insecure server connections. May alternatively be set via the
-  environment (i.e., ``INFLUXDB_SSL_SKIP_VERIFY=1``)
+  environment (i.e., ``INFLUXDB_SKIP_SSL_VERIFY=1``)
 
 Use the navigation to the left to read about the available resources.
 

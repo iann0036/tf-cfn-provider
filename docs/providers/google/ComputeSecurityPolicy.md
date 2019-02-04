@@ -10,31 +10,40 @@ and the [API](https://cloud.google.com/compute/docs/reference/rest/beta/security
 
 `Description` - (Optional) An optional description of this security policy. Max size is 2048.
 
-`Project` - (Optional) The project in which the resource belongs. If it is not provided, the provider project is used.
+`Project` - (Optional) The project in which the resource belongs. If it
+is not provided, the provider project is used.
 
-`Rule` - (Optional) The set of rules that belong to this policy. There must always be a default rule (rule with priority 2147483647 and match "\*"). If no rules are provided when creating a security policy, a default rule with action "allow" will be added. Structure is documented below.
+`Rule` - (Optional) The set of rules that belong to this policy. There must always be a default
+rule (rule with priority 2147483647 and match "\*"). If no rules are provided when creating a
+security policy, a default rule with action "allow" will be added. Structure is documented below.
 
 ### Rule Properties
 
-`Action` - (Required) Action to take when `Match` matches the request. Valid values: * "allow" : allow access to target * "deny(status)" : deny access to target, returns the  HTTP response code specified (valid values are 403, 404 and 502).
+`Action` - (Required) Action to take when `Match` matches the request. Valid values:.
 
-`Priority` - (Required) An unique positive integer indicating the priority of evaluation for a rule. Rules are evaluated from highest priority (lowest numerically) to lowest priority (highest numerically) in order.
+`Priority` - (Required) An unique positive integer indicating the priority of evaluation for a rule.
+Rules are evaluated from highest priority (lowest numerically) to lowest priority (highest numerically) in order.
 
-`Match` - (Required) A match condition that incoming traffic is evaluated against. If it evaluates to true, the corresponding `Action` is enforced. Structure is documented below.
+`Match` - (Required) A match condition that incoming traffic is evaluated against.
+If it evaluates to true, the corresponding `Action` is enforced. Structure is documented below.
 
 `Description` - (Optional) An optional description of this rule. Max size is 64.
 
-`Preview` - (Optional) When set to true, the `Action` specified above is not enforced. Stackdriver logs for requests that trigger a preview action are annotated as such.
+`Preview` - (Optional) When set to true, the `Action` specified above is not enforced.
+Stackdriver logs for requests that trigger a preview action are annotated as such.
 
 ### Match Properties
 
-`Config` - (Required) The configuration options available when specifying `VersionedExpr`. Structure is documented below.
+`Config` - (Required) The configuration options available when specifying `VersionedExpr`.
+Structure is documented below.
 
-`VersionedExpr` - (Required) Predefined rule expression. Available options: * SRC_IPS_V1: Must specify the corresponding `SrcIpRanges` field in `Config`.
+`VersionedExpr` - (Required) Predefined rule expression. Available options:.
 
 ### Config Properties
 
-`SrcIpRanges` - (Required) Set of IP addresses or ranges (IPV4 or IPV6) in CIDR notation to match against inbound traffic. There is a limit of 5 IP ranges per rule. A value of '\*' matches all IPs (can be used to override the default behavior).
+`SrcIpRanges` - (Required) Set of IP addresses or ranges (IPV4 or IPV6) in CIDR notation
+to match against inbound traffic. There is a limit of 5 IP ranges per rule. A value of '\*' matches all IPs
+(can be used to override the default behavior).
 
 
 ## Return Values

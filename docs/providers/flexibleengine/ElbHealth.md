@@ -4,23 +4,39 @@ Manages an elastic loadbalancer health resource within FlexibleEngine.
 
 ## Properties
 
-`Region` - (Optional) The region in which to create the elb health. If omitted, the `Region` argument of the provider is used. Changing this creates a new elb health.
+`Region` - (Optional) The region in which to create the elb health. If
+omitted, the `Region` argument of the provider is used. Changing this
+creates a new elb health.
 
-`ListenerId` - (Required) Specifies the ID of the listener to which the health check task belongs.
+`ListenerId` - (Required) Specifies the ID of the listener to which the health
+check task belongs.
 
-`HealthcheckProtocol` - (Optional) Specifies the protocol used for the health check. The value can be HTTP or TCP (case-insensitive).
+`HealthcheckProtocol` - (Optional) Specifies the protocol used for the health
+check. The value can be HTTP or TCP (case-insensitive).
 
-`HealthcheckUri` - (Optional) Specifies the URI for health check. This parameter is valid when healthcheck_ protocol is HTTP. The value is a string of 1 to 80 characters that must start with a slash (/) and can only contain letters, digits, and special characters, such as -/.%?#&.
+`HealthcheckUri` - (Optional) Specifies the URI for health check. This parameter
+is valid when healthcheck_ protocol is HTTP. The value is a string of 1 to 80
+characters that must start with a slash (/) and can only contain letters, digits,
+and special characters, such as -/.%?#&.
 
-`HealthcheckConnectPort` - (Optional) Specifies the port used for the health check. The value ranges from 1 to 65535.
+`HealthcheckConnectPort` - (Optional) Specifies the port used for the health
+check. The value ranges from 1 to 65535.
 
-`HealthyThreshold` - (Optional) Specifies the threshold at which the health check result is success, that is, the number of consecutive successful health checks when the health check result of the backend server changes from fail to success. The value ranges from 1 to 10.
+`HealthyThreshold` - (Optional) Specifies the threshold at which the health
+check result is success, that is, the number of consecutive successful health
+checks when the health check result of the backend server changes from fail
+to success. The value ranges from 1 to 10.
 
-`UnhealthyThreshold` - (Optional) Specifies the threshold at which the health check result is fail, that is, the number of consecutive failed health checks when the health check result of the backend server changes from success to fail. The value ranges from 1 to 10.
+`UnhealthyThreshold` - (Optional) Specifies the threshold at which the health
+check result is fail, that is, the number of consecutive failed health checks
+when the health check result of the backend server changes from success to fail.
+The value ranges from 1 to 10.
 
-`HealthcheckTimeout` - (Optional) Specifies the maximum timeout duration (s) for the health check. The value ranges from 1 to 50.
+`HealthcheckTimeout` - (Optional) Specifies the maximum timeout duration
+(s) for the health check. The value ranges from 1 to 50.
 
-`HealthcheckInterval` - (Optional) Specifies the maximum interval (s) for health check. The value ranges from 1 to 5.
+`HealthcheckInterval` - (Optional) Specifies the maximum interval (s) for
+health check. The value ranges from 1 to 5.
 
 
 ## Return Values

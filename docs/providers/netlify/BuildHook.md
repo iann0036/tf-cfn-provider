@@ -12,7 +12,8 @@ the branch to be built when the hook is triggered.
 
 `Branch` - (Required) branch to be built when the hook is triggered.
 
-`Title` - (Required) name of the webhook - this is purely for organization and can be any name you want.
+`Title` - (Required) name of the webhook - this is purely for organization and
+can be any name you want.
 
 
 ## See Also

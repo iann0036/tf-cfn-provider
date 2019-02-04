@@ -11,6 +11,10 @@ modify, and delete firewall settings and rules.
 
 `Rule` - (Optional) Configures a firewall rule; see [Rules](#rules) below for details.
 
+`Org` - (Optional; *v2.0+*) The name of organization to use, optional if defined at provider level. Useful when connected as sysadmin working across different organisations.
+
+`Vdc` - (Optional; *v2.0+*) The name of VDC to use, optional if defined at provider level.
+
 
 ## See Also
 

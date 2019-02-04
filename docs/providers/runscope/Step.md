@@ -13,7 +13,7 @@ your tests like pauses and conditions.
 
 `Note` - (Optional) A comment attached to the test step.
 
-`StepType` - (Required) The type of step. * [request](#request-steps) * pause * condition * ghost * subtest.
+`StepType` - (Required) The type of step.
 
 
 ## Return Values

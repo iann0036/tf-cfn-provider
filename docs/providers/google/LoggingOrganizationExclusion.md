@@ -15,9 +15,12 @@ granted to the credentials used with Terraform.
 
 `Description` - (Optional) A human-readable description.
 
-`Disabled` - (Optional) Whether this exclusion rule should be disabled or not. This defaults to false.
+`Disabled` - (Optional) Whether this exclusion rule should be disabled or not. This defaults to
+false.
 
-`Filter` - (Required) The filter to apply when excluding logs. Only log entries that match the filter are excluded. See [Advanced Log Filters](https://cloud.google.com/logging/docs/view/advanced-filters) for information on how to write a filter.
+`Filter` - (Required) The filter to apply when excluding logs. Only log entries that match the filter are excluded.
+See [Advanced Log Filters](https://cloud.google.com/logging/docs/view/advanced-filters) for information on how to
+write a filter.
 
 
 ## See Also

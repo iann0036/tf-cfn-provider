@@ -10,13 +10,15 @@ health checks for an agent service is not supported.
 
 ## Properties
 
-`Address` - (Optional) The address of the service. Defaults to the address of the agent.
+`Address` - (Optional) The address of the service. Defaults to the
+address of the agent.
 
 `Name` - (Required) The name of the service.
 
 `Port` - (Optional) The port of the service.
 
-`Tags` - (Optional) A list of values that are opaque to Consul, but can be used to distinguish between services or nodes.
+`Tags` - (Optional) A list of values that are opaque to Consul,
+but can be used to distinguish between services or nodes.
 
 
 ## Return Values

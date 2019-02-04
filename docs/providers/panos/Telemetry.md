@@ -18,11 +18,14 @@ policy, and we encourage you to join the community.
 
 `UrlReports` - (Bool, optional) URL reports.
 
-`FileTypeIdentificationReports` - (Bool, optional) File type identification reports.
+`FileTypeIdentificationReports` - (Bool, optional) File type identification
+reports.
 
 `ThreatPreventionData` - (Bool, optional) Threat prevention data.
 
-`ThreatPreventionPacketCaptures` - (Bool, optional) Enable sending packet- captures with threat prevention information. This requires that `ThreatPreventionData` also be enabled.
+`ThreatPreventionPacketCaptures` - (Bool, optional) Enable sending packet-
+captures with threat prevention information. This requires that
+`ThreatPreventionData` also be enabled.
 
 `ProductUsageStats` - (Bool, optional) Health and performance reports.
 

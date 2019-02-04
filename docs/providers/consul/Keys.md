@@ -12,11 +12,14 @@ remove errant keys not present in the configuration, consider using the
 
 ## Properties
 
-`Datacenter` - (Optional) The datacenter to use. This overrides the datacenter in the provider setup and the agent's default datacenter.
+`Datacenter` - (Optional) The datacenter to use. This overrides the
+datacenter in the provider setup and the agent's default datacenter.
 
-`Token` - (Optional) The ACL token to use. This overrides the token that the agent provides by default.
+`Token` - (Optional) The ACL token to use. This overrides the
+token that the agent provides by default.
 
-`Key` - (Required) Specifies a key in Consul to be written. Supported values documented below.
+`Key` - (Required) Specifies a key in Consul to be written.
+Supported values documented below.
 
 ### Key Properties
 
@@ -24,7 +27,10 @@ remove errant keys not present in the configuration, consider using the
 
 `Value` - (Required) The value to write to the given path.
 
-`Delete` - (Optional) If true, then the key will be deleted when either its configuration block is removed from the configuration or the entire resource is destroyed. Otherwise, it will be left in Consul. Defaults to false.
+`Delete` - (Optional) If true, then the key will be deleted when
+either its configuration block is removed from the configuration or
+the entire resource is destroyed. Otherwise, it will be left in Consul.
+Defaults to false.
 
 
 ## Return Values

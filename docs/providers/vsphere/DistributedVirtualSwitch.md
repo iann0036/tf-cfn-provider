@@ -26,33 +26,52 @@ connections.
 
 `Name` - (Required) The name of the distributed virtual switch.
 
-`DatacenterId` - (Required) The ID of the datacenter where the distributed virtual switch will be created. Forces a new resource if changed.
+`DatacenterId` - (Required) The ID of the datacenter where the distributed
+virtual switch will be created. Forces a new resource if changed.
 
-`Folder` - (Optional) The folder to create the DVS in. Forces a new resource if changed.
+`Folder` - (Optional) The folder to create the DVS in. Forces a new resource
+if changed.
 
 `Description` - (Optional) A detailed description for the DVS.
 
-`ContactName` - (Optional) The name of the person who is responsible for the DVS.
+`ContactName` - (Optional) The name of the person who is responsible for the
+DVS.
 
-`ContactDetail` - (Optional) The detailed contact information for the person who is responsible for the DVS.
+`ContactDetail` - (Optional) The detailed contact information for the person
+who is responsible for the DVS.
 
-`Ipv4Address` - (Optional) An IPv4 address to identify the switch. This is mostly useful when used with the [Netflow arguments](#netflow-arguments) found below.
+`Ipv4Address` - (Optional) An IPv4 address to identify the switch. This is
+mostly useful when used with the [Netflow arguments](#netflow-arguments) found
+below.
 
-`LacpApiVersion` - (Optional) The Link Aggregation Control Protocol group version to use with the switch. Possible values are `singleLag` and `multipleLag`.
+`LacpApiVersion` - (Optional) The Link Aggregation Control Protocol group
+version to use with the switch. Possible values are `singleLag` and
+`multipleLag`.
 
-`LinkDiscoveryOperation` - (Optional) Whether to `advertise` or `listen` for link discovery traffic.
+`LinkDiscoveryOperation` - (Optional) Whether to `advertise` or `listen`
+for link discovery traffic.
 
-`LinkDiscoveryProtocol` - (Optional) The discovery protocol type. Valid types are `cdp` and `lldp`.
+`LinkDiscoveryProtocol` - (Optional) The discovery protocol type. Valid
+types are `cdp` and `lldp`.
 
-`MaxMtu` - (Optional) The maximum transmission unit (MTU) for the virtual switch.
+`MaxMtu` - (Optional) The maximum transmission unit (MTU) for the virtual
+switch.
 
-`MulticastFilteringMode` - (Optional) The multicast filtering mode to use with the switch. Can be one of `legacyFiltering` or `snooping`.
+`MulticastFilteringMode` - (Optional) The multicast filtering mode to use
+with the switch. Can be one of `legacyFiltering` or `snooping`.
 
-`Version` - (Optional) - The version of the DVS to create. The default is to create the DVS at the latest version supported by the version of vSphere being used. A DVS can be upgraded to another version, but cannot be downgraded.
+`Version` - (Optional) - The version of the DVS to create. The default is to
+create the DVS at the latest version supported by the version of vSphere
+being used. A DVS can be upgraded to another version, but cannot be
+downgraded.
 
-`Tags` - (Optional) The IDs of any tags to attach to this resource. See [here][docs-applying-tags] for a reference on how to apply tags.
+`Tags` - (Optional) The IDs of any tags to attach to this resource. See
+[here][docs-applying-tags] for a reference on how to apply tags.
 
-`CustomAttributes` - (Optional) Map of custom attribute ids to attribute value strings to set for virtual switch. See [here][docs-setting-custom-attributes] for a reference on how to set values for custom attributes.
+`CustomAttributes` - (Optional) Map of custom attribute ids to attribute
+value strings to set for virtual switch. See
+[here][docs-setting-custom-attributes] for a reference on how to set values
+for custom attributes.
 
 
 ## See Also

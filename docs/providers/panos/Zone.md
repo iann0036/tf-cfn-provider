@@ -13,7 +13,8 @@ sure that your `Terraform::Panos::Zone` spec does not define the
 
 `Vsys` - (Optional) The vsys to put the zone into (default: `vsys1`).
 
-`Mode` - (Required) The zone's mode.  This can be `layer3`, `layer2`, `virtual-wire`, `tap`, or `tunnel`.
+`Mode` - (Required) The zone's mode.  This can be `layer3`, `layer2`,
+`virtual-wire`, `tap`, or `tunnel`.
 
 `ZoneProfile` - (Optional) The zone protection profile.
 
@@ -23,9 +24,13 @@ sure that your `Terraform::Panos::Zone` spec does not define the
 
 `Interfaces` - (Optional) List of interfaces to associated with this zone.
 
-`IncludeAcls` - (Optional) Users from these addresses/subnets will be identified.  This can be an address object, an address group, a single IP address, or an IP address subnet.
+`IncludeAcls` - (Optional) Users from these addresses/subnets will
+be identified.  This can be an address object, an address group, a single
+IP address, or an IP address subnet.
 
-`ExcludeAcls` - (Optional) Users from these addresses/subnets will not be identified.  This can be an address object, an address group, a single IP address, or an IP address subnet.
+`ExcludeAcls` - (Optional) Users from these addresses/subnets will not
+be identified.  This can be an address object, an address group, a single
+IP address, or an IP address subnet.
 
 
 ## See Also

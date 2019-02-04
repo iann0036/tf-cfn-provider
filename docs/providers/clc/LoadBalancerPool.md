@@ -12,9 +12,11 @@ See also [Complete API documentation](https://www.ctl.io/api-docs/v2/#shared-loa
 
 `Port` - (Required, int) Either 80 or 443.
 
-`Method` - (Optional, string) The configured balancing method. Either "roundRobin" (default) or "leastConnection".
+`Method` - (Optional, string) The configured balancing method. Either
+"roundRobin" (default) or "leastConnection".
 
-`Persistence` - (Optional, string) The configured persistence method. Either "standard" (default) or "sticky".
+`Persistence` - (Optional, string) The configured persistence
+method. Either "standard" (default) or "sticky".
 
 
 ## See Also

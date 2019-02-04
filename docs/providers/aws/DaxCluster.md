@@ -4,9 +4,12 @@ Provides a DAX Cluster resource.
 
 ## Properties
 
-`IamRoleArn` - (Required) A valid Amazon Resource Name (ARN) that identifies an IAM role. At runtime, DAX will assume this role and use the role's permissions to access DynamoDB on your behalf.
+`IamRoleArn` - (Required) A valid Amazon Resource Name (ARN) that identifies
+an IAM role. At runtime, DAX will assume this role and use the role's
+permissions to access DynamoDB on your behalf.
 
-`AvailabilityZones` - (Optional) List of Availability Zones in which the nodes will be created.
+`AvailabilityZones` - (Optional) List of Availability Zones in which the
+nodes will be created.
 
 `ServerSideEncryption` - (Optional) Encrypt at rest options.
 

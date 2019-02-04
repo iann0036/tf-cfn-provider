@@ -13,7 +13,8 @@ old tags from the previously published plan(s).
 
 `Vsys` - (Optional) The vsys to put the DAG tags in (default: `vsys1`).
 
-`Register` - (Required) A set that includes `ip`, the IP address to be tagged and `tags`, a list of tags to associate with the given IP.
+`Register` - (Required) A set that includes `ip`, the IP address to be tagged
+and `tags`, a list of tags to associate with the given IP.
 
 
 ## See Also

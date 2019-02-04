@@ -24,11 +24,13 @@ Provides an AWS App Mesh route resource.
 
 ### Action Properties
 
-`WeightedTarget` - (Required) The targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.
+`WeightedTarget` - (Required) The targets that traffic is routed to when a request matches the route.
+You can specify one or more targets and their relative weights with which to distribute traffic.
 
 ### Match Properties
 
-`Prefix` - (Required) Specifies the path with which to match requests. This parameter must always start with /, which by itself matches all requests to the virtual router service name.
+`Prefix` - (Required) Specifies the path with which to match requests.
+This parameter must always start with /, which by itself matches all requests to the virtual router service name.
 
 ### WeightedTarget Properties
 

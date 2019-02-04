@@ -4,6 +4,8 @@ Provides a Lambda Layer Version resource. Lambda Layers allow you to reuse share
 
 For information about Lambda Layers and how to use them, see [AWS Lambda Layers][1]
 
+~> **NOTE:** The attribute values for `arn` and `layer_arn` will be swapped in version 2.0.0 of the Terraform AWS Provider.
+
 ## Properties
 
 `S3Bucket` - (Optional) The S3 bucket location containing the function's deployment package. Conflicts with `Filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.

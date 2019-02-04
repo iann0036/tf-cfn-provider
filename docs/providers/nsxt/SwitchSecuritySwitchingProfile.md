@@ -20,15 +20,15 @@ Provides a resource to configure switch security switching profile on NSX-T mana
 
 `BpduFilterWhitelist` - (Optional) Set of allowed MAC addresses to be excluded from BPDU filtering, if enabled.
 
-`RateLimits` - (Optional) Rate limit definitions for broadcast and multicast traffic. * `Enabled` - (Optional) Whether rate limitimg is enabled. * `RxBroadcast` - (Optional) Incoming broadcast traffic limit in packets per second. * `RxMulticast` - (Optional) Incoming multicast traffic limit in packets per second. * `TxBroadcast` - (Optional) Outgoing broadcast traffic limit in packets per second. * `TxMulticast` - (Optional) Outgoing multicast traffic limit in packets per second.
+`RateLimits` - (Optional) Rate limit definitions for broadcast and multicast traffic.
 
-`Enabled` - (Optional) Whether rate limitimg is enabled. * `RxBroadcast` - (Optional) Incoming broadcast traffic limit in packets per second. * `RxMulticast` - (Optional) Incoming multicast traffic limit in packets per second. * `TxBroadcast` - (Optional) Outgoing broadcast traffic limit in packets per second. * `TxMulticast` - (Optional) Outgoing multicast traffic limit in packets per second.
+`Enabled` - (Optional) Whether rate limitimg is enabled.
 
-`RxBroadcast` - (Optional) Incoming broadcast traffic limit in packets per second. * `RxMulticast` - (Optional) Incoming multicast traffic limit in packets per second. * `TxBroadcast` - (Optional) Outgoing broadcast traffic limit in packets per second. * `TxMulticast` - (Optional) Outgoing multicast traffic limit in packets per second.
+`RxBroadcast` - (Optional) Incoming broadcast traffic limit in packets per second.
 
-`RxMulticast` - (Optional) Incoming multicast traffic limit in packets per second. * `TxBroadcast` - (Optional) Outgoing broadcast traffic limit in packets per second. * `TxMulticast` - (Optional) Outgoing multicast traffic limit in packets per second.
+`RxMulticast` - (Optional) Incoming multicast traffic limit in packets per second.
 
-`TxBroadcast` - (Optional) Outgoing broadcast traffic limit in packets per second. * `TxMulticast` - (Optional) Outgoing multicast traffic limit in packets per second.
+`TxBroadcast` - (Optional) Outgoing broadcast traffic limit in packets per second.
 
 `TxMulticast` - (Optional) Outgoing multicast traffic limit in packets per second.
 

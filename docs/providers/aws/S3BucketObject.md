@@ -28,13 +28,18 @@ Provides a S3 bucket object resource.
 
 `WebsiteRedirect` - (Optional) Specifies a target URL for [website redirect](http://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html).
 
-`StorageClass` - (Optional) Specifies the desired [Storage Class](http://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html) for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA`", "`INTELLIGENT_TIERING`", "`GLACIER`", or "`STANDARD_IA`". Defaults to "`STANDARD`".
+`StorageClass` - (Optional) Specifies the desired [Storage Class](http://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html)
+for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA`", "`INTELLIGENT_TIERING`", "`GLACIER`", or "`STANDARD_IA`". Defaults to "`STANDARD`".
 
-`Etag` - (Optional) Used to trigger updates. The only meaningful value is `${md5(file("path/to/file"))}`. This attribute is not compatible with KMS encryption, `KmsKeyId` or `server_side_encryption = "aws:kms"`.
+`Etag` - (Optional) Used to trigger updates. The only meaningful value is `${md5(file("path/to/file"))}`.
+This attribute is not compatible with KMS encryption, `KmsKeyId` or `server_side_encryption = "aws:kms"`.
 
 `ServerSideEncryption` - (Optional) Specifies server-side encryption of the object in S3. Valid values are "`AES256`" and "`aws:kms`".
 
-`KmsKeyId` - (Optional) Specifies the AWS KMS Key ARN to use for object encryption. This value is a fully qualified **ARN** of the KMS Key. If using `Terraform::AWS::KmsKey`, use the exported `arn` attribute: `kmsKeyId = "${awsKmsKey.foo.arn}"`.
+`KmsKeyId` - (Optional) Specifies the AWS KMS Key ARN to use for object encryption.
+This value is a fully qualified **ARN** of the KMS Key. If using `Terraform::AWS::KmsKey`,
+use the exported `arn` attribute:
+`kms_key_id = "${aws_kms_key.foo.arn}"`.
 
 `Tags` - (Optional) A mapping of tags to assign to the object.
 

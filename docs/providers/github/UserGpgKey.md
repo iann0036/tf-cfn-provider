@@ -6,7 +6,8 @@ This resource allows you to add/remove GPG keys from your user account.
 
 ## Properties
 
-`ArmoredPublicKey` - (Required) Your public GPG key, generated in ASCII-armored format. See [Generating a new GPG key](https://help.github.com/articles/generating-a-new-gpg-key/) for help on creating a GPG key.
+`ArmoredPublicKey` - (Required) Your public GPG key, generated in ASCII-armored format.
+See [Generating a new GPG key](https://help.github.com/articles/generating-a-new-gpg-key/) for help on creating a GPG key.
 
 
 ## Return Values

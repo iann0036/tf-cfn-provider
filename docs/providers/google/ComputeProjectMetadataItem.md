@@ -11,7 +11,8 @@ project metadata map.
 
 `Value` - (Required) The value to set for the given metadata key.
 
-`Project` - (Optional) The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
+`Project` - (Optional) The ID of the project in which the resource belongs. If it
+is not provided, the provider project is used.
 
 
 ## See Also

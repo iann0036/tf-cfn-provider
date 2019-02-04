@@ -8,7 +8,8 @@ Provides a customer gateway inside a VPC. These objects can be connected to VPN 
 
 `IpAddress` - (Required) The IP address of the gateway's Internet-routable external interface.
 
-`Type` - (Required) The type of customer gateway. The only type AWS supports at this time is "ipsec.1".
+`Type` - (Required) The type of customer gateway. The only type AWS
+supports at this time is "ipsec.1".
 
 `Tags` - (Optional) Tags to apply to the gateway.
 

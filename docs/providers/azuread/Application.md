@@ -18,6 +18,20 @@ Manages an Application within Azure Active Directory.
 
 `Oauth2AllowImplicitFlow` - (Optional) Does this Azure AD Application allow OAuth2.0 implicit flow tokens? Defaults to `false`.
 
+`RequiredResourceAccess` - (Optional) A collection of `RequiredResourceAccess` blocks as documented below.
+
+### RequiredResourceAccess Properties
+
+`ResourceAppId` - (Required) The unique identifier for the resource that the application requires access to. This should be equal to the appId declared on the target resource application.
+
+`ResourceAccess` - (Required) A collection of `ResourceAccess` blocks as documented below.
+
+### ResourceAccess Properties
+
+`Id` - (Required) The unique identifier for one of the `OAuth2Permission` or `AppRole` instances that the resource application exposes.
+
+`Type` - (Required) Specifies whether the id property references an `OAuth2Permission` or an `AppRole`. Possible values are `Scope` or `Role`.
+
 
 ## Return Values
 

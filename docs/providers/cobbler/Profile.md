@@ -4,7 +4,8 @@ Manages a Profile within Cobbler.
 
 ## Properties
 
-`BootFiles` - (Optional) Files copied into tftpboot beyond the kernel/initrd.
+`BootFiles` - (Optional) Files copied into tftpboot beyond the
+kernel/initrd.
 
 `Comment` - (Optional) Free form text description.
 
@@ -14,7 +15,8 @@ Manages a Profile within Cobbler.
 
 `Distro` - (Optional) Parent distribution.
 
-`EnableGpxe` - (Optional) Use gPXE instead of PXELINUX for advanced booting options.
+`EnableGpxe` - (Optional) Use gPXE instead of PXELINUX for
+advanced booting options.
 
 `EnableMenu` - (Optional) Enable a boot menu.
 
@@ -30,7 +32,8 @@ Manages a Profile within Cobbler.
 
 `MgmtClasses` - (Optional) For external configuration management.
 
-`MgmtParameters` - (Optional) Parameters which will be handed to your management application (Must be a valid YAML dictionary).
+`MgmtParameters` - (Optional) Parameters which will be handed to
+your management application (Must be a valid YAML dictionary).
 
 `NameServersSearch` - (Optional) Name server search settings.
 
@@ -48,9 +51,11 @@ Manages a Profile within Cobbler.
 
 `Repos` - (Optional) Repos to auto-assign to this profile.
 
-`TemplateFiles` - (Optional) File mappings for built-in config management.
+`TemplateFiles` - (Optional) File mappings for built-in config
+management.
 
-`TemplateRemoteKickstarts` - (Optional) remote kickstart templates.
+`TemplateRemoteKickstarts` - (Optional) remote kickstart
+templates.
 
 `VirtAutoBoot` - (Optional) Auto boot virtual machines.
 
@@ -64,7 +69,8 @@ Manages a Profile within Cobbler.
 
 `VirtRam` - (Optional) The amount of RAM for the virtual machine.
 
-`VirtType` - (Optional) The type of virtual machine. Valid options are: xenpv, xenfv, qemu, kvm, vmware, openvz.
+`VirtType` - (Optional) The type of virtual machine. Valid options
+are: xenpv, xenfv, qemu, kvm, vmware, openvz.
 
 `VirtDiskDriver` - (Optional) The virtual machine disk driver.
 

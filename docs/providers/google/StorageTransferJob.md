@@ -17,7 +17,8 @@ To get more information about Google Cloud Storage Transfer, see:
 
 `Schedule` - (Required) Schedule specification defining when the Transfer Job should be scheduled to start, end and and what time to run. Structure documented below.
 
-`Project` - (Optional) The project in which the resource belongs. If it is not provided, the provider project is used.
+`Project` - (Optional) The project in which the resource belongs. If it
+is not provided, the provider project is used.
 
 `Status` - (Optional) Status of the job. Default: `ENABLED`. **NOTE: The effect of the new job status takes place during a subsequent job run. For example, if you change the job status from ENABLED to DISABLED, and an operation spawned by the transfer is running, the status change would not affect the current operation.**.
 
@@ -47,7 +48,8 @@ To get more information about Google Cloud Storage Transfer, see:
 
 `MaxTimeElapsedSinceLastModification` - (Optional) A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
-`MinTimeElapsedSinceLastModification` - (Optional) A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
+`MinTimeElapsedSinceLastModification` - (Optional)
+A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
 `IncludePrefixes` - (Optional) If `include_refixes` is specified, objects that satisfy the object conditions must have names that start with one of the `IncludePrefixes` and that do not start with any of the `ExcludePrefixes`. If `IncludePrefixes` is not specified, all objects except those that have names starting with one of the `ExcludePrefixes` must satisfy the object conditions. See [Requirements](https://cloud.google.com/storage-transfer/docs/reference/rest/v1/TransferSpec#ObjectConditions).
 
@@ -57,7 +59,8 @@ To get more information about Google Cloud Storage Transfer, see:
 
 `OverwriteObjectsAlreadyExistingInSink` - (Optional) Whether overwriting objects that already exist in the sink is allowed.
 
-`DeleteObjectsUniqueInSink` - (Optional) Whether objects that exist only in the sink should be deleted. Note that this option and `DeleteObjectsFromSourceAfterTransfer` are mutually exclusive.
+`DeleteObjectsUniqueInSink` - (Optional) Whether objects that exist only in the sink should be deleted. Note that this option and
+`DeleteObjectsFromSourceAfterTransfer` are mutually exclusive.
 
 `DeleteObjectsFromSourceAfterTransfer` - (Optional) Whether objects should be deleted from the source after they are transferred to the sink. Note that this option and `DeleteObjectsUniqueInSink` are mutually exclusive.
 

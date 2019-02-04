@@ -4,7 +4,8 @@ Provides a [Route53 Delegation Set](https://docs.aws.amazon.com/Route53/latest/A
 
 ## Properties
 
-`ReferenceName` - (Optional) This is a reference name used in Caller Reference (helpful for identifying single delegation set amongst others).
+`ReferenceName` - (Optional) This is a reference name used in Caller Reference
+(helpful for identifying single delegation set amongst others).
 
 
 ## Return Values

@@ -9,7 +9,9 @@ of items which can be created using the ``Terraform::Chef::DataBagItem`` resourc
 
 ## Properties
 
-`Name` - (Required) The unique name to assign to the data bag. This is the name that other server clients will use to find and retrieve data from the data bag.
+`Name` - (Required) The unique name to assign to the data bag. This is the
+name that other server clients will use to find and retrieve data from the
+data bag.
 
 
 ## Return Values

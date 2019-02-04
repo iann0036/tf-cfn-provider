@@ -31,15 +31,24 @@ the `regional_domain_name` attribute.
 
 `RegionalCertificateArn` - (Optional) The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `CertificateArn`, `CertificateName`, `CertificateBody`, `CertificateChain`, and `CertificatePrivateKey`.
 
-`CertificateName` - (Optional) The unique name to use when registering this certificate as an IAM server certificate. Conflicts with `CertificateArn`, `RegionalCertificateArn`, and `RegionalCertificateName`. Required if `CertificateArn` is not set.
+`CertificateName` - (Optional) The unique name to use when registering this
+certificate as an IAM server certificate. Conflicts with `CertificateArn`, `RegionalCertificateArn`, and
+`RegionalCertificateName`. Required if `CertificateArn` is not set.
 
-`CertificateBody` - (Optional) The certificate issued for the domain name being registered, in PEM format. Only valid for `EDGE` endpoint configuration type. Conflicts with `CertificateArn`, `RegionalCertificateArn`, and `RegionalCertificateName`.
+`CertificateBody` - (Optional) The certificate issued for the domain name
+being registered, in PEM format. Only valid for `EDGE` endpoint configuration type. Conflicts with `CertificateArn`, `RegionalCertificateArn`, and
+`RegionalCertificateName`.
 
-`CertificateChain` - (Optional) The certificate for the CA that issued the certificate, along with any intermediate CA certificates required to create an unbroken chain to a certificate trusted by the intended API clients. Only valid for `EDGE` endpoint configuration type. Conflicts with `CertificateArn`, `RegionalCertificateArn`, and `RegionalCertificateName`.
+`CertificateChain` - (Optional) The certificate for the CA that issued the
+certificate, along with any intermediate CA certificates required to
+create an unbroken chain to a certificate trusted by the intended API clients. Only valid for `EDGE` endpoint configuration type. Conflicts with `CertificateArn`,
+`RegionalCertificateArn`, and `RegionalCertificateName`.
 
-`CertificatePrivateKey` - (Optional) The private key associated with the domain certificate given in `CertificateBody`. Only valid for `EDGE` endpoint configuration type. Conflicts with `CertificateArn`, `RegionalCertificateArn`, and `RegionalCertificateName`.
+`CertificatePrivateKey` - (Optional) The private key associated with the
+domain certificate given in `CertificateBody`. Only valid for `EDGE` endpoint configuration type. Conflicts with `CertificateArn`, `RegionalCertificateArn`, and `RegionalCertificateName`.
 
-`RegionalCertificateName` - (Optional) The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `CertificateArn`, `CertificateName`, `CertificateBody`, `CertificateChain`, and `CertificatePrivateKey`.
+`RegionalCertificateName` - (Optional) The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `CertificateArn`, `CertificateName`, `CertificateBody`, `CertificateChain`, and
+`CertificatePrivateKey`.
 
 
 ## Return Values

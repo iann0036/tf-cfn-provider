@@ -8,7 +8,8 @@ Services, and are applied to each AutoScaling Group you supply.
 
 `GroupNames` - (Required) A list of AutoScaling Group Names.
 
-`Notifications` - (Required) A list of Notification Types that trigger notifications. Acceptable values are documented [in the AWS documentation here][1].
+`Notifications` - (Required) A list of Notification Types that trigger
+notifications. Acceptable values are documented [in the AWS documentation here][1].
 
 `TopicArn` - (Required) The Topic ARN for notifications to be sent through.
 

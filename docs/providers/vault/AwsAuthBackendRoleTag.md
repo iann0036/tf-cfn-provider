@@ -4,9 +4,11 @@ Reads role tag information from an AWS auth backend in Vault.
 
 ## Properties
 
-`Role` - (Required) The name of the AWS auth backend role to read role tags from, with no leading or trailing `/`s.
+`Role` - (Required) The name of the AWS auth backend role to read
+role tags from, with no leading or trailing `/`s.
 
-`Backend` - (Optional) The path to the AWS auth backend to read role tags from, with no leading or trailing `/`s. Defaults to "aws".
+`Backend` - (Optional) The path to the AWS auth backend to
+read role tags from, with no leading or trailing `/`s. Defaults to "aws".
 
 `Policies` - (Optional) The policies to be associated with the tag. Must be a subset of the policies associated with the role.
 

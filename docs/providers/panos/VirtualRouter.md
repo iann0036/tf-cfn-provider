@@ -16,9 +16,11 @@ sure that your `Terraform::Panos::VirtualRouter` spec does not define the
 
 `Name` - (Required) The virtual router's name.
 
-`Vsys` - (Required) The vsys that will use this virtual router.  This should be something like `vsys1` or `vsys3`.
+`Vsys` - (Required) The vsys that will use this virtual router.  This should
+be something like `vsys1` or `vsys3`.
 
-`Interfaces` - (Optional) List of interfaces that should use this virtual router.
+`Interfaces` - (Optional) List of interfaces that should use this virtual
+router.
 
 `StaticDist` - (Optional) Admin distance - Static (default: `10`).
 
@@ -28,9 +30,11 @@ sure that your `Terraform::Panos::VirtualRouter` spec does not define the
 
 `OspfExtDist` - (Optional) Admin distance - OSPF Ext (default: `110`).
 
-`Ospfv3IntDist` - (Optional) Admin distance - OSPFv3 Int (default: `30`).
+`Ospfv3IntDist` - (Optional) Admin distance - OSPFv3 Int (default:
+`30`).
 
-`Ospfv3ExtDist` - (Optional) Admin distance - OSPFv3 Ext (default: `110`).
+`Ospfv3ExtDist` - (Optional) Admin distance - OSPFv3 Ext (default:
+`110`).
 
 `IbgpDist` - (Optional) Admin distance - IBGP (default: `200`).
 

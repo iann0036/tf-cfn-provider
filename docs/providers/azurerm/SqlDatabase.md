@@ -26,9 +26,10 @@ Allows you to manage an Azure SQL Database
 
 `MaxSizeBytes` - (Optional) The maximum size that the database can grow to. Applies only if `CreateMode` is `Default`.  Please see [Azure SQL Database Service Tiers](https://azure.microsoft.com/en-gb/documentation/articles/sql-database-service-tiers/).
 
-`RequestedServiceObjectiveId` - (Optional) Use `RequestedServiceObjectiveId` or `RequestedServiceObjectiveName` to set the performance level for the database. Valid values are: `S0`, `S1`, `S2`, `S3`, `P1`, `P2`, `P4`, `P6`, `P11` and `ElasticPool`.  Please see [Azure SQL Database Service Tiers](https://azure.microsoft.com/en-gb/documentation/articles/sql-database-service-tiers/).
+`RequestedServiceObjectiveId` - (Optional) Use `RequestedServiceObjectiveId` or `RequestedServiceObjectiveName` to set the performance level for the database.
+Please see [Azure SQL Database Service Tiers](https://azure.microsoft.com/en-gb/documentation/articles/sql-database-service-tiers/).
 
-`RequestedServiceObjectiveName` - (Optional) Use `RequestedServiceObjectiveName` or `RequestedServiceObjectiveId` to set the performance level for the database.  Please see [Azure SQL Database Service Tiers](https://azure.microsoft.com/en-gb/documentation/articles/sql-database-service-tiers/).
+`RequestedServiceObjectiveName` - (Optional) Use `RequestedServiceObjectiveName` or `RequestedServiceObjectiveId` to set the performance level for the database. Valid values are: `S0`, `S1`, `S2`, `S3`, `P1`, `P2`, `P4`, `P6`, `P11` and `ElasticPool`.  Please see [Azure SQL Database Service Tiers](https://azure.microsoft.com/en-gb/documentation/articles/sql-database-service-tiers/).
 
 `SourceDatabaseDeletionDate` - (Optional) The deletion date time of the source database. Only applies to deleted databases where `CreateMode` is `PointInTimeRestore`.
 

@@ -6,7 +6,8 @@ Manages a [Log Profile](https://docs.microsoft.com/en-us/azure/monitoring-and-di
 
 ## Properties
 
-`Name` - (Required) The name of the Log Profile. Changing this forces a new resource to be created.
+`Name` - (Required) The name of the Log Profile. Changing this forces a
+new resource to be created.
 
 `Categories` - (Required) List of categories of the logs.
 

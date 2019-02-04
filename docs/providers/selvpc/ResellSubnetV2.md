@@ -4,13 +4,17 @@ Manages a V2 subnet resource within Resell Selectel VPC.
 
 ## Properties
 
-`ProjectId` - (Required) An associated Selectel VPC project. Changing this creates a new subnet.
+`ProjectId` - (Required) An associated Selectel VPC project. Changing this
+creates a new subnet.
 
-`Region` - (Required) A region of where the subnet resides. Changing this creates a new subnet.
+`Region` - (Required) A region of where the subnet resides. Changing this
+creates a new subnet.
 
-`PrefixLength` - (Optional) A prefix length of the subnet. Defaults to 29. Changing this creates a new subnet.
+`PrefixLength` - (Optional) A prefix length of the subnet. Defaults to 29.
+Changing this creates a new subnet.
 
-`IpVersion` - (Optional) A version of the IP protocol of the subnet. Defaults to "ipv4". Changing this creates a new subnet.
+`IpVersion` - (Optional) A version of the IP protocol of the subnet. Defaults
+to "ipv4". Changing this creates a new subnet.
 
 
 ## Return Values

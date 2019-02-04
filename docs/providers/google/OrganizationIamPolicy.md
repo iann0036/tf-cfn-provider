@@ -19,7 +19,9 @@ Allows management of the entire IAM policy for an existing Google Cloud Platform
 
 `OrgId` - (Required) The numeric ID of the organization in which you want to create a custom role.
 
-`PolicyData` - (Required) The `Terraform::Google::IamPolicy` data source that represents the IAM policy that will be applied to the organization. This policy overrides any existing policy applied to the organization.
+`PolicyData` - (Required) The `Terraform::Google::IamPolicy` data source that represents
+the IAM policy that will be applied to the organization. This policy overrides any existing
+policy applied to the organization.
 
 
 ## See Also
