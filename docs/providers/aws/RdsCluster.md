@@ -24,16 +24,16 @@ for more information.
 
 `ClusterIdentifier` - (Optional, Forces new resources) The cluster identifier. If omitted, Terraform will assign a random, unique identifier.
 
-`ClusterIdentifierPrefix` - (Optional, Forces new resource) Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifer`.
+`ClusterIdentifierPrefix` - (Optional, Forces new resource) Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `ClusterIdentifier`.
 
 `DatabaseName` - (Optional) Name for an automatically created database on cluster creation. There are different naming restrictions per database engine: [RDS Naming Constraints][5].
 
 `DeletionProtection` - (Optional) If the DB instance should have deletion protection enabled. The database can't be deleted when this value is set to `true`. The default is `false`.
 
-`MasterPassword` - (Required unless a `SnapshotIdentifier` is provided) Password for the master DB user. Note that this may
+`MasterPassword` - (Required unless a `SnapshotIdentifier` or `GlobalClusterIdentifier` is provided) Password for the master DB user. Note that this may
 show up in logs, and it will be stored in the state file. Please refer to the [RDS Naming Constraints][5].
 
-`MasterUsername` - (Required unless a `SnapshotIdentifier` is provided) Username for the master DB user. Please refer to the [RDS Naming Constraints][5].
+`MasterUsername` - (Required unless a `SnapshotIdentifier` or `GlobalClusterIdentifier` is provided) Username for the master DB user. Please refer to the [RDS Naming Constraints][5].
 
 `FinalSnapshotIdentifier` - (Optional) The name of your final DB snapshot
 when this DB cluster is deleted. If omitted, no final snapshot will be
@@ -60,6 +60,8 @@ with the Cluster.
 
 `SnapshotIdentifier` - (Optional) Specifies whether or not to create this cluster from a snapshot. You can use either the name or ARN when specifying a DB cluster snapshot, or the ARN when specifying a DB snapshot.
 
+`GlobalClusterIdentifier` - (Optional) The global cluster identifier specified on [`Terraform::AWS::RdsGlobalCluster`](/docs/providers/aws/r/rds_global_cluster.html).
+
 `StorageEncrypted` - (Optional) Specifies whether the DB cluster is encrypted. The default is `false` for `provisioned` `EngineMode` and `true` for `serverless` `EngineMode`.
 
 `ReplicationSourceIdentifier` - (Optional) ARN of a source DB cluster or DB instance if this DB cluster is to be created as a Read Replica.
@@ -76,7 +78,7 @@ are applied immediately, or during the next maintenance window. Default is
 
 `IamRoles` - (Optional) A List of ARNs for the IAM roles to associate to the RDS Cluster.
 
-`IamDatabaseAuthenticationEnabled` - (Optional) Specifies whether or mappings of AWS Identity and Access Management (IAM) accounts to database accounts is enabled. Please see [AWS Documentation][6] for availability and limitations.
+`IamDatabaseAuthenticationEnabled` - (Optional) Specifies whether or mappings of AWS Identity and Access Management (IAM) accounts to database accounts is enabled. Please see [AWS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/UsingWithRDS.IAMDBAuth.html) for availability and limitations.
 
 `Engine` - (Optional) The name of the database engine to be used for this DB cluster. Defaults to `aurora`. Valid Values: `aurora`, `aurora-mysql`, `aurora-postgresql`.
 

@@ -88,10 +88,6 @@ Provides a resource to configure lb pool on NSX-T manager
 `PassiveMonitorId` - (Optional) Passive health monitor Id. If one is not set, the passive healthchecks will be disabled.
 
 `Type` - (Optional) Type of SNAT performed to ensure reverse traffic from the server can be received and processed by the loadbalancer. Supported types are: SNAT_AUTO_MAP, SNAT_IP_POOL and TRANSPARENT
-* `PortOverload` - (Optional) Maximum times for reusing the same SNAT IP and port for multiple backend connections. Both SNAT_AUTO_MAP and SNAT_IP_POOL modes support port overloading which allows the same SNAT IP and port to be used for multiple backend connections as long as the tuple (source IP, source port, destination IP, destination port, IP protocol) after SNAT is performed is unique. The valid number is 1, 2, 4, 8, 16, 32.
-* `Ip` - (Required for snat_translation of type SNAT_IP_POOL) Ip address or Ip range for SNAT of type SNAT_IP_POOL.
-
-`PortOverload` - (Optional) Maximum times for reusing the same SNAT IP and port for multiple backend connections. Both SNAT_AUTO_MAP and SNAT_IP_POOL modes support port overloading which allows the same SNAT IP and port to be used for multiple backend connections as long as the tuple (source IP, source port, destination IP, destination port, IP protocol) after SNAT is performed is unique. The valid number is 1, 2, 4, 8, 16, 32.
 * `Ip` - (Required for snat_translation of type SNAT_IP_POOL) Ip address or Ip range for SNAT of type SNAT_IP_POOL.
 
 `Ip` - (Required for snat_translation of type SNAT_IP_POOL) Ip address or Ip range for SNAT of type SNAT_IP_POOL.

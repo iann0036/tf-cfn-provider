@@ -27,6 +27,10 @@ Provides a resource to manage roles in an SSH secret backend
 
 `AllowedExtensions` - (Optional) Specifies a comma-separated list of extensions that certificates can have when signed.
 
+`DefaultExtensions` - (Optional) Specifies a map of extensions that certificates have when signed.
+
+`DefaultCriticalOptions` - (Optional) Specifies a map of critical options that certificates have when signed.
+
 `AllowedUsers` - (Optional) Specifies a comma-separated list of usernames that are to be allowed, only if certain usernames are to be allowed.
 
 `DefaultUser` - (Optional) Specifies the default username for which a credential will be generated.

@@ -2,7 +2,7 @@
 
 ## Configuration
 
-To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/vault**. The below arguments may be included as the key/value or JSON properties in the secret:
+To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/vault** or add [template metadata](https://github.com/iann0036/tf-cfn-provider/blob/master/examples/metadata.yaml). The below arguments may be included as the key/value or JSON properties in the secret or metadata object:
 
 * `cert_file` - (Required) Path to a file on local disk that contains the
   PEM-encoded certificate to present to the server.
@@ -44,6 +44,8 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 * [Terraform::Vault::GithubUser](GithubUser.md)
 * [Terraform::Vault::IdentityEntityAlias](IdentityEntityAlias.md)
 * [Terraform::Vault::IdentityEntity](IdentityEntity.md)
+* [Terraform::Vault::IdentityGroupAlias](IdentityGroupAlias.md)
+* [Terraform::Vault::IdentityGroup](IdentityGroup.md)
 * [Terraform::Vault::JwtAuthBackendRole](JwtAuthBackendRole.md)
 * [Terraform::Vault::JwtAuthBackend](JwtAuthBackend.md)
 * [Terraform::Vault::KubernetesAuthBackendConfig](KubernetesAuthBackendConfig.md)

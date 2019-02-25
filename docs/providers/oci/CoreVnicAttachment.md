@@ -49,9 +49,17 @@ For more information about secondary VNICs, see
 
 `AvailabilityDomain` - The availability domain of the instance.  Example: `Uocm:PHX-AD-1`.
 
+`CompartmentId` - The OCID of the compartment the VNIC attachment is in, which is the same compartment the instance is in.
+
 `DisplayName` - A user-friendly name. Does not have to be unique. Avoid entering confidential information.
 
-`CompartmentId` - The OCID of the compartment the VNIC attachment is in, which is the same compartment the instance is in.
+`Id` - The OCID of the VNIC attachment.
+
+`InstanceId` - The OCID of the instance.
+
+`NicIndex` - Which physical network interface card (NIC) the VNIC uses. Certain bare metal instance shapes have two active physical NICs (0 and 1). If you add a secondary VNIC to one of these instances, you can specify which NIC the VNIC will use. For more information, see [Virtual Network Interface Cards (VNICs)](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/managingVNICs.htm).
+
+`State` - The current state of the VNIC attachment.
 
 `SubnetId` - The OCID of the VNIC's subnet.
 
@@ -59,15 +67,7 @@ For more information about secondary VNICs, see
 
 `VlanTag` - The Oracle-assigned VLAN tag of the attached VNIC. Available after the attachment process is complete.  Example: `0`.
 
-`InstanceId` - The OCID of the instance.
-
-`State` - The current state of the VNIC attachment.
-
 `VnicId` - The OCID of the VNIC. Available after the attachment process is complete.
-
-`NicIndex` - Which physical network interface card (NIC) the VNIC uses. Certain bare metal instance shapes have two active physical NICs (0 and 1). If you add a secondary VNIC to one of these instances, you can specify which NIC the VNIC will use. For more information, see [Virtual Network Interface Cards (VNICs)](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/managingVNICs.htm).
-
-`Id` - The OCID of the VNIC attachment.
 
 ## See Also
 

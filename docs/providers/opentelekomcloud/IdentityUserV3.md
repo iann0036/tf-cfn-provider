@@ -5,28 +5,11 @@ Manages a User resource within OpentelekomCloud IAM service.
 Note: You _must_ have admin privileges in your OpentelekomCloud cloud to use
 this resource.
 
-Note: Please authentication on domain level via configuration
-provider as following example:
-
-```hcl
-provider "opentelekomcloud" {
-  user_name   = "<username>"
-  password    = "<password>"
-  domain_name = "<domain name>"
-  auth_url    = "https://iam.eu-de.otc.t-systems.com/v3"
-  region      = "eu-de"
-  insecure    = "true"
-}
-```
-Donot configuration either ```tenant_name``` nor ```tenant_id```.
-
 ## Properties
 
 `Name` - (Required) The name of the user. The user name consists of 5 to 32
 characters. It can contain only uppercase letters, lowercase letters,
 digits, spaces, and special characters (-_) and cannot start with a digit.
-
-`Description` - (Optional) A description of the user.
 
 `DefaultProjectId` - (Optional) The default project this user belongs to.
 

@@ -68,6 +68,8 @@ Manages an Application Gateway.
 
 `Name` - (Required) The name of the Backend HTTP Settings Collection.
 
+`Path` - (Optional) The Path which should be used as a prefix for all HTTP requests.
+
 `Port` - (Required) The port which should be used for this Backend HTTP Settings Collection.
 
 `ProbeName` - (Required) The name of an associated HTTP Probe.

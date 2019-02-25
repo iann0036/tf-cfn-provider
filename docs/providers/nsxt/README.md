@@ -2,7 +2,7 @@
 
 ## Configuration
 
-To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/nsxt**. The below arguments may be included as the key/value or JSON properties in the secret:
+To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/nsxt** or add [template metadata](https://github.com/iann0036/tf-cfn-provider/blob/master/examples/metadata.yaml). The below arguments may be included as the key/value or JSON properties in the secret or metadata object:
 
 * `host` - (Required) The host name or IP address of the NSX-T manager.
 * `username` - (Required) The user name to connect to the NSX-T manager as.
@@ -89,4 +89,5 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 * [Terraform::NSXT::SpoofguardSwitchingProfile](SpoofguardSwitchingProfile.md)
 * [Terraform::NSXT::StaticRoute](StaticRoute.md)
 * [Terraform::NSXT::SwitchSecuritySwitchingProfile](SwitchSecuritySwitchingProfile.md)
+* [Terraform::NSXT::VlanLogicalSwitch](VlanLogicalSwitch.md)
 * [Terraform::NSXT::VmTags](VmTags.md)

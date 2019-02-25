@@ -2,7 +2,7 @@
 
 ## Configuration
 
-To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/flexibleengine**. The below arguments may be included as the key/value or JSON properties in the secret:
+To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/flexibleengine** or add [template metadata](https://github.com/iann0036/tf-cfn-provider/blob/master/examples/metadata.yaml). The below arguments may be included as the key/value or JSON properties in the secret or metadata object:
 
 * `access_key` - (Optional) The access key of the FlexibleEngine cloud to use.
   If omitted, the `OS_ACCESS_KEY` environment variable is used.

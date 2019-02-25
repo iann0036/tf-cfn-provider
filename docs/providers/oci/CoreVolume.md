@@ -55,33 +55,33 @@ description. It does not have to be unique, and you can change it. Avoid enterin
 
 `AvailabilityDomain` - The availability domain of the volume.  Example: `Uocm:PHX-AD-1`.
 
-`DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
-
-`VolumeGroupId` - The OCID of the source volume group.
-
 `CompartmentId` - The OCID of the compartment that contains the volume.
-
-`State` - The current state of a volume.
 
 `DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
 
-`KmsKeyId` - The OCID of the KMS key which is the master encryption key for the volume.
+`DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
 
 `FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
 
-`TimeCreated` - The date and time the volume was created. Format defined by RFC3339.
+`Id` - The OCID of the volume or volume backup.
 
-`SourceDetails` - The volume source, either an existing volume in the same availability domain or a volume backup. If null, an empty volume is created.
+`IsHydrated` - Specifies whether the cloned volume's data has finished copying from the source volume or backup.
+
+`KmsKeyId` - The OCID of the KMS key which is the master encryption key for the volume.
 
 `SizeInGbs` - The size of the volume in GBs.
 
 `SizeInMbs` - The size of the volume in MBs. This field is deprecated. Use `SizeInGbs` instead.
 
-`IsHydrated` - Specifies whether the cloned volume's data has finished copying from the source volume or backup.
+`SourceDetails` - The volume source, either an existing volume in the same availability domain or a volume backup. If null, an empty volume is created.
 
 `Type` - The type can be one of these values: `volume`, `volumeBackup`.
 
-`Id` - The OCID of the volume or volume backup.
+`State` - The current state of a volume.
+
+`TimeCreated` - The date and time the volume was created. Format defined by RFC3339.
+
+`VolumeGroupId` - The OCID of the source volume group.
 
 ## See Also
 

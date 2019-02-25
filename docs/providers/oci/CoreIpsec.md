@@ -50,25 +50,25 @@ To get the status of the tunnels (whether they're up or down), use
 
 ### Fn::GetAtt
 
-`CpeId` - The OCID of the CPE.
-
-`DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
-
-`StaticRoutes` - Static routes to the CPE. At least one route must be included. The CIDR must not be a multicast address or class E address.  Example: `10.0.1.0/24`.
-
 `CompartmentId` - The OCID of the compartment containing the IPSec connection.
+
+`CpeId` - The OCID of the CPE.
 
 `DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
 
-`FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
-
-`TimeCreated` - The date and time the IPSec connection was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+`DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
 
 `DrgId` - The OCID of the DRG.
 
-`State` - The IPSec connection's current state.
+`FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
 
 `Id` - The IPSec connection's Oracle ID (OCID).
+
+`State` - The IPSec connection's current state.
+
+`StaticRoutes` - Static routes to the CPE. At least one route must be included. The CIDR must not be a multicast address or class E address.  Example: `10.0.1.0/24`.
+
+`TimeCreated` - The date and time the IPSec connection was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
 
 ## See Also
 

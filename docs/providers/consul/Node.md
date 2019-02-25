@@ -11,6 +11,8 @@ or referenced in the catalog.
 `Name` - (Required) The name of the node being added to, or
 referenced in the catalog.
 
+`Datacenter` - (Optional) The datacenter to use. Defaults to that of the agent.
+
 `Meta` - (Optional, map) Key/value pairs that are associated with the node.
 
 

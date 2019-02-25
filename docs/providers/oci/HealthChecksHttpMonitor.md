@@ -41,37 +41,37 @@ specified by `intervalInSeconds`.
 
 ### Fn::GetAtt
 
-`IsEnabled` - Enables or disables the monitor. Set to 'true' to launch monitoring.
-
-`IntervalInSeconds` - The monitor interval in seconds. Valid values: 10, 30, and 60.
-
-`Targets` - An array of A target hostname or IP address of the probe.
-
-`DisplayName` - A user-friendly and mutable name suitable for display in a user interface.
-
 `CompartmentId` - The OCID of the compartment.
 
 `DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Operations.CostCenter": "42"}`.
 
+`DisplayName` - A user-friendly and mutable name suitable for display in a user interface.
+
 `FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace.  For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Department": "Finance"}`.
-
-`Protocol` - The supported protocols available for HTTP probes.
-
-`Method` - The supported HTTP methods available for probes.
-
-`Port` - The port on which to probe endpoints. If unspecified, probes will use the default port of their protocol.
 
 `Headers` - A dictionary of HTTP request headers.
 
-`VantagePointNames` - An array of The name of a vantage point from which to execute the probe.
+`Id` - The OCID of the resource.
 
-`ResultsUrl` - A URL for fetching the probe results.
+`IntervalInSeconds` - The monitor interval in seconds. Valid values: 10, 30, and 60.
+
+`IsEnabled` - Enables or disables the monitor. Set to 'true' to launch monitoring.
+
+`Method` - The supported HTTP methods available for probes.
 
 `Path` - The optional URL path to probe, including query parameters.
 
-`Id` - The OCID of the resource.
+`Port` - The port on which to probe endpoints. If unspecified, probes will use the default port of their protocol.
+
+`Protocol` - The supported protocols available for HTTP probes.
+
+`ResultsUrl` - A URL for fetching the probe results.
+
+`Targets` - An array of A target hostname or IP address of the probe.
 
 `TimeoutInSeconds` - The probe timeout in seconds. Valid values: 10, 20, 30, and 60. The probe timeout must be less than or equal to `intervalInSeconds` for monitors.
+
+`VantagePointNames` - An array of The name of a vantage point from which to execute the probe.
 
 ## See Also
 

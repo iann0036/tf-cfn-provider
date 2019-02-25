@@ -45,23 +45,23 @@ It does not have to be unique, and you can change it. Avoid entering confidentia
 
 ### Fn::GetAtt
 
-`PortSpeedShapeName` - The port speed for this cross-connect.  Example: `10 Gbps`.
-
-`LocationName` - The name of the FastConnect location where this cross-connect is installed.
-
 `CompartmentId` - The OCID of the compartment containing the cross-connect group.
 
 `CrossConnectGroupId` - The OCID of the cross-connect group this cross-connect belongs to (if any).
 
-`TimeCreated` - The date and time the cross-connect was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
-
-`State` - The cross-connect's current state.
-
-`PortName` - A string identifying the meet-me room port for this cross-connect.
-
 `DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
 
 `Id` - The cross-connect's Oracle ID (OCID).
+
+`LocationName` - The name of the FastConnect location where this cross-connect is installed.
+
+`PortName` - A string identifying the meet-me room port for this cross-connect.
+
+`PortSpeedShapeName` - The port speed for this cross-connect.  Example: `10 Gbps`.
+
+`State` - The cross-connect's current state.
+
+`TimeCreated` - The date and time the cross-connect was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
 
 ## See Also
 

@@ -24,21 +24,21 @@ tenancy can use this operation to create an auth token for any user, including t
 
 ### Fn::GetAtt
 
-`UserId` - The OCID of the user the auth token belongs to.
-
 `Description` - The description you assign to the auth token. Does not have to be unique, and it's changeable.
+
+`Id` - The OCID of the auth token.
 
 `InactiveState` - The detailed status of INACTIVE lifecycleState.
 
-`Token` - The auth token. The value is available only in the response for `CreateAuthToken`, and not for `ListAuthTokens` or `UpdateAuthToken`.
+`State` - The token's current state.
 
 `TimeCreated` - Date and time the `AuthToken` object was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
 
-`State` - The token's current state.
-
 `TimeExpires` - Date and time when this auth token will expire, in the format defined by RFC3339. Null if it never expires.  Example: `2016-08-25T21:10:29.600Z`.
 
-`Id` - The OCID of the auth token.
+`Token` - The auth token. The value is available only in the response for `CreateAuthToken`, and not for `ListAuthTokens` or `UpdateAuthToken`.
+
+`UserId` - The OCID of the user the auth token belongs to.
 
 ## See Also
 

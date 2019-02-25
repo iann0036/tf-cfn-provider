@@ -8,12 +8,12 @@ Allows you to collect, store, and query cloud resource operation records.
 
 `FilePrefixName` - (Optional) The prefix of a log that needs to be stored in an OBS bucket.
 
+`Status` - The status of a tracker. The value should be **enabled** when creating a tracker, and when updating the value can be enabled or disabled.
+
 
 ## Return Values
 
 ### Fn::GetAtt
-
-`Status` - The status of a tracker. The value is **enabled**.
 
 `TrackerName` - The tracker name. Currently, only tracker **system** is available.
 

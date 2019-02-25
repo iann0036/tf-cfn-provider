@@ -16,11 +16,11 @@ are lowercase letters, numbers, and hyphens (-). Instances are named by
 appending a hyphen and a random four-character string to the base instance
 name.
 
-`InstanceTemplate` - (Optional) The full URL to an instance template from
-which all new instances will be created. This field is only present in the
-`google` provider.
+`InstanceTemplate` - (Required, [GA](https://terraform.io/docs/providers/google/provider_versions.html)) The
+full URL to an instance template from which all new instances
+will be created. This field is only present in the `google` provider.
 
-`Version` - (Optional, [Beta](https://terraform.io/docs/providers/google/provider_versions.html)) Application versions managed by this instance group. Each
+`Version` - (Required, [Beta](https://terraform.io/docs/providers/google/provider_versions.html)) Application versions managed by this instance group. Each
 version deals with a specific instance template, allowing canary release scenarios.
 Structure is documented below.
 

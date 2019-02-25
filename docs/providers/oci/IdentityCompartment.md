@@ -40,25 +40,25 @@ not have to be unique, and you can change it anytime with
 
 ### Fn::GetAtt
 
-`Description` - The description you assign to the compartment. Does not have to be unique, and it's changeable.
-
 `CompartmentId` - The OCID of the parent compartment containing the compartment.
-
-`IsAccessible` - Indicates whether or not the compartment is accessible for the user making the request. Returns true when the user has INSPECT permissions directly on a resource in the compartment or indirectly (permissions can be on a resource in a subcompartment).
 
 `DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Operations.CostCenter": "42"}`.
 
-`InactiveState` - The detailed status of INACTIVE lifecycleState.
+`Description` - The description you assign to the compartment. Does not have to be unique, and it's changeable.
 
 `FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Department": "Finance"}`.
 
-`TimeCreated` - Date and time the compartment was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+`Id` - The OCID of the compartment.
+
+`InactiveState` - The detailed status of INACTIVE lifecycleState.
+
+`IsAccessible` - Indicates whether or not the compartment is accessible for the user making the request. Returns true when the user has INSPECT permissions directly on a resource in the compartment or indirectly (permissions can be on a resource in a subcompartment).
+
+`Name` - The name you assign to the compartment during creation. The name must be unique across all compartments in the parent. Avoid entering confidential information.
 
 `State` - The compartment's current state.
 
-`Id` - The OCID of the compartment.
-
-`Name` - The name you assign to the compartment during creation. The name must be unique across all compartments in the parent. Avoid entering confidential information.
+`TimeCreated` - Date and time the compartment was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
 
 ## See Also
 

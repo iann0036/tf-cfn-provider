@@ -11,7 +11,7 @@ Manages a Key Vault Secret.
 
 `Value` - (Required) Specifies the value of the Key Vault Secret.
 
-`VaultUri` - (Required) Specifies the URI used to access the Key Vault instance, available on the `Terraform::AzureRM::KeyVault` resource.
+`KeyVaultId` - (Required) The ID of the Key Vault where the Secret should be created.
 
 `ContentType` - (Optional) Specifies the content type for the Key Vault Secret.
 

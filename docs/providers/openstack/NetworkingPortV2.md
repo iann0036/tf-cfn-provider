@@ -120,6 +120,8 @@ is left blank or omitted. To retrieve the assigned IP address, use the
 
 `Tags` - See Properties above.
 
+`AllTags` - The collection of tags assigned on the port, which have been.
+
 ## See Also
 
 * [openstack_networking_port_v2](https://www.terraform.io/docs/providers/openstack/r/networking_port_v2.html) in the _Terraform Provider Documentation_

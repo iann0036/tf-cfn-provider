@@ -3,6 +3,13 @@
 This resource allows you to add/update/delete a virtual router's
 BGP configuration.
 
+**Important Note:**  When it comes to BGP configuration, PAN-OS requires that
+BGP itself first be configured before you can add other BGP sub-config, such
+as dampening profiles or peer groups.  Since every BGP resource must reference a
+virtual router, the key to accomplishing this is by pointing the `VirtualRouter`
+param for each BGP sub-config to `Terraform::Panos::Bgp.foo.virtualRouter` instead
+of `Terraform::Panos::VirtualRouter.bar.name`.
+
 ## Properties
 
 `VirtualRouter` - (Required) The virtual router to add this BGP

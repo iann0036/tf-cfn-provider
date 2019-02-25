@@ -15,19 +15,19 @@ Adds the specified user to the specified group and returns a `UserGroupMembershi
 
 ### Fn::GetAtt
 
-`UserId` - The OCID of the user.
-
 `CompartmentId` - The OCID of the tenancy containing the user, group, and membership object.
-
-`InactiveState` - The detailed status of INACTIVE lifecycleState.
-
-`TimeCreated` - Date and time the membership was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
-
-`State` - The membership's current state.
 
 `GroupId` - The OCID of the group.
 
 `Id` - The OCID of the membership.
+
+`InactiveState` - The detailed status of INACTIVE lifecycleState.
+
+`State` - The membership's current state.
+
+`TimeCreated` - Date and time the membership was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+
+`UserId` - The OCID of the user.
 
 ## See Also
 

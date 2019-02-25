@@ -2,7 +2,7 @@
 
 ## Configuration
 
-To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/alicloud**. The below arguments may be included as the key/value or JSON properties in the secret:
+To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/alicloud** or add [template metadata](https://github.com/iann0036/tf-cfn-provider/blob/master/examples/metadata.yaml). The below arguments may be included as the key/value or JSON properties in the secret or metadata object:
 
 * `access_key` - This is the Alicloud access key.
 
@@ -102,6 +102,8 @@ Nested `endpoints` block supports the following:
 * [Terraform::Alicloud::DbConnection](DbConnection.md)
 * [Terraform::Alicloud::DbDatabase](DbDatabase.md)
 * [Terraform::Alicloud::DbInstance](DbInstance.md)
+* [Terraform::Alicloud::DbReadWriteSplittingConnection](DbReadWriteSplittingConnection.md)
+* [Terraform::Alicloud::DbReadonlyInstance](DbReadonlyInstance.md)
 * [Terraform::Alicloud::DiskAttachment](DiskAttachment.md)
 * [Terraform::Alicloud::Disk](Disk.md)
 * [Terraform::Alicloud::DnsGroup](DnsGroup.md)

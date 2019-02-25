@@ -28,17 +28,17 @@ See [Reference Data Sources](#reference-data-sources) below for more details.
 
 ### Fn::GetAtt
 
-`Status` - The Status of the application.
-
-`LastUpdateTimestamp` - The Timestamp when the application was last updated.
-
-`Version` - The Version of the application.
-
-`CreateTimestamp` - The Timestamp when the application version was created.
-
 `Id` - The ARN of the Kinesis Analytics Application.
 
 `Arn` - The ARN of the Kinesis Analytics Appliation.
+
+`CreateTimestamp` - The Timestamp when the application version was created.
+
+`LastUpdateTimestamp` - The Timestamp when the application was last updated.
+
+`Status` - The Status of the application.
+
+`Version` - The Version of the application.
 
 ## See Also
 

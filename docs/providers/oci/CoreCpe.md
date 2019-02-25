@@ -35,19 +35,19 @@ be unique, and you can change it. Avoid entering confidential information.
 
 ### Fn::GetAtt
 
-`DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
-
 `CompartmentId` - The OCID of the compartment containing the CPE.
 
 `DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
 
+`DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
+
 `FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
 
-`TimeCreated` - The date and time the CPE was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+`Id` - The CPE's Oracle ID (OCID).
 
 `IpAddress` - The public IP address of the on-premises router.
 
-`Id` - The CPE's Oracle ID (OCID).
+`TimeCreated` - The date and time the CPE was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
 
 ## See Also
 

@@ -65,39 +65,39 @@ VCN Resolver to resolve hostnames for instances in the subnet. For more informat
 
 ### Fn::GetAtt
 
-`VirtualRouterIp` - The IP address of the virtual router.  Example: `10.0.14.1`.
-
-`VcnId` - The OCID of the VCN the subnet is in.
-
 `AvailabilityDomain` - The subnet's availability domain.  Example: `Uocm:PHX-AD-1`.
 
-`DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
+`CidrBlock` - The subnet's CIDR block.  Example: `172.16.1.0/24`.
 
 `CompartmentId` - The OCID of the compartment containing the subnet.
 
 `DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
 
-`SecurityListIds` - The OCIDs of the security list or lists that the subnet uses. Remember that security lists are associated *with the subnet*, but the rules are applied to the individual VNICs in the subnet.
+`DhcpOptionsId` - The OCID of the set of DHCP options that the subnet uses.
 
-`ProhibitPublicIpOnVnic` - Whether VNICs within this subnet can have public IP addresses. Defaults to false, which means VNICs created in this subnet will automatically be assigned public IP addresses unless specified otherwise during instance launch or VNIC creation (with the `assignPublicIp` flag in [CreateVnicDetails](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/CreateVnicDetails/)). If `prohibitPublicIpOnVnic` is set to true, VNICs created in this subnet cannot have public IP addresses (that is, it's a private subnet).  Example: `true`.
-
-`FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
-
-`SubnetDomainName` - The subnet's domain name, which consists of the subnet's DNS label, the VCN's DNS label, and the `oraclevcn.com` domain.
-
-`Id` - The subnet's Oracle ID (OCID).
-
-`State` - The subnet's current state.
+`DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
 
 `DnsLabel` - A DNS label for the subnet, used in conjunction with the VNIC's hostname and VCN's DNS label to form a fully qualified domain name (FQDN) for each VNIC within this subnet (for example, `bminstance-1.subnet123.vcn1.oraclevcn.com`). Must be an alphanumeric string that begins with a letter and is unique within the VCN. The value cannot be changed.
 
-`TimeCreated` - The date and time the subnet was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+`FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
+
+`Id` - The subnet's Oracle ID (OCID).
+
+`ProhibitPublicIpOnVnic` - Whether VNICs within this subnet can have public IP addresses. Defaults to false, which means VNICs created in this subnet will automatically be assigned public IP addresses unless specified otherwise during instance launch or VNIC creation (with the `assignPublicIp` flag in [CreateVnicDetails](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/CreateVnicDetails/)). If `prohibitPublicIpOnVnic` is set to true, VNICs created in this subnet cannot have public IP addresses (that is, it's a private subnet).  Example: `true`.
 
 `RouteTableId` - The OCID of the route table that the subnet uses.
 
-`CidrBlock` - The subnet's CIDR block.  Example: `172.16.1.0/24`.
+`SecurityListIds` - The OCIDs of the security list or lists that the subnet uses. Remember that security lists are associated *with the subnet*, but the rules are applied to the individual VNICs in the subnet.
 
-`DhcpOptionsId` - The OCID of the set of DHCP options that the subnet uses.
+`State` - The subnet's current state.
+
+`SubnetDomainName` - The subnet's domain name, which consists of the subnet's DNS label, the VCN's DNS label, and the `oraclevcn.com` domain.
+
+`TimeCreated` - The date and time the subnet was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+
+`VcnId` - The OCID of the VCN the subnet is in.
+
+`VirtualRouterIp` - The IP address of the virtual router.  Example: `10.0.14.1`.
 
 `VirtualRouterMac` - The MAC address of the virtual router.  Example: `00:00:17:B6:4D:DD`.
 

@@ -53,6 +53,12 @@ Provides a cloudscale.ch Server resource. This can be used to create, modify, an
 
 `Type` - Either `public` or `private`. Public interfaces are connected to the Internet, while private interfaces are not.
 
+`PublicIpv4` - The first `public` IPv4 address of this server. The returned IP address may be `""` if the server does not have a public IPv4.
+
+`PrivateIpv4` - The first `private` IPv4 address of this server. The returned IP address may be `""` if the server does not have private networking enabled.
+
+`PublicIpv6` - The first `public` IPv6 address of this server. The returned IP address may be `""` if the server does not have a public IPv6.
+
 `Interfaces` - A list of interface objects attached to this server. Each interface object has two attributes:.
 
 `Addresses` - A list of address objects:.

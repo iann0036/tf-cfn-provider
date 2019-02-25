@@ -1,6 +1,6 @@
 # Terraform::AWS::RamResourceShare
 
-Provides a Resource Access Manager (RAM) resource share.
+Manages a Resource Access Manager (RAM) Resource Share. To association principals with the share, see the [`Terraform::AWS::RamPrincipalAssociation` resource](/docs/providers/aws/r/ramPrincipalAssociation.html). To associate resources with the share, see the [`awsRamResourceAssociation` resource](/docs/providers/aws/r/ram_resource_association.html).
 
 ## Properties
 

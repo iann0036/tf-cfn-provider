@@ -32,6 +32,22 @@ Provides a Spotinst Ocean AWS resource.
 
 `IamInstanceProfile` - (Optional) The instance profile iam role.
 
+`AssociatePublicIpAddress` - (Optional).
+
+`LoadBalancers` - (Optional) - Array of load balancer objects to add to ocean cluster
+* `Arn` - (Optional) Required if type is set to TARGET_GROUP
+* `Name` - (Optional) Required if type is set to CLASSIC
+* `Type` - (Required) Can be set to CLASSIC or TARGET_GROUP.
+
+`Arn` - (Optional) Required if type is set to TARGET_GROUP
+* `Name` - (Optional) Required if type is set to CLASSIC
+* `Type` - (Required) Can be set to CLASSIC or TARGET_GROUP.
+
+`Name` - (Optional) Required if type is set to CLASSIC
+* `Type` - (Required) Can be set to CLASSIC or TARGET_GROUP.
+
+`Type` - (Required) Can be set to CLASSIC or TARGET_GROUP.
+
 `FallbackToOndemand` - (Optional, Default: `true`) If not Spot instance markets are available, enable Ocean to launch On-Demand instances instead.
 
 `SpotPercentage` - (Optional, Default: `100`) The percentage of Spot instances the cluster should maintain. Min 0, max 100.
@@ -49,6 +65,8 @@ Provides a Spotinst Ocean AWS resource.
 `AutoscaleHeadroom` - (Optional) Spare resource capacity management enabling fast assignment of Pods without waiting for new resources to launch.
 
 `CpuPerUnit` - (Optional) Optionally configure the number of CPUs to allocate the headroom. CPUs are denoted in millicores, where 1000 millicores = 1 vCPU.
+
+`GpuPerUnit` - (Optional) Optionally configure the number of GPUS to allocate the headroom.
 
 `MemoryPerUnit` - (Optional) Optionally configure the amount of memory (MB) to allocate the headroom.
 

@@ -15,11 +15,11 @@ Attaches a load balancer policy to an ELB backend server.
 
 ### Fn::GetAtt
 
-`InstancePort` - The backend port the policies are applied to.
+`Id` - The ID of the policy.
 
 `LoadBalancerName` - The load balancer on which the policy is defined.
 
-`Id` - The ID of the policy.
+`InstancePort` - The backend port the policies are applied to.
 
 ## See Also
 

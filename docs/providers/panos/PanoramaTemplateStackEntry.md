@@ -13,7 +13,7 @@ in Panorama and don't want Terraform to delete it on `terraform destroy`.
 
 ## Properties
 
-`Template` - (Required) The template name.
+`TemplateStack` - (Required) The template name.
 
 `Device` - (Required) The serial number of the device to add.
 

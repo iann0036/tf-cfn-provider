@@ -13,7 +13,7 @@ for more details.
 
 `Token` - (Required) The Consul management token this backend should use to issue new tokens.
 
-`Backend` - (Optional) The unique location this backend should be mounted at. Must not begin or end with a `/`. Defaults to `consul`.
+`Path` - (Optional) The unique location this backend should be mounted at. Must not begin or end with a `/`. Defaults to `consul`.
 
 `Description` - (Optional) A human-friendly description for this backend.
 

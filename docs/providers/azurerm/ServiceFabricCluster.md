@@ -42,9 +42,9 @@ Manage a Service Fabric Cluster.
 
 `TenantId` - (Required) The Azure Active Directory Tenant ID. Changing this forces a new resource to be created.
 
-`ClusterApplicationId` - (Required) The Azure Active Directory Client ID which should be used for the Cluster Application. Changing this forces a new resource to be created.
+`ClusterApplicationId` - (Required) The Azure Active Directory Cluster Application ID. Changing this forces a new resource to be created.
 
-`ClusterApplicationId` - (Required) The Azure Active Directory Client ID which should be used for the Client Application. Changing this forces a new resource to be created.
+`ClientApplicationId` - (Required) The Azure Active Directory Client ID which should be used for the Client Application. Changing this forces a new resource to be created.
 
 ### Certificate Properties
 
@@ -89,6 +89,10 @@ Manage a Service Fabric Cluster.
 ### NodeType Properties
 
 `Name` - (Required) The name of the Node Type. Changing this forces a new resource to be created.
+
+`PlacementProperties` - (Optional) The placement tags applied to nodes in the node type, which can be used to indicate where certain services (workload) should run.
+
+`Capacities` - (Optional) The capacity tags applied to the nodes in the node type, the cluster resource manager uses these tags to understand how much resource a node has.
 
 `InstanceCount` - (Required) The number of nodes for this Node Type.
 

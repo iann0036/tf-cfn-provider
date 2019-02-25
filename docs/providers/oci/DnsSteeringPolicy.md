@@ -249,51 +249,51 @@ Creates a new steering policy in the specified compartment.
 
 ### Fn::GetAtt
 
-`Ttl` - The Time To Live for responses from the steering policy, in seconds. If not specified during creation, a value of 30 seconds will be used.
+`Answers` - The set of all answers that can potentially issue from the steering policy.
 
-`TimeCreated` - The date and time the resource was created in "YYYY-MM-ddThh:mmZ" format with a Z offset, as defined by RFC 3339.
+`IsDisabled` - Whether or not an answer should be excluded from responses, e.g. because the corresponding server is down for maintenance. Note, however, that such filtering is not automatic and will only take place if a rule implements it.
 
-`HealthCheckMonitorId` - The OCID of the health check monitor providing health data about the answers of the steering policy. A steering policy answer with `Rdata` matching a monitored endpoint will use the health data of that endpoint. A steering policy answer with `Rdata` not matching any monitored endpoint will be assumed healthy.
+`Name` - A user-friendly name for the answer, unique within the steering policy.
 
-`DefaultCount` - Defines a default count if `Cases` is not defined for the rule or a matching case does not define `Count`. `defaultCount` is **not** applied if `Cases` is defined and there are no matching cases.
+`Pool` - The freeform name of a group of one or more records (e.g., a data center or a geographic region) in which this one is included.
 
-`Id` - The OCID of the resource.
+`Rdata` - The record's data, as whitespace-delimited tokens in type-specific presentation format.
 
-`DisplayName` - A user-friendly name for the steering policy. Does not have to be unique, and it's changeable. Avoid entering confidential information.
+`Rtype` - The canonical name for the record's type. Only A, AAAA, and CNAME are supported. For more information, see [Resource Record (RR) TYPEs](https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#dns-parameters-4).
 
 `CompartmentId` - The OCID of the compartment containing the steering policy.
 
 `DefinedTags` - Usage of predefined tag keys. These predefined keys are scoped to a namespace. Example: `{"foo-namespace.bar-key": "value"}`.
 
-`Self` - The canonical absolute URL of the resource.
+`DisplayName` - A user-friendly name for the steering policy. Does not have to be unique, and it's changeable. Avoid entering confidential information.
+
+`FreeformTags` - Simple key-value pair that is applied without any predefined name, type, or scope. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"bar-key": "value"}`.
+
+`HealthCheckMonitorId` - The OCID of the health check monitor providing health data about the answers of the steering policy. A steering policy answer with `Rdata` matching a monitored endpoint will use the health data of that endpoint. A steering policy answer with `Rdata` not matching any monitored endpoint will be assumed healthy.
+
+`Id` - The OCID of the resource.
+
+`Rules` - The pipeline of rules that will be processed in sequence to reduce the pool of answers to a response for any given request.
+
+`ShouldKeep` - Keep the answer if the value is `True`.
 
 `DefaultAnswerData` - Defines a default set of answer conditions and values that are applied to an answer when `Cases` is not defined for the rule or a matching case does not have any matching `answerCondition`s in its `answerData`. `DefaultAnswerData` is **not** applied if `Cases` is defined and there are no matching cases.
 
-`FreeformTags` - Simple key-value pair that is applied without any predefined name, type, or scope. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"bar-key": "value"}`.
+`DefaultCount` - Defines a default count if `Cases` is not defined for the rule or a matching case does not define `Count`. `defaultCount` is **not** applied if `Cases` is defined and there are no matching cases.
+
+`Description` - Your description of the rule's purpose and/or behavior.
+
+`RuleType` - The type of a rule determines its sorting/filtering behavior.
+
+`Self` - The canonical absolute URL of the resource.
 
 `State` - The current state of the resource.
 
 `Template` - The common pattern (or lack thereof) to which the steering policy adheres. This value restricts the possible configurations of rules, but thereby supports specifically tailored interfaces. Values other than "CUSTOM" require the rules to begin with an unconditional FILTER that keeps answers contingent upon `answer.isDisabled != true`, followed _if and only if the policy references a health check monitor_ by an unconditional HEALTH rule, and require the last rule to be an unconditional LIMIT. What must precede the LIMIT rule is determined by the template value:.
 
-`Description` - Your description of the rule's purpose and/or behavior.
+`TimeCreated` - The date and time the resource was created in "YYYY-MM-ddThh:mmZ" format with a Z offset, as defined by RFC 3339.
 
-`Rules` - The pipeline of rules that will be processed in sequence to reduce the pool of answers to a response for any given request.
-
-`IsDisabled` - Whether or not an answer should be excluded from responses, e.g. because the corresponding server is down for maintenance. Note, however, that such filtering is not automatic and will only take place if a rule implements it.
-
-`Answers` - The set of all answers that can potentially issue from the steering policy.
-
-`Rdata` - The record's data, as whitespace-delimited tokens in type-specific presentation format.
-
-`ShouldKeep` - Keep the answer if the value is `True`.
-
-`Pool` - The freeform name of a group of one or more records (e.g., a data center or a geographic region) in which this one is included.
-
-`RuleType` - The type of a rule determines its sorting/filtering behavior.
-
-`Name` - A user-friendly name for the answer, unique within the steering policy.
-
-`Rtype` - The canonical name for the record's type. Only A, AAAA, and CNAME are supported. For more information, see [Resource Record (RR) TYPEs](https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#dns-parameters-4).
+`Ttl` - The Time To Live for responses from the steering policy, in seconds. If not specified during creation, a value of 30 seconds will be used.
 
 ## See Also
 

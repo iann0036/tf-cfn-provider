@@ -27,15 +27,15 @@ balancer.
 
 ### Fn::GetAtt
 
-`LoadBalancer` - The load balancer to which the policy is attached.
-
-`Attribute` - The SSL Negotiation policy attributes.
-
-`LbPort` - The load balancer port to which the policy is applied.
-
 `Id` - The ID of the policy.
 
 `Name` - The name of the stickiness policy.
+
+`LoadBalancer` - The load balancer to which the policy is attached.
+
+`LbPort` - The load balancer port to which the policy is applied.
+
+`Attribute` - The SSL Negotiation policy attributes.
 
 ## See Also
 

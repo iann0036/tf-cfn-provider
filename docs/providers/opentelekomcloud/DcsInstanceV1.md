@@ -13,7 +13,7 @@ string containing not more than 1024 characters.
 `Engine` - (Required) Indicates a cache engine. Only Redis is supported. Changing this
 creates a new instance.
 
-`EngineVersion` - (Optional) Indicates the version of a cache engine, which is 3.0.7.
+`EngineVersion` - (Required) Indicates the version of a cache engine, which is 3.0.7.
 Changing this creates a new instance.
 
 `Capacity` - (Required) Indicates the Cache capacity. Unit: GB.
@@ -27,7 +27,7 @@ authentication. A username starts with a letter, consists of 1 to 64 characters,
 and supports only letters, digits, and hyphens (-).
 Changing this creates a new instance.
 
-`Password` - (Optional) Password of a DCS instance.
+`Password` - (Required) Password of a DCS instance.
 The password of a DCS Redis instance must meet the following complexity requirements:
 Changing this creates a new instance.
 

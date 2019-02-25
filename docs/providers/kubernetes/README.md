@@ -2,7 +2,7 @@
 
 ## Configuration
 
-To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/kubernetes**. The below arguments may be included as the key/value or JSON properties in the secret:
+To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/kubernetes** or add [template metadata](https://github.com/iann0036/tf-cfn-provider/blob/master/examples/metadata.yaml). The below arguments may be included as the key/value or JSON properties in the secret or metadata object:
 
 * `host` - (Optional) The hostname (in form of URI) of Kubernetes master. Defaults to `https://localhost`.
 * `username` - (Optional) The username to use for HTTP basic authentication when accessing the Kubernetes master endpoint.

@@ -14,9 +14,9 @@ main route table for the target VPC.
 
 ### Fn::GetAtt
 
-`OriginalRouteTableId` - Used internally, see __Notes__ below.
-
 `Id` - The ID of the Route Table Association.
+
+`OriginalRouteTableId` - Used internally, see __Notes__ below.
 
 ## See Also
 

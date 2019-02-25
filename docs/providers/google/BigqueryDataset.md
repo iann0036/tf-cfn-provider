@@ -16,6 +16,10 @@ is not provided, the provider project is used.
 
 `Description` - (Optional) A user-friendly description of the dataset.
 
+`DeleteContentsOnDestroy` - (Optional) If set to `true`, delete all the
+tables in the dataset when destroying the resource; otherwise, destroying
+the resource will fail if tables are present.
+
 `Location` - (Optional) The geographic location where the dataset should reside.
 See [official docs](https://cloud.google.com/bigquery/docs/dataset-locations).
 

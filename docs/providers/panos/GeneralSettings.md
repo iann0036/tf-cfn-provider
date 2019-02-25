@@ -20,6 +20,14 @@ destroy` does not remove config from the firewall.
 
 `VerifyUpdateServer` - Verify update server identity (Default: `true`).
 
+`ProxyServer` - (1.5+) Specify a proxy server.
+
+`ProxyPort` - (int, 1.5+) Proxy's port number.
+
+`ProxyUsername` - (1.5+) Proxy's username.
+
+`ProxyPassword` - (1.5+) Proxy's password.
+
 `DnsPrimary` - Primary DNS server.
 
 `DnsSecondary` - Secondary DNS server.

@@ -51,7 +51,6 @@ Manages a Function App.
 `WebsocketsEnabled` - (Optional) Should WebSockets be enabled?.
 
 `LinuxFxVersion` - (Optional) Linux App Framework and version for the AppService, e.g. `DOCKER|(golang:latest)`.
----.
 
 ### Identity Properties
 

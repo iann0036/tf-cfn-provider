@@ -26,21 +26,21 @@ fetching probe results.
 
 ### Fn::GetAtt
 
-`VantagePointNames` - An array of The name of a vantage point from which to execute the probe.
-
-`Protocol` - The protocols for ping probes.
-
 `CompartmentId` - The OCID of the compartment.
 
 `Id` - The OCID of the resource.
 
 `Port` - The port on which to probe endpoints. If unspecified, probes will use the default port of their protocol.
 
+`Protocol` - The protocols for ping probes.
+
 `ResultsUrl` - A URL for fetching the probe results.
+
+`Targets` - An array of A target hostname or IP address of the probe.
 
 `TimeoutInSeconds` - The probe timeout in seconds. Valid values: 10, 20, 30, and 60. The probe timeout must be less than or equal to `intervalInSeconds` for monitors.
 
-`Targets` - An array of A target hostname or IP address of the probe.
+`VantagePointNames` - An array of The name of a vantage point from which to execute the probe.
 
 ## See Also
 

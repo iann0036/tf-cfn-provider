@@ -75,31 +75,31 @@ Note: To enable object copy, you must authorize the service to manage objects on
 
 ### Fn::GetAtt
 
-`ContentLength` - The content length of the body.
-
-`Namespace` - The top-level namespace of the source object.
-
-`Region` - The region of the source object.
-
-`Object` - The name of the source object.
-
 `Bucket` - The name of the bucket for the source object.
-
-`SourceUriDetails` - Details of the source URI of the object in the cloud.
 
 `Content` - The object to upload to the object store.
 
-`Source` - An absolute path to a file on the local system to upload to the object store.
+`ContentEncoding` - The content encoding of the object.
 
 `ContentLanguage` - The content language of the object.
 
-`ContentEncoding` - The content encoding of the object.
-
-`ContentType` - The content type of the object.  Defaults to 'application/octet-stream' if not overridden during the PutObject call.
+`ContentLength` - The content length of the body.
 
 `ContentMd5` - The base-64 encoded MD5 hash of the body.
 
+`ContentType` - The content type of the object.  Defaults to 'application/octet-stream' if not overridden during the PutObject call.
+
 `Metadata` - Optional user-defined metadata key and value.
+
+`Namespace` - The top-level namespace of the source object.
+
+`Object` - The name of the source object.
+
+`Source` - An absolute path to a file on the local system to upload to the object store.
+
+`SourceUriDetails` - Details of the source URI of the object in the cloud.
+
+`Region` - The region of the source object.
 
 ## See Also
 

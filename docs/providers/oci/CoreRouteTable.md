@@ -51,31 +51,31 @@ For more information on configuring a VCN's default route table, see [Managing D
 
 ### Fn::GetAtt
 
-`VcnId` - The OCID of the VCN the route table list belongs to.
-
-`DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
-
 `CompartmentId` - The OCID of the compartment containing the route table.
-
-`RouteRules` - The collection of rules for routing destination IPs to network devices.
 
 `DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
 
-`Destination` - Conceptually, this is the range of IP addresses used for matching when routing traffic. Required if you provide a `destinationType`.
+`DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
 
 `FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
 
-`TimeCreated` - The date and time the route table was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+`Id` - The route table's Oracle ID (OCID).
+
+`RouteRules` - The collection of rules for routing destination IPs to network devices.
+
+`CidrBlock` - Deprecated. Instead use `Destination` and `destinationType`. Requests that include both `CidrBlock` and `Destination` will be rejected.
+
+`Destination` - Conceptually, this is the range of IP addresses used for matching when routing traffic. Required if you provide a `destinationType`.
+
+`DestinationType` - Type of destination for the rule. Required if you provide a `Destination`.
 
 `NetworkEntityId` - The OCID for the route rule's target. For information about the type of targets you can specify, see [Route Tables](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/managingroutetables.htm).
 
 `State` - The route table's current state.
 
-`DestinationType` - Type of destination for the rule. Required if you provide a `Destination`.
+`TimeCreated` - The date and time the route table was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
 
-`CidrBlock` - Deprecated. Instead use `Destination` and `destinationType`. Requests that include both `CidrBlock` and `Destination` will be rejected.
-
-`Id` - The route table's Oracle ID (OCID).
+`VcnId` - The OCID of the VCN the route table list belongs to.
 
 ## See Also
 

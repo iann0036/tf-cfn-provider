@@ -43,33 +43,33 @@ succeeded.
 
 ### Fn::GetAtt
 
-`AvailabilityDomain` - The public IP's availability domain. This property is set only for ephemeral public IPs that are assigned to a private IP (that is, when the `scope` of the public IP is set to AVAILABILITY_DOMAIN). The value is the availability domain of the assigned private IP.  Example: `Uocm:PHX-AD-1`.
-
-`DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
-
-`CompartmentId` - The OCID of the compartment containing the public IP. For an ephemeral public IP, this is the compartment of its assigned entity (which can be a private IP or a regional entity such as a NAT gateway). For a reserved public IP that is currently assigned, its compartment can be different from the assigned private IP's.
-
-`PrivateIpId` - Deprecated. Use `assignedEntityId` instead.
+`AssignedEntityId` - The OCID of the entity the public IP is assigned to, or in the process of being assigned to.
 
 `AssignedEntityType` - The type of entity the public IP is assigned to, or in the process of being assigned to.
 
-`FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
+`AvailabilityDomain` - The public IP's availability domain. This property is set only for ephemeral public IPs that are assigned to a private IP (that is, when the `scope` of the public IP is set to AVAILABILITY_DOMAIN). The value is the availability domain of the assigned private IP.  Example: `Uocm:PHX-AD-1`.
 
-`TimeCreated` - The date and time the public IP was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
-
-`Lifetime` - Defines when the public IP is deleted and released back to Oracle's public IP pool.
-
-`State` - The public IP's current state.
-
-`Scope` - Whether the public IP is regional or specific to a particular availability domain.
+`CompartmentId` - The OCID of the compartment containing the public IP. For an ephemeral public IP, this is the compartment of its assigned entity (which can be a private IP or a regional entity such as a NAT gateway). For a reserved public IP that is currently assigned, its compartment can be different from the assigned private IP's.
 
 `DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
 
-`AssignedEntityId` - The OCID of the entity the public IP is assigned to, or in the process of being assigned to.
+`DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
+
+`FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
+
+`Id` - The public IP's Oracle ID (OCID).
 
 `IpAddress` - The public IP address of the `publicIp` object.  Example: `129.146.2.1`.
 
-`Id` - The public IP's Oracle ID (OCID).
+`Lifetime` - Defines when the public IP is deleted and released back to Oracle's public IP pool.
+
+`PrivateIpId` - Deprecated. Use `assignedEntityId` instead.
+
+`Scope` - Whether the public IP is regional or specific to a particular availability domain.
+
+`State` - The public IP's current state.
+
+`TimeCreated` - The date and time the public IP was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
 
 ## See Also
 

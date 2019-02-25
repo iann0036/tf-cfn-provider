@@ -89,13 +89,16 @@ of `ASYNCHRONOUS` or `SYNCHRONOUS`.
 `StartTime` - (Optional) `HH:MM` format time indicating when backup
 configuration starts.
 
-`Ipv4Enabled` - (Optional) True if the instance should be assigned an IP
-address. The IPv4 address cannot be disabled for Second Generation instances.
+`Ipv4Enabled` - (Optional) Whether this Cloud SQL instance should be assigned
+a public IPV4 address. Either `Ipv4Enabled` must be enabled or a
+`PrivateNetwork` must be configured.
+
+`PrivateNetwork` - (Optional) The VPC network from which the Cloud SQL
+instance is accessible for private IP. Specifying a network enables private IP.
+Either `Ipv4Enabled` must be enabled or a `PrivateNetwork` must be configured.
 
 `RequireSsl` - (Optional) True if mysqld should default to `REQUIRE X509`
 for users connecting over IP.
-
-`PrivateNetwork` - (Optional) The resource link for the VPC network from which the Cloud SQL instance is accessible for private IP.
 
 `ExpirationTime` - (Optional) The [RFC 3339](https://tools.ietf.org/html/rfc3339)
 formatted date time string indicating when this whitelist expires.
@@ -156,17 +159,23 @@ value is checked during the SSL handshake.
 
 ### Fn::GetAtt
 
-`FirstIpAddress` - The first IPv4 address of the addresses assigned. This is.
+`SelfLink` - The URI of the created resource.
 
-`ConnectionName` - The connection name of the instance to be used in connection strings.
+`ConnectionName` - The connection name of the instance to be used in.
+
+`ServiceAccountEmailAddress` - The service account email address assigned to the.
 
 `IpAddress.0.ipAddress` - The IPv4 address assigned.
 
 `IpAddress.0.timeToRetire` - The time this IP address will be retired, in RFC.
 
-`IpAddress.0.type` - The type of this IP address. A PRIMARY address is an address that can accept incoming connections. An OUTGOING address is the source address of connections originating from the instance, if supported. A PRIVATE address is an address for an instance which has been configured to use private networking see: [Private IP](https://cloud.google.com/sql/docs/mysql/private-ip).
+`IpAddress.0.type` - The type of this IP address.
 
-`SelfLink` - The URI of the created resource.
+`FirstIpAddress` - The first IPv4 address of any type assigned. This is to.
+
+`PublicIpAddress` - The first public (`PRIMARY`) IPv4 address assigned. This is.
+
+`PrivateIpAddress` - The first private (`PRIVATE`) IPv4 address assigned. This is.
 
 `Settings.version` - Used to make sure changes to the `Settings` block are.
 
@@ -179,8 +188,6 @@ value is checked during the SSL handshake.
 `ServerCaCert.0.expirationTime` - Expiration time of the CA Cert.
 
 `ServerCaCert.0.sha1Fingerprint` - SHA Fingerprint of the CA Cert.
-
-`ServiceAccountEmailAddress` - The service account email address assigned to the.
 
 ## See Also
 

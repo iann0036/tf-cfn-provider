@@ -8,7 +8,9 @@ Provides a resource to create a role in an [GCP auth backend within Vault](https
 
 `Type` - (Required) Type of GCP authentication role (either `gce` or `iam`).
 
-`ProjectId` - (Optional, Deprecated) GCP Project that the role exists within.
+`ProjectId` - (Optional; Deprecated, use `BoundProjects` instead) GCP Project that the role exists within.
+
+`BoundProjects` - (Optional) An array of GCP project IDs. Only entities belonging to this project can authenticate under the role.
 
 `Ttl` - (Optional) Default TTL of tokens issued by the backend.
 
@@ -20,7 +22,7 @@ Provides a resource to create a role in an [GCP auth backend within Vault](https
 
 `Backend` - (Optional) Path to the mounted GCP auth backend.
 
-`BoundServiceAccounts` - (Optional) GCP Service Accounts allowed to issue tokens under this role. (Note: **Required** if role is `iam`We).
+`BoundServiceAccounts` - (Optional) GCP Service Accounts allowed to issue tokens under this role. (Note: **Required** if role is `iam`).
 
 
 ## See Also

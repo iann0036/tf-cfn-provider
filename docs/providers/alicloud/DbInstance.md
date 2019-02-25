@@ -57,6 +57,8 @@ The multiple zone ID can be retrieved by setting `multi` to "true" in the data s
 
 `DbMappings` - (Deprecated) It has been deprecated from version 1.5.0. New resource `Terraform::Alicloud::DbDatabase` replaces it.
 
+`Parameters` - (Optional) Set of parameters needs to be set after DB instance was launched. Available parameters can refer to the latest docs [View database parameter templates](https://www.alibabacloud.com/help/doc-detail/26284.htm) .
+
 
 ## Return Values
 

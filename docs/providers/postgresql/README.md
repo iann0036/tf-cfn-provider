@@ -2,13 +2,14 @@
 
 ## Configuration
 
-To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/postgresql**. The below arguments may be included as the key/value or JSON properties in the secret:
+To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/postgresql** or add [template metadata](https://github.com/iann0036/tf-cfn-provider/blob/master/examples/metadata.yaml). The below arguments may be included as the key/value or JSON properties in the secret or metadata object:
 
 * `host` - (Required) The address for the postgresql server connection.
 * `port` - (Optional) The port for the postgresql server connection. The default is `5432`.
 * `database` - (Optional) Database to connect to. The default is `postgres`.
 * `username` - (Required) Username for the server connection.
 * `password` - (Optional) Password for the server connection.
+* `database_username` - (Optional) Username of the user in the database if different than connection username (See [user name maps](https://www.postgresql.org/docs/current/auth-username-maps.html)).
 * `sslmode` - (Optional) Set the priority for an SSL connection to the server.
   Valid values for `sslmode` are (note: `prefer` is not supported by Go's
   [`lib/pq`](https://godoc.org/github.com/lib/pq)):

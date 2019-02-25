@@ -19,9 +19,66 @@ For EC2 Classic instances:  `"Linux/UNIX (Amazon VPC)"`, `"SUSE Linux (Amazon VP
 
 `DesiredCapacity` - (Required) The desired number of instances the group should have at any time.
 
-`BeanstalkEnvironmentName` - (Required) The name of an existing Beanstalk environment.
+`BeanstalkEnvironmentName` - (Optional) The name of an existing Beanstalk environment.
+
+`BeanstalkEnvironmentId` - (Optional) The id of an existing Beanstalk environment.
 
 `InstanceTypesSpot` - (Required) One or more instance types. To maximize the availability of Spot instances, select as many instance types as possible.
+
+`DeploymentPreferences` - (Optional) Preferences when performing a roll
+* `AutomaticRoll` - (Required) Should roll perform automatically
+* `BatchSizePercentage` - (Required) Percent size of each batch
+* `GracePeriod` - (Required) Amount of time to wait between batches
+* `Strategy` - (Optional) Strategy parameters
+* `Action` - (Required) Action to take
+* `ShouldDrainInstances` - (Required) Bool value if to wait to drain instance.
+
+`AutomaticRoll` - (Required) Should roll perform automatically
+* `BatchSizePercentage` - (Required) Percent size of each batch
+* `GracePeriod` - (Required) Amount of time to wait between batches
+* `Strategy` - (Optional) Strategy parameters
+* `Action` - (Required) Action to take
+* `ShouldDrainInstances` - (Required) Bool value if to wait to drain instance.
+
+`BatchSizePercentage` - (Required) Percent size of each batch
+* `GracePeriod` - (Required) Amount of time to wait between batches
+* `Strategy` - (Optional) Strategy parameters
+* `Action` - (Required) Action to take
+* `ShouldDrainInstances` - (Required) Bool value if to wait to drain instance.
+
+`GracePeriod` - (Required) Amount of time to wait between batches
+* `Strategy` - (Optional) Strategy parameters
+* `Action` - (Required) Action to take
+* `ShouldDrainInstances` - (Required) Bool value if to wait to drain instance.
+
+`Strategy` - (Optional) Strategy parameters
+* `Action` - (Required) Action to take
+* `ShouldDrainInstances` - (Required) Bool value if to wait to drain instance.
+
+`Action` - (Required) Action to take
+* `ShouldDrainInstances` - (Required) Bool value if to wait to drain instance.
+
+`ShouldDrainInstances` - (Required) Bool value if to wait to drain instance.
+
+`ManagedActions` - (Optional) Managed Actions parameters
+* `PlatformUpdate` - (Optional) Platform Update parameters
+* `PerformAt` - (Required) Actions to perform (options: timeWindow, never)
+* `TimeWindow` - (Required) Time Window for when action occurs ex. Mon:23:50-Tue:00:20
+* `UpdateLevel` - (Required) - Level to update.
+
+`PlatformUpdate` - (Optional) Platform Update parameters
+* `PerformAt` - (Required) Actions to perform (options: timeWindow, never)
+* `TimeWindow` - (Required) Time Window for when action occurs ex. Mon:23:50-Tue:00:20
+* `UpdateLevel` - (Required) - Level to update.
+
+`PerformAt` - (Required) Actions to perform (options: timeWindow, never)
+* `TimeWindow` - (Required) Time Window for when action occurs ex. Mon:23:50-Tue:00:20
+* `UpdateLevel` - (Required) - Level to update.
+
+`TimeWindow` - (Required) Time Window for when action occurs ex. Mon:23:50-Tue:00:20
+* `UpdateLevel` - (Required) - Level to update.
+
+`UpdateLevel` - (Required) - Level to update.
 
 
 ## See Also

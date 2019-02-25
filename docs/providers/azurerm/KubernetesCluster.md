@@ -72,13 +72,13 @@ Manages a Managed Kubernetes Cluster (also known as AKS / Azure Kubernetes Servi
 
 `NetworkPlugin` - (Required) Network plugin to use for networking. Currently supported values are `azure` and `kubenet`. Changing this forces a new resource to be created.
 
-`DnsServiceIp` - (Optional) IP address within the Kubernetes service address range that will be used by cluster service discovery (kube-dns). This is required when `NetworkPlugin` is set to `kubenet`. Changing this forces a new resource to be created.
+`DnsServiceIp` - (Optional) IP address within the Kubernetes service address range that will be used by cluster service discovery (kube-dns). This is required when `NetworkPlugin` is set to `azure`. Changing this forces a new resource to be created.
 
-`DockerBridgeCidr` - (Optional) IP address (in CIDR notation) used as the Docker bridge IP address on nodes. This is required when `NetworkPlugin` is set to `kubenet`. Changing this forces a new resource to be created.
+`DockerBridgeCidr` - (Optional) IP address (in CIDR notation) used as the Docker bridge IP address on nodes. This is required when `NetworkPlugin` is set to `azure`. Changing this forces a new resource to be created.
 
 `PodCidr` - (Optional) The CIDR to use for pod IP addresses. This field can only be set when `NetworkPlugin` is set to `kubenet`. Changing this forces a new resource to be created.
 
-`ServiceCidr` - (Optional) The Network Range used by the Kubernetes service. This is required when `NetworkPlugin` is set to `kubenet`. Changing this forces a new resource to be created.
+`ServiceCidr` - (Optional) The Network Range used by the Kubernetes service. This is required when `NetworkPlugin` is set to `azure`. Changing this forces a new resource to be created.
 
 ### OmsAgent Properties
 

@@ -7,7 +7,7 @@ Transform:
 
 Metadata:
     DigitalOcean:
-        token: "this value will override the secret value"
+        token: "this value will override the secret value, if set"
 
 Resources:
 

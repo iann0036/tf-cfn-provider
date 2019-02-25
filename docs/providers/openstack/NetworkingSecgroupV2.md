@@ -40,6 +40,8 @@ for more information.
 
 `Tags` - See Properties above.
 
+`AllTags` - The collection of tags assigned on the security group, which have.
+
 ## See Also
 
 * [openstack_networking_secgroup_v2](https://www.terraform.io/docs/providers/openstack/r/networking_secgroup_v2.html) in the _Terraform Provider Documentation_

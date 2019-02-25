@@ -32,6 +32,10 @@ For resources should be named with their "full path". The full path is the combi
 
 `Compatibility` -  (Optional) Specifies, when enabled, that the SSL options setting (in OpenSSL) is set to ALL. Accepts 'enabled' or 'disabled' values, the default value is 'enabled'.
 
+`Filename` - (Optional) Specifies the full path and file name of the file that the system attempts to download. The health check is successful if the system can download the file.
+
+`Mode` - (Optional) Specifies the data transfer process (DTP) mode. The default value is passive. The options are passive (Specifies that the monitor sends a data transfer request to the FTP server. When the FTP server receives the request, the FTP server then initiates and establishes the data connection.) and active (Specifies that the monitor initiates and establishes the data connection with the FTP server.).
+
 
 ## See Also
 

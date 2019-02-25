@@ -12,13 +12,13 @@ Provides a CloudWatch Metric Alarm resource.
 
 `EvaluationPeriods` - (Required) The number of periods over which data is compared to the specified threshold.
 
-`MetricName` - (Required) The name for the alarm's associated metric.
+`MetricName` - (Optional) The name for the alarm's associated metric.
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
 
-`Namespace` - (Required) The namespace for the alarm's associated metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
+`Namespace` - (Optional) The namespace for the alarm's associated metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
 
-`Period` - (Required) The period in seconds over which the specified `Statistic` is applied.
+`Period` - (Optional) The period in seconds over which the specified `Statistic` is applied.
 
 `Statistic` - (Optional) The statistic to apply to the alarm's associated metric.
 Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`.

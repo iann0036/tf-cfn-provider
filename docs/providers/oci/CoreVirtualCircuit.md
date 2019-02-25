@@ -70,53 +70,53 @@ traffic will not flow. For more information, see
 
 ### Fn::GetAtt
 
-`BgpManagement` - BGP management option.
-
-`TimeCreated` - The date and time the virtual circuit was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
-
-`Id` - The virtual circuit's Oracle ID (OCID).
-
-`GatewayId` - The OCID of the customer's [dynamic routing gateway (DRG)](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/Drg) that this virtual circuit uses. Applicable only to private virtual circuits.
-
-`DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
-
-`CompartmentId` - The OCID of the compartment containing the virtual circuit.
-
-`ReferenceComment` - Provider-supplied reference information about this virtual circuit (if the customer is connecting via a provider).
-
 `BandwidthShapeName` - The provisioned data rate of the connection.  To get a list of the available bandwidth levels (that is, shapes), see [ListFastConnectProviderServiceVirtualCircuitBandwidthShapes](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/FastConnectProviderService/ListFastConnectProviderVirtualCircuitBandwidthShapes).  Example: `10 Gbps`.
 
-`State` - The virtual circuit's current state. For information about the different states, see [FastConnect Overview](https://docs.cloud.oracle.com/iaas/Content/Network/Concepts/fastconnect.htm).
+`BgpManagement` - BGP management option.
 
 `BgpSessionState` - The state of the BGP session associated with the virtual circuit.
 
-`ProviderState` - The provider's state in relation to this virtual circuit (if the customer is connecting via a provider). ACTIVE means the provider has provisioned the virtual circuit from their end. INACTIVE means the provider has not yet provisioned the virtual circuit, or has de-provisioned it.
+`CompartmentId` - The OCID of the compartment containing the virtual circuit.
 
-`ServiceType` - Provider service type.
-
-`Type` - Whether the virtual circuit supports private or public peering. For more information, see [FastConnect Overview](https://docs.cloud.oracle.com/iaas/Content/Network/Concepts/fastconnect.htm).
-
-`CustomerBgpPeeringIp` - The BGP IPv4 address for the router on the other end of the BGP session from Oracle. Specified by the owner of that router. If the session goes from Oracle to a customer, this is the BGP IPv4 address of the customer's edge router. If the session goes from Oracle to a provider, this is the BGP IPv4 address of the provider's edge router. Must use a /30 or /31 subnet mask.
+`CrossConnectMappings` - An array of mappings, each containing properties for a cross-connect or cross-connect group that is associated with this virtual circuit.
 
 `BgpMd5authKey` - The key for BGP MD5 authentication. Only applicable if your system requires MD5 authentication. If empty or not set (null), that means you don't use BGP MD5 authentication.
 
 `CrossConnectOrCrossConnectGroupId` - The OCID of the cross-connect or cross-connect group for this mapping. Specified by the owner of the cross-connect or cross-connect group (the customer if the customer is colocated with Oracle, or the provider if the customer is connecting via provider).
 
+`CustomerBgpPeeringIp` - The BGP IPv4 address for the router on the other end of the BGP session from Oracle. Specified by the owner of that router. If the session goes from Oracle to a customer, this is the BGP IPv4 address of the customer's edge router. If the session goes from Oracle to a provider, this is the BGP IPv4 address of the provider's edge router. Must use a /30 or /31 subnet mask.
+
+`OracleBgpPeeringIp` - The IPv4 address for Oracle's end of the BGP session. Must use a /30 or /31 subnet mask. If the session goes from Oracle to a customer's edge router, the customer specifies this information. If the session goes from Oracle to a provider's edge router, the provider specifies this.
+
 `Vlan` - The number of the specific VLAN (on the cross-connect or cross-connect group) that is assigned to this virtual circuit. Specified by the owner of the cross-connect or cross-connect group (the customer if the customer is colocated with Oracle, or the provider if the customer is connecting via provider).  Example: `200`.
 
 `CustomerBgpAsn` - The BGP ASN of the network at the other end of the BGP session from Oracle. If the session is between the customer's edge router and Oracle, the value is the customer's ASN. If the BGP session is between the provider's edge router and Oracle, the value is the provider's ASN.
 
-`OracleBgpPeeringIp` - The IPv4 address for Oracle's end of the BGP session. Must use a /30 or /31 subnet mask. If the session goes from Oracle to a customer's edge router, the customer specifies this information. If the session goes from Oracle to a provider's edge router, the provider specifies this.
+`DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
 
-`Region` - The Oracle Cloud Infrastructure region where this virtual circuit is located.
+`GatewayId` - The OCID of the customer's [dynamic routing gateway (DRG)](https://docs.cloud.oracle.com/iaas/api/#/en/iaas/20160918/Drg) that this virtual circuit uses. Applicable only to private virtual circuits.
 
-`CrossConnectMappings` - An array of mappings, each containing properties for a cross-connect or cross-connect group that is associated with this virtual circuit.
+`Id` - The virtual circuit's Oracle ID (OCID).
 
 `OracleBgpAsn` - The Oracle BGP ASN.
 
 `ProviderServiceId` - The OCID of the service offered by the provider (if the customer is connecting via a provider).
 
+`ProviderState` - The provider's state in relation to this virtual circuit (if the customer is connecting via a provider). ACTIVE means the provider has provisioned the virtual circuit from their end. INACTIVE means the provider has not yet provisioned the virtual circuit, or has de-provisioned it.
+
 `PublicPrefixes` - For a public virtual circuit. The public IP prefixes (CIDRs) the customer wants to advertise across the connection. Each prefix must be /31 or less specific.
+
+`ReferenceComment` - Provider-supplied reference information about this virtual circuit (if the customer is connecting via a provider).
+
+`Region` - The Oracle Cloud Infrastructure region where this virtual circuit is located.
+
+`ServiceType` - Provider service type.
+
+`State` - The virtual circuit's current state. For information about the different states, see [FastConnect Overview](https://docs.cloud.oracle.com/iaas/Content/Network/Concepts/fastconnect.htm).
+
+`TimeCreated` - The date and time the virtual circuit was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+
+`Type` - Whether the virtual circuit supports private or public peering. For more information, see [FastConnect Overview](https://docs.cloud.oracle.com/iaas/Content/Network/Concepts/fastconnect.htm).
 
 ## See Also
 

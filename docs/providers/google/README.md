@@ -2,7 +2,7 @@
 
 ## Configuration
 
-To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/google**. The below arguments may be included as the key/value or JSON properties in the secret:
+To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/google** or add [template metadata](https://github.com/iann0036/tf-cfn-provider/blob/master/examples/metadata.yaml). The below arguments may be included as the key/value or JSON properties in the secret or metadata object:
 
 * `credentials` - (Optional) The path or contents of a file that contains your
   service account private key in JSON format. You can download your existing

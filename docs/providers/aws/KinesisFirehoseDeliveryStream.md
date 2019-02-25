@@ -13,7 +13,7 @@ AWS account and region the Stream is created in.
 
 `KinesisSourceConfiguration` - (Optional) Allows the ability to specify the kinesis stream that is used as the source of the firehose delivery stream.
 
-`S3Configuration` - (Optional, Deprecated, see/use `ExtendedS3Configuration` unless `Destination` is `redshift`) Configuration options for the s3 destination (or the intermediate bucket if the destination
+`S3Configuration` - (Optional) Required for non-S3 destinations. For S3 destination, use `ExtendedS3Configuration` instead. Configuration options for the s3 destination (or the intermediate bucket if the destination
 is redshift). More details are given below.
 
 `ExtendedS3Configuration` - (Optional, only Required when `Destination` is `extended_s3`) Enhanced configuration options for the s3 destination. More details are given below.

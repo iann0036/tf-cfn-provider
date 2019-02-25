@@ -2,7 +2,7 @@
 
 ## Configuration
 
-To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/gitlab**. The below arguments may be included as the key/value or JSON properties in the secret:
+To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/gitlab** or add [template metadata](https://github.com/iann0036/tf-cfn-provider/blob/master/examples/metadata.yaml). The below arguments may be included as the key/value or JSON properties in the secret or metadata object:
 
 * `token` - (Optional) This is the GitLab personal access token.
 
@@ -24,6 +24,8 @@ To configure this resource, you may optionally create an AWS Secrets Manager sec
 * [Terraform::Gitlab::GroupVariable](GroupVariable.md)
 * [Terraform::Gitlab::Group](Group.md)
 * [Terraform::Gitlab::Label](Label.md)
+* [Terraform::Gitlab::PipelineTrigger](PipelineTrigger.md)
+* [Terraform::Gitlab::ProjectCluster](ProjectCluster.md)
 * [Terraform::Gitlab::ProjectHook](ProjectHook.md)
 * [Terraform::Gitlab::ProjectMembership](ProjectMembership.md)
 * [Terraform::Gitlab::ProjectVariable](ProjectVariable.md)

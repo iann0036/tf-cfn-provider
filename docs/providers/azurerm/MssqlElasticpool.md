@@ -16,7 +16,9 @@ Allows you to manage an Azure SQL Elastic Pool via the `2017-10-01-preview` API 
 
 `PerDatabaseSettings` - (Required) A `PerDatabaseSettings` block as defined below.
 
-`MaxSizeBytes` - (Optional) The max data size of the elastic pool in bytes.
+`MaxSizeGb` - (Optional) The max data size of the elastic pool in gigabytes. Conflicts with `MaxSizeBytes`.
+
+`MaxSizeBytes` - (Optional) The max data size of the elastic pool in bytes. Conflicts with `MaxSizeGb`.
 
 `Tags` - (Optional) A mapping of tags to assign to the resource.
 
@@ -28,7 +30,7 @@ Allows you to manage an Azure SQL Elastic Pool via the `2017-10-01-preview` API 
 
 `Tier` - (Required) The tier of the particular SKU. Possible values are `GeneralPurpose`, `BusinessCritical`, `Basic`, `Standard`, or `Premium`. For more information see the documentation for your Elasticpool configuration: [vCore-based](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools) or [DTU-based](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-dtu-resource-limits-elastic-pools).
 
-`Family` - (Required) The `Family` of hardware `Gen4` or `Gen5`.
+`Family` - (Optional) The `Family` of hardware `Gen4` or `Gen5`.
 
 ### PerDatabaseSettings Properties
 

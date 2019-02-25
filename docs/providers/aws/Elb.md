@@ -90,19 +90,19 @@ values are:
 
 ### Fn::GetAtt
 
-`SourceSecurityGroupId` - The ID of the security group that you can use as.
-
-`Name` - The name of the ELB.
-
-`SourceSecurityGroup` - The name of the security group that you can use as.
-
-`Instances` - The list of instances in the ELB.
-
-`DnsName` - The DNS name of the ELB.
-
 `Id` - The name of the ELB.
 
 `Arn` - The ARN of the ELB.
+
+`Name` - The name of the ELB.
+
+`DnsName` - The DNS name of the ELB.
+
+`Instances` - The list of instances in the ELB.
+
+`SourceSecurityGroup` - The name of the security group that you can use as.
+
+`SourceSecurityGroupId` - The ID of the security group that you can use as.
 
 `ZoneId` - The canonical hosted zone ID of the ELB (to be used in a Route 53 Alias record).
 

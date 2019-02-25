@@ -32,7 +32,7 @@ For information about Lambda and how to use it, see [What is AWS Lambda?][1]
 
 `Timeout` - (Optional) The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5].
 
-`ReservedConcurrentExecutions` - (Optional) The amount of reserved concurrent executions for this lambda function. Defaults to Unreserved Concurrency Limits. See [Managing Concurrency][9].
+`ReservedConcurrentExecutions` - (Optional) The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9].
 
 `Publish` - (Optional) Whether to publish creation/change as new Lambda Function Version. Defaults to `false`.
 

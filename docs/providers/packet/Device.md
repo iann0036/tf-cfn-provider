@@ -15,7 +15,9 @@ modify, and delete devices.
 
 `OperatingSystem` - (Required) The operating system slug. To find the slug, or visit [Operating Systems API docs](https://www.packet.net/developers/api/#operatingsystems), set your API auth token in the top of the page and see JSON from the API response.
 
-`Facility` - (Required) The facility in which to create the device. To find the facility code, visit [Facilities API docs](https://www.packet.net/developers/api/#facilities), set your API auth token in the top of the page and see JSON from the API response.
+`Facility` - (Deprecated) The facility in which to create the device.
+
+`Facilities` - List of facility codes with deployment preferences. Packet API will go through the list and will deploy your device to first facility with free capacity. List items must be facility codes or `any` (a wildcard). To find the facility code, visit [Facilities API docs](https://www.packet.net/developers/api/#facilities), set your API auth token in the top of the page and see JSON from the API response.
 
 `Plan` - (Required) The device plan slug. To find the plan slug, visit [Device plans API docs](https://www.packet.net/developers/api/#plans), set your auth token in the top of the page and see JSON from the API response.
 
@@ -24,6 +26,8 @@ modify, and delete devices.
 `Tags` - Tags attached to the device.
 
 `Description` - Description string for the device.
+
+`ProjectSshKeyIds` - Array of IDs of the project SSH keys which should be added to the device. If you omit this, SSH keys of all the members of the parent project will be added to the device. If you specify this array, only the listed project SSH keys will be added. Project SSH keys can be created with the [packet_project_ssh_key][packet_project_ssh_key.html] resource.
 
 
 ## Return Values
@@ -36,11 +40,11 @@ modify, and delete devices.
 
 `ProjectId` - The ID of the project the device belongs to.
 
-`Facility` - The facility the device is in.
+`Facility` - The facility where the device is deployed.
 
 `Plan` - The hardware config of the device.
 
-`Network` - The device's private and public IP (v4 and v6) network details. When a device is run without any special network configuration, it will have 3 newtworks: private IPv4, public IPv4 and an IPv6 in this order. The fields of the network attribute are:.
+`Network` - The device's private and public IP (v4 and v6) network details. When a device is run without any special network configuration, it will have 3 networks:.
 
 `Address` - IPv4 or IPv6 address string.
 
@@ -48,7 +52,7 @@ modify, and delete devices.
 
 `Gateway` - address of router.
 
-`Public` - whether address is routable from the Internet.
+`Public` - whether the address is routable from the Internet.
 
 `Family` - IP version - "4" or "6".
 
@@ -77,6 +81,8 @@ modify, and delete devices.
 `HardwareReservationId` - The id of hardware reservation which this device occupies.
 
 `RootPassword` - Root password to the server (disabled after 24 hours).
+
+`SshKeyIds` - List of IDs of SSH keys deployed in the device, can be both user and project SSH keys.
 
 ## See Also
 

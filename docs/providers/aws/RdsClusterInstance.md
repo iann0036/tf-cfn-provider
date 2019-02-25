@@ -19,7 +19,7 @@ For more information on Amazon Aurora, see [Aurora on Amazon RDS][2] in the Amaz
 
 `Identifier` - (Optional, Forces new resource) The indentifier for the RDS instance, if omitted, Terraform will assign a random, unique identifier.
 
-`IdentifierPrefix` - (Optional, Forces new resource) Creates a unique identifier beginning with the specified prefix. Conflicts with `identifer`.
+`IdentifierPrefix` - (Optional, Forces new resource) Creates a unique identifier beginning with the specified prefix. Conflicts with `Identifier`.
 
 `ClusterIdentifier` - (Required) The identifier of the [`Terraform::AWS::RdsCluster`](/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
 

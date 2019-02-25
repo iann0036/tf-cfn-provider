@@ -18,23 +18,23 @@ have to be unique, and you can change it anytime with
 
 ### Fn::GetAtt
 
-`Username` - The SMTP user name.
-
-`UserId` - The OCID of the user the SMTP credential belongs to.
-
 `Description` - The description you assign to the SMTP credential. Does not have to be unique, and it's changeable.
+
+`Id` - The OCID of the SMTP credential.
 
 `InactiveState` - The detailed status of INACTIVE lifecycleState.
 
-`TimeCreated` - Date and time the `SmtpCredential` object was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+`Password` - The SMTP password.
 
 `State` - The credential's current state.
 
+`TimeCreated` - Date and time the `SmtpCredential` object was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+
 `TimeExpires` - Date and time when this credential will expire, in the format defined by RFC3339. Null if it never expires.  Example: `2016-08-25T21:10:29.600Z`.
 
-`Password` - The SMTP password.
+`UserId` - The OCID of the user the SMTP credential belongs to.
 
-`Id` - The OCID of the SMTP credential.
+`Username` - The SMTP user name.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # Terraform::Heroku::AppFeature
 
-Provides a Heroku App Feature resource. This can be used to create and manage App Features on Heroku.
+This resource is used to create and manage [App Features](https://devcenter.heroku.com/articles/heroku-beta-features) on Heroku.
 
 ## Properties
 

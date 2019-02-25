@@ -209,10 +209,10 @@ def iterate_resources(provider_name):
             if len(arguments) == 0:
                 provider_readme.write("No configuration is required for this provider.\n\n")
             elif not has_required_arguments:
-                provider_readme.write("To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/{}**. The below arguments may be included as the key/value or JSON properties in the secret:\n\n".format(provider_name))
+                provider_readme.write("To configure this resource, you may optionally create an AWS Secrets Manager secret with the name **terraform/{}** or add [template metadata](https://github.com/iann0036/tf-cfn-provider/blob/master/examples/metadata.yaml). The below arguments may be included as the key/value or JSON properties in the secret or metadata object:\n\n".format(provider_name))
                 provider_readme.write(argument_text + "\n\n")
             else:
-                provider_readme.write("To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/{}**. The below arguments may be included as the key/value or JSON properties in the secret:\n\n".format(provider_name))
+                provider_readme.write("To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/{}** or add [template metadata](https://github.com/iann0036/tf-cfn-provider/blob/master/examples/metadata.yaml). The below arguments may be included as the key/value or JSON properties in the secret or metadata object:\n\n".format(provider_name))
                 provider_readme.write(argument_text + "\n\n")
 
             # iterate provider resources
@@ -388,9 +388,10 @@ page = 1
 repos = json.loads(requests.get("https://api.github.com/orgs/terraform-providers/repos").text)
 while len(repos) > 0:
     for repo in repos:
-        #print(repo['html_url'])
-        checkout(repo['html_url'], repo['name'][19:])
-        iterate_resources(repo['name'][19:])
+        if repo['html_url'] != "https://github.com/terraform-providers/.github":
+            print(repo['html_url'])
+            checkout(repo['html_url'], repo['name'][19:])
+            iterate_resources(repo['name'][19:])
     page+=1
     repos = json.loads(requests.get("https://api.github.com/orgs/terraform-providers/repos?page=" + str(page)).text)
 

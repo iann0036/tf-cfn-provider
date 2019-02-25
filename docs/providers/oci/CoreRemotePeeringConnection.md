@@ -21,27 +21,27 @@ Creates a new remote peering connection (RPC) for the specified DRG.
 
 ### Fn::GetAtt
 
-`PeerRegionName` - If this RPC is peered, this value is the region that contains the other RPC.  Example: `us-ashburn-1`.
+`CompartmentId` - The OCID of the compartment that contains the RPC.
 
 `DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
 
-`CompartmentId` - The OCID of the compartment that contains the RPC.
+`DrgId` - The OCID of the DRG that this RPC belongs to.
+
+`Id` - The OCID of the RPC.
 
 `IsCrossTenancyPeering` - Whether the VCN at the other end of the peering is in a different tenancy.  Example: `false`.
 
-`TimeCreated` - The date and time the RPC was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+`PeerId` - If this RPC is peered, this value is the OCID of the other RPC.
 
-`PeeringStatus` - Whether the RPC is peered with another RPC. `NEW` means the RPC has not yet been peered. `PENDING` means the peering is being established. `REVOKED` means the RPC at the other end of the peering has been deleted.
+`PeerRegionName` - If this RPC is peered, this value is the region that contains the other RPC.  Example: `us-ashburn-1`.
 
 `PeerTenancyId` - If this RPC is peered, this value is the OCID of the other RPC's tenancy.
 
-`DrgId` - The OCID of the DRG that this RPC belongs to.
+`PeeringStatus` - Whether the RPC is peered with another RPC. `NEW` means the RPC has not yet been peered. `PENDING` means the peering is being established. `REVOKED` means the RPC at the other end of the peering has been deleted.
 
 `State` - The RPC's current lifecycle state.
 
-`PeerId` - If this RPC is peered, this value is the OCID of the other RPC.
-
-`Id` - The OCID of the RPC.
+`TimeCreated` - The date and time the RPC was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
 
 ## See Also
 

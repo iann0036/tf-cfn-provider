@@ -60,6 +60,8 @@ The structure of each subport is described below.
 
 `Tags` - See Properties above.
 
+`AllTags` - The collection of tags assigned on the trunk, which have been.
+
 ## See Also
 
 * [openstack_networking_trunk_v2](https://www.terraform.io/docs/providers/openstack/r/networking_trunk_v2.html) in the _Terraform Provider Documentation_

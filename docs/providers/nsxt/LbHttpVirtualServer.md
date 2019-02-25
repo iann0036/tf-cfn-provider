@@ -1,6 +1,6 @@
 # Terraform::NSXT::LbHttpVirtualServer
 
-Provides a resource to configure lb http virtual server on NSX-T manager
+Provides a resource to configure lb http or https virtual server on NSX-T manager
 
 ## Properties
 

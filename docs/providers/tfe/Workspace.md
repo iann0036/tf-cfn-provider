@@ -37,17 +37,17 @@ Default to `master`.
 `IngressSubmodules` - (Optional) Whether submodules should be fetched when
 cloning the VCS repository. Defaults to `false`.
 
-`OauthTokenId` - (Required) Token ID of the VCS Connection (OAuth Conection
-+ Token) to use.
+`OauthTokenId` - (Required) Token ID of the VCS Connection (OAuth Conection Token)
+to use.
 
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Id` - The ID of the workspace within Terraform. This is a custom ID that is.
+`Id` - The workspace's human-readable ID, which looks like.
 
-`ExternalId` - The external ID of the workspace within Terraform Enterprise.
+`ExternalId` - The workspace's opaque external ID, which looks like.
 
 ## See Also
 

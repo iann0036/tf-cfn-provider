@@ -34,11 +34,11 @@ Manages a AutoScale Setting which can be applied to Virtual Machine Scale Sets, 
 
 ### Capacity Properties
 
-`Default` - (Required) The number of instances that are available for scaling if metrics are not available for evaluation. The default is only used if the current instance count is lower than the default.
+`Default` - (Required) The number of instances that are available for scaling if metrics are not available for evaluation. The default is only used if the current instance count is lower than the default. Valid values are between `0` and `1000`.
 
-`Maximum` - (Required) The maximum number of instances for this resource. Valid values are between `1` and `40`.
+`Maximum` - (Required) The maximum number of instances for this resource. Valid values are between `0` and `1000`.
 
-`Minimum` - (Required) The minimum number of instances for this resource. Valid values are between `1` and `40`.
+`Minimum` - (Required) The minimum number of instances for this resource. Valid values are between `0` and `1000`.
 
 ### Rule Properties
 

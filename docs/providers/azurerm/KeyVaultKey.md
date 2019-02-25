@@ -6,7 +6,7 @@ Manages a Key Vault Key.
 
 `Name` - (Required) Specifies the name of the Key Vault Key. Changing this forces a new resource to be created.
 
-`VaultUri` - (Required) Specifies the URI used to access the Key Vault instance, available on the `Terraform::AzureRM::KeyVault` resource.
+`KeyVaultId` - (Required) The ID of the Key Vault where the Key should be created.
 
 `KeyType` - (Required) Specifies the Key Type to use for this Key Vault Key. Possible values are `EC` (Elliptic Curve), `Oct` (Octet), `RSA` and `RSA-HSM`. Changing this forces a new resource to be created.
 

@@ -15,7 +15,7 @@ Provides a DMS (Data Migration Service) endpoint resource. DMS endpoints can be 
 
 `EndpointType` - (Required) The type of endpoint. Can be one of `source | target`.
 
-`EngineName` - (Required) The type of engine for the endpoint. Can be one of `mysql | oracle | postgres | mariadb | aurora | redshift | sybase | sqlserver | dynamodb | mongodb | s3 | azuredb`.
+`EngineName` - (Required) The type of engine for the endpoint. Can be one of `aurora | azuredb | docdb | dynamodb | mariadb | mongodb | mysql | oracle | postgres | redshift | s3 | sqlserver | sybase`.
 
 `ExtraConnectionAttributes` - (Optional) Additional attributes associated with the connection. For available attributes see [Using Extra Connection Attributes with AWS Database Migration Service](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Introduction.ConnectionAttributes.html).
 

@@ -29,13 +29,13 @@ It does not have to be unique, and you can change it. Avoid entering confidentia
 
 ### Fn::GetAtt
 
-`State` - The cross-connect group's current state.
+`CompartmentId` - The OCID of the compartment containing the cross-connect group.
 
 `DisplayName` - The display name of A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
 
 `Id` - The cross-connect group's Oracle ID (OCID).
 
-`CompartmentId` - The OCID of the compartment containing the cross-connect group.
+`State` - The cross-connect group's current state.
 
 `TimeCreated` - The date and time the cross-connect group was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
 

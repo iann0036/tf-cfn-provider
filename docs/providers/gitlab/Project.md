@@ -20,6 +20,8 @@ See [`Terraform::Gitlab::Group`](group.html) for an example.
 
 `MergeRequestsEnabled` - (Optional) Enable merge requests for the project.
 
+`ApprovalsBeforeMerge` - (Optional) Number of merge request approvals required for merging. Default is 0.
+
 `WikiEnabled` - (Optional) Enable wiki for the project.
 
 `SnippetsEnabled` - (Optional) Enable snippets for the project.
@@ -27,6 +29,14 @@ See [`Terraform::Gitlab::Group`](group.html) for an example.
 `VisibilityLevel` - (Optional) Set to `public` to create a public project.
 Valid values are `private`, `internal`, `public`.
 Repositories are created as private by default.
+
+`MergeMethod` - (Optional) Set to `ff` to create fast-forward merges
+Valid values are `merge`, `rebase_merge`, `ff`
+Repositories are created with `merge` by default.
+
+`OnlyAllowMergeIfPipelineSucceeds` - (Optional) Set to true if you want allow merges only if a pipeline succeeds.
+
+`OnlyAllowMergeIfAllDiscussionsAreResolved` - (Optional) Set to true if you want allow merges only if all discussions are resolved.
 
 `SharedWithGroups` - (Optional) Enable sharing the project with a list of groups (maps).
 * `GroupId` - (Required) Group id of the group you want to share the project with.

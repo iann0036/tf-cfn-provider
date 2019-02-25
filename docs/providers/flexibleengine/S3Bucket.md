@@ -61,20 +61,6 @@ describing redirect behavior and when redirects are applied.
 
 `NoncurrentVersionExpiration` - (Optional) Specifies when noncurrent object versions expire (documented below).
 
-`Id` - (Optional) Unique identifier for the rule.
-
-`Destination` - (Required) Specifies the destination for the rule (documented below).
-
-`Prefix` - (Required) Object keyname prefix identifying one or more objects to which the rule applies. Set as an empty string to replicate the whole bucket.
-
-`Status` - (Required) The status of the rule. Either `Enabled` or `Disabled`. The rule is ignored if status is not Enabled.
-
-### Destination Properties
-
-`Bucket` - (Required) The ARN of the S3 bucket where you want Amazon S3 to store replicas of the object identified by the rule.
-
-`StorageClass` - (Optional) The class of storage used to store the object.
-
 
 ## Return Values
 

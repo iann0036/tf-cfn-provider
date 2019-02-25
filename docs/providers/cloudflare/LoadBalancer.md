@@ -6,7 +6,7 @@ Provides a Cloudflare Load Balancer resource. This sits in front of a number of 
 
 `Zone` - (Required) The zone to add the load balancer to.
 
-`Name` - (Required) The DNS name to associate with the load balancer.
+`Name` - (Required) The DNS name (FQDN, including the zone) to associate with the load balancer.
 
 `FallbackPoolId` - (Required) The pool ID to use when all other pools are detected as unhealthy.
 

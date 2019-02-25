@@ -1,7 +1,6 @@
 # Terraform::Heroku::AccountFeature
 
-Provides a Heroku Account Feature resource. An account feature represents a Heroku labs capability
-that can be enabled or disabled for an account on Heroku.
+This resource is used to create and manage [User Features](https://devcenter.heroku.com/articles/heroku-beta-features) on Heroku.
 
 ~> **NOTE:** If this resource's HCL is removed from a `.tf` file, the behavior is to disable account feature
 and remove resource from state.

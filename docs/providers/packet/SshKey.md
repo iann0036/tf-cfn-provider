@@ -1,9 +1,8 @@
 # Terraform::Packet::SshKey
 
-Provides a Packet SSH key resource to allow you manage SSH
-keys on your account. All SSH keys on your account are loaded on
-all new devices, they do not have to be explicitly declared on
-device creation.
+Provides a resource to manage User SSH keys on your Packet user account. If you create a new device in a project, all the keys of the project's collaborators will be injected to the device.
+
+The link between User SSH key and device is implicit. If you want to make sure that a key will be copied to a device, you must ensure that the device resource `depends_on` the key resource.
 
 ## Properties
 

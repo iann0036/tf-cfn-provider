@@ -2,7 +2,7 @@
 
 ## Configuration
 
-To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/digitalocean**. The below arguments may be included as the key/value or JSON properties in the secret:
+To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/digitalocean** or add [template metadata](https://github.com/iann0036/tf-cfn-provider/blob/master/examples/metadata.yaml). The below arguments may be included as the key/value or JSON properties in the secret or metadata object:
 
 * `token` - (Required) This is the DO API token. This can also be specified
   with the `DIGITALOCEAN_TOKEN` shell environment variable.
@@ -14,7 +14,8 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
   environment variable).
 * `api_endpoint` - (Optional) This can be used to override the base URL for
   DigitalOcean API requests (Defaults to the value of the `DIGITALOCEAN_API_URL`
-  environment variable or `https://api.digitalocean.com if unset).
+  environment variable or `https://api.digitalocean.com` if unset).
+
 
 ## Supported Resources
 

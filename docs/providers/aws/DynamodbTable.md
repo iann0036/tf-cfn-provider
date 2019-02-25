@@ -41,7 +41,7 @@ within a region.
 these can only be allocated *at creation* so you cannot change this
 definition after you have created the resource.
 
-`GlobalSecondaryIndex` - (Optional) Describe a GSO for the table;
+`GlobalSecondaryIndex` - (Optional) Describe a GSI for the table;
 subject to the normal limits on the number of GSIs, projected
 attributes, etc.
 
@@ -49,7 +49,7 @@ attributes, etc.
 
 `StreamViewType` - (Optional) When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
 
-`ServerSideEncryption` - (Optional) Encrypt at rest options.
+`ServerSideEncryption` - (Optional) Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
 
 `Tags` - (Optional) A map of tags to populate on the created table.
 

@@ -24,6 +24,8 @@ Provides a Cognito User Pool resource.
 
 `UsernameAttributes` - (Optional) Specifies whether email addresses or phone numbers can be specified as usernames when a user signs up. Conflicts with `AliasAttributes`.
 
+`UserPoolAddOns` - (Optional) Configuration block for [user pool add-ons](#user-pool-add-ons) to enable user pool advanced security mode features.
+
 
 ## See Also
 

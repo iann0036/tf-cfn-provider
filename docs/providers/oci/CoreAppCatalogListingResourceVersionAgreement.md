@@ -13,7 +13,7 @@ The `Terraform::OCI::CoreAppCatalogListingResourceVersionAgreement` resource cre
 
 ### Fn::GetAtt
 
-`TimeRetrieved` - Date and time the agreements were retrieved, in RFC3339 format. Example: `2018-03-20T12:32:53.532Z`.
+`EulaLink` - EULA link.
 
 `ListingId` - The OCID of the listing associated with these agreements.
 
@@ -23,7 +23,7 @@ The `Terraform::OCI::CoreAppCatalogListingResourceVersionAgreement` resource cre
 
 `Signature` - A generated signature for this agreement retrieval operation which should be used in the create subscription call.
 
-`EulaLink` - EULA link.
+`TimeRetrieved` - Date and time the agreements were retrieved, in RFC3339 format. Example: `2018-03-20T12:32:53.532Z`.
 
 ## See Also
 

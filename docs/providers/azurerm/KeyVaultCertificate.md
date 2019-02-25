@@ -6,7 +6,7 @@ Manages a Key Vault Certificate.
 
 `Name` - (Required) Specifies the name of the Key Vault Certificate. Changing this forces a new resource to be created.
 
-`VaultUri` - (Required) Specifies the URI used to access the Key Vault instance, available on the `Terraform::AzureRM::KeyVault` resource.
+`KeyVaultId` - (Required) The ID of the Key Vault where the Certificate should be created.
 
 `Certificate` - (Optional) A `Certificate` block as defined below, used to Import an existing certificate.
 

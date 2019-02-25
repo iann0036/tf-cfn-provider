@@ -22,7 +22,7 @@ are applied immediately, or during the next maintenance window. Default is`false
 
 `Identifier` - (Optional, Forces new resource) The indentifier for the neptune instance, if omitted, Terraform will assign a random, unique identifier.
 
-`IdentifierPrefix` - (Optional, Forces new resource) Creates a unique identifier beginning with the specified prefix. Conflicts with `identifer`.
+`IdentifierPrefix` - (Optional, Forces new resource) Creates a unique identifier beginning with the specified prefix. Conflicts with `Identifier`.
 
 `InstanceClass` - (Required) The instance class to use.
 

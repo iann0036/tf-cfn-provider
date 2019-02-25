@@ -2,6 +2,11 @@
 
 Allows management of a [Google Cloud Platform service account](https://cloud.google.com/compute/docs/access/service-accounts)
 
+-> Creation of service accounts is eventually consistent, and that can lead to
+errors when you try to apply ACLs to service accounts immediately after
+creation. If using these resources in the same config, you can add a
+[`sleep` using `local-exec`](https://github.com/hashicorp/terraform/issues/17726#issuecomment-377357866).
+
 ## Properties
 
 `AccountId` - (Required) The account id that is used to generate the service

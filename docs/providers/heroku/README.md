@@ -2,7 +2,7 @@
 
 ## Configuration
 
-To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/heroku**. The below arguments may be included as the key/value or JSON properties in the secret:
+To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/heroku** or add [template metadata](https://github.com/iann0036/tf-cfn-provider/blob/master/examples/metadata.yaml). The below arguments may be included as the key/value or JSON properties in the secret or metadata object:
 
 * `api_key` - (Required) Heroku API token.
 
@@ -39,8 +39,8 @@ The nested `delays` block supports the following:
 * [Terraform::Heroku::PipelineCoupling](PipelineCoupling.md)
 * [Terraform::Heroku::Pipeline](Pipeline.md)
 * [Terraform::Heroku::Slug](Slug.md)
+* [Terraform::Heroku::SpaceAppAccess](SpaceAppAccess.md)
 * [Terraform::Heroku::SpaceInboundRuleset](SpaceInboundRuleset.md)
-* [Terraform::Heroku::SpaceMember](SpaceMember.md)
 * [Terraform::Heroku::SpacePeeringConnectionAccepter](SpacePeeringConnectionAccepter.md)
 * [Terraform::Heroku::SpaceVpnConnection](SpaceVpnConnection.md)
 * [Terraform::Heroku::Space](Space.md)

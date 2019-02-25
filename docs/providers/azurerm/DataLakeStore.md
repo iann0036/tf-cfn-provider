@@ -14,7 +14,7 @@ Manage an Azure Data Lake Store.
 
 `EncryptionState` - (Optional) Is Encryption enabled on this Data Lake Store Account? Possible values are `Enabled` or `Disabled`. Defaults to `Enabled`.
 
-`EncryptionType` - (Optional) The Encryption Type used for this Data Lake Store Account. Currently can be set to `SystemManaged` when `EncryptionState` is `Enabled` - and must be a blank string when it's Disabled.
+`EncryptionType` - (Optional) The Encryption Type used for this Data Lake Store Account. Currently can be set to `ServiceManaged` when `EncryptionState` is `Enabled` - and must be a blank string when it's Disabled.
 
 `FirewallAllowAzureIps` - are Azure Service IP's allowed through the firewall? Possible values are `Enabled` and `Disabled`. Defaults to `Enabled.`.
 

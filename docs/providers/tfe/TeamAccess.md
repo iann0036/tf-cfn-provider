@@ -9,7 +9,8 @@ Associate a team to permissions on a workspace.
 
 `TeamId` - (Required) ID of the team to add to the workspace.
 
-`WorkspaceId` - (Required) Workspace ID to which the team will be added.
+`WorkspaceId` - (Required) The workspace to which the team will be added,
+specified as a human-readable ID (`<ORGANIZATION>/<WORKSPACE>`).
 
 
 ## See Also

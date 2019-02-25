@@ -20,17 +20,17 @@ See [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Ide
 
 ### Fn::GetAtt
 
-`Name` - The name of the policy.
-
-`Policy` - The policy document.
-
-`Path` - The path of the policy in IAM.
-
 `Id` - The policy's ID.
 
 `Arn` - The ARN assigned by AWS to this policy.
 
 `Description` - The description of the policy.
+
+`Name` - The name of the policy.
+
+`Path` - The path of the policy in IAM.
+
+`Policy` - The policy document.
 
 ## See Also
 

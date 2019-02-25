@@ -25,17 +25,17 @@ Manages the capabilities of the specified user.
 
 ### Fn::GetAtt
 
-`CanUseConsolePassword` - Indicates if the user can log in to the console.
+`UserId` - The OCID of the user.
 
 `CanUseApiKeys` - Indicates if the user can use API keys.
 
 `CanUseAuthTokens` - Indicates if the user can use SWIFT passwords / auth tokens.
 
-`UserId` - The OCID of the user.
-
-`CanUseSmtpCredentials` - Indicates if the user can use SMTP passwords.
+`CanUseConsolePassword` - Indicates if the user can log in to the console.
 
 `CanUseCustomerSecretKeys` - Indicates if the user can use SigV4 symmetric keys.
+
+`CanUseSmtpCredentials` - Indicates if the user can use SMTP passwords.
 
 ## See Also
 

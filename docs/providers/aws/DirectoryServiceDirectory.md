@@ -52,7 +52,7 @@ Provides a Simple or Managed Microsoft directory in AWS Directory Service.
 
 `DnsIpAddresses` - A list of IP addresses of the DNS servers for the directory or connector.
 
-`SecurityGroupId` - The ID of the security group created by the directory (`SimpleAD` or `MicrosoftAD` only).
+`SecurityGroupId` - The ID of the security group created by the directory.
 
 ## See Also
 

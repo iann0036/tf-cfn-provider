@@ -16,7 +16,7 @@ Provides a Cognito User Pool Client resource.
 
 `ExplicitAuthFlows` - (Optional) List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY, USER_PASSWORD_AUTH).
 
-`GenerateSecret` - (Optional) Should an application secret be generated. AWS JavaScript SDK requires this to be false.
+`GenerateSecret` - (Optional) Should an application secret be generated.
 
 `LogoutUrls` - (Optional) List of allowed logout URLs for the identity providers.
 

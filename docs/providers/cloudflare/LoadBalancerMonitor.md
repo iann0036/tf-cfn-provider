@@ -24,6 +24,10 @@ If you're using Cloudflare's Load Balancing to load-balance across multiple orig
 
 `Description` - (Optional) Free text description.
 
+`AllowInsecure` - (Optional) Do not validate the certificate when monitor use HTTPS.
+
+`FollowRedirects` - (Optional) Follow redirects if returned by the origin.
+
 `Header` - (Required) The header name.
 
 `Values` - (Required) A list of string values for the header.

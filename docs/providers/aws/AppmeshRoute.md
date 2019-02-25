@@ -43,13 +43,13 @@ This parameter must always start with /, which by itself matches all requests to
 
 ### Fn::GetAtt
 
-`LastUpdatedDate` - The last update date of the route.
-
 `Id` - The ID of the route.
 
 `Arn` - The ARN of the route.
 
 `CreatedDate` - The creation date of the route.
+
+`LastUpdatedDate` - The last update date of the route.
 
 ## See Also
 

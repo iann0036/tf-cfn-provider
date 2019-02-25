@@ -25,14 +25,7 @@ and value is either `Error`, `Empty` (built-in models) or `Terraform::AWS::ApiGa
 `RequestValidatorId` - (Optional) The ID of a `Terraform::AWS::ApiGatewayRequestValidator`.
 
 `RequestParameters` - (Optional) A map of request query string parameters and headers that should be passed to the integration.
-For example:
-```hcl
-request_parameters = {
-"method.request.header.X-Some-Header"         = true
-"method.request.querystring.some-query-param" = true
-}
-```
-would define that the header `X-Some-Header` and the query string `some-query-param` must be provided on the request, or.
+For example: `request_parameters = {"method.request.header.X-Some-Header" = true "method.request.querystring.some-query-param" = true}` would define that the header `X-Some-Header` and the query string `some-query-param` must be provided in the request.
 
 `RequestParametersInJson` - **Deprecated**, use `RequestParameters` instead.
 

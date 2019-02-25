@@ -18,13 +18,13 @@ suppression list are normalized to include only lowercase letters.
 
 ### Fn::GetAtt
 
-`Reason` - The reason that the email address was suppressed. For more information on the types of bounces, see [Suppression List](https://docs.cloud.oracle.com/iaas/Content/Email/Concepts/overview.htm#components).
+`CompartmentId` - The OCID of the compartment to contain the suppression. Since suppressions are at the customer level, this must be the tenancy OCID.
 
 `EmailAddress` - The email address of the suppression.
 
 `Id` - The unique OCID of the suppression.
 
-`CompartmentId` - The OCID of the compartment to contain the suppression. Since suppressions are at the customer level, this must be the tenancy OCID.
+`Reason` - The reason that the email address was suppressed. For more information on the types of bounces, see [Suppression List](https://docs.cloud.oracle.com/iaas/Content/Email/Concepts/overview.htm#components).
 
 `TimeCreated` - The date and time a recipient's email address was added to the suppression list, in "YYYY-MM-ddThh:mmZ" format with a Z offset, as defined by RFC 3339.
 

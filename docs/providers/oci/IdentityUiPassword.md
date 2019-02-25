@@ -23,15 +23,15 @@ user.
 
 ### Fn::GetAtt
 
-`Password` - The user's password for the Console.
-
 `InactiveStatus` - The detailed status of INACTIVE lifecycleState.
 
-`UserId` - The OCID of the user.
+`Password` - The user's password for the Console.
 
 `State` - The password's current state.
 
 `TimeCreated` - Date and time the password was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+
+`UserId` - The OCID of the user.
 
 ## See Also
 

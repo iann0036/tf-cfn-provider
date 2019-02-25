@@ -39,21 +39,21 @@ See [Retiring Key Definitions and Namespace Definitions](https://docs.cloud.orac
 
 ### Fn::GetAtt
 
-`Description` - The description you assign to the tag namespace.
-
 `CompartmentId` - The OCID of the compartment that contains the tag namespace.
 
 `DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Operations.CostCenter": "42"}`.
 
+`Description` - The description you assign to the tag namespace.
+
 `FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Department": "Finance"}`.
-
-`TimeCreated` - Date and time the tagNamespace was created, in the format defined by RFC3339. Example: `2016-08-25T21:10:29.600Z`.
-
-`IsRetired` - Whether the tag namespace is retired. For more information, see [Retiring Key Definitions and Namespace Definitions](https://docs.cloud.oracle.com/iaas/Content/Identity/Concepts/taggingoverview.htm#Retiring).
 
 `Id` - The OCID of the tag namespace.
 
+`IsRetired` - Whether the tag namespace is retired. For more information, see [Retiring Key Definitions and Namespace Definitions](https://docs.cloud.oracle.com/iaas/Content/Identity/Concepts/taggingoverview.htm#Retiring).
+
 `Name` - The name of the tag namespace. It must be unique across all tag namespaces in the tenancy and cannot be changed.
+
+`TimeCreated` - Date and time the tagNamespace was created, in the format defined by RFC3339. Example: `2016-08-25T21:10:29.600Z`.
 
 ## See Also
 

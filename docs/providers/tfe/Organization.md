@@ -17,6 +17,8 @@ Defaults to `20160`.
 `CollaboratorAuthPolicy` - (Optional) Authentication policy (`password`
 or `two_factor_mandatory`). Defaults to `password`.
 
+`OwnersTeamSamlRoleId` - (Optional) The name of the "owners" team.
+
 
 ## Return Values
 

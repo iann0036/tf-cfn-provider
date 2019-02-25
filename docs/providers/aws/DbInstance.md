@@ -95,7 +95,7 @@ accounts is enabled.
 if omitted, Terraform will assign a random, unique identifier.
 
 `IdentifierPrefix` - (Optional, Forces new resource) Creates a unique
-identifier beginning with the specified prefix. Conflicts with `identifer`.
+identifier beginning with the specified prefix. Conflicts with `Identifier`.
 
 `InstanceClass` - (Required) The instance type of the RDS instance.
 

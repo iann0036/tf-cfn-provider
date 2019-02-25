@@ -3,13 +3,15 @@
 Provides a Linode Instance resource.  This can be used to create, modify, and delete Linodes.
 For more information, see [Getting Started with Linode](https://linode.com/docs/getting-started/) and the [Linode APIv4 docs](https://developers.linode.com/api/v4#operation/createLinodeInstance).
 
+The Linode Guide, [Use Terraform to Provision Linode Environments](https://www.linode.com/docs/applications/configuration-management/how-to-build-your-infrastructure-using-terraform-and-linode/), provides step-by-step guidance and additional examples.
+
 Linode Instances can also use [provisioners](/docs/provisioners/index.html).
 
 ## Properties
 
 `Region` - (Required) This is the location where the Linode is deployed. Examples are `"us-east"`, `"us-west"`, `"ap-south"`, etc.  *Changing `Region` forces the creation of a new Linode Instance.*.
 
-`Type` - (Required) The Linode type defines the pricing, CPU, disk, and RAM specs of the instance.  Examples are `"g6-nanode-1"`, `"g6-standard-2"`, `"g6-highmem-16"`, etc.
+`Type` - (Required) The Linode type defines the pricing, CPU, disk, and RAM specs of the instance.  Examples are `"g6-nanode-1"`, `"g6-standard-2"`, `"g6-highmem-16"`, `"g6-dedicated-16"`, etc.
 
 `Label` - (Optional) The Linode's label is for display purposes only. If no label is provided for a Linode, a default will be assigned.
 

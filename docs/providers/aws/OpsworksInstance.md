@@ -56,15 +56,11 @@ instance.  See [Block Devices](#block-devices) below for details.
 
 ### Fn::GetAtt
 
+`Id` - The id of the OpsWorks instance.
+
+`AgentVersion` - The AWS OpsWorks agent version.
+
 `AvailabilityZone` - The availability zone of the instance.
-
-`SubnetId` - The VPC subnet ID.
-
-`PrivateIp` - The private IP address assigned to the instance.
-
-`PublicIp` - The public IP address assigned to the instance, if applicable.
-
-`Tenancy` - The Instance tenancy.
 
 `Ec2InstanceId` - EC2 instance ID.
 
@@ -72,13 +68,17 @@ instance.  See [Block Devices](#block-devices) below for details.
 
 `PublicDns` - The public DNS name assigned to the instance. For EC2-VPC, this.
 
+`PublicIp` - The public IP address assigned to the instance, if applicable.
+
 `PrivateDns` - The private DNS name assigned to the instance. Can only be.
 
+`PrivateIp` - The private IP address assigned to the instance.
+
+`SubnetId` - The VPC subnet ID.
+
+`Tenancy` - The Instance tenancy.
+
 `SecurityGroupIds` - The associated security groups.
-
-`Id` - The id of the OpsWorks instance.
-
-`AgentVersion` - The AWS OpsWorks agent version.
 
 ## See Also
 

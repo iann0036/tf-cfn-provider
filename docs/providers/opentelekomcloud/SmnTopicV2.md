@@ -9,16 +9,6 @@ Manages a V2 topic resource within OpenTelekomCloud.
 `DisplayName` - (Optional) Topic display name, which is presented as the
 name of the email sender in an email message.
 
-`TopicUrn` - (Optional) Resource identifier of a topic, which is unique.
-
-`PushPolicy` - (Optional) Message pushing policy. 0 indicates that the message
-sending fails and the message is cached in the queue. 1 indicates that the
-failed message is discarded.
-
-`CreateTime` - (Optional) Time when the topic was created.
-
-`UpdateTime` - (Optional) Time when the topic was updated.
-
 
 ## Return Values
 
@@ -28,13 +18,13 @@ failed message is discarded.
 
 `DisplayName` - See Properties above.
 
-`TopicUrn` - See Properties above.
+`TopicUrn` - Resource identifier of a topic, which is unique.
 
-`PushPolicy` - See Properties above.
+`PushPolicy` - Message pushing policy. 0 indicates that the message.
 
-`CreateTime` - See Properties above.
+`CreateTime` - Time when the topic was created.
 
-`UpdateTime` - See Properties above.
+`UpdateTime` - Time when the topic was updated.
 
 ## See Also
 

@@ -21,25 +21,25 @@ into the same compartment as the containing zone of the domain.
 
 ### Fn::GetAtt
 
-`DisplayName` - A user-friendly name for the steering policy attachment. Does not have to be unique, and it's changeable. Avoid entering confidential information.
-
-`ZoneId` - The OCID of the attached zone.
-
 `CompartmentId` - The OCID of the compartment containing the steering policy attachment.
 
-`Self` - The canonical absolute URL of the resource.
+`DisplayName` - A user-friendly name for the steering policy attachment. Does not have to be unique, and it's changeable. Avoid entering confidential information.
 
 `DomainName` - The attached domain within the attached zone.
 
-`TimeCreated` - The date and time the resource was created in "YYYY-MM-ddThh:mmZ" format with a Z offset, as defined by RFC 3339.
-
-`State` - The current state of the resource.
+`Id` - The OCID of the resource.
 
 `Rtypes` - The record types covered by the attachment at the domain. The set of record types is determined by aggregating the record types from the answers defined in the steering policy.
 
+`Self` - The canonical absolute URL of the resource.
+
+`State` - The current state of the resource.
+
 `SteeringPolicyId` - The OCID of the attached steering policy.
 
-`Id` - The OCID of the resource.
+`TimeCreated` - The date and time the resource was created in "YYYY-MM-ddThh:mmZ" format with a Z offset, as defined by RFC 3339.
+
+`ZoneId` - The OCID of the attached zone.
 
 ## See Also
 

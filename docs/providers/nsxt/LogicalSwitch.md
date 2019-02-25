@@ -1,6 +1,6 @@
 # Terraform::NSXT::LogicalSwitch
 
-This resource provides a method to create a logical switch in NSX. Virtual machines can then be connected to the appropriate logical switch for the desired topology and network connectivity.
+This resource provides a method to create overlay logical switch in NSX. Virtual machines can then be connected to the appropriate logical switch for the desired topology and network connectivity.
 
 ## Properties
 
@@ -20,9 +20,9 @@ This resource provides a method to create a logical switch in NSX. Virtual machi
 
 `MacPoolId` - (Optional) Mac Pool ID to be associated with the logical switch.
 
-`Vlan` - (Optional) Vlan for vlan logical switch. If not specified, this switch is overlay logical switch.
+`Vlan` - (Deprecated, Optional) Vlan for vlan logical switch. This attribute is deprecated, please use nsxt_vlan_logical_switch resource to manage vlan logical switches.
 
-`Vni` - (Optional) Vni for the logical switch.
+`Vni` - (Optional, Readonly) Vni for the logical switch.
 
 `AddressBinding` - (Optional) List of Address Bindings for the logical switch. This setting allows to provide bindings between IP address, mac Address and vlan.
 

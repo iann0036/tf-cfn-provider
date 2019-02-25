@@ -23,9 +23,9 @@ Provides a resource to manage a GuardDuty member.
 
 ### Fn::GetAtt
 
-`RelationshipStatus` - The status of the relationship between the member account and its master account. More information can be found in [Amazon GuardDuty API Reference](https://docs.aws.amazon.com/guardduty/latest/ug/get-members.html).
-
 `Id` - The ID of the GuardDuty member.
+
+`RelationshipStatus` - The status of the relationship between the member account and its master account. More information can be found in [Amazon GuardDuty API Reference](https://docs.aws.amazon.com/guardduty/latest/ug/get-members.html).
 
 ## See Also
 

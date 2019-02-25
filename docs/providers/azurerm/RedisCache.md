@@ -42,6 +42,8 @@ create the Redis instance.
 
 `MaxmemoryPolicy` - (Optional) How Redis will select what to remove when `maxmemory` is reached. Defaults are shown below.
 
+`MaxfragmentationmemoryReserved` - (Optional) Value in megabytes reserved to accommodate for memory fragmentation. Defaults are shown below.
+
 `RdbBackupEnabled` - (Optional) Is Backup Enabled? Only supported on Premium SKU's.
 
 `RdbBackupFrequency` - (Optional) The Backup Frequency in Minutes. Only supported on Premium SKU's. Possible values are: `15`, `30`, `60`, `360`, `720` and `1440`.

@@ -2,30 +2,33 @@
 
 Provides a resource to create and manage blocks of reserved IP addresses in a project.
 
-When user provision first device in a facility, Packet automatically allocates IPv6/56 and private IPv4/25 blocks.
+When a user provisions first device in a facility, Packet API automatically allocates IPv6/56 and private IPv4/25 blocks.
 The new device then gets IPv6 and private IPv4 addresses from those block. It also gets a public IPv4/31 address.
-Every new device in the project and facility will automatically get IPv6 and private IPv4 addresses from pre-allocated i
-blocks.
-The IPv6 and private IPv4 blocks can't be created, only imported.
+Every new device in the project and facility will automatically get IPv6 and private IPv4 addresses from these pre-allocated blocks.
+The IPv6 and private IPv4 blocks can't be created, only imported. With this resource, it's possible to create either public IPv4 blocks or global IPv4 blocks.
 
-It is only possible to create public IPv4 blocks, with masks from /24 (256 addresses) to /32 (1 address).
+Public blocks are allocated in a facility. Addresses from public blocks can only be assigned to devices in the facility. Public blocks can have mask from /24 (256 addresses) to /32 (1 address). If you create public block with this resource, you must fill the facility argmument.
+
+Addresses from global blocks can be assigned in any facility. Global blocks can have mask from /30 (4 addresses), to /32 (1 address). If you create global block with this resource, you must specify type = "global_ipv4" and you must omit the facility argument.
 
 Once IP block is allocated or imported, an address from it can be assigned to device with the `Terraform::Packet::IpAttachment` resource.
 
 ## Properties
 
-`Facility` - (Required) The facility where to allocate the address block.
-
 `ProjectId` - (Required) The packet project ID where to allocate the address block.
 
 `Quantity` - (Required) The number of allocated /32 addresses, a power of 2.
+
+`Type` - (Optional) Either "global_ipv4" or "public_ipv4", defaults to "public_ipv4" for backward compatibility.
+
+`Facility` - (Optional) Facility where to allocate the public IP address block, makes sense only for type==public_ipv4, must be empty for type==global_ipv4.
 
 
 ## Return Values
 
 ### Fn::GetAtt
 
-`Facility` - The facility where the addresses are.
+`Facility` - The facility where the block was allocated, empty for global blocks.
 
 `ProjectId` - To which project the addresses beling.
 
@@ -44,6 +47,8 @@ Once IP block is allocated or imported, an address from it can be assigned to de
 `AddressFamily` - Address family as integer (4 or 6).
 
 `Public` - boolean flag whether addresses from a block are public.
+
+`Global` - boolean flag whether addresses from a block are global (i.e. can be assigned in any facility).
 
 ## See Also
 

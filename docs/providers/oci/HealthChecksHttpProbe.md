@@ -32,27 +32,27 @@ fetching the probe results.
 
 ### Fn::GetAtt
 
-`TimeoutInSeconds` - The probe timeout in seconds. Valid values: 10, 20, 30, and 60. The probe timeout must be less than or equal to `intervalInSeconds` for monitors.
-
-`Protocol` - The supported protocols available for HTTP probes.
-
 `CompartmentId` - The OCID of the compartment.
-
-`Id` - The OCID of the resource.
-
-`Targets` - An array of A target hostname or IP address of the probe.
 
 `Headers` - A dictionary of HTTP request headers.
 
-`VantagePointNames` - An array of The name of a vantage point from which to execute the probe.
-
-`ResultsUrl` - A URL for fetching the probe results.
-
-`Path` - The optional URL path to probe, including query parameters.
+`Id` - The OCID of the resource.
 
 `Method` - The supported HTTP methods available for probes.
 
+`Path` - The optional URL path to probe, including query parameters.
+
 `Port` - The port on which to probe endpoints. If unspecified, probes will use the default port of their protocol.
+
+`Protocol` - The supported protocols available for HTTP probes.
+
+`ResultsUrl` - A URL for fetching the probe results.
+
+`Targets` - An array of A target hostname or IP address of the probe.
+
+`TimeoutInSeconds` - The probe timeout in seconds. Valid values: 10, 20, 30, and 60. The probe timeout must be less than or equal to `intervalInSeconds` for monitors.
+
+`VantagePointNames` - An array of The name of a vantage point from which to execute the probe.
 
 ## See Also
 

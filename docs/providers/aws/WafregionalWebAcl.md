@@ -10,12 +10,16 @@ Provides a WAF Regional Web ACL Resource for use with Application Load Balancer.
 
 `Name` - (Required) The name or description of the web ACL.
 
-`Rule` - (Required) The rules to associate with the web ACL and the settings for each rule.
+`LoggingConfiguration` - (Optional) Configuration block to enable WAF logging. Detailed below.
+
+`Rule` - (Optional) Set of configuration blocks containing rules for the web ACL. Detailed below.
 
 
 ## Return Values
 
 ### Fn::GetAtt
+
+`Arn` - Amazon Resource Name (ARN) of the WAF Regional WebACL.
 
 `Id` - The ID of the WAF Regional WebACL.
 

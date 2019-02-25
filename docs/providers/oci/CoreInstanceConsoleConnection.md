@@ -25,21 +25,21 @@ For more information about console access, see [Accessing the Console](https://d
 
 `CompartmentId` - The OCID of the compartment to contain the console connection.
 
+`ConnectionString` - The SSH connection string for the console connection.
+
 `DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
 
+`Fingerprint` - The SSH public key fingerprint for the console connection.
+
 `FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
+
+`Id` - The OCID of the console connection.
 
 `InstanceId` - The OCID of the instance the console connection connects to.
 
 `State` - The current state of the console connection.
 
-`Fingerprint` - The SSH public key fingerprint for the console connection.
-
-`ConnectionString` - The SSH connection string for the console connection.
-
 `VncConnectionString` - The SSH connection string for the SSH tunnel used to connect to the console connection over VNC.
-
-`Id` - The OCID of the console connection.
 
 ## See Also
 

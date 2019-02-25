@@ -2,7 +2,7 @@
 
 ## Configuration
 
-To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/pagerduty**. The below arguments may be included as the key/value or JSON properties in the secret:
+To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/pagerduty** or add [template metadata](https://github.com/iann0036/tf-cfn-provider/blob/master/examples/metadata.yaml). The below arguments may be included as the key/value or JSON properties in the secret or metadata object:
 
 * `token` - (Required) The v2 authorization token. See [API Documentation](https://v2.developer.pagerduty.com/docs/authentication) for more information.
 * `skip_credentials_validation` - (Optional) Skip validation of the token against the PagerDuty API.

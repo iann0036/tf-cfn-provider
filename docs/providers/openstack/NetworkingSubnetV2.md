@@ -54,7 +54,8 @@ disables the DHCP capabilities of the existing subnet. Defaults to true.
 in this subnet. Changing this updates the DNS name servers for the existing
 subnet.
 
-`HostRoutes` - (Optional) An array of routes that should be used by devices
+`HostRoutes` - (**Deprecated** - use `Terraform::OpenStack::NetworkingSubnetRouteV2`
+instead) An array of routes that should be used by devices
 with IPs from this subnet (not including local subnet route). The host_route
 object structure is documented below. Changing this updates the host routes
 for the existing subnet.
@@ -109,6 +110,8 @@ for the existing subnet.
 `SubnetpoolId` - See Properties above.
 
 `Tags` - See Properties above.
+
+`AllTags` - The collection of ags assigned on the subnet, which have been.
 
 ## See Also
 

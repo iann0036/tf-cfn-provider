@@ -20,7 +20,7 @@ phase because a modification has not yet taken place. You can use the
 
 `ClusterIdentifier` - (Optional, Forces new resources) The cluster identifier. If omitted, Terraform will assign a random, unique identifier.
 
-`ClusterIdentifierPrefix` - (Optional, Forces new resource) Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifer`.
+`ClusterIdentifierPrefix` - (Optional, Forces new resource) Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `ClusterIdentifier`.
 
 `Engine` - (Optional) The name of the database engine to be used for this Neptune cluster. Defaults to `neptune`.
 

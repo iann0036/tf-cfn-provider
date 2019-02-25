@@ -2,7 +2,7 @@
 
 ## Configuration
 
-To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/huaweicloud**. The below arguments may be included as the key/value or JSON properties in the secret:
+To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/huaweicloud** or add [template metadata](https://github.com/iann0036/tf-cfn-provider/blob/master/examples/metadata.yaml). The below arguments may be included as the key/value or JSON properties in the secret or metadata object:
 
 * `access_key` - (Optional) The access key of the HuaweiCloud to use.
 
@@ -64,6 +64,14 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 
 * `use_octavia` - (Optional) If set to `true`, API requests will go the Load Balancer
   service (Octavia) instead of the Networking service (Neutron).
+
+* `agency_name` - (Optional) if authorized by assume role, it must be set. The
+  name of agency.
+
+* `agency_domain_name` - (Optional) if authorized by assume role, it must be set.
+  The name of domain who created the agency (Identity v3).
+
+* `delegated_project` - (Optional) The name of delegated project (Identity v3).
 
 
 ## Supported Resources

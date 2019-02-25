@@ -2,7 +2,7 @@
 
 ## Configuration
 
-To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/openstack**. The below arguments may be included as the key/value or JSON properties in the secret:
+To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/openstack** or add [template metadata](https://github.com/iann0036/tf-cfn-provider/blob/master/examples/metadata.yaml). The below arguments may be included as the key/value or JSON properties in the secret or metadata object:
 
 * `auth_url` - (Optional; required if `cloud` is not specified) The Identity
   authentication URL.
@@ -126,6 +126,7 @@ To configure this resource, you must create an AWS Secrets Manager secret with t
 * [Terraform::OpenStack::FwFirewallV1](FwFirewallV1.md)
 * [Terraform::OpenStack::FwPolicyV1](FwPolicyV1.md)
 * [Terraform::OpenStack::FwRuleV1](FwRuleV1.md)
+* [Terraform::OpenStack::IdentityApplicationCredentialV3](IdentityApplicationCredentialV3.md)
 * [Terraform::OpenStack::IdentityProjectV3](IdentityProjectV3.md)
 * [Terraform::OpenStack::IdentityRoleAssignmentV3](IdentityRoleAssignmentV3.md)
 * [Terraform::OpenStack::IdentityRoleV3](IdentityRoleV3.md)

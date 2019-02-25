@@ -21,9 +21,9 @@ has a different policy assigned, the prior assignment will be silently deleted.
 
 `Id` - The OCID of the volume backup policy assignment.
 
-`TimeCreated` - The date and time the volume backup policy assignment was created. Format defined by RFC3339.
-
 `PolicyId` - The OCID of the volume backup policy that has been assigned to an asset.
+
+`TimeCreated` - The date and time the volume backup policy assignment was created. Format defined by RFC3339.
 
 ## See Also
 

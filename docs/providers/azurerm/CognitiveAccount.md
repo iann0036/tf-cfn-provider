@@ -31,6 +31,10 @@ Manages a Cognitive Services Account.
 
 `Endpoint` - The endpoint used to connect to the Cognitive Service Account.
 
+`PrimaryAccessKey` - A primary access key which can be used to connect to the Cognitive Service Account.
+
+`SecondaryAccessKey` - The secondary access key which can be used to connect to the Cognitive Service Account.
+
 ## See Also
 
 * [azurerm_cognitive_account](https://www.terraform.io/docs/providers/azurerm/r/cognitive_account.html) in the _Terraform Provider Documentation_

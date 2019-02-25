@@ -2,7 +2,7 @@
 
 ## Configuration
 
-To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/azurerm**. The below arguments may be included as the key/value or JSON properties in the secret:
+To configure this resource, you must create an AWS Secrets Manager secret with the name **terraform/azurerm** or add [template metadata](https://github.com/iann0036/tf-cfn-provider/blob/master/examples/metadata.yaml). The below arguments may be included as the key/value or JSON properties in the secret or metadata object:
 
 * `client_id` - (Optional) The Client ID which should be used. This can also be sourced from the `ARM_CLIENT_ID` Environment Variable.
 
@@ -82,6 +82,7 @@ It's also possible to use multiple Provider blocks within a single Terraform con
 * [Terraform::AzureRM::CdnEndpoint](CdnEndpoint.md)
 * [Terraform::AzureRM::CdnProfile](CdnProfile.md)
 * [Terraform::AzureRM::CognitiveAccount](CognitiveAccount.md)
+* [Terraform::AzureRM::ConnectionMonitor](ConnectionMonitor.md)
 * [Terraform::AzureRM::ContainerGroup](ContainerGroup.md)
 * [Terraform::AzureRM::ContainerRegistry](ContainerRegistry.md)
 * [Terraform::AzureRM::ContainerService](ContainerService.md)
@@ -109,6 +110,7 @@ It's also possible to use multiple Provider blocks within a single Terraform con
 * [Terraform::AzureRM::DnsSrvRecord](DnsSrvRecord.md)
 * [Terraform::AzureRM::DnsTxtRecord](DnsTxtRecord.md)
 * [Terraform::AzureRM::DnsZone](DnsZone.md)
+* [Terraform::AzureRM::EventgridDomain](EventgridDomain.md)
 * [Terraform::AzureRM::EventgridTopic](EventgridTopic.md)
 * [Terraform::AzureRM::EventhubAuthorizationRule](EventhubAuthorizationRule.md)
 * [Terraform::AzureRM::EventhubConsumerGroup](EventhubConsumerGroup.md)
@@ -134,6 +136,7 @@ It's also possible to use multiple Provider blocks within a single Terraform con
 * [Terraform::AzureRM::LbBackendAddressPool](LbBackendAddressPool.md)
 * [Terraform::AzureRM::LbNatPool](LbNatPool.md)
 * [Terraform::AzureRM::LbNatRule](LbNatRule.md)
+* [Terraform::AzureRM::LbOutboundRule](LbOutboundRule.md)
 * [Terraform::AzureRM::LbProbe](LbProbe.md)
 * [Terraform::AzureRM::LbRule](LbRule.md)
 * [Terraform::AzureRM::Lb](Lb.md)
@@ -153,6 +156,7 @@ It's also possible to use multiple Provider blocks within a single Terraform con
 * [Terraform::AzureRM::ManagementLock](ManagementLock.md)
 * [Terraform::AzureRM::MariadbDatabase](MariadbDatabase.md)
 * [Terraform::AzureRM::MariadbServer](MariadbServer.md)
+* [Terraform::AzureRM::MediaServicesAccount](MediaServicesAccount.md)
 * [Terraform::AzureRM::MetricAlertrule](MetricAlertrule.md)
 * [Terraform::AzureRM::MonitorActionGroup](MonitorActionGroup.md)
 * [Terraform::AzureRM::MonitorActivityLogAlert](MonitorActivityLogAlert.md)

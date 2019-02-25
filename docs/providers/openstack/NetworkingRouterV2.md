@@ -98,6 +98,8 @@ the Router gateway is assigned during creation or updated after creation.
 
 `Tags` - See Properties above.
 
+`AllTags` - The collection of tags assigned on the router, which have been.
+
 ## See Also
 
 * [openstack_networking_router_v2](https://www.terraform.io/docs/providers/openstack/r/networking_router_v2.html) in the _Terraform Provider Documentation_
