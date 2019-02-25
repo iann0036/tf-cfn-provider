@@ -37,21 +37,21 @@ and the console history data.
 
 `AvailabilityDomain` - The availability domain of an instance.  Example: `Uocm:PHX-AD-1`.
 
+`DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.  Example: `My console history metadata`.
+
 `CompartmentId` - The OCID of the compartment.
 
 `DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
 
-`DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.  Example: `My console history metadata`.
-
 `FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
 
-`Id` - The OCID of the console history metadata object.
+`TimeCreated` - The date and time the history was created, in the format defined by RFC3339. Example: `2016-08-25T21:10:29.600Z`.
 
 `InstanceId` - The OCID of the instance this console history was fetched from.
 
 `State` - The current state of the console history.
 
-`TimeCreated` - The date and time the history was created, in the format defined by RFC3339. Example: `2016-08-25T21:10:29.600Z`.
+`Id` - The OCID of the console history metadata object.
 
 ## See Also
 

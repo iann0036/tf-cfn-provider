@@ -29,11 +29,11 @@ Whenever you change any values on a certificate that causes it to be recreated t
 
 ### Fn::GetAtt
 
-`CaCertificate` - The Certificate Authority certificate, or any interim certificate, that you received from your SSL certificate provider.
-
 `CertificateName` - A friendly name for the certificate bundle. It must be unique and it cannot be changed. Valid certificate bundle names include only alphanumeric characters, dashes, and underscores. Certificate bundle names cannot contain spaces. Avoid entering confidential information.  Example: `example_certificate_bundle`.
 
 `PublicCertificate` - The public certificate, in PEM format, that you received from your SSL certificate provider.
+
+`CaCertificate` - The Certificate Authority certificate, or any interim certificate, that you received from your SSL certificate provider.
 
 ## See Also
 

@@ -26,19 +26,19 @@ you have. Also confirm you're working in the correct compartment.
 
 ### Fn::GetAtt
 
-`Fingerprint` - The key's fingerprint (e.g., 12:34:56:78:90:ab:cd:ef:12:34:56:78:90:ab:cd:ef).
-
-`Id` - An Oracle-assigned identifier for the key, in this format: TENANCY_OCID/USER_OCID/KEY_FINGERPRINT.
+`KeyValue` - The key's value.
 
 `InactiveStatus` - The detailed status of INACTIVE lifecycleState.
 
-`KeyValue` - The key's value.
-
-`State` - The API key's current state.
+`UserId` - The OCID of the user the key belongs to.
 
 `TimeCreated` - Date and time the `ApiKey` object was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
 
-`UserId` - The OCID of the user the key belongs to.
+`State` - The API key's current state.
+
+`Fingerprint` - The key's fingerprint (e.g., 12:34:56:78:90:ab:cd:ef:12:34:56:78:90:ab:cd:ef).
+
+`Id` - An Oracle-assigned identifier for the key, in this format: TENANCY_OCID/USER_OCID/KEY_FINGERPRINT.
 
 ## See Also
 

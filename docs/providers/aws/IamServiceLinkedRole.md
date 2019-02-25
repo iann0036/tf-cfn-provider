@@ -15,15 +15,15 @@ Provides an [IAM service-linked role](https://docs.aws.amazon.com/IAM/latest/Use
 
 ### Fn::GetAtt
 
-`Id` - The Amazon Resource Name (ARN) of the role.
-
-`Arn` - The Amazon Resource Name (ARN) specifying the role.
-
 `CreateDate` - The creation date of the IAM role.
 
 `Name` - The name of the role.
 
+`Arn` - The Amazon Resource Name (ARN) specifying the role.
+
 `Path` - The path of the role.
+
+`Id` - The Amazon Resource Name (ARN) of the role.
 
 `UniqueId` - The stable and unique string identifying the role.
 

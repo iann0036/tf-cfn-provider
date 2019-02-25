@@ -20,19 +20,19 @@ a public IP address.
 
 ### Fn::GetAtt
 
-`Id` - The ID of the subnet.
-
 `AvailabilityZone` - The AZ for the subnet.
 
 `AvailabilityZoneId` - The AZ ID of the subnet.
 
-`CidrBlock` - The CIDR block for the subnet.
-
-`VpcId` - The VPC ID.
+`Ipv6CidrBlock` - The IPv6 CIDR block.
 
 `Ipv6AssociationId` - The association ID for the IPv6 CIDR block.
 
-`Ipv6CidrBlock` - The IPv6 CIDR block.
+`VpcId` - The VPC ID.
+
+`CidrBlock` - The CIDR block for the subnet.
+
+`Id` - The ID of the subnet.
 
 `OwnerId` - The ID of the AWS account that owns the subnet.
 

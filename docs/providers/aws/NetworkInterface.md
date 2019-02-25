@@ -31,21 +31,21 @@ Provides an Elastic network interface (ENI) resource.
 
 ### Fn::GetAtt
 
-`Id` - The ID of the network interface.
+`PrivateIps` - List of private IPs assigned to the ENI.
+
+`Tags` - Tags assigned to the ENI.
 
 `SubnetId` - Subnet ID the ENI is in.
 
-`Description` - A description for the network interface.
-
-`PrivateIps` - List of private IPs assigned to the ENI.
-
-`SecurityGroups` - List of security groups attached to the ENI.
+`SourceDestCheck` - Whether source destination checking is enabled.
 
 `Attachment` - Block defining the attachment of the ENI.
 
-`SourceDestCheck` - Whether source destination checking is enabled.
+`Id` - The ID of the network interface.
 
-`Tags` - Tags assigned to the ENI.
+`SecurityGroups` - List of security groups attached to the ENI.
+
+`Description` - A description for the network interface.
 
 ## See Also
 

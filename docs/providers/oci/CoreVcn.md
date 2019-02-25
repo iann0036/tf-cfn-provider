@@ -57,31 +57,31 @@ or FastConnect. For more information, see
 
 ### Fn::GetAtt
 
-`CidrBlock` - The CIDR IP address block of the VCN.  Example: `172.16.0.0/16`.
-
-`CompartmentId` - The OCID of the compartment containing the VCN.
-
-`DefaultDhcpOptionsId` - The OCID for the VCN's default set of DHCP options.
-
-`DefaultRouteTableId` - The OCID for the VCN's default route table.
-
-`DefaultSecurityListId` - The OCID for the VCN's default security list.
-
-`DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
+`DnsLabel` - A DNS label for the VCN, used in conjunction with the VNIC's hostname and subnet's DNS label to form a fully qualified domain name (FQDN) for each VNIC within this subnet (for example, `bminstance-1.subnet123.vcn1.oraclevcn.com`). Must be an alphanumeric string that begins with a letter. The value cannot be changed.
 
 `DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
 
-`DnsLabel` - A DNS label for the VCN, used in conjunction with the VNIC's hostname and subnet's DNS label to form a fully qualified domain name (FQDN) for each VNIC within this subnet (for example, `bminstance-1.subnet123.vcn1.oraclevcn.com`). Must be an alphanumeric string that begins with a letter. The value cannot be changed.
+`CompartmentId` - The OCID of the compartment containing the VCN.
+
+`DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
+
+`DefaultDhcpOptionsId` - The OCID for the VCN's default set of DHCP options.
 
 `FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
 
+`TimeCreated` - The date and time the VCN was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+
 `Id` - The VCN's Oracle ID (OCID).
+
+`VcnDomainName` - The VCN's domain name, which consists of the VCN's DNS label, and the `oraclevcn.com` domain.
 
 `State` - The VCN's current state.
 
-`TimeCreated` - The date and time the VCN was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+`DefaultSecurityListId` - The OCID for the VCN's default security list.
 
-`VcnDomainName` - The VCN's domain name, which consists of the VCN's DNS label, and the `oraclevcn.com` domain.
+`CidrBlock` - The CIDR IP address block of the VCN.  Example: `172.16.0.0/16`.
+
+`DefaultRouteTableId` - The OCID for the VCN's default route table.
 
 ## See Also
 

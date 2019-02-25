@@ -38,53 +38,53 @@ Create a new node pool.
 
 ### Fn::GetAtt
 
-`ClusterId` - The OCID of the cluster to which this node pool is attached.
-
-`CompartmentId` - The OCID of the compartment in which the node pool exists.
-
-`Id` - The OCID of the compute instance backing this node.
-
-`InitialNodeLabels` - A list of key/value pairs to add to nodes after they join the Kubernetes cluster.
-
-`Key` - The key of the pair.
-
-`Value` - The value of the pair.
-
-`KubernetesVersion` - The version of Kubernetes running on the nodes in the node pool.
-
-`Name` - The name of the node.
-
-`NodeImageId` - The OCID of the image running on the nodes in the node pool.
-
-`NodeImageName` - The name of the image running on the nodes in the node pool.
+`Code` - A short error code that defines the upstream error, meant for programmatic parsing. See [API Errors](https://docs.cloud.oracle.com/iaas/Content/API/References/apierrors.htm).
 
 `NodeShape` - The name of the node shape of the nodes in the node pool.
 
-`Nodes` - The nodes in the node pool.
+`PublicIp` - The public IP address of this node.
 
-`AvailabilityDomain` - The name of the availability domain in which this node is placed.
-
-`Error` - An error that may be associated with the node.
-
-`Code` - A short error code that defines the upstream error, meant for programmatic parsing. See [API Errors](https://docs.cloud.oracle.com/iaas/Content/API/References/apierrors.htm).
+`ClusterId` - The OCID of the cluster to which this node pool is attached.
 
 `Message` - A human-readable error string of the upstream error.
 
-`LifecycleDetails` - Details about the state of the node.
+`Id` - The OCID of the compute instance backing this node.
 
-`NodePoolId` - The OCID of the node pool to which this node belongs.
+`AvailabilityDomain` - The name of the availability domain in which this node is placed.
 
-`PublicIp` - The public IP address of this node.
-
-`State` - The state of the node.
+`CompartmentId` - The OCID of the compartment in which the node pool exists.
 
 `SubnetId` - The OCID of the subnet in which this node is placed.
 
+`State` - The state of the node.
+
 `QuantityPerSubnet` - The number of nodes in each subnet.
+
+`Nodes` - The nodes in the node pool.
+
+`InitialNodeLabels` - A list of key/value pairs to add to nodes after they join the Kubernetes cluster.
+
+`NodeImageId` - The OCID of the image running on the nodes in the node pool.
+
+`NodePoolId` - The OCID of the node pool to which this node belongs.
+
+`Key` - The key of the pair.
+
+`NodeImageName` - The name of the image running on the nodes in the node pool.
+
+`SubnetIds` - The OCIDs of the subnets in which to place nodes for this node pool.
+
+`Name` - The name of the node.
+
+`Value` - The value of the pair.
 
 `SshPublicKey` - The SSH public key on each node in the node pool.
 
-`SubnetIds` - The OCIDs of the subnets in which to place nodes for this node pool.
+`Error` - An error that may be associated with the node.
+
+`LifecycleDetails` - Details about the state of the node.
+
+`KubernetesVersion` - The version of Kubernetes running on the nodes in the node pool.
 
 ## See Also
 

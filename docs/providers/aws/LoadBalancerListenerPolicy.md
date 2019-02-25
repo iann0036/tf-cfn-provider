@@ -15,11 +15,11 @@ Attaches a load balancer policy to an ELB Listener.
 
 ### Fn::GetAtt
 
-`Id` - The ID of the policy.
+`LoadBalancerPort` - The load balancer listener port the policies are applied to.
 
 `LoadBalancerName` - The load balancer on which the policy is defined.
 
-`LoadBalancerPort` - The load balancer listener port the policies are applied to.
+`Id` - The ID of the policy.
 
 ## See Also
 

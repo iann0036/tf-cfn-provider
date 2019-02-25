@@ -36,23 +36,23 @@ It does not have to be unique, and you can change it with
 
 ### Fn::GetAtt
 
-`DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Operations.CostCenter": "42"}``.
+`IsCostTracking` - Indicates whether the tag is enabled for cost tracking.
 
 `Description` - The description you assign to the tag.
 
+`DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Operations.CostCenter": "42"}``.
+
 `FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Department": "Finance"}`.
 
-`Id` - The OCID of the tag definition.
-
-`IsCostTracking` - Indicates whether the tag is enabled for cost tracking.
-
-`IsRetired` - Indicates whether the tag is retired. See [Retiring Key Definitions and Namespace Definitions](https://docs.cloud.oracle.com/iaas/Content/Identity/Concepts/taggingoverview.htm#Retiring).
-
-`Name` - The name of the tag. The name must be unique across all tags in the tag namespace and can't be changed.
+`TimeCreated` - Date and time the tag was created, in the format defined by RFC3339. Example: `2016-08-25T21:10:29.600Z`.
 
 `TagNamespaceId` - The OCID of the namespace that contains the tag definition.
 
-`TimeCreated` - Date and time the tag was created, in the format defined by RFC3339. Example: `2016-08-25T21:10:29.600Z`.
+`IsRetired` - Indicates whether the tag is retired. See [Retiring Key Definitions and Namespace Definitions](https://docs.cloud.oracle.com/iaas/Content/Identity/Concepts/taggingoverview.htm#Retiring).
+
+`Id` - The OCID of the tag definition.
+
+`Name` - The name of the tag. The name must be unique across all tags in the tag namespace and can't be changed.
 
 ## See Also
 

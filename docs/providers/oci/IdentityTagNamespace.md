@@ -15,7 +15,7 @@ If you specify a name that's already in use in the tenancy, a 409 error is retur
 
 You must also specify a *description* for the namespace.
 It does not have to be unique, and you can change it with
-[UpdateTagNamespace](https://docs.cloud.oracle.com/iaas/api/#/en/tagging/20170101/TagNamespace/UpdateTagNamespace).
+[UpdateTagNamespace](https://docs.cloud.oracle.com/iaas/api/#/en/identity/20160918/TagNamespace/UpdateTagNamespace).
 
 Tag namespaces cannot be deleted, but they can be retired.
 See [Retiring Key Definitions and Namespace Definitions](https://docs.cloud.oracle.com/iaas/Content/Identity/Concepts/taggingoverview.htm#Retiring) for more information.
@@ -39,21 +39,21 @@ See [Retiring Key Definitions and Namespace Definitions](https://docs.cloud.orac
 
 ### Fn::GetAtt
 
+`Description` - The description you assign to the tag namespace.
+
 `CompartmentId` - The OCID of the compartment that contains the tag namespace.
 
 `DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Operations.CostCenter": "42"}`.
 
-`Description` - The description you assign to the tag namespace.
-
 `FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Department": "Finance"}`.
 
-`Id` - The OCID of the tag namespace.
+`TimeCreated` - Date and time the tagNamespace was created, in the format defined by RFC3339. Example: `2016-08-25T21:10:29.600Z`.
 
 `IsRetired` - Whether the tag namespace is retired. For more information, see [Retiring Key Definitions and Namespace Definitions](https://docs.cloud.oracle.com/iaas/Content/Identity/Concepts/taggingoverview.htm#Retiring).
 
-`Name` - The name of the tag namespace. It must be unique across all tag namespaces in the tenancy and cannot be changed.
+`Id` - The OCID of the tag namespace.
 
-`TimeCreated` - Date and time the tagNamespace was created, in the format defined by RFC3339. Example: `2016-08-25T21:10:29.600Z`.
+`Name` - The name of the tag namespace. It must be unique across all tag namespaces in the tenancy and cannot be changed.
 
 ## See Also
 

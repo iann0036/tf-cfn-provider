@@ -27,23 +27,23 @@ request body, the record will be removed from the zone.
 
 ### Fn::GetAtt
 
-`CompartmentId` - The OCID of the compartment the resource belongs to.
-
 `Domain` - The fully qualified domain name where the record can be located.
 
-`IsProtected` - A Boolean flag indicating whether or not parts of the record are unable to be explicitly managed.
+`ZoneNameOrId` - The name or OCID of the target zone.
 
-`Rdata` - The record's data, as whitespace-delimited tokens in type-specific presentation format. All RDATA is normalized and the returned presentation of your RDATA may differ from its initial input. For more information about RDATA, see [Supported DNS Resource Record Types](https://docs.cloud.oracle.com/iaas/Content/DNS/Reference/supporteddnsresource.htm).
-
-`RecordHash` - A unique identifier for the record within its zone.
-
-`RrsetVersion` - The latest version of the record's zone in which its RRSet differs from the preceding version.
+`CompartmentId` - The OCID of the compartment the resource belongs to.
 
 `Rtype` - The canonical name for the record's type, such as A or CNAME. For more information, see [Resource Record (RR) TYPEs](https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#dns-parameters-4).
 
 `Ttl` - The Time To Live for the record, in seconds.
 
-`ZoneNameOrId` - The name or OCID of the target zone.
+`IsProtected` - A Boolean flag indicating whether or not parts of the record are unable to be explicitly managed.
+
+`RrsetVersion` - The latest version of the record's zone in which its RRSet differs from the preceding version.
+
+`Rdata` - The record's data, as whitespace-delimited tokens in type-specific presentation format. All RDATA is normalized and the returned presentation of your RDATA may differ from its initial input. For more information about RDATA, see [Supported DNS Resource Record Types](https://docs.cloud.oracle.com/iaas/Content/DNS/Reference/supporteddnsresource.htm).
+
+`RecordHash` - A unique identifier for the record within its zone.
 
 ## See Also
 

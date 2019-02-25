@@ -108,65 +108,65 @@ Avoid entering confidential information.
 
 ### Fn::GetAtt
 
-`BaseImageId` - The OCID of the image originally used to launch the instance.
-
-`CompartmentId` - The OCID of the compartment containing the instance you want to use as the basis for the image.
-
-`CreateImageAllowed` - Whether instances launched with this image can be used to create new images. For example, you cannot create an image of an Oracle Database instance. Example: `true`.
-
-`DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
-
-`DisplayName` - A user-friendly name for the image. It does not have to be unique, and it's changeable. Avoid entering confidential information. You cannot use an Oracle-provided image name as a custom image name.  Example: `My custom Oracle Linux image`.
-
-`FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
-
-`Id` - The OCID of the image.
-
-`LaunchMode` - Specifies the configuration mode for launching virtual machine (VM) instances. The configuration modes are:.
-
-`NATIVE` - VM instances launch with iSCSI boot and VFIO devices. The default value for Oracle-provided images.
-
-`EMULATED` - VM instances launch with emulated devices, such as the E1000 network driver and emulated SCSI disk controller.
-
-`PARAVIRTUALIZED` - Paravirtualized disk.
-
-`CUSTOM` - VM instances launch with custom configuration settings specified in the `LaunchOptions` parameter.
-
-`BootVolumeType` - Emulation type for volume.
-
-`ISCSI` - ISCSI attached block storage device. This is the default for Boot Volumes and Remote Block Storage volumes on Oracle provided images.
-
-`SCSI` - Emulated SCSI disk.
-
-`IDE` - Emulated IDE disk.
-
 `VFIO` - Direct attached Virtual Function storage.  This is the default option for Local data volumes on Oracle provided images.
-
-`Firmware` - Firmware used to boot VM.  Select the option that matches your operating system.
-
-`BIOS` - Boot VM using BIOS style firmware.  This is compatible with both 32 bit and 64 bit operating systems that boot using MBR style bootloaders.
 
 `UEFI64` - Boot VM using UEFI style firmware compatible with 64 bit operating systems.  This is the default for Oracle provided images.
 
-`IsConsistentVolumeNamingEnabled` - Whether to enable consistent volume naming feature. Defaults to false.
+`ISCSI` - ISCSI attached block storage device. This is the default for Boot Volumes and Remote Block Storage volumes on Oracle provided images.
 
-`IsPvEncryptionInTransitEnabled` - Whether to enable encryption in transit for the PV boot volume attachment. Defaults to false.
+`TimeCreated` - The date and time the image was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
 
-`NetworkType` - Emulation type for NIC.
+`IDE` - Emulated IDE disk.
 
-`E1000` - Emulated Gigabit ethernet controller.  Compatible with Linux e1000 network driver.
+`Id` - The OCID of the image.
 
-`RemoteDataVolumeType` - Emulation type for volume.
+`NATIVE` - VM instances launch with iSCSI boot and VFIO devices. The default value for Oracle-provided images.
 
-`OperatingSystem` - The image's operating system.  Example: `Oracle Linux`.
+`CreateImageAllowed` - Whether instances launched with this image can be used to create new images. For example, you cannot create an image of an Oracle Database instance. Example: `true`.
 
-`OperatingSystemVersion` - The image's operating system version.  Example: `7.2`.
+`DisplayName` - A user-friendly name for the image. It does not have to be unique, and it's changeable. Avoid entering confidential information. You cannot use an Oracle-provided image name as a custom image name.  Example: `My custom Oracle Linux image`.
 
-`SizeInMbs` - Image size (1 MB = 1048576 bytes)  Example: `47694`.
+`CompartmentId` - The OCID of the compartment containing the instance you want to use as the basis for the image.
+
+`DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
+
+`Firmware` - Firmware used to boot VM.  Select the option that matches your operating system.
+
+`FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
+
+`CUSTOM` - VM instances launch with custom configuration settings specified in the `LaunchOptions` parameter.
+
+`BIOS` - Boot VM using BIOS style firmware.  This is compatible with both 32 bit and 64 bit operating systems that boot using MBR style bootloaders.
 
 `State` - The current state of the image.
 
-`TimeCreated` - The date and time the image was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+`SCSI` - Emulated SCSI disk.
+
+`IsPvEncryptionInTransitEnabled` - Whether to enable encryption in transit for the PV boot volume attachment. Defaults to false.
+
+`E1000` - Emulated Gigabit ethernet controller.  Compatible with Linux e1000 network driver.
+
+`EMULATED` - VM instances launch with emulated devices, such as the E1000 network driver and emulated SCSI disk controller.
+
+`OperatingSystemVersion` - The image's operating system version.  Example: `7.2`.
+
+`RemoteDataVolumeType` - Emulation type for volume.
+
+`BaseImageId` - The OCID of the image originally used to launch the instance.
+
+`IsConsistentVolumeNamingEnabled` - Whether to enable consistent volume naming feature. Defaults to false.
+
+`OperatingSystem` - The image's operating system.  Example: `Oracle Linux`.
+
+`PARAVIRTUALIZED` - Paravirtualized disk.
+
+`LaunchMode` - Specifies the configuration mode for launching virtual machine (VM) instances. The configuration modes are:.
+
+`SizeInMbs` - Image size (1 MB = 1048576 bytes)  Example: `47694`.
+
+`BootVolumeType` - Emulation type for volume.
+
+`NetworkType` - Emulation type for NIC.
 
 ## See Also
 

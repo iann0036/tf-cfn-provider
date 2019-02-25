@@ -20,15 +20,15 @@ balancer.
 
 ### Fn::GetAtt
 
-`Id` - The ID of the policy.
-
-`Name` - The name of the stickiness policy.
-
 `LoadBalancer` - The name of load balancer to which the policy is attached.
 
 `LbPort` - The load balancer port to which the policy is applied.
 
+`Id` - The ID of the policy.
+
 `CookieName` - The application cookie whose lifetime the ELB's cookie should follow.
+
+`Name` - The name of the stickiness policy.
 
 ## See Also
 

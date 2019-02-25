@@ -35,9 +35,9 @@ and use the `Terraform::AWS::VpcPeeringConnectionAccepter` to manage the accepte
 
 ### Fn::GetAtt
 
-`Id` - The ID of the VPC Peering Connection.
-
 `AcceptStatus` - The status of the VPC Peering Connection request.
+
+`Id` - The ID of the VPC Peering Connection.
 
 ## See Also
 

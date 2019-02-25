@@ -21,9 +21,9 @@ Provides a resource to create a member account in the current organization.
 
 ### Fn::GetAtt
 
-`Arn` - The ARN for this account.
-
 `Id` - The AWS account id.
+
+`Arn` - The ARN for this account.
 
 ## See Also
 

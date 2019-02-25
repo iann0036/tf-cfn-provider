@@ -20,23 +20,23 @@ endpoint for API calls, and a dedicated HSM or a multitenant HSM.
 
 ### Fn::GetAtt
 
+`DisplayName` - A user-friendly name for the vault. It does not have to be unique, and it is changeable. Avoid entering confidential information.
+
 `CompartmentId` - The OCID of the compartment that contains this vault.
+
+`VaultType` - The type of vault. Each type of vault stores the key with different degrees of isolation and has different options and pricing.
 
 `CryptoEndpoint` - The service endpoint to perform cryptographic operations against. Cryptographic operations include 'Encrypt,' 'Decrypt,' and 'GenerateDataEncryptionKey' operations.
 
-`DisplayName` - A user-friendly name for the vault. It does not have to be unique, and it is changeable. Avoid entering confidential information.
-
-`Id` - The OCID of the vault.
-
-`ManagementEndpoint` - The service endpoint to perform management operations against. Management operations include 'Create,' 'Update,' 'List,' 'Get,' and 'Delete' operations.
-
-`State` - The vault's current state.  Example: `DELETED`.
+`TimeOfDeletion` - An optional property for the deletion time of the Vault expressed in [RFC 3339](https://tools.ietf.org/html/rfc3339) timestamp format. Example: `2018-04-03T21:10:29.600Z`.
 
 `TimeCreated` - The date and time this vault was created, expressed in [RFC 3339](https://tools.ietf.org/html/rfc3339) timestamp format.  Example: `2018-04-03T21:10:29.600Z`.
 
-`TimeOfDeletion` - An optional property for the deletion time of the Vault expressed in [RFC 3339](https://tools.ietf.org/html/rfc3339) timestamp format. Example: `2018-04-03T21:10:29.600Z`.
+`State` - The vault's current state.  Example: `DELETED`.
 
-`VaultType` - The type of vault. Each type of vault stores the key with different degrees of isolation and has different options and pricing.
+`ManagementEndpoint` - The service endpoint to perform management operations against. Management operations include 'Create,' 'Update,' 'List,' 'Get,' and 'Delete' operations.
+
+`Id` - The OCID of the vault.
 
 ## See Also
 

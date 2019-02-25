@@ -29,21 +29,21 @@ as the VCN. For more information about compartments and access control, see
 
 ### Fn::GetAtt
 
-`CompartmentId` - The OCID of the compartment containing the DRG attachment.
+`VcnId` - The OCID of the VCN.
 
 `DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
 
-`DrgId` - The OCID of the DRG.
-
-`Id` - The DRG attachment's Oracle ID (OCID).
-
-`RouteTableId` - The OCID of the route table the DRG attachment is using. For information about why you would associate a route table with a DRG attachment, see [Advanced Scenario: Transit Routing](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/transitrouting.htm).
-
-`State` - The DRG attachment's current state.
+`CompartmentId` - The OCID of the compartment containing the DRG attachment.
 
 `TimeCreated` - The date and time the DRG attachment was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
 
-`VcnId` - The OCID of the VCN.
+`DrgId` - The OCID of the DRG.
+
+`State` - The DRG attachment's current state.
+
+`RouteTableId` - The OCID of the route table the DRG attachment is using. For information about why you would associate a route table with a DRG attachment, see [Advanced Scenario: Transit Routing](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/transitrouting.htm).
+
+`Id` - The DRG attachment's Oracle ID (OCID).
 
 ## See Also
 

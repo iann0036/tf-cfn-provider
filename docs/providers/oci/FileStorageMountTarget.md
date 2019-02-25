@@ -60,27 +60,27 @@ type, or by viewing the resource in the Console.
 
 `AvailabilityDomain` - The availability domain the mount target is in. May be unset as a blank or NULL value.  Example: `Uocm:PHX-AD-1`.
 
-`CompartmentId` - The OCID of the compartment that contains the mount target.
-
-`DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Operations.CostCenter": "42"}`.
-
 `DisplayName` - A user-friendly name. It does not have to be unique, and it is changeable. Avoid entering confidential information.  Example: `My mount target`.
-
-`ExportSetId` - The OCID of the associated export set. Controls what file systems will be exported through Network File System (NFS) protocol on this mount target.
-
-`FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Department": "Finance"}`.
-
-`Id` - The OCID of the mount target.
-
-`LifecycleDetails` - Additional information about the current 'lifecycleState'.
 
 `PrivateIpIds` - The OCIDs of the private IP addresses associated with this mount target.
 
-`State` - The current state of the mount target.
+`CompartmentId` - The OCID of the compartment that contains the mount target.
+
+`ExportSetId` - The OCID of the associated export set. Controls what file systems will be exported through Network File System (NFS) protocol on this mount target.
+
+`DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Operations.CostCenter": "42"}`.
+
+`FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Department": "Finance"}`.
+
+`TimeCreated` - The date and time the mount target was created, expressed in [RFC 3339](https://tools.ietf.org/rfc/rfc3339) timestamp format.  Example: `2016-08-25T21:10:29.600Z`.
 
 `SubnetId` - The OCID of the subnet the mount target is in.
 
-`TimeCreated` - The date and time the mount target was created, expressed in [RFC 3339](https://tools.ietf.org/rfc/rfc3339) timestamp format.  Example: `2016-08-25T21:10:29.600Z`.
+`State` - The current state of the mount target.
+
+`LifecycleDetails` - Additional information about the current 'lifecycleState'.
+
+`Id` - The OCID of the mount target.
 
 ## See Also
 

@@ -51,33 +51,33 @@ To get the IP address, use the [GetLoadBalancer](https://docs.cloud.oracle.com/i
 
 ### Fn::GetAtt
 
-`CompartmentId` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the compartment containing the load balancer.
-
-`DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
-
 `DisplayName` - A user-friendly name. It does not have to be unique, and it is changeable.  Example: `example_load_balancer`.
 
-`FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
-
-`Id` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the load balancer.
-
-`IpAddressDetails` - An array of IP addresses.
-
-`IpAddress` - An IP address.  Example: `192.168.0.3`.
-
-`IsPublic` - Whether the IP address is public or private.
-
-`IpAddresses` - An array of IP addresses. Deprecated: use ip_address_details instead.
-
-`IsPrivate` - Whether the load balancer has a VCN-local (private) IP address.
-
-`Shape` - A template that determines the total pre-provisioned bandwidth (ingress plus egress). To get a list of available shapes, use the [ListShapes](https://docs.cloud.oracle.com/iaas/api/#/en/loadbalancer/20170115/LoadBalancerShape/ListShapes) operation.  Example: `100Mbps`.
+`CompartmentId` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the compartment containing the load balancer.
 
 `State` - The current state of the load balancer.
 
-`SubnetIds` - An array of subnet [OCIDs](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm).
+`DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
+
+`IpAddresses` - An array of IP addresses. Deprecated: use ip_address_details instead.
+
+`FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
 
 `TimeCreated` - The date and time the load balancer was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+
+`Shape` - A template that determines the total pre-provisioned bandwidth (ingress plus egress). To get a list of available shapes, use the [ListShapes](https://docs.cloud.oracle.com/iaas/api/#/en/loadbalancer/20170115/LoadBalancerShape/ListShapes) operation.  Example: `100Mbps`.
+
+`IpAddressDetails` - An array of IP addresses.
+
+`IsPublic` - Whether the IP address is public or private.
+
+`SubnetIds` - An array of subnet [OCIDs](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm).
+
+`IpAddress` - An IP address.  Example: `192.168.0.3`.
+
+`Id` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the load balancer.
+
+`IsPrivate` - Whether the load balancer has a VCN-local (private) IP address.
 
 ## See Also
 

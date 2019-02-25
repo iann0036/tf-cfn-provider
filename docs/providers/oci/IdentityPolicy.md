@@ -37,27 +37,27 @@ New policies take effect typically within 10 seconds.
 
 ### Fn::GetAtt
 
+`Statements` - An array of one or more policy statements written in the policy language.
+
+`Description` - The description you assign to the policy. Does not have to be unique, and it's changeable.
+
 `CompartmentId` - The OCID of the compartment containing the policy (either the tenancy or another compartment).
 
 `DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Operations.CostCenter": "42"}`.
 
-`Description` - The description you assign to the policy. Does not have to be unique, and it's changeable.
+`InactiveState` - The detailed status of INACTIVE lifecycleState.
 
 `FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Department": "Finance"}`.
 
-`Id` - The OCID of the policy.
-
-`InactiveState` - The detailed status of INACTIVE lifecycleState.
-
-`Name` - The name you assign to the policy during creation. The name must be unique across all policies in the tenancy and cannot be changed.
+`TimeCreated` - Date and time the policy was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
 
 `State` - The policy's current state.
 
-`Statements` - An array of one or more policy statements written in the policy language.
-
-`TimeCreated` - Date and time the policy was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
-
 `VersionDate` - The version of the policy. If null or set to an empty string, when a request comes in for authorization, the policy will be evaluated according to the current behavior of the services at that moment. If set to a particular date (YYYY-MM-DD), the policy will be evaluated according to the behavior of the services on that date.
+
+`Id` - The OCID of the policy.
+
+`Name` - The name you assign to the policy during creation. The name must be unique across all policies in the tenancy and cannot be changed.
 
 ## See Also
 

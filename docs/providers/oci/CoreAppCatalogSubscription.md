@@ -25,21 +25,21 @@ Create a subscription for listing resource version for a compartment. It will ta
 
 ### Fn::GetAtt
 
-`CompartmentId` - The compartmentID of the subscription.
+`ListingId` - The ocid of the listing resource.
 
 `DisplayName` - The display name of the listing.
 
-`ListingId` - The ocid of the listing resource.
-
-`ListingResourceId` - Listing resource id.
-
 `ListingResourceVersion` - Listing resource version.
 
-`PublisherName` - Name of the publisher who published this listing.
+`CompartmentId` - The compartmentID of the subscription.
+
+`TimeCreated` - Date and time at which the subscription was created, in RFC3339 format. Example: `2018-03-20T12:32:53.532Z`.
 
 `Summary` - The short summary to the listing.
 
-`TimeCreated` - Date and time at which the subscription was created, in RFC3339 format. Example: `2018-03-20T12:32:53.532Z`.
+`ListingResourceId` - Listing resource id.
+
+`PublisherName` - Name of the publisher who published this listing.
 
 ## See Also
 

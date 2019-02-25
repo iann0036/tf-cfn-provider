@@ -27,19 +27,19 @@ tenancy can use this operation to create a secret key for any user, including th
 
 `DisplayName` - The display name you assign to the secret key. Does not have to be unique, and it's changeable.
 
-`Id` - The OCID of the secret key.
-
 `InactiveState` - The detailed status of INACTIVE lifecycleState.
-
-`Key` - The secret key.
-
-`State` - The secret key's current state.
 
 `TimeCreated` - Date and time the `CustomerSecretKey` object was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
 
-`TimeExpires` - Date and time when this password will expire, in the format defined by RFC3339. Null if it never expires.  Example: `2016-08-25T21:10:29.600Z`.
+`State` - The secret key's current state.
+
+`Key` - The secret key.
 
 `UserId` - The OCID of the user the password belongs to.
+
+`TimeExpires` - Date and time when this password will expire, in the format defined by RFC3339. Null if it never expires.  Example: `2016-08-25T21:10:29.600Z`.
+
+`Id` - The OCID of the secret key.
 
 ## See Also
 

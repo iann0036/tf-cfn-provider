@@ -44,35 +44,35 @@ it anytime with
 
 ### Fn::GetAtt
 
+`ProductType` - The identity provider service or product. Supported identity providers are Oracle Identity Cloud Service (IDCS) and Microsoft Active Directory Federation Services (ADFS).
+
+`Description` - The description you assign to the `IdentityProvider` during creation. Does not have to be unique, and it's changeable.
+
 `CompartmentId` - The OCID of the tenancy containing the `IdentityProvider`.
 
 `DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Operations.CostCenter": "42"}`.
 
-`Description` - The description you assign to the `IdentityProvider` during creation. Does not have to be unique, and it's changeable.
-
-`FreeformAttributes` - Extra name value pairs associated with this identity provider. Example: `{"clientId": "app_sf3kdjf3"}`.
+`InactiveState` - The detailed status of INACTIVE lifecycleState.
 
 `FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Department": "Finance"}`.
 
-`Id` - The OCID of the `IdentityProvider`.
-
-`InactiveState` - The detailed status of INACTIVE lifecycleState.
-
-`MetadataUrl` - The URL for retrieving the identity provider's metadata, which contains information required for federating.
+`SigningCertificate` - The identity provider's signing certificate used by the IAM Service to validate the SAML2 token.
 
 `Name` - The name you assign to the `IdentityProvider` during creation. The name must be unique across all `IdentityProvider` objects in the tenancy and cannot be changed. This is the name federated users see when choosing which identity provider to use when signing in to the Oracle Cloud Infrastructure Console.
-
-`ProductType` - The identity provider service or product. Supported identity providers are Oracle Identity Cloud Service (IDCS) and Microsoft Active Directory Federation Services (ADFS).
-
-`Protocol` - The protocol used for federation. Allowed value: `SAML2`.  Example: `SAML2`.
-
-`RedirectUrl` - The URL to redirect federated users to for authentication with the identity provider.
-
-`SigningCertificate` - The identity provider's signing certificate used by the IAM Service to validate the SAML2 token.
 
 `State` - The current state.
 
 `TimeCreated` - Date and time the `IdentityProvider` was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+
+`RedirectUrl` - The URL to redirect federated users to for authentication with the identity provider.
+
+`MetadataUrl` - The URL for retrieving the identity provider's metadata, which contains information required for federating.
+
+`Protocol` - The protocol used for federation. Allowed value: `SAML2`.  Example: `SAML2`.
+
+`Id` - The OCID of the `IdentityProvider`.
+
+`FreeformAttributes` - Extra name value pairs associated with this identity provider. Example: `{"clientId": "app_sf3kdjf3"}`.
 
 ## See Also
 

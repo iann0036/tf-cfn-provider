@@ -27,39 +27,39 @@ Attaches the specified storage volume to the specified instance.
 
 ### Fn::GetAtt
 
-`AttachmentType` - The type of volume attachment.
-
 `AvailabilityDomain` - The availability domain of an instance.  Example: `Uocm:PHX-AD-1`.
 
-`ChapSecret` - The Challenge-Handshake-Authentication-Protocol (CHAP) secret valid for the associated CHAP user name. (Also called the "CHAP password".)  Example: `d6866c0d-298b-48ba-95af-309b4faux45e`.
-
-`ChapUsername` - The volume's system-generated Challenge-Handshake-Authentication-Protocol (CHAP) user name.  Example: `ocid1.volume.oc1.phx.abyhqljrgvttnlx73nmrwfaux7kcvzfs3s66izvxf2h4lgvyndsdsnoiwr5q`.
+`DisplayName` - A user-friendly name. Does not have to be unique, and it cannot be changed. Avoid entering confidential information.  Example: `My volume attachment`.
 
 `CompartmentId` - The OCID of the compartment.
 
-`Device` - The device name.
+`ChapUsername` - The volume's system-generated Challenge-Handshake-Authentication-Protocol (CHAP) user name.  Example: `ocid1.volume.oc1.phx.abyhqljrgvttnlx73nmrwfaux7kcvzfs3s66izvxf2h4lgvyndsdsnoiwr5q`.
 
-`DisplayName` - A user-friendly name. Does not have to be unique, and it cannot be changed. Avoid entering confidential information.  Example: `My volume attachment`.
+`Port` - The volume's iSCSI port.  Example: `3260`.
+
+`IsPvEncryptionInTransitEnabled` - Whether the enable encryption in transit for the PV volume attachment is on or not.
+
+`TimeCreated` - The date and time the volume was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
 
 `Id` - The OCID of the volume attachment.
 
 `InstanceId` - The OCID of the instance the volume is attached to.
 
-`Ipv4` - The volume's iSCSI IP address.  Example: `169.254.0.2`.
+`State` - The current state of the volume attachment.
 
 `Iqn` - The target volume's iSCSI Qualified Name in the format defined by RFC 3720.  Example: `iqn.2015-12.us.oracle.com:456b0391-17b8-4122-bbf1-f85fc0bb97d9`.
 
-`IsPvEncryptionInTransitEnabled` - Whether the enable encryption in transit for the PV volume attachment is on or not.
-
 `IsReadOnly` - Whether the attachment was created in read-only mode.
 
-`Port` - The volume's iSCSI port.  Example: `3260`.
-
-`State` - The current state of the volume attachment.
-
-`TimeCreated` - The date and time the volume was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+`Ipv4` - The volume's iSCSI IP address.  Example: `169.254.0.2`.
 
 `VolumeId` - The OCID of the volume.
+
+`Device` - The device name.
+
+`AttachmentType` - The type of volume attachment.
+
+`ChapSecret` - The Challenge-Handshake-Authentication-Protocol (CHAP) secret valid for the associated CHAP user name. (Also called the "CHAP password".)  Example: `d6866c0d-298b-48ba-95af-309b4faux45e`.
 
 ## See Also
 

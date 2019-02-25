@@ -31,9 +31,9 @@ Provides a CodePipeline Webhook.
 
 ### Fn::GetAtt
 
-`Id` - The CodePipeline webhook's ARN.
-
 `Url` - The CodePipeline webhook's URL. POST events to this endpoint to trigger the target.
+
+`Id` - The CodePipeline webhook's ARN.
 
 ## See Also
 

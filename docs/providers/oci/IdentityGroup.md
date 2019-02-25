@@ -37,23 +37,23 @@ See [AddUserToGroup](https://docs.cloud.oracle.com/iaas/api/#/en/identity/201609
 
 ### Fn::GetAtt
 
+`Description` - The description you assign to the group. Does not have to be unique, and it's changeable.
+
 `CompartmentId` - The OCID of the tenancy containing the group.
 
 `DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Operations.CostCenter": "42"}`.
 
-`Description` - The description you assign to the group. Does not have to be unique, and it's changeable.
+`InactiveState` - The detailed status of INACTIVE lifecycleState.
 
 `FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm). Example: `{"Department": "Finance"}`.
 
-`Id` - The OCID of the group.
-
-`InactiveState` - The detailed status of INACTIVE lifecycleState.
-
-`Name` - The name you assign to the group during creation. The name must be unique across all groups in the tenancy and cannot be changed.
+`TimeCreated` - Date and time the group was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
 
 `State` - The group's current state.
 
-`TimeCreated` - Date and time the group was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+`Id` - The OCID of the group.
+
+`Name` - The name you assign to the group during creation. The name must be unique across all groups in the tenancy and cannot be changed.
 
 ## See Also
 

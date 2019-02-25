@@ -24,25 +24,25 @@ NAT gateway as the rule's target. See [Route Table](https://docs.cloud.oracle.co
 
 ### Fn::GetAtt
 
-`BlockTraffic` - Whether the NAT gateway blocks traffic through it. The default is `false`.  Example: `true`.
+`VcnId` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the VCN the NAT gateway belongs to.
+
+`DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
 
 `CompartmentId` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the compartment that contains the NAT gateway.
 
 `DefinedTags` - Defined tags for this resource. Each key is predefined and scoped to a namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Operations.CostCenter": "42"}`.
 
-`DisplayName` - A user-friendly name. Does not have to be unique, and it's changeable. Avoid entering confidential information.
-
 `FreeformTags` - Free-form tags for this resource. Each tag is a simple key-value pair with no predefined name, type, or namespace. For more information, see [Resource Tags](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/resourcetags.htm).  Example: `{"Department": "Finance"}`.
-
-`Id` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the NAT gateway.
-
-`NatIp` - The IP address associated with the NAT gateway.
-
-`State` - The NAT gateway's current state.
 
 `TimeCreated` - The date and time the NAT gateway was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
 
-`VcnId` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the VCN the NAT gateway belongs to.
+`NatIp` - The IP address associated with the NAT gateway.
+
+`BlockTraffic` - Whether the NAT gateway blocks traffic through it. The default is `false`.  Example: `true`.
+
+`State` - The NAT gateway's current state.
+
+`Id` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the NAT gateway.
 
 ## See Also
 

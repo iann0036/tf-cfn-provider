@@ -15,25 +15,25 @@ Creates a new Autonomous Data Warehouse backup for the specified database based 
 
 ### Fn::GetAtt
 
-`AutonomousDataWarehouseId` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the Autonomous Data Warehouse.
-
-`CompartmentId` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the compartment.
+`TimeEnded` - The date and time the backup completed.
 
 `DisplayName` - The user-friendly name for the backup. The name does not have to be unique.
 
-`Id` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the Autonomous Data Warehouse backup.
+`TimeStarted` - The date and time the backup started.
+
+`CompartmentId` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the compartment.
+
+`AutonomousDataWarehouseId` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the Autonomous Data Warehouse.
 
 `IsAutomatic` - Indicates whether the backup is user-initiated or automatic.
 
-`LifecycleDetails` - Additional information about the current lifecycle state.
-
 `State` - The current state of the backup.
 
-`TimeEnded` - The date and time the backup completed.
-
-`TimeStarted` - The date and time the backup started.
+`LifecycleDetails` - Additional information about the current lifecycle state.
 
 `Type` - The type of backup.
+
+`Id` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the Autonomous Data Warehouse backup.
 
 ## See Also
 

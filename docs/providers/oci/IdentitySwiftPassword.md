@@ -26,21 +26,21 @@ tenancy can use this operation to create a Swift password for any user, includin
 
 ### Fn::GetAtt
 
+`UserId` - The OCID of the user the password belongs to.
+
 `Description` - The description you assign to the Swift password. Does not have to be unique, and it's changeable.
-
-`ExpiresOn` - Date and time when this password will expire, in the format defined by RFC3339. Null if it never expires.  Example: `2016-08-25T21:10:29.600Z`.
-
-`Id` - The OCID of the Swift password.
 
 `InactiveState` - The detailed status of INACTIVE lifecycleState.
 
-`Password` - The Swift password. The value is available only in the response for `CreateSwiftPassword`, and not for `ListSwiftPasswords` or `UpdateSwiftPassword`.
+`TimeCreated` - Date and time the `SwiftPassword` object was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
 
 `State` - The password's current state.
 
-`TimeCreated` - Date and time the `SwiftPassword` object was created, in the format defined by RFC3339.  Example: `2016-08-25T21:10:29.600Z`.
+`Password` - The Swift password. The value is available only in the response for `CreateSwiftPassword`, and not for `ListSwiftPasswords` or `UpdateSwiftPassword`.
 
-`UserId` - The OCID of the user the password belongs to.
+`Id` - The OCID of the Swift password.
+
+`ExpiresOn` - Date and time when this password will expire, in the format defined by RFC3339. Null if it never expires.  Example: `2016-08-25T21:10:29.600Z`.
 
 ## See Also
 

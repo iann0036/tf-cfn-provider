@@ -17,27 +17,27 @@ Creates a new backup in the specified database based on the request parameters y
 
 `AvailabilityDomain` - The name of the availability domain where the database backup is stored.
 
+`DisplayName` - The user-friendly name for the backup. The name does not have to be unique.
+
+`TimeStarted` - The date and time the backup started.
+
 `CompartmentId` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the compartment.
 
 `DatabaseEdition` - The Oracle Database edition of the DB system from which the database backup was taken.
-
-`DatabaseId` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the database.
-
-`DatabaseSizeInGbs` - The size of the database in gigabytes at the time the backup was taken.
-
-`DisplayName` - The user-friendly name for the backup. The name does not have to be unique.
-
-`Id` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the backup.
-
-`LifecycleDetails` - Additional information about the current lifecycleState.
 
 `State` - The current state of the backup.
 
 `TimeEnded` - The date and time the backup was completed.
 
-`TimeStarted` - The date and time the backup started.
+`DatabaseId` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the database.
+
+`LifecycleDetails` - Additional information about the current lifecycleState.
+
+`DatabaseSizeInGbs` - The size of the database in gigabytes at the time the backup was taken.
 
 `Type` - The type of backup.
+
+`Id` - The [OCID](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/identifiers.htm) of the backup.
 
 ## See Also
 
