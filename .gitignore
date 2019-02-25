@@ -107,6 +107,7 @@ venv.bak/
 .vscode
 
 # Lambda compile files
+upload.sh
 lambda/Archive.zip
 lambda/app.zip
 lambda/six.py

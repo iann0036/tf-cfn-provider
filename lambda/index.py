@@ -88,13 +88,14 @@ def tf_resource_processor(request_type, logical_id, resource_type, resource_prop
     return_data = {}
     terraform_file_contents = ""
     provider_name = resource_type.split("_")[0]
-    provider_credentials = get_secret("terraform/" + provider_name)
+    secret_credentials = get_secret("terraform/" + provider_name)
+    provider_credentials = {**secret_credentials, **resource_properties["_TerraformMetadata"]} # overwrite with this data
 
     s3 = boto3.resource('s3')
     s3file = s3.Object(os.environ['STATE_BUCKET'], '{}/{}.tfstate'.format(stack_id, physical_resource_id))
 
     LOGGER.info("State File: {}/{}.tfstate".format(stack_id, physical_resource_id))
-
+    
     if provider_credentials:
         terraform_file_contents += """
 provider "{provider_name}" {{
@@ -103,10 +104,11 @@ provider "{provider_name}" {{
             provider_name=provider_name
         )
         for k, v in provider_credentials.items():
-            terraform_file_contents += "    " + k + " = \"" + v + "\"\n"
+            terraform_file_contents += "    " + k + " = \"" + str(v) + "\"\n"
         terraform_file_contents += "}\n\n"
 
     del resource_properties['ServiceToken']
+    del resource_properties['_TerraformMetadata']
     params = process_tf_params(resource_properties)
 
     # generate terraform file
@@ -135,19 +137,20 @@ resource "{resource_type}" "{logical_id}" {{
     if request_type == "Create" or request_type == "Update":
         err = check_call([os.environ['LAMBDA_TASK_ROOT'] + '/terraform', 'apply', '-auto-approve', '-no-color', '-state=/tmp/res.tfstate'])
 
-        with open("/tmp/res.tfstate", "r") as f:
-            tfstate_str = f.read()
-            s3file.put(Body=tfstate_str)
+        if os.path.exists("/tmp/res.tfstate"):
+            with open("/tmp/res.tfstate", "r") as f:
+                tfstate_str = f.read()
+                s3file.put(Body=tfstate_str)
 
-            tfstate = json.loads(tfstate_str)
-            resource_key = next(iter(tfstate['modules'][0]['resources'].keys()), False)
-            if resource_key:
-                for attr_key, attr_val in tfstate['modules'][0]['resources'][resource_key]['primary']['attributes'].items():
-                    attr_key = tf_to_cfn_str(attr_key)
-                    return_data[attr_key] = attr_val
-            LOGGER.info(tfstate_str)
-        
-        os.remove("/tmp/res.tfstate")
+                tfstate = json.loads(tfstate_str)
+                resource_key = next(iter(tfstate['modules'][0]['resources'].keys()), False)
+                if resource_key:
+                    for attr_key, attr_val in tfstate['modules'][0]['resources'][resource_key]['primary']['attributes'].items():
+                        attr_key = tf_to_cfn_str(attr_key)
+                        return_data[attr_key] = attr_val
+                LOGGER.info(tfstate_str)
+            
+            os.remove("/tmp/res.tfstate")
         if err:
             raise RuntimeError(err)
     elif request_type == "Delete":
@@ -248,10 +251,17 @@ def handle_transform(event, context):
         response = event["fragment"]
         for k in list(response["Resources"].keys()):
             if response["Resources"][k]["Type"].startswith("Terraform::"):
+                typegroup = response["Resources"][k]["Type"].split("::")[1]
                 if "Properties" not in response["Resources"][k]:
                     response["Resources"][k]["Properties"] = {}
                 response["Resources"][k]["Type"] = "Custom::" + response["Resources"][k]["Type"].replace("::","_")
                 response["Resources"][k]["Properties"]["ServiceToken"] = context.invoked_function_arn
+                metadata = {}
+                if "Metadata" in response and typegroup in response["Metadata"]:
+                    metadata = response["Metadata"][typegroup]
+                if "Metadata" in response["Resources"][k] and typegroup in response["Resources"][k]["Metadata"]:
+                    metadata = {**metadata, **response["Resources"][k]["Metadata"][typegroup]} # overwrite with this data
+                response["Resources"][k]["Properties"]["_TerraformMetadata"] = metadata
         macro_response["fragment"] = response
     except:
         LOGGER.info('Failed to process template for transform')
