@@ -131,8 +131,7 @@ resource "{resource_type}" "{logical_id}" {{
         s3file.download_file('/tmp/res.tfstate')
     
     # execute terraform apply
-    if request_type == "Create":
-        print(check_call([os.environ['LAMBDA_TASK_ROOT'] + '/terraform', 'init', '-no-color']))
+    print(check_call([os.environ['LAMBDA_TASK_ROOT'] + '/terraform', 'init', '-no-color']))
     if request_type == "Create" or request_type == "Update":
         print(check_call([os.environ['LAMBDA_TASK_ROOT'] + '/terraform', 'apply', '-auto-approve', '-no-color', '-state=/tmp/res.tfstate']))
 
@@ -168,7 +167,7 @@ def handler(event, context):
                 response_data = tf_resource_processor(
                     event['RequestType'],
                     event['LogicalResourceId'],
-                    event['ResourceType'][18:].lower(),
+                    event['ResourceType'][18:].split("_")[0].lower() + "_" + cfn_to_tf_str(event['ResourceType'][18:].split("_")[1]).lower(),
                     event['ResourceProperties'],
                     physical_resource_id,
                     event['StackId'].split("/")[-1]
