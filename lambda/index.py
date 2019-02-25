@@ -8,7 +8,6 @@ import traceback
 import sys
 import subprocess
 import re
-import pprint
 import uuid
 
 LOGGER = logging.getLogger()
@@ -20,14 +19,12 @@ def check_call(args):
         stderr=subprocess.PIPE,
         cwd='/tmp')
     stdout, stderr = proc.communicate()
+    LOGGER.info(stdout)
     if proc.returncode != 0:
-        print(stdout)
-        print(stderr)
-        raise subprocess.CalledProcessError(
-            returncode=proc.returncode,
-            cmd=args)
+        LOGGER.warning(stderr)
+        return stderr
     
-    return stdout
+    return False
 
 
 def cfn_to_tf_str(obj):
@@ -96,7 +93,7 @@ def tf_resource_processor(request_type, logical_id, resource_type, resource_prop
     s3 = boto3.resource('s3')
     s3file = s3.Object(os.environ['STATE_BUCKET'], '{}/{}.tfstate'.format(stack_id, physical_resource_id))
 
-    print("State File: {}/{}.tfstate".format(stack_id, physical_resource_id))
+    LOGGER.info("State File: {}/{}.tfstate".format(stack_id, physical_resource_id))
 
     if provider_credentials:
         terraform_file_contents += """
@@ -131,22 +128,33 @@ resource "{resource_type}" "{logical_id}" {{
         s3file.download_file('/tmp/res.tfstate')
     
     # execute terraform apply
-    print(check_call([os.environ['LAMBDA_TASK_ROOT'] + '/terraform', 'init', '-no-color']))
+    err = check_call([os.environ['LAMBDA_TASK_ROOT'] + '/terraform', 'init', '-no-color'])
+    if err:
+        raise RuntimeError(err)
+    
     if request_type == "Create" or request_type == "Update":
-        print(check_call([os.environ['LAMBDA_TASK_ROOT'] + '/terraform', 'apply', '-auto-approve', '-no-color', '-state=/tmp/res.tfstate']))
+        err = check_call([os.environ['LAMBDA_TASK_ROOT'] + '/terraform', 'apply', '-auto-approve', '-no-color', '-state=/tmp/res.tfstate'])
 
         with open("/tmp/res.tfstate", "r") as f:
             tfstate_str = f.read()
             s3file.put(Body=tfstate_str)
 
             tfstate = json.loads(tfstate_str)
-            for attr_key, attr_val in tfstate['modules'][0]['resources'][next(iter(tfstate['modules'][0]['resources'].keys()))]['primary']['attributes'].items():
-                attr_key = tf_to_cfn_str(attr_key)
-                return_data[attr_key] = attr_val
-            pprint.pprint(tfstate)
+            resource_key = next(iter(tfstate['modules'][0]['resources'].keys()), False)
+            if resource_key:
+                for attr_key, attr_val in tfstate['modules'][0]['resources'][resource_key]['primary']['attributes'].items():
+                    attr_key = tf_to_cfn_str(attr_key)
+                    return_data[attr_key] = attr_val
+            LOGGER.info(tfstate_str)
+        
         os.remove("/tmp/res.tfstate")
+        if err:
+            raise RuntimeError(err)
     elif request_type == "Delete":
-        print(check_call([os.environ['LAMBDA_TASK_ROOT'] + '/terraform', 'destroy', '-auto-approve', '-no-color', '-state=/tmp/res.tfstate']))
+        err = check_call([os.environ['LAMBDA_TASK_ROOT'] + '/terraform', 'destroy', '-auto-approve', '-no-color', '-state=/tmp/res.tfstate'])
+        if err:
+            raise RuntimeError(err)
+        
         s3file.delete()
 
     return return_data
@@ -157,7 +165,6 @@ def handler(event, context):
         # Custom::Terraform_ handler
         try:
             LOGGER.info('REQUEST RECEIVED:\n %s', event)
-            LOGGER.info('REQUEST RECEIVED:\n %s', context)
 
             physical_resource_id = str(uuid.uuid4())
             if 'PhysicalResourceId' in event:
@@ -178,11 +185,11 @@ def handler(event, context):
                 send_response(event, context, "FAILED",
                     {"Message": "Unexpected RequestType received from CloudFormation"},
                     physical_resource_id)
-        except: #pylint: disable=W0702
+        except Exception as e: #pylint: disable=W0702
             LOGGER.warning('FAILED! %s %s', traceback.format_exc(), sys.exc_info()[0])
             send_response(event, context, "FAILED",
-                {"Message": "Exception during processing"},
-                context.log_stream_name + event['LogicalResourceId'])
+                {"ErrorMessage": str(e)},
+                physical_resource_id)
     elif 'fragment' in event:
         # Transform handler
         return handle_transform(event, context)
@@ -211,7 +218,10 @@ def send_response(event, context, response_status, response_data, physical_resou
     }
 
     if response_status != "SUCCESS":
-        response_object['Reason'] = "See the details in CloudWatch Log Stream: " + context.log_stream_name
+        if 'ErrorMessage' in response_data:
+            response_object['Reason'] = response_data['ErrorMessage']
+        else:
+            response_object['Reason'] = "See the details in CloudWatch Log Stream: " + context.log_stream_name
     
     response_body = json.dumps(response_object)
 
