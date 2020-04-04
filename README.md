@@ -1,5 +1,7 @@
 # Terraform CloudFormation Resource Provider
 
+Check out the new [native version](https://github.com/iann0036/cfn-tf-custom-types) of this project!
+
 > Deploy over 2,000 new resource types with CloudFormation.
 
 <img src="https://github.com/iann0036/tf-cfn-provider/raw/master/assets/screen1.png" width="558" height="491">
